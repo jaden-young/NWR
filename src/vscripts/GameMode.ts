@@ -1,15 +1,15 @@
 import { reloadable } from "./lib/tstl-utils";
-import "./modifiers/modifier_panic";
+import { modifier_panic } from "./modifiers/modifier_panic";
 
 //Importing lua libraries
 require("components/garbage_collector")
 require("components/barebones/settings")
 require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
-require("components/barebones/events")
+// require("components/barebones/events")
 
 
-const heroSelectionTime = 10;
+const heroSelectionTime = 20;
 
 declare global {
     interface CDOTAGamerules {
@@ -25,24 +25,42 @@ export class GameMode {
     }
 
     public static Activate(this: void) {
+        // When the addon activates, create a new instance of this GameMode class.
         GameRules.Addon = new GameMode();
-        // Loading KV for some items (maybe we will need that in future)
-        // GameRules.heroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt") 
     }
 
-    //InitGameMode() in Lua
     constructor() {
         this.configure();
+
+        // Register event listeners for dota engine events
         ListenToGameEvent("game_rules_state_change", () => this.OnStateChange(), undefined);
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
+
+        // Register event listeners for events from the UI
+        CustomGameEventManager.RegisterListener("ui_panel_closed", (_, data) => {
+            print(`Player ${data.PlayerID} has closed their UI panel.`);
+
+            // Respond by sending back an example event
+            const player = PlayerResource.GetPlayer(data.PlayerID)!;
+            CustomGameEventManager.Send_ServerToPlayer(player, "example_event", {
+                myNumber: 42,
+                myBoolean: true,
+                myString: "Hello!",
+                myArrayOfNumbers: [1.414, 2.718, 3.142]
+            });
+
+            // Also apply the panic modifier to the sending player's hero
+            const hero = player.GetAssignedHero();
+            // hero.AddNewModifier(hero, undefined, modifier_panic.name, { duration: 5 });
+        });
     }
 
     private configure(): void {
-        // GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 3);
-        // GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 3);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 5);
 
-        // GameRules.SetShowcaseTime(0);
-        // GameRules.SetHeroSelectionTime(heroSelectionTime);
+        GameRules.SetShowcaseTime(0);
+        GameRules.SetHeroSelectionTime(heroSelectionTime);
     }
 
     public OnStateChange(): void {
@@ -55,8 +73,17 @@ export class GameMode {
         //     }
         // }
 
+        if (state === GameState.CUSTOM_GAME_SETUP) {
+            // Automatically skip setup in tools
+            if (IsInToolsMode()) {
+                Timers.CreateTimer(3, () => {
+                    GameRules.FinishCustomGameSetup();
+                });
+            }
+        }
+
         // Start game once pregame hits
-        if (state == GameState.PRE_GAME) {
+        if (state === GameState.PRE_GAME) {
             Timers.CreateTimer(0.2, () => this.StartGame());
         }
     }
@@ -77,11 +104,8 @@ export class GameMode {
     private OnNpcSpawned(event: NpcSpawnedEvent) {
         // After a hero unit spawns, apply modifier_panic for 8 seconds
         const unit = EntIndexToHScript(event.entindex) as CDOTA_BaseNPC; // Cast to npc since this is the 'npc_spawned' event
+        // Give all real heroes (not illusions) the meepo_earthbind_ts_example spell
         // if (unit.IsRealHero()) {
-        //     Timers.CreateTimer(1, () => {
-        //         unit.AddNewModifier(unit, undefined, "modifier_panic", { duration: 8 });
-        //     });
-
         //     if (!unit.HasAbility("meepo_earthbind_ts_example")) {
         //         // Add lua ability to the unit
         //         unit.AddAbility("meepo_earthbind_ts_example");

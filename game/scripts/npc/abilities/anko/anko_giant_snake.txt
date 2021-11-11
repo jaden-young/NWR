@@ -15,7 +15,7 @@
 	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 	"FightRecapLevel"				"1"
 	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-	"ScriptFile"					"heroes/anko/anko_giant_snake.lua"	
+	"ScriptFile"					"abilities/heroes/anko/anko_giant_snake.lua"	
 
 
 	
