@@ -22,7 +22,7 @@ function GenerateLocalizationData() {
     // Enter localization data below!
     StandardTooltips.push({
         classname: "npc_dota_hero_anko",
-        name: "Anko"
+        name: "Anko",
     });
     // Return data to compiler
     return localization_info;

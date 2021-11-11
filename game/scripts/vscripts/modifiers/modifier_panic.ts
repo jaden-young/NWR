@@ -1,16 +1,5 @@
-import { BaseModifier, registerModifier } from "../lib/dota_ts_adapter";
-
-// Base speed modifier -- Could be moved to a separate file
-class ModifierSpeed extends BaseModifier {
-    // Declare functions
-    DeclareFunctions(): ModifierFunction[] {
-        return [ModifierFunction.MOVESPEED_ABSOLUTE];
-    }
-
-    GetModifierMoveSpeed_Absolute(): number {
-        return 300;
-    }
-}
+import { ModifierSpeed } from "./modifier_speed";
+import { registerModifier } from "../lib/dota_ts_adapter";
 
 @registerModifier()
 export class modifier_panic extends ModifierSpeed {

@@ -15,10 +15,10 @@ function GenerateLocalizationData() {
         StandardArray: StandardTooltips,
     };
     //#endregion
-    // Enter localization data below! 
+    // Enter localization data below!
     StandardTooltips.push({
         classname: "Hello",
-        name: "test"
+        name: "test",
     });
     // Return data to compiler
     return localization_info;

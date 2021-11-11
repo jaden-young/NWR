@@ -1,4 +1,9 @@
-import { AbilityLocalization, LocalizationData, ModifierLocalization, StandardLocalization } from "~generator/localizationInterfaces";
+import {
+    AbilityLocalization,
+    LocalizationData,
+    ModifierLocalization,
+    StandardLocalization,
+} from "~generator/localizationInterfaces";
 import { Language } from "../../languages";
 
 // DigitalG:
@@ -6,8 +11,7 @@ import { Language } from "../../languages";
 // if you want to add new localization file (e.g. new hero) please copy this file
 // DON't EDIT THIS
 
-export function GenerateLocalizationData(): LocalizationData
-{
+export function GenerateLocalizationData(): LocalizationData {
     // This section can be safely ignored, as it is only logic.
     //#region Localization logic
     // Arrays
@@ -16,8 +20,7 @@ export function GenerateLocalizationData(): LocalizationData
     const StandardTooltips: Array<StandardLocalization> = new Array<StandardLocalization>();
 
     // Create object of arrays
-    const localization_info: LocalizationData =
-    {
+    const localization_info: LocalizationData = {
         AbilityArray: Abilities,
         ModifierArray: Modifiers,
         StandardArray: StandardTooltips,
@@ -27,7 +30,7 @@ export function GenerateLocalizationData(): LocalizationData
     // Enter localization data below!
     StandardTooltips.push({
         classname: "npc_dota_hero_anko",
-        name: "Anko"
+        name: "Anko",
     });
 
     // Return data to compiler

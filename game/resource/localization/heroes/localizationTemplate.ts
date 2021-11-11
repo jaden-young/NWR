@@ -1,4 +1,9 @@
-import { AbilityLocalization, LocalizationData, ModifierLocalization, StandardLocalization } from "~generator/localizationInterfaces";
+import {
+    AbilityLocalization,
+    LocalizationData,
+    ModifierLocalization,
+    StandardLocalization,
+} from "~generator/localizationInterfaces";
 import { Language } from "../../languages";
 
 // DigitalG:
@@ -7,8 +12,7 @@ import { Language } from "../../languages";
 // DON't EDIT THIS
 // For any questions please visit https://moddota.com/scripting/Typescript/tooltip-generator
 
-export function GenerateLocalizationData(): LocalizationData
-{
+export function GenerateLocalizationData(): LocalizationData {
     // This section can be safely ignored, as it is only logic.
     //#region Localization logic
     // Arrays
@@ -17,8 +21,7 @@ export function GenerateLocalizationData(): LocalizationData
     const StandardTooltips: Array<StandardLocalization> = new Array<StandardLocalization>();
 
     // Create object of arrays
-    const localization_info: LocalizationData =
-    {
+    const localization_info: LocalizationData = {
         AbilityArray: Abilities,
         ModifierArray: Modifiers,
         StandardArray: StandardTooltips,
@@ -26,7 +29,6 @@ export function GenerateLocalizationData(): LocalizationData
     //#endregion
 
     // Enter localization data below!
-
 
     // Return data to compiler
     return localization_info;

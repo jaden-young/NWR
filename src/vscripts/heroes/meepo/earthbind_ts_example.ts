@@ -41,7 +41,7 @@ export class meepo_earthbind_ts_example extends BaseAbility {
         this.particle = ParticleManager.CreateParticle(
             "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf",
             ParticleAttachment.CUSTOMORIGIN,
-            caster,
+            caster
         );
 
         ParticleManager.SetParticleControl(this.particle, 0, caster.GetAbsOrigin());
@@ -81,7 +81,7 @@ export class meepo_earthbind_ts_example extends BaseAbility {
             UnitTargetType.BASIC | UnitTargetType.HERO,
             UnitTargetFlags.NONE,
             0,
-            false,
+            false
         );
 
         for (const unit of units) {

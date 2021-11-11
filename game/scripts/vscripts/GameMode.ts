@@ -5,9 +5,8 @@ import "./modifiers/modifier_panic";
 require("components/garbage_collector")
 require("components/barebones/settings")
 require('components/vanilla_extension')
-// TODO: Fix barebones editing gamemode object 
+// TODO: Fix barebones editing gamemode object
 require("components/barebones/events")
-
 
 const heroSelectionTime = 10;
 
@@ -20,27 +19,34 @@ declare global {
 @reloadable
 export class GameMode {
     public static Precache(this: void, context: CScriptPrecacheContext) {
-        PrecacheResource("particle", "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf", context);
-        PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts", context);
+        PrecacheResource(
+            "particle",
+            "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf",
+            context
+        );
+        PrecacheResource(
+            "soundfile",
+            "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts",
+            context
+        );
     }
 
     public static Activate(this: void) {
         GameRules.Addon = new GameMode();
         // Loading KV for some items (maybe we will need that in future)
-        // GameRules.heroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt") 
+        // GameRules.heroKV = LoadKeyValues("scripts/npc/npc_heroes_custom.txt")
     }
 
     //InitGameMode() in Lua
     constructor() {
         this.configure();
         ListenToGameEvent("game_rules_state_change", () => this.OnStateChange(), undefined);
-        ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
+        ListenToGameEvent("npc_spawned", (event) => this.OnNpcSpawned(event), undefined);
     }
 
     private configure(): void {
         // GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 3);
         // GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 3);
-
         // GameRules.SetShowcaseTime(0);
         // GameRules.SetHeroSelectionTime(heroSelectionTime);
     }

@@ -1,5 +1,5 @@
-//Code Below remove HUD completely
-//-------------------------------------------------------------------------------------------------
+// Code Below remove HUD completely
+// -------------------------------------------------------------------------------------------------
 // GameUI.SetDefaultUIEnabled(DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ACTION_PANEL, false);
 // GameUI.SetDefaultUIEnabled(DotaDefaultUIElement_t.DOTA_DEFAULT_UI_ACTION_MINIMAP, false);
 // GameUI.SetDefaultUIEnabled(DotaDefaultUIElement_t.DOTA_DEFAULT_UI_INVENTORY_PANEL, false);
@@ -10,4 +10,4 @@
 
 // const hudRoot = $.GetContextPanel().GetParent()!.GetParent()!;
 // hudRoot.FindChildTraverse("quickstats")!.style.visibility = "collapse";
-//--------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------------------
