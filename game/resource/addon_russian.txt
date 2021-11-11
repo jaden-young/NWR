@@ -1,0 +1,9 @@
+"lang"
+{
+    "Language"    "russian"
+    "Tokens"
+    {
+        "Hello"    "test"
+        "npc_dota_hero_anko"    "Anko"
+    }
+}

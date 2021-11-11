@@ -1,5 +1,8 @@
 #base "heroes/meepo.kv"
+#base "abilities/anko/anko.txt"
+
 
 "DOTAAbilities"
 {
+	"Version"		"1"
 }
