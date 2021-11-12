@@ -5,16 +5,16 @@
     "postinstall": "node scripts/install.js",
     "launch": "node scripts/launch.js",
     "build": "run-p build:*",
-    "build:panorama": "tsc --project content/panorama/scripts/custom_game/tsconfig.json",
-    "build:vscripts": "tstl --project game/scripts/vscripts/tsconfig.json",
+    "build:panorama": "tsc --project src/panorama/tsconfig.json",
+    "build:vscripts": "tstl --project src/vscripts/tsconfig.json",
     "dev": "run-p dev:*",
-    "dev:panorama": "tsc --project content/panorama/scripts/custom_game/tsconfig.json --watch",
-    "dev:vscripts": "tstl --project game/scripts/vscripts/tsconfig.json --watch",
+    "dev:panorama": "tsc --project src/panorama/tsconfig.json --watch",
+    "dev:vscripts": "tstl --project src/vscripts/tsconfig.json --watch",
     "dev:localizationCompiler": "tsc --project node_modules/~resource/tsconfig.json",
     "dev:localizationCompilerWatcher": "tsc --project node_modules/~resource/tsconfig.json --watch",
     "dev:runlocalizationWatcher": "node node_modules/@shushishtok/tooltip_generator/fsWatcher.js",
     "init": "link-module-alias && node node_modules/@shushishtok/tooltip_generator/init.js",
-    "lint": "npx eslint . --ext .ts"
+    "lint": "npx eslint src/ --ext .ts"
   },
   "devDependencies": {
     "@moddota/dota-lua-types": "^4.13.0",
