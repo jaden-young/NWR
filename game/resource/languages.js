@@ -4,12 +4,12 @@ exports.Language = void 0;
 var Language;
 (function (Language) {
     Language["None"] = "none";
-    // Brazilian = 'brazilian',    
+    // Brazilian = 'brazilian',
     // Bulgarian = 'bulgarian',
     // Czech = 'czech',
-    // Danish = 'danish',    
+    // Danish = 'danish',
     Language["English"] = "english";
-    // Finnish = 'finnish',    
+    // Finnish = 'finnish',
     // French = `french`,
     // German = `german`,
     // Greek = 'greek',
@@ -19,7 +19,7 @@ var Language;
     // Koreana = 'koreana',
     // Latam = 'latam',
     // Norwegian = `norwegian`,
-    // Polish = 'polish',    
+    // Polish = 'polish',
     // Portuguese = `portuguese`,
     Language["Russian"] = "russian";
     Language["Schinese"] = "schinese";
