@@ -42,7 +42,7 @@
     "~generator": "node_modules/@shushishtok/tooltip_generator"
   },
   "dependencies": {
-    "@shushishtok/tooltip_generator": "^1.6.0",
+    "@shushishtok/tooltip_generator": "^1.7.0",
     "link-module-alias": "^1.2.0",
     "node-watch": "^0.7.1",
     "valve-kv": "^1.1.0"
