@@ -5,6 +5,7 @@
     },
     "extends": [
         "airbnb",
+        "airbnb-typescript",
         "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
@@ -17,7 +18,20 @@
         "prettier"
     ],
     "rules": {
-        "indent": ["error", 4],
-        "no-console": "off"
+        "indent": [
+            "error",
+            4
+        ],
+        "no-console": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ]
     }
 }
