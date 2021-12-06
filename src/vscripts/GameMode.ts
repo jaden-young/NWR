@@ -1,5 +1,6 @@
 import { reloadable } from "./lib/tstl-utils";
 import { modifier_panic } from "./modifiers/modifier_panic";
+import "./extended_api";
 
 
 //Importing lua libraries
