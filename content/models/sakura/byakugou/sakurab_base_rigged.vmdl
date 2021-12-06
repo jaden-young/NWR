@@ -554,11 +554,11 @@
 			},
 			{
 				m_sSearchMaterial = "material #227.vmat"
-				m_sReplaceMaterial = "materials/sakura/sakura3.vmat"
+				m_sReplaceMaterial = "materials/sakura/sakura1.vmat"
 			},
 			{
 				m_sSearchMaterial = "material #205.vmat"
-				m_sReplaceMaterial = "materials/sakura/sakura1.vmat"
+				m_sReplaceMaterial = "materials/sakura/sakura3.vmat"
 			},
 			{
 				m_sSearchMaterial = "material #196.vmat"
@@ -566,11 +566,11 @@
 			},
 			{
 				m_sSearchMaterial = "material #203.vmat"
-				m_sReplaceMaterial = "materials/sakura/sakura1.vmat"
+				m_sReplaceMaterial = "materials/sakura/sakura3.vmat"
 			},
 			{
 				m_sSearchMaterial = "material #204.vmat"
-				m_sReplaceMaterial = "materials/sakura/sakura1.vmat"
+				m_sReplaceMaterial = "materials/sakura/sakura3.vmat"
 			},
 			{
 				m_sSearchMaterial = "material #190.vmat"

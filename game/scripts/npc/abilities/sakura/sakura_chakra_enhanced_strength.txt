@@ -1,0 +1,51 @@
+	
+    "DOTAAbilities"
+{
+
+	"sakura_chakra_enhanced_strength"
+	{
+		// General  
+		// ----------------------------------------------------------------------------------------
+		"BaseClass"                 "ability_lua"
+		"ScriptFile"				"abilities/heroes/sakura/sakura_chakra_enhanced_strength.lua"
+		"AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"     "DAMAGE_TYPE_PHYSICAL" 
+		"SpellImmunityType"         "SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityTextureName"        "sakura_chakra_enhanced_strength"
+
+
+		"AbilityType"               "DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"                  "4"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"              "0"
+		"AbilityDuration"               "0"
+
+
+		// Time     
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"               "0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"               "0"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{ 
+				"var_type"  "FIELD_FLOAT"
+				"bonus_damage" "50 100 150 200"
+				"LinkedSpecialBonus"	"special_bonus_sakura_1"
+			}
+			"02"
+			{
+				"var_type" "FIELD_FLOAT"
+				"stun_duration" "1 1.1 1.2 1.3"
+			}
+		}
+	}
+
+}

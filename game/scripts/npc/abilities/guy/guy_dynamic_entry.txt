@@ -1,0 +1,72 @@
+	
+    "DOTAAbilities"
+{
+    
+"guy_dynamic_entry"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/guy/guy_dynamic_entry"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"FightRecapLevel"				"1"
+		// "AbilityTextureName"			"guy_dynamic_entry"
+	
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500 550 600 650"
+		"AbilityCastPoint"				"0.3 0.3 0.3"
+	
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10 9"
+	
+		//Damage
+		"AbilityDamage"					"70 120 170 220"
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"70"		
+	
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor_debuff"					"1 2 3 4"
+			}
+			"02"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"duration"						"4"
+			}
+			"03"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"armor_debuff_ulti"				"4 5 6 7"
+			}
+			"04"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"cast_range_ulti"				"750 800 850 900"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"cast_range"					"500 550 600 650"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"caster_speed"					"2500"
+			}
+	
+		}
+	}
+
+}
