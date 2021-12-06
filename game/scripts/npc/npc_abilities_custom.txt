@@ -1,5 +1,7 @@
 #base "heroes/meepo.kv"
 #base "abilities/anko/anko.txt"
+#base "abilities/sakura/sakura.txt"
+#base "abilities/guy/guy.txt"
 
 
 "DOTAAbilities"

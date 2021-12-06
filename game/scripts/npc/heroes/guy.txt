@@ -1,0 +1,100 @@
+"DOTAAbilities"
+{
+
+	//25: +550 Dynamic Entry Range / Morning Peacock
+	//20: -0.2 BAT Sixth Gate Base Attack Time / +50 Sixth Gate Movement Speed
+	//15: +15% Lifesteal / +35% Whirlwind Attack Damage
+	// 10: +200 Health / +15 Damage
+	"npc_dota_hero_guy" //guy
+	{
+
+		"HeroID"					"202"
+
+		//Picking Screen
+		"IsCustom"					"1"
+
+		"SoundSet"					"Punch"
+		"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+
+		"BaseClass"   		"npc_dota_hero_centaur"
+		"Model" 			"models/gai/gai_base_rigged.vmdl"
+		"Ability1"        "guy_dynamic_entry"
+		"Ability2"        "guy_leaf_strong_whirlwind" 
+		"Ability3"        "guy_strong_fist" 
+		"Ability4"        "generic_hidden"
+		"Ability5"        "generic_hidden"
+		"Ability6"        "guy_seventh_gate_open"
+		"Ability7"        "guy_seventh_gate_close"
+
+		"Ability10"		"special_bonus_attack_damage_15"
+		"Ability11"		"special_bonus_hp_200"
+
+		"Ability12"		"special_bonus_guy_1"
+		"Ability13"		"special_bonus_lifesteal_15"
+
+		"Ability14"		"special_bonus_guy_2"
+		"Ability15"		"special_bonus_guy_3"
+
+		"Ability16"		"special_bonus_guy_4"
+		"Ability17"		"special_bonus_guy_5"
+
+		"AttributePrimary" 			"DOTA_ATTRIBUTE_AGILITY"
+		"ModelScale"				"3.00"
+		"LoadoutScale"				"1.06" 
+	 	"SpectatorLoadoutScale"		"1.06" 
+		"VersusScale"				"1.06" 
+
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+
+
+		"AttackAnimationPoint"   "0.4"
+		
+		"Role"			"Carry,Jungler"
+		"Rolelevels"	"2,1"
+
+		"AttackDamageMin"   "27"
+		"AttackDamageMax"   "35"
+		"AttackRate"    "1.700000"
+		"ArmorPhysical"		"2.000000"
+		"AttackRange"				"100"
+		"StatusHealth"    "200"
+		"StatusHealthRegen"   "0.300000"
+		"MovementSpeed"			"305"
+		"AttributeBaseStrength" "21" // Base strength
+		"AttributeStrengthGain" "2.5" // Strength bonus per level.
+		"AttributeBaseIntelligence" "13" // Base intelligence
+		"AttributeIntelligenceGain" "1.20" // Intelligence bonus per level.
+		"AttributeBaseAgility" "21" // Base agility
+		"AttributeAgilityGain" "3.3" // Agility bonus per level.
+	 	  
+		"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
+		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
+
+		"HasInventory"				"1" // This KV is required for units file only
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"170"
+			"faster"	"275"
+			"fastest"	"350"
+		}
+
+		"Village"			"konoha"
+		"Gender"			"male"
+	}
+
+
+	"npc_dota_hero_centaur" 
+	{
+		"override_hero"   "npc_dota_hero_centaur"
+		"Model" 			"models/gai/gai_base_rigged.vmdl"
+		"ModelScale"		"1.06"
+		"LoadoutScale"		"1.06" 
+		"SpectatorLoadoutScale""1.06" 
+		"VersusScale"			"1.06" 
+	}
+
+}
