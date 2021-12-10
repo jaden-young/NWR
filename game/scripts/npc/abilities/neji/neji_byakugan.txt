@@ -1,0 +1,147 @@
+
+	
+    "DOTAAbilities"
+{
+    
+    "neji_byakugan"
+    {
+        // General  
+        // ----------------------------------------------------------------------------------------
+        "BaseClass"                 "ability_lua"
+        "ScriptFile"                "abilities/heroes/neji/neji_byakugan.lua"
+        "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+        "AbilityUnitDamageType"     "DAMAGE_TYPE_PHYSICAL" 
+        "SpellImmunityType"         "SPELL_IMMUNITY_ENEMIES_NO"
+        "AbilityTextureName"        "neji_byakugan"
+
+        "AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+
+
+        "AbilityType"            "DOTA_ABILITY_TYPE_BASIC"
+        "MaxLevel"               "4"
+
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastRange"              "900 1100 1300 1500"
+
+
+        // Time     
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCooldown"               "5"
+        "AbilityCastPoint"              "15 14 13 12"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityManaCost"               "25"
+
+        "AbilitySpecial"
+        {
+
+            "01"
+            {
+                "var_type" "FIELD_FLOAT"
+                "vision_aoe" "900 1100 1300 1500"
+            }
+
+            "02"
+            {
+                "var_type" "FIELD_FLOAT"
+                "duration" "2.0"
+            }
+
+            "03"
+            {
+                "var_type" "FIELD_FLOAT"
+                "bonus_damage" "7 7 7 7"
+            }
+
+            "04"
+            {
+                "var_type" "FIELD_FLOAT"
+                "bonus_damage_tooltip" "7 14 21 28"
+            }
+
+            "05"
+            {
+                "var_type" "FIELD_FLOAT"
+                "mana_lose_percentage" "2.5"
+            }
+
+            "06"
+            {
+                "var_type" "FIELD_FLOAT"
+                "mana_burn_percentage" "1.0 1.5 2.0 2.5"
+                "LinkedSpecialBonus"    "special_bonus_neji_2"
+            }
+
+            "07"
+            {
+                "var_type" "FIELD_INTEGER"
+                "mana_burn_flat" "23 32 41 50"
+            }
+
+           
+        }
+
+        "Modifiers"
+        {
+        "modifier_byakugan"
+            {
+                "Passive"           "0"
+                "IsHidden"          "0"
+        
+                "ThinkInterval"  "0.03"
+                "OnIntervalThink"
+                {
+                    "ActOnTargets"
+                    {
+                        "Target"
+                        {
+                            "Center"    "TARGET"
+                            "Radius"    "%vision_aoe"
+                            "Teams"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+                            "Types"     "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+                        }
+                    
+                        "Action"    
+                        {
+                            "ApplyModifier"
+                            {
+                                "ModifierName"  "modifier_truesight_reveal"
+                                "Target"        "TARGET"
+                            }
+                        }
+                    }           
+                }       
+            }
+
+            "modifier_truesight_reveal"
+            {
+                "IsDebuff"          "1"
+                "IsHidden"          "0"
+                "Priority"          "MODIFIER_PRIORITY_HIGH"
+                "Duration"          "2"   //The True Sight effect lingers for 0.5 seconds.
+                "States"
+                {
+                    "MODIFIER_STATE_INVISIBLE"  "MODIFIER_STATE_VALUE_DISABLED"
+                }
+            }
+
+            "modifier_neji_byakugan_bonus_damage"
+        {
+            "Passive" "1"
+            "IsHidden"  "1"
+            "Attributes"    "MODIFIER_ATTRIBUTE_MULTIPLE"
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE" "%bonus_damage"
+            }
+        }
+        }
+
+    }
+
+}

@@ -1,0 +1,61 @@
+"DOTAAbilities"
+{
+	"haku_needles"
+	{
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"abilities/heroes/haku/needles"
+		"AbilityTextureName"			"haku_needles"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCooldown"				"12.0"
+		"AbilityManaCost"				"120 125 130 135"
+		"AOERadius"     				"%radius"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"275"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wave_count"			"2"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"wave_damage"			"70 95 120 145"
+				"LinkedSpecialBonus"	"special_bonus_haku_4"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"wave_interval"			"1.2"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"stun_duration"			"1.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"endless_wounds_stacks"	"10"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"delay"					"0.3"
+			}
+		}
+	}
+}

@@ -10,8 +10,6 @@
 	"npc_dota_hero_hidan" "1"  //hidan
 	"npc_dota_hero_kisame" "1" //kisame
 	"npc_dota_hero_naruto" "1" //naruto
-	"npc_dota_hero_naruto_new" "0" //naruto2
-	"npc_dota_hero_naruto_new_two" "0" //naruto3
 	"npc_dota_hero_guy" "1" // guy
 	"npc_dota_hero_kakashi" "1"
 	"npc_dota_hero_anko" "1"
@@ -39,7 +37,7 @@
 
 	// Int Ranged
 	"npc_dota_hero_gaara" "1" // gaara
-	"npc_dota_hero_kankuro" "0"  // kankuro
+	"npc_dota_hero_kankuro" "1"  // kankuro
 	"npc_dota_hero_shikamaru" "1"	// Nara Shikamaru
 	"npc_dota_hero_temari" "1" // temari
 	"npc_dota_hero_haku" "1" //haku

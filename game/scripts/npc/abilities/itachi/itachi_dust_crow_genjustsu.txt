@@ -1,0 +1,48 @@
+"DOTAAbilities"
+{
+	"itachi_dust_crow_genjustsu"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"ability_lua"
+		"ScriptFile"				"abilities/heroes/itachi/dust_crow_genjutsu"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityTextureName"		"itachi_dust_crow_genjustsu"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"21.0 18.0 15.0 12.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blink_range"			"700 800 900 1000"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"illusion_duration"		"4"
+				"LinkedSpecialBonus"		"special_bonus_itachi_2"
+
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"illusion_incoming_damage"		"100"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"illusion_outgoing_damage"		"20"
+			}
+		}
+	}
+}

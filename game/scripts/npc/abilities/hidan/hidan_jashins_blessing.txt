@@ -1,0 +1,112 @@
+
+
+	
+"DOTAAbilities"
+{
+	
+"hidan_jashins_blessing"
+{
+    // General  
+    // ----------------------------------------------------------------------------------------
+    "BaseClass"                 "ability_datadriven"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "AbilityUnitDamageType"     "DAMAGE_TYPE_MAGICAL" 
+    "SpellImmunityType"         "SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"        "hidan_jashins_blessing"
+
+
+    "AbilityType"            "DOTA_ABILITY_TYPE_BASIC"
+    "MaxLevel"               "4"
+
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"              "0"
+    "AbilityDuration"               "0"
+
+
+    // Time     
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"               "70 55 40 25"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "0"
+
+     "precache"
+    {
+      "soundfile" "soundevents/hidan_jashinblessing_proc.vsndevts"
+      "particle"  "particles/units/heroes/hidan/hidan_passive_a.vpcf"	
+      "particle"  "particles/units/heroes/hidan/hidan_passive_ready_a.vpcf"	
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        { 
+            "var_type"  "FIELD_FLOAT"
+            "reset_hp_percentage" "25.0 30.0 35.0 40.0"
+			"LinkedSpecialBonus"	"special_bonus_hidan_3"
+        }
+    }
+
+
+    "Modifiers"
+    {
+        "modifier_jashins_blessing"
+        {
+            "Passive"                   "1"
+            "IsHidden"                  "1"
+            "IsPurgable"                "0"
+            
+            "OnCreated"
+            {
+                "FireEffect"
+                {
+                    //TODO find a fitting sound
+                    //"Target"            "CASTER" 
+                    //"EffectName"        "Hero_Kunkaa.Tidebringer"
+                }
+
+                "RunScript"
+                {
+                	"ScriptFile"    "abilities/heroes/hidan/jashins_blessing.lua"
+                    "Function"      "BuffEffect"
+                }
+
+            }
+
+            "OnTakeDamage"
+            
+            {
+                "FireSound"
+                {
+                    // TODO find a fitting sound
+                    //"Target"            "TARGET"
+                    //"EffectName"        "Hero_Kunkka.Tidebringer.Attack"
+                }
+            
+
+                "AttachEffect"
+                {
+                  //TODO
+                }
+            
+              
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/heroes/hidan/jashins_blessing.lua"
+                    "Function"      "ResetHp"
+                    "Damage"        "%attack_damage"
+                }
+                        
+            }
+            
+        }
+
+
+    }
+
+}
+
+}

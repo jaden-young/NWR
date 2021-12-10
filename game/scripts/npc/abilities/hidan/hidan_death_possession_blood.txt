@@ -1,0 +1,81 @@
+
+	
+    "DOTAAbilities"
+{
+
+"hidan_death_possession_blood"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"				"ability_lua"
+	"ScriptFile"			"abilities/heroes/hidan/death_possession_blood"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityTextureName"			"hidan_death_possession_blood"
+	"AbilityUnitDamageType"     "DAMAGE_TYPE_MAGICAL" 
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.5"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"70.0"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"100"
+
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"02"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"transformation_time"	"0.35"
+		}
+
+		"03"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"radius"				"350"
+		}
+		"07"
+		{
+			"var_type"								"FIELD_FLOAT"
+			"returned_damage_inside_percentage"	"100"
+		}
+		"04"
+		{
+			"var_type"								"FIELD_FLOAT"
+			"returned_damage_outside_percentage"	"35 50 65"
+		}
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"duration"				"10 12 14"
+		}
+		"05"
+		{
+			"var_type"							"FIELD_FLOAT"
+			"tick_interval"						"1"
+		}
+
+		"06"
+		{
+			"var_type"							"FIELD_FLOAT"
+			"tick_interval_modifier"			"0.1"
+		}
+		"08"
+		{
+			"var_type"								"FIELD_FLOAT"
+			"mark_duration"						"10 12 14"
+		}
+
+
+	}
+
+}
+
+
+}

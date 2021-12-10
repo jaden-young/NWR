@@ -1,0 +1,2 @@
+#base "shukaku/shukaku_sabaku_kyuu.txt"
+#base "shukaku/shukaku_futon_sasandan.txt"

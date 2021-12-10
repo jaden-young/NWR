@@ -1,0 +1,95 @@
+"DOTAAbilities"
+{
+
+		//25: +3 Tag Traps / +300 Radius Shadow Gather Radius
+		//20: +175 Flash Bomb Damage / +1s Shadow Paralysis Duration
+		//15: -3s Shadow Paralysis Cooldown / +100 Cast Range
+		//10: +175 Health / +0.5s Shadow Gather Duration
+
+			"npc_dota_hero_shikamaru"  //Shikamaru
+		{
+			"HeroID"					"216"
+		  "BaseClass"   "npc_dota_hero_shadow_shaman" 
+		  "Model" 		"models/shikamaru_new/shika.vmdl"
+		  "Ability1"         "shikamaru_shadow_imitation_technique"
+		  "Ability2"         "shikamaru_switching_technique" 
+		  "Ability3"         "shikamaru_flash_bombs" 
+  		  "Ability4"        "generic_hidden"
+		  "Ability5"        "generic_hidden"
+		  "Ability6"         "shikamaru_explosive_tag_trap"
+
+		   "Ability10"		"special_bonus_hp_175"
+		   "Ability11"		"special_bonus_shikamaru_1"
+
+		   "Ability12"		"special_bonus_shikamaru_2"
+		   "Ability13"		"special_bonus_cast_range_100"
+
+		   "Ability14"		"special_bonus_shikamaru_3"
+		   "Ability15"		"special_bonus_shikamaru_4"
+
+		   "Ability16"		"special_bonus_shikamaru_max_traps"
+		   "Ability17"		"special_bonus_shikamaru_6"
+
+		  "ModelScale"		"0.60"
+		"LoadoutScale"		"0.53" 
+		"SpectatorLoadoutScale" 	"0.60" 
+		"VersusScale"				"0.60" 
+		"ArmorPhysical"		"0.000000"
+		"AttackDamageMin"		"20"
+		"AttackDamageMax"		"30"
+		"AttackRate"		"1.700000"		  
+		  "AttackAnimationPoint"   "0.4"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+
+		"ProjectileModel"   "particles/units/heroes/shikamaru/base_attack/shikamaru_base_attack.vpcf"
+		"ProjectileSpeed"  "1200"
+
+		//Picking Screen
+		"IsCustom"					"1"
+
+		  	"Role"			"Support,Pusher,Disabler,Nuker,Initiator"
+		"Rolelevels"	"2,3,3,2,1"
+		 // "AttackRate"				"0.7"
+		  "AttackRange"				"600"
+		"AttackDamageMin"			"21"	// Damage range min.
+		"AttackDamageMax"			"31"	// Damage range max.
+		  "StatusHealth"    "200"
+  "StatusHealthRegen"   "0.300000"
+		  "MovementSpeed"			"290"
+		  "AttributeBaseStrength" "22" // Base strength
+		  "AttributeStrengthGain" "2.1" // Strength bonus per level.
+		  "AttributeBaseAgility" "16" // Base agility
+		  "AttributeAgilityGain" "1.8" // Agility bonus per level.
+		"AttributeBaseIntelligence" "25" // Base intelligence
+		  "AttributeIntelligenceGain" "3.5" // Intelligence bonus per level.
+
+	  	  "Village"			"konoha"
+
+
+				"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
+		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
+
+		"HasInventory"				"1" // This KV is required for units file only
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"170"
+			"faster"	"275"
+			"fastest"	"350"
+		}
+	}
+
+	"npc_dota_hero_shadow_shaman" 
+	{
+			"override_hero"   "npc_dota_hero_shadow_shaman"
+			"Model" 		"models/shikamaru_new/shika.vmdl"
+			"ModelScale"		"0.60"
+			"LoadoutScale"		"0.53" 
+			"SpectatorLoadoutScale" 	"0.60" 
+			"VersusScale"				"0.60" 
+	}	
+
+}

@@ -1,0 +1,87 @@
+	
+"DOTAAbilities"
+{
+    
+     "gaara_ryuusa_bakuryu"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/gaara/gaara_ryuusa_bakuryu.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NONE"
+		"FightRecapLevel"				"1"
+		"AbilityTextureName"			"gaara_ryuusa_bakuryu"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"750"
+		"AbilityCastPoint"				"0.5"
+
+		"AOERadius"						"300"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"10 10 10 10"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		// "AbilityDamage"					"100 170 240 300"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"105 120 135 150"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.5"	// applies 2 modifiers
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"425"
+				"LinkedSpecialBonus"		"special_bonus_gaara_2"
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"thinker_interval"				"0.1"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"1.25 2 2.75 3.5"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius_special"					"505"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_perc"					"100"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage_per_second"					"100"
+			}
+			"07" //This is only for tooltips
+			{
+				"var_type"					"FIELD_FLOAT"
+				"total_damage"					"125 200 275 350"
+			}
+
+		}
+	
+	}
+
+}

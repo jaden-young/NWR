@@ -1,0 +1,92 @@
+	
+    "DOTAAbilities"
+{
+    
+// Karasu's Dagger ability
+// Author: Zenicus
+// Date: 12.6.2015.
+"karasu_daggers"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"					"ability_lua"
+	"ScriptFile"				"heroes/kankuro/karasu_daggers"
+	"MaxLevel"					"1"
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"		"karasu_daggers"
+
+	// Ability General
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+
+	"precache"
+	{
+		"particle"	"particles/units/heroes/hero_bristleback/bristleback_quill_spray_hit.vpcf"
+		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_bristleback.vsndevts"
+	}
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastPoint"				"0.3"
+	"AOERadius"						"%radius"
+	"AbilityCastRange"				"550"
+
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+
+	// Ability Resource
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"35"
+	"AbilityCooldown"				"3"
+
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"radius"					"550"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"dagger_damage"				"70"
+		}
+		"03"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"projectile_speed"			"1250"
+		}
+	}
+	// "OnSpellStart"
+	// {
+	
+	// 	"RunScript"
+	// 	{
+	// 		"ScriptFile"			"heroes/kankuro/karasu_daggers"
+	// 		"Function"				"karasu_daggers"
+	// 		//--TODO: Change projectile to daggers
+	// 		"daggers_projectile"	"particles/units/heroes/hero_invoker/invoker_tornado.vpcf"
+	// 	}	
+	// 	"FireSound"
+	// 	{
+	// 		"EffectName"		"Hero_Bristleback.QuillSpray.Cast"
+	// 		"Target"			"CASTER"
+	// 	}
+
+
+	// }
+}
+
+
+
+}

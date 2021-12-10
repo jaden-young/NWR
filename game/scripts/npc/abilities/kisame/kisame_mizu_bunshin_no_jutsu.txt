@@ -1,0 +1,61 @@
+	
+    "DOTAAbilities"
+{
+    
+
+"kisame_mizu_bunshin_no_jutsu"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"                    "abilities/heroes/kisame/kisame_mizu_bunshin_no_jutsu.lua"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"AbilityTextureName"			"kisame_mizu_bunshin_no_jutsu"
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"450"
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+  
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"27.0 24.0 21.0 18.0"
+	"AbilityDuration"				"0.2 0.2 0.2 0.2"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"100 115 130 145"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+      "01"
+      {
+        "var_type"                               "FIELD_FLOAT"
+        "illusion_max_hp_percentage"              "14 18 22 26"
+		    "LinkedSpecialBonus"					 "special_bonus_kisame_2"
+      }
+
+      "02"
+      {
+        "var_type"                               "FIELD_FLOAT"
+        "damage_percentage"              "10"
+      }
+      "03"
+      {
+        "var_type"                  "FIELD_FLOAT"
+        "illusion_duration"         "18 18 18"
+      }
+      "04"
+      {
+        "var_type"                               "FIELD_FLOAT"
+        "bonus_damage"              "1"
+      }
+
+      		
+	}
+}
+}

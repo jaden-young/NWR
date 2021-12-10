@@ -1,0 +1,167 @@
+	
+    "DOTAAbilities"
+{
+    
+  
+"yondaime_rasengan"
+{
+    // General  
+    // ----------------------------------------------------------------------------------------
+    "BaseClass"                 "ability_datadriven"
+    "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+    "AbilityUnitDamageType"     "DAMAGE_TYPE_PHYSICAL" 
+    "SpellImmunityType"         "SPELL_IMMUNITY_ENEMIES_NO"
+    "AbilityTextureName"        "yondaime_rasengan"
+
+    // Casting
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCastRange"              "0"
+    "AbilityDuration"               "15.0"
+
+
+    // Time     
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityCooldown"               "12 11 10 9"
+    "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
+
+    // Cost
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilityManaCost"               "50 60 70 80"
+
+
+	// Precache
+	//-------------------------------------------------------------------------------------------------------------
+     "precache"
+    {
+        "soundfile" "soundevents/minato_rasengan.vsndevts"
+        "soundfile" "soundevents/heroes/yondaime/minato_rasengan_talking.vsndevts"
+        "soundfile" "soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts"
+        "particle"  "particles/units/heroes/yondaime/raseng_model.vpcf"
+        "particle"  "particles/units/heroes/yondaime/raseng_impact.vpcf"
+        "soundfile" "soundevents/minato_rasengan_cast.vsndevts"
+        "soundfile" "soundevents/minato_rasengan_loop.vsndevts"
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type" "FIELD_FLOAT"
+            "base_bonus_damage" "50 75 100 125"
+        }
+        "02"
+        { 
+            "var_type" "FIELD_FLOAT"
+            "bonus_damage" "25 50 75 100"
+			"LinkedSpecialBonus"	"special_bonus_yondaime_6"
+        }
+        "03"
+        {
+            "var_type" "FIELD_FLOAT"
+            "bonus_ms" "2 4 6 8"
+        }
+	    "04"
+        {
+            "var_type" "FIELD_FLOAT"
+            "stun_duration" "0.8"
+			"LinkedSpecialBonus"	"special_bonus_yondaime_3"
+        }
+        "05"
+        {
+            "var_type" "FIELD_FLOAT"
+            "distance" "500"
+        }
+        "06"
+        {
+            "var_type" "FIELD_FLOAT"
+            "bonus_damage_real" "1"
+        }
+    }
+
+    "OnSpellStart"
+    {           
+        
+        "RunScript"
+        {
+           "ScriptFile"     "abilities/heroes/yondaime_alternate/rasengan.lua"
+            "Function"      "rasengan_bonus_damage"
+        }
+
+        "FireSound"
+        {
+            "EffectName"  "minato_rasengan_cast"
+            "Target"    "CASTER"
+        }
+
+        "FireSound"
+        {
+            "EffectName"  "minato_rasengan_loop.loop"
+            "Target"    "CASTER"
+        }
+
+         
+
+    }
+
+
+    "Modifiers"
+    {
+        "modifier_rasengan"
+        {
+            "IsBuff"            "1"
+            "Duration"          "%AbilityDuration"
+        
+            
+            "Properties"
+            {
+                "MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE" "%bonus_ms" 
+            }
+
+     
+
+            "OnAttackStart"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/heroes/yondaime_alternate/rasengan.lua"
+                    "Function"      "rasengan"
+                    "modifier"  "modifier_rasengan"
+                    "damageModifier"    "modifier_rasengan_bonus_damage"
+                }
+                "ApplyModifier"
+                {
+                    "ModifierName"    "modifier_ransengan_animation"
+                    "Target"         "CASTER"
+                    "Duration"        "1"
+                }
+
+            }
+
+
+            "OnDestroy"
+            {
+                "RunScript"
+                {
+                    "ScriptFile"    "abilities/heroes/yondaime_alternate/rasengan.lua"
+                    "Function"        "destroyRasenParticle"
+                }
+             
+            }
+        }
+
+
+        "modifier_ransengan_animation"
+        {
+            "IsHidden"  "1"
+            
+            "Priority"     "MODIFIER_PRIORITY_HIGH"
+            "OverrideAnimation"     "ACT_DOTA_CAST_ABILITY_3"
+
+        }
+
+    }
+
+}
+
+
+}

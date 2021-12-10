@@ -1,0 +1,45 @@
+	
+    "DOTAAbilities"
+{
+    
+  
+
+"yondaime_body_flicker"
+{
+    // General  
+    // ----------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	"AbilityTextureName"		"yondaime_body_flicker"
+	"ScriptFile"					"abilities/heroes/yondaime/body_flicker.lua"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"			"1400"
+	"AbilityCastPoint"			"0.4 0.4 0.4 0.4"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"			"6"
+	
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"			"25"
+	
+
+	
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+    	"01"
+        { 
+            "var_type"  "FIELD_INTEGER"
+            "range" "1400"
+        }
+    }
+	
+}
+
+
+}

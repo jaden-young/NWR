@@ -1,0 +1,74 @@
+	
+    "DOTAAbilities"
+{
+    
+"gaara_sabaku_taiso"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/heroes/gaara/gaara_sabaku_taiso.lua"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"			"gaara_sabaku_taiso"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"1500"
+	"AbilityCastPoint"				"1.0 1.0 1.0"
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"130 100 70"
+	"AbilityDuration"				"5.0"
+
+	
+	// Damage.
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityDamage"					"300 450 600"
+	
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"175 250 350"
+
+	// Stats
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityModifierSupportValue"	"0.25"	// Applies two modifiers 
+	
+	// Special	
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"start_radius"			"50"
+		}
+		"02"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"end_radius"			"300"
+		}
+		"03"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"range"					"1500"
+			"LinkedSpecialBonus"	"special_bonus_gaara_3"
+		}
+		"04"
+		{
+			"var_type"				"FIELD_INTEGER"
+			"speed"					"800"
+		}
+		"05"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"stun_duration"			"1.75 2.25 2.75"
+		}
+	}
+	
+  }
+}

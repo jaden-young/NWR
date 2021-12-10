@@ -1,0 +1,87 @@
+	
+    "DOTAAbilities"
+{
+    
+
+"kakashi_sharingan"
+{
+	"precache"
+    {
+      "soundfile"			"soundevents/heroes/kakashi/kakashi_sharingan_cast.vsndevts"
+    }
+	
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_datadriven"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"			"kakashi_sharingan"
+	"CastFilterRejectCaster"    	"1" 
+
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"500"
+	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+	
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"30"
+
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"50"
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"				"FIELD_FLOAT"
+			"copy_timer"			"120"
+		}
+	}
+	"OnAbilityPhaseStart"
+	{
+		"FireSound"
+		{
+			"EffectName"		"kakashi_sharingan_cast"
+			"Target"			"CASTER"
+		}
+	}
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"ScriptFile"	"abilities/heroes/kakashi/sharingan.lua"
+			"Function"		"sharingan"
+		}	
+	}
+
+	"Modifiers"
+	{
+		"kakashi_sharingan_modifier"
+		{
+			"Passive"			"0"
+			"IsHidden"			"0"
+			"IsBuff"			"1"
+	
+			"Duration"			"%copy_timer"
+			
+			"OnDestroy"
+			{
+				"RunScript"
+				{
+					"ScriptFile"	"abilities/heroes/kakashi/sharingan.lua"
+					"Function"		"sharingan_end"
+				}
+			}
+		}
+	}
+}
+
+}

@@ -1,0 +1,80 @@
+	
+    "DOTAAbilities"
+{
+    
+"kakashi_bunshin"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"                    "abilities/heroes/kakashi/kakashi_bunshin.lua"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+	"AbilityTextureName"			"kakashi_bunshin"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCooldown"				"22 19 16 13"
+	"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+	
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"120 100 80 60"
+	
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration"					"3 4 5 6"
+			"LinkedSpecialBonus"		"special_bonus_kakashi_1"
+		}
+		"02"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"illusion_duration"			"30"
+		}
+		"03"
+       {
+        "var_type"                               "FIELD_FLOAT"
+        "illusion_outgoing_damage_percent"       "-75"
+       }
+       "06"
+       {
+        "var_type"                               "FIELD_FLOAT"
+        "illusion_incoming_damage_percent"       "400"
+       }	
+       "07"
+       {
+        "var_type"                               "FIELD_FLOAT"
+        "lighting_charge_duration"       		"2"
+       }
+       "08"
+       {
+        "var_type"                               "FIELD_FLOAT"
+        "ms_debuff"       						"-20 -25 -30 -40"
+       }
+       "09"
+       {
+        "var_type"                               "FIELD_FLOAT"
+        "illusion_outgoing_damage_percent_tooltip"       "25"
+       }
+	   "10"
+		{
+			"var_type"					"FIELD_FLOAT"
+			"duration_special"			"5 7 9 11"
+		}
+
+		"11"
+		{
+			"var_type"					"FIELD_INTEGER"
+			"cd_reduc"					"0 0 0 0"
+			"LinkedSpecialBonus"		"special_bonus_kakashi_3"
+		}
+		
+	}
+}
+}

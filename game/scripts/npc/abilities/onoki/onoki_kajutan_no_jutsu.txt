@@ -1,0 +1,72 @@
+
+
+   "DOTAAbilities"
+    {
+
+	"onoki_kajutan_no_jutsu"
+    {
+    
+    	"BaseClass"			 			"ability_lua"
+    	"ScriptFile"					"abilities/heroes/onoki/onoki_kajutan_no_jutsu.lua"
+    	"AbilityTextureName"			"onoki_kajutan_no_jutsu"
+    	"MaxLevel" 						"3"
+    
+    	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+    	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+    	"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+    
+		"AbilityCastRange"				"400"
+    	"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+    	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+    
+    	"AbilityCooldown"				"90 80 70"
+    	"AbilityManaCost"				"150 200 250"
+    
+    	"AbilitySpecial"
+    	{
+    		"01"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"damage_factor"		"0.06 0.07 0.08"
+    		}
+    		"02"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"duration"			"5"
+    		}
+    		"03"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"radius"			"400"
+    		}
+    		"04"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"threshold_factor"	"0.1 0.12 0.14"
+    		}
+    		"05"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"threshold_factor_tooltips"	"10 12 14"
+    		}
+    		"06"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"damage_factor_tooltips"	"5 5.5 6"
+    		}
+			"07"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"damage_delay"	    "1.0"
+    		}
+			"08"
+    		{
+    			"var_type"			"FIELD_FLOAT"
+    			"last_wave_bonus_damage"	    "0.04"
+    		}
+    	}
+
+    }
+
+	}

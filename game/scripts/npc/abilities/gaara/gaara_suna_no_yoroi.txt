@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+	"gaara_suna_no_yoroi"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/gaara/suna_no_yoroi.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityTextureName"			"gaara_suna_no_yoroi"
+		"AbilityCooldown"				"15"
+		"AbilityManaCost"				"25"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_per_mana"		"0.55 0.7 0.85 1"
+				"LinkedSpecialBonus"	"special_bonus_gaara_1"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"absorption_tooltip"		"60"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"absorption_tooltip_allies"		"30"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"shield_duration"		"6 9 12 15"
+			}
+		}
+	}
+}
