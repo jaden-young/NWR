@@ -3,8 +3,8 @@ LinkLuaModifier( "modifier_onoki_added_weight_allies", "abilities/heroes/onoki/m
 LinkLuaModifier( "modifier_onoki_added_weight_enemy", "abilities/heroes/onoki/modifier_onoki_added_weight_enemy", LUA_MODIFIER_MOTION_NONE )
 
 function onoki_added_weight:Precache( context )
-	PrecacheResource( "soundfile", "soundevents/onoki_speedbuff_cast.vsndevts", context )
-	PrecacheResource( "soundfile", "soundevents/onoki_debuff_cast.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_speedbuff_cast.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_debuff_cast.vsndevts", context )
 	PrecacheResource( "particle", "particles/units/heroes/onoki/onoki_turn_to_stone.vpcf", context )
 	PrecacheResource( "particle", "particles/units/heroes/onoki/onoki_speed_debuff.vpcf", context )
 	PrecacheResource( "particle", "particles/units/heroes/onoki/onoki_speed_buff_status2.vpcf", context )

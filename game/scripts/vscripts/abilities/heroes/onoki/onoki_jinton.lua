@@ -1,9 +1,9 @@
 onoki_jinton = class({})
 
 function onoki_jinton:Precache( context )
-    PrecacheResource( "soundfile", "soundevents/onoki_jinton.vsndevts", context )
-    PrecacheResource( "soundfile", "soundevents/onoki_atomic_root.vsndevts", context )
-    PrecacheResource( "soundfile", "soundevents/onoki_atomic_explosion.vsndevts", context )
+    PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_jinton.vsndevts", context )
+    PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_atomic_root.vsndevts", context )
+    PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_atomic_explosion.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_particle_talking.vsndevts", context )
     PrecacheResource( "particle", "particles/units/heroes/onoki/onoki_cube1.vpcf", context )
 end

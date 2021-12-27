@@ -5,7 +5,7 @@ function onoki_kajutan_no_jutsu:Precache( context )
     PrecacheResource( "soundfile", "sounds/weapons/hero/elder_titan/echo_stomp_cast.vsnd", context )
     PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_ulti_talking.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_elder_titan.vsndevts", context )
-    PrecacheResource( "soundfile", "soundevents/onoki_ult_end.vsndevts", context )
+    PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_ult_end.vsndevts", context )
     PrecacheResource( "particle", "particles/units/heroes/onoki/onoki_kajutan_no_jutsu.vpcf", context )
 end
 

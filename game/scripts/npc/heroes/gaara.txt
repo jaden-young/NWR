@@ -13,7 +13,7 @@
 		"VersusScale"			"0.42" 
 	
 		"SoundSet"					"Gaara"
-		"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_gaara.vsndevts"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_gaara.vsndevts"
 		"particle_folder"			"particles/hero/gaara"
 		"GibType"					"default"
 

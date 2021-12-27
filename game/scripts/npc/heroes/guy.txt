@@ -14,7 +14,7 @@
 		"IsCustom"					"1"
 
 		"SoundSet"					"Punch"
-		"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+		"GameSoundsFile"			"soundevents/heroes/game_sounds_punch.vsndevts"
 
 		"BaseClass"   		"npc_dota_hero_centaur"
 		"Model" 			"models/gai/gai_base_rigged.vmdl"

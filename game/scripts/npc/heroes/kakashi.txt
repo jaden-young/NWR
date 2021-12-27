@@ -11,8 +11,8 @@
 		"ModelScale"				"0.85"
 		"LoadoutScale"				"0.85" 
 	
-		"SoundSet"					"Punch"
-		"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 		"particle_folder"			"particles/hero/kakashi"
 		"GibType"					"default"
 

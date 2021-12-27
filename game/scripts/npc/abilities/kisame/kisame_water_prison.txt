@@ -90,8 +90,8 @@
 	"precache"
 	{
 		"soundfile"	"soundevents/game_sounds_heroes/game_sounds_terrorblade.vsndevts"
-		"soundfile"	"soundevents/kisame_water_prison_cast.vsndevts"
-		"soundfile"	"soundevents/kisame_water_prison_toggle.vsndevts"
+		"soundfile"	"soundevents/heroes/kisame/kisame_water_prison_cast.vsndevts"
+		"soundfile"	"soundevents/heroes/kisame/kisame_water_prison_toggle.vsndevts"
 		"soundfile"	"soundevents/heroes/kisame/kisame_bunshin_water_prison_talking.vsndevts"
 		"particle"  "particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis.vpcf"
 		"particle"	"particles/units/heroes/hero_terrorblade/terrorblade_metamorphosis_transform.vpcf"

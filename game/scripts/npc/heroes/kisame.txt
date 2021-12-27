@@ -53,7 +53,7 @@
 
 
 		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/game_sounds_kunai.vsndevts"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
 
 	 	"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
 		"VisionNighttimeRange"		"800"                             // Range of vision at night time.

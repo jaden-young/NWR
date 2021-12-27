@@ -16,8 +16,8 @@
 		"SpectatorLoadoutScale" 	"0.85"
 		"VersusScale"				"0.85"
 	
-		"SoundSet"					"Punch"
-		"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 		"particle_folder"			"particles/hero/sohei"  //for the future, i think
 		"GibType"					"default"
 

@@ -37,6 +37,9 @@
 
   "Model" 		"models/haku_test/haku2_base.vmdl"
 
+	"SoundSet"					"KunaiRanged"
+	"GameSoundsFile"		"soundevents/weapons/game_sounds_kunairanged.vsndevts"
+
   "ItemSlots"
   { }
 
@@ -49,7 +52,7 @@
   "Rolelevels"  "3,1,1,1"
   "AttackDamageMax"   "26"
   "AttackRate"    "1.700000"
-  "AttackAnimationPoint"		"0.4"
+  "AttackAnimationPoint"		"0.1"
  // "AttackRate"				"1.0"
   "AttackRange"				"550"
   "ProjectileModel"   "particles/units/heroes/haku/haku_base_attack.vpcf"

@@ -31,6 +31,10 @@
 		   "Ability17"		"special_bonus_shikamaru_6"
 
 		  "ModelScale"		"0.60"
+		
+		"SoundSet"					"KunaiRanged"
+		"GameSoundsFile"		"soundevents/weapons/game_sounds_kunairanged.vsndevts"
+		
 		"LoadoutScale"		"0.53" 
 		"SpectatorLoadoutScale" 	"0.60" 
 		"VersusScale"				"0.60" 

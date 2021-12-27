@@ -5,7 +5,7 @@ LinkLuaModifier("modifier_kisame_samehada", "scripts/vscripts/abilities/heroes/k
 LinkLuaModifier("modifier_kisame_samehada_bonus_damage", "scripts/vscripts/abilities/heroes/kisame/kisame_samehada.lua", LUA_MODIFIER_MOTION_NONE)
 
 function kisame_samehada:Precache(context)
-	PrecacheResource("soundfile",  "soundevents/kisame_samehada_trigger.vsndevts", context)
+	PrecacheResource("soundfile",  "soundevents/heroes/kisame/kisame_samehada_trigger.vsndevts", context)
 	PrecacheResource("particle",   "particles/generic_gameplay/generic_manaburn.vpcf", context)
 end
 

@@ -11,7 +11,7 @@
 		"HeroID"					"219"
 
 		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/game_sounds_kunai.vsndevts"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
 
 		  "BaseClass"   	"npc_dota_hero_bloodseeker"
 		  "Ability1"        "zabuza_water_dragon_bullet"

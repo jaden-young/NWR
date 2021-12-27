@@ -12,8 +12,8 @@ LinkLuaModifier( "modifier_hidan_cull_the_weak_ms_slow",
 
 function hidan_cull_the_weak:Precache(context)
 	PrecacheResource("soundfile",  "soundevents/game_sounds_heroes/game_sounds_mirana.vsndevts", context)
-	PrecacheResource("soundfile",  "soundevents/hidan_cull_the_weak_cast.vsndevts", context)
-	PrecacheResource("soundfile",  "soundevents/hidan_cull_the_weak_fire.vsndevts", context)
+	PrecacheResource("soundfile",  "soundevents/heroes/hidan/hidan_cull_the_weak_cast.vsndevts", context)
+	PrecacheResource("soundfile",  "soundevents/heroes/hidan/hidan_cull_the_weak_fire.vsndevts", context)
 
 	PrecacheResource("particle",   "particles/units/heroes/hidan/hidan_cull_the_weak.vpcf", context)
 	PrecacheResource("particle",   "particles/units copy/heroes/hidan/cult_impact.vpcf", context)

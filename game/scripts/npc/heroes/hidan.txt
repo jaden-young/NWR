@@ -15,7 +15,7 @@
 		"IsCustom"					"1"
 
 		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/game_sounds_kunai.vsndevts"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
 
 		"Model" 			"models/hidan_brand_new/hidan_base.vmdl"
 	  	"Village"			"yugakure_scarred"

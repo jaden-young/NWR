@@ -34,8 +34,8 @@
 		//Picking Screen
 		"IsCustom"					"1"
 
-		"SoundSet"					"Punch"
-		"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 	
 		  "ArmorPhysical"		"1.000000"
 		"AttackDamageMin"		"34"

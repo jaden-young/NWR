@@ -27,8 +27,8 @@
 		   "Ability16"		"special_bonus_neji_4"
 		   "Ability17"		"special_bonus_neji_5"
 		   
-			"SoundSet"					"Punch"
-			"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 	
 		  "ArmorPhysical"		"3.000000"
 		"ModelScale"		"1"

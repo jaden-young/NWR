@@ -6,7 +6,7 @@ function kisame_mizu_bunshin_no_jutsu:Precache( context )
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_naga_siren.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/heroes/kisame/bunshin_death.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_vengefulspirit.vsndevts", context )
-    PrecacheResource( "soundfile", "soundevents/kisame_clone_cast.vsndevts", context )
+    PrecacheResource( "soundfile", "soundevents/heroes/kisame/kisame_clone_cast.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/heroes/kisame/kisame_bunshin_water_prison.vsndevts", context )
 	
     PrecacheResource( "particle", "particles/units/heroes/hero_siren/naga_siren_mirror_image.vpcf", context )

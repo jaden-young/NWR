@@ -7,9 +7,9 @@ LinkLuaModifier("modifier_death_possession_blood_caster_buff", "abilities/heroes
 LinkLuaModifier("modifier_death_possession_blood_caster_status", "abilities/heroes/hidan/death_possession_blood", LUA_MODIFIER_MOTION_NONE)
 
 function hidan_death_possession_blood:Precache(context)
-	PrecacheResource("soundfile",  "soundevents/hidan_ulti.vsndevts", context)
+	PrecacheResource("soundfile",  "soundevents/heroes/hidan_ulti.vsndevts", context)
 	PrecacheResource("soundfile",  "soundevents/heroes/hidan/hidan_ulti_cast_talking.vsndevts", context)
-	PrecacheResource("soundfile",  "soundevents/hidan_curse_cast.vsndevts", context)
+	PrecacheResource("soundfile",  "soundevents/heroes/hidan/hidan_curse_cast.vsndevts", context)
 
 	PrecacheResource("particle",   "particles/units/heroes/hidan/hidan_blood_possession_ring.vpcf", context)
 	PrecacheResource("particle",   "particles/units/heroes/hidan/ritual_debuff_core.vpcf", context)

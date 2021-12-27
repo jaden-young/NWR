@@ -17,8 +17,8 @@
 		"SpectatorLoadoutScale" 	"1.0" 
 		"VersusScale"				"1.0" 
 
-		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/game_sounds_kunai.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 		
 		"particle_folder"			"particles/hero/anko"
 		"GibType"					"default"

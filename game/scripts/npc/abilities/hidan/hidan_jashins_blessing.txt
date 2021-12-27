@@ -35,7 +35,7 @@
 
      "precache"
     {
-      "soundfile" "soundevents/hidan_jashinblessing_proc.vsndevts"
+      "soundfile" "soundevents/heroes/hidan/hidan_jashinblessing_proc.vsndevts"
       "particle"  "particles/units/heroes/hidan/hidan_passive_a.vpcf"	
       "particle"  "particles/units/heroes/hidan/hidan_passive_ready_a.vpcf"	
     }

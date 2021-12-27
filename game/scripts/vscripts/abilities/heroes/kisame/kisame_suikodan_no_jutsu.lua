@@ -8,7 +8,7 @@ LinkLuaModifier( "modifier_generic_custom_indicator",
 
 
 function kisame_suikodan_no_jutsu:Precache(context)
-	PrecacheResource("soundfile",  "soundevents/kisame_shark.vsndevts", context)
+	PrecacheResource("soundfile",  "soundevents/heroes/kisame/kisame_shark.vsndevts", context)
 	PrecacheResource("soundfile",  "soundevents/heroes/kisame/kisame_shark_cast.vsndevts", context)
 	PrecacheResource("particle",   "particles/units/heroes/kisame/shark.vpcf", context)
 	PrecacheResource("particle",   "particles/units/heroes/kisame/range_finder_shark.vpcf", context)
