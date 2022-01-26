@@ -2405,6 +2405,16 @@
 		"DOTA_Tooltip_Ability_special_bonus_itachi_3"						"+1.50s Tsukyomi Stun"
 		"DOTA_Tooltip_Ability_special_bonus_itachi_4"						"+225 Amateratsu Spread AOE"
 
+		// Shisui
+		// 25: +2 Afterimage Clone Attacks / Kotoamatsukami Grants Invisibility
+		// 20: +60 Fireball Burn Damage / +225 Halo Dance Range
+		// 15: +13 Strength / +40 Halo Dance Damage
+		// 10: +1.75 Mana Regen / +9 Agility
+		"DOTA_Tooltip_Ability_special_bonus_shisui_1"						"+40 Halo Dance Damage"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_2"						"+60 Fireball Burn Damage"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_3"						"+225 Halo Dance Range"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_4"						"+2 Afterimage Clone Attacks"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_5"						"Kotoamatsukami Grants Invisibility"
 
 		//25: +170 Water Needles Damage / +18 Ice Mirror Damage
 		//20: -2s Crippling Senbon Cooldown / +450 Crippling Senbon Range

@@ -26,6 +26,7 @@
 #base "abilities/sai/sai.txt"
 #base "abilities/shukaku/shukaku.txt"
 #base "abilities/beasts/beasts.txt"
+#base "abilities/shisui/shisui.txt"
 
 
 "DOTAAbilities"

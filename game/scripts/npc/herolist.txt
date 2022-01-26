@@ -23,6 +23,8 @@
 	// Agi Melee
 	"npc_dota_hero_zabuza" "1" //zabuza
 	"npc_dota_hero_neji" "1"  //neji
+	"npc_dota_hero_shisui" "1"  //neji
+
 
 
 	// bugged currently removed until its fixed TODO

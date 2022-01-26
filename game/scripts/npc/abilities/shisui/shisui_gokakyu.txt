@@ -1,0 +1,51 @@
+"DOTAAbilities"
+{
+	"itachi_amateratsu"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/heroes/shisuji/gokakyu"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityTextureName"			"shisui_gokakyu"
+		"AbilityType"					"DOTA_ABILITY_"
+
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"16 14 12 10"
+		"AbilityManaCost"				"90 100 110 120"
+		"AbilityCastRange"				"1600"
+		"AbilityCastPoint"				"1.0"
+
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"slow_percent"				"15 20 25 30"
+				// burn damage 10 15 20 25 (70 75 80 85)
+			}
+			"02"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"10 11 12"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"damage"				""
+				"LinkedSpecialBonus"		"special_bonus_shisuji_"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"spread_cd"					"55.0"
+			}
+		}
+	}
+}

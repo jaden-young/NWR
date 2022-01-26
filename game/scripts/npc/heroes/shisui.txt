@@ -1,0 +1,123 @@
+"DOTAAbilities"
+{
+	// 25: +2 Afterimage Clone Attacks / Kotoamatsukami Grants Invisibility
+	// 20: +60 Fireball Burn Damage / +225 Halo Dance Range
+	// 15: +13 Strength / +40 Halo Dance Damage
+	// 10: +1.75 Mana Regen / +9 Agility
+	"npc_dota_hero_shisui"
+	{
+		"HeroID"					"220"
+
+		"BaseClass"					"npc_dota_hero_antimage"
+		"Model"						"models/shisui/shisui.vmdl"
+		"ModelScale"				"0.85"
+		"LoadoutScale"				"0.73"
+		"SpectatorLoadoutScale" 	"0.85"
+		"VersusScale"				"0.85"
+
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
+		"GibType"					"default"
+
+		//Picking Screen
+		"IsCustom"					"1"
+
+		"Role"			"Carry,Escape,Nuker"
+		"Rolelevels"	"3,3,1"
+
+		"Complexity"	"2"
+
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementTurnRate"			"1.5"
+		"MovementSpeed"				"305"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+
+		"AttackDamageMin"			"29"
+		"AttackDamageMax"			"35"
+		"AttackRange"				"150"
+		"AttackRate"				"1.7"
+		"AttackAnimationPoint"		"0.4"
+
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"170"
+			"faster"	"275"
+			"fastest"	"350"
+		}
+
+		"ArmorPhysical"				"2"
+		"MagicalResistance"			"25"
+
+		"StatusHealth"				"145"
+		"StatusHealthRegen"			"0.3"
+		"StatusManaRegen"			"0.9"
+		"StatusMana"				"75"
+
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength" "19" // Base strength
+		"AttributeStrengthGain" "2.1" // Strength bonus per level.
+		"AttributeBaseIntelligence" "20" // Base intelligence
+		"AttributeIntelligenceGain" "2.4" // Intelligence bonus per level.
+		"AttributeBaseAgility" "22" // Base agility
+		"AttributeAgilityGain" "2.6" // Agility bonus per level.
+
+		"Ability1"				"shisui_gokakyu"
+		"Ability2"				"shisui_zanzo_bunshin"
+		"Ability3"				"shisui_halo_dance"
+		"Ability4"				"generic_hidden"
+		"Ability5"				"generic_hidden"
+		"Ability6"				"shisui_kotoamatsukami"
+
+		// 25: +2 Afterimage Clone Attacks / Kotoamatsukami Grants Invisibility
+		// 20: +60 Fireball Burn Damage / +225 Halo Dance Range
+		// 15: +13 Strength / +40 Halo Dance Damage
+		// 10: +1.75 Mana Regen / +9 Agility
+		"Ability10"		"special_bonus_mp_regen_175"
+		"Ability11"		"special_bonus_agility_9"
+		"Ability12"		"special_bonus_strength_13"
+		"Ability13"		"special_bonus_shisui_1"
+		"Ability14"		"special_bonus_shisui_2"
+		"Ability15"		"special_bonus_shisui_3"
+		"Ability16"		"special_bonus_shisui_4"
+		"Ability17"		"special_bonus_shisui_5"
+
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		"HasInventory"				"1" // This KV is required for units file only
+
+		"VisionDaytimeRange"		"1800"							// Range of vision during day light.
+		"VisionNighttimeRange"		"800"							 // Range of vision at night time.
+
+		// Custom KV's
+		"Village"			"konoha_scarred"
+		"Gender"			"male"
+
+		"VisionDaytimeRange"		"1800"							// Range of vision during day light.
+		"VisionNighttimeRange"		"800"							 // Range of vision at night time.
+
+		"HasInventory"				"1" // This KV is required for units file only
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+
+		"AttackSpeedActivityModifiers"
+		{
+			"fast"		"170"
+			"faster"	"275"
+			"fastest"	"350"
+		}
+
+	}
+
+	  "npc_dota_hero_antimage"
+	{
+			"override_hero"				"npc_dota_hero_antimage"
+			"Model"						"models/itachi_new/itachi.vmdl"
+			"ModelScale"				"0.85"
+			"LoadoutScale"				"0.73"
+			"SpectatorLoadoutScale" 	"0.85"
+			"VersusScale"				"0.85"
+	}
+
+}
