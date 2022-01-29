@@ -1,0 +1,24 @@
+<root> 
+<Panel class="AddonLoadingRoot"> 
+			<Image src="file://{images}/heroes/npc_dota_hero_kakashi.png" />
+			<Image src="file://{images}/heroes/npc_dota_hero_anko.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_itachi.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_hidan.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_kisame.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_naruto.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_guy.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_onoki.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_raikage.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_sakura.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_madara.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_zabuza.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_neji.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_yondaime.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_sasuke.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_gaara.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_kankuro.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_shikamaru.png" />
+			<Image  src="file://{images}/heroes/npc_dota_hero_temari.png" />
+</Panel> 
+
+</root>
