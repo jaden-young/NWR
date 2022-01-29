@@ -39,7 +39,7 @@ function AddNotification(msg, panel) {
 	msg.continue = msg.continue || false;
 	//msg.continue = true;
 
-	if (lastNotification != null && msg.continue) 
+	if (lastNotification != null && msg.continue)
 		newNotification = false;
 
 	if (newNotification){
@@ -49,7 +49,7 @@ function AddNotification(msg, panel) {
 	}
 
 	var notification = null;
-	
+
 	if (msg.hero != null)
 		notification = $.CreatePanel('DOTAHeroImage', lastNotification, '');
 	else if (msg.image != null)
@@ -65,13 +65,13 @@ function AddNotification(msg, panel) {
 		//$.Msg("[Notifications] Notification Duration is not a number!");
 		msg.duration = 3
 	}
-	
+
 	if (newNotification){
 		$.Schedule(msg.duration, function(){
 			//$.Msg('callback')
 			if (lastNotification.deleted)
 				return;
-			
+
 			lastNotification.DeleteAsync(0);
 		});
 	}
@@ -96,7 +96,7 @@ function AddNotification(msg, panel) {
 		notification.hittest = false;
 		notification.AddClass('TitleText');
 	}
-	
+
 	if (msg.class)
 		notification.AddClass(msg.class);
 	else
