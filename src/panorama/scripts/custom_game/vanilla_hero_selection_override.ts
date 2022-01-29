@@ -1,3 +1,4 @@
+//@ts-nocheck
 var Parent = $.GetContextPanel().GetParent().GetParent().GetParent();
 var TooltipHeroMovie, TooltipHeroName, HeroCardTooltip;
 var fully_init = false;

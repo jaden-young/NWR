@@ -1,3 +1,4 @@
+//@ts-nocheck
 function FixHeroIcons(){
     var topbar = $.GetContextPanel().GetParent().GetParent().GetParent().GetParent().FindChildTraverse("topbar")
     var playerSlots = topbar.FindChildrenWithClassTraverse("TopBarPlayerSlot")

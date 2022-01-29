@@ -1,3 +1,4 @@
+//@ts-nocheck
 function TopNotification( msg ) {
 	AddNotification(msg, $('#TopNotifications'));
 }

@@ -1,3 +1,4 @@
+//@ts-nocheck
 var g_IsHost = false;
 
 var g_PlayerPanels = [];

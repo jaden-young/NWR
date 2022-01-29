@@ -1,3 +1,4 @@
+//@ts-nocheck
 var Parent = $.GetContextPanel().GetParent().GetParent().GetParent();
 
 function OverrideImage(hParent, sHeroName) {

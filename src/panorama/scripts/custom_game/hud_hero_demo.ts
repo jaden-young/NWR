@@ -1,3 +1,4 @@
+//@ts-nocheck
 function ToggleEnemyHeroPicker() {
 	$('#SelectAllyHeroContainer').SetHasClass('HeroPickerVisible', false)
 	$('#SelectEnemyHeroContainer').ToggleClass('HeroPickerVisible');

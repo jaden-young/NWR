@@ -1,3 +1,4 @@
+//@ts-nocheck
 const basePanel = $.GetContextPanel().GetParent().GetParent().GetParent();
 let x = basePanel.FindChildTraverse('HUDElements');
 x = x.FindChildTraverse('lower_hud');
