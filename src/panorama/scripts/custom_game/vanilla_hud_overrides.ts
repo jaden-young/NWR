@@ -87,7 +87,7 @@ function SetTopBarBackground() {
 	container.style.visibility = "visible";
 	container.style.backgroundImage = "url('s2r://panorama/images/custom_game/tophud.png')";
 	container.style.backgroundSize = "100% 100%";
-	container.style.width = "76.8%";
+	container.style.width = "57.8%";
 	container.style.height = "90px";
 
 	var backgrounds = Parent.FindChildrenWithClassTraverse("TopBarBackground");
