@@ -1,6 +1,6 @@
 node_modules
 
-/content/panorama/scripts/custom_game/**/*.js
+/content/panorama/scripts/**/*.js
 #/game/scripts/vscripts/**/*.lua
 
 # Dota 2 stuff
@@ -17,3 +17,4 @@ node_modules
 *.vsndevts_c
 *.vsnd_c
 panorama_debugger.cfg
+.vscode/settings.json

@@ -15,6 +15,7 @@
 interface CustomGameEventDeclarations {
     example_event: ExampleEventData,
     ui_panel_closed: UIPanelClosedEventData
+    override_hero_image: OverrideHeroImageEvent
 }
 
 // Define the type of data sent by the example_event event
@@ -27,3 +28,8 @@ interface ExampleEventData {
 
 // This event has no data
 interface UIPanelClosedEventData {}
+
+interface OverrideHeroImageEvent {
+    player_id: PlayerID
+    icon_path: string
+}
