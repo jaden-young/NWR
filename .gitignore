@@ -1,7 +1,8 @@
 node_modules
 
 /content/panorama/scripts/**/*.js
-#/game/scripts/vscripts/**/*.lua
+/game/scripts/vscripts/**/*.lua
+
 
 # Dota 2 stuff
 *.bin
