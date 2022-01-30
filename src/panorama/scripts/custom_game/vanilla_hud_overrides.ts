@@ -34,7 +34,7 @@ function OverrideTopBarHeroImage() {
 	
 }
 
-function OverrideScoreboardHeroImage(args) {
+function OverrideScoreboardHeroImage(args: NetworkedData<OverrideHeroImageEvent>) {
 //	$.Msg("OverrideScoreboardHeroImage")
 	var team = "Radiant"
 
