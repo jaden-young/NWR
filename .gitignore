@@ -1,6 +1,8 @@
 node_modules
 
 /content/panorama/scripts/**/*.js
+# Newly added lua files will be ignored. To add a new lua file, run:
+# `git add --force path/to/file.lua`
 /game/scripts/vscripts/**/*.lua
 
 
