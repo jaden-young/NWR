@@ -9,7 +9,7 @@ require("components/barebones/settings")
 require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
-
+// require("components/barebones/rescale")
 
 const heroSelectionTime = 20;
 
