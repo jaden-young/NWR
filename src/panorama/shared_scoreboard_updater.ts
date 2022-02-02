@@ -58,7 +58,7 @@ function _ScoreboardUpdater_UpdatePlayerPanel( scoreboardConfig, playersContaine
 		{
 			if ( playerInfo.player_selected_hero !== "" )
 			{
-				playerPortrait.SetImage( "file://{images}/heroes/" + playerInfo.player_selected_hero + ".png" );
+				playerPortrait.SetImage( "file://{images}/custom_game/heroes/topbar/" + playerInfo.player_selected_hero + ".png" );
 			}
 			else
 			{
