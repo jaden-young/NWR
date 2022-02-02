@@ -1,0 +1,16 @@
+/*
+    Loads up image files so that they can be set in js.  Without a reference in
+    either XML or CSS, setting an image file in js will fail. Listing them here
+    is sufficient, we don't need to assign this class to any UI elements.
+*/
+.VanillaHudImageOverrideCompile {
+    background-image: url("file://{resources}/images/custom_game/hud/tophud.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_abilities.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_inventory.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_inventory2.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_minimap.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_minimap2.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_portrait1.png");
+
+    /* topbar hero images are already loaded in hero selection */
+}

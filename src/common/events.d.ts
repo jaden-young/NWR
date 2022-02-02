@@ -30,6 +30,5 @@ interface ExampleEventData {
 interface UIPanelClosedEventData {}
 
 interface OverrideHeroImageEvent {
-    player_id: PlayerID
-    icon_path: string
+    player_id: number
 }

@@ -5,7 +5,7 @@
 
 	<styles>
 		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
-		<include src="s2r://panorama/styles/custom_game/vanilla_hud_overrides.css" />
+		<include src="file://{resources}/styles/custom_game/vanilla_hud_overrides.css" />
 	</styles>
 
 	<Panel>

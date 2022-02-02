@@ -36,12 +36,12 @@
 
 .AkatBoard
 {
-	background-image: url("file://panorama/images/scoreboard/scoreboard_akat_png.png");
+	background-image: url("file://{resources}/images/custom_game/scoreboard/scoreboard_akat.png");
 }
 
 .ShinobiBoard
 {
-	background-image: url("file://panorama/images/scoreboard/scoreboard_shinobi_png.png");
+	background-image: url("file://{resources}/images/custom_game/scoreboard/scoreboard_shinobi.png");
 }
 
 .FlyoutTeam.no_players
