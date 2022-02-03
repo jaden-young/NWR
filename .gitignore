@@ -19,5 +19,7 @@ node_modules
 *.vmesh_c
 *.vsndevts_c
 *.vsnd_c
+*.vagrp_c
+*.vanim_c
 panorama_debugger.cfg
 .vscode/settings.json
