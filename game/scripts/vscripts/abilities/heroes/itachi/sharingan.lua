@@ -66,6 +66,9 @@ function modifier_itachi_sharingan:OnAttackLanded(keys)
 		end
 
 		if self.crit_strike ~= false then
+			-- Proc passive Anbu Intuition whenver Sharingan procs
+			local anbu_intuition = self:GetCaster():FindAbilityByName("itachi_anbu_intuition")
+			self:GetCaster():CastAbilityNoTarget(anbu_intuition, self:GetCaster():GetPlayerID())
 			-- If that attack was marked as a critical strike, apply the particles
 			local coup_pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf", PATTACH_ABSORIGIN_FOLLOW, target, self.caster)
 			ParticleManager:SetParticleControlEnt(coup_pfx, 0, target, PATTACH_POINT_FOLLOW, "attach_hitloc", target:GetAbsOrigin(), true)
