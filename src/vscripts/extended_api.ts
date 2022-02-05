@@ -28,7 +28,7 @@ if (IsServer()) {
         return talent ? talent.GetSpecialValueFor("value") : 0;
     }
 
-    CDOTA_BaseNPC.FindTalentValue = function (talentName: string, key: string){
+    CDOTA_BaseNPC.FindTalentValue = function (talentName: string, key?: string){
         let talent = this.FindAbilityByName(talentName);
         return talent ? talent.GetSpecialValueFor(key ? key : "value") : 0
     }
