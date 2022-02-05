@@ -4,7 +4,7 @@ declare global {
         GetAllAbilities(): CDOTABaseAbility[];
         HasTalent(talentName: string): boolean;
         GetTalent(talentName: string): number;
-        FindTalentValue(talentName: string, key: string): number
+        FindTalentValue(talentName: string, key?: string): number
     }
 }
 
