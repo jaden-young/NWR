@@ -1,3 +1,4 @@
+#base "abilities/generatedAbilities.kv"
 // main abilities
 #base "heroes/meepo.kv"
 #base "abilities/gaara/gaara.txt"

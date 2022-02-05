@@ -23,3 +23,5 @@ node_modules
 *.vanim_c
 panorama_debugger.cfg
 .vscode/settings.json
+
+generatedAbilities.kv
