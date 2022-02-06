@@ -1,6 +1,7 @@
 import { reloadable } from "./lib/tstl-utils";
 import { modifier_panic } from "./modifiers/modifier_panic";
 import "./extended_api";
+import "./lib/rescale";
 
 
 //Importing lua libraries
@@ -9,7 +10,6 @@ require("components/barebones/settings")
 require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
-// require("components/barebones/rescale")
 
 const heroSelectionTime = 20;
 
@@ -76,6 +76,7 @@ export class GameMode {
             const attacker = EntIndexToHScript(event.entindex_attacker);
             const killed = EntIndexToHScript(event.entindex_killed);
             if (attacker?.IsBaseNPC() && attacker.IsRealHero() && killed?.IsBaseNPC() && killed.IsRealHero()) {
+                attacker.GetUnitLabel()
                 Music.PlayKillSound(attacker, killed);
             }
         }
@@ -93,6 +94,7 @@ export class GameMode {
 
         if (state === GameState.CUSTOM_GAME_SETUP) {
             EmitGlobalSound("CustomMusic.nwr_team_selection");
+            Rescale.RescaleBuildings();
             // Automatically skip setup in tools
             // NO! Enjoy the new song a couple times :)
             // if (IsInToolsMode()) {
@@ -128,14 +130,10 @@ export class GameMode {
     }
 
     private OnNpcSpawned(event: NpcSpawnedEvent) {
-        // After a hero unit spawns, apply modifier_panic for 8 seconds
         const unit = EntIndexToHScript(event.entindex) as CDOTA_BaseNPC; // Cast to npc since this is the 'npc_spawned' event
-        // Give all real heroes (not illusions) the meepo_earthbind_ts_example spell
-        // if (unit.IsRealHero()) {
-        //     if (!unit.HasAbility("meepo_earthbind_ts_example")) {
-        //         // Add lua ability to the unit
-        //         unit.AddAbility("meepo_earthbind_ts_example");
-        //     }
-        // }
+        if (!unit || unit.GetClassname() == "npc_dota_thinker" || unit.IsPhantom()) {
+            return;
+        }
+        Rescale.RescaleUnit(unit);
     }
 }
