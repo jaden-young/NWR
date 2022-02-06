@@ -3,6 +3,7 @@ import { modifier_panic } from "./modifiers/modifier_panic";
 import "./extended_api";
 import "./lib/rescale";
 import "./lib/timers";
+import "./lib/popups";
 
 
 //Importing lua libraries
