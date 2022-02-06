@@ -69,6 +69,7 @@ function hidan_cull_the_weak:GetCooldown(level)
 	-- else
 	-- 	return self.BaseClass.GetCooldown( self, level )
 	-- end
+    print("talent: "..self:GetCaster():FindTalentValue("special_bonus_hidan_5"))
 	return self.BaseClass.GetCooldown( self, level ) - self:GetCaster():FindTalentValue("special_bonus_hidan_5")
 end
 

@@ -1,12 +1,15 @@
 import { reloadable } from "./lib/tstl-utils";
 import { modifier_panic } from "./modifiers/modifier_panic";
-import "./extended_api";
+require("/lib/server_extensions");
 
+if (IsClient()) {
+    print("GameMode init on client")
+}
 
 //Importing lua libraries
 require("components/garbage_collector")
 require("components/barebones/settings")
-require('components/vanilla_extension')
+// require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
 // require("components/barebones/rescale")

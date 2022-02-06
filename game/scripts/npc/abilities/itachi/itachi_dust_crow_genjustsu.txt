@@ -8,6 +8,7 @@
 		"ScriptFile"				"abilities/heroes/itachi/dust_crow_genjutsu"
 		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityTextureName"		"itachi_dust_crow_genjustsu"
+        "AbilityCastRange" "700 800 900 1000"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------

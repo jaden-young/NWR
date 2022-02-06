@@ -2,24 +2,25 @@ import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "..
 
 @registerAbility()
 class itachi_ephemeral extends BaseAbility {
+
+    BaseProperties: AbilityBaseProperties = {
+        Behavior: [AbilityBehavior.AOE, AbilityBehavior.POINT, AbilityBehavior.ROOT_DISABLES, AbilityBehavior.IMMEDIATE],
+        ManaCost: 90,
+        // Cooldown: [21, 18, 15, 12], // sync with special
+        CastRange: [675, 750, 825, 900] // sync with special
+    };
+
     SpecialValues: AbilitySpecials = {
         cooldown: {
-            value: [12, 11, 10, 9],
-            LinkedSpecialBonus: "special_bonus_itachi_1"
+            value: [21, 18, 15, 12],
+            LinkedSpecialBonus: "special_bonus_itachi_1",
         },
         silence_duration: {
             value: [1.5, 2.0, 2.5, 3.0],
-            LinkedSpecialBonus: "special_bonus_itachi_4"
+            LinkedSpecialBonus: "special_bonus_itachi_4",
         },
         cast_range: [675, 750, 825, 900],
         silence_radius: 300,
-        mana_cost: 90,
-    };
-    BaseProperties: AbilityBaseProperties = {
-        Behavior: [AbilityBehavior.AOE, AbilityBehavior.ROOT_DISABLES, AbilityBehavior.DONT_RESUME_MOVEMENT],
-        ManaCost: "mana_cost",
-        Cooldown: "cooldown",
-        CastRange: "cast_range",
     };
 
     Precache(context: CScriptPrecacheContext): void {
@@ -28,14 +29,22 @@ class itachi_ephemeral extends BaseAbility {
     }
 
     GetCooldown(level: number): number {
-        let cooldown = this.GetLevelSpecialValueFor("cooldown", level - 1);
-        if (IsServer()) {
-            const talent = this.GetCaster().FindTalentValue("itachi_special_bonus_1", "value");
-            // assume negative value
-            cooldown += talent;
-        }
+        let cooldown = this.GetLevelSpecialValueFor("cooldown", level);
+        print("cooldown")
+        print(cooldown)
+        print("getting talent value")
+        const talent = this.GetCaster().FindTalentValue("itachi_special_bonus_1", "value");
+        // assume negative value
+        print("talent");
+        print(talent);
+        cooldown += talent;
         return cooldown;
     }
+    //
+
+    // GetManaCost(level: number): number {
+    //     return 90;
+    // }
 
     ProcsMagicStick(): boolean {
         return true;
@@ -82,6 +91,17 @@ class itachi_ephemeral extends BaseAbility {
                 { duration }
             );
         }
-    }
 
+        // Workaround incompatibility of BEHAVIOR_DONT_RESUME_MOVEMENT and BEHAVIOR_IMMEDIATE
+        // We're going for behavior similar to antimage blink, though faster/no animation:
+        // 1. If you click beyond cast range, you immediately blink to cast range
+        // 2. When you land, all actions are cancelled, you don't start hitting
+        //    anything, you don't start moving to your previous move command
+        // BEHAVIOR_DONT_RESUME_MOVEMENT accomplishes (2), but
+        // BEHAVIOR_IMMEDIATE is necessary to achieve (1), and including
+        // BEHAVIOR_IMMEDIATE seems to mean that BEHAVIOR_DONT_RESUME_MOVEMENT
+        // gets ignored.
+        caster.Hold();
+        caster.FaceTowards((point + direction.Normalized() * Vector(100, 100, 0)) as Vector);
+    }
 }
