@@ -6,6 +6,7 @@ import "./extended_api";
 //Importing lua libraries
 require("components/garbage_collector")
 require("components/barebones/settings")
+require("components/barebones/music")
 require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
@@ -67,6 +68,7 @@ export class GameMode {
 
     public OnStateChange(): void {
         const state = GameRules.State_Get();
+        Music.PlayGameMusic(state);
 
         // Add 4 bots to lobby in tools
         // if (IsInToolsMode() && state == GameState.CUSTOM_GAME_SETUP) {
