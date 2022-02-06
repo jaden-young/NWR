@@ -7,7 +7,6 @@ import "./lib/timers";
 
 //Importing lua libraries
 require("components/garbage_collector")
-require("components/barebones/settings")
 require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
@@ -22,6 +21,8 @@ declare global {
 
 @reloadable
 export class GameMode {
+    Game: CDOTABaseGameMode = GameRules.GetGameModeEntity();
+
     public static Precache(this: void, context: CScriptPrecacheContext) {
         PrecacheResource("particle", "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf", context);
         PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts", context);
@@ -64,12 +65,87 @@ export class GameMode {
     }
 
     RegisterGameRules() {
-        // TODO: settings.lua
+        this.Game.SetRecommendedItemsDisabled(false);
+        this.Game.SetCameraDistanceOverride(1134.0);
+        this.Game.SetCustomBuybackCostEnabled(false);
+        this.Game.SetCustomBuybackCooldownEnabled(false);
+        this.Game.SetBuybackEnabled(true);
+        this.Game.SetTopBarTeamValuesOverride(true);
+        this.Game.SetTopBarTeamValuesVisible(true);
+        this.Game.SetUseCustomHeroLevels(false);
+        this.Game.SetCustomHeroMaxLevel(25);
+
+        this.Game.SetBotThinkingEnabled(false);
+        this.Game.SetTowerBackdoorProtectionEnabled(true);
+        this.Game.SetFogOfWarDisabled(false);
+        this.Game.SetGoldSoundDisabled(false);
+        this.Game.SetRemoveIllusionsOnDeath(false);
+        this.Game.SetAlwaysShowPlayerInventory(false);
+        this.Game.SetAnnouncerDisabled(false);
+
+        // -1 = default
+        this.Game.SetFixedRespawnTime(-1);
+        this.Game.SetFountainConstantManaRegen(-1);
+        this.Game.SetFountainPercentageHealthRegen(-1);
+        this.Game.SetFountainPercentageManaRegen(-1);
+
+        this.Game.SetLoseGoldOnDeath(true);
+        this.Game.SetMaximumAttackSpeed(600);
+        this.Game.SetMinimumAttackSpeed(20);
+        this.Game.SetStashPurchasingDisabled(false);
+
+        this.Game.SetRuneEnabled(RuneType.DOUBLEDAMAGE, true);
+        this.Game.SetRuneEnabled(RuneType.HASTE, true);
+        this.Game.SetRuneEnabled(RuneType.ILLUSION, true);
+        this.Game.SetRuneEnabled(RuneType.INVISIBILITY, true);
+        this.Game.SetRuneEnabled(RuneType.REGENERATION, true);
+        this.Game.SetRuneEnabled(RuneType.BOUNTY, true);
+        // TODO: other rune types?
+
+        this.Game.SetFreeCourierModeEnabled(true);
+
+        GameRules.SetHeroRespawnEnabled(true);
+        GameRules.SetUseUniversalShopMode(false);
+        GameRules.SetSameHeroSelectionEnabled(false);
+        GameRules.SetHeroSelectionTime(heroSelectionTime);
+
+        GameRules.SetPreGameTime(90);
+        GameRules.SetPostGameTime(60);
+        GameRules.SetTreeRegrowTime(60);
+
+        GameRules.SetUseCustomHeroXPValues(false);
+        GameRules.SetGoldPerTick(1);
+        GameRules.SetGoldTickTime(0.6);
+
+        GameRules.SetUseBaseGoldBountyOnHeroes(false);
+        GameRules.SetHeroMinimapIconScale(1);
+        GameRules.SetCreepMinimapIconScale(1);
+        GameRules.SetRuneMinimapIconScale(1);
+        GameRules.SetShowcaseTime(0);
+
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 5);
 
         GameRules.SetShowcaseTime(0);
-        GameRules.SetHeroSelectionTime(heroSelectionTime);
+
+        GameRules.SetFirstBloodActive(true);
+        GameRules.SetHideKillMessageHeaders(false);
+
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
+        GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 5);
+
+        SetTeamCustomHealthbarColor(DotaTeam.GOODGUYS, 101, 212, 19);
+        SetTeamCustomHealthbarColor(DotaTeam.BADGUYS, 243, 201, 9);
+
+        if (GetMapName() == "turbo") {
+            GameRules.SetStartingGold(600);
+            GameRules.SetPreGameTime(40);
+            GameRules.SetUseUniversalShopMode(true);
+            this.Game.SetFixedRespawnTime(30);
+            this.Game.SetFountainConstantManaRegen(60);
+            this.Game.SetFountainPercentageHealthRegen(7);
+            this.Game.SetFountainPercentageManaRegen(5);
+        }
     }
 
     OnEntityKilled(event: EntityKilledEvent) {
@@ -116,6 +192,7 @@ export class GameMode {
             Timers.CreateTimer(0.2, () => this.StartGame());
         }
     }
+
 
     private StartGame(): void {
         print("Game starting!");
