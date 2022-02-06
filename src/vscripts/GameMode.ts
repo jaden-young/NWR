@@ -6,7 +6,6 @@ import "./extended_api";
 //Importing lua libraries
 require("components/garbage_collector")
 require("components/barebones/settings")
-require("components/barebones/music")
 require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
@@ -25,6 +24,8 @@ export class GameMode {
     public static Precache(this: void, context: CScriptPrecacheContext) {
         PrecacheResource("particle", "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf", context);
         PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/music/nwr_team_selection.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/music/nwr_hero_selection.vsndevts", context);
     }
 
     public static Activate(this: void) {
@@ -68,7 +69,6 @@ export class GameMode {
 
     public OnStateChange(): void {
         const state = GameRules.State_Get();
-        Music.PlayGameMusic(state);
 
         // Add 4 bots to lobby in tools
         // if (IsInToolsMode() && state == GameState.CUSTOM_GAME_SETUP) {
@@ -78,16 +78,24 @@ export class GameMode {
         // }
 
         if (state === GameState.CUSTOM_GAME_SETUP) {
+            EmitGlobalSound("CustomMusic.nwr_team_selection");
             // Automatically skip setup in tools
-            if (IsInToolsMode()) {
-                Timers.CreateTimer(3, () => {
-                    GameRules.FinishCustomGameSetup();
-                });
-            }
+            // NO! Enjoy the new song a couple times :)
+            // if (IsInToolsMode()) {
+            //     Timers.CreateTimer(3, () => {
+            //         GameRules.FinishCustomGameSetup();
+            //     });
+            // }
+        }
+
+        if (state == GameState.HERO_SELECTION) {
+            StopGlobalSound("CustomMusic.nwr_team_selection");
+            EmitGlobalSound("CustomMusic.nwr_hero_selection");
         }
 
         // Start game once pregame hits
         if (state === GameState.PRE_GAME) {
+            StopGlobalSound("CustomMusic.nwr_hero_selection");
             Timers.CreateTimer(0.2, () => this.StartGame());
         }
     }
@@ -116,5 +124,4 @@ export class GameMode {
         //     }
         // }
     }
-    
 }
