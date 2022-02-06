@@ -35,10 +35,17 @@ export class GameMode {
 
     constructor() {
         this.configure();
+    }
 
-        // Register event listeners for dota engine events
+    configure() {
+        this.RegisterEvents();
+        this.RegisterGameRules();
+    }
+
+    RegisterEvents() {
         ListenToGameEvent("game_rules_state_change", () => this.OnStateChange(), undefined);
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
+        ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
 
         // Register event listeners for events from the UI
         CustomGameEventManager.RegisterListener("ui_panel_closed", (_, data) => {
@@ -52,19 +59,26 @@ export class GameMode {
                 myString: "Hello!",
                 myArrayOfNumbers: [1.414, 2.718, 3.142]
             });
-
-            // Also apply the panic modifier to the sending player's hero
-            const hero = player.GetAssignedHero();
-            // hero.AddNewModifier(hero, undefined, modifier_panic.name, { duration: 5 });
         });
     }
 
-    private configure(): void {
+    RegisterGameRules() {
+        // TODO: settings.lua
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 5);
 
         GameRules.SetShowcaseTime(0);
         GameRules.SetHeroSelectionTime(heroSelectionTime);
+    }
+
+    OnEntityKilled(event: EntityKilledEvent) {
+        if (event.entindex_attacker && event.entindex_killed) {
+            const attacker = EntIndexToHScript(event.entindex_attacker);
+            const killed = EntIndexToHScript(event.entindex_killed);
+            if (attacker?.IsBaseNPC() && attacker.IsRealHero() && killed?.IsBaseNPC() && killed.IsRealHero()) {
+                Music.PlayKillSound(attacker, killed);
+            }
+        }
     }
 
     public OnStateChange(): void {
