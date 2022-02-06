@@ -153,8 +153,7 @@ export class GameMode {
             const attacker = EntIndexToHScript(event.entindex_attacker);
             const killed = EntIndexToHScript(event.entindex_killed);
             if (attacker?.IsBaseNPC() && attacker.IsRealHero() && killed?.IsBaseNPC() && killed.IsRealHero()) {
-                attacker.GetUnitLabel()
-                Music.PlayKillSound(attacker, killed);
+                // TODO: play kill sound for attacker killing killed
             }
         }
     }
