@@ -4,11 +4,12 @@ import "./extended_api";
 import "./lib/rescale";
 import "./lib/timers";
 import "./lib/popups";
-
+import "./lib/keyvalues";
+import "./lib/vanilla_extension"
+import { ShortHeroName } from "./lib/util";
 
 //Importing lua libraries
 require("components/garbage_collector")
-require('components/vanilla_extension')
 // TODO: Fix barebones editing gamemode object 
 // require("components/barebones/events")
 
@@ -23,12 +24,17 @@ declare global {
 @reloadable
 export class GameMode {
     Game: CDOTABaseGameMode = GameRules.GetGameModeEntity();
+    /**
+     * Set of heroes that have spawned in the game at least once.
+     */
+    spawned_heros: Set<string> = new Set();
 
     public static Precache(this: void, context: CScriptPrecacheContext) {
         PrecacheResource("particle", "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf", context);
         PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/music/nwr_team_selection.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/music/nwr_hero_selection.vsndevts", context);
+        LinkLuaModifier("modifier_custom_mechanics", "modifiers/modifier_custom_mechanics", LuaModifierMotionType.NONE);
     }
 
     public static Activate(this: void) {
@@ -49,6 +55,7 @@ export class GameMode {
         ListenToGameEvent("game_rules_state_change", () => this.OnStateChange(), undefined);
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
         ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
+        ListenToGameEvent("dota_player_learned_ability", event => this.OnPlayerLearnedAbility(event), undefined);
 
         // Register event listeners for events from the UI
         CustomGameEventManager.RegisterListener("ui_panel_closed", (_, data) => {
@@ -213,5 +220,24 @@ export class GameMode {
             return;
         }
         Rescale.RescaleUnit(unit);
+        // wire up barebones talents
+        if (unit.IsRealHero()) {
+            const shortName = ShortHeroName(unit.GetUnitName());
+            if (!this.spawned_heros.has(shortName)) {
+                this.spawned_heros.add(shortName);
+                unit.AddNewModifier(unit, undefined, "modifier_custom_mechanics", undefined);
+                CreateEmptyTalents(shortName);
+            }
+        }
+    }
+
+    OnPlayerLearnedAbility(event: DotaPlayerLearnedAbilityEvent) {
+        // necessary for barebones talent logic
+        if (event.abilityname.includes("special_bonus_")) {
+            const player = EntIndexToHScript(event.player as EntityIndex) as CDOTAPlayer;
+            const hero = player.GetAssignedHero();
+            const modifierName = `modifier_${event.abilityname}`;
+            hero.AddNewModifier(hero, undefined, modifierName, undefined);
+        }
     }
 }
