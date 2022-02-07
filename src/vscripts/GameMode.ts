@@ -220,14 +220,15 @@ export class GameMode {
             return;
         }
         Rescale.RescaleUnit(unit);
-        // wire up barebones talents
         if (unit.IsRealHero()) {
+            // wire up barebones talents
             const shortName = ShortHeroName(unit.GetUnitName());
             if (!this.spawned_heros.has(shortName)) {
                 this.spawned_heros.add(shortName);
                 unit.AddNewModifier(unit, undefined, "modifier_custom_mechanics", undefined);
                 CreateEmptyTalents(shortName);
             }
+            CustomGameEventManager.Send_ServerToAllClients("override_hero_image", {});
         }
     }
 

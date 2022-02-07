@@ -1,5 +1,5 @@
 //@ts-nocheck
-var Parent = $.GetContextPanel().GetParent().GetParent().GetParent();
+var Parent: Panel = $.GetContextPanel()!.GetParent()!.GetParent()!.GetParent()!;
 
 function SetCustomHUD() {
 	HideAghs();
@@ -10,17 +10,36 @@ function SetCustomHUD() {
 	SetPortraitBackground();
 }
 
-const OnOverrideHeroImage = ({player_id}: NetworkedData<OverrideHeroImageEvent>) =>
-	OverrideTopBarHeroImage(player_id)
+// One would think that you'd be able to call SetImage on a HeroImage panel,
+// but there's some weird timing/races. It works after things are totally
+// loaded in, but I haven't been able to find a good signal for that, and
+// waiting some number of seconds feels fragile. Instead, just add a new panel
+// on top with an image that will definitely be there.
+function OverrideImage(hParent, sHeroName) {
+	var newheroimage = $.CreatePanel('Panel', hParent, '');
+	newheroimage.style.width = "100%";
+	newheroimage.style.height = "100%";
+	newheroimage.style.backgroundImage = 'url("file://{images}/custom_game/heroes/topbar/' + sHeroName + '.png")';
+	newheroimage.style.backgroundSize = "cover";
+}
 
-function OverrideTopBarHeroImage(playerId: PlayerID) {
-	const team = Players.GetTeam(playerId) == 3 ?
-		"Dire" :
-		"Radiant";
-	const heroName = Players.GetPlayerSelectedHero(playerId);
-	const topBarPlayer = Parent?.FindChildTraverse(`${team}Player${playerId}`);
-	const heroImage = topBarPlayer?.FindChildTraverse("HeroImage") as HeroImage;
-	heroImage?.SetImage(`file://{images}/custom_game/heroes/topbar/${heroName}.png`);
+function OverrideTopBarHeroImages() {
+	for (let i = 0; i < 10; i++) {
+		const playerInfo = Game.GetPlayerInfo(i);
+		if (playerInfo) {
+			let container = Parent.FindChildTraverse("RadiantPlayer" + i);
+			if (container) {
+				let heroImage = container.FindChildTraverse("HeroImage") as HeroImage | undefined;
+				OverrideImage(heroImage, playerInfo.player_selected_hero);
+			} else {
+				container = Parent.FindChildTraverse("DirePlayer" + i);
+				if (container) {
+					let heroImage = container.FindChildTraverse("HeroImage") as HeroImage | undefined;
+					OverrideImage(heroImage, playerInfo.player_selected_hero);
+				}
+			}
+		}
+	}
 }
 
 function SetTopBarBackground() {
@@ -111,8 +130,7 @@ function HideAghs() {
 }
 
 (function() {
-	// TODO: wire this up on the server side
-	GameEvents.Subscribe("override_hero_image", OverrideTopBarHeroImage);
-
+	GameEvents.Subscribe("override_hero_images", OverrideTopBarHeroImages);
+    OverrideTopBarHeroImages();
 	SetCustomHUD();
 })();
