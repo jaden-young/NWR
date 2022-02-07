@@ -99,6 +99,7 @@ function SetPortraitBackground() {
 	container2.style.backgroundPosition = "63% -9%";
 	container2.style.backgroundRepeat = "no-repeat";
 	container2.style.zIndex = "6";
+    container2.style.visibility = "visible";
 
 	container3.style.boxShadow = "none";
 
