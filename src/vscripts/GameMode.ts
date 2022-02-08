@@ -14,13 +14,15 @@ import "./lib/adv_log";
 import "./lib/better_cooldown";
 import "./components/barebones/physics";
 import "./components/barebones/util";
+import "./components/voicelines/voicelines";
 // include to print all event data in console, also uncomment in RegisterGameEvents
 // import "./components/barebones/eventtest";
 
 //Importing lua libraries
-require("components/garbage_collector")
-// TODO: Fix barebones editing gamemode object 
+require("components/garbage_collector");
+// TODO: Fix barebones editing gamemode object
 // require("components/barebones/events")
+require("modifiers/modifier_responses");
 
 const heroSelectionTime = 20;
 
@@ -39,10 +41,46 @@ export class GameMode {
     spawned_heros: Set<string> = new Set();
 
     public static Precache(this: void, context: CScriptPrecacheContext) {
-        PrecacheResource("particle", "particles/units/heroes/hero_meepo/meepo_earthbind_projectile_fx.vpcf", context);
-        PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_meepo.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/music/nwr_team_selection.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/music/nwr_hero_selection.vsndevts", context);
+
+        PrecacheResource("soundfile", "soundevents/heroes/kakashi_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/haku_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/hidan_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/zabuza_soundevents.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/heroes/madara_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/kisame_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/gaara_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/yondaime_soundevents.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/heroes/naruto_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/neji_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/guy_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/onoki_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/raikage_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/sakura_soundevents.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/heroes/sasuke_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/shikamaru_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/temari_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/anko_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/itachi_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/global/akat_start.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/global/shinobi_start.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/global/malulubul.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/clones/clone_pop.vsndevts", context)
+
+        // PrecacheResource("soundfile", "soundevents/itachi_crows.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/itachi_amateratsu.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/itachi_amateratsu_burning.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/naruto_rasen_shuriken.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/naruto_kills_sasuke.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/sasuke_kills_naruto.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/sasuke_kills_gaara.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/sasuke_kills_itachi.vsndevts", context)
+        // PrecacheResource("soundfile", "soundevents/madara_trees.vsndevts", context)
+
+        // This call probably belongs somewhere else, but this is where the old
+        // repo had it so it was ported directly. Feel free to move/remove it
+        // after testing.
         LinkLuaModifier("modifier_custom_mechanics", "modifiers/modifier_custom_mechanics", LuaModifierMotionType.NONE);
     }
 
@@ -63,7 +101,6 @@ export class GameMode {
     RegisterEvents() {
         ListenToGameEvent("game_rules_state_change", () => this.OnStateChange(), undefined);
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
-        ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
         ListenToGameEvent("dota_player_learned_ability", event => this.OnPlayerLearnedAbility(event), undefined);
 
         // Uncomment to print all event data
@@ -168,16 +205,6 @@ export class GameMode {
         }
     }
 
-    OnEntityKilled(event: EntityKilledEvent) {
-        if (event.entindex_attacker && event.entindex_killed) {
-            const attacker = EntIndexToHScript(event.entindex_attacker);
-            const killed = EntIndexToHScript(event.entindex_killed);
-            if (attacker?.IsBaseNPC() && attacker.IsRealHero() && killed?.IsBaseNPC() && killed.IsRealHero()) {
-                // TODO: play kill sound for attacker killing killed
-            }
-        }
-    }
-
     public OnStateChange(): void {
         const state = GameRules.State_Get();
 
@@ -189,6 +216,7 @@ export class GameMode {
         // }
 
         if (state === GameState.CUSTOM_GAME_SETUP) {
+            VoiceResponses.Start();
             EmitGlobalSound("CustomMusic.nwr_team_selection");
             Rescale.RescaleBuildings();
             // Automatically skip setup in tools
@@ -233,15 +261,34 @@ export class GameMode {
         }
         Rescale.RescaleUnit(unit);
         if (unit.IsRealHero()) {
-            // wire up barebones talents
             const shortName = ShortHeroName(unit.GetUnitName());
             if (!this.spawned_heros.has(shortName)) {
+                this.OnHeroInGame(unit);
                 this.spawned_heros.add(shortName);
-                unit.AddNewModifier(unit, undefined, "modifier_custom_mechanics", undefined);
-                CreateEmptyTalents(shortName);
             }
-            CustomGameEventManager.Send_ServerToAllClients("override_hero_image", {});
         }
+    }
+
+    /**
+     * Call only once when a hero first enters the game, and don't call again.
+     */
+    OnHeroInGame(hero: CDOTA_BaseNPC_Hero) {
+        const playerId = hero.GetPlayerOwnerID();
+        const longName = hero.GetUnitName();
+        const shortName = ShortHeroName(longName);
+        const configFile = `scripts/vscripts/components/voicelines/keyvalues/${ShortHeroName(longName)}_responses.txt`;
+
+        hero.AddNewModifier(hero, undefined, "modifier_custom_mechanics", undefined);
+        VoiceResponses.RegisterUnit(longName, configFile);
+        CreateEmptyTalents(shortName);
+        if (hero.GetTeamNumber() == 2) {
+            print("shinobi start")
+            EmitSoundOnEntityForPlayer("shinobi_start", hero, playerId);
+        } else {
+            print("akat start")
+            EmitSoundOnEntityForPlayer("akat_start", hero, playerId);
+        }
+        CustomGameEventManager.Send_ServerToAllClients("override_hero_image", {});
     }
 
     OnPlayerLearnedAbility(event: DotaPlayerLearnedAbilityEvent) {
