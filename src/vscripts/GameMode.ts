@@ -102,6 +102,7 @@ export class GameMode {
         ListenToGameEvent("game_rules_state_change", () => this.OnStateChange(), undefined);
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
         ListenToGameEvent("dota_player_learned_ability", event => this.OnPlayerLearnedAbility(event), undefined);
+        ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
 
         // Uncomment to print all event data
         // EventTest.StartEventTest();
@@ -182,8 +183,6 @@ export class GameMode {
 
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.GOODGUYS, 5);
         GameRules.SetCustomGameTeamMaxPlayers(DotaTeam.BADGUYS, 5);
-
-        GameRules.SetShowcaseTime(0);
 
         GameRules.SetFirstBloodActive(true);
         GameRules.SetHideKillMessageHeaders(false);
@@ -298,6 +297,13 @@ export class GameMode {
             const hero = player.GetAssignedHero();
             const modifierName = `modifier_${event.abilityname}`;
             hero.AddNewModifier(hero, undefined, modifierName, undefined);
+        }
+    }
+
+    OnEntityKilled(event: EntityKilledEvent): void {
+        if (this.Game.GetTopBarTeamValuesOverride()) {
+            GameRules.GetGameModeEntity().SetTopBarTeamValue(DotaTeam.BADGUYS, GetTeamHeroKills(DotaTeam.BADGUYS));
+            GameRules.GetGameModeEntity().SetTopBarTeamValue(DotaTeam.GOODGUYS, GetTeamHeroKills(DotaTeam.GOODGUYS));
         }
     }
 }
