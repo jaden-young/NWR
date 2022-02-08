@@ -12,6 +12,9 @@ import { ShortHeroName } from "./lib/util";
 import "./modifiers/modifier_generic_custom_indicator";
 import "./lib/adv_log";
 import "./lib/better_cooldown";
+import "./components/barebones/util";
+// include to print all event data in console, also uncomment in RegisterGameEvents
+// import "./components/barebones/eventtest";
 
 //Importing lua libraries
 require("components/garbage_collector")
@@ -61,6 +64,9 @@ export class GameMode {
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
         ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
         ListenToGameEvent("dota_player_learned_ability", event => this.OnPlayerLearnedAbility(event), undefined);
+
+        // Uncomment to print all event data
+        // EventTest.StartEventTest();
 
         // Register event listeners for events from the UI
         CustomGameEventManager.RegisterListener("ui_panel_closed", (_, data) => {
