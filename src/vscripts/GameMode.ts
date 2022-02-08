@@ -10,6 +10,7 @@ import { ShortHeroName } from "./lib/util";
 
 // imports that are only here to get lua libs into game/
 import "./modifiers/modifier_generic_custom_indicator";
+import "./lib/adv_log";
 
 //Importing lua libraries
 require("components/garbage_collector")
