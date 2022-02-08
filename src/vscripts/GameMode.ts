@@ -8,6 +8,9 @@ import "./lib/keyvalues";
 import "./lib/vanilla_extension"
 import { ShortHeroName } from "./lib/util";
 
+// imports that are only here to get lua libs into game/
+import "./modifiers/modifier_generic_custom_indicator";
+
 //Importing lua libraries
 require("components/garbage_collector")
 // TODO: Fix barebones editing gamemode object 
