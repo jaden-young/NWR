@@ -12,6 +12,7 @@ import { ShortHeroName } from "./lib/util";
 import "./modifiers/modifier_generic_custom_indicator";
 import "./lib/adv_log";
 import "./lib/better_cooldown";
+import "./components/barebones/physics";
 import "./components/barebones/util";
 // include to print all event data in console, also uncomment in RegisterGameEvents
 // import "./components/barebones/eventtest";
