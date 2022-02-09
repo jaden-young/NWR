@@ -58,7 +58,7 @@ end
 
 -- 
 function modifier_courier_speed:GetModifierMoveSpeedBonus_Percentage()
-    return COURIER_SPEED_BONUS
+    return 640
 end
 
 --

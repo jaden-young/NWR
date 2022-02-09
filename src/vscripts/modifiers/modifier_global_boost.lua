@@ -42,10 +42,10 @@ end
 
 
 function modifier_global_boost:GetModifierPercentageExpRateBoost()
-    return GLOBAL_EXP_RATE_BONUS
+    return 120.0
 end
 
 --
 function modifier_global_boost:GetModifierPercentageRespawnTime()
-    return GLOBAL_RESPAWN_TIME_PERCENTAGE
+    return -50
 end
