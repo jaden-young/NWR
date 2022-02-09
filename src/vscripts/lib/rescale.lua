@@ -91,3 +91,18 @@ function Rescale:RescaleBuildings()
 	-- local statue_1 = Entities:FindByModel(statue_1, "models/buildings/amegakuretower/akat_tower1.vmdl")
 	-- statue_1:SetModelScale(1.5)
 end
+
+function Rescale:RescaleShops()
+	local shopkeeper_radiant = Entities:FindByModel(nil, "models/heroes/shopkeeper/shopkeeper.vmdl")
+
+	if shopkeeper_radiant then
+		shopkeeper_radiant:SetModelScale(2.4)
+	end
+
+	local shopkeeper_dire = Entities:FindByModel(nil, "models/heroes/shopkeeper_dire/shopkeeper_dire.vmdl")
+
+	if shopkeeper_dire then
+		shopkeeper_dire:SetModelScale(2.4)
+	end
+
+end

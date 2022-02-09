@@ -16,6 +16,7 @@ interface CustomGameEventDeclarations {
     example_event: ExampleEventData,
     ui_panel_closed: UIPanelClosedEventData
     override_hero_image: {}
+    set_strategy_time_hero_model: { hero_name : string }
 }
 
 // Define the type of data sent by the example_event event

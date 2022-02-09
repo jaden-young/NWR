@@ -235,6 +235,21 @@ export class GameMode {
             EmitGlobalSound("CustomMusic.nwr_hero_selection");
         }
 
+        if(state == GameState.STRATEGY_TIME) {
+            Rescale.RescaleShops();
+            for (let i = 0; i < PlayerResource.GetPlayerCount(); i++) {
+                if (PlayerResource.IsValidPlayer(i)) {
+                    const player = PlayerResource.GetPlayer(i);
+                    if (player == undefined) return;
+                    if (!PlayerResource.HasSelectedHero(i)) {
+                        player.MakeRandomHeroSelection();
+                    }
+                    const hero_name = PlayerResource.GetSelectedHeroName(i);
+                    CustomGameEventManager.Send_ServerToPlayer(player, "set_strategy_time_hero_model", { hero_name });
+                }
+            }
+        }
+
         // Start game once pregame hits
         if (state === GameState.PRE_GAME) {
             StopGlobalSound("CustomMusic.nwr_hero_selection");
@@ -338,6 +353,16 @@ export class GameMode {
                 courier?.SetModelScale(1.2);
                 return undefined;
             })
+        }
+    }
+
+    OnDotaItemCombined(event: DotaItemCombinedEvent): void {
+        if (event.itemname == "item_chakra_armor") {
+            const player = PlayerResource.GetPlayer(event.PlayerID);
+            const hero = player?.GetAssignedHero();
+            if (hero != undefined) {
+                ChakraArmorOnItemPickedUp(hero, event.itemname);
+            }
         }
     }
 }

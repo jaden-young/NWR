@@ -138,7 +138,7 @@ function SetStrategyHeroModel(data) {
 	HeroModel.style.height = "100%";
 	const HeroPanel = $.CreatePanelWithProperties("DOTAScenePanel", HeroModel, "HeroPanel", {
 		particleonly: false,
-		unit: data.sHeroName
+		unit: data.hero_name,
 	});
 	HeroPanel.style.height = "100%";
 	HeroPanel.style.width = "100%";
@@ -171,7 +171,7 @@ function Init() {
 	GameEvents.Subscribe( "update_hero_selection_topbar", UpdateTopBar );
 	GameEvents.Subscribe( "dota_player_hero_selection_dirty", OnUpdateHeroSelection );
 //	GameEvents.Subscribe( "dota_player_update_hero_selection", OnUpdateHeroSelection );
-	// TODO: wire this up on the server side
+    // TODO: look into ScenePanel.SpawnHeroInScenePanel* methods to get this working
 	GameEvents.Subscribe( "set_strategy_time_hero_model", SetStrategyHeroModel );
 
 	SetSelectionImages();
