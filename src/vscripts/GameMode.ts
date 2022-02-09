@@ -1,6 +1,7 @@
 import { reloadable } from "./lib/tstl-utils";
 import { modifier_panic } from "./modifiers/modifier_panic";
 import "./extended_api";
+import "./items";
 import "./lib/rescale";
 import "./lib/timers";
 import "./lib/popups";
@@ -103,6 +104,7 @@ export class GameMode {
         ListenToGameEvent("npc_spawned", event => this.OnNpcSpawned(event), undefined);
         ListenToGameEvent("dota_player_learned_ability", event => this.OnPlayerLearnedAbility(event), undefined);
         ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
+        ListenToGameEvent("dota_item_purchased", event => this.OnDotaItemPurchased(event), undefined);
 
         // Uncomment to print all event data
         // EventTest.StartEventTest();
@@ -304,6 +306,37 @@ export class GameMode {
         if (this.Game.GetTopBarTeamValuesOverride()) {
             GameRules.GetGameModeEntity().SetTopBarTeamValue(DotaTeam.BADGUYS, GetTeamHeroKills(DotaTeam.BADGUYS));
             GameRules.GetGameModeEntity().SetTopBarTeamValue(DotaTeam.GOODGUYS, GetTeamHeroKills(DotaTeam.GOODGUYS));
+        }
+        const killer = EntIndexToHScript(event.entindex_attacker);
+        const killed = EntIndexToHScript(event.entindex_killed);
+        if (killer != undefined && killed != undefined) {
+            SupportItemCooldownReset(killed, killer);
+        }
+    }
+
+    OnDotaItemPurchased(event: DotaItemPurchasedEvent): void {
+        if (event.itemname == "item_forehead_protector") {
+            const player = PlayerResource.GetPlayer(event.PlayerID);
+            const hero = player?.GetAssignedHero();
+            if (hero != undefined) {
+                ForeheadProtectorOnItemPickedUp(hero, event.itemname);
+            }
+        }
+
+        if (event.itemname == "item_flying_courier") {
+            Timers.CreateTimer(0.5, () => {
+                const courier = Entities.FindByModel(undefined, "models/props_gameplay/donkey_wings.vmdl") as CDOTA_Unit_Courier | undefined;
+                courier?.SetModelScale(1.2);
+                return undefined;
+            })
+        }
+
+        if (event.itemname == "courier_radiant_flying") {
+            Timers.CreateTimer(0.5, () => {
+                const courier = Entities.FindByModel(undefined, "models/props_gameplay/donkey_dire.vmdl") as CDOTA_Unit_Courier | undefined;
+                courier?.SetModelScale(1.2);
+                return undefined;
+            })
         }
     }
 }
