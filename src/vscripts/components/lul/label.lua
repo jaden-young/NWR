@@ -1,4 +1,4 @@
-function GameMode:setPlayerHealthLabel( player )
+function SetPlayerHealthLabel( player )
 	if PlayerResource:IsValidPlayerID(player:GetPlayerID()) then
 		if not PlayerResource:IsBroadcaster(player:GetPlayerID()) and PlayerResource:GetPlayer(player:GetPlayerID()) and PlayerResource:GetPlayer(player:GetPlayerID()).GetAssignedHero and PlayerResource:GetPlayer(player:GetPlayerID()):GetAssignedHero() then
 			local player_hero = PlayerResource:GetPlayer(player:GetPlayerID()):GetAssignedHero()
@@ -62,7 +62,7 @@ function GameMode:setPlayerHealthLabel( player )
 			if PlayerResource:GetSteamAccountID(player:GetPlayerID()) == 240969051 then
 				player_hero:SetCustomHealthLabel("Project Member",  30, 144, 255)
 			end
-		
+
 			--kuru
 			if PlayerResource:GetSteamAccountID(player:GetPlayerID()) == 253439703 then
 				player_hero:SetCustomHealthLabel("Mother of NWR",  250, 0, 142)

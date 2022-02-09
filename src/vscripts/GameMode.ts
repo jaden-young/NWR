@@ -106,6 +106,7 @@ export class GameMode {
         ListenToGameEvent("dota_player_learned_ability", event => this.OnPlayerLearnedAbility(event), undefined);
         ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
         ListenToGameEvent("dota_item_purchased", event => this.OnDotaItemPurchased(event), undefined);
+        ListenToGameEvent("dota_player_pick_hero", event => this.OnPlayerPickHero(event), undefined);
 
         // Uncomment to print all event data
         // EventTest.StartEventTest();
