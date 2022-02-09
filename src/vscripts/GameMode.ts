@@ -8,6 +8,7 @@ import "./lib/popups";
 import "./lib/keyvalues";
 import "./lib/vanilla_extension"
 import { ShortHeroName } from "./lib/util";
+import "./components/lul/label";
 
 // imports that are only here to get lua libs into game/
 import "./modifiers/modifier_generic_custom_indicator";
@@ -16,6 +17,7 @@ import "./lib/better_cooldown";
 import "./components/barebones/physics";
 import "./components/barebones/util";
 import "./components/voicelines/voicelines";
+import { malulubul } from "./components/lul/malulubul";
 // include to print all event data in console, also uncomment in RegisterGameEvents
 // import "./components/barebones/eventtest";
 
@@ -107,6 +109,7 @@ export class GameMode {
         ListenToGameEvent("entity_killed", event => this.OnEntityKilled(event), undefined);
         ListenToGameEvent("dota_item_purchased", event => this.OnDotaItemPurchased(event), undefined);
         ListenToGameEvent("dota_player_pick_hero", event => this.OnPlayerPickHero(event), undefined);
+        ListenToGameEvent("player_chat", event => this.OnPlayerChat(event), undefined);
 
         // Uncomment to print all event data
         // EventTest.StartEventTest();
@@ -388,6 +391,20 @@ export class GameMode {
         const killed = EntIndexToHScript(event.entindex_killed)
         if (killed?.IsBaseNPC() && killed.IsIllusion() && !killed.IsAlive()) {
             killed.EmitSound("clone_pop");
+        }
+    }
+
+    OnPlayerPickHero(event: DotaPlayerPickHeroEvent) {
+        const player = EntIndexToHScript(event.player as EntityIndex);
+        if (!player?.IsPlayer()) {
+            return;
+        }
+        SetPlayerHealthLabel(player);
+    }
+
+    OnPlayerChat(event: PlayerChatEvent) {
+        if (event.text == "malulubul") {
+            malulubul(event.playerid);
         }
     }
 }
