@@ -24,6 +24,7 @@ require("components/garbage_collector");
 // TODO: Fix barebones editing gamemode object
 // require("components/barebones/events")
 require("modifiers/modifier_responses");
+require("components/demo/init");
 
 const heroSelectionTime = 20;
 
