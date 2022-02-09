@@ -36,6 +36,12 @@ function placeWard(keys)
 		dummy:RemoveSelf()
 	end)
 end
+
+--base shop position team 1 
+SHOP_TEAM_1 = Vector(-832, 768, 128) 
+--base shop position team 2
+SHOP_TEAM_2 = Vector(-832, 768, 128)
+
 function rechargeThirdEye(keys)
 	local ability = keys.ability
 	local caster = keys.caster

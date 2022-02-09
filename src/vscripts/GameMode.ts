@@ -328,6 +328,23 @@ export class GameMode {
         if (killer != undefined && killed != undefined) {
             SupportItemCooldownReset(killed, killer);
         }
+        if (!killer?.IsBaseNPC() || !killer.IsRealHero() || !killed?.IsBaseNPC()) {
+            return;
+        }
+        const team_id = killer.GetTeamNumber();
+        const killer_id = killer.GetPlayerID();
+        const victim_team_id = killer.GetTeamNumber();
+        if (!killed.IsReincarnating() && killed.IsRealHero()) {
+            const victim_id = killed.GetPlayerID();
+            CustomGameEventManager.Send_ServerToAllClients("hero_killed", { victim_team_id, victim_id, team_id, killer_id });
+            return;
+        }
+        if (killed.IsCreep()) {
+            const evtType = team_id == victim_team_id ? "deny" : "lasthit";
+            const data = { team_id, killer_id };
+            CustomGameEventManager.Send_ServerToAllClients(evtType, data);
+            return;
+        }
     }
 
     OnDotaItemPurchased(event: DotaItemPurchasedEvent): void {
@@ -363,6 +380,13 @@ export class GameMode {
             if (hero != undefined) {
                 ChakraArmorOnItemPickedUp(hero, event.itemname);
             }
+        }
+    }
+
+    OnEntityHurt(event: EntityHurtEvent) {
+        const killed = EntIndexToHScript(event.entindex_killed)
+        if (killed?.IsBaseNPC() && killed.IsIllusion() && !killed.IsAlive()) {
+            killed.EmitSound("clone_pop");
         }
     }
 }
