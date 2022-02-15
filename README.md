@@ -34,6 +34,18 @@ After that you can press `Ctrl+Shift+B` in VSCode or run `npm run dev` command i
 
 * **[scripts/*]:** Repository installation scripts
 
+## Gotchas
+
+### Stale Lua Files
+
+- Watch out for stale lua files under `game/`. If you're in `src/vscripts/a.ts`,
+and you `require("b")`, the TS compiler will copy over `b.lua` to
+`game/scripts/vscripts/b.lua`. That file won't be tracked by git, and it won't
+be obvious that it's still there. You might comment out that `require("b")` line
+in `a.ts`, expecting that `b.lua` won't be loaded. However, that file is still
+under `game/`, and dota will load it just fine. Make sure to delete `b.lua`
+under `game/` if you don't want it to load.
+
 ## Continuous Integration
 
 This template includes a [GitHub Actions](https://github.com/features/actions) [workflow](.github/workflows/ci.yml) that builds your custom game on every commit and fails when there are type errors.

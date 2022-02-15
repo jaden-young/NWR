@@ -19,7 +19,7 @@ function SetSelectionImages(bSetWebms) {
 			var image = button.FindChildTraverse("HeroImage");
 
 			if (image)
-				image.SetImage('file://{images}/heroes/selection/npc_dota_hero_' + image.heroname + '.png');
+				image.SetImage(`file://{images}/custom_game/heroes/selection/npc_dota_hero_${image.heroname}.png`);
 
 			if (bSetWebms && bSetWebms == true) {
 				if (button) {
@@ -50,7 +50,7 @@ function UpdatePortrait(sHeroName) {
 	var PortraitContainer = Parent.FindChildTraverse("HeroPortrait");
 
 	if (PortraitContainer) {
-		PortraitContainer.GetChild(0).style.backgroundImage = 'url("file://{images}/heroes/selection/npc_dota_hero_' + sHeroName + '.png")';
+		PortraitContainer.GetChild(0).style.backgroundImage = 'url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_' + sHeroName + '.png")';
 		PortraitContainer.GetChild(0).style.backgroundSize = "cover";
 
 		if (Parent.FindChildTraverse("CustomHeroMoviePortrait"))
@@ -61,7 +61,7 @@ function UpdatePortrait(sHeroName) {
 		MovieContainer.style.height = "203px";
 		MovieContainer.style.boxShadow = "#000000aa 0px 0px 16px 0px";
 		const MoviePanel = $.CreatePanelWithProperties("MoviePanel", MovieContainer, `CustomHeroMovie_${sHeroName}`, {
-			src: `s2r://panorama/videos/heroes/npc_dota_hero_${sHeroName}.webm`,
+			src: `s2r://panorama/videos/custom_game/heroes/npc_dota_hero_${sHeroName}.webm`,
 			autoplay: "onload",
 			repeat: true,
 		});
@@ -90,11 +90,10 @@ function UpdateTopBar(data) {
 		var player_name = player_name_panel.FindChildTraverse("PlayerName");
 
 		if (player_name.text === playerInfo.player_name) {
-			var hero_image = slot_panel.FindChildTraverse("HeroImage");
+			var hero_image = slot_panel.FindChildTraverse("HeroImage") as HeroImage;
 
 			if (hero_image) {
-				hero_image.SetImage('file://{images}/heroes/npc_dota_hero_' + data.sHeroName + '.png');
-				hero_image.style.backgroundImage = 'url("file://{images}/heroes/npc_dota_hero_' + data.sHeroName + '.png")';
+				hero_image.SetImage('file://{images}/custom_game/heroes/topbar/npc_dota_hero_' + data.sHeroName + '.png');
 				hero_image.style.backgroundSize = "100% 100%";
 			}
 		}
@@ -117,7 +116,7 @@ function SetWebmPanels(button, hero_name) {
 			TooltipHeroName.text = $.Localize("npc_dota_hero_" + hero_name).toUpperCase();
 			const MovieContainer = $.CreatePanel("Panel", Parent.FindChildTraverse("ImageContainer"), `CustomHeroMovieContainer_${hero_name}`);
 			const MoviePanel = $.CreatePanelWithProperties("MoviePanel", MovieContainer, `CustomHeroMovie_${hero_name}`, {
-				src: `s2r://panorama/videos/heroes/npc_dota_hero_${hero_name}.webm`,
+				src: `s2r://panorama/videos/custom_game/heroes/npc_dota_hero_${hero_name}.webm`,
 				autoplay: "onload",
 				repeat: true,
 			});
@@ -139,7 +138,7 @@ function SetStrategyHeroModel(data) {
 	HeroModel.style.height = "100%";
 	const HeroPanel = $.CreatePanelWithProperties("DOTAScenePanel", HeroModel, "HeroPanel", {
 		particleonly: false,
-		unit: data.sHeroName
+		unit: data.hero_name,
 	});
 	HeroPanel.style.height = "100%";
 	HeroPanel.style.width = "100%";
@@ -167,10 +166,12 @@ function Init() {
 */
 }
 
+
 (function() {
 	GameEvents.Subscribe( "update_hero_selection_topbar", UpdateTopBar );
 	GameEvents.Subscribe( "dota_player_hero_selection_dirty", OnUpdateHeroSelection );
 //	GameEvents.Subscribe( "dota_player_update_hero_selection", OnUpdateHeroSelection );
+    // TODO: look into ScenePanel.SpawnHeroInScenePanel* methods to get this working
 	GameEvents.Subscribe( "set_strategy_time_hero_model", SetStrategyHeroModel );
 
 	SetSelectionImages();

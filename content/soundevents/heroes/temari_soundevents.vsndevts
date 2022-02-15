@@ -1,0 +1,440 @@
+"temari_attack"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/attack_01.vsnd"
+							"value1"		"sounds/vo/temari/attack_02.vsnd"
+							"value2"		"sounds/vo/temari/attack_03.vsnd"
+							"value3"		"sounds/vo/temari/attack_04.vsnd"
+							"value4"		"sounds/vo/temari/attack_05.vsnd"
+							"value5"		"sounds/vo/temari/attack_06.vsnd"
+							"value6"		"sounds/vo/temari/attack_07.vsnd"
+							"value7"		"sounds/vo/temari/attack_08.vsnd"
+							"value8"		"sounds/vo/temari/attack_09.vsnd"
+							"value9"		"sounds/vo/temari/attack_10.vsnd"
+							"value10"		"sounds/vo/temari/attack_11.vsnd"
+							"value11"		"sounds/vo/temari/attack_12.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_move"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/move_01.vsnd"
+							"value1"		"sounds/vo/temari/move_02.vsnd"
+							"value2"		"sounds/vo/temari/move_03.vsnd"
+							"value3"		"sounds/vo/temari/move_04.vsnd"
+							"value4"		"sounds/vo/temari/move_05.vsnd"
+							"value5"		"sounds/vo/temari/move_06.vsnd"
+							"value6"		"sounds/vo/temari/move_07.vsnd"
+							"value7"		"sounds/vo/temari/move_08.vsnd"
+							"value8"		"sounds/vo/temari/move_09.vsnd"
+							"value9"		"sounds/vo/temari/move_10.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_hurt"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/pain_01.vsnd"
+							"value1"		"sounds/vo/temari/pain_02.vsnd"
+							"value2"		"sounds/vo/temari/pain_03.vsnd"
+							"value3"		"sounds/vo/temari/pain_04.vsnd"
+							"value4"		"sounds/vo/temari/pain_05.vsnd"
+							"value5"		"sounds/vo/temari/pain_06.vsnd"
+							"value6"		"sounds/vo/temari/pain_07.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_death"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/death_01.vsnd"
+							"value1"		"sounds/vo/temari/death_02.vsnd"
+							"value2"		"sounds/vo/temari/death_03.vsnd"
+							"value3"		"sounds/vo/temari/death_04.vsnd"
+							"value4"		"sounds/vo/temari/death_05.vsnd"
+							"value5"		"sounds/vo/temari/death_06.vsnd"
+							"value6"		"sounds/vo/temari/death_07.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_respawn"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/respawn_01.vsnd"
+							"value1"		"sounds/vo/temari/respawn_02.vsnd"
+							"value2"		"sounds/vo/temari/respawn_03.vsnd"
+							"value3"		"sounds/vo/temari/respawn_04.vsnd"
+							"value4"		"sounds/vo/temari/respawn_05.vsnd"
+							"value5"		"sounds/vo/temari/respawn_06.vsnd"
+							"value6"		"sounds/vo/temari/respawn_07.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_spawn"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/spawn_01.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_hero_kill"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/kill_01.vsnd"
+							"value1"		"sounds/vo/temari/kill_02.vsnd"
+							"value2"		"sounds/vo/temari/kill_03.vsnd"
+							"value3"		"sounds/vo/temari/kill_04.vsnd"
+							"value4"		"sounds/vo/temari/kill_05.vsnd"
+							"value5"		"sounds/vo/temari/kill_06.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_firstblood"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/kill_01.vsnd"
+							"value1"		"sounds/vo/temari/kill_02.vsnd"
+							"value2"		"sounds/vo/temari/kill_03.vsnd"
+							"value3"		"sounds/vo/temari/kill_04.vsnd"
+							"value4"		"sounds/vo/temari/kill_05.vsnd"
+							"value5"		"sounds/vo/temari/kill_06.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_creep_kill"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/lasthit_01.vsnd"
+							"value1"		"sounds/vo/temari/lasthit_02.vsnd"
+							"value2"		"sounds/vo/temari/lasthit_03.vsnd"
+							"value3"		"sounds/vo/temari/lasthit_04.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_creep_deny"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_3d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/deny_01.vsnd"
+							"value1"		"sounds/vo/temari/deny_02.vsnd"
+							"value2"		"sounds/vo/temari/deny_03.vsnd"
+							"value3"		"sounds/vo/temari/deny_04.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_levelup"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/level_02.vsnd"
+							"value1"		"sounds/vo/temari/level_03.vsnd"
+							"value2"		"sounds/vo/temari/level_04.vsnd"
+
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}
+
+"temari_win"
+{
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"reference_operator"
+			{
+				"operator"				"sos_reference_stack"
+				"reference_stack"		"dota_src1_2d"
+				"operator_variables"
+				{
+					"vsnd_files"
+					{
+						"value"
+						{
+							"value0"		"sounds/vo/temari/laugh_01.vsnd"
+						}
+					}
+					"volume"			{"value"	"1.00000"}
+					"pitch_rand_min"	{"value"	"0.00000"}
+					"pitch_rand_max"	{"value"	"0.000000"}
+					"pitch"				{"value"	"1.000000"}
+					"soundlevel"		{"value"	"100.00000"}
+					"distance_max"		{"value"	"1600.000"}
+					"event_type"		{"value"	"1.000000"}
+				}
+			}
+		}
+	}
+}

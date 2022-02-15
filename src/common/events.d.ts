@@ -15,7 +15,16 @@
 interface CustomGameEventDeclarations {
     example_event: ExampleEventData,
     ui_panel_closed: UIPanelClosedEventData
-    override_hero_image: OverrideHeroImageEvent
+    override_hero_image: {}
+    set_strategy_time_hero_model: { hero_name : string }
+    hero_killed: {
+        victim_team_id: DotaTeam
+        victim_id: PlayerID
+        team_id: DotaTeam
+        killer_id: PlayerID
+    }
+    lasthit: { team_id: DotaTeam, killer_id: PlayerID }
+    deny: { team_id: DotaTeam, killer_id: PlayerID }
 }
 
 // Define the type of data sent by the example_event event
@@ -28,8 +37,3 @@ interface ExampleEventData {
 
 // This event has no data
 interface UIPanelClosedEventData {}
-
-interface OverrideHeroImageEvent {
-    player_id: PlayerID
-    icon_path: string
-}

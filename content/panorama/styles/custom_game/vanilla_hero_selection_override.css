@@ -1,0 +1,50 @@
+/*
+    Loads up image files so that they can be set in js.  Without a reference in
+    either XML or CSS, setting an image file in js will fail. Listing them here
+    is sufficient, we don't need to assign this class to any UI elements.
+*/
+.VanillaHeroSelectionOverrideImageCompile {
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_itachi.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_hidan.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_kisame.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_naruto.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_guy.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_haku.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_kakashi.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_sai.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_anko.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_onoki.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_raikage.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_sakura.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_madara.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_zabuza.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_neji.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_yondaime.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_sasuke.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_gaara.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_kankuro.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_shikamaru.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_temari.png");
+
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_kakashi.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_anko.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_itachi.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_hidan.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_kisame.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_haku.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_naruto.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_sai.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_guy.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_onoki.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_raikage.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_sakura.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_madara.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_zabuza.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_neji.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_yondaime.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_sasuke.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_gaara.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_kankuro.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_shikamaru.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_temari.png");
+}
