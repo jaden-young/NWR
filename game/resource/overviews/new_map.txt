@@ -1,7 +1,7 @@
 new_map
 {
 	material materials/overviews/new_map.vmat
-	pos_x -6146
+	pos_x -6149
 	pos_y 6138
 	scale 12.000
 }
