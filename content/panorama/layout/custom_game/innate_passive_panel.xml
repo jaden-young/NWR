@@ -1,0 +1,13 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/innate_passive_panel.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/innate_passive_panel.js" />
+    </scripts>
+    <!--<snippets>-->
+    <!--</snippets>-->
+    <Panel class="innate_passive_panel">
+        <DOTAAbilityImage id="innate_passive_ability_image" abilityname="" />
+    </Panel>
+</root>
