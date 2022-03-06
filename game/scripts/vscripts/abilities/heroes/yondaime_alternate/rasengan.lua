@@ -9,7 +9,7 @@ function rasengan(keys)
 	end
 
 	caster:StopSound("minato_rasengan_loop.loop")
-	EmitSoundOn("minato_rasengan", keys.target)
+	EmitSoundOn("minato_rasengan_impact", keys.target)
 	EmitSoundOn("minato_rasengan_talking", keys.caster)
 
 	local range = keys.ability:GetLevelSpecialValueFor( "distance", ( keys.ability:GetLevel() - 1 ) )
