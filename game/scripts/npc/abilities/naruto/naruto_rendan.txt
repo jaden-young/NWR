@@ -1,29 +1,30 @@
 "DOTAAbilities"
 {
-	"naruto_rasenshuriken"
+	"naruto_rendan"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/naruto/rasenshuriken.lua"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"ScriptFile"					"heroes/naruto/rendan.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
+        "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
+        "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"				"1"
-		"AbilityTextureName"			"naruto/rasenshuriken"
-		"MaxLevel"						"2"
+		"AbilityTextureName"			"naruto/naruto_rendan"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.6"
+		"AbilityCastRange"				"600 700 800 900"
+		"AbilityCastPoint"				"0.0"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"15.0"
+		"AbilityCooldown"				"20.0 16.0 12.0 8.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"170 200"
+		"AbilityManaCost"				"50"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -32,27 +33,38 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"360 500"
+				"clone_gather_range"		"900"
 			}
 			"02"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"8.0"
+				"var_type"					"FIELD_INTEGER"
+				"charge_speed"				"575 650 725 800"
+				"LinkedSpecialBonus"		"special_bonus_naruto_rendan_charge_speed"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"slow_duration"				"2.0"
+				"bonus_damage"				"0.7"
 			}
 			"04"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"stun_duration"				"1.5 1.7"
+				"var_type"					"FIELD_INTEGER"
+				"damage"	            	"50 100 150 200"
 			}
 			"05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_attack_range"		"600"
+				"clone_damage"				"10 14 18 22"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"max_duration"				"5"
+			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"min_distance"				"250"
 			}
 		}
 	}

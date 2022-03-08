@@ -1,21 +1,20 @@
 "DOTAAbilities"
 {
-	"naruto_rasenshuriken"
+	"naruto_rasengan"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/naruto/rasenshuriken.lua"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"ScriptFile"					"heroes/naruto/rasengan.lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"				"1"
-		"AbilityTextureName"			"naruto/rasenshuriken"
-		"MaxLevel"						"2"
+		"AbilityTextureName"			"naruto/rasengan"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.6"
+		"AbilityCastRange"				"900"
+		"AbilityCastPoint"				"0.7"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -23,7 +22,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"170 200"
+		"AbilityManaCost"				"90 110 130 150"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -32,12 +31,13 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"360 500"
+				"damage"					"90 180 270 360"
+				"LinkedSpecialBonus"		"special_bonus_anko_3"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"8.0"
+				"duration"					"12.0"
 			}
 			"03"
 			{
@@ -47,12 +47,17 @@
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"stun_duration"				"1.5 1.7"
+				"knockback_duration"		"0.5"
 			}
 			"05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_attack_range"		"600"
+				"movement_slow"				"15 20 25 30"
+			}	
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"knockback_distance"		"600"
 			}
 		}
 	}
