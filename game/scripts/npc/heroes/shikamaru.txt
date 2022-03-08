@@ -42,7 +42,7 @@
 		"AttackDamageMin"		"20"
 		"AttackDamageMax"		"30"
 		"AttackRate"		"1.700000"		  
-		  "AttackAnimationPoint"   "0.4"
+		  "AttackAnimationPoint"   "0.1"
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 
 		"ProjectileModel"   "particles/units/heroes/shikamaru/base_attack/shikamaru_base_attack.vpcf"
