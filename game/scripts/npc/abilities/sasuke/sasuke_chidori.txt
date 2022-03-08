@@ -9,7 +9,7 @@
     // General  
     // ----------------------------------------------------------------------------------------
     "BaseClass"             	 	"ability_lua"
-    "ScriptFile"             	 	"heroes/sasuke/sasuke_chidori.lua"
+    "ScriptFile"             	 	"abilities/heroes/sasuke/sasuke_chidori.lua"
     "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
     "AbilityTextureName"     		"sasuke_chidori"
 

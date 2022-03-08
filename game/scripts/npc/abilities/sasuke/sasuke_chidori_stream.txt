@@ -7,7 +7,7 @@
         // General  
         // ----------------------------------------------------------------------------------------
         "BaseClass"              "ability_lua"
-        "ScriptFile"             "heroes/sasuke/sasuke_chidori_stream.lua"
+        "ScriptFile"             "abilities/heroes/sasuke/sasuke_chidori_stream.lua"
         "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
         "AbilityTextureName"     "sasuke_chidori_stream"
         "AbilityType"            "DOTA_ABILITY_TYPE_BASIC"

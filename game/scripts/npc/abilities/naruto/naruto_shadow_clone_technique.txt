@@ -5,7 +5,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"heroes/naruto/shadow_clone_technique.lua"
+		"ScriptFile"					"abilities/heroes/naruto/shadow_clone_technique.lua"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"naruto/shadow_clone_technique"

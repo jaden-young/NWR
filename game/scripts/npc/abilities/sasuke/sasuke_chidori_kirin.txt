@@ -7,7 +7,7 @@
     // General  
     // ----------------------------------------------------------------------------------------
     "BaseClass"              		"ability_lua"
-	"ScriptFile"			 		"heroes/sasuke/sasuke_chidori_kirin.lua"
+	"ScriptFile"			 		"abilities/heroes/sasuke/sasuke_chidori_kirin.lua"
 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
     "AbilityUnitDamageType"         "DAMAGE_TYPE_MAGICAL"   
     "SpellImmunityType"             "SPELL_IMMUNITY_ENEMIES_NO"
