@@ -38,8 +38,6 @@ function naruto_shadow_clone_technique:OnSpellStart()
 		self.illusion = CreateIllusions(self:GetCaster(), self:GetCaster(), {
 			outgoing_damage 			= self:GetSpecialValueFor("outgoing_damage"),
 			incoming_damage				= self:GetSpecialValueFor("incoming_damage"),
-			bounty_base					= self:GetCaster():GetIllusionBounty(),
-			bounty_growth				= nil,
 			outgoing_damage_structure	= nil,
 			outgoing_damage_roshan		= nil,
 			duration					= self:GetSpecialValueFor("illusion_duration")

@@ -90,6 +90,10 @@ end
 function shikamaru_shadow_imitation_technique:OnAbilityPhaseStart()
 	self:GetCaster():EmitSound("shikamaru_hold_cast")
 	self:GetCaster():EmitSound("shikamaru_hold_talking")
+
+	self.caster = self:GetCaster()
+
+	self.caster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
 	return true
 end
 
@@ -102,7 +106,7 @@ function shikamaru_shadow_imitation_technique:OnSpellStart()
 	self.forwardVec = (self.target_point - self.caster_location):Normalized()
 
 	self.caster:AddNewModifier(self.caster, self.ability, "modifier_shadow_imitation_caster", {})
-	self.caster:StartGesture(ACT_DOTA_CHANNEL_ABILITY_1)
+	self.caster:StartGestureWithPlaybackRate(ACT_DOTA_CHANNEL_ABILITY_1, 0.3)
 
 	-- Projectile variables
 	self.shadow_speed = self.ability:GetSpecialValueFor("shadow_speed")
@@ -137,7 +141,6 @@ function shikamaru_shadow_imitation_technique:OnSpellStart()
 	self.projectile_vfx = ParticleManager:CreateParticle(self.wave_particle, PATTACH_ABSORIGIN, self.caster)
 	ParticleManager:SetParticleControl(self.projectile_vfx, 0, self.caster:GetAbsOrigin())
 	ParticleManager:SetParticleControl(self.projectile_vfx, 1, self.caster:GetForwardVector()*self.shadow_speed)
-
 
 end
 

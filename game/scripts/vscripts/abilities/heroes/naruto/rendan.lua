@@ -1,5 +1,5 @@
-LinkLuaModifier("modifier_naruto_rendan", "heroes/naruto/rendan", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_naruto_rendan_boost", "heroes/naruto/rendan", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_naruto_rendan", "abilities/heroes/naruto/rendan", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_naruto_rendan_boost", "abilities/heroes/naruto/rendan", LUA_MODIFIER_MOTION_NONE)
 
 naruto_rendan = naruto_rendan or class({})
 

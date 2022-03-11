@@ -9,7 +9,7 @@
 	{
 		"HeroID"					"210"
 		"BaseClass"					"npc_dota_hero_dragon_knight"
-		"Model" 					"models\kc_naruto/kc_naruto.vmdl"
+		"Model" 					"models/sexy_naruto/sexy_naruto_base.vmdl"
 		"Ability1"  				"naruto_shadow_clone_technique"
 		"Ability2"  				"naruto_rasengan" 
 		"Ability3"  				"naruto_rendan" 
@@ -29,11 +29,11 @@
 		"Ability16"					"special_bonus_naruto_1"
 		"Ability17"					"special_bonus_naruto_7"
 
-		"SoundSet"					"Punch"
-		"GameSoundsFile"			"soundevents/game_sounds_punch.vsndevts"
+		"SoundSet"						"ChakraPunch"
+		"GameSoundsFile"				"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 
 		"ArmorPhysical"				"0.000000"
-		"ModelScale"				"0.7"
+		"ModelScale"				"1.0"
 		"LoadoutScale"				"0.64" 
 
 		//Picking Screen

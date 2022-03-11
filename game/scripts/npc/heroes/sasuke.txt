@@ -9,7 +9,7 @@
 		{
 			"HeroID"					"215"
 		  "BaseClass"   "npc_dota_hero_storm_spirit"
-		  "Model" 			"models/sasuke_new/sasuke.vmdl"
+		  "Model" 			"models/striker_sasuke/striker_sasuke_base.vmdl"
 		//  "Ability1"        "sasuke_chidori_nagashi"
 		  "Ability1"        "sasuke_chidori"
 		//  "Ability2"        "sasuke_chidori_eiso" 
@@ -32,8 +32,8 @@
 		   "Ability16"		"special_bonus_sasuke_4"
 		   "Ability17"		"special_bonus_sasuke_5"
 
-		  "SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/game_sounds_kunai.vsndevts"
+		  "SoundSet"					"Katana"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_katana.vsndevts"
 
 		 "ArmorPhysical"		"2.000000"
 		"AttackDamageMin"		"29"

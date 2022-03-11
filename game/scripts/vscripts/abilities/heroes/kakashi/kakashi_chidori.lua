@@ -93,7 +93,7 @@ function kakashi_chidori:OnChannelFinish(bInterrupted)
 			--EmitSoundOn("kakashi_raikiri_loop", caster)
 			
 			caster:FadeGesture(ACT_DOTA_CAST_ABILITY_4)
-			caster:StartGestureWithPlaybackRate(ACT_DOTA_CHANNEL_ABILITY_4, 1)
+			caster:StartGestureWithPlaybackRate(ACT_DOTA_CHANNEL_ABILITY_5, 1)
 			
 			self:AddPhysics(caster)
 		
@@ -122,7 +122,7 @@ function kakashi_chidori:OnChannelFinish(bInterrupted)
 				self.caster:StopSound("kakashi_raikiri_cast")
 				--self.target:StopSound("kakashi_raikiri_impact")
 				self.caster:RemoveGesture(ACT_DOTA_CAST_ABILITY_4)
-				self.caster:RemoveGesture(ACT_DOTA_CHANNEL_ABILITY_4)
+				self.caster:RemoveGesture(ACT_DOTA_CHANNEL_ABILITY_5)
 				self.caster:RemoveGesture(ACT_DOTA_CAST_ABILITY_5)
 				ParticleManager:DestroyParticle(self.chidori_particle, true)
 				ParticleManager:ReleaseParticleIndex(self.chidori_particle)

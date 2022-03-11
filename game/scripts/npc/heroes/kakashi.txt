@@ -7,7 +7,7 @@
 	{
 		"BaseClass"					"npc_dota_hero_beastmaster"
 		"HeroID"					"206"
-		"Model"						"models/kakashi_hd/kaka_hd_test.vmdl"
+		"Model"						"models/kakashi_new/kakashi_new_base.vmdl"
 		"ModelScale"				"0.85"
 		"LoadoutScale"				"0.85" 
 	

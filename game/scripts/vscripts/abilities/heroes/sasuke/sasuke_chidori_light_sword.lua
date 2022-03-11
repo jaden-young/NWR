@@ -1,7 +1,7 @@
 sasuke_chidori_light_sword = sasuke_chidori_light_sword or class({})
 
-LinkLuaModifier("modifier_chidori_light_sword_damage", "scripts/vscripts/heroes/sasuke/sasuke_chidori_light_sword.lua", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_chidori_light_sword_debuff", "scripts/vscripts/heroes/sasuke/sasuke_chidori_light_sword.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_chidori_light_sword_damage", "abilities/heroes/sasuke/sasuke_chidori_light_sword.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_chidori_light_sword_debuff", "abilities/heroes/sasuke/sasuke_chidori_light_Sword.lua", LUA_MODIFIER_MOTION_NONE)
 
 function sasuke_chidori_light_sword:Precache( context )
     PrecacheResource( "soundfile",   "soundevents/game_sounds_heroes/game_sounds_stormspirit.vsndevts", context )

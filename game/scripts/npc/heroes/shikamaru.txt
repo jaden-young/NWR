@@ -10,7 +10,7 @@
 		{
 			"HeroID"					"216"
 		  "BaseClass"   "npc_dota_hero_shadow_shaman" 
-		  "Model" 		"models/shikamaru_new/shika.vmdl"
+		  "Model" 		"models/sexy_shikamaru/sexy_shikamaru_base.vmdl"
 		  "Ability1"         "shikamaru_shadow_imitation_technique"
 		  "Ability2"         "shikamaru_switching_technique" 
 		  "Ability3"         "shikamaru_flash_bombs" 
@@ -30,7 +30,7 @@
 		   "Ability16"		"special_bonus_shikamaru_max_traps"
 		   "Ability17"		"special_bonus_shikamaru_6"
 
-		  "ModelScale"		"0.60"
+		  "ModelScale"		"1.00"
 		
 		"SoundSet"					"KunaiRanged"
 		"GameSoundsFile"		"soundevents/weapons/game_sounds_kunairanged.vsndevts"
@@ -89,7 +89,7 @@
 	"npc_dota_hero_shadow_shaman" 
 	{
 			"override_hero"   "npc_dota_hero_shadow_shaman"
-			"Model" 		"models/shikamaru_new/shika.vmdl"
+			"Model" 		"models/sexy_shikamaru/sexy_shikamaru_base.vmdl"
 			"ModelScale"		"0.60"
 			"LoadoutScale"		"0.53" 
 			"SpectatorLoadoutScale" 	"0.60" 

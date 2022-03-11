@@ -1,5 +1,5 @@
-LinkLuaModifier("modifier_naruto_rasengan", "heroes/naruto/rasengan", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_naruto_rasengan_slow", "heroes/naruto/rasengan", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_naruto_rasengan", "abilities/heroes/naruto/rasengan", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_naruto_rasengan_slow", "abilities/heroes/naruto/rasengan", LUA_MODIFIER_MOTION_NONE)
 
 naruto_rasengan = naruto_rasengan or class({})
 

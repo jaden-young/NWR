@@ -1,6 +1,6 @@
 sasuke_chidori_kirin = sasuke_chidori_kirin or class({})
 
-LinkLuaModifier("modifier_chidori_kirin_mark", "scripts/vscripts/heroes/sasuke/sasuke_chidori_kirin.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_chidori_kirin_mark", "abilities/heroes/sasuke/sasuke_chidori_kirin.lua", LUA_MODIFIER_MOTION_NONE)
 
 function sasuke_chidori_kirin:Precache( context )
     PrecacheResource( "soundfile",   "soundevents/game_sounds_heroes/game_sounds_zuus.vsndevts", context )
@@ -45,6 +45,8 @@ function sasuke_chidori_kirin:OnSpellStart()
 	EmitSoundOn("sasuke_kirin_cast_talking", self:GetCaster())
 	EmitSoundOn("sasuke_kirin_cast", target)
 	
+	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_4)
+
 	--[[ if the target used Lotus Orb, reflects the ability back into the caster ]]
     if target:FindModifierByName("modifier_item_lotus_orb_active") then
         self:CanBeReflected(true, target)

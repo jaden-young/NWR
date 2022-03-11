@@ -1,7 +1,7 @@
-LinkLuaModifier("modifier_kyuubi_chakra_mode", "heroes/naruto/kyuubi_chakra_mode.lua", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_kyuubi_chakra_mode_active", "heroes/naruto/kyuubi_chakra_mode.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_kyuubi_chakra_mode", "abilities/heroes/naruto/kyuubi_chakra_mode.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_kyuubi_chakra_mode_active", "abilities/heroes/naruto/kyuubi_chakra_mode.lua", LUA_MODIFIER_MOTION_NONE)
 --	LinkLuaModifier("modifier_kyuubi_chakra_mode_magic_immune", "heroes/naruto/kyuubi_chakra_mode.lua", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_kyuubi_chakra_mode_crit", "heroes/naruto/kyuubi_chakra_mode", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_kyuubi_chakra_mode_crit", "abilities/heroes/naruto/kyuubi_chakra_mode", LUA_MODIFIER_MOTION_NONE)
 
 naruto_kyuubi_chakra_mode = naruto_kyuubi_chakra_mode or class({})
 

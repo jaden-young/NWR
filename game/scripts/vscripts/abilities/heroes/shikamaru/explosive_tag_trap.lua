@@ -23,6 +23,13 @@ function shikamaru_explosive_tag_trap:ProcsMagicStick()
     return true
 end
 
+function shikamaru_explosive_tag_trap:OnAbilityPhaseStart()
+    self.caster = self:GetCaster()
+
+    self.caster:StartGesture(ACT_DOTA_CAST_ABILITY_4)
+	return true
+end
+
 function shikamaru_explosive_tag_trap:OnSpellStart()
     local target_point = self:GetCursorPosition()
 
