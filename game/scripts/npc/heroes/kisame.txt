@@ -8,7 +8,7 @@
 		{
 		"HeroID"					"208"
 		  "BaseClass"   "npc_dota_hero_kunkka"
-		  "Model" 			"models/kisame_new/kisame.vmdl"
+		  "Model" 			"models/striker_kisame/striker_kisame_base.vmdl"
 		 	"Ability1"         "kisame_suikodan_no_jutsu"
 		  	"Ability2"         "kisame_mizu_bunshin_no_jutsu" 
 		  	"Ability3"         "kisame_samehada" 
@@ -25,7 +25,7 @@
 		   "Ability16"		"special_bonus_kisame_4"
 		   "Ability17"		"special_bonus_kisame_5"
 		  "ArmorPhysical"		"1.000000"
-			"ModelScale"		"1.1"
+			"ModelScale"		"0.95"
 			"LoadoutScale"		"0.94" 
 			//Picking Screen
 		"IsCustom"					"1"
@@ -52,8 +52,8 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 
 
-		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
+		"SoundSet"					"Heavy"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_heavy.vsndevts"
 
 	 	"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
 		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
@@ -80,7 +80,7 @@
 	{
 		  	"override_hero"   "npc_dota_hero_kunkka"
 		   	 "Model" 			"models/kisame_new/kisame.vmdl"
-				"ModelScale"		"1.1"
+				"ModelScale"		"0.8"
 			"LoadoutScale"		"0.94" 
 		"SpectatorLoadoutScale" 	"0.94" 
 		"VersusScale"				"0.94" 

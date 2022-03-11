@@ -69,14 +69,14 @@ end
 
 function kisame_suikodan_no_jutsu:OnAbilityPhaseStart()
 
-	self:GetCaster():EmitSound("kisame_shark")
-	self:GetCaster():EmitSound("kisame_shark_cast")
-
 	return true
 end
 
 function kisame_suikodan_no_jutsu:OnSpellStart()
 	
+	self:GetCaster():EmitSound("kisame_shark")
+	self:GetCaster():EmitSound("kisame_shark_cast")
+
 	self.caster = self:GetCaster()
 	self.caster_location = self.caster:GetAbsOrigin()
 	self.ability = self

@@ -20,6 +20,11 @@ function kisame_mizu_bunshin_no_jutsu:ProcsMagicStick()
 	return true
 end
 
+function kisame_mizu_bunshin_no_jutsu:OnAbilityPhaseStart()
+	self:GetCaster():EmitSound("kisame_clone_cast")
+	return true
+end
+
 function kisame_mizu_bunshin_no_jutsu:OnSpellStart()
     local caster = self:GetCaster()
 	local player = caster:GetPlayerID()
@@ -35,7 +40,6 @@ function kisame_mizu_bunshin_no_jutsu:OnSpellStart()
   	  end
     end
 	
-	EmitSoundOn("kisame_clone_cast", caster)
 	EmitSoundOn("Hero_NagaSiren.MirrorImage", caster)
 	
     caster:Stop()
