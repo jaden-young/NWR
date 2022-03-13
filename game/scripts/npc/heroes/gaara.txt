@@ -6,8 +6,8 @@
 	{
 		"BaseClass"					"npc_dota_hero_lion"
 		"HeroID"					"201"
-		"Model" 			"models/gaara_new/gaara_base.vmdl"
-		"ModelScale"		"0.42"
+		"Model" 			"models/striker_gaara/striker_gaara_base.vmdl"
+		"ModelScale"		"1.00"
 		"LoadoutScale"		"0.40" 
 		"SpectatorLoadoutScale" "0.42" 
 		"VersusScale"			"0.42" 

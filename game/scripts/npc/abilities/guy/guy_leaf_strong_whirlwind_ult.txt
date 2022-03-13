@@ -15,7 +15,7 @@
             
             // Stats
             //-------------------------------------------------------------------------------------------------------------
-            "AbilityCastPoint"				"0.1 0.1 0.1 0.1"
+            "AbilityCastPoint"				"0.2 0.2 0.2 0.2"
             "AbilityCooldown"				"6 5 4 3"
             "AbilityManaCost"				"40"
         
@@ -41,12 +41,12 @@
                 "04"
                 {
                     "var_type"						"FIELD_FLOAT"
-                    "cast_time"					"0.3"
+                    "cast_time"					"0.2"
                 }
                 "05"
                 {
                     "var_type"						"FIELD_FLOAT"
-                    "cast_time_ult"					"0.1"
+                    "cast_time_ult"					"0.2"
                 }
             }
         

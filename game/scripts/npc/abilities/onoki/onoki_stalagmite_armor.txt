@@ -18,8 +18,8 @@
 			"AbilityCastRange"				"700"
 			"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
 		
-			"AbilityCooldown"				"25 20 15 10"
-			"AbilityManaCost"				"50"
+			"AbilityCooldown"				"30 24 18 12"
+			"AbilityManaCost"				"60 65 70 75"
 		
 			"AbilitySpecial"
 			{
@@ -36,12 +36,12 @@
 				"03"
 				{
 					"var_type"				"FIELD_FLOAT"
-					"damage_chance"			"10 15 20 25"
+					"damage_chance"			"20 20 20 20"
 				}
 				"04"
 				{
 					"var_type"				"FIELD_FLOAT"
-					"duration"				"8"
+					"duration"				"9 10 11 12"
 				}
 				"05"
 				{
@@ -51,7 +51,7 @@
 				"06"
 				{
 					"var_type"				"FIELD_FLOAT"
-					"stun_duration"			"0.6 1.0 1.4 1.8"
+					"stun_duration"			"0.8 0.8 0.8 0.8"
 				}
 			}
 		}

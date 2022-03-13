@@ -1624,7 +1624,7 @@
 					m_Filepath = "models/sakura/backblow.fbx"
 					m_nStartframe = 0
 					m_nEndframe = 67
-					m_flFps = 60.0
+					m_flFps = 75.0
 					m_Loop = 
 					{
 						m_bLoop = false

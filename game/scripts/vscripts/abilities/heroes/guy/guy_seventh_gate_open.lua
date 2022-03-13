@@ -1,7 +1,7 @@
 guy_seventh_gate_open = class({})
-LinkLuaModifier( "modifier_guy_seventh_gate", "scripts/vscripts/heroes/guy/guy_seventh_gate_open.lua", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_guy_morning_peacock_buff", "scripts/vscripts/heroes/guy/guy_morning_peacock.lua", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_guy_morning_peacock_cd_reset", "scripts/vscripts/heroes/guy/guy_morning_peacock.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_guy_seventh_gate", "scripts/vscripts/abilities/heroes/guy/guy_seventh_gate_open.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_guy_morning_peacock_buff", "scripts/vscripts/abilities/heroes/guy/guy_morning_peacock.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_guy_morning_peacock_cd_reset", "scripts/vscripts/abilities/heroes/guy/guy_morning_peacock.lua", LUA_MODIFIER_MOTION_NONE )
  
 function guy_seventh_gate_open:Precache(context)
 	PrecacheResource("soundfile",  "soundevents/game_sounds_heroes/game_sounds_sven.vsndevts", context)

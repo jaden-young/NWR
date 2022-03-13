@@ -25,8 +25,8 @@ function resetCooldownOnHit( keys )
 	end
 end
 
-LinkLuaModifier("modifier_guy_strong_fist_caster", "heroes/guy/strong_fist.lua", LUA_MODIFIER_MOTION_NONE)
-LinkLuaModifier("modifier_guy_morning_peacock_attacks", "heroes/guy/strong_fist.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_guy_strong_fist_caster", "scripts/vscripts/abilities/heroes/guy/strong_fist.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_guy_morning_peacock_attacks", "scripts/vscripts/abilities/heroes/guy/strong_fist.lua", LUA_MODIFIER_MOTION_NONE)
 
 guy_strong_fist = class({})
 

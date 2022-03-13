@@ -13,11 +13,11 @@
 		//Picking Screen
 		"IsCustom"					"1"
 
-		"SoundSet"					"Punch"
-		"GameSoundsFile"			"soundevents/heroes/game_sounds_punch.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 
 		"BaseClass"   		"npc_dota_hero_centaur"
-		"Model" 			"models/gai/gai_base_rigged.vmdl"
+		"Model" 			"models/guy8gates/guy_base_base.vmdl"
 		"Ability1"        "guy_dynamic_entry"
 		"Ability2"        "guy_leaf_strong_whirlwind" 
 		"Ability3"        "guy_strong_fist" 
@@ -39,7 +39,7 @@
 		"Ability17"		"special_bonus_guy_5"
 
 		"AttributePrimary" 			"DOTA_ATTRIBUTE_AGILITY"
-		"ModelScale"				"3.00"
+		"ModelScale"				"1.00"
 		"LoadoutScale"				"1.06" 
 	 	"SpectatorLoadoutScale"		"1.06" 
 		"VersusScale"				"1.06" 
