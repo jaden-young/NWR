@@ -11,7 +11,7 @@
 		{
 			"HeroID"					"211"
 		  "BaseClass"   "npc_dota_hero_axe"
-		  "Model" 			"models/neji_new/neji.vmdl"
+		  "Model" 			"models/striker_neji/striker_neji_base.vmdl"
 		  "Ability1"         "neji_kaiten"
 		  "Ability2"         "neji_air_palm" 
 		  "Ability3"         "neji_byakugan" 

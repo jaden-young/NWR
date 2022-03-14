@@ -10,7 +10,7 @@
 {
 			"HeroID"					"212"
 			"BaseClass"		"npc_dota_hero_sven"
-			"Model"				"models/heroes/sven/sven.vmdl" //models/onuki/onoki_model.vmdl
+			"Model"				"models/striker_onoki/striker_onoki_base.vmdl" //models/onuki/onoki_model.vmdl
 			"Ability1"			"onoki_jinton"
 			"Ability2"			"onoki_stalagmite_armor"
 			"Ability3"			"onoki_added_weight"
@@ -28,10 +28,10 @@
 			"StatusHealth"    "145"
 			"StatusHealthRegen"   "0.300000"
 
-			"ModelScale"		"2.35"
-			"LoadoutScale"		"2.0" 
-			"SpectatorLoadoutScale" 	"2.35"
-			"VersusScale"			"2.35"
+			"ModelScale"		"1.0"
+			"LoadoutScale"		"1.0" 
+			"SpectatorLoadoutScale" 	"1.0"
+			"VersusScale"			"1.0"
 
 		"SoundSet"					"ChakraPunch"
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
@@ -46,6 +46,7 @@
 			"ArmorPhysical"		"1.000000"
 			"AttackDamageMin"		"25"
 			"AttackDamageMax"		"27"
+			"AttackAnimationPoint"   "0.4"
 			"AttackRate"		"1.700000"	
 			// Movement
 			//----------------------------------------------------------------
