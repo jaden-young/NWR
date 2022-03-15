@@ -15,7 +15,7 @@
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"haku_ice_mirrors"
 	
-		"AbilityCastPoint"				"0.25 0.25 0.25"
+		"AbilityCastPoint"				"0.4 0.4 0.4"
 	
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------

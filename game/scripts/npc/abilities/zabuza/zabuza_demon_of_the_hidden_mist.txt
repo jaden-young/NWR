@@ -10,7 +10,7 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"BaseClass"				"ability_lua"
 	"ScriptFile"                "abilities/heroes/zabuza/zabuza_demon_of_the_hidden_mist.lua"
-	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
 	"AbilityTextureName"			"zabuza_demon_of_the_hidden_mist"
@@ -25,9 +25,9 @@
 	// Stats
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityCastRange"				"900"
-	"AbilityCastPoint"				"0.0"
+	"AbilityCastPoint"				"0.2"
 	"AbilityCooldown"				"60"
-	"AbilityManaCost"				"100 110 120"
+	"AbilityManaCost"				"100"
 		
 	// Special
 	//-------------------------------------------------------------------------------------------------------------

@@ -10,8 +10,8 @@
 
 		"HeroID"					"219"
 
-		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
+		"SoundSet"					"Heavy"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_heavy.vsndevts"
 
 		  "BaseClass"   	"npc_dota_hero_bloodseeker"
 		  "Ability1"        "zabuza_water_dragon_bullet"
@@ -33,11 +33,11 @@
 		   "Ability16"		"special_bonus_zabuza_5"
 		   "Ability17"		"special_bonus_cleave_100"
 
-		  "ModelScale"		"0.96"
-		  "LoadoutScale"		"0.9"
-		"SpectatorLoadoutScale" "0.96"
-		"VersusScale"			"0.96"
-		  "Model" 			"models/zabuza_new/zabuza_base.vmdl"
+		  "ModelScale"		"1.0"
+		  "LoadoutScale"		"1.0"
+		"SpectatorLoadoutScale" "1.0"
+		"VersusScale"			"1.0"
+		  "Model" 			"models/striker_zabuza/striker_zabuza_base.vmdl"
 
 		//Picking Screen
 		"IsCustom"					"1"

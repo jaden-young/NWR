@@ -28,14 +28,14 @@
   "Ability15"		"special_bonus_haku_3"
   "Ability16"		"special_bonus_haku_4"
   "Ability17"		"special_bonus_haku_5"
-  "ModelScale"		"2.7"
-  "LoadoutScale"	"2.7" 
+  "ModelScale"		"1.0"
+  "LoadoutScale"	"1.0" 
 
 
-  "SpectatorLoadoutScale" "2.7" 
-	"VersusScale"		"2.7" 
+  "SpectatorLoadoutScale" "1.0" 
+	"VersusScale"		"1.0" 
 
-  "Model" 		"models/haku_test/haku2_base.vmdl"
+  "Model" 		"models/striker_haku/striker_haku_base.vmdl"
 
 	"SoundSet"					"KunaiRanged"
 	"GameSoundsFile"		"soundevents/weapons/game_sounds_kunairanged.vsndevts"
