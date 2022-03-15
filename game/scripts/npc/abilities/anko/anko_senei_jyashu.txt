@@ -19,7 +19,7 @@
 		"AbilityTextureName"			"anko_senei_jyashu"
 
 		"AbilityCooldown"		"13 12 11 10"
-		"AbilityManaCost"		"100"
+		"AbilityManaCost"		"60 65 70 75"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------

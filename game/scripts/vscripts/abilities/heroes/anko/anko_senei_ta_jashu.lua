@@ -35,11 +35,6 @@ function anko_senei_ta_jashu:ProcsMagicStick()
     return true
 end
 
-function anko_senei_ta_jashu:OnAbilityPhaseStart()
-	self:GetCaster():StartGesture( ACT_DOTA_CAST_ABILITY_4 )
-	return true
-end
-
 function anko_senei_ta_jashu:OnSpellStart()
 	if not IsServer() then return end
 

@@ -9,7 +9,7 @@
 	{
 	"HeroID"					"218"
 	"BaseClass"					"npc_dota_hero_juggernaut"
-	"Model"						"models/yondaime_lightforce/minato_base.vmdl"
+	"Model"						"models/striker_minato/striker_minato_base.vmdl"
 	"ModelScale"				"0.95"
 	"LoadoutScale"				"0.85" 
     "SpectatorLoadoutScale" 	"0.95"
