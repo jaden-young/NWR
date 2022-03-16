@@ -11,8 +11,8 @@
 	{
 		"BaseClass"					"npc_dota_hero_medusa"
 		"HeroID"					"200"
-		"Model"           			"models/anko/anko_base_rigged.vmdl"
-		"ModelScale"				"3.0"
+		"Model"           			"models/striker_anko/striker_anko_base.vmdl"
+		"ModelScale"				"1.0"
 		"LoadoutScale"				"0.0" 
 		"SpectatorLoadoutScale" 	"1.0" 
 		"VersusScale"				"1.0" 
