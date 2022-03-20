@@ -24,8 +24,8 @@ function hidan_death_possession_blood:OnSpellStart()
 		caster:FadeGesture(ACT_DOTA_CAST_ABILITY_6)
 	end)
 	
-	caster:SetModel("models/hidan_brand_new/hidan_base_black_v2.vmdl")
-	caster:SetOriginalModel("models/hidan_brand_new/hidan_base_black_v2.vmdl")
+	caster:SetModel("models/striker_hidan/striker_hidan_transformation_base.vmdl")
+	caster:SetOriginalModel("models/striker_hidan/striker_hidan_transformation_base.vmdl")
 
 	caster:EmitSound("hidan_curse_cast")
 
@@ -46,8 +46,8 @@ function hidan_death_possession_blood:OnSpellStart()
 	
 	Timers:CreateTimer(duration, function ()
 	    caster:FindAbilityByName("hidan_self_pain"):SetLevel(0)
-		caster:SetModel("models/hidan_brand_new/hidan_base.vmdl")
-	    caster:SetOriginalModel("models/hidan_brand_new/hidan_base.vmdl")
+		caster:SetModel("models/striker_hidan/striker_hidan_base.vmdl")
+	    caster:SetOriginalModel("models/striker_hidan/striker_hidan_base.vmdl")
 	end)
 end
 

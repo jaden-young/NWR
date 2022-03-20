@@ -14,10 +14,10 @@
 		//Picking Screen
 		"IsCustom"					"1"
 
-		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
+		"SoundSet"					"Heavy"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_heavy.vsndevts"
 
-		"Model" 			"models/hidan_brand_new/hidan_base.vmdl"
+		"Model" 			"models/striker_hidan/striker_hidan_base.vmdl"
 	  	"Village"			"yugakure_scarred"
 	  	"Gender"			"male"
 		"AbilityLayout"	"5"
