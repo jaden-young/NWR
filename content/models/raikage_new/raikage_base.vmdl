@@ -871,7 +871,7 @@
 		[
 			{
 				m_sSearchMaterial = "leiying.vmat"
-				m_sReplaceMaterial = "materials/raikage/raikage_1.vmat"
+				m_sReplaceMaterial = "materials/raikage/raikage_new.vmat"
 			},
 			{
 				m_sSearchMaterial = "leiying2.vmat"
