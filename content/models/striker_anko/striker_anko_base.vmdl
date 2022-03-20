@@ -63,7 +63,44 @@
 			}
 		},
 	]
-	m_pAttachmentLists = [  ]
+	m_pAttachmentLists = 
+	[
+		{
+			m_pObject = 
+			{
+				m_name = ""
+				m_attachments = 
+				[
+					{
+						m_name = "attach_right_hand"
+						m_influences = 
+						[
+							{
+								m_influenceName = "RightHand"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+					{
+						m_name = "attach_weapon_chain_rt"
+						m_influences = 
+						[
+							{
+								m_influenceName = "RightHand"
+								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
+								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
+								m_flWeight = 1.0
+								m_bRoot = false
+							},
+						]
+					},
+				]
+			}
+		},
+	]
 	m_pAnimGroup = 
 	{
 		m_pObject = 
@@ -217,7 +254,7 @@
 					m_Filepath = "models/striker_anko/hook.smd"
 					m_nStartframe = 30
 					m_nEndframe = 94
-					m_flFps = 30.0
+					m_flFps = 45.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -233,7 +270,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_OVERRIDE_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -303,7 +346,7 @@
 					m_Filepath = "models/striker_anko/hook3.smd"
 					m_nStartframe = 0
 					m_nEndframe = 30
-					m_flFps = 30.0
+					m_flFps = 20.0
 					m_Loop = 
 					{
 						m_bLoop = false
