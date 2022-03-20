@@ -9,7 +9,7 @@
 		{
 			"HeroID"					"215"
 		  "BaseClass"   "npc_dota_hero_storm_spirit"
-		  "Model" 			"models/striker_sasuke/striker_sasuke_base.vmdl"
+		  "Model" 			"models/striker_sasuke2/striker_sasuke_base_2.vmdl"
 		//  "Ability1"        "sasuke_chidori_nagashi"
 		  "Ability1"        "sasuke_chidori"
 		//  "Ability2"        "sasuke_chidori_eiso" 
