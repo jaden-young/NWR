@@ -136,13 +136,6 @@ function GameMode:OnPlayerPickHero(keys)
 		if hero ~= nil then
 			local model = hero:FirstMoveChild()
 
-			while model ~= nil do
-				if model:GetClassname() == "dota_item_wearable" then
-					model:AddEffects(EF_NODRAW) -- Set model hidden
-					table.insert(hero.hiddenWearables, model)
-				end
-				model = model:NextMovePeer()
-			end
 
 			local heroClass = keys.hero
 			local heroEntity = EntIndexToHScript(keys.heroindex)

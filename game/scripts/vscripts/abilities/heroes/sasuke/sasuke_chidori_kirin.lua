@@ -45,8 +45,6 @@ function sasuke_chidori_kirin:OnSpellStart()
 	EmitSoundOn("sasuke_kirin_cast_talking", self:GetCaster())
 	EmitSoundOn("sasuke_kirin_cast", target)
 	
-	self:GetCaster():StartGesture(ACT_DOTA_CAST_ABILITY_4)
-
 	--[[ if the target used Lotus Orb, reflects the ability back into the caster ]]
     if target:FindModifierByName("modifier_item_lotus_orb_active") then
         self:CanBeReflected(true, target)

@@ -47,144 +47,7 @@
 	{
 		m_pObject = null
 	}
-	m_pHitBoxSetLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_HitBoxSets = 
-				[
-					{
-						m_name = "default"
-						m_HitBoxes = 
-						[
-							{
-								m_name = "left_sleeve"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "left_sleeve"
-								m_vMinBounds = [ -5.813095, -6.996223, 1.127434 ]
-								m_vMaxBounds = [ 9.069061, 7.120732, 12.017288 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "right_sleeve"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "right_sleeve"
-								m_vMinBounds = [ -9.069092, -6.996227, -1.91317 ]
-								m_vMaxBounds = [ 5.813118, 7.120749, 12.017487 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "left_wear01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "left_wear01"
-								m_vMinBounds = [ -14.647032, -13.083174, -24.420029 ]
-								m_vMaxBounds = [ 13.800539, 5.370534, 2.055634 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "right_wear01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "right_wear01"
-								m_vMinBounds = [ -13.800578, -5.324237, -1.122246 ]
-								m_vMaxBounds = [ 13.7459, 13.083038, 24.379074 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "back_wear01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "back_wear01"
-								m_vMinBounds = [ -18.746056, -9.136457, -1.60247 ]
-								m_vMaxBounds = [ 18.745888, 3.430122, 31.769714 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "right_wear03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "right_wear03"
-								m_vMinBounds = [ -15.494749, -25.350176, -0.709961 ]
-								m_vMaxBounds = [ 12.90122, 4.137745, 38.879757 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "left_wear03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "left_wear03"
-								m_vMinBounds = [ -14.548988, -4.142298, -38.879711 ]
-								m_vMaxBounds = [ 15.402639, 25.623087, 0.199211 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "right_wear02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "right_wear02"
-								m_vMinBounds = [ -15.647314, -12.276795, -0.673645 ]
-								m_vMaxBounds = [ 27.994989, 2.371534, 38.672318 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "back_wear"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "back_wear"
-								m_vMinBounds = [ -26.336121, -14.5502, -0.176308 ]
-								m_vMaxBounds = [ 26.758198, 3.595007, 40.257107 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "left_wear02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "left_wear02"
-								m_vMinBounds = [ -28.719168, -2.852645, -38.672287 ]
-								m_vMaxBounds = [ 15.603167, 10.492977, 1.043541 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-						]
-					},
-				]
-				m_AutoCreateSetName = ""
-			}
-		},
-	]
+	m_pHitBoxSetLists = [  ]
 	m_pAttachmentLists = [  ]
 	m_pAnimGroup = 
 	{
@@ -223,13 +86,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_IDLE"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -253,7 +110,7 @@
 					m_Filepath = "models/striker_sasuke/run.smd"
 					m_nStartframe = 0
 					m_nEndframe = 10
-					m_flFps = 25.0
+					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = true
@@ -269,13 +126,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_RUN"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = 
 					[
@@ -356,7 +207,7 @@
 					m_Filepath = "models/striker_sasuke/slash4.smd"
 					m_nStartframe = 0
 					m_nEndframe = 101
-					m_flFps = 60.0
+					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -372,13 +223,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -402,7 +247,7 @@
 					m_Filepath = "models/striker_sasuke/slash3.smd"
 					m_nStartframe = 0
 					m_nEndframe = 81
-					m_flFps = 60.0
+					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -458,13 +303,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -487,8 +326,8 @@
 					m_Animationname = "slash"
 					m_Filepath = "models/striker_sasuke/slash.smd"
 					m_nStartframe = 0
-					m_nEndframe = 66
-					m_flFps = 60.0
+					m_nEndframe = 81
+					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -504,13 +343,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -653,7 +486,7 @@
 					m_Animationname = "punch"
 					m_Filepath = "models/striker_sasuke/punch.smd"
 					m_nStartframe = 0
-					m_nEndframe = 30
+					m_nEndframe = 35
 					m_flFps = 30.0
 					m_Loop = 
 					{
@@ -670,13 +503,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_CAST_ABILITY_1_END"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -778,9 +605,9 @@
 				{
 					m_Animationname = "kirin"
 					m_Filepath = "models/striker_sasuke/kirin.smd"
-					m_nStartframe = 23
-					m_nEndframe = 80
-					m_flFps = 100.0
+					m_nStartframe = 0
+					m_nEndframe = 200
+					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -796,13 +623,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_CAST_ABILITY_6"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -1020,7 +841,7 @@
 					m_Filepath = "models/striker_sasuke/chidori_start.smd"
 					m_nStartframe = 0
 					m_nEndframe = 33
-					m_flFps = 60.0
+					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -1036,13 +857,7 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_CAST_ABILITY_1"
-							m_nWeight = 1
-						},
-					]
+					m_Activities = [  ]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]

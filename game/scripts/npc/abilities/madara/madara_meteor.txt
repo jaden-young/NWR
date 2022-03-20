@@ -1,0 +1,90 @@
+	
+    "DOTAAbilities"
+{
+    
+
+
+"madara_meteor"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"						"ability_lua"
+	"ScriptFile"					"abilities/heroes/madara/meteor.lua"
+	"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+	"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	"FightRecapLevel"				"1"
+	"AbilityTextureName"			"madara_meteor"
+	"AOERadius"						"600"
+	
+	// Casting
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityCastRange"				"650"
+	"AbilityCastPoint"				"0.0 0.0 0.0"
+
+	// Time		
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityChannelTime"			"2 2 2"
+	"AbilityCooldown"				"160"
+
+	// Cost
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilityManaCost"				"200 250 300"		
+
+	// Special
+	//-------------------------------------------------------------------------------------------------------------
+	"AbilitySpecial"
+	{
+		"04"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"channel_duration"					"2"
+		}
+		"01"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"radius"						"600"
+		}
+		"09"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"delay_to_dmg"					"1.0"
+		}
+		"08"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"land_time"						"1.8"
+		}
+		"05"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"travel_speed"					"250"
+		}
+		"06"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"vision_distance"					"500"
+		}
+		"07"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"end_vision_duration"					"3.0"
+		}
+		"02"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"damage"						"400 525 650"
+		}
+		"03"
+		{
+			"var_type"						"FIELD_FLOAT"
+			"stun_duration"					"2.0 2.25 2.5"
+		}
+	}
+}
+
+}
