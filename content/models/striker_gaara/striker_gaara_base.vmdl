@@ -1730,10 +1730,6 @@
 				m_attachments = 
 				[
 					{
-						m_name = "Back"
-						m_influences = [  ]
-					},
-					{
 						m_name = "Back2"
 						m_influences = 
 						[
@@ -1741,7 +1737,7 @@
 								m_influenceName = "Back"
 								m_vTranslationOffset = [ 18.181974, -7.404671, 7.491908 ]
 								m_vRotationOffset = [ -72.387505, -20.456591, 47.750225 ]
-								m_flWeight = 1.0
+								m_flWeight = 2.0
 								m_bRoot = false
 							},
 						]
