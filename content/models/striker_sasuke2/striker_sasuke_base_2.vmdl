@@ -19,6 +19,21 @@
 				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
 				m_pMorphInfo = null
 			},
+			{
+				m_meshName = "sasuke_head"
+				m_meshFile = "models/striker_sasuke2/sasuke_head.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
 		]
 	}
 	m_clothProxyMeshList = 
@@ -101,31 +116,7 @@
 			}
 		},
 	]
-	m_pAttachmentLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_name = ""
-				m_attachments = 
-				[
-					{
-						m_name = "Head"
-						m_influences = 
-						[
-							{
-								m_influenceName = "Head"
-								m_vTranslationOffset = [ -152.786118, 11.649492, -3.253593 ]
-								m_vRotationOffset = [ 88.986771, -0.000001, 86.801308 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-				]
-			}
-		},
-	]
+	m_pAttachmentLists = [  ]
 	m_pAnimGroup = 
 	{
 		m_pObject = 
@@ -1089,6 +1080,22 @@
 			{
 				m_sSearchMaterial = "t_wep_sasukesword_bc.vmat"
 				m_sReplaceMaterial = "materials/models/striker_sasuke/striker_sasuke3.vmat"
+			},
+			{
+				m_sSearchMaterial = "m_line.vmat"
+				m_sReplaceMaterial = "materials/models/striker_sasuke/striker_sasuke4.vmat"
+			},
+			{
+				m_sSearchMaterial = "mi_chr_sasuke.vmat"
+				m_sReplaceMaterial = "materials/models/striker_sasuke/striker_sasuke1.vmat"
+			},
+			{
+				m_sSearchMaterial = "mi_chr_sasukeeyel.vmat"
+				m_sReplaceMaterial = "materials/models/striker_sasuke/striker_sasuke2.vmat"
+			},
+			{
+				m_sSearchMaterial = "mi_chr_sasukeeyer.vmat"
+				m_sReplaceMaterial = "materials/models/striker_sasuke/striker_sasuke2.vmat"
 			},
 		]
 	}
