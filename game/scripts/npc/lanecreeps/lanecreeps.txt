@@ -843,7 +843,7 @@
 			"BaseClass"					"npc_dota_creep_lane"	// Class of entity of link to.
 			"Model"						"models/_linecreeps/shinobi/npc_linecreep_good_melee_1_one.vmdl"	// Model.
 			"SoundSet"					"Creep_Good_Melee"					// Name of sound set.
-			"ModelScale" 				"0.88"
+			"ModelScale" 				"0.60"
 			"Level"						"3"
 
 			// Abilities
