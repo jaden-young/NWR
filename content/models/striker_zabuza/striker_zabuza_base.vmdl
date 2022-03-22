@@ -258,8 +258,8 @@
 					m_Animationname = "cast"
 					m_Filepath = "models/striker_zabuza/cast.smd"
 					m_nStartframe = 0
-					m_nEndframe = 19
-					m_flFps = 25.0
+					m_nEndframe = 25
+					m_flFps = 38.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -706,7 +706,7 @@
 					m_Filepath = "models/striker_zabuza/run.smd"
 					m_nStartframe = 0
 					m_nEndframe = 11
-					m_flFps = 30.0
+					m_flFps = 15.0
 					m_Loop = 
 					{
 						m_bLoop = true

@@ -86,7 +86,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = 
 					[
@@ -143,7 +149,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = 
 					[
@@ -184,7 +196,7 @@
 					m_Filepath = "models/sexy_naruto/idle.fbx"
 					m_nStartframe = 0
 					m_nEndframe = 60
-					m_flFps = 30.0
+					m_flFps = 10.0
 					m_Loop = 
 					{
 						m_bLoop = true
@@ -200,7 +212,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_IDLE"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -240,7 +258,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_1"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -320,7 +344,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_5"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -360,7 +390,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -400,7 +436,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -424,7 +466,7 @@
 					m_Filepath = "models/sexy_naruto/punch3.fbx"
 					m_nStartframe = 0
 					m_nEndframe = 74
-					m_flFps = 30.0
+					m_flFps = 60.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -440,7 +482,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK_EVENT"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -464,7 +512,7 @@
 					m_Filepath = "models/sexy_naruto/rasengan_charge.fbx"
 					m_nStartframe = 0
 					m_nEndframe = 25
-					m_flFps = 30.0
+					m_flFps = 20.0
 					m_Loop = 
 					{
 						m_bLoop = false
@@ -480,7 +528,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_2"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -600,7 +654,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK_SPECIAL"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -640,7 +700,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN_ALT"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = 
 					[
@@ -697,7 +763,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4_END"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -721,7 +793,7 @@
 					m_Filepath = "models/sexy_naruto/run.fbx"
 					m_nStartframe = 0
 					m_nEndframe = 11
-					m_flFps = 30.0
+					m_flFps = 20.0
 					m_Loop = 
 					{
 						m_bLoop = true
@@ -737,7 +809,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = 
 					[
@@ -874,7 +952,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_CAST_ABILITY_4"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
@@ -914,7 +998,13 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_VICTORY"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
 					m_MotionFrames = [  ]
 					m_pIkRules = [  ]

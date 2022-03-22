@@ -949,7 +949,7 @@
 					m_Filepath = "models/striker_hidan/taunt3.smd"
 					m_nStartframe = 0
 					m_nEndframe = 135
-					m_flFps = 60.0
+					m_flFps = 120.0
 					m_Loop = 
 					{
 						m_bLoop = false
