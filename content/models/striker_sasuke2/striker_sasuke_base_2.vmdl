@@ -418,7 +418,7 @@
 					m_Filepath = "models/striker_sasuke2/idle.smd"
 					m_nStartframe = 0
 					m_nEndframe = 129
-					m_flFps = 30.0
+					m_flFps = 15.0
 					m_Loop = 
 					{
 						m_bLoop = true
