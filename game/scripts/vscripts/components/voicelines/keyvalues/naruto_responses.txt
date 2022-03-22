@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"naruto_buyback"      "1"
+			"naruto_respawn"      "1"
 		}
 	}
 	"OnSpawn"

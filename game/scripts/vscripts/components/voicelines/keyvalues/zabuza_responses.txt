@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"zabuza_buyback"      "1"
+			"zabuza_respawn"      "1"
 		}
 	}
 	"OnSpawn"

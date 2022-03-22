@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"madara_buyback"      "1"
+			"madara_respawn"      "1"
 		}
 	}
 	"OnSpawn"

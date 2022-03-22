@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"temari_buyback"      "1"
+			"temari_respawn"      "1"
 		}
 	}
 	"OnSpawn"

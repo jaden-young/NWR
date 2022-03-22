@@ -27,6 +27,7 @@
 		"particle"			"particles/units/heroes/hero_broodmother/broodmother_spin_web_cast.vpcf"
 		"soundfile"			"soundevents/heroes/zabuza/zabuza_mist_talking.vsndevts"
 		"soundfile"			"soundevents/heroes/zabuza/zabuza_mist_loop.vsndevts"
+		"soundfile"			"soundevents/heroes/zabuza/zabuza_mist_cast.vsndevts"
 	}
 		
 	// Special
@@ -109,7 +110,15 @@
 		}
 	}
 
-	
+	"OnAbilityPhaseStart"
+	{
+		"FireSound"
+		{
+			"EffectName"	"zabuza_mist_cast"
+			"Target"		"CASTER"
+		}
+	}
+
 
 	"OnSpellStart"
 	{	
@@ -146,7 +155,7 @@
 			{
 				"AttachEffect"
 				{
-					"EffectName"	"particles/units/heroes/hero_riki/riki_smokebomb.vpcf"
+					"EffectName"	"particles/units/heroes/zabuza/zabuza_mist_core.vpcf"
 					"EffectAttachType"	"attach_origin"
 					"Target"		"TARGET"
 

@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"yondaime_buyback"      "1"
+			"yondaime_respawn"      "1"
 		}
 	}
 	"OnSpawn"

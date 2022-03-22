@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"itachi_buyback"      "1"
+			"itachi_respawn"      "1"
 		}
 	}
 	"OnSpawn"

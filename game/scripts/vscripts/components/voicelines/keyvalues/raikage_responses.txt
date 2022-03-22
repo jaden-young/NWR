@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"raikage_buyback"      "1"
+			"raikage_respawn"      "1"
 		}
 	}
 	"OnSpawn"

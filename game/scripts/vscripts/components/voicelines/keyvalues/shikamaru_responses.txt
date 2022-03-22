@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"shikamaru_buyback"      "1"
+			"shikamaru_respawn"      "1"
 		}
 	}
 	"OnSpawn"

@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"hidan_buyback"      "1"
+			"hidan_respawn"      "1"
 		}
 	}
 	"OnSpawn"

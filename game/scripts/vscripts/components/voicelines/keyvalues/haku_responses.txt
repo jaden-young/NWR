@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"haku_buyback"      "1"
+			"haku_respawn"      "1"
 		}
 	}
 	"OnSpawn"

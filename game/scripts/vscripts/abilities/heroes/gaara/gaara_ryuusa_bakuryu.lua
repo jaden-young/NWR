@@ -28,12 +28,16 @@ function gaara_ryuusa_bakuryu:ProcsMagicStick()
     return true
 end
 
+function gaara_ryuusa_bakuryu:OnAbilityPhaseStart()
+	self:GetCaster():EmitSound("gaara_tsunami_cast")
+	return true
+end
+
 function gaara_ryuusa_bakuryu:OnSpellStart()
 
 	-- Ability properties    
 	self.caster = self:GetCaster()
 
-	self.caster:EmitSound("gaara_tsunami_cast")
 	--self.caster:EmitSound("sounds/weapons/hero/sand_king/sand_king_sandstorm_loop.vsnd")
 
 	-- Ability specials

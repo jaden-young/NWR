@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"guy_buyback"      "1"
+			"guy_respawn"      "1"
 		}
 	}
 	"OnSpawn"

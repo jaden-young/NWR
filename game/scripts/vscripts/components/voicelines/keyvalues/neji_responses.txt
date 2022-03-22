@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"neji_buyback"      "1"
+			"neji_respawn"      "1"
 		}
 	}
 	"OnSpawn"

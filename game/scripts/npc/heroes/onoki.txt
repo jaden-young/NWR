@@ -67,7 +67,6 @@
 
 			"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
 		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
-                        "DisableWearables" "1"
 			"HasInventory"				"1" // This KV is required for units file only
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"

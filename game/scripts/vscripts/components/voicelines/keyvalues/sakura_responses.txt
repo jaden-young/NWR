@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"sakura_buyback"      "1"
+			"sakura_respawn"      "1"
 		}
 	}
 	"OnSpawn"

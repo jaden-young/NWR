@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"kakashi_buyback"      "1"
+			"kakashi_respawn"      "1"
 		}
 	}
 	"OnSpawn"

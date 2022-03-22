@@ -20,6 +20,9 @@ function naruto_kyuubi_chakra_mode:OnSpellStart()
 	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_kyuubi_chakra_mode_active", {duration = self:GetSpecialValueFor("duration")})
 --	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_kyuubi_chakra_mode_magic_immune", {duration = self:GetSpecialValueFor("magic_immune_duration")})
 
+	self:GetCaster():SetModel("models/sexy_naruto/sexy_naruto_kcm_base.vmdl")
+	self:GetCaster():SetOriginalModel("models/sexy_naruto/sexy_naruto_base.vmdl")
+
 	self:GetCaster():EmitSound("kcm_cast_talking")
 	self:GetCaster():EmitSound("kcm_cast")
 end

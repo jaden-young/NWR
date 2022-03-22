@@ -48,7 +48,7 @@
 		"Cooldown"  "6"
 		"Sounds"
 		{
-			"anko_buyback"      "1"
+			"anko_respawn"      "1"
 		}
 	}
 	"OnSpawn"
