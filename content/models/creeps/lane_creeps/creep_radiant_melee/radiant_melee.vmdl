@@ -75,8 +75,8 @@
 								m_sSurfaceProperty = ""
 								m_nGroupId = 0
 								m_sBoneName = "Spine"
-								m_vMinBounds = [ -14.475937, -23.573967, -18.328129 ]
-								m_vMaxBounds = [ 38.300789, 16.478336, 19.170681 ]
+								m_vMinBounds = [ -11.285919, -23.573967, -13.27306 ]
+								m_vMaxBounds = [ 29.860561, 16.478336, 13.883228 ]
 								m_flShapeRadius = 0.0
 								m_nShapeType = "VHITBOX_SHAPE_BOX"
 								m_bTranslationOnly = false
@@ -87,8 +87,8 @@
 								m_sSurfaceProperty = ""
 								m_nGroupId = 0
 								m_sBoneName = "Spine1"
-								m_vMinBounds = [ -15.984352, -12.066097, -31.137983 ]
-								m_vMaxBounds = [ 35.246918, 16.662718, 30.281744 ]
+								m_vMinBounds = [ -9.846528, -12.066097, -24.50297 ]
+								m_vMaxBounds = [ 21.712471, 16.662718, 23.829182 ]
 								m_flShapeRadius = 0.0
 								m_nShapeType = "VHITBOX_SHAPE_BOX"
 								m_bTranslationOnly = false
@@ -471,8 +471,8 @@
 								m_sSurfaceProperty = ""
 								m_nGroupId = 0
 								m_sBoneName = "Head"
-								m_vMinBounds = [ -5.545609, -13.461441, -12.047856 ]
-								m_vMaxBounds = [ 28.272766, 14.212318, 12.42805 ]
+								m_vMinBounds = [ -2.262349, -13.461441, -12.047856 ]
+								m_vMaxBounds = [ 11.533965, 14.212318, 12.42805 ]
 								m_flShapeRadius = 0.0
 								m_nShapeType = "VHITBOX_SHAPE_BOX"
 								m_bTranslationOnly = false

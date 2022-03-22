@@ -5,8 +5,8 @@
 		m_meshList = 
 		[
 			{
-				m_meshName = "zetsu3_base"
-				m_meshFile = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_base.smd"
+				m_meshName = "strikerzetsu_base"
+				m_meshFile = "models/creeps/lane_creeps/creep_bad_melee/strikerzetsu_base.smd"
 				m_materialSearchPath = ""
 				m_bSkinParentedObjects = true
 				m_bLegacySkinParentedTransforms = false
@@ -59,24 +59,300 @@
 						m_HitBoxes = 
 						[
 							{
-								m_name = "Chest"
+								m_name = "C_hair"
 								m_sSurfaceProperty = ""
 								m_nGroupId = 0
-								m_sBoneName = "Chest"
-								m_vMinBounds = [ -40.0, -40.0, -110.0 ]
-								m_vMaxBounds = [ 40.0, 20.0, 55.0 ]
+								m_sBoneName = "C_hair"
+								m_vMinBounds = [ 1.0, 1.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
 								m_flShapeRadius = 0.0
 								m_nShapeType = "VHITBOX_SHAPE_BOX"
 								m_bTranslationOnly = false
 								m_cRenderColor = [ 0, 0, 0, 0 ]
 							},
 							{
-								m_name = "Left Foot"
+								m_name = "Head"
 								m_sSurfaceProperty = ""
 								m_nGroupId = 0
-								m_sBoneName = "Left Foot"
-								m_vMinBounds = [ -20.0, -20.0, -20.0 ]
-								m_vMaxBounds = [ 20.0, 20.0, 20.0 ]
+								m_sBoneName = "Head"
+								m_vMinBounds = [ -20.048763, -24.612396, -30.094072 ]
+								m_vMaxBounds = [ 20.048763, 24.612396, 30.094072 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "Hips"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Hips"
+								m_vMinBounds = [ -12.0, -23.0, -20.0 ]
+								m_vMaxBounds = [ 18.0, 15.0, 19.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftArm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftArm"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftHand"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftHand"
+								m_vMinBounds = [ -11.915728, -5.97004, -15.362467 ]
+								m_vMaxBounds = [ 21.845499, 11.940125, 12.289973 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftForeArm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftForeArm"
+								m_vMinBounds = [ -35.448681, -28.683996, -21.422518 ]
+								m_vMaxBounds = [ 30.7222, 21.512997, 14.281676 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightHand"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightHand"
+								m_vMinBounds = [ -10.659627, -11.332038, -11.364361 ]
+								m_vMaxBounds = [ 16.750843, 22.664076, 17.046541 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightArm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightArm"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightForeArm"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightForeArm"
+								m_vMinBounds = [ -23.782957, -7.0, -9.0 ]
+								m_vMaxBounds = [ 20.611893, 6.0, 6.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftFoot"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftFoot"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftLeg"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftLeg"
+								m_vMinBounds = [ -33.412552, -33.202534, -0.00001 ]
+								m_vMaxBounds = [ 66.825371, 16.982988, 60.037449 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftUpLeg"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftUpLeg"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftLegBend02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftLegBend02"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftLegBend03"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftLegBend03"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightFoot"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightFoot"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightLegBend01"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightLegBend01"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "LeftShoulder"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftShoulder"
+								m_vMinBounds = [ 0.0, -13.0, -16.0 ]
+								m_vMaxBounds = [ 20.0, 11.0, 10.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "R_hair"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "R_hair"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightShoulder"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightShoulder"
+								m_vMinBounds = [ -0.0, -13.0, -10.0 ]
+								m_vMaxBounds = [ 21.0, 11.0, 16.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightLeg"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightLeg"
+								m_vMinBounds = [ -49.154358, -21.53826, -19.666819 ]
+								m_vMaxBounds = [ 49.154388, 21.53826, 19.666819 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightLegBend02"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightLegBend02"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "RightLegBend03"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightLegBend03"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "Spine1"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Spine1"
+								m_vMinBounds = [ -16.0, -12.0, -31.0 ]
+								m_vMaxBounds = [ 35.0, 16.0, 30.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "Spine"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Spine"
+								m_vMinBounds = [ -14.0, -23.0, -18.0 ]
+								m_vMaxBounds = [ 38.0, 16.0, 19.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "FaceCenter"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "FaceCenter"
+								m_vMinBounds = [ -0.0, -0.0, -0.0 ]
+								m_vMaxBounds = [ -0.0, -0.0, -0.0 ]
 								m_flShapeRadius = 0.0
 								m_nShapeType = "VHITBOX_SHAPE_BOX"
 								m_bTranslationOnly = false
@@ -89,70 +365,7 @@
 			}
 		},
 	]
-	m_pAttachmentLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_name = ""
-				m_attachments = 
-				[
-					{
-						m_name = "attach_hitloc"
-						m_influences = 
-						[
-							{
-								m_influenceName = "Chest"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-					{
-						m_name = "attach_origin"
-						m_influences = 
-						[
-							{
-								m_influenceName = "root"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-					{
-						m_name = "attach_attack1"
-						m_influences = 
-						[
-							{
-								m_influenceName = "Right Hand"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-					{
-						m_name = "attach_attack2"
-						m_influences = 
-						[
-							{
-								m_influenceName = "Right Hand"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-				]
-			}
-		},
-	]
+	m_pAttachmentLists = [  ]
 	m_pAnimGroup = 
 	{
 		m_pObject = 
@@ -170,10 +383,10 @@
 			m_Vanim = 
 			[
 				{
-					m_Animationname = "zetsu3_anim"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_anim.smd"
-					m_nStartframe = 209
-					m_nEndframe = 238
+					m_Animationname = "strikerzetsu_death"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/strikerzetsu_death.smd"
+					m_nStartframe = 0
+					m_nEndframe = 112
 					m_flFps = 30.0
 					m_Loop = 
 					{
@@ -193,58 +406,29 @@
 					m_Activities = 
 					[
 						{
-							m_Name = "ACT_DOTA_ATTACK2"
+							m_Name = "ACT_DOTA_DIE"
 							m_nWeight = 1
 						},
 					]
 					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "idle"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_anim.smd"
-					m_nStartframe = 20
-					m_nEndframe = 81
-					m_flFps = 7.0
-					m_Loop = 
-					{
-						m_bLoop = true
-						m_bSmoothLoop = true
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
+					m_MotionFrames = 
 					[
 						{
-							m_Name = "ACT_DOTA_IDLE"
-							m_nWeight = 1
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
 						},
 					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
 					m_pAlignAnimation = null
 					m_adjustAnimation = 
@@ -262,56 +446,10 @@
 					m_MotionFramesRootBone = ""
 				},
 				{
-					m_Animationname = "run"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_anim.smd"
-					m_nStartframe = 94
-					m_nEndframe = 114
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = true
-						m_bSmoothLoop = true
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_RUN"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "attack1"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_anim.smd"
-					m_nStartframe = 147
-					m_nEndframe = 176
+					m_Animationname = "strikerzetsu_punch"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/strikerzetsu_punch.smd"
+					m_nStartframe = 0
+					m_nEndframe = 42
 					m_flFps = 30.0
 					m_Loop = 
 					{
@@ -354,14 +492,14 @@
 					m_MotionFramesRootBone = ""
 				},
 				{
-					m_Animationname = "attack2"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_anim.smd"
+					m_Animationname = "strikerzetsu_run"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/strikerzetsu_run.smd"
 					m_nStartframe = 0
-					m_nEndframe = 432
+					m_nEndframe = 18
 					m_flFps = 30.0
 					m_Loop = 
 					{
-						m_bLoop = false
+						m_bLoop = true
 						m_bSmoothLoop = false
 						m_nSmoothLoopStart = 0
 						m_nSmoothLoopEnd = 0
@@ -374,9 +512,32 @@
 					}
 					m_bHidden = false
 					m_bDisable = false
-					m_Activities = [  ]
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_RUN"
+							m_nWeight = 1
+						},
+					]
 					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
 					m_pIkRules = [  ]
 					m_pAlignAnimation = null
 					m_adjustAnimation = 
@@ -394,10 +555,10 @@
 					m_MotionFramesRootBone = ""
 				},
 				{
-					m_Animationname = "die"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/zetsu3_anim.smd"
-					m_nStartframe = 336
-					m_nEndframe = 365
+					m_Animationname = "strikerzetsu_death2"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/strikerzetsu_death2.smd"
+					m_nStartframe = 0
+					m_nEndframe = 40
 					m_flFps = 30.0
 					m_Loop = 
 					{
@@ -418,6 +579,69 @@
 					[
 						{
 							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "strikerzetsu_kick"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_melee/strikerzetsu_kick.smd"
+					m_nStartframe = 0
+					m_nEndframe = 76
+					m_flFps = 50.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
 							m_nWeight = 1
 						},
 					]
@@ -481,20 +705,16 @@
 		m_vMaterialRemapList = 
 		[
 			{
-				m_sSearchMaterial = "whitezetzuhead.vmat"
-				m_sReplaceMaterial = "materials/creep/new_melee_zetsu_head.vmat"
+				m_sSearchMaterial = "t_chr_whitezetsucrowdform_bc.vmat"
+				m_sReplaceMaterial = "materials/creep/strikerzetsumelee1.vmat"
 			},
 			{
-				m_sSearchMaterial = "whitezetsucreep2body.vmat"
-				m_sReplaceMaterial = "materials/creep/new_melee_zetsu.vmat"
-			},
-			{
-				m_sSearchMaterial = "whitezetsucreep2eyes.vmat"
-				m_sReplaceMaterial = "materials/creep/new_melee_zetsu_eyes.vmat"
+				m_sSearchMaterial = "t_chr_whitezetsucrowdform_eye_bc.vmat"
+				m_sReplaceMaterial = "materials/creep/strikerzetsumelee2.vmat"
 			},
 		]
 	}
-	m_flFbxScale = 1.0
+	m_flFbxScale = 1.2
 	m_flQCScale = 1.0
 	m_vOrigin = [ 0.0, 0.0, 0.0 ]
 	m_bEmbedAnimsInAnimGroup = false
