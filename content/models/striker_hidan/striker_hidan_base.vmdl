@@ -19,6 +19,21 @@
 				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
 				m_pMorphInfo = null
 			},
+			{
+				m_meshName = "hidan_head"
+				m_meshFile = "models/striker_hidan/hidan_head.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
 		]
 	}
 	m_clothProxyMeshList = 
@@ -101,31 +116,7 @@
 			}
 		},
 	]
-	m_pAttachmentLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_name = ""
-				m_attachments = 
-				[
-					{
-						m_name = "Head"
-						m_influences = 
-						[
-							{
-								m_influenceName = "Head"
-								m_vTranslationOffset = [ -149.192062, 2.455863, 1.184249 ]
-								m_vRotationOffset = [ 89.972664, -0.27759, 90.000137 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-				]
-			}
-		},
-	]
+	m_pAttachmentLists = [  ]
 	m_pAnimGroup = 
 	{
 		m_pObject = 
@@ -1038,6 +1029,34 @@
 			{
 				m_sSearchMaterial = "t_wep_3bladedscythe_bc.vmat"
 				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan5.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #26.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan1.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #27.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan1.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #28.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan1.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #30.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan1.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #31.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan3.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #32.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan3.vmat"
+			},
+			{
+				m_sSearchMaterial = "[xfbin] 2hdnbody1.vmat"
+				m_sReplaceMaterial = "materials/models/striker_hidan/strikerhidan1.vmat"
 			},
 		]
 	}

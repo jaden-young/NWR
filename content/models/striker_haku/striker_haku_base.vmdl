@@ -19,6 +19,21 @@
 				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
 				m_pMorphInfo = null
 			},
+			{
+				m_meshName = "haku_mask"
+				m_meshFile = "models/striker_haku/haku_mask.fbx"
+				m_materialSearchPath = ""
+				m_bSkinParentedObjects = true
+				m_bLegacySkinParentedTransforms = false
+				m_bExpensiveTangents = false
+				m_bHighPrecisionTexCoords = false
+				m_bPerVertexCurvature = false
+				m_bBentNormals = false
+				m_bIgnoreCloth = false
+				m_bGetSkinningFromLod0 = false
+				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
+				m_pMorphInfo = null
+			},
 		]
 	}
 	m_clothProxyMeshList = 
@@ -1589,31 +1604,7 @@
 			}
 		},
 	]
-	m_pAttachmentLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_name = ""
-				m_attachments = 
-				[
-					{
-						m_name = "Mask"
-						m_influences = 
-						[
-							{
-								m_influenceName = "FaceCenter"
-								m_vTranslationOffset = [ -0.673906, 0.804679, -7.206879 ]
-								m_vRotationOffset = [ -0.180798, -0.207703, -83.010056 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-				]
-			}
-		},
-	]
+	m_pAttachmentLists = [  ]
 	m_pAnimGroup = 
 	{
 		m_pObject = 
@@ -2441,6 +2432,10 @@
 			{
 				m_sSearchMaterial = "mi_chr_d27_metal.vmat"
 				m_sReplaceMaterial = "materials/models/striker_haku/strikerhaku1.vmat"
+			},
+			{
+				m_sSearchMaterial = "material #25.vmat"
+				m_sReplaceMaterial = "materials/models/striker_haku/strikerhaku3.vmat"
 			},
 		]
 	}

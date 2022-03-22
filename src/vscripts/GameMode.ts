@@ -17,7 +17,7 @@ import "./lib/better_cooldown";
 import "./components/barebones/physics";
 import "./components/barebones/util";
 import "./components/voicelines/voicelines";
-import { malulubul } from "./components/lul/malulubul";
+import { malulubul } from "./components/lul/malubulul";
 // include to print all event data in console, also uncomment in RegisterGameEvents
 // import "./components/barebones/eventtest";
 
@@ -71,6 +71,9 @@ export class GameMode {
         PrecacheResource("soundfile", "soundevents/global/shinobi_start.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/global/malulubul.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/clones/clone_pop.vsndevts", context)
+        PrecacheResource( "model", "models/striker_gaara/striker_gaara_gourd.vmdl", context )
+        PrecacheModel("models/striker_gaara/striker_gaara_gourd.vmdl", context)
+
 
         // PrecacheResource("soundfile", "soundevents/itachi_crows.vsndevts", context)
         // PrecacheResource("soundfile", "soundevents/itachi_amateratsu.vsndevts", context)
@@ -403,7 +406,7 @@ export class GameMode {
     }
 
     OnPlayerChat(event: PlayerChatEvent) {
-        if (event.text == "malulubul") {
+        if (event.text == "malubulul") {
             malulubul(event.playerid);
         }
     }

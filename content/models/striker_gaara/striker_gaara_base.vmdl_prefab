@@ -1,0 +1,30 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc24:version{3cc602c9-066f-48ec-92c4-b105a643953a} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "PreviewPresetList"
+				children = 
+				[
+					{
+						_class = "PreviewPreset"
+						name = "user_preset"
+						children = 
+						[
+							{
+								_class = "PreviewAttachmentModel"
+								model_name = "models/striker_gaara/striker_gaara_gourd.vmdl"
+								attach_point = "Back2"
+								relative_origin = [ 0.0, 0.0, 0.0 ]
+								relative_angles = [ 0.0, 0.0, 0.0 ]
+							},
+						]
+					},
+				]
+			},
+		]
+	}
+}
