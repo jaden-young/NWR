@@ -1,6 +1,8 @@
-.innate_passive_ability{
-    width: 200px;
-    height: 200px;
-    vertical-align: middle;
-    background-color: red;
+.InnatePassiveRoot {
+    width: 100%;
+    height: 100%;
+}
+
+.precache {
+    background-image: url("file://{images}/custom_game/hud/frame_innate_ability_small.png");
 }

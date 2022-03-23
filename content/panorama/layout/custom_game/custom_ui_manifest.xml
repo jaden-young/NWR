@@ -18,6 +18,7 @@
 
 		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/vanilla_hud_overrides.xml" />
 		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/hud_hero_demo.xml" />
-		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" /> 
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/barebones_notifications.xml" />
+		<CustomUIElement type="Hud" layoutfile="file://{resources}/layout/custom_game/innate_passive_panel.xml" />
 	</Panel>
 </root>
