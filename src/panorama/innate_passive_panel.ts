@@ -2,11 +2,6 @@ var Parent: Panel = $.GetContextPanel()!.GetParent()!.GetParent()!.GetParent()!;
 
 const PRINT_WARNINGS = false;
 
-interface AbilityPanel extends Panel {
-    overrideentityindex: number;
-    overridedisplaykeybind: number;
-}
-
 let cdCheckSchedule: ScheduleID | undefined;
 function AddAbilityPanel(abilityID: AbilityEntityIndex, isHero: boolean) {
     const centerHud = Parent!.FindChildTraverse("center_block");
