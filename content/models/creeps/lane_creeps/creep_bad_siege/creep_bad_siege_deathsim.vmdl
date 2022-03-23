@@ -5,8 +5,8 @@
 		m_meshList = 
 		[
 			{
-				m_meshName = "creep_bad_siege"
-				m_meshFile = "models/creeps/lane_creeps/creep_bad_siege/creep_bad_siege.smd"
+				m_meshName = "striker_juubi_siege_base"
+				m_meshFile = "models/creeps/lane_creeps/creep_bad_siege/striker_juubi_siege_base.smd"
 				m_materialSearchPath = ""
 				m_bSkinParentedObjects = true
 				m_bLegacySkinParentedTransforms = false
@@ -59,12 +59,48 @@
 						m_HitBoxes = 
 						[
 							{
-								m_name = "Chest Ref"
+								m_name = "CharacterRoot_copy"
 								m_sSurfaceProperty = ""
 								m_nGroupId = 0
-								m_sBoneName = "Chest Ref"
-								m_vMinBounds = [ -50.0, -50.0, -90.0 ]
-								m_vMaxBounds = [ 50.0, 50.0, 50.0 ]
+								m_sBoneName = "Spine"
+								m_vMinBounds = [ -6711.875977, -2787.84668, -6000.001465 ]
+								m_vMaxBounds = [ 6711.875977, 2787.84668, 6000.001465 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "CharacterRoot_copy_copy"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "LeftArm"
+								m_vMinBounds = [ -2000.0, -1000.0, -2000.0 ]
+								m_vMaxBounds = [ 10000.0, 1000.0, 2000.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "CharacterRoot_copy_copy_copy"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "RightArm"
+								m_vMinBounds = [ -2000.0, -1000.0, -2000.0 ]
+								m_vMaxBounds = [ 10000.0, 1000.0, 2000.0 ]
+								m_flShapeRadius = 0.0
+								m_nShapeType = "VHITBOX_SHAPE_BOX"
+								m_bTranslationOnly = false
+								m_cRenderColor = [ 0, 0, 0, 0 ]
+							},
+							{
+								m_name = "Head"
+								m_sSurfaceProperty = ""
+								m_nGroupId = 0
+								m_sBoneName = "Head"
+								m_vMinBounds = [ -4074.119385, -2000.000366, -5187.168457 ]
+								m_vMaxBounds = [ 4074.119385, 4000.000732, 5187.168457 ]
 								m_flShapeRadius = 0.0
 								m_nShapeType = "VHITBOX_SHAPE_BOX"
 								m_bTranslationOnly = false
@@ -86,37 +122,11 @@
 				m_attachments = 
 				[
 					{
-						m_name = "attach_hitloc"
-						m_influences = 
-						[
-							{
-								m_influenceName = "Chest Ref"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-					{
-						m_name = "attach_origin"
-						m_influences = 
-						[
-							{
-								m_influenceName = "root"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-					{
 						m_name = "attach_attack1"
 						m_influences = 
 						[
 							{
-								m_influenceName = "Right Hand Ref"
+								m_influenceName = "R_Hand_Weapon_cnt_tr"
 								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
 								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
 								m_flWeight = 1.0
@@ -145,15 +155,146 @@
 			m_Vanim = 
 			[
 				{
-					m_Animationname = "oidle"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/juubispear_anim.smd"
-					m_nStartframe = 19
-					m_nEndframe = 81
+					m_Animationname = "striker_juubi_siege_attack"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/striker_juubi_siege_attack.smd"
+					m_nStartframe = 0
+					m_nEndframe = 89
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_ATTACK"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = [  ]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "striker_juubi_siege_death"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/striker_juubi_siege_death.smd"
+					m_nStartframe = 0
+					m_nEndframe = 120
+					m_flFps = 30.0
+					m_Loop = 
+					{
+						m_bLoop = false
+						m_bSmoothLoop = false
+						m_nSmoothLoopStart = 0
+						m_nSmoothLoopEnd = 0
+						m_StartLoop = 
+						{
+							_class = "CVAnimCmdStartLoop"
+							m_bEnabled = false
+							m_nLoopRestart = 0
+						}
+					}
+					m_bHidden = false
+					m_bDisable = false
+					m_Activities = 
+					[
+						{
+							m_Name = "ACT_DOTA_DIE"
+							m_nWeight = 1
+						},
+					]
+					m_AnimationEvents = [  ]
+					m_MotionFrames = 
+					[
+						{
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
+						},
+					]
+					m_pIkRules = [  ]
+					m_pAlignAnimation = null
+					m_adjustAnimation = 
+					{
+						m_translation = [ 0.0, 0.0, 0.0 ]
+						m_rotation = [ 0.0, 0.0, 0.0 ]
+					}
+					m_Keywords = 
+					[
+						"deathsim1",
+						"deathsim2",
+						"deathsim3",
+					]
+					m_sequenceParams = 
+					{
+						m_flFadeInTime = 0.2
+						m_flFadeOutTime = 0.2
+					}
+					m_folderName = ""
+					m_MotionFramesRootBone = ""
+				},
+				{
+					m_Animationname = "striker_juubi_siege_idle"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/striker_juubi_siege_idle.smd"
+					m_nStartframe = 0
+					m_nEndframe = 150
 					m_flFps = 30.0
 					m_Loop = 
 					{
 						m_bLoop = true
-						m_bSmoothLoop = true
+						m_bSmoothLoop = false
 						m_nSmoothLoopStart = 0
 						m_nSmoothLoopEnd = 0
 						m_StartLoop = 
@@ -191,15 +332,15 @@
 					m_MotionFramesRootBone = ""
 				},
 				{
-					m_Animationname = "run"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/juubispear_anim.smd"
-					m_nStartframe = 95
-					m_nEndframe = 114
-					m_flFps = 30.0
+					m_Animationname = "striker_juubi_siege_run"
+					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/striker_juubi_siege_run.smd"
+					m_nStartframe = 0
+					m_nEndframe = 70
+					m_flFps = 45.0
 					m_Loop = 
 					{
 						m_bLoop = true
-						m_bSmoothLoop = true
+						m_bSmoothLoop = false
 						m_nSmoothLoopStart = 0
 						m_nSmoothLoopEnd = 0
 						m_StartLoop = 
@@ -219,145 +360,24 @@
 						},
 					]
 					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "die"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/juubispear_anim.smd"
-					m_nStartframe = 334
-					m_nEndframe = 364
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
+					m_MotionFrames = 
 					[
 						{
-							m_Name = "ACT_DOTA_DIE_SPECIAL"
-							m_nWeight = 1
+							m_nFrame = 0
+							m_bExtractTX = true
+							m_bExtractTY = true
+							m_bExtractTZ = false
+							m_bExtractRX = false
+							m_bExtractRY = false
+							m_bExtractRZ = false
+							m_bDiscardTX = false
+							m_bDiscardTY = false
+							m_bDiscardTZ = false
+							m_bDiscardRX = false
+							m_bDiscardRY = false
+							m_bDiscardRZ = false
 						},
 					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "attack1"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/juubispear_anim.smd"
-					m_nStartframe = 146
-					m_nEndframe = 177
-					m_flFps = 20.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "die_copy"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_siege/juubispear_anim.smd"
-					m_nStartframe = 334
-					m_nEndframe = 364
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_DIE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
 					m_pIkRules = [  ]
 					m_pAlignAnimation = null
 					m_adjustAnimation = 
@@ -416,13 +436,17 @@
 		m_vMaterialRemapList = 
 		[
 			{
-				m_sSearchMaterial = "nsaw_model_juubi_spear_creep.vmat"
-				m_sReplaceMaterial = "materials/creep/creep_bad_siege.vmat"
+				m_sSearchMaterial = "material_#26.vmat"
+				m_sReplaceMaterial = "materials/creep/strikerjuubisiege.vmat"
+			},
+			{
+				m_sSearchMaterial = "t_chr_tentailscloneboss_bc.vmat"
+				m_sReplaceMaterial = "materials/creep/strikerjuubicreep.vmat"
 			},
 		]
 	}
-	m_flFbxScale = 1.0
-	m_flQCScale = 1.0
+	m_flFbxScale = 0.1
+	m_flQCScale = 0.015
 	m_vOrigin = [ 0.0, 0.0, 0.0 ]
 	m_bEmbedAnimsInAnimGroup = false
 	m_pPsfList = null
