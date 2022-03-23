@@ -1,13 +1,11 @@
 <root>
     <styles>
+		<include src="s2r://panorama/styles/hud/dota_hud_ability_panel.css"/>
         <include src="file://{resources}/styles/custom_game/innate_passive_panel.css" />
     </styles>
     <scripts>
         <include src="file://{resources}/scripts/custom_game/innate_passive_panel.js" />
     </scripts>
-    <!--<snippets>-->
-    <!--</snippets>-->
-    <Panel class="innate_passive_panel">
-        <DOTAAbilityImage id="innate_passive_ability_image" abilityname="" />
+    <Panel class="InnatePassiveRoot" hittest="false">
     </Panel>
 </root>

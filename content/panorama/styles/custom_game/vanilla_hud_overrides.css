@@ -11,6 +11,7 @@
     background-image: url("file://{resources}/images/custom_game/hud/dhb_minimap.png");
     background-image: url("file://{resources}/images/custom_game/hud/dhb_minimap2.png");
     background-image: url("file://{resources}/images/custom_game/hud/dhb_portrait1.png");
+    background-image: url("file://{resources}/images/custom_game/hud/dhb_portrait1_simple.png");
 
     /* topbar hero images are already loaded in hero selection */
 }
