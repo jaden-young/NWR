@@ -77,19 +77,18 @@
 	[
 		{
 			_class = "C_OP_RenderModels"
-			m_nBodyGroupField = 7
+			m_nBodyGroupField = 13
 			m_nAnimationField = 7
 			m_bOrientZ = true
 			m_bSuppressTint = true
 			m_ModelList = 
 			[
 				{
-					m_model = resource:"models/creeps/lane_creeps/creep_bad_siege/creep_bad_siege.vmdl"
+					m_model = resource:"models/creeps/lane_creeps/creep_bad_siege/creep_bad_siege_deathsim.vmdl"
 				},
 			]
 			m_bAnimated = true
 			m_nLOD = 1
-			m_nAnimationScaleField = 7
 		},
 	]
 	m_Children = 
