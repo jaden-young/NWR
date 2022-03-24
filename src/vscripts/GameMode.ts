@@ -317,7 +317,9 @@ export class GameMode {
 
         //Innate passives bit
         const innate_ability = hero.FindAbilityByName(`${shortName}_innate_passive`);
-        innate_ability?.SetLevel(1)
+        if(innate_ability){
+            innate_ability.SetLevel(1)
+        }
     }
 
     OnPlayerLearnedAbility(event: DotaPlayerLearnedAbilityEvent) {
@@ -424,7 +426,9 @@ export class GameMode {
             const longName = hero.GetUnitName();
             const shortName = ShortHeroName(longName);
             const innate_ability = hero.FindAbilityByName(`${shortName}_innate_passive`);
-            innate_ability?.SetLevel(innate_ability.GetLevel() + 1)
+            if(innate_ability){
+                innate_ability?.SetLevel(innate_ability.GetLevel() + 1)
+            }
         }
     }
 }
