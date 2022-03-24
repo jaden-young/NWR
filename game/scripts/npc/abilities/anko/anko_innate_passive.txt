@@ -1,0 +1,45 @@
+"DOTAAbilities"
+{
+    "anko_innate_passive"
+    {
+
+        "BaseClass"		"ability_lua"
+        "AbilityTextureName"		"ability_name"
+        "MaxLevel"		            "30"
+        "LevelsBetweenUpgrades"		"0"
+        "ScriptFile"					"abilities/heroes/anko/anko_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE "
+        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "spell_lifesteal_base"			"10.0"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "spell_lifesteal_per_level_bonus"		"1.0"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_threshold_base"		"650.0"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_threshold_per_level_bonus"		"-15.0"
+            }
+            "05"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_threshold_reset_time"		"7.0"
+            }
+        }
+    }
+}

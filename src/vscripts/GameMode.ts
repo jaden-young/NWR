@@ -113,6 +113,7 @@ export class GameMode {
         ListenToGameEvent("dota_item_purchased", event => this.OnDotaItemPurchased(event), undefined);
         ListenToGameEvent("dota_player_pick_hero", event => this.OnPlayerPickHero(event), undefined);
         ListenToGameEvent("player_chat", event => this.OnPlayerChat(event), undefined);
+        ListenToGameEvent("dota_player_gained_level", event => this.OnPlayerGainedLevel(event), undefined);
 
         // Uncomment to print all event data
         // EventTest.StartEventTest();
@@ -313,6 +314,10 @@ export class GameMode {
             EmitSoundOnEntityForPlayer("akat_start", hero, playerId);
         }
         CustomGameEventManager.Send_ServerToAllClients("override_hero_image", {});
+
+        //Innate passives bit
+        const innate_ability = hero.FindAbilityByName(`${shortName}_innate_passive`);
+        innate_ability?.SetLevel(1)
     }
 
     OnPlayerLearnedAbility(event: DotaPlayerLearnedAbilityEvent) {
@@ -408,6 +413,18 @@ export class GameMode {
     OnPlayerChat(event: PlayerChatEvent) {
         if (event.text == "malubulul") {
             malulubul(event.playerid);
+        }
+    }
+
+    OnPlayerGainedLevel(event: DotaPlayerGainedLevelEvent){
+        const player = PlayerResource.GetPlayer(event.player_id);
+        if(player){
+            const hero = player.GetAssignedHero();
+            const playerId = hero.GetPlayerOwnerID();
+            const longName = hero.GetUnitName();
+            const shortName = ShortHeroName(longName);
+            const innate_ability = hero.FindAbilityByName(`${shortName}_innate_passive`);
+            innate_ability?.SetLevel(innate_ability.GetLevel() + 1)
         }
     }
 }
