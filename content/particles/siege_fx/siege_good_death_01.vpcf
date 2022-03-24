@@ -1,0 +1,151 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_flConstantRadius = 1.0
+	m_nConstantSequenceNumber1 = 2
+	m_flNoDrawTimeToGoToSleep = 32.0
+	m_bShouldSort = false
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 1.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_CreateWithinSphere"
+		},
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 6.5
+			m_fLifetimeMin = 6.5
+		},
+		{
+			_class = "C_INIT_RemapInitialCPDirectionToRotation"
+			m_flOffsetRot = 90.0
+		},
+		{
+			_class = "C_INIT_RandomNamedModelSequence"
+			m_bModelFromRenderer = true
+			m_names = 
+			[
+				"anim_1",
+				"anim_2",
+				"anim_3",
+			]
+			m_nFieldOutput = 13
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 0.7
+			m_flRadiusMin = 0.7
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_flOpStartFadeInTime = 5.0
+			m_flOpEndFadeInTime = 5.0
+			m_Gravity = [ 0.0, 0.0, -100.0 ]
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartTime = 0.95
+			m_flEndScale = 0.0
+		},
+		{
+			_class = "C_OP_RemapNamedModelSequenceOnceTimed"
+			m_flRemapTime = 4.0
+			m_bModelFromRenderer = true
+			m_inNames = 
+			[
+				"anim_1",
+				"anim_2",
+				"anim_3",
+			]
+			m_outNames = 
+			[
+				"end_1",
+				"end_2",
+				"end_3",
+			]
+			m_nFieldInput = 13
+			m_nFieldOutput = 13
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderModels"
+			m_bOrientZ = true
+			m_bSuppressTint = true
+			m_ModelList = 
+			[
+				{
+					m_model = resource:"models/creeps/lane_creeps/creep_radiant_siege/creep_good_siege.vmdl"
+				},
+			]
+			m_bAnimated = true
+			m_nLOD = 1
+			m_nAnimationScaleField = 7
+			m_nAnimationField = 7
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_flDelay = 0.25
+			m_ChildRef = resource:"particles/siege_fx/siege_dust_01.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/siege_fx/siege_bits_01.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/siege_fx/siege_bits_02.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/siege_fx/siege_dust_02.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/siege_fx/siege_crack.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/siege_fx/siege_crack_b.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/siege_fx/siege_good_death_sparks.vpcf"
+			m_bDisableChild = true
+		},
+	]
+}
