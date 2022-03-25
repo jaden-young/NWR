@@ -753,10 +753,10 @@
 "models/sexy_madara/sexy_madara_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightAngles"		"45.889999 140.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"195 181 254"
+		"PortraitLightColor"		"222 175 160"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -775,7 +775,7 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"3.050000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		
 		"cameras"
@@ -1211,7 +1211,7 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"2.650000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
@@ -1307,10 +1307,10 @@
 "models/striker_sasuke2/striker_sasuke_base_2.vmdl"
 	{
 	"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightAngles"		"0.889999 183.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"254 235 192"
+		"PortraitLightColor"		"214 255 255"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -1329,16 +1329,16 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"2.050000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"450.000000 -46.000000 100.000000"  // x /left to right    y     z /up down
-				"PortraitAngles"		"357.300006 175.899994 0.000000"
-				"PortraitFOV"		"6.500000" //zoom
+				"PortraitPosition"		"320.000000 304.060000 35.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"348 228.00000 350.009000" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"6.200002" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
