@@ -54,6 +54,9 @@ function gaara_sabaku_kyuu:OnSpellStart()
 
 	if self.target and self.target:IsAlive() and not self.target:IsOutOfGame() then
 		self.target:AddNewModifier(self:GetCaster(), self, "modifier_gaara_sabaku_kyuu", {duration = self:GetSpecialValueFor("duration")})
+	
+		--Pocket sand bit
+		self:GetCaster():FindAbilityByName("gaara_innate_passive"):ApplyPocketSandDebuff(self.target)
 	end
 end
 

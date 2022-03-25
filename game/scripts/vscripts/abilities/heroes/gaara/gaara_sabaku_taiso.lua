@@ -187,6 +187,10 @@ function gaara_sabaku_taiso:OnProjectileHit(hTarget, vLocation)
 				damage_type = DAMAGE_TYPE_MAGICAL,
 				ability = self.ability
 			})
+
+			-- Innate passive bit
+			self:GetCaster():FindAbilityByName("gaara_innate_passive"):ApplyPocketSandDebuff(hTarget)
+
 		end
 	end
 
