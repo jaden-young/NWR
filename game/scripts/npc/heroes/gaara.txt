@@ -72,6 +72,7 @@
 		"Ability4"		"generic_hidden"
 		"Ability5"		"generic_hidden"
 		"Ability6"         "gaara_sabaku_taiso"
+		"Ability7"		"gaara_innate_passive"
 
 		"Ability10"		"special_bonus_mp_regen_2"
 		"Ability11"		"special_bonus_spell_amplify_6"

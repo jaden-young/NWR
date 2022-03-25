@@ -1,0 +1,42 @@
+"DOTAAbilities"
+{
+    "gaara_innate_passive"
+    {
+        "BaseClass"		"ability_lua"
+        "MaxLevel"		            "30"
+        "LevelsBetweenUpgrades"		"0"
+        "ScriptFile"					"abilities/heroes/gaara/gaara_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE "
+        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "attack_speed_slow_base"			    "15"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "attack_speed_slow_per_level_bonus"		    "4"
+            }
+            "03"
+            {
+                "var_type"			    "FIELD_FLOAT"
+                "duration_base"		        "4.0"
+            }
+            "04"
+            {
+                "var_type"			    "FIELD_FLOAT"
+                "duration_per_level_bonus"		        "0.25"
+            }
+            "05"
+            {
+                "var_type"			    "FIELD_FLOAT"
+                "vision_reduction_percentage_base"		        "40.0"
+            }
+        }
+    }
+}

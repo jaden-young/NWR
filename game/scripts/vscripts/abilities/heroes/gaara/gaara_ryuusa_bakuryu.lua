@@ -209,7 +209,11 @@ function modifier_gaara_sandstorm_thinker:OnIntervalThink()
 	for _,enemy in pairs(units) do
 		-- Deal damage
 		self.damage_table.victim = enemy
-		ApplyDamage(self.damage_table)  
+		ApplyDamage(self.damage_table)
+
+		-- Innate passive bit
+		self:GetCaster():FindAbilityByName("gaara_innate_passive"):ApplyPocketSandDebuff(enemy)
+
 	end
 end
 

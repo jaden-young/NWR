@@ -78,7 +78,8 @@
 		"Ability3"        			"anko_senei_jyashu"
   		"Ability4"        			"generic_hidden"
 		"Ability5"        			"generic_hidden"
-		"Ability6"        			"anko_sojasosai_no_jutsu"      
+		"Ability6"        			"anko_sojasosai_no_jutsu"   
+		"Ability7"					"anko_innate_passive"   
 
 		"Ability10"					"special_bonus_mp_regen_2"
 		"Ability11"					"special_bonus_cast_range_100"
