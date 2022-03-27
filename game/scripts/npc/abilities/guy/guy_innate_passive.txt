@@ -1,0 +1,22 @@
+"DOTAAbilities"
+{
+    "guy_innate_passive"
+    {
+        "BaseClass"		"ability_lua"
+        "MaxLevel"		            "30"
+        "LevelsBetweenUpgrades"		"0"
+        "ScriptFile"					"abilities/heroes/guy/guy_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE "
+        "AbilityTextureName"			"guy_innate"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "status_resistance_per_percentage_hp_missing"			    "0.75"
+            }
+        }
+    }
+}

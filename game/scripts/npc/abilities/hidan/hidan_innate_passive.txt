@@ -1,0 +1,32 @@
+"DOTAAilities"{
+    "hidan_innate_passive"{
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/hidan/hidan_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"hidan_innate"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "hp_healed_percentage_base"			"25.0"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "hp_healed_percentage_bonus_per_level"		"1.0"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "cooldown_base"		"45"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "cooldown_bonus_per_level"		"-0.75"
+            }
+        }
+    }
+}

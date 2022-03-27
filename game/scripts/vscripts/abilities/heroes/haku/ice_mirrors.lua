@@ -67,12 +67,13 @@ function haku_ice_mirrors:OnSpellStart()
 				mirror:CreatureLevelUp(2)
 			end
 
-			local endless_wounds_ability = self:GetCaster():FindAbilityByName("haku_endless_wounds")
-            if endless_wounds_ability ~= nil then
-			    if endless_wounds_ability:GetLevel() > 0 then
-			    	mirror:AddNewModifier(self:GetCaster(), endless_wounds_ability, "modifier_haku_endless_needles_caster",{})
-			    end
-			end
+			local innate_passive_level = self:GetCaster():FindAbilityByName("haku_innate_passive"):GetLevel()
+ 
+			-- mirror:AddNewModifier(self:GetCaster(), endless_wounds_ability, "modifier_haku_innate_passive_intrinsic",{})
+			-- local innate_passive_ability = mirror:AddAbility("haku_innate_passive")
+			-- print(innate_passive_level)
+			-- innate_passive_ability:SetLevel(innate_passive_level)
+
 
 			table.insert(self.mirrors, mirror)
 		end
@@ -197,5 +198,11 @@ function modifier_haku_mirror_mirror:OnAttackLanded(params) -- health handling
 		else
 			self:GetParent():Kill(nil, params.attacker)
 		end
+	end
+
+	if params.attacker == self:GetParent() then
+		local innate_passive_ability = self:GetParent():GetOwner():FindAbilityByName("haku_innate_passive")
+		local stacks_to_apply = innate_passive_ability:GetSpecialValueFor("stacks_per_attack")
+		innate_passive_ability:ApplyStacks(params.target, stacks_to_apply)
 	end
 end
