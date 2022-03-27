@@ -42,7 +42,7 @@
 		"AttackDamageMin"		"20"
 		"AttackDamageMax"		"30"
 		"AttackRate"		"1.700000"		  
-		  "AttackAnimationPoint"   "0.1"
+		"AttackAnimationPoint"   "0.3"
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 
 		"ProjectileModel"   "particles/units/heroes/shikamaru/base_attack/shikamaru_base_attack.vpcf"
@@ -55,16 +55,16 @@
 		"Rolelevels"	"2,3,3,2,1"
 		 // "AttackRate"				"0.7"
 		  "AttackRange"				"600"
-		"AttackDamageMin"			"21"	// Damage range min.
-		"AttackDamageMax"			"31"	// Damage range max.
+		  "AttackDamageMin"			"21"	// Damage range min.
+		  "AttackDamageMax"			"31"	// Damage range max.
 		  "StatusHealth"    "200"
-  "StatusHealthRegen"   "0.300000"
+ 		  "StatusHealthRegen"   "0.300000"
 		  "MovementSpeed"			"290"
 		  "AttributeBaseStrength" "22" // Base strength
 		  "AttributeStrengthGain" "2.1" // Strength bonus per level.
 		  "AttributeBaseAgility" "16" // Base agility
 		  "AttributeAgilityGain" "1.8" // Agility bonus per level.
-		"AttributeBaseIntelligence" "25" // Base intelligence
+		  "AttributeBaseIntelligence" "25" // Base intelligence
 		  "AttributeIntelligenceGain" "3.5" // Intelligence bonus per level.
 
 	  	  "Village"			"konoha"

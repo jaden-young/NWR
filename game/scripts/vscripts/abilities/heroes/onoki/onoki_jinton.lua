@@ -5,6 +5,7 @@ function onoki_jinton:Precache( context )
     PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_atomic_root.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_atomic_explosion.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_particle_talking.vsndevts", context )
+	PrecacheResource( "soundfile", "soundevents/heroes/onoki/onoki_particle_cast.vsndevts", context )
     PrecacheResource( "particle", "particles/units/heroes/onoki/onoki_cube1.vpcf", context )
 end
 
@@ -47,6 +48,11 @@ function onoki_jinton:CanBeReflected(bool, target)
 	    ParticleManager:CreateParticle("particles/items3_fx/lotus_orb_reflect.vpcf", PATTACH_ABSORIGIN, target)
 		EmitSoundOn("DOTA_Item.AbyssalBlade.Activate", target)
 	end
+end
+
+function onoki_jinton:OnAbilityPhaseStart()
+	self:GetCaster():EmitSound("onoki_particle_cast")
+	return true
 end
 
 function onoki_jinton:OnSpellStart()

@@ -32,7 +32,7 @@
 		"AttackDamageMax"   "37"
 		"AttackRange"				"100"
 		"AttackRate"				"1.7"
-		"AttackAnimationPoint"		"0.4"
+		"AttackAnimationPoint"		"0.2"
 		"AttackSpeedActivityModifiers"
 		{
 			"fast"		"170"
