@@ -3,3 +3,4 @@
 #base "haku_ice_mirrors.txt"
 #base "haku_needles.txt"
 #base "talents.txt"
+#base "haku_innate_passive.txt"

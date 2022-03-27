@@ -2,7 +2,8 @@ export {}
 declare global {
     interface CDOTA_BaseNPC {
         GetAllAbilities(): CDOTABaseAbility[];
-        GetTalent(talentName: string): number;
+        GetTalentSpecialValueFor(talentName: string): number;
+        FindTalentValue(talentName: string, key?: string): number;
     }
 }
 
@@ -18,7 +19,7 @@ if (IsServer()) {
         return abilities;
     }
 
-    CDOTA_BaseNPC.GetTalent = function (talentName: string) {
+    CDOTA_BaseNPC.GetTalentSpecialValueFor = function (talentName: string) {
         let talent = this.FindAbilityByName(talentName);
         return talent ? talent.GetSpecialValueFor("value") : 0;
     }

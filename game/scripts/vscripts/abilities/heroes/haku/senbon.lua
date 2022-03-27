@@ -115,7 +115,7 @@ function haku_crippling_senbon:OnProjectileHit_ExtraData(target, location, Extra
 					 damage_type = self:GetAbilityDamageType()})
 			target:AddNewModifier(caster, self, "modifier_stunned", {duration = ExtraData.stun_duration * (1 - target:GetStatusResistance())})
 
-			local woudns_ability = self:GetCaster():FindAbilityByName("haku_endless_wounds")
+			local woudns_ability = self:GetCaster():FindAbilityByName("haku_innate_passive")
 			if woudns_ability ~= nil then
 				if woudns_ability:GetLevel() > 0 then  
 					woudns_ability:ApplyStacks(target, self:GetSpecialValueFor("endless_wounds_stacks"))
