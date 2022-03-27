@@ -98,7 +98,7 @@ function modifier_haku_needles_thinker:OnIntervalThink()
 
 			v:AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_rooted", {duration = self:GetAbility():GetSpecialValueFor("stun_duration")})
 
-			local woudns_ability = self:GetCaster():FindAbilityByName("haku_endless_wounds")
+			local woudns_ability = self:GetCaster():FindAbilityByName("haku_innate_passive")
             if woudns_ability ~= nil then
 			    if woudns_ability:GetLevel() > 0 then  
 			    	woudns_ability:ApplyStacks(v, self:GetAbility():GetSpecialValueFor("endless_wounds_stacks"))

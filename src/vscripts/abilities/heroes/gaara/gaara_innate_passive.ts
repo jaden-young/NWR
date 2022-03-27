@@ -13,6 +13,7 @@ export class gaara_innate_passive extends BaseAbility
     }
 
     ApplyPocketSandDebuff(target: CDOTA_BaseNPC){
+        if(target.IsBuilding()){return}
         let duration = this.GetSpecialValueFor("duration_base") + this.GetSpecialValueFor("duration_per_level_bonus")*(this.GetLevel()-1)
 
         target.AddNewModifier(this.GetCaster(), this, "modifier_gaara_innate_passive_debuff", {duration: duration})
