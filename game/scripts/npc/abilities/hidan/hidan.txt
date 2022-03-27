@@ -4,3 +4,4 @@
 #base "hidan_self_pain.txt"
 #base "hidan_taunt.txt"
 #base "talents.txt"
+#base "hidan_innate_passive.txt"
