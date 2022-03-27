@@ -89,7 +89,7 @@ export class modifier_haku_innate_passive_intrinsic extends BaseModifier {
 }
 
 @registerModifier()
-class modifier_haku_innate_passive_victim_counter extends BaseModifier {
+export class modifier_haku_innate_passive_victim_counter extends BaseModifier {
     current_stacks: number = 0;
     slow_per_stack: number = 0;
     duration: number = 0;
@@ -187,7 +187,7 @@ class modifier_haku_innate_passive_victim_counter extends BaseModifier {
 }
 
 @registerModifier()
-class modifier_haku_innate_passive_victim extends BaseModifier{
+export class modifier_haku_innate_passive_victim extends BaseModifier{
     IsHidden(): boolean {
         return  true
     }

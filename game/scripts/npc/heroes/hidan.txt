@@ -27,6 +27,7 @@
 		"Ability4"        "hidan_self_pain"
 		"Ability5"        "generic_hidden"
 		"Ability6"        "hidan_death_possession_blood"
+		"Ability7"			"hidan_innate_passive"
 		"Ability10"		"special_bonus_hidan_4"
 		   "Ability11"		"special_bonus_hp_regen_5"
 		   "Ability12"		"special_bonus_attack_damage_30"
