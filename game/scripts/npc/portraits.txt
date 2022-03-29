@@ -332,7 +332,7 @@
 		"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
 		"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
 		"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_drow_arcana.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
@@ -345,9 +345,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"320.000000 334.060000 55.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
-				"PortraitAngles"		"348 228.00000 3.009000" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"6.200002" //zoom
+				"PortraitPosition"		"69.463745 18.338926 151.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"0 -168.935287 0" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"35" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -372,7 +372,7 @@
 		"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
 		"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
 		"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_drow_arcana.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
@@ -385,9 +385,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"320.000000 334.060000 55.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
-				"PortraitAngles"		"348 228.00000 350.009000" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"6.200002" //zoom
+				"PortraitPosition"		"69.463745 18.338926 151.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"0 -168.935287 0" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"35" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
