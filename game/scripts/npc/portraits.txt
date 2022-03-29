@@ -356,6 +356,46 @@
 			}
 		}
 	}
+	
+	"models/striker_hidan/striker_hidan_transformation_base.vmdl"
+	{
+	"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
+		"PortraitLightAngles"		"0.889999 183.929993 0.000000"
+		"PortraitLightFOV"		"63.000000"
+		"PortraitLightDistance"		"471.000000"
+		"PortraitLightColor"		"214 255 255"
+		"PortraitShadowColor"		"131 131 131"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"0 161 155"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.00000 0.450000 0.600000"
+		"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"2.050000"
+		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
+		
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"320.000000 334.060000 55.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"348 228.00000 350.009000" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"6.200002" //zoom
+				"PortraitFar"		"1000.000000"
+			}
+		}
+	}
 
 	"models/itachi_new/itachi.vmdl"
 	{
@@ -659,14 +699,14 @@
 		}
 	}
 
-	"models/kisame_new/kisame.vmdl"
+	"models/striker_kisame/striker_kisame_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightAngles"		"45.889999 240.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"195 181 254"
-		"PortraitShadowColor"		"131 131 131"
+		"PortraitLightColor"		"184 225 225"
+		"PortraitShadowColor"		"161 161 161"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
 		"PortraitAmbientColor"		"0 161 155"
@@ -674,25 +714,25 @@
 		"PortraitSpecularColor"		"251 74 84"
 		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
 		"PortraitSpecularPower"		"16.000000"
-		"PortraitBackgroundColor1"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor2"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor3"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor4"		"0.100000 0.640000 1.000000"
+		"PortraitBackgroundColor1"		"0.420000 0.560000 0.920000"
+		"PortraitBackgroundColor2"		"0.420000 0.560000 0.920000"
+		"PortraitBackgroundColor3"		"0.420000 0.560000 0.920000"
+		"PortraitBackgroundColor4"		"0.420000 0.560000 0.920000"
 		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"2.650000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"520.000000 -48.000000 124.000000"
-				"PortraitAngles"		"357.600006 175.899994 0.000000"
-				"PortraitFOV"		"4.500000"
+				"PortraitPosition"		"390.000000 -133.060000 25.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"340 162.00000 0.009000" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"5.800002" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
