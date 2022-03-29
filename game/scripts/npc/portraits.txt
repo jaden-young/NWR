@@ -350,7 +350,7 @@
 			"default"
 			{
 				"PortraitPosition"		"320.000000 334.060000 55.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
-				"PortraitAngles"		"348 228.00000 350.009000" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitAngles"		"348 228.00000 3.009000" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
 				"PortraitFOV"		"6.200002" //zoom
 				"PortraitFar"		"1000.000000"
 			}
@@ -1566,7 +1566,7 @@
 		}
 	}
 
-	"models/haku/haku.vmdl"
+	"models/striker_haku/striker_haku_base.vmdl"
 	{
 	"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
 		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
@@ -1597,10 +1597,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"626.000000 -48.000000 137.000000"
-				"PortraitAngles"		"357.600006 175.899994 0.000000"
-				"PortraitFOV"		"4.0000"
-				"PortraitFar"		"1000.000000"
+				"PortraitPosition"		"86.2889 31.6983 106.881"
+				"PortraitAngles"		"0 -154.356 0.000000"
+				"PortraitFOV"		"54.0000"
 			}
 		}
 	}

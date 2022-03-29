@@ -926,6 +926,32 @@
 				]
 				default_root_bone_name = ""
 			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "camera"
+						children = 
+						[
+							{
+								_class = "Attachment Camera Preview"
+								fov = 54
+								screen_width_for_aspect = 512
+								screen_height_for_aspect = 384
+								preview_scale = 0.3
+								background_color = [ 28, 28, 30 ]
+							},
+						]
+						parent_bone = ""
+						relative_origin = [ 68.189903, 18.797983, 196.599197 ]
+						relative_angles = [ 18.562294, -168.070557, -1.296362 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
