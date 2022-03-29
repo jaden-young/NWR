@@ -53,7 +53,7 @@
 		"PortraitBackgroundColor2"		"0.750000 0.860000 0.680000"
 		"PortraitBackgroundColor3"		"0.750000 0.860000 0.680000"
 		"PortraitBackgroundColor4"		"0.750000 0.860000 0.680000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_windrunner_arcana.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
@@ -92,11 +92,11 @@
 		"PortraitBackgroundColor2"		"0.750000 0.860000 0.680000"
 		"PortraitBackgroundColor3"		"0.750000 0.860000 0.680000"
 		"PortraitBackgroundColor4"		"0.750000 0.860000 0.680000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_forest_hood.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
-		"PortraitAnimationRate"		"1.000000"
+		"PortraitAnimationRate"		"0.1"
 		"PortraitHideHero"		"0"
 		"PortraitLightScale"		"2.300000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
@@ -104,9 +104,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"101.521 -11.1401 125.588"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
-				"PortraitAngles"		"0 180 0" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"54" //zoom
+				"PortraitPosition"		"72.8015 -1.26967 81.7333"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"-38.1891 -163.164 -8.0598" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"42" //zoom
 			}
 		}
 	}
@@ -714,7 +714,7 @@
 		"PortraitBackgroundColor2"		"0.420000 0.560000 0.920000"
 		"PortraitBackgroundColor3"		"0.420000 0.560000 0.920000"
 		"PortraitBackgroundColor4"		"0.420000 0.560000 0.920000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_underwater.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
@@ -1111,7 +1111,7 @@
 		"PortraitBackgroundColor2"		"1.000000 0.578000 0.000000"
 		"PortraitBackgroundColor3"		"1.000000 0.578000 0.000000"
 		"PortraitBackgroundColor4"		"1.000000 0.578000 0.000000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_graveyard.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
@@ -1425,13 +1425,13 @@
 		"PortraitBackgroundColor2"		"0.420000 0.560000 0.920000"
 		"PortraitBackgroundColor3"		"0.420000 0.560000 0.920000"
 		"PortraitBackgroundColor4"		"0.420000 0.560000 0.920000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_oracle.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"2.650000"
+		"PortraitLightScale"		"2.2"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
@@ -1581,7 +1581,7 @@
 		"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
 		"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
 		"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_glacier.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
@@ -1593,8 +1593,8 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"86.2889 31.6983 106.881"
-				"PortraitAngles"		"0 -154.356 0.000000"
+				"PortraitPosition"		"79.0246 4.5892 106.881"
+				"PortraitAngles"		"0 -171.865 0.000000"
 				"PortraitFOV"		"54.0000"
 			}
 		}
