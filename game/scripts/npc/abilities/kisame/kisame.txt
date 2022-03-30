@@ -6,3 +6,4 @@
 #base "kisame_water_prison.txt"
 #base "kisame_water_prison_deactivate.txt"
 #base "talents.txt"
+#base "kisame_innate_passive.txt"
