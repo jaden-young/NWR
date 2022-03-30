@@ -1708,7 +1708,7 @@
 						source_filename = "models/striker_onoki/idle.fbx"
 						start_frame = 0
 						end_frame = 60
-						framerate = 30.0
+						framerate = 12.0
 						reverse = false
 					},
 					{

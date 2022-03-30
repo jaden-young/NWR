@@ -68,8 +68,8 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 72.801529, -1.26967, 81.733253 ]
-						relative_angles = [ -38.189121, -163.164459, -8.059798 ]
+						relative_origin = [ 108.464394, -79.678902, 94.089302 ]
+						relative_angles = [ -7.535978, 143.634354, -0.072062 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -906,7 +906,7 @@
 						source_filename = "models/striker_anko/idle.smd"
 						start_frame = 0
 						end_frame = 52
-						framerate = 30.0
+						framerate = 15.0
 						reverse = false
 					},
 					{
