@@ -62,7 +62,7 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 79.024643, 4.589197, 106.881081 ]
+						relative_origin = [ 87.206924, 9.403082, 107.766212 ]
 						relative_angles = [ 0.0, -171.865356, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false

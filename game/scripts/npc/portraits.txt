@@ -65,7 +65,7 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"125.991 -24.1601 144.495"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"125.991 -22.1601 150.495"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"0 170 0" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
 				"PortraitFOV"		"29" //zoom
 			}
@@ -76,10 +76,10 @@
 	"models/striker_anko/striker_anko_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightAngles"		"0.889999 180.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"200 225 225"
+		"PortraitLightColor"		"225 250 225"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -98,15 +98,15 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"0.1"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"2.300000"
+		"PortraitLightScale"		"1.500000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"72.8015 -1.26967 81.7333"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
-				"PortraitAngles"		"-38.1891 -163.164 -8.0598" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"42" //zoom
+				"PortraitPosition"		"108.0015 -72.26967 105.7333"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"-7.1891 143.164 0.2" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"30" //zoom
 			}
 		}
 	}
@@ -319,7 +319,7 @@
 		"PortraitLightAngles"		"0.889999 183.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"214 255 255"
+		"PortraitLightColor"		"255 214 214"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -345,9 +345,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"69.463745 18.338926 151.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"69.463745 13.338926 154.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"0 -168.935287 0" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"35" //zoom
+				"PortraitFOV"		"38" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -359,7 +359,7 @@
 		"PortraitLightAngles"		"0.889999 183.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"214 255 255"
+		"PortraitLightColor"		"255 214 214"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -385,9 +385,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"69.463745 18.338926 151.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"69.463745 13.338926 154.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"0 -168.935287 0" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"35" //zoom
+				"PortraitFOV"		"38" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -726,9 +726,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"390.000000 -133.060000 25.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"390.000000 -133.060000 28.000000"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"340 162.00000 0.009000" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"5.800002" //zoom
+				"PortraitFOV"		"6.000002" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -899,7 +899,7 @@
 		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"244 225 182"
+		"PortraitLightColor"		"244 225 202"
 		"PortraitShadowColor"		"141 141 141"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -975,13 +975,13 @@
 		}
 	}
 
-	"models/neji_new/neji.vmdl"
+	"models/striker_neji/striker_neji_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightAngles"		"0.889999 180.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"254 235 192"
+		"PortraitLightColor"		"224 255 255"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -1000,15 +1000,15 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"1.6000000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"500.000000 -48.000000 91.000000"
-				"PortraitAngles"		"357.600006 175.899994 0.000000"
-				"PortraitFOV"		"6.500000"
+				"PortraitPosition"		"88.0261 -57.3471 96.8156"
+				"PortraitAngles"		"-12.5616 145.624 2.11284"
+				"PortraitFOV"		"31.000000"
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -1124,9 +1124,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"51.2591 -24.825 88.482"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"51.2591 -24.825 85.482"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"-28.5174 154.601 -6.46" // ( [+Tilt Down / -Tilt up] / [+Rotate Right] / [-Rotate Left] / [Tilt Diagnol] )
-				"PortraitFOV"		"35" //zoom
+				"PortraitFOV"		"40" //zoom
 			}
 		}
 	}
@@ -1409,10 +1409,10 @@
 	"models/striker_minato/striker_minato_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"45.889999 240.929993 0.000000"
+		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"184 225 225"
+		"PortraitLightColor"		"224 255 255"
 		"PortraitShadowColor"		"161 161 161"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -1431,7 +1431,7 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"2.2"
+		"PortraitLightScale"		"1.7"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
@@ -1593,21 +1593,21 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"79.0246 4.5892 106.881"
-				"PortraitAngles"		"0 -171.865 0.000000"
-				"PortraitFOV"		"54.0000"
+				"PortraitPosition"		"78.8033 -2.04579 98.565"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"-11.9797 -180 -2.106" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"53.0000"
 			}
 		}
 	}
 
 	
-	"models/zabuza_new/zabuza_base.vmdl"
+	"models/striker_zabuza/striker_zabuza_base.vmdl"
 	{
-	"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
+		"PortraitLightAngles"		"45.889999 140.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"195 195 195"
+		"PortraitLightColor"		"184 225 225"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -1616,25 +1616,26 @@
 		"PortraitSpecularColor"		"251 74 84"
 		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
 		"PortraitSpecularPower"		"16.000000"
-		"PortraitBackgroundColor1"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor2"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor3"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor4"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundColor1"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_glacier.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
-		"PortraitAnimationActivity"		"ACT_DOTA_PORTRAIT"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"2.20000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
+		
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"433.000000 -48.000000 146.000000"
-				"PortraitAngles"		"357.600006 175.899994 0.000000"
-				"PortraitFOV"		"6.5000"
+				"PortraitPosition"		"450.000000 -33.000000 140.500000"  // ( [Placeholder] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"357.300006 175.899994 0.000000"
+				"PortraitFOV"		"6.800000" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
