@@ -49,6 +49,10 @@
 								from = "[xfbin] 2hdnbody1.vmat"
 								to = "materials/models/striker_hidan/strikerhidan1.vmat"
 							},
+							{
+								from = "gourd_albedo.vmat"
+								to = "materials/models/heroes/hoodwink/hoodwink_rope_mesh.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = ""
@@ -1029,7 +1033,7 @@
 					{
 						_class = "AnimFile"
 						name = "pull2"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1144,6 +1148,26 @@
 						start_frame = 0
 						end_frame = 135
 						framerate = 120.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "pull3"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_hidan/pull3.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 70.0
 						reverse = false
 					},
 				]
