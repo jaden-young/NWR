@@ -10,8 +10,8 @@
 		"HeroID"					"205"
 
         "BaseClass"			"npc_dota_hero_antimage"
-		"Model"					"models/itachi_new/itachi.vmdl"
-		"ModelScale"		"0.85"
+		"Model"					"models/striker_itachi/striker_itachi_base.vmdl"
+		"ModelScale"		"1"
 	    "LoadoutScale"		"0.73"
 		"SpectatorLoadoutScale" 	"0.85"
 		"VersusScale"				"0.85"
