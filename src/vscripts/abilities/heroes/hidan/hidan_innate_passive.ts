@@ -102,7 +102,6 @@ export class modifier_hidan_innate_passive_intrinsic extends BaseModifier{
                 (this.GetAbility() as hidan_innate_passive)?.TriggerAbility()
                 if(IsServer()){
                     this.StartIntervalThink(this.GetAbility()?.GetCooldownTimeRemaining() ?? -1)
-                    print(this.GetAbility()?.GetCooldownTimeRemaining())
                 }
                 return 1
             } else{

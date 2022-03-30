@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+    
+    "kisame_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/kisame/kisame_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "max_mana_stolen_percentage_base"			"7.0"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "max_mana_stolen_percentage_per_level"		"1.0"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "mana_percentage_as_bonus_damage"		"40.0"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"  //Cooldown as ability special in case we will need level scaling
+                "cooldown"		    "10.0"
+            }
+            "05"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "bonus_attack_damage_duration"		"5.0"
+            }
+        }
+    }
+}
