@@ -7,7 +7,7 @@
         "LevelsBetweenUpgrades"		"0"
         "ScriptFile"					"abilities/heroes/guy/guy_innate_passive.lua"
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE "
-        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityTextureName"			"guy_innate"
         "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 
         "AbilitySpecial"

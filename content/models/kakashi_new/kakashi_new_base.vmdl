@@ -1,2599 +1,1689 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc30:version{66cd490f-437b-4d7d-b009-7907d45422e2} -->
 {
-	m_meshList = 
+	rootNode = 
 	{
-		m_meshList = 
+		_class = "RootNode"
+		children = 
 		[
 			{
-				m_meshName = "kakashi_new_base"
-				m_meshFile = "models/kakashi_new/kakashi_new_base.fbx"
-				m_materialSearchPath = ""
-				m_bSkinParentedObjects = true
-				m_bLegacySkinParentedTransforms = false
-				m_bExpensiveTangents = false
-				m_bHighPrecisionTexCoords = false
-				m_bPerVertexCurvature = false
-				m_bBentNormals = false
-				m_bIgnoreCloth = false
-				m_bGetSkinningFromLod0 = false
-				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
-				m_pMorphInfo = null
-			},
-		]
-	}
-	m_clothProxyMeshList = 
-	{
-		_class = "CVClothProxyMeshList"
-		m_flClothEnableThreshold = 0.05
-		m_bCreateStaticBone = false
-		m_nMaxBonesPerVertex = 4
-		m_bRemoveUnusedBonesEnabled = false
-		m_bDriveMeshesWithBacksolvedJointsOnly = true
-		m_flMatchProxiesToMeshes = 1.0
-		m_flFallbackEnvelope = 1.0
-		m_nReservedInt = 0
-		m_bSoftSkinAnimation = false
-		m_bReservedBool2 = false
-		m_bReservedBool3 = false
-		m_bReservedBool4 = false
-		m_clothProxyMeshList = [  ]
-	}
-	m_physicsMeshList = 
-	{
-		m_meshList = [  ]
-	}
-	m_pModelInfo = null
-	m_pBoneFlagList = 
-	{
-		m_pObject = null
-	}
-	m_pHitBoxSetLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_HitBoxSets = 
+				_class = "MaterialGroupList"
+				children = 
 				[
 					{
-						m_name = "default"
-						m_HitBoxes = 
+						_class = "DefaultMaterialGroup"
+						remaps = 
 						[
 							{
-								m_name = "Hips"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Hips"
-								m_vMinBounds = [ -11.447449, -23.658363, -22.761135 ]
-								m_vMaxBounds = [ 19.767273, 15.631672, 22.10931 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Spine"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Spine"
-								m_vMinBounds = [ -14.50679, -24.095455, -17.262066 ]
-								m_vMaxBounds = [ 34.700867, 16.398312, 17.255474 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Spine1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Spine1"
-								m_vMinBounds = [ -15.090538, -11.879074, -24.790388 ]
-								m_vMaxBounds = [ 32.998352, 16.523767, 24.790251 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Neck"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Neck"
-								m_vMinBounds = [ 0.091766, -5.340585, -6.415176 ]
-								m_vMaxBounds = [ 15.392914, 7.839125, 6.39538 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftShoulder"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftShoulder"
-								m_vMinBounds = [ 2.176971, -12.644491, -11.643478 ]
-								m_vMaxBounds = [ 20.173809, 10.454157, 9.500549 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightShoulder"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightShoulder"
-								m_vMinBounds = [ 2.177113, -12.588459, -9.500534 ]
-								m_vMaxBounds = [ 20.173935, 10.454185, 11.643509 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Head"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Head"
-								m_vMinBounds = [ -6.881897, -9.688522, -8.876354 ]
-								m_vMaxBounds = [ 17.779266, 11.875183, 8.882317 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHand"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHand"
-								m_vMinBounds = [ -2.688721, -3.500824, -5.484593 ]
-								m_vMaxBounds = [ 10.836029, 4.171585, 4.610076 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHand"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHand"
-								m_vMinBounds = [ -2.68856, -3.500717, -4.610196 ]
-								m_vMaxBounds = [ 10.836189, 4.1717, 5.484476 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "FaceCenter"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "FaceCenter"
-								m_vMinBounds = [ -11.181276, -14.585913, -7.402771 ]
-								m_vMaxBounds = [ 18.373028, 12.793549, 25.706268 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandThumb1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandThumb1"
-								m_vMinBounds = [ -1.75737, -1.941952, -1.758648 ]
-								m_vMaxBounds = [ 5.745331, 3.370811, 3.190666 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandIndex1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandIndex1"
-								m_vMinBounds = [ -3.190285, -1.890137, -1.437644 ]
-								m_vMaxBounds = [ 4.940712, 1.727249, 1.277409 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandMiddle1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandMiddle1"
-								m_vMinBounds = [ -2.586899, -2.225388, -2.184713 ]
-								m_vMaxBounds = [ 5.233765, 1.630058, 1.22465 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandRing1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandRing1"
-								m_vMinBounds = [ -2.241661, -2.188484, -1.357036 ]
-								m_vMaxBounds = [ 5.279854, 1.469025, 1.256409 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandPinky1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandPinky1"
-								m_vMinBounds = [ -2.461548, -2.100792, -1.240841 ]
-								m_vMaxBounds = [ 4.579681, 1.320381, 1.135439 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandThumb1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandThumb1"
-								m_vMinBounds = [ -1.757294, -1.941761, -3.202652 ]
-								m_vMaxBounds = [ 5.745399, 3.371014, 1.758713 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandIndex1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandIndex1"
-								m_vMinBounds = [ -3.210701, -1.870331, -1.277542 ]
-								m_vMaxBounds = [ 4.940865, 1.727394, 1.180871 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandMiddle1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandMiddle1"
-								m_vMinBounds = [ -2.607613, -2.205551, -1.224782 ]
-								m_vMaxBounds = [ 5.233902, 1.630234, 2.184585 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandRing1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandRing1"
-								m_vMinBounds = [ -2.262131, -2.1689, -1.166167 ]
-								m_vMaxBounds = [ 5.280006, 1.469177, 1.181823 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandPinky1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandPinky1"
-								m_vMinBounds = [ -2.481628, -2.081703, -1.135565 ]
-								m_vMaxBounds = [ 4.579834, 1.320526, 1.171942 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftUpLeg"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftUpLeg"
-								m_vMinBounds = [ -9.719345, -10.390801, -11.200018 ]
-								m_vMaxBounds = [ 14.915878, 13.915536, 10.812212 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightUpLeg"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightUpLeg"
-								m_vMinBounds = [ -10.112648, -10.341522, -10.68437 ]
-								m_vMaxBounds = [ 15.643929, 13.429146, 11.865721 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "FaceHair"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "FaceHair"
-								m_vMinBounds = [ -11.928877, -14.585911, -11.160309 ]
-								m_vMaxBounds = [ 18.373028, 20.164333, 21.956238 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "FaceJaw"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "FaceJaw"
-								m_vMinBounds = [ -6.435996, -9.724118, -8.404327 ]
-								m_vMaxBounds = [ 6.436008, 1.20196, 0.419464 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandThumb2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandThumb2"
-								m_vMinBounds = [ -2.952148, -1.13895, -1.75864 ]
-								m_vMaxBounds = [ 2.753273, 2.551689, 2.063881 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandIndex2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandIndex2"
-								m_vMinBounds = [ -1.493668, -0.76442, -0.847602 ]
-								m_vMaxBounds = [ 3.875839, 0.976799, 1.196386 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandMiddle2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandMiddle2"
-								m_vMinBounds = [ -1.597717, -0.93351, -1.061403 ]
-								m_vMaxBounds = [ 4.083794, 1.007057, 1.117536 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandRing2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandRing2"
-								m_vMinBounds = [ -1.396835, -0.868469, -1.080045 ]
-								m_vMaxBounds = [ 4.0495, 0.989449, 0.963681 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandPinky2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandPinky2"
-								m_vMinBounds = [ -1.198013, -0.774094, -0.94529 ]
-								m_vMaxBounds = [ 3.312145, 0.859642, 0.792934 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandThumb2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandThumb2"
-								m_vMinBounds = [ -2.952011, -1.138781, -2.063786 ]
-								m_vMaxBounds = [ 2.75341, 2.551851, 1.758728 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandIndex2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandIndex2"
-								m_vMinBounds = [ -1.493523, -0.764236, -1.196525 ]
-								m_vMaxBounds = [ 3.875977, 0.976982, 0.847462 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandMiddle2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandMiddle2"
-								m_vMinBounds = [ -1.597527, -0.933311, -1.117671 ]
-								m_vMaxBounds = [ 4.083988, 1.00724, 1.061267 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandRing2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandRing2"
-								m_vMinBounds = [ -1.39669, -0.868317, -0.963812 ]
-								m_vMaxBounds = [ 4.497646, 0.989616, 1.079913 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandPinky2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandPinky2"
-								m_vMinBounds = [ -1.197838, -0.773964, -0.793064 ]
-								m_vMaxBounds = [ 3.312305, 0.859787, 0.94516 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftFoot"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftFoot"
-								m_vMinBounds = [ -5.638175, -6.146461, -7.005935 ]
-								m_vMaxBounds = [ 8.853572, 15.072289, 5.233897 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightFoot"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightFoot"
-								m_vMinBounds = [ -5.638191, -6.146529, -5.234109 ]
-								m_vMaxBounds = [ 8.853582, 15.072223, 7.005725 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpRight5"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpRight5"
-								m_vMinBounds = [ -0.532695, -1.463896, -2.80542 ]
-								m_vMaxBounds = [ 1.272321, 0.473058, 1.252609 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpRight4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpRight4"
-								m_vMinBounds = [ -0.2797, -0.545159, -0.198547 ]
-								m_vMaxBounds = [ 1.178191, 0.317123, 1.148621 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpRight3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpRight3"
-								m_vMinBounds = [ -1.420392, -0.346927, -0.2491 ]
-								m_vMaxBounds = [ 0.857305, 0.40566, 0.942673 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpRight2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpRight2"
-								m_vMinBounds = [ -1.005731, -0.20216, -0.506134 ]
-								m_vMaxBounds = [ 0.43102, 0.586137, 1.120895 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpRight1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpRight1"
-								m_vMinBounds = [ -1.078996, -0.329401, -2.683975 ]
-								m_vMaxBounds = [ 0.451768, 0.902311, 1.218323 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownRight5"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownRight5"
-								m_vMinBounds = [ -1.395706, -1.468428, -2.243149 ]
-								m_vMaxBounds = [ 1.327798, 0.460747, 1.108337 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownRight4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownRight4"
-								m_vMinBounds = [ -1.651657, -1.886065, -1.984177 ]
-								m_vMaxBounds = [ 1.975749, 0.423221, 0.403992 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownRight3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownRight3"
-								m_vMinBounds = [ -1.804577, -1.217096, -1.903778 ]
-								m_vMaxBounds = [ 2.016714, 0.28857, 0.335388 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownRight2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownRight2"
-								m_vMinBounds = [ -1.874492, -0.636161, -1.897125 ]
-								m_vMaxBounds = [ 1.598004, 0.261198, 0.323471 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownRight1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownRight1"
-								m_vMinBounds = [ -1.087449, -0.308557, -2.107346 ]
-								m_vMaxBounds = [ 1.536545, 0.552583, 0.922623 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownLeft1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownLeft1"
-								m_vMinBounds = [ -1.087491, -0.552594, -2.1073 ]
-								m_vMaxBounds = [ 1.536506, 0.308548, 0.922684 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownLeft2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownLeft2"
-								m_vMinBounds = [ -1.87454, -0.261185, -1.897186 ]
-								m_vMaxBounds = [ 1.59796, 0.636177, 0.323425 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownLeft3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownLeft3"
-								m_vMinBounds = [ -1.804618, -0.288588, -1.903732 ]
-								m_vMaxBounds = [ 2.016677, 1.217082, 0.335464 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownLeft4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownLeft4"
-								m_vMinBounds = [ -1.6517, -0.423228, -1.984161 ]
-								m_vMaxBounds = [ 1.975709, 1.886061, 0.404037 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeDownLeft5"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeDownLeft5"
-								m_vMinBounds = [ -1.395752, -0.460743, -2.243088 ]
-								m_vMaxBounds = [ 1.327754, 1.468433, 1.108414 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpLeft1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpLeft1"
-								m_vMinBounds = [ -1.079039, -0.862989, -2.683975 ]
-								m_vMaxBounds = [ 0.451529, 0.329407, 1.218338 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpLeft2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpLeft2"
-								m_vMinBounds = [ -1.005972, -0.586144, -0.506134 ]
-								m_vMaxBounds = [ 0.664355, 0.202152, 1.120895 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpLeft3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpLeft3"
-								m_vMinBounds = [ -1.420633, -0.405664, -0.249115 ]
-								m_vMaxBounds = [ 0.857065, 0.346921, 0.954697 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpLeft4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpLeft4"
-								m_vMinBounds = [ -0.482113, -0.452471, -0.198563 ]
-								m_vMaxBounds = [ 1.177951, 0.545154, 1.148605 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "EyeUpLeft5"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "EyeUpLeft5"
-								m_vMinBounds = [ -0.532933, -0.473058, -2.80545 ]
-								m_vMaxBounds = [ 6.022554, 9.615941, 4.315292 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowLeft1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowLeft1"
-								m_vMinBounds = [ -0.371931, -0.314739, -1.759216 ]
-								m_vMaxBounds = [ 1.332022, 1.38457, 1.941315 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowLeft2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowLeft2"
-								m_vMinBounds = [ -0.818317, -0.267892, -0.466843 ]
-								m_vMaxBounds = [ 0.973284, 1.203885, 1.675629 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowLeft3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowLeft3"
-								m_vMinBounds = [ -1.698724, -5.664041, -0.737 ]
-								m_vMaxBounds = [ 0.925276, 0.970329, 5.203735 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowLeft5"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowLeft5"
-								m_vMinBounds = [ -1.412924, -3.81956, -0.431915 ]
-								m_vMaxBounds = [ 6.369467, 1.910411, 5.700104 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowLeft6"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowLeft6"
-								m_vMinBounds = [ -1.612255, -2.766011, -1.299957 ]
-								m_vMaxBounds = [ 12.786629, 10.404658, 15.418991 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowRight2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowRight2"
-								m_vMinBounds = [ -1.590688, -1.203885, -0.466858 ]
-								m_vMaxBounds = [ 0.973329, 0.26789, 9.288528 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowRight5"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowRight5"
-								m_vMinBounds = [ -1.412678, -1.910411, -0.431915 ]
-								m_vMaxBounds = [ 1.589564, 3.91873, 11.827621 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowRight3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowRight3"
-								m_vMinBounds = [ -2.089283, -0.97033, -0.737045 ]
-								m_vMaxBounds = [ 0.925321, 3.590232, 9.511032 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowRight6"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowRight6"
-								m_vMinBounds = [ -1.277419, -1.242381, -1.299942 ]
-								m_vMaxBounds = [ 1.494655, 2.326376, 10.1371 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowRight1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowRight1"
-								m_vMinBounds = [ -0.371687, -1.38457, -1.759232 ]
-								m_vMaxBounds = [ 1.332268, 0.314736, 1.941299 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowRight4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowRight4"
-								m_vMinBounds = [ -1.807381, -1.006864, -0.413635 ]
-								m_vMaxBounds = [ 1.383955, 3.050409, 11.267166 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "BrowLeft4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "BrowLeft4"
-								m_vMinBounds = [ -1.807429, -6.060426, -0.413589 ]
-								m_vMaxBounds = [ 3.157015, 1.006861, 6.516327 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Ponytail01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Ponytail01"
-								m_vMinBounds = [ -1.556896, -5.384655, -57.114044 ]
-								m_vMaxBounds = [ 13.607029, 11.700634, 2.811905 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "hair04"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "hair04"
-								m_vMinBounds = [ -13.604339, -12.217939, -11.864059 ]
-								m_vMaxBounds = [ 12.904988, 13.764887, 12.58522 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "hair03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "hair03"
-								m_vMinBounds = [ -14.04886, -6.843951, -2.414688 ]
-								m_vMaxBounds = [ 14.498406, 16.088057, 15.863022 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "hair01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "hair01"
-								m_vMinBounds = [ -1.572037, -8.671968, -4.588425 ]
-								m_vMaxBounds = [ 12.140785, 10.723322, 11.680573 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "hair02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "hair02"
-								m_vMinBounds = [ -3.281219, -11.032936, -11.489265 ]
-								m_vMaxBounds = [ 17.022125, 10.724255, 4.929167 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "CheekRight"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "CheekRight"
-								m_vMinBounds = [ -0.581359, -3.708473, -3.748642 ]
-								m_vMaxBounds = [ 2.462286, 2.490424, 1.817596 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "CheekLeft"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "CheekLeft"
-								m_vMinBounds = [ -0.581397, -2.490431, -3.748596 ]
-								m_vMaxBounds = [ 2.462057, 3.708468, 1.817642 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownRight3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownRight3"
-								m_vMinBounds = [ -0.669902, -0.887792, -1.243958 ]
-								m_vMaxBounds = [ 0.778359, 0.422459, 0.215958 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownRight2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownRight2"
-								m_vMinBounds = [ -0.70835, -0.710958, -1.307281 ]
-								m_vMaxBounds = [ 0.695711, 0.216435, 0.219711 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownLeft3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownLeft3"
-								m_vMinBounds = [ -0.669948, -0.422461, -1.243912 ]
-								m_vMaxBounds = [ 0.778315, 0.887786, 0.215988 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownLeft2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownLeft2"
-								m_vMinBounds = [ -0.708396, -0.216461, -1.307236 ]
-								m_vMaxBounds = [ 0.695665, 0.71094, 0.219757 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownLeft1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownLeft1"
-								m_vMinBounds = [ -0.046851, -0.005439, -1.321396 ]
-								m_vMaxBounds = [ 0.005813, 0.576065, 0.22728 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownRight1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownRight1"
-								m_vMinBounds = [ -0.046804, -0.576078, -1.321411 ]
-								m_vMaxBounds = [ 0.00586, 0.005428, 0.227249 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthDownCenter"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthDownCenter"
-								m_vMinBounds = [ -0.727023, -0.012448, -1.33902 ]
-								m_vMaxBounds = [ 0.726975, 0.562754, 0.196655 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Jaw"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Jaw"
-								m_vMinBounds = [ -5.755911, -5.588489, -3.443253 ]
-								m_vMaxBounds = [ 5.755548, 1.390802, 1.616837 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpRight3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpRight3"
-								m_vMinBounds = [ -0.57899, -0.485153, -0.258392 ]
-								m_vMaxBounds = [ 0.80185, 0.580013, 0.767822 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpLeft3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpLeft3"
-								m_vMinBounds = [ -0.579028, -0.580018, -0.258362 ]
-								m_vMaxBounds = [ 0.801812, 0.48515, 0.767853 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpRight4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpRight4"
-								m_vMinBounds = [ -0.741603, -2.29359, -1.457153 ]
-								m_vMaxBounds = [ 2.434379, 0.673931, 0.809998 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpRight2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpRight2"
-								m_vMinBounds = [ 0.026532, -0.198754, -0.321304 ]
-								m_vMaxBounds = [ 0.067145, 0.126576, 0.776505 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpRight1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpRight1"
-								m_vMinBounds = [ -0.087992, -0.362589, -0.356445 ]
-								m_vMaxBounds = [ 0.737167, 0.292858, 0.828888 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpCenter"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpCenter"
-								m_vMinBounds = [ -0.762425, -0.28416, -0.39357 ]
-								m_vMaxBounds = [ 0.762373, 0.320044, 0.818451 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpLeft1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpLeft1"
-								m_vMinBounds = [ -0.765529, -0.398149, -0.356384 ]
-								m_vMaxBounds = [ 0.737132, 0.362592, 0.828949 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpLeft2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpLeft2"
-								m_vMinBounds = [ 0.026495, -0.126577, -0.321335 ]
-								m_vMaxBounds = [ 0.067107, 0.198755, 0.776505 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LipMouthUpLeft4"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LipMouthUpLeft4"
-								m_vMinBounds = [ -0.741641, -0.673929, -1.457092 ]
-								m_vMaxBounds = [ 2.434341, 2.29359, 0.810043 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Nose"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Nose"
-								m_vMinBounds = [ -2.318815, -1.769658, -1.787491 ]
-								m_vMaxBounds = [ 2.318716, 1.912565, 2.734116 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Neck_B"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Neck_B"
-								m_vMinBounds = [ -12.591599, -10.728042, -1.162613 ]
-								m_vMaxBounds = [ 2.207569, 10.728234, 6.895004 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Neck_R"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Neck_R"
-								m_vMinBounds = [ -2.293367, -13.260818, -5.433395 ]
-								m_vMaxBounds = [ 8.635683, 6.079693, 1.660522 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "Neck_L"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "Neck_L"
-								m_vMinBounds = [ -8.635841, -6.079235, -1.660538 ]
-								m_vMaxBounds = [ 2.293203, 13.260681, 5.433395 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandThumb3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandThumb3"
-								m_vMinBounds = [ -1.654808, -0.975677, -1.258236 ]
-								m_vMaxBounds = [ 2.957504, 1.4453, 1.147106 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandIndex3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandIndex3"
-								m_vMinBounds = [ -0.353096, -0.656662, -0.787643 ]
-								m_vMaxBounds = [ 2.517624, 0.843597, 0.908891 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandMiddle3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandMiddle3"
-								m_vMinBounds = [ -0.287651, -0.818726, -0.91363 ]
-								m_vMaxBounds = [ 2.798576, 0.780952, 0.92168 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandRing3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandRing3"
-								m_vMinBounds = [ -0.141602, -0.782829, -0.93009 ]
-								m_vMaxBounds = [ 2.824791, 0.747314, 0.833922 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftHandPinky3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftHandPinky3"
-								m_vMinBounds = [ -0.781597, -0.621765, -0.857684 ]
-								m_vMaxBounds = [ 2.442963, 0.686958, 0.667937 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftForeArmBend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftForeArmBend1"
-								m_vMinBounds = [ -6.710106, -5.917274, -5.885536 ]
-								m_vMaxBounds = [ 13.875839, 5.777803, 5.717842 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftForeArmBend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftForeArmBend2"
-								m_vMinBounds = [ -10.89814, -5.917275, -5.885529 ]
-								m_vMaxBounds = [ 9.543228, 5.777801, 5.71785 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftForeArmBend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftForeArmBend3"
-								m_vMinBounds = [ -13.266823, -5.917274, -5.668343 ]
-								m_vMaxBounds = [ 4.787994, 5.672178, 5.567924 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftArmBend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftArmBend1"
-								m_vMinBounds = [ -5.080185, -7.196628, -8.890411 ]
-								m_vMaxBounds = [ 15.111092, 7.923397, 6.085991 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftArmBend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftArmBend2"
-								m_vMinBounds = [ -11.242966, -7.397723, -9.384735 ]
-								m_vMaxBounds = [ 12.994133, 7.923396, 6.15097 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftArmBend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftArmBend3"
-								m_vMinBounds = [ -12.562164, -5.893344, -5.578476 ]
-								m_vMaxBounds = [ 7.013115, 6.139581, 6.15097 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandThumb3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandThumb3"
-								m_vMinBounds = [ -1.654633, -0.975519, -1.147053 ]
-								m_vMaxBounds = [ 2.95768, 1.445456, 1.258286 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandIndex3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandIndex3"
-								m_vMinBounds = [ -0.352959, -0.656448, -0.909037 ]
-								m_vMaxBounds = [ 2.517765, 0.843803, 0.787497 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandMiddle3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandMiddle3"
-								m_vMinBounds = [ -0.287491, -0.818504, -0.921823 ]
-								m_vMaxBounds = [ 2.798737, 0.781166, 0.913486 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandRing3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandRing3"
-								m_vMinBounds = [ -0.141449, -0.782616, -0.834064 ]
-								m_vMaxBounds = [ 2.824936, 0.747543, 0.929948 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightHandPinky3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightHandPinky3"
-								m_vMinBounds = [ -0.781437, -0.621582, -0.668073 ]
-								m_vMaxBounds = [ 2.44313, 0.687149, 0.857548 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightForeArmBend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightForeArmBend1"
-								m_vMinBounds = [ -13.875954, -5.777785, -5.717781 ]
-								m_vMaxBounds = [ 6.710052, 5.917291, 5.885605 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightForeArmBend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightForeArmBend2"
-								m_vMinBounds = [ -9.54335, -5.777782, -5.717781 ]
-								m_vMaxBounds = [ 10.897995, 5.917295, 5.885605 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightForeArmBend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightForeArmBend3"
-								m_vMinBounds = [ -4.81266, -5.672197, -5.567871 ]
-								m_vMaxBounds = [ 13.266754, 5.917296, 5.668388 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightArmBend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightArmBend3"
-								m_vMinBounds = [ -7.013245, -6.139543, -6.085716 ]
-								m_vMaxBounds = [ 12.56852, 5.893378, 5.578499 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightArmBend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightArmBend2"
-								m_vMinBounds = [ -12.994255, -7.923381, -6.085709 ]
-								m_vMaxBounds = [ 11.242844, 7.397826, 9.38472 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightArmBend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightArmBend1"
-								m_vMinBounds = [ -15.111221, -7.923384, -6.085686 ]
-								m_vMaxBounds = [ 5.080009, 7.196674, 8.890411 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "left_wear"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "left_wear"
-								m_vMinBounds = [ -16.06299, -2.017998, -22.265366 ]
-								m_vMaxBounds = [ 10.864397, 13.415709, -0.45549 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "right_wear"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "right_wear"
-								m_vMinBounds = [ -10.965456, -13.415697, 0.455505 ]
-								m_vMaxBounds = [ 16.062147, 2.018043, 22.183632 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "front_wear"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "front_wear"
-								m_vMinBounds = [ -17.252222, -2.428839, -22.116928 ]
-								m_vMaxBounds = [ 17.245661, 12.843691, -2.558319 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "back_wear"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "back_wear"
-								m_vMinBounds = [ -16.262329, -11.818867, -1.671295 ]
-								m_vMaxBounds = [ 16.268829, 1.141047, 21.695404 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftToeBase"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftToeBase"
-								m_vMinBounds = [ -6.269176, -2.966944, -7.005941 ]
-								m_vMaxBounds = [ 7.715479, 5.346591, 5.233892 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftLegBend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftLegBend02"
-								m_vMinBounds = [ -17.775562, -8.781275, -9.204737 ]
-								m_vMaxBounds = [ 17.884304, 8.541487, 8.46413 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftLegBend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftLegBend01"
-								m_vMinBounds = [ -8.462463, -8.781297, -9.204725 ]
-								m_vMaxBounds = [ 19.419224, 8.541463, 8.464142 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftLegBend03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftLegBend03"
-								m_vMinBounds = [ -21.084551, -5.899672, -5.671051 ]
-								m_vMaxBounds = [ 9.309221, 9.795977, 4.338181 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftUpLegBend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftUpLegBend01"
-								m_vMinBounds = [ -31.483833, -10.390804, -11.200028 ]
-								m_vMaxBounds = [ 20.685375, 13.917952, 10.841374 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "LeftUpLegBend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "LeftUpLegBend02"
-								m_vMinBounds = [ -22.906788, -8.302954, -10.840535 ]
-								m_vMaxBounds = [ 8.077789, 11.359425, 8.405492 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightToeBase"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightToeBase"
-								m_vMinBounds = [ -6.26926, -3.0695, -5.234108 ]
-								m_vMaxBounds = [ 7.715412, 5.244042, 7.00573 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightLegBend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightLegBend01"
-								m_vMinBounds = [ -19.419226, -8.541454, -8.464266 ]
-								m_vMaxBounds = [ 8.022556, 8.781292, 9.204596 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightLegBend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightLegBend02"
-								m_vMinBounds = [ -17.913284, -8.541473, -8.464258 ]
-								m_vMaxBounds = [ 17.746567, 8.781273, 9.204603 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightLegBend03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightLegBend03"
-								m_vMinBounds = [ -9.367189, -9.795977, -4.338375 ]
-								m_vMaxBounds = [ 21.026552, 5.89967, 5.670855 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightUpLegBend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightUpLegBend02"
-								m_vMinBounds = [ -8.077797, -10.463137, -8.405601 ]
-								m_vMaxBounds = [ 23.037285, 8.596003, 10.620027 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "RightUpLegBend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "RightUpLegBend01"
-								m_vMinBounds = [ -20.685406, -13.608223, -10.741875 ]
-								m_vMaxBounds = [ 31.612595, 10.341513, 14.929005 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
+								from = "mi_chr_d31.vmat"
+								to = "materials/models/kakashi_new/kakashi_new1.vmat"
+							},
+							{
+								from = "mi_chr_d31eyel.vmat"
+								to = "materials/models/kakashi_new/kakashi_new2.vmat"
+							},
+							{
+								from = "mi_chr_d31eyer.vmat"
+								to = "materials/models/kakashi_new/kakashi_new3.vmat"
+							},
+							{
+								from = "mi_chr_d31metal.vmat"
+								to = "materials/models/kakashi_new/kakashi_new1.vmat"
+							},
+							{
+								from = "mi_line.vmat"
+								to = "materials/models/kakashi_new/kakashi_new1.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								parent_bone = "Hips"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.447449, -23.658363, -22.761135 ]
+								hitbox_maxs = [ 19.767273, 15.631672, 22.10931 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Spine"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.50679, -24.095455, -17.262066 ]
+								hitbox_maxs = [ 34.700867, 16.398312, 17.255474 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.090538, -11.879074, -24.790388 ]
+								hitbox_maxs = [ 32.998352, 16.523767, 24.790251 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ 0.091766, -5.340585, -6.415176 ]
+								hitbox_maxs = [ 15.392914, 7.839125, 6.39538 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftShoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ 2.176971, -12.644491, -11.643478 ]
+								hitbox_maxs = [ 20.173809, 10.454157, 9.500549 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightShoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ 2.177113, -12.588459, -9.500534 ]
+								hitbox_maxs = [ 20.173935, 10.454185, 11.643509 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.881897, -9.688522, -8.876354 ]
+								hitbox_maxs = [ 17.779266, 11.875183, 8.882317 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.688721, -3.500824, -5.484593 ]
+								hitbox_maxs = [ 10.836029, 4.171585, 4.610076 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.68856, -3.500717, -4.610196 ]
+								hitbox_maxs = [ 10.836189, 4.1717, 5.484476 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "FaceCenter"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.181276, -14.585913, -7.402771 ]
+								hitbox_maxs = [ 18.373028, 12.793549, 25.706268 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandThumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.75737, -1.941952, -1.758648 ]
+								hitbox_maxs = [ 5.745331, 3.370811, 3.190666 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandIndex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.190285, -1.890137, -1.437644 ]
+								hitbox_maxs = [ 4.940712, 1.727249, 1.277409 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandMiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.586899, -2.225388, -2.184713 ]
+								hitbox_maxs = [ 5.233765, 1.630058, 1.22465 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandRing1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.241661, -2.188484, -1.357036 ]
+								hitbox_maxs = [ 5.279854, 1.469025, 1.256409 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandPinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.461548, -2.100792, -1.240841 ]
+								hitbox_maxs = [ 4.579681, 1.320381, 1.135439 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandThumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.757294, -1.941761, -3.202652 ]
+								hitbox_maxs = [ 5.745399, 3.371014, 1.758713 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandIndex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.210701, -1.870331, -1.277542 ]
+								hitbox_maxs = [ 4.940865, 1.727394, 1.180871 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandMiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.607613, -2.205551, -1.224782 ]
+								hitbox_maxs = [ 5.233902, 1.630234, 2.184585 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandRing1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.262131, -2.1689, -1.166167 ]
+								hitbox_maxs = [ 5.280006, 1.469177, 1.181823 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandPinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.481628, -2.081703, -1.135565 ]
+								hitbox_maxs = [ 4.579834, 1.320526, 1.171942 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftUpLeg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.719345, -10.390801, -11.200018 ]
+								hitbox_maxs = [ 14.915878, 13.915536, 10.812212 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightUpLeg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.112648, -10.341522, -10.68437 ]
+								hitbox_maxs = [ 15.643929, 13.429146, 11.865721 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "FaceHair"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.928877, -14.585911, -11.160309 ]
+								hitbox_maxs = [ 18.373028, 20.164333, 21.956238 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "FaceJaw"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.435996, -9.724118, -8.404327 ]
+								hitbox_maxs = [ 6.436008, 1.20196, 0.419464 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandThumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.952148, -1.13895, -1.75864 ]
+								hitbox_maxs = [ 2.753273, 2.551689, 2.063881 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandIndex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.493668, -0.76442, -0.847602 ]
+								hitbox_maxs = [ 3.875839, 0.976799, 1.196386 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandMiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.597717, -0.93351, -1.061403 ]
+								hitbox_maxs = [ 4.083794, 1.007057, 1.117536 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandRing2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.396835, -0.868469, -1.080045 ]
+								hitbox_maxs = [ 4.0495, 0.989449, 0.963681 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandPinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.198013, -0.774094, -0.94529 ]
+								hitbox_maxs = [ 3.312145, 0.859642, 0.792934 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandThumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.952011, -1.138781, -2.063786 ]
+								hitbox_maxs = [ 2.75341, 2.551851, 1.758728 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandIndex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.493523, -0.764236, -1.196525 ]
+								hitbox_maxs = [ 3.875977, 0.976982, 0.847462 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandMiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.597527, -0.933311, -1.117671 ]
+								hitbox_maxs = [ 4.083988, 1.00724, 1.061267 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandRing2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.39669, -0.868317, -0.963812 ]
+								hitbox_maxs = [ 4.497646, 0.989616, 1.079913 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandPinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.197838, -0.773964, -0.793064 ]
+								hitbox_maxs = [ 3.312305, 0.859787, 0.94516 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftFoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.638175, -6.146461, -7.005935 ]
+								hitbox_maxs = [ 8.853572, 15.072289, 5.233897 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightFoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.638191, -6.146529, -5.234109 ]
+								hitbox_maxs = [ 8.853582, 15.072223, 7.005725 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpRight5"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.532695, -1.463896, -2.80542 ]
+								hitbox_maxs = [ 1.272321, 0.473058, 1.252609 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpRight4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.2797, -0.545159, -0.198547 ]
+								hitbox_maxs = [ 1.178191, 0.317123, 1.148621 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpRight3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.420392, -0.346927, -0.2491 ]
+								hitbox_maxs = [ 0.857305, 0.40566, 0.942673 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpRight2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.005731, -0.20216, -0.506134 ]
+								hitbox_maxs = [ 0.43102, 0.586137, 1.120895 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpRight1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.078996, -0.329401, -2.683975 ]
+								hitbox_maxs = [ 0.451768, 0.902311, 1.218323 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownRight5"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.395706, -1.468428, -2.243149 ]
+								hitbox_maxs = [ 1.327798, 0.460747, 1.108337 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownRight4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.651657, -1.886065, -1.984177 ]
+								hitbox_maxs = [ 1.975749, 0.423221, 0.403992 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownRight3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.804577, -1.217096, -1.903778 ]
+								hitbox_maxs = [ 2.016714, 0.28857, 0.335388 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownRight2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.874492, -0.636161, -1.897125 ]
+								hitbox_maxs = [ 1.598004, 0.261198, 0.323471 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownRight1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.087449, -0.308557, -2.107346 ]
+								hitbox_maxs = [ 1.536545, 0.552583, 0.922623 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownLeft1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.087491, -0.552594, -2.1073 ]
+								hitbox_maxs = [ 1.536506, 0.308548, 0.922684 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownLeft2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.87454, -0.261185, -1.897186 ]
+								hitbox_maxs = [ 1.59796, 0.636177, 0.323425 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownLeft3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.804618, -0.288588, -1.903732 ]
+								hitbox_maxs = [ 2.016677, 1.217082, 0.335464 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownLeft4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.6517, -0.423228, -1.984161 ]
+								hitbox_maxs = [ 1.975709, 1.886061, 0.404037 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeDownLeft5"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.395752, -0.460743, -2.243088 ]
+								hitbox_maxs = [ 1.327754, 1.468433, 1.108414 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpLeft1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.079039, -0.862989, -2.683975 ]
+								hitbox_maxs = [ 0.451529, 0.329407, 1.218338 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpLeft2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.005972, -0.586144, -0.506134 ]
+								hitbox_maxs = [ 0.664355, 0.202152, 1.120895 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpLeft3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.420633, -0.405664, -0.249115 ]
+								hitbox_maxs = [ 0.857065, 0.346921, 0.954697 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpLeft4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.482113, -0.452471, -0.198563 ]
+								hitbox_maxs = [ 1.177951, 0.545154, 1.148605 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "EyeUpLeft5"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.532933, -0.473058, -2.80545 ]
+								hitbox_maxs = [ 6.022554, 9.615941, 4.315292 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowLeft1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.371931, -0.314739, -1.759216 ]
+								hitbox_maxs = [ 1.332022, 1.38457, 1.941315 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowLeft2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.818317, -0.267892, -0.466843 ]
+								hitbox_maxs = [ 0.973284, 1.203885, 1.675629 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowLeft3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.698724, -5.664041, -0.737 ]
+								hitbox_maxs = [ 0.925276, 0.970329, 5.203735 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowLeft5"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.412924, -3.81956, -0.431915 ]
+								hitbox_maxs = [ 6.369467, 1.910411, 5.700104 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowLeft6"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.612255, -2.766011, -1.299957 ]
+								hitbox_maxs = [ 12.786629, 10.404658, 15.418991 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowRight2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.590688, -1.203885, -0.466858 ]
+								hitbox_maxs = [ 0.973329, 0.26789, 9.288528 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowRight5"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.412678, -1.910411, -0.431915 ]
+								hitbox_maxs = [ 1.589564, 3.91873, 11.827621 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowRight3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.089283, -0.97033, -0.737045 ]
+								hitbox_maxs = [ 0.925321, 3.590232, 9.511032 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowRight6"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.277419, -1.242381, -1.299942 ]
+								hitbox_maxs = [ 1.494655, 2.326376, 10.1371 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowRight1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.371687, -1.38457, -1.759232 ]
+								hitbox_maxs = [ 1.332268, 0.314736, 1.941299 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowRight4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.807381, -1.006864, -0.413635 ]
+								hitbox_maxs = [ 1.383955, 3.050409, 11.267166 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "BrowLeft4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.807429, -6.060426, -0.413589 ]
+								hitbox_maxs = [ 3.157015, 1.006861, 6.516327 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Ponytail01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.556896, -5.384655, -57.114044 ]
+								hitbox_maxs = [ 13.607029, 11.700634, 2.811905 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "hair04"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.604339, -12.217939, -11.864059 ]
+								hitbox_maxs = [ 12.904988, 13.764887, 12.58522 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "hair03"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.04886, -6.843951, -2.414688 ]
+								hitbox_maxs = [ 14.498406, 16.088057, 15.863022 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "hair01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.572037, -8.671968, -4.588425 ]
+								hitbox_maxs = [ 12.140785, 10.723322, 11.680573 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "hair02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.281219, -11.032936, -11.489265 ]
+								hitbox_maxs = [ 17.022125, 10.724255, 4.929167 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "CheekRight"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.581359, -3.708473, -3.748642 ]
+								hitbox_maxs = [ 2.462286, 2.490424, 1.817596 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "CheekLeft"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.581397, -2.490431, -3.748596 ]
+								hitbox_maxs = [ 2.462057, 3.708468, 1.817642 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownRight3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.669902, -0.887792, -1.243958 ]
+								hitbox_maxs = [ 0.778359, 0.422459, 0.215958 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownRight2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.70835, -0.710958, -1.307281 ]
+								hitbox_maxs = [ 0.695711, 0.216435, 0.219711 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownLeft3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.669948, -0.422461, -1.243912 ]
+								hitbox_maxs = [ 0.778315, 0.887786, 0.215988 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownLeft2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.708396, -0.216461, -1.307236 ]
+								hitbox_maxs = [ 0.695665, 0.71094, 0.219757 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownLeft1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.046851, -0.005439, -1.321396 ]
+								hitbox_maxs = [ 0.005813, 0.576065, 0.22728 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownRight1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.046804, -0.576078, -1.321411 ]
+								hitbox_maxs = [ 0.00586, 0.005428, 0.227249 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthDownCenter"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.727023, -0.012448, -1.33902 ]
+								hitbox_maxs = [ 0.726975, 0.562754, 0.196655 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Jaw"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.755911, -5.588489, -3.443253 ]
+								hitbox_maxs = [ 5.755548, 1.390802, 1.616837 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpRight3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.57899, -0.485153, -0.258392 ]
+								hitbox_maxs = [ 0.80185, 0.580013, 0.767822 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpLeft3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.579028, -0.580018, -0.258362 ]
+								hitbox_maxs = [ 0.801812, 0.48515, 0.767853 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpRight4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.741603, -2.29359, -1.457153 ]
+								hitbox_maxs = [ 2.434379, 0.673931, 0.809998 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpRight2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ 0.026532, -0.198754, -0.321304 ]
+								hitbox_maxs = [ 0.067145, 0.126576, 0.776505 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpRight1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.087992, -0.362589, -0.356445 ]
+								hitbox_maxs = [ 0.737167, 0.292858, 0.828888 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpCenter"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.762425, -0.28416, -0.39357 ]
+								hitbox_maxs = [ 0.762373, 0.320044, 0.818451 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpLeft1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.765529, -0.398149, -0.356384 ]
+								hitbox_maxs = [ 0.737132, 0.362592, 0.828949 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpLeft2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ 0.026495, -0.126577, -0.321335 ]
+								hitbox_maxs = [ 0.067107, 0.198755, 0.776505 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LipMouthUpLeft4"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.741641, -0.673929, -1.457092 ]
+								hitbox_maxs = [ 2.434341, 2.29359, 0.810043 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Nose"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.318815, -1.769658, -1.787491 ]
+								hitbox_maxs = [ 2.318716, 1.912565, 2.734116 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Neck_B"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.591599, -10.728042, -1.162613 ]
+								hitbox_maxs = [ 2.207569, 10.728234, 6.895004 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Neck_R"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.293367, -13.260818, -5.433395 ]
+								hitbox_maxs = [ 8.635683, 6.079693, 1.660522 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "Neck_L"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.635841, -6.079235, -1.660538 ]
+								hitbox_maxs = [ 2.293203, 13.260681, 5.433395 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandThumb3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.654808, -0.975677, -1.258236 ]
+								hitbox_maxs = [ 2.957504, 1.4453, 1.147106 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandIndex3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.353096, -0.656662, -0.787643 ]
+								hitbox_maxs = [ 2.517624, 0.843597, 0.908891 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandMiddle3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.287651, -0.818726, -0.91363 ]
+								hitbox_maxs = [ 2.798576, 0.780952, 0.92168 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandRing3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.141602, -0.782829, -0.93009 ]
+								hitbox_maxs = [ 2.824791, 0.747314, 0.833922 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftHandPinky3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.781597, -0.621765, -0.857684 ]
+								hitbox_maxs = [ 2.442963, 0.686958, 0.667937 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftForeArmBend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.710106, -5.917274, -5.885536 ]
+								hitbox_maxs = [ 13.875839, 5.777803, 5.717842 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftForeArmBend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.89814, -5.917275, -5.885529 ]
+								hitbox_maxs = [ 9.543228, 5.777801, 5.71785 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftForeArmBend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.266823, -5.917274, -5.668343 ]
+								hitbox_maxs = [ 4.787994, 5.672178, 5.567924 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftArmBend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.080185, -7.196628, -8.890411 ]
+								hitbox_maxs = [ 15.111092, 7.923397, 6.085991 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftArmBend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.242966, -7.397723, -9.384735 ]
+								hitbox_maxs = [ 12.994133, 7.923396, 6.15097 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftArmBend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.562164, -5.893344, -5.578476 ]
+								hitbox_maxs = [ 7.013115, 6.139581, 6.15097 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandThumb3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.654633, -0.975519, -1.147053 ]
+								hitbox_maxs = [ 2.95768, 1.445456, 1.258286 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandIndex3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.352959, -0.656448, -0.909037 ]
+								hitbox_maxs = [ 2.517765, 0.843803, 0.787497 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandMiddle3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.287491, -0.818504, -0.921823 ]
+								hitbox_maxs = [ 2.798737, 0.781166, 0.913486 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandRing3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.141449, -0.782616, -0.834064 ]
+								hitbox_maxs = [ 2.824936, 0.747543, 0.929948 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightHandPinky3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.781437, -0.621582, -0.668073 ]
+								hitbox_maxs = [ 2.44313, 0.687149, 0.857548 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightForeArmBend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.875954, -5.777785, -5.717781 ]
+								hitbox_maxs = [ 6.710052, 5.917291, 5.885605 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightForeArmBend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.54335, -5.777782, -5.717781 ]
+								hitbox_maxs = [ 10.897995, 5.917295, 5.885605 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightForeArmBend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.81266, -5.672197, -5.567871 ]
+								hitbox_maxs = [ 13.266754, 5.917296, 5.668388 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightArmBend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.013245, -6.139543, -6.085716 ]
+								hitbox_maxs = [ 12.56852, 5.893378, 5.578499 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightArmBend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.994255, -7.923381, -6.085709 ]
+								hitbox_maxs = [ 11.242844, 7.397826, 9.38472 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightArmBend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.111221, -7.923384, -6.085686 ]
+								hitbox_maxs = [ 5.080009, 7.196674, 8.890411 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "left_wear"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -16.06299, -2.017998, -22.265366 ]
+								hitbox_maxs = [ 10.864397, 13.415709, -0.45549 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "right_wear"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.965456, -13.415697, 0.455505 ]
+								hitbox_maxs = [ 16.062147, 2.018043, 22.183632 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "front_wear"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.252222, -2.428839, -22.116928 ]
+								hitbox_maxs = [ 17.245661, 12.843691, -2.558319 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "back_wear"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -16.262329, -11.818867, -1.671295 ]
+								hitbox_maxs = [ 16.268829, 1.141047, 21.695404 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftToeBase"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.269176, -2.966944, -7.005941 ]
+								hitbox_maxs = [ 7.715479, 5.346591, 5.233892 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftLegBend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.775562, -8.781275, -9.204737 ]
+								hitbox_maxs = [ 17.884304, 8.541487, 8.46413 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftLegBend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.462463, -8.781297, -9.204725 ]
+								hitbox_maxs = [ 19.419224, 8.541463, 8.464142 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftLegBend03"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -21.084551, -5.899672, -5.671051 ]
+								hitbox_maxs = [ 9.309221, 9.795977, 4.338181 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftUpLegBend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -31.483833, -10.390804, -11.200028 ]
+								hitbox_maxs = [ 20.685375, 13.917952, 10.841374 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "LeftUpLegBend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -22.906788, -8.302954, -10.840535 ]
+								hitbox_maxs = [ 8.077789, 11.359425, 8.405492 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightToeBase"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.26926, -3.0695, -5.234108 ]
+								hitbox_maxs = [ 7.715412, 5.244042, 7.00573 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightLegBend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -19.419226, -8.541454, -8.464266 ]
+								hitbox_maxs = [ 8.022556, 8.781292, 9.204596 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightLegBend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -17.913284, -8.541473, -8.464258 ]
+								hitbox_maxs = [ 17.746567, 8.781273, 9.204603 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightLegBend03"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.367189, -9.795977, -4.338375 ]
+								hitbox_maxs = [ 21.026552, 5.89967, 5.670855 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightUpLegBend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.077797, -10.463137, -8.405601 ]
+								hitbox_maxs = [ 23.037285, 8.596003, 10.620027 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "RightUpLegBend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -20.685406, -13.608223, -10.741875 ]
+								hitbox_maxs = [ 31.612595, 10.341513, 14.929005 ]
 							},
 						]
 					},
 				]
-				m_AutoCreateSetName = ""
-			}
-		},
-	]
-	m_pAttachmentLists = [  ]
-	m_pAnimGroup = 
-	{
-		m_pObject = 
-		{
-			m_Name = ""
-			m_pBoneFlagList = 
-			{
-				m_pObject = null
-			}
-			m_pSeqGroup = 
-			{
-				m_pObject = null
-			}
-			m_pAnimGroups = [  ]
-			m_Vanim = 
-			[
-				{
-					m_Animationname = "idle"
-					m_Filepath = "models/kakashi_new/idle.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 70
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = true
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_IDLE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "raikiri_hit"
-					m_Filepath = "models/kakashi_new/raikiri_hit.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 33
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_CAST_ABILITY_7"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "raikiri_charge"
-					m_Filepath = "models/kakashi_new/raikiri_charge.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 82
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_CHANNEL_ABILITY_4"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "raikiri_run"
-					m_Filepath = "models/kakashi_new/raikiri_run.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 12
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = true
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_CHANNEL_ABILITY_5"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "death1"
-					m_Filepath = "models/kakashi_new/death1.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 39
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_DIE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "death2"
-					m_Filepath = "models/kakashi_new/death2.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 111
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_DIE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "dog_kick"
-					m_Filepath = "models/kakashi_new/dog_kick.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 90
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = [  ]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "hand_sign"
-					m_Filepath = "models/kakashi_new/hand_sign.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 85
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = [  ]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "kick"
-					m_Filepath = "models/kakashi_new/kick.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 37
-					m_flFps = 40.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = ""
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "kick2"
-					m_Filepath = "models/kakashi_new/kick2.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 78
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = ""
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "kick3"
-					m_Filepath = "models/kakashi_new/kick3.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 75
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "punch"
-					m_Filepath = "models/kakashi_new/punch.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 65
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "punch2"
-					m_Filepath = "models/kakashi_new/punch2.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 68
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = [  ]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "punch3"
-					m_Filepath = "models/kakashi_new/punch3.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 86
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = [  ]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "punch4"
-					m_Filepath = "models/kakashi_new/punch4.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 76
-					m_flFps = 40.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "win"
-					m_Filepath = "models/kakashi_new/win.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 60
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_VICTORY"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "run"
-					m_Filepath = "models/kakashi_new/run.fbx"
-					m_nStartframe = 0
-					m_nEndframe = 11
-					m_flFps = 20.0
-					m_Loop = 
-					{
-						m_bLoop = true
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_RUN"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-			]
-			m_sScripts = [  ]
-			m_folderNames = [  ]
-			m_sCompileScripts = [  ]
-			m_pActivityWhiteList = 
-			{
-				m_pObject = null
-			}
-		}
-	}
-	m_pMaterialGroupList = 
-	{
-		m_pObject = null
-	}
-	m_pMeshGroupList = 
-	{
-		m_pObject = null
-	}
-	m_pLodGroupList = 
-	{
-		m_pObject = null
-	}
-	m_pPropBreakableList = 
-	{
-		m_pObject = null
-	}
-	m_pPropDataList = 
-	{
-		m_pObject = null
-	}
-	m_pConstraintLists = [  ]
-	m_collision = ""
-	m_softbody = ""
-	m_sMDLFilename = ""
-	m_sOffsetHitboxSets = [  ]
-	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
-	m_scriptFiles = [  ]
-	m_pMaterialRemapList = 
-	{
-		m_vMaterialRemapList = 
-		[
-			{
-				m_sSearchMaterial = "mi_chr_d31.vmat"
-				m_sReplaceMaterial = "materials/models/kakashi_new/kakashi_new1.vmat"
 			},
 			{
-				m_sSearchMaterial = "mi_chr_d31eyel.vmat"
-				m_sReplaceMaterial = "materials/models/kakashi_new/kakashi_new2.vmat"
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "kakashi_new_base"
+						filename = "models/kakashi_new/kakashi_new_base.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
 			},
 			{
-				m_sSearchMaterial = "mi_chr_d31eyer.vmat"
-				m_sReplaceMaterial = "materials/models/kakashi_new/kakashi_new3.vmat"
-			},
-			{
-				m_sSearchMaterial = "mi_chr_d31metal.vmat"
-				m_sReplaceMaterial = "materials/models/kakashi_new/kakashi_new1.vmat"
-			},
-			{
-				m_sSearchMaterial = "mi_line.vmat"
-				m_sReplaceMaterial = "materials/models/kakashi_new/kakashi_new1.vmat"
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "idle"
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/idle.fbx"
+						start_frame = 0
+						end_frame = 70
+						framerate = 13.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "raikiri_hit"
+						activity_name = "ACT_DOTA_CAST_ABILITY_7"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/raikiri_hit.fbx"
+						start_frame = 0
+						end_frame = 33
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "raikiri_charge"
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_4"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/raikiri_charge.fbx"
+						start_frame = 0
+						end_frame = 82
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "raikiri_run"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_5"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/raikiri_run.fbx"
+						start_frame = 0
+						end_frame = 12
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "death1"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/death1.fbx"
+						start_frame = 0
+						end_frame = 39
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "death2"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/death2.fbx"
+						start_frame = 0
+						end_frame = 111
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "dog_kick"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/dog_kick.fbx"
+						start_frame = 0
+						end_frame = 90
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hand_sign"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/hand_sign.fbx"
+						start_frame = 0
+						end_frame = 85
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kick"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kick.fbx"
+						start_frame = 0
+						end_frame = 37
+						framerate = 40.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kick2"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kick2.fbx"
+						start_frame = 0
+						end_frame = 78
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kick3"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kick3.fbx"
+						start_frame = 0
+						end_frame = 75
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/punch.fbx"
+						start_frame = 0
+						end_frame = 65
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch2"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/punch2.fbx"
+						start_frame = 0
+						end_frame = 68
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch3"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/punch3.fbx"
+						start_frame = 0
+						end_frame = 86
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch4"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/punch4.fbx"
+						start_frame = 0
+						end_frame = 76
+						framerate = 40.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "win"
+						activity_name = "ACT_DOTA_VICTORY"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/win.fbx"
+						start_frame = 0
+						end_frame = 60
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "run"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/run.fbx"
+						start_frame = 0
+						end_frame = 11
+						framerate = 20.0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
 			},
 		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		importer_notes = """
+Imported from VMDL
+"""
 	}
-	m_flFbxScale = 1.0
-	m_flQCScale = 1.0
-	m_vOrigin = [ 0.0, 0.0, 0.0 ]
-	m_bEmbedAnimsInAnimGroup = false
-	m_pPsfList = null
-	m_keyValueText = ""
-	m_bStaticProp = false
-	m_bEnableClothProcessing = true
-	m_flClothEnableThreshold = 0.05
-	m_nMaxClothVertsPerMesh = 2048
-	m_bBuildClothBoneHierarchy = false
-	m_nNavType = "AUTH_NAV_MESH"
-	m_bMakeUniqueVMeshes = false
-	m_bMakeImplicitBindPoseSequence = false
-	m_bAdjustSkeletonFromBoneFlags = false
-	m_bHiddenAssetFlag = false
-	m_pAnimGroups = [  ]
 }
