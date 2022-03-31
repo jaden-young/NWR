@@ -1,0 +1,53 @@
+"DOTAAbilities"
+{
+    
+    "madara_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/madara/madara_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"madara_innate"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+    
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "max_stacks_base"			                "5"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "max_stacks_per_level_bonus"			    "1"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "health_regen_per_stack_base"		        "0.6"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "health_regen_per_stack_per_level_bonus"    "0.04"
+            }
+            "05"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "spell_damage_bonus_per_stack"		        "1.0"
+            }
+            "06"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "stack_duration_base"		                "7.0"
+            }
+            "07"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "stack_duration_per_level_bonus"		    "0.5"
+            }
+        }
+    }
+}

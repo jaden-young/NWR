@@ -5,3 +5,4 @@
 #base "madara_susano.txt"
 #base "madara_wood_release.txt"
 #base "talents.txt"
+#base "madara_innate_passive.txt"

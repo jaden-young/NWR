@@ -58,8 +58,12 @@ export class modifier_haku_innate_passive_intrinsic extends BaseModifier {
         return false
     }
 
-    IsPassive(): boolean{
-        return  true
+    IsPermanent(): boolean {
+        return true
+    }
+
+    IsPurgable(): boolean {
+        return true
     }
 
     DeclareFunctions() {
