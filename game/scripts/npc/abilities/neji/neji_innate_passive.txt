@@ -1,0 +1,28 @@
+"DOTAAbilities"
+{
+    
+    "neji_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/neji/neji_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_reduction_per_percent_of_mana_base"			"0.15"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_reduction_per_percent_of_mana_per_level_bonus"		"0.01"
+            }
+        }
+    }
+}

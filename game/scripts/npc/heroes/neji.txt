@@ -18,6 +18,7 @@
 		  "Ability4"		"generic_hidden"
 		  "Ability5"		"generic_hidden"
 		  "Ability6"         "neji_32_palms"
+		  "Ability7"		"neji_innate_passive"
 		   "Ability10"		"special_bonus_attack_speed_20"
 		   "Ability11"		"special_bonus_strength_9"
 		   "Ability12"		"special_bonus_movement_speed_30"
