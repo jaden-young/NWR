@@ -17,6 +17,7 @@
 			"Ability4"			"generic_hidden"
 			"Ability5"			"generic_hidden"
 			"Ability6"			"onoki_kajutan_no_jutsu"
+			"Ability7"			"onoki_innate_passive"
 			"Ability10"		"special_bonus_magic_resistance_12"
 		   "Ability11"		"special_bonus_attack_damage_25"
 		   "Ability12"		"special_bonus_onoki_1"

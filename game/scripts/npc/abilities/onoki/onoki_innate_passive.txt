@@ -1,0 +1,39 @@
+"DOTAAbilities"
+{
+    
+    "onoki_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/onoki/onoki_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+        "AbilityCooldown"		"4.0"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			                    "FIELD_FLOAT"
+                "attack_bonus_per_armor_multiplier"			"5.0"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "armor_reduction_base"		"1.0"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "armor_reduction_per_level_bonus"		"0.5"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "armor_reduction_duration"		        "4.0"
+            }
+        }
+    }
+}
