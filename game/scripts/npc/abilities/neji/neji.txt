@@ -2,5 +2,5 @@
 #base "neji_air_palm.txt"
 #base "neji_byakugan.txt"
 #base "neji_32_palms.txt"
-
+#base "neji_innate_passive.txt"
 #base "talents.txt"
