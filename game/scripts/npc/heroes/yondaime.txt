@@ -24,10 +24,11 @@
 	"AbilityLayout"	"5"
 	"Ability1"		"yondaime_marked_kunai"
 	"Ability2"		"yondaime_rasengan" 
-	"Ability3"		"yondaime_agile_speed" 
+	"Ability3"		"" 
 	"Ability4"		"yondaime_body_flicker"
 	"Ability5"		"generic_hidden"
 	"Ability6"		"yondaime_hiraishin_jump"
+	"Ability7"		"yondaime_innate_passive"
 
 	"Ability10"		"special_bonus_agility_8"
 	"Ability11"		"special_bonus_yondaime_1"

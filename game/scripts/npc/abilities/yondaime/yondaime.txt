@@ -7,3 +7,4 @@
 #base "yondaime_rasengan.txt"
 #base "yondaime_yellow_flash.txt"
 #base "talents.txt"
+#base "yondaime_innate_passive.txt"
