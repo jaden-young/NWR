@@ -3,3 +3,4 @@
 #base "onoki_kajutan_no_jutsu.txt"
 #base "onoki_stalagmite_armor.txt"
 #base "talents.txt"
+#base "onoki_innate_passive.txt"
