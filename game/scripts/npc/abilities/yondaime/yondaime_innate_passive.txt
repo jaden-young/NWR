@@ -1,0 +1,38 @@
+"DOTAAbilities"
+{
+    
+    "yondaime_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/yondaime/yondaime_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"haku_endless_wounds"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "move_speed_percentage_base"			"3.0"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "move_speed_percentage_per_level_bonus"		"0.33"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "attack_damage_move_speed_percentage_base"		"3.0"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "attack_damage_move_speed_percentage_per_level_bonus"		"0.33"
+            }
+        }
+    }
+}
