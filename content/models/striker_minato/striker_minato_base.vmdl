@@ -1118,7 +1118,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1138,7 +1138,7 @@
 					{
 						_class = "AnimFile"
 						name = "rasengan_end"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1146,7 +1146,7 @@
 						looping = false
 						delta = false
 						worldSpace = false
-						hidden = false
+						hidden = true
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_minato/rasengan_end.smd"
@@ -1179,6 +1179,15 @@
 						parent_bone = ""
 						relative_origin = [ 78.803284, -2.745788, 118.565491 ]
 						relative_angles = [ -11.979706, -179.999893, -0.000021 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_right_hand"
+						parent_bone = "r_hand_weapon_cnt_tr"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
