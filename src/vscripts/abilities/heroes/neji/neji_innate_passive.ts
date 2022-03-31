@@ -26,8 +26,12 @@ export class modifier_neji_innate_passive_intrinsic extends BaseModifier
         return false
     }
 
-    IsPassive(): boolean{
+    IsPermanent(): boolean {
         return true
+    }
+
+    IsPurgable(): boolean {
+        return false
     }
 
     OnCreated(): void {
