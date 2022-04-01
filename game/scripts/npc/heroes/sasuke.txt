@@ -14,11 +14,12 @@
 		  "Ability1"        "sasuke_chidori"
 		//  "Ability2"        "sasuke_chidori_eiso" 
 		  "Ability2"        "sasuke_chidori_stream" 
-		  "Ability3"        "sasuke_chidori_light_sword" 
+		  "Ability3"        "" 
 		  "Ability4"        "generic_hidden"
 		  "Ability5"        "generic_hidden"
 
 		  "Ability6"        "sasuke_chidori_kirin"
+		  "Ability7"		"sasuke_innate_passive"
 
 		   "Ability10"		"special_bonus_sasuke_1"
 		   "Ability11"		"special_bonus_mp_regen_250"

@@ -37,9 +37,6 @@ export class modifier_madara_innate_passive_intrinsic extends BaseModifier
         return false
     }
 
-    ApplyStack(){
-
-    }
 
     DeclareFunctions(){
         return [ModifierFunction.ON_ATTACK_LANDED]

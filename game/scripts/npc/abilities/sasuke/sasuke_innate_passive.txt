@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+    
+    "sasuke_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/sasuke/sasuke_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"sasuke_innate"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			    "FIELD_FLOAT"
+                "bonus_damage_base"			"25"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "bonus_damage_per_level_bonus"		"4.0"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "movement_speed_slow_percentange"		"70.0"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "attack_speed_slow"		"60"
+            }
+            "05"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "debuff_duration"		"0.6"
+            }
+        }
+    }
+}

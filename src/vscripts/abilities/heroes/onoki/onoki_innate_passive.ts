@@ -68,7 +68,6 @@ export class modifier_onoki_innate_passive_intrinsic extends BaseModifier
         if(!ability.IsCooldownReady()){return}
 
         let damage = this.attack_bonus_per_armor * this.GetParent().GetPhysicalArmorValue(false)
-        print(this.armor_reduction_duration)
         let damage_options = {
             victim: event.target,
             attacker: this.GetParent(),
