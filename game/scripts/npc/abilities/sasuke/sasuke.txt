@@ -3,3 +3,4 @@
 #base "sasuke_chidori_light_sword.txt"
 #base "sasuke_chidori_kirin.txt"
 #base "talents.txt"
+#base "sasuke_innate_passive.txt"

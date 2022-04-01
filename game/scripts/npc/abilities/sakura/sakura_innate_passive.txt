@@ -1,0 +1,43 @@
+"DOTAAbilities"
+{
+    
+    "sakura_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/sakura/sakura_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"sakura_innate"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_base"			"20"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "damage_per_level_bonus"		"10"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "attacks_needed"		"3"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "stun_duration_base"			"0.8"
+            }
+            "05"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "stun_duration_per_level_bonus"		"0.02"
+            }
+        }
+    }
+}

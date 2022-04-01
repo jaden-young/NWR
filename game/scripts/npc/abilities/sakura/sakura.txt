@@ -3,3 +3,4 @@
 #base "sakura_earth_slam.txt"
 #base "sakura_inner_sakura.txt"
 #base "talents.txt"
+#base "sakura_innate_passive.txt"
