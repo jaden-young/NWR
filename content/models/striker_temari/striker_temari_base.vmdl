@@ -445,7 +445,7 @@
 						source_filename = "models/striker_temari/striker_temari_attack.smd"
 						start_frame = 0
 						end_frame = 32
-						framerate = 30.0
+						framerate = 10.0
 						reverse = false
 					},
 					{
@@ -479,7 +479,7 @@
 						source_filename = "models/striker_temari/striker_temari_attack2.smd"
 						start_frame = 0
 						end_frame = 40
-						framerate = 30.0
+						framerate = 35.0
 						reverse = false
 					},
 					{
@@ -513,7 +513,7 @@
 						source_filename = "models/striker_temari/striker_temari_attack3.smd"
 						start_frame = 0
 						end_frame = 52
-						framerate = 30.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -533,7 +533,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_4"
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -546,8 +546,8 @@
 						disable_compression = false
 						source_filename = "models/striker_temari/striker_temari_attack4.smd"
 						start_frame = 0
-						end_frame = 66
-						framerate = 30.0
+						end_frame = 58
+						framerate = -1.0
 						reverse = false
 					},
 					{
@@ -750,8 +750,17 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 68.034485, 4.658569, 157.859589 ]
-						relative_angles = [ 0.0, -179.999893, 0.0 ]
+						relative_origin = [ 40.280396, 43.721436, 155.961304 ]
+						relative_angles = [ 0.0, -137.880875, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_attack1"
+						parent_bone = "bone01"
+						relative_origin = [ 55.235641, 7.277657, 90.845169 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},

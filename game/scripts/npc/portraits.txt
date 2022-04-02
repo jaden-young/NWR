@@ -1367,14 +1367,14 @@
 		}
 	}
 
-	"models/temari/temari.vmdl"
+	"models/striker_temari/striker_temari_base.vmdl"
 	{
-	"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
-		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
-		"PortraitLightFOV"		"63.000000"
+			"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
+		"PortraitLightAngles"		"310.889999 178.929993 90.000000"
+		"PortraitLightFOV"		"50.000000"
 		"PortraitLightDistance"		"471.000000"
 		"PortraitLightColor"		"254 235 192"
-		"PortraitShadowColor"		"131 131 131"
+		"PortraitShadowColor"		"161 161 161"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
 		"PortraitAmbientColor"		"0 161 155"
@@ -1382,25 +1382,25 @@
 		"PortraitSpecularColor"		"251 74 84"
 		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
 		"PortraitSpecularPower"		"16.000000"
-		"PortraitBackgroundColor1"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor2"		"0.100000 0.640000 1.000000"
-		"PortraitBackgroundColor3"		"1.000000 1.000000 1.000000"
-		"PortraitBackgroundColor4"		"1.000000 1.000000 1.000000"
+		"PortraitBackgroundColor1"		"0.660000 0.270000 0.230000"
+		"PortraitBackgroundColor2"		"0.660000 0.270000 0.230000"
+		"PortraitBackgroundColor3"		"0.660000 0.270000 0.230000"
+		"PortraitBackgroundColor4"		"0.660000 0.270000 0.230000"
 		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"3.650000"
+		"PortraitLightScale"		"1.400000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"526.000000 -48.000000 40.000000"
-				"PortraitAngles"		"357.600006 175.899994 0.000000"
-				"PortraitFOV"		"3.0000"
+				"PortraitPosition"		"40.28 43.72 155.961"
+				"PortraitAngles"		"0 -137.881 0"
+				"PortraitFOV"		"45"
 				"PortraitFar"		"1000.000000"
 			}
 		}
