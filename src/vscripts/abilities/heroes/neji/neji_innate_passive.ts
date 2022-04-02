@@ -54,6 +54,6 @@ export class modifier_neji_innate_passive_intrinsic extends BaseModifier
 
     GetModifierIncomingDamage_Percentage(){
         let parent = this.GetParent()
-        return 100 - (this.damage_reduction_per_percent_of_mana * (parent.GetMana() / parent.GetMaxMana()) * 100)
+        return -1 * (this.damage_reduction_per_percent_of_mana * (parent.GetMana() / parent.GetMaxMana()) * 100)
     }
 }

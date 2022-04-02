@@ -11,7 +11,7 @@
 		  "Model" 			"models/striker_kisame/striker_kisame_base.vmdl"
 		 	"Ability1"         "kisame_suikodan_no_jutsu"
 		  	"Ability2"         "kisame_mizu_bunshin_no_jutsu" 
-		  	"Ability3"         "kisame_samehada" 
+
 		    "Ability4"		"generic_hidden"
 		  	"Ability5"		"generic_hidden"
 		  	"Ability6"         "kisame_water_prison"
