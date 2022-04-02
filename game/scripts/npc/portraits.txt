@@ -104,9 +104,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"108.0015 -72.26967 105.7333"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
-				"PortraitAngles"		"-7.1891 143.164 0.2" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"30" //zoom
+				"PortraitPosition"		"82.7359 24.5629 138.242"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"-7.53598 -164.597 -0.072063" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"40" //zoom
 			}
 		}
 	}
