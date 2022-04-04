@@ -31,7 +31,7 @@ require("components/demo/init");
 const heroSelectionTime = 20;
 
 declare global {
-    interface CDOTAGamerules {
+    interface CDOTAGameRules {
         Addon: GameMode;
     }
 }
@@ -325,7 +325,7 @@ export class GameMode {
     OnPlayerLearnedAbility(event: DotaPlayerLearnedAbilityEvent) {
         // necessary for barebones talent logic
         if (event.abilityname.includes("special_bonus_")) {
-            const player = EntIndexToHScript(event.player as EntityIndex) as CDOTAPlayer;
+            const player = EntIndexToHScript(event.player as EntityIndex) as CDOTAPlayerController;
             const hero = player.GetAssignedHero();
             const modifierName = `modifier_${event.abilityname}`;
             hero.AddNewModifier(hero, undefined, modifierName, undefined);
