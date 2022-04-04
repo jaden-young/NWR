@@ -56,12 +56,12 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 
 		"MovementSpeed"			"305"
-		"AttributeBaseStrength" "23" // Base strength
-		"AttributeStrengthGain" "3.6" // Strength bonus per level.
-		"AttributeBaseIntelligence" "21" // Base intelligence
-		"AttributeIntelligenceGain" "2.2" // Intelligence bonus per level.
-		"AttributeBaseAgility" "17" // Base agility
-		"AttributeAgilityGain" "1.5" // Agility bonus per level.
+		"AttributeBaseStrength" "24" // Base strength
+		"AttributeStrengthGain" "3.2" // Strength bonus per level.
+		"AttributeBaseIntelligence" "19" // Base intelligence
+		"AttributeIntelligenceGain" "2.0" // Intelligence bonus per level.
+		"AttributeBaseAgility" "16" // Base agility
+		"AttributeAgilityGain" "1.6" // Agility bonus per level.
 		"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
 		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
 

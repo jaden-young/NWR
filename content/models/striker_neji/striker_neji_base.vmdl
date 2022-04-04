@@ -1199,7 +1199,7 @@
 						source_filename = "models/striker_neji/heavy_palm.fbx"
 						start_frame = 21
 						end_frame = 60
-						framerate = 30.0
+						framerate = 24.0
 						reverse = false
 					},
 					{
