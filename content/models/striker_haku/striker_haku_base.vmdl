@@ -1303,7 +1303,7 @@
 						source_filename = "models/striker_haku/cast.fbx"
 						start_frame = 0
 						end_frame = 28
-						framerate = 40.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -1323,7 +1323,7 @@
 						source_filename = "models/striker_haku/cast2.fbx"
 						start_frame = 0
 						end_frame = 80
-						framerate = 30.0
+						framerate = 60.0
 						reverse = false
 					},
 					{

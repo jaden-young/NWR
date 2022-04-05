@@ -1,0 +1,76 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_PreEmissionOperators = 
+	[
+		{
+			_class = "C_OP_SetControlPointPositions"
+			m_vecCP1Pos = [ -328.0, 490.0, 1600.0 ]
+			m_nCP4 = 3
+			m_vecCP2Pos = [ 0.0, 0.0, 32.0 ]
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_h.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_shadow.vpcf"
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_g.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_d.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_e.vpcf"
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_b.vpcf"
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_c.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_needles_ice.vpcf"
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_ice_debris.vpcf"
+		},
+		{
+			m_flDelay = 0.35
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_dust.vpcf"
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_a.vpcf"
+		},
+		{
+			m_flDelay = 0.4
+			m_ChildRef = resource:"particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion_swirl.vpcf"
+		},
+	]
+}

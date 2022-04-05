@@ -1344,11 +1344,20 @@
 		"DOTA_Tooltip_ability_anko_giant_snake_hook_damage"			"DAMAGE: "
 		"DOTA_Tooltip_ability_anko_giant_snake_cd_reduc"			"COOLDOWN REDUCTION: "
 		"DOTA_Tooltip_ability_anko_giant_snake_Description"			"<b><font color='#00B730'>Sends out a snake</font></b> grabbing the first enemy it encounters, dealing <b><font color='#00B730'>Pure Damage and Pulling</font></b> them to Anko."
-
 		"DOTA_Tooltip_modifier_meat_hook_lua"				 "<b><font color='#00B730'>Summoning: Giant Snake</font></b>"
 		"DOTA_Tooltip_modifier_meat_hook_lua_description"	 "Enemy is being <b><font color='#00B730'>Pulled.</font></b>"
 
 		
+		"DOTA_Tooltip_ability_anko_innate_passive"				"<b><font color='#AA43D8'>Student of Orochimaru</font></b>"
+		"DOTA_Tooltip_ability_anko_innate_passive_lore"				""
+		"DOTA_Tooltip_ability_anko_innate_passive_snake_damage"		"DAMAGE: "
+		"DOTA_Tooltip_ability_anko_senei_jyashu_snake_damage_interval" "SNAKE COOLDOWN: "
+		"DOTA_Tooltip_ability_anko_senei_jyashu_damage_per_stack"	"BONUS DAMAGE: "
+		"DOTA_Tooltip_ability_anko_senei_jyashu_senei_jyashu_magic_resist"	"%MAGIC RESISTANCE BONUS: "
+		"DOTA_Tooltip_ability_anko_senei_jyashu_senei_seek_radius"	"RADIUS: "
+		"DOTA_Tooltip_ability_anko_innate_passive_Description"		"Grants Anko passive <b><font color='#AA43D8'>Spell Lifesteal.</font></b> <br><br> Additionally, a <b><font color='#AA43D8'>Basic Dispel</font></b> is applied to Anko after <b><font color='#AA43D8'>taking damage to a threshold.</font></b>"
+
+
 		"DOTA_Tooltip_ability_anko_senei_jyashu"					"<b><font color='#2CEA5E'>Striking Snakes</font></b>"
 		"DOTA_Tooltip_ability_anko_senei_jyashu_lore"				"Senei Jyashu"
 		"DOTA_Tooltip_ability_anko_senei_jyashu_snake_damage"		"DAMAGE: "
