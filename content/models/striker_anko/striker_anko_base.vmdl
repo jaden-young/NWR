@@ -68,8 +68,17 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 108.464394, -79.678902, 94.089302 ]
-						relative_angles = [ -7.535978, 143.634354, -0.072062 ]
+						relative_origin = [ 82.73587, 24.562944, 138.242264 ]
+						relative_angles = [ -7.535979, -164.597229, -0.072063 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_attack1"
+						parent_bone = "l_hand_weapon_cnt_tr"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -905,7 +914,7 @@
 						disable_compression = false
 						source_filename = "models/striker_anko/idle.smd"
 						start_frame = 0
-						end_frame = 52
+						end_frame = 65
 						framerate = 15.0
 						reverse = false
 					},

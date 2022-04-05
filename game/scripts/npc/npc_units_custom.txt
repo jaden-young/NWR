@@ -108,7 +108,7 @@
 	// General
 	//----------------------------------------------------------------
 	"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
-	"Model"						"models/kisame_new/kisame.vmdl"
+	"Model"						"models/striker_kisame/striker_kisame_base.vmdl"
 	"SoundSet"					"Hero_Kunkka"					// Name of sound set.
 	"GameSoundsFile"			"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 	"Level"						"1"
@@ -119,7 +119,7 @@
 	//----------------------------------------------------------------
 	"precache"
 	{
-		"model"				"models/heroes/kisame/kisame.vmdl"
+		"model"				"models/striker_kisame/striker_kisame_base.vmdl"
 		"soundfile"			"soundevents/game_sounds_heroes/game_sounds_kunkka.vsndevts"
 		"soundfile" "soundevents/heroes/kisame/kisame_bunshin_water_prison.vsndevts"
 	}

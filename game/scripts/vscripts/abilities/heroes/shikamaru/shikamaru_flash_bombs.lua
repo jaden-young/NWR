@@ -5,7 +5,7 @@ LinkLuaModifier("modifier_flash_bomb_debuff", "scripts/vscripts/abilities/heroes
 
 function shikamaru_flash_bombs:Precache( context )
     PrecacheResource( "particle", "particles/units/heroes/gaara/sandsturm.vpcf" , context )
-    PrecacheResource( "particle", "particles/units/heroes/hero_techies/techies_land_mine_explode.vpcf" , context )
+    PrecacheResource( "particle", "particles/units/heroes/shikamaru/shikamaru_flash_bomb.vpcf" , context )
 
     PrecacheResource( "soundfile", "soundevents/heroes/gaara/gaara_tsunami_cast.vsndevts", context )
     PrecacheResource( "soundfile", "soundevents/heroes/shikamaru/shikamaru_flashbombs_cast.vsndevts", context )
@@ -25,7 +25,7 @@ function shikamaru_flash_bombs:ProcsMagicStick()
 end
 
 function shikamaru_flash_bombs:ExplodeOnLocation(location)
-	local vfx = ParticleManager:CreateParticle("particles/units/heroes/hero_techies/techies_land_mine_explode.vpcf", 
+	local vfx = ParticleManager:CreateParticle("particles/units/heroes/shikamaru/shikamaru_flash_bomb.vpcf", 
 	PATTACH_ABSORIGIN, self.caster)
 	ParticleManager:SetParticleControl(vfx, 0, location)
 	ParticleManager:SetParticleControl(vfx, 1, Vector(0, 0, self.bomb_aoe))

@@ -23,7 +23,7 @@
 		"AbilityLayout"	"5"
 	  	"Ability1"        "hidan_cull_the_weak"
 		"Ability2"        "hidan_taunt" 
-		"Ability3"        "hidan_jashins_blessing" 
+
 		"Ability4"        "hidan_self_pain"
 		"Ability5"        "generic_hidden"
 		"Ability6"        "hidan_death_possession_blood"

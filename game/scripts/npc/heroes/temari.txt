@@ -28,11 +28,11 @@
       "Ability16"		"special_bonus_temari_4"
       "Ability17"		"special_bonus_temari_5"
 
-      "ModelScale"		"1.75"
-      "LoadoutScale"	"1.75" 
-      "SpectatorLoadoutScale" 	"1.75" 
-		  "VersusScale"					"1.75" 
-      "Model" 		"models/temari/temari.vmdl"
+      "ModelScale"		"1"
+      "LoadoutScale"	"1" 
+      "SpectatorLoadoutScale" 	"1" 
+		  "VersusScale"					"1" 
+      "Model" 		"models/striker_temari/striker_temari_base.vmdl"
       "ItemSlots"
       { }
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
@@ -83,7 +83,7 @@
 "npc_dota_hero_enchantress" 
 	{
 			"override_hero"   "npc_dota_hero_enchantress"
-			"Model" 		"models/temari/temari.vmdl"
+			"Model" 		"models/striker_temari/striker_temari_base.vmdl"
 		  "ModelScale"		"1.75"
       "LoadoutScale"	"1.75" 
       "SpectatorLoadoutScale" 	"1.75" 
