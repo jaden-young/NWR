@@ -11,10 +11,11 @@
       "BaseClass"   "npc_dota_hero_enchantress"
       "Ability1"        "temari_fusajin_no_jutsu"
       "Ability2"        "temari_kamaitachi_no_jutsu"
-      "Ability3"        "temari_sheer_wind" 
+      "Ability3"        "" 
       "Ability4"	  	  "generic_hidden"
       "Ability5"		    "generic_hidden"
       "Ability6"        "temari_kuchiyose_kirikiri_mai"
+      "Ability7"        "temari_innate_passive"
 
       "Ability10"		"special_bonus_temari_1"
       "Ability11"		"special_bonus_attack_damage_30"

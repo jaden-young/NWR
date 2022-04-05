@@ -1110,7 +1110,7 @@
 						delta = false
 						worldSpace = false
 						hidden = false
-						anim_markup_ordered = false
+						anim_markup_ordered = true
 						disable_compression = false
 						source_filename = "models/sexy_shikamaru/shadow_possession_loop.fbx"
 						start_frame = 0
@@ -1130,12 +1130,12 @@
 						delta = false
 						worldSpace = false
 						hidden = false
-						anim_markup_ordered = false
+						anim_markup_ordered = true
 						disable_compression = false
 						source_filename = "models/sexy_shikamaru/shadow_possession_start.fbx"
 						start_frame = 0
 						end_frame = 5
-						framerate = 30.0
+						framerate = 6.0
 						reverse = false
 					},
 					{

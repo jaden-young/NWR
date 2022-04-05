@@ -1,2 +1,2 @@
 /** @noSelfInFile */
-declare function SetPlayerHealthLabel(player: CDOTAPlayer): void;
+declare function SetPlayerHealthLabel(player: CDOTAPlayerController): void;

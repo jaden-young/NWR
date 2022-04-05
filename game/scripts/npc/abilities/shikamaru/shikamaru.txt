@@ -3,5 +3,6 @@
 #base "shikamaru_switching_technique.txt"
 #base "shikamaru_flash_bombs.txt"
 #base "shikamaru_explosive_tag_trap.txt"
+#base "shikamaru_innate_passive.txt"
 
 #base "talents.txt"

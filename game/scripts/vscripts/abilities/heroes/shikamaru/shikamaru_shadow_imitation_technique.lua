@@ -160,6 +160,11 @@ function shikamaru_shadow_imitation_technique:OnProjectileHit(hTarget, vLocation
 		else
 			hTarget:AddNewModifier(self:GetCaster(), self, "modifier_shadow_imitation", {duration = self.shadow_duration})
 		end
+		local innate_ability = self.caster:FindAbilityByName("shikamaru_innate_passive")
+		local innate_ability_modifier = self.caster:FindModifierByName("modifier_shikamaru_innate_passive_intrinsic")
+		local stacks_count = innate_ability_modifier:GetStackCount()
+		innate_ability:ApplyDebuffStacks(hTarget, stacks_count)
+		innate_ability:ResetStacks()
 	end
 
 	ParticleManager:DestroyParticle(self.projectile_vfx, true)

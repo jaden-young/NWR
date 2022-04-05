@@ -1131,7 +1131,7 @@
 		}
 	}
 
-	"models/raikage_new/raikage_base.vmdl"
+	"models/raikage_wule/wule_raikage_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
 		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
@@ -1152,7 +1152,7 @@
 		"PortraitBackgroundColor4"		"0.100000 0.640000 1.000000"
 		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
-		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE_IMPATIENT"
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
@@ -1162,10 +1162,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"576.000000 -48.000000 155.000000"
-				"PortraitAngles"		"357.600006 175.899994 0.000000"
-				"PortraitFOV"		"4.30000"
-				"PortraitFar"		"1000.000000"
+				"PortraitPosition"		"65.92 3.65 139.45"
+				"PortraitAngles"		"0 -180 0"
+				"PortraitFOV"		"40"
 			}
 		}
 	}
