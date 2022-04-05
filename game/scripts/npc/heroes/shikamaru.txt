@@ -17,6 +17,7 @@
   		  "Ability4"        "generic_hidden"
 		  "Ability5"        "generic_hidden"
 		  "Ability6"         "shikamaru_explosive_tag_trap"
+		  "Ability7"		"shikamaru_innate_passive"
 
 		   "Ability10"		"special_bonus_hp_175"
 		   "Ability11"		"special_bonus_shikamaru_1"

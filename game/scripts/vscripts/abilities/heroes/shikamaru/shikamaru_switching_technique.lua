@@ -32,6 +32,7 @@ function shikamaru_switching_technique:ProcsMagicStick()
 end
 
 function shikamaru_switching_technique:OnSpellStart()
+	if not IsServer() then return end
 
 	-- Ability properties    
 	self.caster = self:GetCaster()
@@ -101,13 +102,15 @@ function modifier_shikamaru_switching_thinker:IsAura()
 end
 
 function modifier_shikamaru_switching_thinker:OnCreated(keys)
+
+
 	if IsServer() then
 		-- Ability specials
 
-		self.caster = self:GetCaster()
 		self.thinker = self:GetParent()
 		self.ability = self:GetAbility()
-		self.old_caster = self:GetCaster()
+		self.caster = self.ability:GetCaster()
+
 		
 		self.ability_target_team	= self.ability:GetAbilityTargetTeam()
 		self.ability_target_type	= self.ability:GetAbilityTargetType()
@@ -129,6 +132,31 @@ function modifier_shikamaru_switching_thinker:OnCreated(keys)
 
 		self:StartIntervalThink(self.interval_time)
 		EmitSoundOn("shikamaru_stitch_area", self.thinker)
+
+			-- Find all enemies in the radius
+		local units = FindUnitsInRadius(self.thinker:GetTeamNumber(),
+			self.thinker_loc,
+			nil,
+			self.radius,
+			self.ability_target_team,
+			self.ability_target_type,
+			self.ability_target_flags,
+			FIND_ANY_ORDER,
+			false
+		)
+
+		local innate_ability = self.caster:FindAbilityByName("shikamaru_innate_passive")
+		local innate_ability_modifier = self.caster:FindModifierByName("modifier_shikamaru_innate_passive_intrinsic")
+		local stacks_count = innate_ability_modifier:GetStackCount()
+
+		for _,enemy in pairs(units) do
+
+			if enemy:IsMagicImmune() == false then 
+				innate_ability:ApplyDebuffStacks(enemy, stacks_count)
+			end
+		end
+
+		innate_ability:ResetStacks()
 
 	end
 end
@@ -178,8 +206,8 @@ function modifier_shikamaru_switching_thinker:OnDestroy(keys)
 	if IsServer() then
 		-- local thinker = self:GetParent()
 		StopSoundOn("shikamaru_stitch_area", self.thinker)
-		ParticleManager:DestroyParticle(self.particle_sandstorm_fx, true)
-		ParticleManager:ReleaseParticleIndex(self.particle_sandstorm_fx)
+		ParticleManager:DestroyParticle(self.ability.particle_sandstorm_fx, true)
+		ParticleManager:ReleaseParticleIndex(self.ability.particle_sandstorm_fx)
 	end
 end
 
