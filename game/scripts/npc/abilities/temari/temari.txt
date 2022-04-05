@@ -3,3 +3,4 @@
 #base "temari_kuchiyose_kirikiri_mai.txt"
 #base "temari_sheer_wind.txt"
 #base "talents.txt"
+#base "temari_innate_passive.txt"
