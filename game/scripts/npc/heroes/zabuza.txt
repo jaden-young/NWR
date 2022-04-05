@@ -19,7 +19,8 @@
 		  "Ability3"        "zabuza_executioners_blade"
 		  "Ability4"		"generic_hidden"
 		  "Ability5"		"generic_hidden"
-		  "Ability6"        "zabuza_demon_of_the_hidden_mist" 
+		  "Ability6"        "zabuza_demon_of_the_hidden_mist"
+		  "Ability7"		"zabuza_innate_passive"
 
 		    "Ability10"		"special_bonus_attack_speed_20"
 		   "Ability11"		"special_bonus_zabuza_1"
