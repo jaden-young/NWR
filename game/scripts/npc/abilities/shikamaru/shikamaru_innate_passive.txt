@@ -1,0 +1,53 @@
+"DOTAAbilities"
+{
+    
+    "shikamaru_innate_passive"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"ability_lua"
+        "ScriptFile"					"abilities/heroes/shikamaru/shikamaru_innate_passive.lua"
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE| DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+        "AbilityTextureName"			"shikamaru_innate"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+        "AbilitySpecial"
+        {
+            "01"
+            {
+                "var_type"			"FIELD_INTEGER"
+                "max_stacks"			    "10"
+            }
+            "02"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "charge_rate_in_seconds"		"5.0"
+            }
+            "03"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "debuff_duration"		"5.0"
+            }
+            "04"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "total_armor_reduction_per_stack_constant_base"		"0.5"
+            }
+            "05"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "total_armor_reduction_per_stack_constant_per_level_bonus"		"0.1"
+            }
+            "06"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "magic_resistance_reduction_per_stack_percentage_base"		"1"
+            }
+            "07"
+            {
+                "var_type"			"FIELD_FLOAT"
+                "magic_resistance_reduction_per_stack_percentage_per_level_bonus"		"0.1"
+            }
+        }
+    }
+}

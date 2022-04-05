@@ -30,6 +30,8 @@ function shikamaru_flash_bombs:ExplodeOnLocation(location)
 	ParticleManager:SetParticleControl(vfx, 0, location)
 	ParticleManager:SetParticleControl(vfx, 1, Vector(0, 0, self.bomb_aoe))
 
+	local innate_passive_ability = self.caster:FindAbilityByName("shikamaru_innate_passive")
+
 	self.caster:EmitSound("shikamaru_flashbombs_fire")
 
 	local targets = FindUnitsInRadius(
@@ -53,6 +55,9 @@ function shikamaru_flash_bombs:ExplodeOnLocation(location)
 		damage_type = DAMAGE_TYPE_MAGICAL,
 		damage_flags = nil,
 	})
+
+	local stacks_count = self.caster:FindModifierByName("modifier_shikamaru_innate_passive_intrinsic"):GetStackCount()
+	innate_passive_ability:ApplyDebuffStacks(target, stacks_count)
 
 
 	-- TODO place explosion particle on target 
@@ -124,6 +129,8 @@ function shikamaru_flash_bombs:OnSpellStart()
 		for i = 1,4 do
 			self:ExplodeOnLocation(self.inner_circle_positions[i])
 		end
+
+		self.caster:FindAbilityByName("shikamaru_innate_passive"):ResetStacks()
 	end)
 
 end
