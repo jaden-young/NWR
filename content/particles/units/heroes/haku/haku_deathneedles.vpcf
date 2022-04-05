@@ -1,0 +1,34 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 1
+	m_flMaxRecreationTime = -1.0
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_mist.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_light.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_ember.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_arrow_group.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_proj_rune.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_proj.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/haku/haku_deathneedles_arrow_group_persist.vpcf"
+		},
+	]
+	m_flCullRadius = 300.0
+	m_PreEmissionOperators = [  ]
+	m_nBehaviorVersion = 12
+}
