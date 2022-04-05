@@ -1506,166 +1506,6 @@
 					},
 					{
 						_class = "AnimFile"
-						name = "strike1"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/strike1.fbx"
-						start_frame = 0
-						end_frame = 6
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "strike2"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/strike2.fbx"
-						start_frame = 0
-						end_frame = 6
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "strike3"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/strike3.fbx"
-						start_frame = 0
-						end_frame = 6
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "strike4"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/strike4.fbx"
-						start_frame = 0
-						end_frame = 10
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "strike5"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/strike5.fbx"
-						start_frame = 0
-						end_frame = 10
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "strike6"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/strike6.fbx"
-						start_frame = 0
-						end_frame = 4
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "swift_punch"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/swift_punch.fbx"
-						start_frame = 0
-						end_frame = 36
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "swift_punch2"
-						activity_name = ""
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_neji/swift_punch2.fbx"
-						start_frame = 0
-						end_frame = 40
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
 						name = "win"
 						activity_name = "ACT_DOTA_VICTORY"
 						activity_weight = 1
@@ -1702,6 +1542,146 @@
 						start_frame = 11
 						end_frame = 23
 						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "strike4"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 1
+						weight_list_name = "default"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/strike4.fbx"
+						start_frame = 0
+						end_frame = 10
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "swift_punch"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = "default"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/swift_punch.fbx"
+						start_frame = 0
+						end_frame = 36
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "swift_punch2"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 1
+						weight_list_name = "default"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/swift_punch2.fbx"
+						start_frame = 0
+						end_frame = 40
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "strike3"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 1
+						weight_list_name = "default"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/strike3.fbx"
+						start_frame = 0
+						end_frame = 6
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "strike1"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 1
+						weight_list_name = "default"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/strike1.fbx"
+						start_frame = 0
+						end_frame = 6
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "ulti"
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/ulti.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "ult_end"
+						activity_name = "ACT_DOTA_CHANNEL_END_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_neji/palm2.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
 						reverse = false
 					},
 				]
