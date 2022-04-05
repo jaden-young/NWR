@@ -11,7 +11,7 @@
 		{
 			"HeroID"					"213"
 		  "BaseClass"   "npc_dota_hero_sand_king"
-		  "Model" 			"models/raikage_new/raikage_base.vmdl"
+		  "Model" 			"models/raikage_wule/wule_raikage_base.vmdl"
 		  "Ability1"        "raikage_raiton_no_yoroi"
 		  "Ability2"        "raikage_lariat" 
 		  "Ability3"        "raikage_raigyaku_suihei" 
@@ -46,7 +46,7 @@
 		  "Village"			"kumogakure"
 		  "Role"			"Initiator,Durable,Disabler"
 		"Rolelevels"		"3,3,2"
-			"ModelScale"		"0.85"
+			"ModelScale"		"1.2"
 		"LoadoutScale"		"0.79" 
 		"SpectatorLoadoutScale" 	"0.85"
 		"VersusScale"			"0.85"
