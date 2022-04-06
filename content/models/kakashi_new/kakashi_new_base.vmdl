@@ -1693,7 +1693,7 @@
 					{
 						_class = "AnimFile"
 						name = "kamui"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1704,10 +1704,10 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/kakashi_new/kamui.fbx"
+						source_filename = "models/kakashi_new/kamui_longer.fbx"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 28.0
 						reverse = false
 					},
 				]
