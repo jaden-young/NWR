@@ -710,7 +710,7 @@
 						source_filename = "models/striker_minato/idle.smd"
 						start_frame = 0
 						end_frame = 50
-						framerate = 30.0
+						framerate = 14.0
 						reverse = false
 					},
 					{

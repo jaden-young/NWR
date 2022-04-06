@@ -67,8 +67,8 @@
 	[
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 100.0
-			m_flRadiusMax = 100.0
+			m_flRadiusMin = 140.4
+			m_flRadiusMax = 140.4
 		},
 		{
 			_class = "C_INIT_RandomLifeTime"

@@ -1057,7 +1057,7 @@
 					{
 						_class = "AnimFile"
 						name = "backdash_kamehameha"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1069,7 +1069,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_neji/backdash_kamehameha.fbx"
-						start_frame = 0
+						start_frame = 6
 						end_frame = 41
 						framerate = 30.0
 						reverse = false
