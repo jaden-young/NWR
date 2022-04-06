@@ -3,20 +3,70 @@
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 256
-	m_Renderers = 
+	m_nBehaviorVersion = 12
+	m_nFirstMultipleOverride_BackwardCompat = 7
+	m_controlPointConfigurations = 
 	[
 		{
-			_class = "C_OP_RenderSprites"
-			m_bDisableZBuffering = true
-			m_flAnimationRate = 0.75
-			m_vecTexturesInput = 
+			m_name = "preview"
+			m_drivers = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/magic/dust_drop/dust_drop.vtex"
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
 				},
 			]
-			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
-			m_nFogType = "PARTICLE_FOG_GAME_DEFAULT"
+		},
+	]
+	m_Emitters = 
+	[
+		{
+			_class = "C_OP_InstantaneousEmitter"
+			m_nParticlesToEmit = 
+			{
+				m_nType = "PF_TYPE_LITERAL"
+				m_flLiteralValue = 3.0
+			}
+		},
+	]
+	m_Initializers = 
+	[
+		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMax = 1.255
+			m_fLifetimeMin = 1.0
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMax = 175.0
+			m_flRadiusMin = 100.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 200
+		},
+		{
+			_class = "C_INIT_RandomRotation"
+			m_flDegreesMax = 20.0
+		},
+		{
+			_class = "C_INIT_RandomColor"
+			m_ColorMax = [ 186, 186, 186 ]
+			m_ColorMin = [ 236, 236, 236 ]
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 1
+		},
+		{
+			_class = "C_INIT_CreateOnModel"
+		},
+		{
+			_class = "C_INIT_RandomYawFlip"
+		},
+		{
+			_class = "C_INIT_PositionOffset"
+			m_OffsetMax = [ 0.0, 0.0, 20.0 ]
 		},
 	]
 	m_Operators = 
@@ -48,68 +98,19 @@
 			m_flFadeInTime = 0.5
 		},
 	]
-	m_Initializers = 
+	m_Renderers = 
 	[
 		{
-			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 1.255
-			m_fLifetimeMin = 1.0
-		},
-		{
-			_class = "C_INIT_RandomRadius"
-			m_flRadiusMax = 175.0
-			m_flRadiusMin = 100.0
-		},
-		{
-			_class = "C_INIT_RandomAlpha"
-			m_nAlphaMin = 200
-		},
-		{
-			_class = "C_INIT_RandomRotation"
-			m_flDegreesMax = 20.0
-		},
-		{
-			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 178, 221, 255, 255 ]
-			m_ColorMin = [ 138, 196, 255, 255 ]
-		},
-		{
-			_class = "C_INIT_RandomSequence"
-			m_nSequenceMax = 1
-		},
-		{
-			_class = "C_INIT_CreateOnModel"
-			m_vecHitBoxScale = 
-			{
-				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ 1.0, 1.0, 1.0 ]
-			}
-		},
-		{
-			_class = "C_INIT_RandomYawFlip"
-		},
-		{
-			_class = "C_INIT_PositionOffset"
-			m_OffsetMax = [ 0.0, 0.0, 20.0 ]
+			_class = "C_OP_RenderSprites"
+			m_bDisableZBuffering = true
+			m_flAnimationRate = 0.75
+			m_vecTexturesInput = 
+			[
+				{
+					m_hTexture = resource:"materials/particle/magic/dust_drop/dust_drop.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
 		},
 	]
-	m_Emitters = 
-	[
-		{
-			_class = "C_OP_InstantaneousEmitter"
-			m_flStartTime = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 0.0
-			}
-			m_nParticlesToEmit = 
-			{
-				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 3.0
-			}
-		},
-	]
-	m_PreEmissionOperators = [  ]
-	m_nBehaviorVersion = 4
-	m_nFirstMultipleOverride_BackwardCompat = 7
 }

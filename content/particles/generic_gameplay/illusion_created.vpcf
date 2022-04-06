@@ -4,7 +4,7 @@
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 400
 	m_flConstantRadius = 12.0
-	m_ConstantColor = [ 230, 232, 240, 255 ]
+	m_ConstantColor = [ 236, 236, 236, 58 ]
 	m_nConstantSequenceNumber = 6
 	m_bShouldSort = false
 	m_nBehaviorVersion = 12
@@ -13,13 +13,7 @@
 	[
 		{
 			m_name = "preview"
-			m_drivers = 
-			[
-				{
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-			]
+			m_drivers = [  ]
 		},
 	]
 	m_Emitters = 
@@ -30,7 +24,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 400.0
+				m_flLiteralValue = 0.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -71,6 +65,7 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_Initializers = 
@@ -327,12 +322,14 @@
 					m_Stops = [  ]
 				}
 			}
+			m_bDisableOperator = true
 		},
 	]
 	m_Children = 
 	[
 		{
 			m_ChildRef = resource:"particles/generic_gameplay/illusion_created_b.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }

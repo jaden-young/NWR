@@ -5,7 +5,7 @@
 	m_nMaxParticles = 96
 	m_flConstantRadius = 32.0
 	m_ConstantColor = [ 255, 255, 255, 155 ]
-	m_nBehaviorVersion = 5
+	m_nBehaviorVersion = 12
 	m_controlPointConfigurations = 
 	[
 		{
@@ -138,7 +138,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 0.5
+				m_flLiteralValue = 0.4
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -183,7 +183,7 @@
 			{
 				m_nType = "PVEC_TYPE_LITERAL_COLOR"
 				m_vLiteralValue = [ 0.0, 0.0, 0.0 ]
-				m_LiteralColor = [ 135, 206, 235 ]
+				m_LiteralColor = [ 0, 191, 255 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
 				m_nControlPoint = 0
@@ -384,7 +384,7 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/units/heroes/hero_ancient_apparition/ancient_apparition_ice_blast_sphere_halo.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/yondaime/raseng_halo.vpcf"
 		},
 	]
 }
