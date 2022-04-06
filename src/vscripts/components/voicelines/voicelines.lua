@@ -212,7 +212,7 @@ function VoiceResponses:OnUnitDeath(event)
 				else
 					self:TriggerSound("OnHeroKill", event.attacker, unitResponses)
 				end
-			else
+			elseif not event.unit:IsIllusion() and not event.unit:IsOther() then
 				if event.unit:GetTeam() == event.attacker:GetTeam() then
 					self:TriggerSound("OnCreepDeny", event.attacker, unitResponses)
 				else
