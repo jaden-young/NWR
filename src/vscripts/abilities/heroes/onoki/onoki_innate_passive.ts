@@ -15,6 +15,7 @@ export class onoki_innate_passive extends BaseAbility
     Precache(context: CScriptPrecacheContext){
         PrecacheResource("particle", "particles/units/heroes/onoki/onoki_innate_passive_impact.vpcf", context)
         PrecacheResource("particle", "particles/units/heroes/onoki/onoki_innate_passive_debuff.vpcf", context)
+        PrecacheResource("soundfile", "soundevents/heroes/onoki/onoki_passive_trigger.vsndevts", context )
     }
 }
 
@@ -94,6 +95,8 @@ export class modifier_onoki_innate_passive_intrinsic extends BaseModifier
         print(mod)
 
         ability.StartCooldown(ability.GetEffectiveCooldown(ability.GetLevel()))
+
+        event.target.EmitSound("onoki_passive_trigger")
     }
 }
 
