@@ -2,12 +2,11 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 8
-	m_nInitialParticles = 2
-	m_flConstantRadius = 15.0
-	m_ConstantColor = [ 0, 0, 0, 255 ]
-	m_nBehaviorVersion = 4
-	m_nFirstMultipleOverride_BackwardCompat = 5
+	m_nMaxParticles = 96
+	m_flConstantRadius = 110.0
+	m_ConstantColor = [ 255, 255, 255, 55 ]
+	m_nConstantSequenceNumber = 2
+	m_nBehaviorVersion = 12
 	m_controlPointConfigurations = 
 	[
 		{
@@ -15,11 +14,12 @@
 			m_drivers = 
 			[
 				{
+					m_iControlPoint = 3
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
 				{
-					m_iControlPoint = 1
+					m_iControlPoint = 62
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
@@ -29,12 +29,12 @@
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_InstantaneousEmitter"
-			m_nParticlesToEmit = 
+			_class = "C_OP_ContinuousEmitter"
+			m_flEmitRate = 
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 2.0
+				m_flLiteralValue = 20.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -80,35 +80,85 @@
 	m_Initializers = 
 	[
 		{
-			_class = "C_INIT_CreateWithinSphere"
-			m_nControlPointNumber = 1
-		},
-		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 1.5
-			m_fLifetimeMin = 1.5
+			m_fLifetimeMax = 0.45
+			m_fLifetimeMin = 0.225
 		},
 		{
-			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 0, 255, 255 ]
-			m_ColorMax = [ 30, 144, 255 ]
-		},
-		{
-			_class = "C_INIT_RandomAlpha"
-			m_nAlphaMin = 50
-			m_nAlphaMax = 50
-			m_bDisableOperator = true
+			_class = "C_INIT_CreateWithinSphere"
+			m_nControlPointNumber = 3
 		},
 		{
 			_class = "C_INIT_RandomRotation"
 		},
 		{
-			_class = "C_INIT_InitialVelocityNoise"
-			m_vecOutputMax = 
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 20.0
+			m_flRadiusMax = 30.0
+		},
+		{
+			_class = "C_INIT_RandomSequence"
+			m_nSequenceMax = 2
+			m_nSequenceMin = 1
+		},
+	]
+	m_Operators = 
+	[
+		{
+			_class = "C_OP_Decay"
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.1
+		},
+		{
+			_class = "C_OP_OscillateVector"
+			m_FrequencyMax = [ 3.0, 3.0, 3.0 ]
+			m_RateMax = [ 13.0, 13.0, 13.0 ]
+			m_RateMin = [ -13.0, -13.0, -13.0 ]
+		},
+		{
+			_class = "C_OP_FadeOutSimple"
+			m_flFadeOutTime = 0.5
+		},
+		{
+			_class = "C_OP_BasicMovement"
+			m_fDrag = 0.05
+			m_Gravity = [ 0.0, 0.0, 50.0 ]
+		},
+		{
+			_class = "C_OP_PositionLock"
+			m_nControlPointNumber = 3
+		},
+		{
+			_class = "C_OP_InterpolateRadius"
+			m_flStartScale = 0.1
+			m_flEndScale = 1.7
+			m_flBias = 0.25
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_ColorFade = [ 59, 131, 187, 255 ]
+		},
+	]
+	m_Renderers = 
+	[
+		{
+			_class = "C_OP_RenderSprites"
+			m_flOverbrightFactor = 2.0
+			m_nHSVShiftControlPoint = 62
+			m_vecTexturesInput = 
+			[
+				{
+					m_hTexture = resource:"materials/particle/particle_ring_wavy4.vtex"
+				},
+			]
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
+			m_vecColorScale = 
 			{
-				m_nType = "PVEC_TYPE_LITERAL"
-				m_vLiteralValue = [ 0.0, 0.0, -32.0 ]
-				m_LiteralColor = [ 0, 0, 0 ]
+				m_nType = "PVEC_TYPE_LITERAL_COLOR"
+				m_vLiteralValue = [ 0.0, 0.0, 0.0 ]
+				m_LiteralColor = [ 135, 206, 235 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
 				m_nControlPoint = 0
@@ -304,68 +354,6 @@
 					m_Stops = [  ]
 				}
 			}
-			m_vecOutputMin = [ 0.0, 0.0, -32.0 ]
-		},
-		{
-			_class = "C_INIT_RemapScalar"
-			m_flInputMax = 2.0
-			m_flOutputMin = 0.5
-			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
-		},
-	]
-	m_Operators = 
-	[
-		{
-			_class = "C_OP_Decay"
-		},
-		{
-			_class = "C_OP_InterpolateRadius"
-			m_flStartScale = 10.0
-			m_flBias = 0.3
-		},
-		{
-			_class = "C_OP_FadeOutSimple"
-			m_flFadeOutTime = 0.2
-		},
-		{
-			_class = "C_OP_FadeInSimple"
-			m_flFadeInTime = 0.5
-		},
-		{
-			_class = "C_OP_RampScalarLinear"
-			m_RateMax = 12.0
-			m_RateMin = 12.0
-			m_nField = 4
-		},
-		{
-			_class = "C_OP_PositionLock"
-		},
-		{
-			_class = "C_OP_RampScalarLinearSimple"
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
-			m_nField = 16
-			m_Rate = -4.0
-			m_flEndTime = 9999999.0
-		},
-		{
-			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 0, 0, 127 ]
-		},
-	]
-	m_Renderers = 
-	[
-		{
-			_class = "C_OP_RenderSprites"
-			m_flOverbrightFactor = 4.0
-			m_flAddSelfAmount = 1.0
-			m_bSaturateColorPreAlphaBlend = false
-			m_nOrientationType = "PARTICLE_ORIENTATION_WORLD_Z_ALIGNED"
-			m_vecTexturesInput = 
-			[
-				{
-					m_hTexture = resource:"materials/particle/juggernaut/juggernaut_blade_fury.vtex"
-				},
-			]
 		},
 	]
 }

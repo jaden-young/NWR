@@ -29,7 +29,7 @@
       "Ability16"		"special_bonus_temari_4"
       "Ability17"		"special_bonus_temari_5"
 
-      "ModelScale"		"1"
+      "ModelScale"		"0.95"
       "LoadoutScale"	"1" 
       "SpectatorLoadoutScale" 	"1" 
 		  "VersusScale"					"1" 
