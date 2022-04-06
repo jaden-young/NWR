@@ -11,6 +11,10 @@ export class anko_innate_passive extends BaseAbility
     GetIntrinsicModifierName(): string {
         return "modifier_anko_innate_passive"
     }
+
+    Precache(context: CScriptPrecacheContext){
+        PrecacheResource( "soundfile",   "soundevents/heroes/anko/anko_passive_trigger.vsndevts", context )
+    }
 }
 
 @registerModifier()
@@ -89,7 +93,6 @@ export class modifier_anko_innate_passive extends BaseModifier {
                 true, // removes stuns
                 true //removes exceptions
             )
-
             //TODO: Play SFX\VFX
         }
     }
