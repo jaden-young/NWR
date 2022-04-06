@@ -91,4 +91,16 @@
 			m_ActivityName = "ACT_DOTA_DIE"
 		},
 	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_passive_dust.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_passive_pulse.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_passive_pulse2.vpcf"
+		},
+	]
 }

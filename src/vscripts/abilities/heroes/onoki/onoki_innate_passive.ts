@@ -77,8 +77,8 @@ export class modifier_onoki_innate_passive_intrinsic extends BaseModifier
             damage_flags: DamageFlag.NONE
         }
         ApplyDamage(damage_options)
-
-        let impact_vfx = ParticleManager.CreateParticle("particles/units/heroes/onoki/onoki_innate_passive_impact.vpcf", ParticleAttachment.ABSORIGIN, this.GetParent())
+        
+        let impact_vfx = ParticleManager.CreateParticle("particles/units/heroes/onoki/onoki_innate_passive_impact.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, event.target)
         ParticleManager.DestroyParticle(impact_vfx, false)
         ParticleManager.ReleaseParticleIndex(impact_vfx)
         
