@@ -1,47 +1,57 @@
 "DOTAAbilities"
 {	
 	//=================================================================================================================
-	// Kakashi: Sharingan
+	// Kakashi: Lightning Blade (Raikiri)
 	//=================================================================================================================
-	"kakashi_sharingan"
+	"kakashi_lightning_blade"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"                    "abilities/heroes/kakashi/kakashi_sharingan.lua"
-		"AbilityTextureName"			"kakashi_sharingan"
+		"ScriptFile"                    "abilities/heroes/kakashi/kakashi_lightning_blade.lua"
+		"AbilityTextureName"			"kakashi_lightning_blade"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_ALERT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.1"
+		"AbilityCastPoint"				"0.7"
 		"AbilityCastRange"				"1200"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"40 32 24 16"
+		"AbilityCooldown"				"16 14 12 10"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"25"
+		"AbilityManaCost"				"90 100 110 120"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"spell_duration"
+			"charge_speed"				"1200"
+			"damage"
 			{
-				"value"						"15 30 45 60"
-				"LinkedSpecialBonus"		"special_bonus_kakashi_5"
-			}			
+				"value"					"80 160 240 320"
+				"LinkedSpecialBonus"	"special_bonus_kakashi_1"
+			}
+			"stun_duration"				"0.9 1.2 1.5 1.8"
+			"max_distance"				"3000"
+			"abilitycastpoint"
+			{
+				"value"							"0.7"
+				"LinkedSpecialBonus"			"special_bonus_kakashi_2"
+				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
+			}
 		}
 
-		//"AbilityCastAnimation"		""
+		"AbilityCastAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
 	}
 }

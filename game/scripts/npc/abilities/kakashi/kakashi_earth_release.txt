@@ -1,47 +1,48 @@
 "DOTAAbilities"
 {	
 	//=================================================================================================================
-	// Kakashi: Sharingan
+	// Kakashi: Earth Release: Mud Wall (Shard Ability)
 	//=================================================================================================================
-	"kakashi_sharingan"
+	"kakashi_earth_release"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"                    "abilities/heroes/kakashi/kakashi_sharingan.lua"
-		"AbilityTextureName"			"kakashi_sharingan"
+		"ScriptFile"                    "abilities/heroes/kakashi/kakashi_earth_release.lua"
+		"AbilityTextureName"			"kakashi_earth_release"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES | DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+
+		"IsGrantedByShard"				"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.1"
-		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0.4"
+		"AbilityCastRange"				"700"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"40 32 24 16"
+		"AbilityCooldown"				"25"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"25"
+		"AbilityManaCost"				"120"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"spell_duration"
-			{
-				"value"						"15 30 45 60"
-				"LinkedSpecialBonus"		"special_bonus_kakashi_5"
-			}			
+			"damage"					"180"
+			"duration"					"6"
+			"stun_duration"				"0.7"
+			"wall_length"				"1200"
+			"wall_width"				"100"
+			"radius"					"225"
 		}
 
-		//"AbilityCastAnimation"		""
+		//"AbilityCastAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
 	}
 }

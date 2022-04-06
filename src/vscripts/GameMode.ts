@@ -7,6 +7,7 @@ import "./lib/timers";
 import "./lib/popups";
 import "./lib/keyvalues";
 import "./lib/vanilla_extension"
+import "./lib/vector_targeting_interface"
 import { ShortHeroName } from "./lib/util";
 import "./components/lul/label";
 
@@ -23,6 +24,7 @@ import { malulubul } from "./components/lul/malubulul";
 
 //Importing lua libraries
 require("components/garbage_collector");
+require("lib/vector_targeting");
 // TODO: Fix barebones editing gamemode object
 // require("components/barebones/events")
 require("modifiers/modifier_responses");
@@ -45,6 +47,7 @@ export class GameMode {
     spawned_heros: Set<string> = new Set();
 
     public static Precache(this: void, context: CScriptPrecacheContext) {
+        PrecacheResource("particle", "particles/ui_mouseactions/range_finder_cone.vpcf", context); 
         PrecacheResource("soundfile", "soundevents/music/nwr_team_selection.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/music/nwr_hero_selection.vsndevts", context);
 
@@ -73,6 +76,7 @@ export class GameMode {
         PrecacheResource("soundfile", "soundevents/clones/clone_pop.vsndevts", context)
         PrecacheResource( "model", "models/striker_gaara/striker_gaara_gourd.vmdl", context )
         PrecacheModel("models/striker_gaara/striker_gaara_gourd.vmdl", context)
+        
 
 
         // PrecacheResource("soundfile", "soundevents/itachi_crows.vsndevts", context)

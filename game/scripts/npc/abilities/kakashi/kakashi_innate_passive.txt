@@ -1,0 +1,28 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Kakashi: Innate Passive -- Combat Experience
+	//=================================================================================================================
+	"kakashi_innate_passive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/kakashi/kakashi_innate_passive.lua"
+		"AbilityTextureName"			"kakashi-innate"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_per_attr_point"		"0.33"
+			"stat_res_per_str"			"0.15"
+			"move_speed_per_agi"		"0.15"
+			"spell_amp_per_int"			"0.15"
+		}
+	}
+}

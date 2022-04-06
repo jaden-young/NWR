@@ -3,5 +3,7 @@
   custom_net_tables =
   [
     "better_cooldowns_cdr",
+    "kakashi_sharingan_tracker",
+    "vector_targeting"
   ]
 }

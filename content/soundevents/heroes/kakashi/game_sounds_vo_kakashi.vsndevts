@@ -1,0 +1,28 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+    VO_Hero_Kakashi.LightningBlade.Precast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/kakashi/raikiri_cast_01.vsnd",
+            "sounds/heroes/kakashi/raikiri_cast_02.vsnd",
+            "sounds/heroes/kakashi/raikiri_cast_03.vsnd",
+            "sounds/heroes/kakashi/raikiri_cast_04.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+	}
+
+    VO_Hero_Kakashi.LightningBlade.Hit = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/kakashi/raikiri_impact_01.vsnd",
+            "sounds/heroes/kakashi/raikiri_impact_02.vsnd",
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+	}
+}

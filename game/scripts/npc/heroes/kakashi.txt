@@ -25,13 +25,13 @@
 
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementTurnRate"			"1.5"
-		"MovementSpeed"				"305"
+		"MovementSpeed"				"315"
 
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"   "34"
 		"AttackDamageMax"   "37"
 		"AttackRange"				"100"
-		"AttackRate"				"1.7"
+		"AttackRate"				"1.4"
 		"AttackAnimationPoint"		"0.2"
 		"AttackSpeedActivityModifiers"
 		{
@@ -40,7 +40,7 @@
 			"fastest"	"350"
 		}
 
-		"ArmorPhysical"				"0"
+		"ArmorPhysical"				"2"
 		"MagicalResistance"			"25"
 
 		"StatusHealth"				"200"
@@ -49,31 +49,33 @@
 		"StatusMana"				"75"
 
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
-		"AttributeBaseStrength" "22" // Base strength
-		"AttributeStrengthGain" "3.0" // Strength bonus per level.
-		"AttributeBaseIntelligence" "19" // Base intelligence
-		"AttributeIntelligenceGain" "2.0" // Intelligence bonus per level.
-		"AttributeBaseAgility" "17" // Base agility
-		"AttributeAgilityGain" "1.8" // Agility bonus per level.
+		"AttributeBaseStrength" "20" // Base strength
+		"AttributeStrengthGain" "2.7" // Strength bonus per level.
+		"AttributeBaseIntelligence" "24" // Base intelligence
+		"AttributeIntelligenceGain" "2.4" // Intelligence bonus per level.
+		"AttributeBaseAgility" "21" // Base agility
+		"AttributeAgilityGain" "2.5" // Agility bonus per level.
 
-		"Ability1"					"kakashi_doton"
+		"AbilityLayout"				"5"
+		"Ability1"					"kakashi_lightning_blade"
 		"Ability2"					"kakashi_sharingan" 
-		"Ability3"					"kakashi_bunshin" 
+		"Ability3"					"kakashi_lightning_release" 
 		"Ability4"					"kakashi_empty"
-		"Ability5"					"generic_hidden"
-		"Ability6"					"kakashi_chidori"
+		"Ability5"					"kakashi_earth_release"//""
+		"Ability6"					"kakashi_kamui"
+		"Ability9"					"kakashi_innate_passive"
 
-		"Ability10"		"special_bonus_mp_200"
-		"Ability11"		"special_bonus_attack_damage_30"
+		"Ability10"		"special_bonus_kakashi_4"
+		"Ability11"		"special_bonus_kakashi_3"
 
-		"Ability12"		"special_bonus_kakashi_1"
-		"Ability13"		"special_bonus_all_stats_6"
+		"Ability12"		"special_bonus_evasion_16"
+		"Ability13"		"special_bonus_kakashi_5"
 
-		"Ability14"		"special_bonus_kakashi_2"
-		"Ability15"		"special_bonus_kakashi_3"
+		"Ability14"		"special_bonus_20_crit_15"
+		"Ability15"		"special_bonus_kakashi_2"
 
-		"Ability16"		"special_bonus_cooldown_reduction_25"
-		"Ability17"		"special_bonus_kakashi_4"
+		"Ability16"		"special_bonus_kakashi_1"
+		"Ability17"		"special_bonus_all_stats_15"
 
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
