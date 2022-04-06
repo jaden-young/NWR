@@ -28,6 +28,7 @@ function shikamaru_flash_bombs:ExplodeOnLocation(location)
 	local vfx = ParticleManager:CreateParticle("particles/units/heroes/shikamaru/shikamaru_flash_bomb.vpcf", 
 	PATTACH_ABSORIGIN, self.caster)
 	ParticleManager:SetParticleControl(vfx, 0, location)
+	ParticleManager:SetParticleControl(vfx, 5, location)
 	ParticleManager:SetParticleControl(vfx, 1, Vector(0, 0, self.bomb_aoe))
 
 	local innate_passive_ability = self.caster:FindAbilityByName("shikamaru_innate_passive")

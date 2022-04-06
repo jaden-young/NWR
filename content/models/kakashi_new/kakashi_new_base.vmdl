@@ -33,6 +33,22 @@
 								from = "mi_line.vmat"
 								to = "materials/models/kakashi_new/kakashi_new1.vmat"
 							},
+							{
+								from = "mi_chr_kakashi.vmat"
+								to = "materials/kakashi_new/kakashi_new1.vmat"
+							},
+							{
+								from = "mi_chr_kakashieyel.vmat"
+								to = "materials/kakashi_new/kakashi_new2.vmat"
+							},
+							{
+								from = "mi_chr_kakashieyer.vmat"
+								to = "materials/kakashi_new/kakashi_new3.vmat"
+							},
+							{
+								from = "mi_chr_kakashimetal.vmat"
+								to = "materials/models/sexy_shikamaru/sexy_shikamaru1.vmat"
+							},
 						]
 						use_global_default = false
 						global_default_material = ""
@@ -1264,8 +1280,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "kakashi_new_base"
-						filename = "models/kakashi_new/kakashi_new_base.fbx"
+						filename = "models/kakashi_new/kakashi_new_base_trial.fbx"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -1673,6 +1688,26 @@
 						start_frame = 0
 						end_frame = 11
 						framerate = 20.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kamui"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kamui.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
 						reverse = false
 					},
 				]

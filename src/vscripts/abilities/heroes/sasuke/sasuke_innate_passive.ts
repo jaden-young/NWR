@@ -12,6 +12,10 @@ export class sasuke_innate_passive extends BaseAbility
     GetIntrinsicModifierName(): string {
         return "modifier_sasuke_innate_passive_intrinsic"
     }
+
+    Precache(context: CScriptPrecacheContext){
+        PrecacheResource( "soundfile",   "soundevents/heroes/sasuke/sasuke_sword_impact.vsndevts", context )
+    }
 }
 
 @registerModifier()

@@ -5,7 +5,7 @@ haku_needles = haku_needles or class({})
 function haku_needles:Precache(context)
 	PrecacheResource("soundfile",  "soundevents/game_sounds_heroes/game_sounds_crystalmaiden.vsndevts", context)
 	PrecacheResource("soundfile",  "soundevents/heroes/haku/haku_deathneedle.vsndevts", context)
-	PrecacheResource("particle",   "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf", context)
+	PrecacheResource("particle",   "particles/units/heroes/haku/haku_needles", context)
 end
 
 function haku_needles:OnAbilityPhaseStart()
@@ -54,7 +54,7 @@ function modifier_haku_needles_thinker:OnIntervalThink()
 
 	self.wave_count = self.wave_count - 1
 
-	local particleName = "particles/units/heroes/hero_crystalmaiden/maiden_freezing_field_explosion.vpcf"
+	local particleName = "particles/units/heroes/haku/haku_needles.vpcf"
 	local distance = 100
 
 	-- Center explosion

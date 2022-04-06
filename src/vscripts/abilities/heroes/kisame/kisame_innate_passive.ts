@@ -18,6 +18,10 @@ export class kisame_innate_passive extends BaseAbility
 
         return cooldown_base
     }
+
+    Precache(context: CScriptPrecacheContext){
+        PrecacheResource("soundfile",  "soundevents\heroes\kisame\kisame_samehada_trigger.vsndevts", context)   
+    }
 }
 
 @registerModifier()
@@ -70,7 +74,7 @@ export class modifier_kisame_innate_passive_intrinsic extends BaseModifier
         
         // VFX/SFX
         let particle_cast = "particles/generic_gameplay/generic_manaburn.vpcf"
-        let sound_cast = ""
+        let sound_cast = "kisame_samehada_trigger"
     
         // Create Particle
         let effect_cast = ParticleManager.CreateParticle( particle_cast, ParticleAttachment.ABSORIGIN, event.target )

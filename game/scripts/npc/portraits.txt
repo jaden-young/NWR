@@ -104,7 +104,7 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"82.7359 24.5629 138.242"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"82.7359 20.5629 140.242"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"-7.53598 -164.597 -0.072063" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
 				"PortraitFOV"		"40" //zoom
 			}

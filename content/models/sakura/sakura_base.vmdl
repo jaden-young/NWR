@@ -672,7 +672,7 @@
 					{
 						_class = "AnimFile"
 						name = "backblow"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -686,7 +686,7 @@
 						source_filename = "models/sakura/backblow.fbx"
 						start_frame = 0
 						end_frame = 67
-						framerate = 75.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -738,7 +738,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/sakura/crit.fbx"
-						start_frame = 0
+						start_frame = 18
 						end_frame = 76
 						framerate = 30.0
 						reverse = false
@@ -760,7 +760,7 @@
 						source_filename = "models/sakura/punch.fbx"
 						start_frame = 7
 						end_frame = 54
-						framerate = 50.0
+						framerate = 39.0
 						reverse = false
 					},
 					{
@@ -840,7 +840,7 @@
 						source_filename = "models/sakura/punch3.fbx"
 						start_frame = 0
 						end_frame = 55
-						framerate = 40.0
+						framerate = 48.0
 						reverse = false
 					},
 					{
@@ -860,7 +860,7 @@
 						source_filename = "models/sakura/kick3.fbx"
 						start_frame = 0
 						end_frame = 52
-						framerate = 60.0
+						framerate = 50.0
 						reverse = false
 					},
 				]

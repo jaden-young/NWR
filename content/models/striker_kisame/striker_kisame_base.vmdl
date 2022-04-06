@@ -645,7 +645,7 @@
 						_class = "AnimFile"
 						name = "slash"
 						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 1
+						activity_weight = 12
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -658,7 +658,7 @@
 						source_filename = "models/striker_kisame/link.smd"
 						start_frame = 24
 						end_frame = 110
-						framerate = 80.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
@@ -812,7 +812,7 @@
 						source_filename = "models/striker_kisame/slash4.smd"
 						start_frame = 0
 						end_frame = 50
-						framerate = 60.0
+						framerate = 49.0
 						reverse = false
 					},
 					{
