@@ -22,6 +22,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.2"
 		"AbilityCastRange"				"1200"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -41,7 +42,5 @@
 				"LinkedSpecialBonus"		"special_bonus_kakashi_5"
 			}			
 		}
-
-		//"AbilityCastAnimation"		""
 	}
 }

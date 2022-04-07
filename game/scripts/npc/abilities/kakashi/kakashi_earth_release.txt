@@ -44,6 +44,6 @@
 			"radius"					"225"
 		}
 
-		//"AbilityCastAnimation"		"ACT_DOTA_CHANNEL_ABILITY_4"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_5"
 	}
 }
