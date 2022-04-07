@@ -1479,7 +1479,7 @@
 					{
 						_class = "AnimFile"
 						name = "hand_sign"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1705,9 +1705,29 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/kakashi_new/kamui_longer.fbx"
-						start_frame = -1
+						start_frame = 16
 						end_frame = -1
-						framerate = 28.0
+						framerate = 22.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "sharingan"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kamui_longer.fbx"
+						start_frame = 17
+						end_frame = 34
+						framerate = 22.0
 						reverse = false
 					},
 				]
