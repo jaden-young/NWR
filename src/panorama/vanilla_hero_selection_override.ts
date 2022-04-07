@@ -113,7 +113,7 @@ function SetWebmPanels(button, hero_name) {
 			HeroCardTooltip.style.transform = 'translateX( ' + (position["x"] + offset_x) + 'px ) translateY( ' + (position["y"] + offset_y) + 'px )';
 			HeroCardTooltip.SetHasClass("TooltipVisible", true);
 
-			TooltipHeroName.text = $.Localize("npc_dota_hero_" + hero_name).toUpperCase();
+			TooltipHeroName.text = $.Localize("#npc_dota_hero_" + hero_name).toUpperCase();
 			const MovieContainer = $.CreatePanel("Panel", Parent.FindChildTraverse("ImageContainer"), `CustomHeroMovieContainer_${hero_name}`);
 			const MoviePanel = $.CreatePanelWithProperties("MoviePanel", MovieContainer, `CustomHeroMovie_${hero_name}`, {
 				src: `s2r://panorama/videos/custom_game/heroes/npc_dota_hero_${hero_name}.webm`,
