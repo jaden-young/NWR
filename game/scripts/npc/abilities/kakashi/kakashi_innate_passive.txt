@@ -21,7 +21,7 @@
 		{
 			"damage_per_attr_point"		"0.33"
 			"stat_res_per_str"			"0.15"
-			"move_speed_per_agi"		"0.15"
+			"move_speed_per_agi"		"0.10"
 			"spell_amp_per_int"			"0.15"
 		}
 	}

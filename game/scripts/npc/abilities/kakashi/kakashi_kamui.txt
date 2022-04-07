@@ -40,12 +40,12 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"max_health_damage"			"20 25 30"
+			"max_health_damage"			"20 23 26"
 			"focus_range"				"4000"
 			"initial_slow"				"20"
 			"max_slow"					"100"
 			"banish_duration"			"2"
-			"break_duration"			"6"
+			"break_duration"			"4 5 6"
 		}
 	}
 }

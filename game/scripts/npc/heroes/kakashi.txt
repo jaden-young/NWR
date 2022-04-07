@@ -8,8 +8,8 @@
 		"BaseClass"					"npc_dota_hero_beastmaster"
 		"HeroID"					"206"
 		"Model"						"models/kakashi_new/kakashi_new_base.vmdl"
-		"ModelScale"				"0.85"
-		"LoadoutScale"				"0.85" 
+		"ModelScale"				"0.90"
+		"LoadoutScale"				"0.90" 
 	
 		"SoundSet"					"ChakraPunch"
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
@@ -31,7 +31,7 @@
 		"AttackDamageMin"   "34"
 		"AttackDamageMax"   "37"
 		"AttackRange"				"100"
-		"AttackRate"				"1.4"
+		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.2"
 		"AttackSpeedActivityModifiers"
 		{
@@ -48,7 +48,7 @@
 		"StatusManaRegen"			"0.9"
 		"StatusMana"				"75"
 
-		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
 		"AttributeBaseStrength" "20" // Base strength
 		"AttributeStrengthGain" "2.7" // Strength bonus per level.
 		"AttributeBaseIntelligence" "24" // Base intelligence
@@ -69,10 +69,10 @@
 		"Ability11"		"special_bonus_kakashi_3"
 
 		"Ability12"		"special_bonus_evasion_16"
-		"Ability13"		"special_bonus_kakashi_5"
+		"Ability13"		"special_bonus_kakashi_2"
 
 		"Ability14"		"special_bonus_20_crit_15"
-		"Ability15"		"special_bonus_kakashi_2"
+		"Ability15"		"special_bonus_kakashi_5"
 
 		"Ability16"		"special_bonus_kakashi_1"
 		"Ability17"		"special_bonus_all_stats_15"

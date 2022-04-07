@@ -4,8 +4,9 @@ import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "..
 export class kakashi_lightning_release extends BaseAbility {
 
     Precache(context: CScriptPrecacheContext): void{
-        PrecacheResource("particle", "particles/units/heroes/hero_treant/treant_overgrowth_vines_mid.vpcf", context);
-        PrecacheResource("particle", "particles/econ/creeps/creep_2021_dire/creep_2021_dire_siege_death_smoke.vpcf", context);
+        PrecacheResource("particle",  "particles/heroes/kakashi/lightning_cloneactive.vpcf", context);
+        PrecacheResource("particle",  "particles/heroes/kakashi/bunshin_zapped_root.vpcf", context);
+        PrecacheResource("particle",  "particles/heroes/kakashi/bunshin_counter_active.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_kakashi.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_vo_kakashi.vsndevts", context);
     }
@@ -51,6 +52,9 @@ export class modifier_kakashi_lightning_release extends BaseModifier
         this.damage = ability.GetSpecialValueFor("damage");
         this.root_duration = ability.GetSpecialValueFor("root_duration") + parent.FindTalentValue("special_bonus_kakashi_3");
         this.invis_duration = ability.GetSpecialValueFor("invis_duration") + parent.FindTalentValue("special_bonus_kakashi_4");
+
+        EmitSoundOn("Hero_Kakashi.LightningRelease.Counter", parent);
+
     }
 
     /****************************************/
@@ -64,6 +68,16 @@ export class modifier_kakashi_lightning_release extends BaseModifier
 
     /****************************************/
 
+    GetEffectName(): string {
+        return "particles/heroes/kakashi/bunshin_counter_active.vpcf";
+    }
+
+    /****************************************/
+    
+    GetEffectAttachType(): ParticleAttachment {
+        return ParticleAttachment.ABSORIGIN;
+    }
+    
     OnTakeDamage(params: ModifierInstanceEvent): void {
         if (!IsServer()) return;
 
@@ -79,7 +93,7 @@ export class modifier_kakashi_lightning_release extends BaseModifier
         unit.AddNewModifier(unit, ability, "modifier_kakashi_lightning_release_invisibility", {duration: this.invis_duration});
         
         EmitSoundOn("Hero_Kakashi.LightningRelease.Proc", unit);
-        let release_fx = ParticleManager.CreateParticle("particles/econ/creeps/creep_2021_dire/creep_2021_dire_siege_death_smoke.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
+        let release_fx = ParticleManager.CreateParticle("particles/heroes/kakashi/lightning_cloneactive.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
         ParticleManager.SetParticleControl(release_fx, 0, unit.GetAbsOrigin());
         ParticleManager.ReleaseParticleIndex(release_fx);
 
@@ -99,6 +113,7 @@ export class modifier_kakashi_lightning_release extends BaseModifier
                 ApplyDamage(damage_table);
 
                 enemy.AddNewModifier(unit, ability, "modifier_kakashi_lightning_release_root", {duration: this.root_duration! * (1 - enemy.GetStatusResistance())});
+                EmitSoundOn("Hero_Kakashi.LightningRelease.Zap", enemy);
             }
         });
 
@@ -171,7 +186,7 @@ export class modifier_kakashi_lightning_release_root extends BaseModifier
     /****************************************/
 
     GetEffectName(): string {
-        return "particles/units/heroes/hero_treant/treant_overgrowth_vines_mid.vpcf";
+        return "particles/heroes/kakashi/bunshin_zapped_root.vpcf";
     }
 
     /****************************************/

@@ -55,7 +55,7 @@ export class modifier_kakashi_innate_passive extends BaseModifier
     /****************************************/
 
     GetModifierBaseAttack_BonusDamage(): number {
-        return this.damage_per_attr_point! * this.GetTotalAttributes() - (this.parent as CDOTA_BaseNPC_Hero).GetStrength();
+        return this.damage_per_attr_point! * this.GetTotalAttributes() - (this.parent as CDOTA_BaseNPC_Hero).GetAgility();
     }
 
     /****************************************/

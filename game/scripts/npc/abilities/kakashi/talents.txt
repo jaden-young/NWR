@@ -6,8 +6,8 @@
 	// Kakashi Talent Tree
 	//=================================================================================================================	
 	//25: +15 All Stats 						/ 	+320 Raikiri Damage
-	//20: Instant Raikiri Cast Time 			/ 	+20% Critical Strike (200%) 
-	//15: +60 Seconds Sharingan Steal Duration 	/  	+16% Evasion
+	//20: +60 Seconds Sharingan Steal Duration 	/ 	+20% Critical Strike (200%) 
+	//15: -0.5s Raikiri Cast Time			 	/  	+16% Evasion
 	//10: +1.50s Shadow Clone Root 				/ 	+3s Shadow Clone Invisibility
 
 
@@ -35,7 +35,7 @@
 	}
 
 	//=================================================================================================================
-	// Kakashi Special Bonus: Instant Raikiri Cast Time
+	// Kakashi Special Bonus: -0.5s Raikiri Cast Time
 	//=================================================================================================================	
 	"special_bonus_kakashi_2"	
 	{
@@ -52,7 +52,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"value"						"0.7"
+				"value"						"0.5"
 			}
 		}
 	}

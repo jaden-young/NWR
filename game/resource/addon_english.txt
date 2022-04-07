@@ -2537,15 +2537,14 @@
 		"DOTA_Tooltip_Ability_special_bonus_naruto_6"						"+320 Rasenshuriken Damage"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_7"						"-4s Clone Rasengan Cooldown"
 
-		//25: 25% Cooldown Reduction / +420 Raikiri Damage
-		//20: + 325 Tracking Fang Range / -8s Kage Bunshin Cooldown
-		//15: +2s Kage Bunshin Duration / +6 All Stats
-		//10: +200 Mana / +30 Attack Damage
+		//25: +15 All Stats 						/ 	+320 Raikiri Damage
+		//20: +60 Seconds Sharingan Steal Duration 	/ 	+20% Critical Strike (200%) 
+		//15: -0.5s Raikiri Cast Time			 	/  	+16% Evasion
+		//10: +1.50s Shadow Clone Root 				/ 	+3s Shadow Clone Invisibility
 		"DOTA_Tooltip_Ability_special_bonus_kakashi_1"						"+{s:value} Raikiri Damage"
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_2"						"Instant Raikiri"
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_2_Description"			"Raikiri has no Cast Time."
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_3"						"+{s:value}s Lightning Release Root"
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_4"						"+{s:value}s Lightning Release Invisiblity"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_2"						"-{s:value} Raikiri Cast Time"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_3"						"+{s:value}s Lightning Clone Root"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_4"						"+{s:value}s Lightning Clone Invisiblity"
 		"DOTA_Tooltip_Ability_special_bonus_kakashi_5"						"+{s:value}s Sharingan Copy Duration"
 
 
@@ -2553,8 +2552,8 @@
 		//20: +20 Strength / +80 Snake Hand Damage
 		//15: +250 Giant Snake Cast Range / +2s Striking Snakes Movement Speed Debuff Duration
 		//10: +2 Mana Regeneration / +100 Cast Range
-		"DOTA_Tooltip_Ability_special_bonus_anko_1"						"+250 Giant Snake Cast Range"buff Duration"
-		"DOTA_Tooltip_Ability_special_bonus_anko_3"						"+80 Snake Hand Damage
+		"DOTA_Tooltip_Ability_special_bonus_anko_1"						"+250 Giant Snake Cast Range"
+		"DOTA_Tooltip_Ability_special_bonus_anko_3"						"+80 Snake Hand Damage"
 		"DOTA_Tooltip_Ability_special_bonus_anko_2"						"+2s Striking Snakes Movement Speed De"
 		"DOTA_Tooltip_Ability_special_bonus_anko_4"						"+1 Striking Snakes Per Second"
 		"DOTA_Tooltip_Ability_special_bonus_anko_5"						"-4s Giant Snake Cooldown"

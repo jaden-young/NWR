@@ -123,4 +123,42 @@
         spread_radius = 150.000000
 		vsnd_files = "sounds/weapons/hero/earthshaker/fissure.vsnd"
 	}
+
+	Hero_Kakashi.Kamui.Fire = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kamui_fire.vsnd"
+	}
+
+	Hero_Kakashi.LightningRelease.Zap = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_bunshin_zap.vsnd"
+	}
+
+
+	Hero_Kakashi.LightningRelease.Counter = {
+		type = "dota_update_default"
+		volume = 0.300000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_bunshin_counter.vsnd"
+	}
+	
 }
