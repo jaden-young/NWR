@@ -23,3 +23,4 @@ node_modules
 *.vanim_c
 panorama_debugger.cfg
 .vscode/settings.json
+content/materials/props/HokageHeads/hokageheads.vmat
