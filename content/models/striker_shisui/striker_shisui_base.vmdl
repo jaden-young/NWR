@@ -1,0 +1,934 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc30:version{66cd490f-437b-4d7d-b009-7907d45422e2} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "t_chr_d33_bc.vmat"
+								to = "materials/models/striker_shisui/striker_shisui1.vmat"
+							},
+							{
+								from = "t_chr_d33_eye_a_bc.vmat"
+								to = "materials/models/striker_onoki/strikeronoki2.vmat"
+							},
+							{
+								from = "t_chr_d33_eye_bc.vmat"
+								to = "materials/models/striker_onoki/strikeronoki2.vmat"
+							},
+							{
+								from = "t_wep_tanto_d33_bc.vmat"
+								to = "materials/models/striker_shisui/striker_shisui4.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "attach_hitloc"
+						parent_bone = "spine1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_root"
+						parent_bone = "characterroot2"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_attack1"
+						parent_bone = "righthand"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_eye_left"
+						parent_bone = "eyedown_l"
+						relative_origin = [ -0.860651, -3.227058, -0.997574 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_eye_right"
+						parent_bone = "eyeup_r"
+						relative_origin = [ 3.054963, 9.852041, 0.15538 ]
+						relative_angles = [ 0.0, 0.0, 0.000837 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "camera"
+						children = 
+						[
+							{
+								_class = "Attachment Camera Preview"
+								fov = 54
+								screen_width_for_aspect = 512
+								screen_height_for_aspect = 384
+								preview_scale = 0.3
+								background_color = [ 70, 70, 70 ]
+							},
+						]
+						parent_bone = ""
+						relative_origin = [ 75.371307, -24.214167, 97.925789 ]
+						relative_angles = [ -17.759113, 170.811676, 12.781652 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "spine"
+								parent_bone = "spine"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.37999, -13.00408, -19.910507 ]
+								hitbox_maxs = [ 43.579086, 14.36257, 20.470573 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "spine1"
+								parent_bone = "spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -31.033295, -11.394667, -19.994047 ]
+								hitbox_maxs = [ 36.027771, 14.984606, 20.47053 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "neck"
+								parent_bone = "neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -4.99232, -6.748427 ]
+								hitbox_maxs = [ 9.786362, 7.341191, 6.748372 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "head"
+								parent_bone = "head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.276825, -8.311567, -9.495643 ]
+								hitbox_maxs = [ 16.992096, 13.137442, 9.495498 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "facecenter"
+								parent_bone = "facecenter"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.313012, -4.733921, -11.954788 ]
+								hitbox_maxs = [ 8.771562, 17.616329, 6.888779 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "facehair"
+								parent_bone = "facehair"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.135509, -12.396652, -5.906586 ]
+								hitbox_maxs = [ 12.39864, 13.237053, 17.016769 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "facejaw"
+								parent_bone = "facejaw"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.049246, -0.92942, -8.204788 ]
+								hitbox_maxs = [ 8.771563, 11.499921, 7.397858 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftshoulder"
+								parent_bone = "leftshoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.428364, -11.848065, -35.508286 ]
+								hitbox_maxs = [ 52.382008, 8.512752, 11.721069 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthand"
+								parent_bone = "lefthand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.832245, -1.946251, -5.135102 ]
+								hitbox_maxs = [ 10.56459, 3.976349, 4.59353 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandthumb1"
+								parent_bone = "lefthandthumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.795303, -1.54525, -1.693558 ]
+								hitbox_maxs = [ 6.313553, 3.50341, 3.062145 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandthumb2"
+								parent_bone = "lefthandthumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.492828, -1.087816, -1.398159 ]
+								hitbox_maxs = [ 3.78421, 2.409231, 1.461094 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandindex1"
+								parent_bone = "lefthandindex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.937485, -1.419609, -1.178154 ]
+								hitbox_maxs = [ 5.545807, 1.440544, 1.453192 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandindex2"
+								parent_bone = "lefthandindex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -0.70723, -0.788275 ]
+								hitbox_maxs = [ 3.89526, 0.942276, 1.064813 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandmiddle1"
+								parent_bone = "lefthandmiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.782398, -1.402603, -1.921981 ]
+								hitbox_maxs = [ 5.957115, 1.627319, 1.434031 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandmiddle2"
+								parent_bone = "lefthandmiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -0.704231, -0.90716 ]
+								hitbox_maxs = [ 4.198902, 1.055367, 1.097765 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandring1"
+								parent_bone = "lefthandring1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.140903, -1.229378, -1.873095 ]
+								hitbox_maxs = [ 4.771698, 1.713455, 1.268608 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandring2"
+								parent_bone = "lefthandring2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -0.519455, -1.004223 ]
+								hitbox_maxs = [ 3.677807, 1.174187, 0.921926 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandpinky1"
+								parent_bone = "lefthandpinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.866085, -1.238602, -1.753546 ]
+								hitbox_maxs = [ 4.203869, 1.432892, 1.188313 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthandpinky2"
+								parent_bone = "lefthandpinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.239964, -0.5, -0.773549 ]
+								hitbox_maxs = [ 3.238373, 0.993706, 0.816952 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftarmbend2"
+								parent_bone = "leftarmbend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.225632, -7.78729, -6.235435 ]
+								hitbox_maxs = [ 10.241913, 6.161017, 7.151039 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightshoulder"
+								parent_bone = "rightshoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.428312, -12.104728, -11.720978 ]
+								hitbox_maxs = [ 52.380527, 8.584085, 35.508041 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthand"
+								parent_bone = "righthand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.833763, -1.944931, -4.539932 ]
+								hitbox_maxs = [ 10.55949, 3.977852, 5.188377 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandthumb1"
+								parent_bone = "righthandthumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.773872, -1.592934, -3.049583 ]
+								hitbox_maxs = [ 6.333363, 3.454784, 1.705051 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandthumb2"
+								parent_bone = "righthandthumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.492043, -1.144466, -1.44862 ]
+								hitbox_maxs = [ 3.782623, 2.355934, 1.410362 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandindex1"
+								parent_bone = "righthandindex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.938866, -1.420631, -1.394341 ]
+								hitbox_maxs = [ 5.545578, 1.439514, 1.235907 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandindex2"
+								parent_bone = "righthandindex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -0.70829, -1.003329 ]
+								hitbox_maxs = [ 3.893661, 0.941208, 0.849775 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandmiddle1"
+								parent_bone = "righthandmiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.787048, -1.400574, -1.376156 ]
+								hitbox_maxs = [ 5.953751, 1.629341, 1.980577 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandmiddle2"
+								parent_bone = "righthandmiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -0.701996, -1.036313 ]
+								hitbox_maxs = [ 4.194187, 1.05764, 0.968625 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandring1"
+								parent_bone = "righthandring1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.148006, -1.22435, -1.210858 ]
+								hitbox_maxs = [ 4.765156, 1.718437, 1.930514 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandring2"
+								parent_bone = "righthandring2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -0.514, -0.861232 ]
+								hitbox_maxs = [ 3.671154, 1.179749, 1.064921 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandpinky1"
+								parent_bone = "righthandpinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.873466, -1.230606, -1.132421 ]
+								hitbox_maxs = [ 4.197723, 1.440788, 1.810205 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthandpinky2"
+								parent_bone = "righthandpinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.247128, -0.5, -0.757586 ]
+								hitbox_maxs = [ 3.232281, 1.002327, 0.832898 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightarmbend2"
+								parent_bone = "rightarmbend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.237495, -6.158363, -7.151474 ]
+								hitbox_maxs = [ 14.226768, 7.788919, 6.314636 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "front_wear01"
+								parent_bone = "front_wear01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.148315, -1.991432, -26.224373 ]
+								hitbox_maxs = [ 14.782616, 6.586087, 0.5 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftupleg"
+								parent_bone = "leftupleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.114426, -10.849691, -8.66555 ]
+								hitbox_maxs = [ 76.893661, 11.032358, 15.819576 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftfoot"
+								parent_bone = "leftfoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.633493, -6.006907, -6.012745 ]
+								hitbox_maxs = [ 9.704735, 15.871103, 5.504663 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightupleg"
+								parent_bone = "rightupleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.458572, -10.730499, -15.4557 ]
+								hitbox_maxs = [ 76.893761, 10.921795, 8.813854 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightfoot"
+								parent_bone = "rightfoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.633572, -6.007079, -5.504849 ]
+								hitbox_maxs = [ 9.704869, 15.870877, 6.012558 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/striker_shisui/striker_shisui_base.smd"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_attack1"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_attack1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_attack2"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_attack2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_attack3"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_attack3.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_attack4"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_attack4.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_attack5"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_attack5.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_cast1"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_cast1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_cast2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_cast2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_dash"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_dash.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_fireball"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_fireball.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_fireball2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_fireball2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_halodance1"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_halodance1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_halodance2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_halodance2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_halodance3"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_halodance3.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_run"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_run.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_win"
+						activity_name = "ACT_DOTA_VICTORY"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_win.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_idle"
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_idle.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}
