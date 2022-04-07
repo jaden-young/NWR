@@ -56,6 +56,7 @@ export class kakashi_kamui extends BaseAbility
 
         this.target?.AddNewModifier(caster, this, "modifier_kakashi_kamui_banish", {duration: this.GetSpecialValueFor("banish_duration")});
         EmitSoundOn("Hero_Kakashi.Kamui.Banish", this.target!);
+        EmitSoundOn("Hero_Kakashi.Kamui.Fire", caster);
     }
 }
 
@@ -190,7 +191,21 @@ export class modifier_kakashi_kamui_break extends BaseModifier
     CheckState(): Partial<Record<ModifierState, boolean>> {
         return {
             [ModifierState.PASSIVES_DISABLED]: true,
+            [ModifierState.INVISIBLE]: false,
         };
+    }
+
+    /****************************************/
+    
+     DeclareFunctions(){ return [
+        ModifierFunction.PROVIDES_FOW_POSITION,
+    ]}
+
+
+    /****************************************/
+    
+    GetModifierProvidesFOWVision(): 0 | 1 {
+        return 1;
     }
 
     /****************************************/
@@ -203,6 +218,12 @@ export class modifier_kakashi_kamui_break extends BaseModifier
 
     GetEffectAttachType(): ParticleAttachment {
         return ParticleAttachment.OVERHEAD_FOLLOW;
+    }
+
+    /****************************************/
+
+    GetPriority(): ModifierPriority {
+        return ModifierPriority.SUPER_ULTRA;
     }
 }
 

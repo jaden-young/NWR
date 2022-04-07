@@ -13,6 +13,7 @@ interface AbilityWithPhaseStartFX
 export class kakashi_lightning_blade extends BaseAbility implements AbilityWithPhaseStartFX
 {
     lightning_blade_fx?: ParticleID;
+    active_target?: CDOTA_BaseNPC;
 
     /****************************************/
 
@@ -32,12 +33,15 @@ export class kakashi_lightning_blade extends BaseAbility implements AbilityWithP
 
     OnAbilityPhaseStart(): boolean {
         let caster = this.GetCaster();
+        this.active_target = this.GetCursorTarget();
 
         this.lightning_blade_fx = ParticleManager.CreateParticle("particles/units/heroes/kakashi/chidori.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, caster);
         ParticleManager.SetParticleControlEnt(this.lightning_blade_fx, 0, caster, ParticleAttachment.POINT_FOLLOW, "attach_right_hand", caster.GetAbsOrigin(), true);
 
         EmitSoundOn("VO_Hero_Kakashi.LightningBlade.Precast", caster)
 	    EmitSoundOn("Hero_Kakashi.LightningBlade.Precast", caster)
+
+        this.active_target!.AddNewModifier(caster, this, "modifier_kakashi_lightning_blade_target", {duration: -1})
 
         return true;
     }
@@ -52,6 +56,9 @@ export class kakashi_lightning_blade extends BaseAbility implements AbilityWithP
 
         StopSoundOn("VO_Hero_Kakashi.LightningBlade.Precast", caster)
 	    StopSoundOn("Hero_Kakashi.LightningBlade.Precast", caster)
+
+        this.active_target?.RemoveModifierByName("modifier_kakashi_lightning_blade_target");
+        this.active_target = undefined;
     }
 
     /****************************************/
@@ -63,7 +70,7 @@ export class kakashi_lightning_blade extends BaseAbility implements AbilityWithP
         if (target?.TriggerSpellAbsorb(this)) return;
 
         caster.AddNewModifier(caster, this, "modifier_kakashi_lightning_blade", {duration: -1, target: target?.entindex()})
-        target!.AddNewModifier(caster, this, "modifier_kakashi_lightning_blade_target", {duration: -1})   
+        
     }
 }
 
@@ -76,6 +83,8 @@ export class modifier_kakashi_lightning_blade extends BaseModifierMotionHorizont
     damage?: number;
     stun_duration?: number;
     max_distance?: number;
+
+    activity_fired = false;
 
     cancelling_orders = [
         UnitOrder.STOP,
@@ -204,9 +213,13 @@ export class modifier_kakashi_lightning_blade extends BaseModifierMotionHorizont
         let parent = this.GetParent();
         let distance = (parent.GetAbsOrigin() - this.target!.GetAbsOrigin() as Vector).Length2D()
 
+        if (distance <= 350 && !this.activity_fired) {
+            this.activity_fired = true;
+            parent.StartGesture(GameActivity.DOTA_CAST_ABILITY_7);
+        }
+
         if (distance <= 128) {
             let ability = this.GetAbility();
-            parent.StartGesture(GameActivity.DOTA_CAST_ABILITY_7);
 
             ApplyDamage({
                 attacker: parent,

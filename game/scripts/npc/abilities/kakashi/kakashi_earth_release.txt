@@ -11,9 +11,10 @@
 		"ScriptFile"                    "abilities/heroes/kakashi/kakashi_earth_release.lua"
 		"AbilityTextureName"			"kakashi_earth_release"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_VECTOR_TARGETING | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"MaxLevel"						"1"
 		"FightRecapLevel"				"1"
 
 		"IsGrantedByShard"				"1"

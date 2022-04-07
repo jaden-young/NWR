@@ -80,7 +80,8 @@ export class kakashi_sharingan extends BaseAbility
 
         let stolen_ability = caster.AddAbility(ability_name);
         stolen_ability.SetHidden(true);
-        stolen_ability.SetLevel(ability.GetLevel());
+        stolen_ability.SetLevel(this.GetLevel());
+        stolen_ability.SetStolen(true);
 
         caster.SwapAbilities("kakashi_empty", ability_name, false, true)
 

@@ -1021,7 +1021,7 @@
 
 		// Kamui
 		"DOTA_Tooltip_ability_kakashi_kamui"										"Kamui"
-		"DOTA_Tooltip_ability_kakashi_kamui_Description"							"CHANNELED - Kakashi focuses on an enemy hero, inflicting a rapidly increasing Movement Speed Slow and granting vision of them as long as they are within Focus Range. If the channel finishes, the target is banished for a few seconds, purging all buffs and removing them from the battlefield. Upon return, Kamui deals pure damage based on the target’s maximum health and applies Break for a short duration.\nActivating Lightning Release will not interrupt Kamui's channeling."
+		"DOTA_Tooltip_ability_kakashi_kamui_Description"							"CHANNELED - Kakashi focuses on an enemy hero, inflicting a rapidly increasing Movement Speed Slow and granting vision of them as long as they are within Focus Range. If the channel finishes, the target is banished for a few seconds, purging all buffs and removing them from the battlefield. Upon return, Kamui reveals and deals pure damage based on the target’s maximum health and applies Break for a short duration.\nActivating Lightning Release will not interrupt Kamui's channeling."
 		"DOTA_Tooltip_ability_kakashi_kamui_Note0"									"The slow starts at %initial_slow%%%, and increases over time to %max_slow%%%."
 		"DOTA_Tooltip_ability_kakashi_kamui_Note1"									"Kamui will be interrupted if the target goes %focus_range% range away."
 		"DOTA_Tooltip_ability_kakashi_kamui_abilitychanneltime"						"DURATION:"
@@ -1034,7 +1034,7 @@
 		"DOTA_Tooltip_modifier_kakashi_kamui_banish"								"Kamui - Banish"
 		"DOTA_Tooltip_modifier_kakashi_kamui_banish_Description"					"Banished into Kamui's Dimension."
 		"DOTA_Tooltip_modifier_kakashi_kamui_break"									"Kamui - Break"
-		"DOTA_Tooltip_modifier_kakashi_kamui_break_Description"						"Passives are disabled."
+		"DOTA_Tooltip_modifier_kakashi_kamui_break_Description"						"Passives are disabled. Your position is revealed."
 
 		// Earth Release: Mud Wall (Shard Ability)
 		"DOTA_Tooltip_ability_kakashi_earth_release"								"Earth Release: Mud Wall"
