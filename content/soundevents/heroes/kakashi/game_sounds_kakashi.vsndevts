@@ -1,0 +1,164 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+    Hero_Kakashi.LightningBlade.Precast = 
+	{
+		type = "dota_update_default"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/kakashi/kakashi_raikiri_cast.vsnd"
+	}
+
+    Hero_Kakashi.LightningBlade.Loop = 
+	{
+		type = "dota_update_default"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/kakashi/kakashi_raikiri_loop.vsnd"
+	}
+
+    Hero_Kakashi.LightningBlade.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_raikiri_impact.vsnd"
+	}
+
+	Hero_Kakashi.Sharingan.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_sharingan_cast.vsnd"
+	}
+
+	Hero_Kakashi.LightningRelease.Proc = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_bunshin_cast.vsnd"
+	}
+
+	Hero_Kakashi.Kamui.Channel = 
+	{
+		type = "dota_update_default"
+		volume = 3.100000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kamui_channel.vsnd"
+	}
+
+	Hero_Kakashi.Kamui.Banish = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.400000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/weapons/hero/bane/nightmare_end.vsnd"
+	}
+
+	Hero_Kakashi.Kamui.Damage = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.400000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/weapons/hero/bane/enfeeble_cast.vsnd"
+	}
+
+	Hero_Kakashi.MudWall.Cast = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.200000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/mud_wall.vsnd"
+	}
+
+	Hero_Kakashi.MudWall.Layer = {
+		type = "dota_update_default"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.400000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/weapons/hero/earthshaker/fissure.vsnd"
+	}
+
+	Hero_Kakashi.Kamui.Fire = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_kamui_fire.vsnd"
+	}
+
+	Hero_Kakashi.LightningRelease.Zap = {
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_bunshin_zap.vsnd"
+	}
+
+
+	Hero_Kakashi.LightningRelease.Counter = {
+		type = "dota_update_default"
+		volume = 0.300000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 150.000000
+		vsnd_files = "sounds/heroes/kakashi/kakashi_bunshin_counter.vsnd"
+	}
+	
+}

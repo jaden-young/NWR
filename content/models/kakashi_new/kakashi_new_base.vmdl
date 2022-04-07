@@ -1479,7 +1479,7 @@
 					{
 						_class = "AnimFile"
 						name = "hand_sign"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1493,7 +1493,7 @@
 						source_filename = "models/kakashi_new/hand_sign.fbx"
 						start_frame = 0
 						end_frame = 85
-						framerate = 30.0
+						framerate = 75.0
 						reverse = false
 					},
 					{
@@ -1693,7 +1693,7 @@
 					{
 						_class = "AnimFile"
 						name = "kamui"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1704,10 +1704,50 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/kakashi_new/kamui.fbx"
-						start_frame = -1
+						source_filename = "models/kakashi_new/kamui_longer.fbx"
+						start_frame = 16
 						end_frame = -1
-						framerate = -1.0
+						framerate = 22.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "sharingan"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kamui_longer.fbx"
+						start_frame = 17
+						end_frame = 34
+						framerate = 22.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "mud_wall"
+						activity_name = "ACT_DOTA_CAST_ABILITY_5"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/raikiri_charge.fbx"
+						start_frame = 0
+						end_frame = 82
+						framerate = 60.0
 						reverse = false
 					},
 				]

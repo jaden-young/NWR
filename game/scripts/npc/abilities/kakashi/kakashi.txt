@@ -1,6 +1,8 @@
-#base "kakashi_bunshin.txt"
-#base "kakashi_chidori.txt"
-#base "kakashi_doton.txt"
-#base "kakashi_empty.txt"
-#base "kakashi_sharingan.txt"
 #base "talents.txt"
+#base "kakashi_innate_passive.txt"
+#base "kakashi_lightning_blade.txt"
+#base "kakashi_sharingan.txt"
+#base "kakashi_lightning_release.txt"
+#base "kakashi_empty.txt"
+#base "kakashi_earth_release.txt" //Shard
+#base "kakashi_kamui.txt"
