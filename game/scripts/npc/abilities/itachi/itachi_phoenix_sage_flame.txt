@@ -1,0 +1,56 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Itachi: Phoenix Sage Flame (Katon: Hosenka no Jutsu)
+	//=================================================================================================================
+	"itachi_phoenix_sage_flame"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/itachi/itachi_phoenix_sage_flame.lua"
+		"AbilityTextureName"			"itachi_phoenix_sage_flame"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 11 10 9"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"85 100 115 130"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_per_proj"			"35 55 75 95"
+			"magic_res_reduction"
+			{	
+				"value"						"3 4 5 6"
+				"LinkedSpecialBonus"		"special_bonus_itachi_1"
+			}
+			"move_slow"					"4 6 8 10"
+			"max_hits"					"3"
+			"duration"					"6"
+			"projectile_count"			"12"
+			"fire_rate"					"0.06"
+			"start_radius"				"225"
+			"end_radius"				"400"
+			"speed"						"700"
+		}
+	}
+}
