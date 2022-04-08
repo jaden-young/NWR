@@ -167,9 +167,6 @@
 			m_ChildRef = resource:"particles/units/heroes/neji/neji_kaiten_sphere.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/neji/neji_kaiten_grid.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/units/heroes/neji/neji_kaiten_sphere_shockwave.vpcf"
 		},
 		{
