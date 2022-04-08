@@ -19,17 +19,12 @@
 	m_Emitters = 
 	[
 		{
-			_class = "C_OP_MaintainEmitter"
-			m_nParticlesToMaintain = 1
-			m_bDisableOperator = true
-		},
-		{
 			_class = "C_OP_InstantaneousEmitter"
 			m_nParticlesToEmit = 
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 4.0
+				m_flLiteralValue = 1.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -70,20 +65,21 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
-			m_nMaxEmittedPerFrame = 2
+			m_flInitFromKilledParentParticles = -1.0
+			m_nMaxEmittedPerFrame = 1
 		},
 	]
 	m_Initializers = 
 	[
 		{
 			_class = "C_INIT_CreateWithinSphere"
+			m_nFieldVelocity = 0
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 0, 255, 255 ]
-			m_ColorMax = [ 175, 238, 238 ]
+			m_ColorMin = [ 0, 128, 128 ]
+			m_ColorMax = [ 0, 255, 255 ]
 			m_nTintBlendMode = "PARTICLEBLEND_MULTIPLY"
-			m_flLightAmplification = 2.0
 		},
 	]
 	m_Operators = 
@@ -396,20 +392,17 @@
 					m_Stops = [  ]
 				}
 			}
-			m_hOverrideMaterial = resource:"materials/models/effects/fountain_waterfall_00.vmat"
-			m_nColorBlendType = "PARTICLE_COLOR_BLEND_MOD2X"
+			m_hOverrideMaterial = resource:"materials/models/items/monkey_king/monkey_king_immortal_weapon/monkey_king_immortal_weapon_water.vmat"
+			m_nColorBlendType = "PARTICLE_COLOR_BLEND_MULTIPLY2X"
 		},
 	]
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/units/heroes/kisame/water_dome_main.vpcf"
+			m_ChildRef = resource:"maps/journey_assets/particles/journey_fountain_radiant_splash.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/econ/items/kunkka/kunkka_torrent_base/kunkka_spell_torrent_splash_econ.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/units/heroes/hero_kunkka/kunkka_spell_torrent_splash.vpcf"
+			m_ChildRef = resource:"particles/econ/items/kunkka/divine_anchor/hero_kunkka_dafx_skills/kunkka_spell_torrent_splash_a_rinflat_fxset.vpcf"
 		},
 	]
 }
