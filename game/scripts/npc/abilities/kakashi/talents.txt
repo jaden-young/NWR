@@ -3,13 +3,18 @@
 {
     
 	//=================================================================================================================
-	// Kakashi Special Bonus
+	// Kakashi Talent Tree
 	//=================================================================================================================	
-	//25: 25% Cooldown Reduction / +420 Raikiri Damage
-	//20: + 325 Tracking Fang Range / -8s Kage Bunshin Cooldown
-	//15: +2s Kage Bunshin Duration / +6 All Stats
-	//10: +200 Mana / +30 Attack Damage
-	"special_bonus_kakashi_1"	
+	//25: +15 All Stats 						/ 	+320 Raikiri Damage
+	//20: +60 Seconds Sharingan Steal Duration 	/ 	+20% Critical Strike (200%) 
+	//15: -0.5s Raikiri Cast Time			 	/  	+16% Evasion
+	//10: +1.50s Shadow Clone Root 				/ 	+3s Shadow Clone Invisibility
+
+
+	//=================================================================================================================
+	// Kakashi Special Bonus: +320 Raikiri Damage
+	//=================================================================================================================	
+	"special_bonus_kakashi_1"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -17,49 +22,21 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"kakashi_bunshin"
-		}
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"2"
+				"var_type"					"FIELD_INTEGER"
+				"value"						"320"
 			}
 		}
 	}
 
-	"special_bonus_kakashi_3"	
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"LinkedAbility"
-		{
-			"01" 	"kakashi_bunshin"
-
-		}
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"-3"
-			}
-		}
-	}
-
+	//=================================================================================================================
+	// Kakashi Special Bonus: -0.5s Raikiri Cast Time
+	//=================================================================================================================	
 	"special_bonus_kakashi_2"	
 	{
 		// General
@@ -68,10 +45,28 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
 		{
-			"01" 	"kakashi_doton"
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"0.5"
+			}
 		}
+	}
+
+	//=================================================================================================================
+	// Kakashi Special Bonus: +1.50s Shadow Clone Root
+	//=================================================================================================================	
+	"special_bonus_kakashi_3"	
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -79,13 +74,15 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"325"
+				"var_type"					"FIELD_FLOAT"
+				"value"						"1.5"
 			}
 		}
 	}
 
-
+	//=================================================================================================================
+	// Kakashi Special Bonus: +3s Shadow Clone Invisibility
+	//=================================================================================================================	
 	"special_bonus_kakashi_4"	
 	{
 		// General
@@ -94,10 +91,28 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
 		{
-			"01" 	"kakashi_chidori"
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"3"
+			}
 		}
+	}
+
+	//=================================================================================================================
+	// Kakashi Special Bonus: +60 Seconds Sharingan Steal Duration
+	//=================================================================================================================	
+	"special_bonus_kakashi_5"	
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -105,11 +120,26 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"value"					"420"
+				"var_type"					"FIELD_INTEGER"
+				"value"						"60"
 			}
 		}
 	}
 
-
+	//=================================================================================================================
+    // Kakashi Special Bonus: +20% Critical Strike (200%)
+    //=================================================================================================================
+    "special_bonus_20_crit_15"
+    {
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"crit_multiplier"		"200" 
+			}
+		}
+	}
 }

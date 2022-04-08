@@ -993,45 +993,78 @@
 		"npc_dota_hero_beastmaster"  									"Kakashi"
 		"npc_dota_hero_beastmaster_lore"  								""
 
-		"npc_dota_hero_kakashi"  									"Kakashi"
-		"npc_dota_hero_kakashi_lore"  								""
+		"npc_dota_hero_kakashi"  										"Kakashi"
+		"npc_dota_hero_kakashi_lore"  									""
 
-		// Doton
-		"DOTA_Tooltip_ability_kakashi_doton"							"<b><font color='#C1943D'>Tracking Fang</font></b>"
-		"DOTA_Tooltip_ability_kakashi_doton_lore"						"Doton: Tsuiga No Jutsu"
-		"DOTA_Tooltip_ability_kakashi_doton_description"				"Summons ninja dogs to latch onto the target enemy <b><font color='#C1943D'>dealing Physical Damage and Stunning them.</font></b>"
-		"DOTA_Tooltip_ability_kakashi_doton_range"						"RANGE: "        
-        "DOTA_Tooltip_ability_kakashi_doton_damage"						"DAMAGE: "
-		"DOTA_Tooltip_ability_kakashi_doton_stun_duration"				"STUN DURATION: "
+		// Innate -- Combat Experience
+		"DOTA_Tooltip_ability_kakashi_innate_passive"								"Combat Experience"
+		"DOTA_Tooltip_ability_kakashi_innate_passive_Description"					"Kakashi has no Primary Attribute but instead gains %damage_per_attr_point% Attack Damage from each point of Strength/Agility/Intelligence.<br><br>Additionally, Kakashi gains various bonuses from each Attribute."
+		"DOTA_Tooltip_ability_kakashi_innate_passive_stat_res_per_str"				"%STATUS RESISTANCE PER STR:"
+		"DOTA_Tooltip_ability_kakashi_innate_passive_move_speed_per_agi"			"%MOVE SPEED PER AGI:"
+		"DOTA_Tooltip_ability_kakashi_innate_passive_spell_amp_per_int"				"%SPELL AMPLIFICATION PER INT:"
+
+		// Lightning Blade (Raikiri)
+		"DOTA_Tooltip_ability_kakashi_lightning_blade"								"Lightning Blade - Raikiri"
+		"DOTA_Tooltip_ability_kakashi_lightning_blade_Description"					"After a short cast time, Kakashi charges towards a target unit. Upon reaching the target, Raikiri deals magic damage, stuns the enemy unit."
+		"DOTA_Tooltip_ability_kakashi_lightning_blade_damage"						"DAMAGE:"
+		"DOTA_Tooltip_ability_kakashi_lightning_blade_stun_duration"				"STUN DURATION:"
+		"DOTA_Tooltip_ability_kakashi_lightning_blade_abilitycastpoint"				"CAST POINT:"
+
+		"DOTA_Tooltip_modifier_kakashi_lightning_blade"								"Lightning Blade"
+		"DOTA_Tooltip_modifier_kakashi_lightning_blade_Description"					"Charging!"
 
 		// Sharingan
-		"DOTA_Tooltip_ability_kakashi_sharingan"						"<b><font color='#E21C30'>Sharingan</font></b>"
-		"DOTA_Tooltip_ability_kakashi_sharingan_description"			"<b><font color='#E21C30'>Steals an ability</font></b> from the target allied or enemy Hero. <br><br> Stolen abilities will <b><font color='#E21C30'>always be the Hero's 2nd ability.</font></b> <br><br> The stolen ability's level is determined by <b><font color='#E21C30'>the level of Sharingan.</font></b>"
-		"DOTA_Tooltip_ability_kakashi_sharingan_copy_timer"				"DURATION: "
-		
-		"DOTA_Tooltip_kakashi_sharingan_modifier"						"<b><font color='#E21C30'>Sharingan</font></b>"
-		"DOTA_Tooltip_kakashi_sharingan_modifier_description"			"Kakashi has <b><font color='#E21C30'>copied an enemy ability.</font></b>"
+		"DOTA_Tooltip_ability_kakashi_sharingan"									"Sharingan"
+		"DOTA_Tooltip_ability_kakashi_sharingan_Description"						"Allows Kakashi to copy the last non-ultimate ability from an enemy hero, allowing him to use the ability for a period of time."
+		"DOTA_Tooltip_ability_kakashi_sharingan_spell_duration"						"DURATION:"
 
+		"DOTA_Tooltip_ability_kakashi_empty"										"Copied Spell"
+		"DOTA_Tooltip_ability_kakashi_empty_Description"							"Spells acquired with Sharigan will replace this slot."
 
-		// Kage Bunshin No Jutsu
-		"DOTA_Tooltip_ability_kakashi_bunshin"							"<b><font color='#C7E0E4'>Lightning Release: Shadow Clone</font></b>"
-		"DOTA_Tooltip_ability_kakashi_bunshin_lore"						"Raiton: Kage Bunshin No Jutsu"
-		"DOTA_Tooltip_ability_kakashi_bunshin_description"				"<b><font color='#C7E0E4'>Kakashi becomes invisible</font></b> while leaving behind a <b><font color='#C7E0E4'>Shadow Clone</font></b> at his location. <br><br> <b><font color='#C7E0E4'>Shadow Clones</font></b> take additional incoming damage and reduced outgoing damage. <br><br> On death, the <b><font color='#C7E0E4'>Shadow Clone slows the enemy that killed it.</font></b>"
-		"DOTA_Tooltip_ability_kakashi_bunshin_duration"					"INVISIBILITY DURATION: "
-		"DOTA_Tooltip_ability_kakashi_bunshin_ms_debuff"				"%MOVEMENT SPEED DEBUFF: "
-		"DOTA_Tooltip_ability_kakashi_bunshin_cd_reduc"					"COOLDOWN REDUCTION: "
-		"DOTA_Tooltip_ability_kakashi_bunshin_illusion_duration"		"CLONE DURATION: "
-		"DOTA_Tooltip_ability_kakashi_bunshin_illusion_outgoing_damage_percent_tooltip"		"%CLONE OUTGOING DAMAGE: "
-		"DOTA_Tooltip_ability_kakashi_bunshin_illusion_incoming_damage_percent"		"%CLONE INCOMING DAMAGE: "
-		
-		// Chidori
-		"DOTA_Tooltip_ability_kakashi_chidori"							"<b><font color='#7EC3FF'>Raikiri</font></b>"
-		"DOTA_Tooltip_ability_kakashi_chidori_description"				"<b><font color='#FFFFFF'>CHANNELED</font></b> - <b><font color='#7EC3FF'>Channels lightning chakra</font></b> as Kakashi prepares to charge his foe. <br><br> Once channeling is complete, Kakashi rushes the target <b><font color='#7EC3FF'>dealing Magic Damage</font></b> and briefly slowing <b>Movement Speed</b> on contact."
-		"DOTA_Tooltip_ability_kakashi_chidori_damage"					"DAMAGE: "
-		"DOTA_Tooltip_ability_kakashi_chidori_range"					"RANGE: "
+		"DOTA_Tooltip_modifier_kakashi_sharingan"									"Sharingan"
+		"DOTA_Tooltip_modifier_kakashi_sharingan_Description"						"Has copied a spell."
 
-		"DOTA_Tooltip_modifier_kakashi_lighting_charge"						"<b><font color='#7EC3FF'>Raikiri</font></b>"
-		"DOTA_Tooltip_modifier_kakashi_lighting_charge_description"			"This Unit's <b><font color='#7EC3FF'>Movement Speed is Slowed.</font></b>"
+		// Lightning Release: Shadow Clone Technique
+		"DOTA_Tooltip_ability_kakashi_lightning_release"							"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_ability_kakashi_lightning_release_Description"				"For a short duration the next source of damage dealt by a hero is negated. If triggered, Kakashi receives a Basic Dispel and becomes invisible. Additionally, all enemies around Kakashi are rooted and take magic damage."
+		"DOTA_Tooltip_ability_kakashi_lightning_release_Note0"						"Lightning Release will only trigger on damage from other player controlled units."
+		"DOTA_Tooltip_ability_kakashi_lightning_release_damage"						"DAMAGE:"
+		"DOTA_Tooltip_ability_kakashi_lightning_release_active_duration"			"TRIGGER WINDOW:"
+		"DOTA_Tooltip_ability_kakashi_lightning_release_root_duration"				"ROOT DURATION:"
+		"DOTA_Tooltip_ability_kakashi_lightning_release_invis_duration"				"INVISIBILITY DURATION:"
+
+		"DOTA_Tooltip_modifier_kakashi_lightning_release"							"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility"				"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility_Description"	"Invisible"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release_root"						"Rooted"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release_root_Description"			"Rooted by Kakashi's Lightning Release"
+
+		// Kamui
+		"DOTA_Tooltip_ability_kakashi_kamui"										"Kamui"
+		"DOTA_Tooltip_ability_kakashi_kamui_Description"							"CHANNELED - Kakashi focuses on an enemy hero, inflicting a rapidly increasing Movement Speed Slow and granting vision of them as long as they are within Focus Range. If the channel finishes, the target is banished for a few seconds, purging all buffs and removing them from the battlefield. Upon return, Kamui reveals and deals pure damage based on the target’s maximum health and applies Break for a short duration.\nActivating Lightning Release will not interrupt Kamui's channeling."
+		"DOTA_Tooltip_ability_kakashi_kamui_Note0"									"The slow starts at %initial_slow%%%, and increases over time to %max_slow%%%."
+		"DOTA_Tooltip_ability_kakashi_kamui_Note1"									"Kamui will be interrupted if the target goes %focus_range% range away."
+		"DOTA_Tooltip_ability_kakashi_kamui_abilitychanneltime"						"DURATION:"
+		"DOTA_Tooltip_ability_kakashi_kamui_max_health_damage"						"%MAX HEALTH AS DAMAGE:"
+		"DOTA_Tooltip_ability_kakashi_kamui_banish_duration"						"BANISH DURATION:"
+		"DOTA_Tooltip_ability_kakashi_kamui_break_duration"							"BREAK DURATION:"
+
+		"DOTA_Tooltip_modifier_kakashi_kamui"										"Kamui"
+		"DOTA_Tooltip_modifier_kakashi_kamui_Description"							"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_kakashi_kamui_banish"								"Kamui - Banish"
+		"DOTA_Tooltip_modifier_kakashi_kamui_banish_Description"					"Banished into Kamui's Dimension."
+		"DOTA_Tooltip_modifier_kakashi_kamui_break"									"Kamui - Break"
+		"DOTA_Tooltip_modifier_kakashi_kamui_break_Description"						"Passives are disabled. Your position is revealed."
+
+		// Earth Release: Mud Wall (Shard Ability)
+		"DOTA_Tooltip_ability_kakashi_earth_release"								"Earth Release: Mud Wall"
+		"DOTA_Tooltip_ability_kakashi_earth_release_Description"					"Creates a wall of impassable terrain for a short duration. Enemies near the wall upon creation take Magic Damage and are briefly stunned."
+		"DOTA_Tooltip_ability_kakashi_earth_release_damage"							"DAMAGE:"
+		"DOTA_Tooltip_ability_kakashi_earth_release_duration"						"DURATION:"
+		"DOTA_Tooltip_ability_kakashi_earth_release_stun_duration"					"STUN DURATION:"
+		"DOTA_Tooltip_ability_kakashi_earth_release_wall_length"					"WALL LENGTH:"
+		"DOTA_Tooltip_ability_kakashi_earth_release_wall_width"						"WALL WIDTH:"
+
 
 		//--------------------
 		//Guy
@@ -2531,22 +2564,23 @@
 		"DOTA_Tooltip_Ability_special_bonus_naruto_6"						"+320 Rasenshuriken Damage"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_7"						"-4s Clone Rasengan Cooldown"
 
-		//25: 25% Cooldown Reduction / +420 Raikiri Damage
-		//20: + 325 Tracking Fang Range / -8s Kage Bunshin Cooldown
-		//15: +2s Kage Bunshin Duration / +6 All Stats
-		//10: +200 Mana / +30 Attack Damage
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_1"						"+2s Kage Bunshin Invisibility Duration"
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_2"						"+325 Tracking Fang Range"
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_3"						"-3s Kage Bunshin Cooldown"
-		"DOTA_Tooltip_Ability_special_bonus_kakashi_4"						"+420 Raikiri Damage"
+		//25: +15 All Stats 						/ 	+320 Raikiri Damage
+		//20: +60 Seconds Sharingan Steal Duration 	/ 	+20% Critical Strike (200%) 
+		//15: -0.5s Raikiri Cast Time			 	/  	+16% Evasion
+		//10: +1.50s Shadow Clone Root 				/ 	+3s Shadow Clone Invisibility
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_1"						"+{s:value} Raikiri Damage"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_2"						"-{s:value} Raikiri Cast Time"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_3"						"+{s:value}s Lightning Clone Root"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_4"						"+{s:value}s Lightning Clone Invisiblity"
+		"DOTA_Tooltip_Ability_special_bonus_kakashi_5"						"+{s:value}s Sharingan Copy Duration"
 
 
 		//25: -1s Snake Hand Cooldown / -4s Giant Snake Cooldown
 		//20: +20 Strength / +80 Snake Hand Damage
 		//15: +250 Giant Snake Cast Range / +2s Striking Snakes Movement Speed Debuff Duration
 		//10: +2 Mana Regeneration / +100 Cast Range
-		"DOTA_Tooltip_Ability_special_bonus_anko_1"						"+250 Giant Snake Cast Range"buff Duration"
-		"DOTA_Tooltip_Ability_special_bonus_anko_3"						"+80 Snake Hand Damage
+		"DOTA_Tooltip_Ability_special_bonus_anko_1"						"+250 Giant Snake Cast Range"
+		"DOTA_Tooltip_Ability_special_bonus_anko_3"						"+80 Snake Hand Damage"
 		"DOTA_Tooltip_Ability_special_bonus_anko_2"						"+2s Striking Snakes Movement Speed De"
 		"DOTA_Tooltip_Ability_special_bonus_anko_4"						"+1 Striking Snakes Per Second"
 		"DOTA_Tooltip_Ability_special_bonus_anko_5"						"-4s Giant Snake Cooldown"

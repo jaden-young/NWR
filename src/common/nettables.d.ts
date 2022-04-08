@@ -4,4 +4,10 @@ interface CustomNetTableDeclarations {
             cdr: number;
         };
     };
+
+    kakashi_sharingan_tracker: {
+        [PlayerID: string]: {
+            last_ability: string;
+        };
+    };
 }

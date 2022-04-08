@@ -2,7 +2,7 @@
 temari_fusajin_no_jutsu = class({})
 
 function temari_fusajin_no_jutsu:Precache( context )
-    PrecacheResource( "particle",  "particles/units/heroes/temari/temari_dust_wind.vpcf", context )
+    PrecacheResource( "particle",  "particles/units/heroes/temari/temari_wind_dust.vpcf", context )
 end
 
 function temari_fusajin_no_jutsu:ProcsMagicStick()

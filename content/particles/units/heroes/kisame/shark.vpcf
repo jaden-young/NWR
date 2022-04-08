@@ -1,11 +1,11 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf35:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 1
 	m_flConstantRadius = 1.0
 	m_flCullRadius = 100.0
-	m_nBehaviorVersion = 11
+	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 5
 	m_controlPointConfigurations = 
 	[
@@ -144,19 +144,16 @@
 	[
 		{
 			_class = "C_OP_RenderModels"
-			m_bScaleAnimationRate = true
 			m_bOrientZ = true
 			m_ModelList = 
 			[
 				{
-					m_model = resource:"models/items/kunkka/kunkka_immortal/kunkka_shark_immortal.vmdl"
+					m_model = resource:"models/striker_water_shark/striker_water_shark.vmdl"
 				},
 			]
 			m_bAnimated = true
 			m_bForceDrawInterlevedWithSiblings = true
 			m_nLOD = 1
-			m_bForceLoopingAnimation = true
-			m_bResetAnimOnStop = true
 			m_flRadiusScale = 
 			{
 				m_nType = "PF_TYPE_LITERAL"
@@ -202,6 +199,11 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_nAnimationScaleField = 38
+			m_nAnimationField = 38
+			m_nManualFrameField = 38
+			m_hOverrideMaterial = resource:"materials/models/items/kunkka/kunkka_immortal/kunkka_shark_immortal_color.vmat"
+			m_flAnimationRate = 25.0
 		},
 	]
 	m_Children = 
@@ -254,6 +256,10 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_nyx_assassin/nyx_assassin_burrow_water_splash1.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/hero_kunkka/kunkka_spell_torrent_splash.vpcf"
+			m_bEndCap = true
 		},
 	]
 }
