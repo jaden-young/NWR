@@ -157,18 +157,45 @@ export class modifier_kakashi_lightning_release_invisibility extends BaseModifie
 
     /****************************************/
 
-    DeclareFunctions(){ return [ModifierFunction.INVISIBILITY_LEVEL] }
+    DeclareFunctions(){ return [
+        ModifierFunction.INVISIBILITY_LEVEL,
+        ModifierFunction.ON_ATTACK_LANDED,
+        ModifierFunction.ON_ABILITY_EXECUTED
+    ]}
 
     /****************************************/
 
     CheckState(): Partial<Record<ModifierState, boolean>> {
-        return {[ModifierState.INVISIBLE]: true};
+        return {
+            [ModifierState.INVISIBLE]: true,
+            [ModifierState.NO_UNIT_COLLISION]: true
+        };
     }
 
     /****************************************/
 
     GetModifierInvisibilityLevel(): number {
         return 1
+    }
+
+    /****************************************/
+
+    OnAttackLanded(event: ModifierAttackEvent): void {
+        if (!IsServer()) return;
+        
+        if (event.attacker != this.GetParent()) return;
+
+        this.Destroy();
+    }
+
+    /****************************************/
+    
+    OnAbilityExecuted(event: ModifierAbilityEvent): void {
+        if (!IsServer()) return;
+
+        if (event.unit != this.GetParent()) return;
+
+        this.Destroy();
     }
 }
 
