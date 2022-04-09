@@ -50,7 +50,7 @@
 					},
 					{
 						_class = "Attachment"
-						name = "attach_root"
+						name = "attach_origin"
 						parent_bone = "characterroot2"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
