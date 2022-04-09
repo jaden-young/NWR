@@ -79,7 +79,7 @@
 				[
 					{
 						_class = "Attachment"
-						name = "unnamed_Attachment"
+						name = "camera"
 						children = 
 						[
 							{
@@ -94,6 +94,24 @@
 						parent_bone = ""
 						relative_origin = [ 39.308777, -0.919158, 146.362946 ]
 						relative_angles = [ -16.127878, -179.999756, -0.000127 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_hitloc"
+						parent_bone = "spine1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_origin"
+						parent_bone = "characterroot"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
