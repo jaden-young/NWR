@@ -11,7 +11,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						filename = "models/striker_itachi/striker_itachi_base.smd"
+						filename = "models/striker_itachi/striker_itachi head.fbx"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -21,7 +21,7 @@
 					},
 					{
 						_class = "RenderMeshFile"
-						filename = "models/striker_itachi/striker_itachi head.fbx"
+						filename = "models/striker_itachi/striker_itachi_base.smd"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -61,11 +61,19 @@
 							},
 							{
 								from = "mi_chr_man_coat_01.vmat"
-								to = "materials/models/striker_itachi/strikeritachi1.vmat"
+								to = "mi_chr_man_coat_01.vmat"
 							},
 							{
 								from = "t_chr_man_coat_bc_-_copy.vmat"
-								to = "materials/models/striker_itachi/strikeritachi1.vmat"
+								to = "t_chr_man_coat_bc_-_copy.vmat"
+							},
+							{
+								from = "t_wep_kunai_bc.vmat"
+								to = "materials/models/kunai_bomb/kunai_bomb2.vmat"
+							},
+							{
+								from = "t_chr_man_coat_bc.vmat"
+								to = "materials/models/striker_hidan/strikerhidan4.vmat"
 							},
 						]
 						use_global_default = false
@@ -402,7 +410,7 @@
 								extract_rz = false
 								linear = false
 								quadratic = false
-								root_bone_name = ""
+								root_bone_name = "characterroot"
 								motion_type = "Single"
 							},
 						]
@@ -438,6 +446,86 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_itachi/striker_itachi_seal.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_itachi_kunai1"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_itachi/striker_itachi_kunai1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 50.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_itachi_kunai2"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_itachi/striker_itachi_kunai2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_itachi_kunai3"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_itachi/striker_itachi_kunai3.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 50.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_itachi_combat_idle"
+						activity_name = "ACT_COMBAT_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_itachi/striker_itachi_combat_idle.smd"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
