@@ -58,6 +58,10 @@ function gaara_sabaku_kyuu:OnSpellStart()
 		--Pocket sand bit
 		self:GetCaster():FindAbilityByName("gaara_innate_passive"):ApplyPocketSandDebuff(self.target)
 	end
+
+	self.coffin_vfx = ParticleManager:CreateParticle("particles/units/heroes/gaara/gaara_sand_coffin.vpcf", PATTACH_ABSORIGIN, self.target)
+	ParticleManager:SetParticleControlEnt(self.coffin_vfx, 4, self.target, PATTACH_CENTER_FOLLOW , "attach_origin", Vector(0,0,160), true)
+	ParticleManager:SetParticleControl(self.coffin_vfx, 3, self:GetCaster():GetOrigin()) --TODO: change to sack attachment point
 end
 
 function gaara_sabaku_kyuu:OnChannelFinish(bInterrupted)
@@ -67,7 +71,18 @@ function gaara_sabaku_kyuu:OnChannelFinish(bInterrupted)
 		if self.target and self.target:IsAlive() and not self.target:IsOutOfGame() then
 			self.target:RemoveModifierByNameAndCaster("modifier_gaara_sabaku_kyuu", self:GetCaster())
 		end
+		ParticleManager:DestroyParticle(self.coffin_vfx, true)
 	end
+	ParticleManager:ReleaseParticleIndex(self.coffin_vfx)
+	local sand_back_vfx = ParticleManager:CreateParticle("particles/units/heroes/gaara/gaara_generic_sand_particles.vpcf", PATTACH_ABSORIGIN, self.target)
+	ParticleManager:SetParticleControlEnt(sand_back_vfx, 4, self:GetCaster(), PATTACH_CENTER_FOLLOW , "attach_origin", Vector(0,0,160), true) --TODO: change to sack attachment point
+	ParticleManager:SetParticleControlEnt(sand_back_vfx, 3, self.target, PATTACH_CENTER_FOLLOW , "attach_origin", Vector(0,0,160), true)
+	ParticleManager:DestroyParticle(sand_back_vfx, false)
+	ParticleManager:ReleaseParticleIndex(sand_back_vfx)
+
+
+
+
 end
 
 modifier_gaara_sabaku_kyuu = modifier_gaara_sabaku_kyuu or class({})
@@ -82,7 +97,7 @@ function modifier_gaara_sabaku_kyuu:OnCreated()
 
 	local knockback_param = {
 		should_stun = 1,
-		knockback_duration = self:GetAbility():GetSpecialValueFor("duration"),
+		knockback_duration = self:GetAbility():GetSpecialValueFor("duration") * 2,
 		duration = self:GetAbility():GetSpecialValueFor("duration"),
 		knockback_distance = 0,
 		knockback_height = 200,
@@ -94,8 +109,8 @@ function modifier_gaara_sabaku_kyuu:OnCreated()
 	self:GetParent():RemoveModifierByName("modifier_knockback")
 	self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_knockback", knockback_param)
 
-	self.pfx = ParticleManager:CreateParticle("particles/units/heroes/gaara/sandsturm.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
-	ParticleManager:SetParticleControl(self.pfx, 1, Vector(200, 200, 0))
+	-- self.pfx = ParticleManager:CreateParticle("particles/units/heroes/gaara/sandsturm.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetParent())
+	-- ParticleManager:SetParticleControl(self.pfx, 1, Vector(200, 200, 0))
 
 	self:StartIntervalThink(self:GetAbility():GetSpecialValueFor("delay_to_dmg"))
 end
@@ -117,9 +132,9 @@ function modifier_gaara_sabaku_kyuu:OnIntervalThink()
 
 		local enemy_loc = self:GetParent():GetAbsOrigin()
 
-		local impact_pfx = ParticleManager:CreateParticle("particles/units/heroes/gaara/sandstorm_explosion/sandstorm_explosion.vpcf", PATTACH_ABSORIGIN, self:GetParent())
-		ParticleManager:SetParticleControl(impact_pfx, 0, enemy_loc)
-		ParticleManager:SetParticleControlEnt(impact_pfx, 3, self:GetParent(), PATTACH_ABSORIGIN, "attach_origin", enemy_loc, true)
+		-- local impact_pfx = ParticleManager:CreateParticle("particles/units/heroes/gaara/sandstorm_explosion/sandstorm_explosion.vpcf", PATTACH_ABSORIGIN, self:GetParent())
+		-- ParticleManager:SetParticleControl(impact_pfx, 0, enemy_loc)
+		-- ParticleManager:SetParticleControlEnt(impact_pfx, 3, self:GetParent(), PATTACH_ABSORIGIN, "attach_origin", enemy_loc, true)
 	end
 
 	self:StartIntervalThink(-1)
@@ -128,10 +143,10 @@ end
 function modifier_gaara_sabaku_kyuu:OnDestroy()
 	if not IsServer() then return end
 
-	if self.pfx then
-		ParticleManager:DestroyParticle(self.pfx, false)
-		ParticleManager:ReleaseParticleIndex(self.pfx)
-	end
+	-- if self.pfx then
+	-- 	ParticleManager:DestroyParticle(self.pfx, false)
+	-- 	ParticleManager:ReleaseParticleIndex(self.pfx)
+	-- end
 
 	self:GetParent():RemoveModifierByNameAndCaster("modifier_knockback", self:GetCaster())
 end

@@ -3,7 +3,7 @@
 	"haku_needles"
 	{
 		"BaseClass"             		"ability_lua"
-		"ScriptFile"					"abilities/heroes/haku/needles"
+		"ScriptFile"					"abilities/heroes/haku/haku_needles"
 		"AbilityTextureName"			"haku_needles"
 
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
