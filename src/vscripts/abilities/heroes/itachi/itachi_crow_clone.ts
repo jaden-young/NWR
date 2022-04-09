@@ -268,6 +268,8 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
         });
     }
 
+    /****************************************/
+
     OnDestroy(): void {
         if (!IsServer()) return;
 
@@ -276,18 +278,11 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
 
     /****************************************/
 
-    CheckState(): Partial<Record<ModifierState, boolean>> {
-        return {
-            //[ModifierState.INVISIBLE]: this.GetElapsedTime() < 0.01,
-            [ModifierState.NO_UNIT_COLLISION]: true
-        };
-    }
+    CheckState(): Partial<Record<ModifierState, boolean>> {return {[ModifierState.NO_UNIT_COLLISION]: true}}
 
     /****************************************/
 
-    DeclareFunctions(){ return [
-        ModifierFunction.TOTALDAMAGEOUTGOING_PERCENTAGE
-    ]}
+    DeclareFunctions(){ return [ModifierFunction.TOTALDAMAGEOUTGOING_PERCENTAGE]}
 
     /****************************************/
 
@@ -350,9 +345,8 @@ export class modifier_itachi_crow_clone_deffered extends BaseModifier
         return {
             [ModifierState.NOT_ON_MINIMAP]: true,
             [ModifierState.INVISIBLE]: true,
-            //[ModifierState.INVULNERABLE]: true,
-            //[ModifierState.OUT_OF_GAME]: true,
-            //[ModifierState.NO_HEALTH_BAR]: true,
+            [ModifierState.INVULNERABLE]: true,
+            [ModifierState.NO_HEALTH_BAR]: true,
         };
     }
 }
