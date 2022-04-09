@@ -47,7 +47,10 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     FireProjectile(position: Vector, count: number, cast_id: number): void {
         let caster = this.GetCaster();
-        let direction = position - caster.GetAbsOrigin() as Vector;
+        let radius = this.GetSpecialValueFor("proj_radius");
+        let offset = this.GetSpecialValueFor("final_radius") / 2;
+        let random_pos = position + Vector(RandomInt(-offset, offset), RandomInt(-offset, offset), 0) as Vector;
+        let direction = random_pos - caster.GetAbsOrigin() as Vector;
         direction.z = 0;
         direction = direction.Normalized();
 
@@ -57,8 +60,8 @@ export class itachi_phoenix_sage_flame extends BaseAbility
             EffectName: "particles/base_attacks/ranged_tower_bad_linear.vpcf",
             vSpawnOrigin: caster.GetAbsOrigin() + Vector(0, 0, 100) as Vector,
             fDistance: this.GetCastRange(caster.GetAbsOrigin(), undefined),
-            fStartRadius: this.GetSpecialValueFor("start_radius"),
-            fEndRadius: this.GetSpecialValueFor("end_radius"),
+            fStartRadius: radius,
+            fEndRadius: radius,
             Source: caster,
             iUnitTargetTeam: UnitTargetTeam.ENEMY,
 		    iUnitTargetType: UnitTargetType.HERO + UnitTargetType.BASIC,
