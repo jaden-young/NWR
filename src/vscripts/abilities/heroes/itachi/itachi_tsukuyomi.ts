@@ -23,9 +23,10 @@ export class itachi_tsukuyomi extends BaseAbility
     /****************************************/
 
     OnPlayerLearnedAbility(event: DotaPlayerLearnedAbilityEvent): void {
-        let hero = PlayerResource.GetSelectedHeroEntity(event.PlayerID)
-        let ability_name = event.abilityname
+        let hero = PlayerResource.GetSelectedHeroEntity(event.PlayerID);
+        let ability_name = event.abilityname;
 
+        if (this == undefined || this.IsNull() || this.GetCaster() == undefined || hero == undefined) return;
         if (hero != this.GetCaster() || ability_name != "itachi_amaterasu") return;
 
         this.SetLevel(this.GetCaster().FindAbilityByName("itachi_amaterasu")!.GetLevel());
