@@ -7,4 +7,5 @@ declare interface CDOTA_BaseNPC {
     HasTalent(talentName: string): boolean;
     FindTalentValue(talentName: string, key?: string): number;
     GetTalentSpecialValueFor(value: string): number;
+    HasShard(): boolean;
 }

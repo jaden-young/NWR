@@ -1,1433 +1,936 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc30:version{66cd490f-437b-4d7d-b009-7907d45422e2} -->
 {
-	m_meshList = 
+	rootNode = 
 	{
-		m_meshList = 
+		_class = "RootNode"
+		children = 
 		[
 			{
-				m_meshName = "strikerjuubiranged_base"
-				m_meshFile = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_base.smd"
-				m_materialSearchPath = ""
-				m_bSkinParentedObjects = true
-				m_bLegacySkinParentedTransforms = false
-				m_bExpensiveTangents = false
-				m_bHighPrecisionTexCoords = false
-				m_bPerVertexCurvature = false
-				m_bBentNormals = false
-				m_bIgnoreCloth = false
-				m_bGetSkinningFromLod0 = false
-				m_bPreferHighDensityTrianglesInUvDensityCalculation = false
-				m_pMorphInfo = null
-			},
-		]
-	}
-	m_clothProxyMeshList = 
-	{
-		_class = "CVClothProxyMeshList"
-		m_flClothEnableThreshold = 0.05
-		m_bCreateStaticBone = false
-		m_nMaxBonesPerVertex = 4
-		m_bRemoveUnusedBonesEnabled = false
-		m_bDriveMeshesWithBacksolvedJointsOnly = true
-		m_flMatchProxiesToMeshes = 1.0
-		m_flFallbackEnvelope = 1.0
-		m_nReservedInt = 0
-		m_bSoftSkinAnimation = false
-		m_bReservedBool2 = false
-		m_bReservedBool3 = false
-		m_bReservedBool4 = false
-		m_clothProxyMeshList = [  ]
-	}
-	m_physicsMeshList = 
-	{
-		m_meshList = [  ]
-	}
-	m_pModelInfo = null
-	m_pBoneFlagList = 
-	{
-		m_pObject = null
-	}
-	m_pHitBoxSetLists = 
-	[
-		{
-			m_pObject = 
-			{
-				m_HitBoxSets = 
+				_class = "MaterialGroupList"
+				children = 
 				[
 					{
-						m_name = "default"
-						m_HitBoxes = 
+						_class = "DefaultMaterialGroup"
+						remaps = 
 						[
 							{
-								m_name = "hips"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "hips"
-								m_vMinBounds = [ -16.282898, -26.751528, -22.478069 ]
-								m_vMaxBounds = [ 31.364212, 11.293905, 22.943157 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "spine"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "spine"
-								m_vMinBounds = [ -15.815979, -31.993053, -25.579632 ]
-								m_vMaxBounds = [ 33.798927, 15.645813, 25.359425 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "spine1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "spine1"
-								m_vMinBounds = [ -30.816406, -32.36581, -25.579674 ]
-								m_vMaxBounds = [ 37.737518, 15.348499, 25.525272 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftshoulder"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftshoulder"
-								m_vMinBounds = [ -11.137882, -14.143949, -17.507187 ]
-								m_vMaxBounds = [ 22.139233, 23.635151, 19.958633 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightshoulder"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightshoulder"
-								m_vMinBounds = [ -11.238472, -14.272863, -16.817947 ]
-								m_vMaxBounds = [ 22.139297, 23.471132, 17.459747 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthand"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthand"
-								m_vMinBounds = [ -10.579655, -3.771011, -6.512376 ]
-								m_vMaxBounds = [ 10.605755, 4.571365, 11.530911 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthand"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthand"
-								m_vMinBounds = [ -10.733238, -3.754349, -11.452635 ]
-								m_vMaxBounds = [ 10.634357, 4.553013, 6.426052 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftupleg"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftupleg"
-								m_vMinBounds = [ -11.697273, -14.14, -10.11611 ]
-								m_vMaxBounds = [ 58.161705, 10.323316, 14.285044 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightupleg"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightupleg"
-								m_vMinBounds = [ -58.161736, -10.323316, -14.64382 ]
-								m_vMaxBounds = [ 11.697266, 12.012279, 8.866522 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandthumb1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandthumb1"
-								m_vMinBounds = [ -2.877407, -2.342728, -2.253269 ]
-								m_vMaxBounds = [ 5.938782, 3.149948, 3.942902 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandindex1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandindex1"
-								m_vMinBounds = [ -2.379044, -1.613281, -1.311406 ]
-								m_vMaxBounds = [ 5.308712, 1.474045, 1.744619 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandmiddle1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandmiddle1"
-								m_vMinBounds = [ -3.88171, -1.751732, -1.741585 ]
-								m_vMaxBounds = [ 5.647442, 1.580452, 1.915395 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandring1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandring1"
-								m_vMinBounds = [ -2.088753, -1.673149, -1.628877 ]
-								m_vMaxBounds = [ 5.683384, 1.574608, 1.872432 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandpinky1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandpinky1"
-								m_vMinBounds = [ -1.876087, -1.322151, -1.356134 ]
-								m_vMaxBounds = [ 4.864281, 1.503716, 1.749757 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandthumb1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandthumb1"
-								m_vMinBounds = [ -3.330303, -2.319618, -3.737335 ]
-								m_vMaxBounds = [ 5.960953, 3.282042, 2.228161 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandindex1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandindex1"
-								m_vMinBounds = [ -2.358559, -1.644531, -1.840186 ]
-								m_vMaxBounds = [ 5.32724, 1.435844, 1.228608 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandmiddle1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandmiddle1"
-								m_vMinBounds = [ -3.883194, -1.814911, -1.993947 ]
-								m_vMaxBounds = [ 5.647205, 1.514069, 1.666557 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandring1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandring1"
-								m_vMinBounds = [ -2.107029, -1.765175, -1.944168 ]
-								m_vMaxBounds = [ 5.670036, 1.478867, 1.55617 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandpinky1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandpinky1"
-								m_vMinBounds = [ -1.887939, -1.448486, -1.806626 ]
-								m_vMaxBounds = [ 4.839474, 1.388626, 1.288743 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftleg"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftleg"
-								m_vMinBounds = [ -9.049241, -7.729891, -6.189056 ]
-								m_vMaxBounds = [ 24.226913, 7.14856, 7.06204 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightleg"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightleg"
-								m_vMinBounds = [ -24.226883, -7.148558, -7.061935 ]
-								m_vMaxBounds = [ 9.049262, 7.729891, 6.18916 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "neck"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "neck"
-								m_vMinBounds = [ -8.561646, -15.176414, -12.594062 ]
-								m_vMaxBounds = [ 16.06897, 13.770847, 14.066607 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandthumb2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandthumb2"
-								m_vMinBounds = [ -3.029312, -1.648516, -2.110596 ]
-								m_vMaxBounds = [ 4.080666, 2.975921, 1.628143 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandindex2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandindex2"
-								m_vMinBounds = [ -0.724567, -0.770679, -1.142105 ]
-								m_vMaxBounds = [ 4.56546, 1.065445, 0.816971 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandmiddle2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandmiddle2"
-								m_vMinBounds = [ -0.841866, -0.983932, -1.048698 ]
-								m_vMaxBounds = [ 4.840328, 1.001343, 1.059158 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandring2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandring2"
-								m_vMinBounds = [ -0.72987, -0.924347, -0.791564 ]
-								m_vMaxBounds = [ 4.731964, 0.937386, 1.234594 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandpinky2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandpinky2"
-								m_vMinBounds = [ -0.691502, -0.733482, -0.40259 ]
-								m_vMaxBounds = [ 3.833794, 0.842144, 1.270664 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandthumb2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandthumb2"
-								m_vMinBounds = [ -2.974174, -1.64015, -1.636673 ]
-								m_vMaxBounds = [ 4.155746, 3.03373, 2.238033 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandindex2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandindex2"
-								m_vMinBounds = [ -0.7071, -0.830833, -0.99313 ]
-								m_vMaxBounds = [ 4.567596, 1.004848, 0.955938 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandmiddle2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandmiddle2"
-								m_vMinBounds = [ -0.8428, -1.078178, -1.155535 ]
-								m_vMaxBounds = [ 4.83997, 0.906658, 0.952353 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandring2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandring2"
-								m_vMinBounds = [ -0.743793, -1.047596, -1.323201 ]
-								m_vMaxBounds = [ 4.725525, 0.807961, 0.702925 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandpinky2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandpinky2"
-								m_vMinBounds = [ -0.7169, -0.877804, -1.348214 ]
-								m_vMaxBounds = [ 3.809975, 0.697334, 0.325041 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftfoot"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftfoot"
-								m_vMinBounds = [ -7.045411, -5.173268, -5.464003 ]
-								m_vMaxBounds = [ 10.474689, 20.639687, 5.525194 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightfoot"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightfoot"
-								m_vMinBounds = [ -10.474611, -20.639681, -5.524973 ]
-								m_vMaxBounds = [ 7.045475, 5.173267, 5.464226 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "head"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "head"
-								m_vMinBounds = [ -7.747131, -6.47633, -10.424934 ]
-								m_vMaxBounds = [ 30.145981, 16.996115, 10.42487 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandthumb3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandthumb3"
-								m_vMinBounds = [ -1.386887, -1.627375, -1.761391 ]
-								m_vMaxBounds = [ 3.179222, 0.719353, 0.656807 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandindex3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandindex3"
-								m_vMinBounds = [ -0.490623, -0.620411, -1.112194 ]
-								m_vMaxBounds = [ 3.005211, 0.916328, 0.645032 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandmiddle3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandmiddle3"
-								m_vMinBounds = [ -0.494423, -0.821613, -0.951231 ]
-								m_vMaxBounds = [ 3.273048, 0.84013, 0.933684 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandring3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandring3"
-								m_vMinBounds = [ -0.390686, -0.799091, -0.681511 ]
-								m_vMaxBounds = [ 3.233376, 0.805546, 1.130298 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefthandpinky3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefthandpinky3"
-								m_vMinBounds = [ -0.410114, -0.634129, -0.333903 ]
-								m_vMaxBounds = [ 2.588745, 0.695312, 1.167048 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftforearmbend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftforearmbend1"
-								m_vMinBounds = [ -70.937637, -4.918686, -3.258858 ]
-								m_vMaxBounds = [ 39.082405, 140.470047, 19.009117 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftforearmbend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftforearmbend2"
-								m_vMinBounds = [ -85.026848, -5.771469, -3.370972 ]
-								m_vMaxBounds = [ 24.993195, 139.617264, 18.897003 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftforearmbend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftforearmbend3"
-								m_vMinBounds = [ -18.483475, -5.667135, -2.653076 ]
-								m_vMaxBounds = [ 6.748917, 10.996643, 4.675659 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftarmbend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftarmbend1"
-								m_vMinBounds = [ -13.554314, -13.246553, -12.556412 ]
-								m_vMaxBounds = [ 21.081184, 23.848265, 10.584648 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftarmbend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftarmbend2"
-								m_vMinBounds = [ -9.252258, -7.856621, -5.471611 ]
-								m_vMaxBounds = [ 19.839378, 8.080709, 8.01162 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftarmbend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftarmbend3"
-								m_vMinBounds = [ -15.649994, -6.356527, -5.446823 ]
-								m_vMaxBounds = [ 19.036072, 14.48797, 8.011642 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandthumb3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandthumb3"
-								m_vMinBounds = [ -1.289314, -1.640147, -0.771599 ]
-								m_vMaxBounds = [ 3.297699, 0.775047, 1.65477 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandindex3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandindex3"
-								m_vMinBounds = [ -3.0271, -0.86461, -0.842426 ]
-								m_vMaxBounds = [ 0.471622, 0.881146, 0.7015 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandmiddle3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandmiddle3"
-								m_vMinBounds = [ -3.276081, -0.849747, -0.724354 ]
-								m_vMaxBounds = [ 0.494423, 1.03249, 0.94025 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandring3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandring3"
-								m_vMinBounds = [ -3.223072, -0.60042, -0.636562 ]
-								m_vMaxBounds = [ 0.403866, 1.206846, 0.969669 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righthandpinky3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righthandpinky3"
-								m_vMinBounds = [ -2.566769, -0.278495, -0.468414 ]
-								m_vMaxBounds = [ 0.434738, 1.220435, 0.862831 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightforearmbend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightforearmbend1"
-								m_vMinBounds = [ -39.082474, -140.470016, -19.008942 ]
-								m_vMaxBounds = [ 70.937576, 4.918808, 3.258667 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightforearmbend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightforearmbend2"
-								m_vMinBounds = [ -24.993454, -139.616226, -18.903824 ]
-								m_vMaxBounds = [ 85.026695, 5.771698, 3.37104 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightforearmbend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightforearmbend3"
-								m_vMinBounds = [ -6.749161, -10.998779, -4.676933 ]
-								m_vMaxBounds = [ 18.483807, 5.670112, 2.653412 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightarmbend1"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightarmbend1"
-								m_vMinBounds = [ -21.08123, -21.407818, -10.206604 ]
-								m_vMaxBounds = [ 13.554314, 13.246457, 11.486252 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightarmbend2"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightarmbend2"
-								m_vMinBounds = [ -19.839157, -8.080658, -7.30648 ]
-								m_vMaxBounds = [ 9.252495, 8.068523, 5.471413 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightarmbend3"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightarmbend3"
-								m_vMinBounds = [ -19.035698, -14.4879, -6.083107 ]
-								m_vMaxBounds = [ 15.647491, 8.068502, 5.446426 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "lefttoebase"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "lefttoebase"
-								m_vMinBounds = [ -4.379295, -2.992606, -5.464006 ]
-								m_vMaxBounds = [ 10.840244, 5.64425, 5.52519 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftlegbend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftlegbend02"
-								m_vMinBounds = [ -6.830128, -6.549538, -5.731514 ]
-								m_vMaxBounds = [ 18.935333, 5.575582, 5.758377 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftlegbend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftlegbend01"
-								m_vMinBounds = [ -10.828411, 2.658327, -4.222178 ]
-								m_vMaxBounds = [ 11.536907, 7.14852, 5.212855 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftlegbend03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftlegbend03"
-								m_vMinBounds = [ -22.112066, -6.336405, -5.491976 ]
-								m_vMaxBounds = [ 5.833054, 10.098726, 5.600705 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftuplegbend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftuplegbend01"
-								m_vMinBounds = [ -11.686607, 4.305197, -6.330139 ]
-								m_vMaxBounds = [ 9.095383, 9.41186, 6.601032 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "leftuplegbend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "leftuplegbend02"
-								m_vMinBounds = [ -9.980293, 3.744426, -5.290648 ]
-								m_vMaxBounds = [ 8.816601, 8.433739, 5.265509 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "righttoebase"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "righttoebase"
-								m_vMinBounds = [ -10.840249, -5.644268, -5.524923 ]
-								m_vMaxBounds = [ 4.379289, 2.992581, 5.464275 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightlegbend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightlegbend02"
-								m_vMinBounds = [ -18.935329, -5.575584, -5.758221 ]
-								m_vMaxBounds = [ 6.830124, 6.549532, 5.731667 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightlegbend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightlegbend01"
-								m_vMinBounds = [ -11.536884, -7.148518, -5.212703 ]
-								m_vMaxBounds = [ 10.82843, -2.658328, 4.222326 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightlegbend03"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightlegbend03"
-								m_vMinBounds = [ -5.833021, -10.098724, -5.600513 ]
-								m_vMaxBounds = [ 22.112101, 6.336407, 5.492167 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightuplegbend01"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightuplegbend01"
-								m_vMinBounds = [ -9.095383, -9.292307, -6.583848 ]
-								m_vMaxBounds = [ 7.81337, -4.305193, 6.330246 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
-							},
-							{
-								m_name = "rightuplegbend02"
-								m_sSurfaceProperty = ""
-								m_nGroupId = 0
-								m_sBoneName = "rightuplegbend02"
-								m_vMinBounds = [ -8.816551, -8.433737, -5.265428 ]
-								m_vMaxBounds = [ 9.980347, -3.744423, 5.290718 ]
-								m_flShapeRadius = 0.0
-								m_nShapeType = "VHITBOX_SHAPE_BOX"
-								m_bTranslationOnly = false
-								m_cRenderColor = [ 0, 0, 0, 0 ]
+								from = "t_chr_tentailscloneloser01_bc.vmat"
+								to = "materials/creep/strikerjuubicreep.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "AttachmentList"
+				children = 
+				[
+					{
+						_class = "Attachment"
+						name = "attach_attack2"
+						parent_bone = "R_Hand_Weapon_cnt_tr"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_attack1"
+						parent_bone = "L_Hand_Weapon_cnt_tr"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_hitloc"
+						parent_bone = "spine1"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_origin"
+						parent_bone = "characterroot"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								parent_bone = "hips"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -16.282898, -26.751528, -22.478069 ]
+								hitbox_maxs = [ 31.364212, 11.293905, 22.943157 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "spine"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.815979, -31.993053, -25.579632 ]
+								hitbox_maxs = [ 33.798927, 15.645813, 25.359425 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -30.816406, -32.36581, -25.579674 ]
+								hitbox_maxs = [ 37.737518, 15.348499, 25.525272 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftshoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.137882, -14.143949, -17.507187 ]
+								hitbox_maxs = [ 22.139233, 23.635151, 19.958633 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightshoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.238472, -14.272863, -16.817947 ]
+								hitbox_maxs = [ 22.139297, 23.471132, 17.459747 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.579655, -3.771011, -6.512376 ]
+								hitbox_maxs = [ 10.605755, 4.571365, 11.530911 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.733238, -3.754349, -11.452635 ]
+								hitbox_maxs = [ 10.634357, 4.553013, 6.426052 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftupleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.697273, -14.14, -10.11611 ]
+								hitbox_maxs = [ 58.161705, 10.323316, 14.285044 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightupleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -58.161736, -10.323316, -14.64382 ]
+								hitbox_maxs = [ 11.697266, 12.012279, 8.866522 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandthumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.877407, -2.342728, -2.253269 ]
+								hitbox_maxs = [ 5.938782, 3.149948, 3.942902 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandindex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.379044, -1.613281, -1.311406 ]
+								hitbox_maxs = [ 5.308712, 1.474045, 1.744619 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandmiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.88171, -1.751732, -1.741585 ]
+								hitbox_maxs = [ 5.647442, 1.580452, 1.915395 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandring1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.088753, -1.673149, -1.628877 ]
+								hitbox_maxs = [ 5.683384, 1.574608, 1.872432 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandpinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.876087, -1.322151, -1.356134 ]
+								hitbox_maxs = [ 4.864281, 1.503716, 1.749757 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandthumb1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.330303, -2.319618, -3.737335 ]
+								hitbox_maxs = [ 5.960953, 3.282042, 2.228161 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandindex1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.358559, -1.644531, -1.840186 ]
+								hitbox_maxs = [ 5.32724, 1.435844, 1.228608 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandmiddle1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.883194, -1.814911, -1.993947 ]
+								hitbox_maxs = [ 5.647205, 1.514069, 1.666557 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandring1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.107029, -1.765175, -1.944168 ]
+								hitbox_maxs = [ 5.670036, 1.478867, 1.55617 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandpinky1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.887939, -1.448486, -1.806626 ]
+								hitbox_maxs = [ 4.839474, 1.388626, 1.288743 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.049241, -7.729891, -6.189056 ]
+								hitbox_maxs = [ 24.226913, 7.14856, 7.06204 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -24.226883, -7.148558, -7.061935 ]
+								hitbox_maxs = [ 9.049262, 7.729891, 6.18916 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.561646, -15.176414, -12.594062 ]
+								hitbox_maxs = [ 16.06897, 13.770847, 14.066607 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandthumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.029312, -1.648516, -2.110596 ]
+								hitbox_maxs = [ 4.080666, 2.975921, 1.628143 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandindex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.724567, -0.770679, -1.142105 ]
+								hitbox_maxs = [ 4.56546, 1.065445, 0.816971 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandmiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.841866, -0.983932, -1.048698 ]
+								hitbox_maxs = [ 4.840328, 1.001343, 1.059158 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandring2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.72987, -0.924347, -0.791564 ]
+								hitbox_maxs = [ 4.731964, 0.937386, 1.234594 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandpinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.691502, -0.733482, -0.40259 ]
+								hitbox_maxs = [ 3.833794, 0.842144, 1.270664 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandthumb2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.974174, -1.64015, -1.636673 ]
+								hitbox_maxs = [ 4.155746, 3.03373, 2.238033 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandindex2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.7071, -0.830833, -0.99313 ]
+								hitbox_maxs = [ 4.567596, 1.004848, 0.955938 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandmiddle2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.8428, -1.078178, -1.155535 ]
+								hitbox_maxs = [ 4.83997, 0.906658, 0.952353 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandring2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.743793, -1.047596, -1.323201 ]
+								hitbox_maxs = [ 4.725525, 0.807961, 0.702925 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandpinky2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.7169, -0.877804, -1.348214 ]
+								hitbox_maxs = [ 3.809975, 0.697334, 0.325041 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftfoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.045411, -5.173268, -5.464003 ]
+								hitbox_maxs = [ 10.474689, 20.639687, 5.525194 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightfoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.474611, -20.639681, -5.524973 ]
+								hitbox_maxs = [ 7.045475, 5.173267, 5.464226 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.747131, -6.47633, -10.424934 ]
+								hitbox_maxs = [ 30.145981, 16.996115, 10.42487 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandthumb3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.386887, -1.627375, -1.761391 ]
+								hitbox_maxs = [ 3.179222, 0.719353, 0.656807 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandindex3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.490623, -0.620411, -1.112194 ]
+								hitbox_maxs = [ 3.005211, 0.916328, 0.645032 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandmiddle3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.494423, -0.821613, -0.951231 ]
+								hitbox_maxs = [ 3.273048, 0.84013, 0.933684 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandring3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.390686, -0.799091, -0.681511 ]
+								hitbox_maxs = [ 3.233376, 0.805546, 1.130298 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefthandpinky3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.410114, -0.634129, -0.333903 ]
+								hitbox_maxs = [ 2.588745, 0.695312, 1.167048 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftforearmbend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -70.937637, -4.918686, -3.258858 ]
+								hitbox_maxs = [ 39.082405, 140.470047, 19.009117 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftforearmbend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -85.026848, -5.771469, -3.370972 ]
+								hitbox_maxs = [ 24.993195, 139.617264, 18.897003 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftforearmbend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -18.483475, -5.667135, -2.653076 ]
+								hitbox_maxs = [ 6.748917, 10.996643, 4.675659 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftarmbend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.554314, -13.246553, -12.556412 ]
+								hitbox_maxs = [ 21.081184, 23.848265, 10.584648 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftarmbend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.252258, -7.856621, -5.471611 ]
+								hitbox_maxs = [ 19.839378, 8.080709, 8.01162 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftarmbend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.649994, -6.356527, -5.446823 ]
+								hitbox_maxs = [ 19.036072, 14.48797, 8.011642 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandthumb3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.289314, -1.640147, -0.771599 ]
+								hitbox_maxs = [ 3.297699, 0.775047, 1.65477 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandindex3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.0271, -0.86461, -0.842426 ]
+								hitbox_maxs = [ 0.471622, 0.881146, 0.7015 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandmiddle3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.276081, -0.849747, -0.724354 ]
+								hitbox_maxs = [ 0.494423, 1.03249, 0.94025 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandring3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.223072, -0.60042, -0.636562 ]
+								hitbox_maxs = [ 0.403866, 1.206846, 0.969669 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righthandpinky3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -2.566769, -0.278495, -0.468414 ]
+								hitbox_maxs = [ 0.434738, 1.220435, 0.862831 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightforearmbend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -39.082474, -140.470016, -19.008942 ]
+								hitbox_maxs = [ 70.937576, 4.918808, 3.258667 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightforearmbend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -24.993454, -139.616226, -18.903824 ]
+								hitbox_maxs = [ 85.026695, 5.771698, 3.37104 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightforearmbend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.749161, -10.998779, -4.676933 ]
+								hitbox_maxs = [ 18.483807, 5.670112, 2.653412 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightarmbend1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -21.08123, -21.407818, -10.206604 ]
+								hitbox_maxs = [ 13.554314, 13.246457, 11.486252 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightarmbend2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -19.839157, -8.080658, -7.30648 ]
+								hitbox_maxs = [ 9.252495, 8.068523, 5.471413 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightarmbend3"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -19.035698, -14.4879, -6.083107 ]
+								hitbox_maxs = [ 15.647491, 8.068502, 5.446426 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "lefttoebase"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -4.379295, -2.992606, -5.464006 ]
+								hitbox_maxs = [ 10.840244, 5.64425, 5.52519 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftlegbend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -6.830128, -6.549538, -5.731514 ]
+								hitbox_maxs = [ 18.935333, 5.575582, 5.758377 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftlegbend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.828411, 2.658327, -4.222178 ]
+								hitbox_maxs = [ 11.536907, 7.14852, 5.212855 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftlegbend03"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -22.112066, -6.336405, -5.491976 ]
+								hitbox_maxs = [ 5.833054, 10.098726, 5.600705 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftuplegbend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.686607, 4.305197, -6.330139 ]
+								hitbox_maxs = [ 9.095383, 9.41186, 6.601032 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "leftuplegbend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.980293, 3.744426, -5.290648 ]
+								hitbox_maxs = [ 8.816601, 8.433739, 5.265509 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "righttoebase"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.840249, -5.644268, -5.524923 ]
+								hitbox_maxs = [ 4.379289, 2.992581, 5.464275 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightlegbend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -18.935329, -5.575584, -5.758221 ]
+								hitbox_maxs = [ 6.830124, 6.549532, 5.731667 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightlegbend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -11.536884, -7.148518, -5.212703 ]
+								hitbox_maxs = [ 10.82843, -2.658328, 4.222326 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightlegbend03"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -5.833021, -10.098724, -5.600513 ]
+								hitbox_maxs = [ 22.112101, 6.336407, 5.492167 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightuplegbend01"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -9.095383, -9.292307, -6.583848 ]
+								hitbox_maxs = [ 7.81337, -4.305193, 6.330246 ]
+							},
+							{
+								_class = "Hitbox"
+								parent_bone = "rightuplegbend02"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -8.816551, -8.433737, -5.265428 ]
+								hitbox_maxs = [ 9.980347, -3.744423, 5.290718 ]
 							},
 						]
 					},
 				]
-				m_AutoCreateSetName = ""
-			}
-		},
-	]
-	m_pAttachmentLists = 
-	[
-		{
-			m_pObject = 
+			},
 			{
-				m_name = ""
-				m_attachments = 
+				_class = "RenderMeshList"
+				children = 
 				[
 					{
-						m_name = "attach_attack2"
-						m_influences = 
-						[
-							{
-								m_influenceName = "R_Hand_Weapon_cnt_tr"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
-					},
-					{
-						m_name = "attach_attack1"
-						m_influences = 
-						[
-							{
-								m_influenceName = "L_Hand_Weapon_cnt_tr"
-								m_vTranslationOffset = [ 0.0, 0.0, 0.0 ]
-								m_vRotationOffset = [ 0.0, 0.0, 0.0 ]
-								m_flWeight = 1.0
-								m_bRoot = false
-							},
-						]
+						_class = "RenderMeshFile"
+						name = "strikerjuubiranged_base"
+						filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_base.smd"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
 					},
 				]
-			}
-		},
-	]
-	m_pAnimGroup = 
-	{
-		m_pObject = 
-		{
-			m_Name = ""
-			m_pBoneFlagList = 
+			},
 			{
-				m_pObject = null
-			}
-			m_pSeqGroup = 
-			{
-				m_pObject = null
-			}
-			m_pAnimGroups = [  ]
-			m_Vanim = 
-			[
-				{
-					m_Animationname = "strikerjuubiranged_death"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_death.smd"
-					m_nStartframe = 0
-					m_nEndframe = 112
-					m_flFps = 30.0
-					m_Loop = 
+				_class = "AnimationList"
+				children = 
+				[
 					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_DIE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_death"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_death.smd"
+						start_frame = 0
+						end_frame = 112
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_death2"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_death2.smd"
+						start_frame = 0
+						end_frame = 40
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_death2"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_death2.smd"
-					m_nStartframe = 0
-					m_nEndframe = 40
-					m_flFps = 30.0
-					m_Loop = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_run"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_run.smd"
+						start_frame = 0
+						end_frame = 14
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_DIE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_throw1"
+						activity_name = "ACT_DOTA_ATTACK2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw1.smd"
+						start_frame = 0
+						end_frame = 22
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_throw2"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw2.smd"
+						start_frame = 0
+						end_frame = 28
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_run"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_run.smd"
-					m_nStartframe = 0
-					m_nEndframe = 14
-					m_flFps = 30.0
-					m_Loop = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_throw3"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw3.smd"
+						start_frame = 0
+						end_frame = 32
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_bLoop = true
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_RUN"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = 
-					[
-						{
-							m_nFrame = 0
-							m_bExtractTX = true
-							m_bExtractTY = true
-							m_bExtractTZ = false
-							m_bExtractRX = false
-							m_bExtractRY = false
-							m_bExtractRZ = false
-							m_bDiscardTX = false
-							m_bDiscardTY = false
-							m_bDiscardTZ = false
-							m_bDiscardRX = false
-							m_bDiscardRY = false
-							m_bDiscardRZ = false
-						},
-					]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
+						_class = "AnimFile"
+						name = "strikerjuubiranged_idle"
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_idle.smd"
+						start_frame = 0
+						end_frame = 60
+						framerate = 30.0
+						reverse = false
+					},
 					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_throw1"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw1.smd"
-					m_nStartframe = 0
-					m_nEndframe = 22
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK2"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_throw2"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw2.smd"
-					m_nStartframe = 0
-					m_nEndframe = 28
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_throw3"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw3.smd"
-					m_nStartframe = 0
-					m_nEndframe = 32
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_idle"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_idle.smd"
-					m_nStartframe = 0
-					m_nEndframe = 60
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = true
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_IDLE"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-				{
-					m_Animationname = "strikerjuubiranged_throw4"
-					m_Filepath = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw4.smd"
-					m_nStartframe = 0
-					m_nEndframe = 30
-					m_flFps = 30.0
-					m_Loop = 
-					{
-						m_bLoop = false
-						m_bSmoothLoop = false
-						m_nSmoothLoopStart = 0
-						m_nSmoothLoopEnd = 0
-						m_StartLoop = 
-						{
-							_class = "CVAnimCmdStartLoop"
-							m_bEnabled = false
-							m_nLoopRestart = 0
-						}
-					}
-					m_bHidden = false
-					m_bDisable = false
-					m_Activities = 
-					[
-						{
-							m_Name = "ACT_DOTA_ATTACK2"
-							m_nWeight = 1
-						},
-					]
-					m_AnimationEvents = [  ]
-					m_MotionFrames = [  ]
-					m_pIkRules = [  ]
-					m_pAlignAnimation = null
-					m_adjustAnimation = 
-					{
-						m_translation = [ 0.0, 0.0, 0.0 ]
-						m_rotation = [ 0.0, 0.0, 0.0 ]
-					}
-					m_Keywords = [  ]
-					m_sequenceParams = 
-					{
-						m_flFadeInTime = 0.2
-						m_flFadeOutTime = 0.2
-					}
-					m_folderName = ""
-					m_MotionFramesRootBone = ""
-				},
-			]
-			m_sScripts = [  ]
-			m_folderNames = [  ]
-			m_sCompileScripts = [  ]
-			m_pActivityWhiteList = 
-			{
-				m_pObject = null
-			}
-		}
-	}
-	m_pMaterialGroupList = 
-	{
-		m_pObject = null
-	}
-	m_pMeshGroupList = 
-	{
-		m_pObject = null
-	}
-	m_pLodGroupList = 
-	{
-		m_pObject = null
-	}
-	m_pPropBreakableList = 
-	{
-		m_pObject = null
-	}
-	m_pPropDataList = 
-	{
-		m_pObject = null
-	}
-	m_pConstraintLists = [  ]
-	m_collision = ""
-	m_softbody = ""
-	m_sMDLFilename = ""
-	m_sOffsetHitboxSets = [  ]
-	m_vHitboxSetOffset = [ 0.0, 0.0, 0.0 ]
-	m_scriptFiles = [  ]
-	m_pMaterialRemapList = 
-	{
-		m_vMaterialRemapList = 
-		[
-			{
-				m_sSearchMaterial = "t_chr_tentailscloneloser01_bc.vmat"
-				m_sReplaceMaterial = "materials/creep/strikerjuubicreep.vmat"
+						_class = "AnimFile"
+						name = "strikerjuubiranged_throw4"
+						activity_name = "ACT_DOTA_ATTACK2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/creeps/lane_creeps/creep_bad_ranged/strikerjuubiranged_throw4.smd"
+						start_frame = 0
+						end_frame = 30
+						framerate = 30.0
+						reverse = false
+					},
+				]
+				default_root_bone_name = ""
 			},
 		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		importer_notes = """
+Imported from VMDL
+"""
 	}
-	m_flFbxScale = 1.0
-	m_flQCScale = 1.0
-	m_vOrigin = [ 0.0, 0.0, 0.0 ]
-	m_bEmbedAnimsInAnimGroup = false
-	m_pPsfList = null
-	m_keyValueText = ""
-	m_bStaticProp = false
-	m_bEnableClothProcessing = true
-	m_flClothEnableThreshold = 0.05
-	m_nMaxClothVertsPerMesh = 2048
-	m_bBuildClothBoneHierarchy = false
-	m_nNavType = "AUTH_NAV_MESH"
-	m_bMakeUniqueVMeshes = false
-	m_bMakeImplicitBindPoseSequence = false
-	m_bAdjustSkeletonFromBoneFlags = false
-	m_bHiddenAssetFlag = false
-	m_pAnimGroups = [  ]
 }

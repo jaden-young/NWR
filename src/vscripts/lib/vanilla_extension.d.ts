@@ -6,6 +6,7 @@ declare global {
         FindTalentValue(talentName: string, key?: string): number;
         HighestTalentTypeValue(talentType: string): number;
         IsRoshan(): boolean;
+        HasShard(): boolean;
         // also overrides CreateIllusions
     }
     interface CDOTABaseAbility {

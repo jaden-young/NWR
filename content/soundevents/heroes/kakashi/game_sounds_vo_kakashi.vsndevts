@@ -10,7 +10,7 @@
             "sounds/heroes/kakashi/raikiri_cast_03.vsnd",
             "sounds/heroes/kakashi/raikiri_cast_04.vsnd",
 		]
-		volume = "2.000000"
+		volume = "1.200000"
 		pitch = "1.000000"
 	}
 
@@ -22,7 +22,7 @@
 			"sounds/heroes/kakashi/raikiri_impact_01.vsnd",
             "sounds/heroes/kakashi/raikiri_impact_02.vsnd",
 		]
-		volume = "2.000000"
+		volume = "1.200000"
 		pitch = "1.000000"
 	}
 }

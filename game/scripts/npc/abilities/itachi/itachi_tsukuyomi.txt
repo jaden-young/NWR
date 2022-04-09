@@ -1,0 +1,55 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Itachi: Tsukuyomi
+	//=================================================================================================================
+	"itachi_tsukuyomi"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/itachi/itachi_tsukuyomi.lua"
+		"AbilityTextureName"			"itachi_tsukuyomi"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"FightRecapLevel"				"2"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_6"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityChannelTime"			"3"
+		"AbilityCooldown"				"80 70 60"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"120 135 150"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_per_second"			"60 90 120"
+			"mana_drain"				"10"
+			"target_facing_mult"		"2"
+			"angle"						"105"
+			"abilitychanneltime"
+			{
+				"value"						""
+				"LinkedSpecialBonus"		"special_bonus_itachi_6"
+			}
+			"interval"					"0.5"
+		}
+	}
+}

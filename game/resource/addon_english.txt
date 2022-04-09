@@ -866,53 +866,75 @@
 		//--------------------
 		"npc_dota_hero_itachi"  										"Itachi"
 		"npc_dota_hero_itachi_lore"  									""
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu"				"<b><font color='#B5B5B5'>Dust Crow Genjutsu</font></b>"
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu_cd_reduc"		"CD REDUCTION (TALENT): "
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu_description"	"<b><font color='#B5B5B5'>Itachi instantly teleports</font></b> to the target point. <br><br> <b><font color='#B5B5B5'>A clone is placed</font></b> at his original location after teleporting, dealing reduced <b>Outgoing Damage</b>."
 
-		"DOTA_Tooltip_ability_itachi_tsukiyomi"							"<b><font color='#9C352C'>Tsukuyomi</font></b>"
-		"DOTA_Tooltip_ability_itachi_tsukiyomi_description"				"<b><font color='#9C352C'>Stuns and deals Magic Damage</font></b> to the target enemy unit. <br><br> The enemy will have their <b><font color='#9C352C'>Movement Speed Slowed for a short period</font></b> after the Stun duration."
+		//Anbu Training
+		"DOTA_Tooltip_Ability_itachi_innate_passive"						"Anbu Training"
+		"DOTA_Tooltip_Ability_itachi_innate_passive_Description"			"Itachi’s attack’s deal bonus magic damage based on his intelligence if hitting the enemy from behind"
+		"DOTA_Tooltip_Ability_itachi_innate_passive_damage_per_int"			"DAMAGE PER INTELLIGENCE:"
 
-		"DOTA_Tooltip_modifier_itachi_slow"						"<b><font color='#9C352C'>Tsukuyomi</font></b>"
-		"DOTA_Tooltip_modifier_itachi_slow_description"			"This Unit has decreased <b><font color='#9C352C'>Movement Speed.</font></b>"		
+		// Phoenix Sage Flame 
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame"						"Phoenix Sage Flame"
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_Description"			"Sends out a barrage of fire projectiles in a cone in front of Itachi dealing magic damage. Enemies hit by the projectiles receive a stacking debuff reducing magic resistance and movement speed. Units can only be affected by a maximum of %max_hits% projectiles."
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_lore"					"Katon: Hosenka no Jutsu"
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_damage_per_proj"		"DAMAGE PER HIT:"
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_magic_res_reduction"	"%MAGIC RESISTANCE PER HIT:"
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_move_slow"				"%MOVEMENT SLOW PER HIT:"
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_projectile_count"		"PROJECTILE COUNT:"
 
-		"DOTA_Tooltip_ability_itachi_sharingan"							"<b><font color='#E21C30'>Mangekyo Sharingan</font></b>"
-		"DOTA_Tooltip_ability_itachi_sharingan_description"				"Gives Itachi a chance to <b>Critical Strike</b> dealing bonus <b><font color='#E21C30'>Magic Damage based on his Attack Damage.</font></b> <br><br> Triggering this attack will also <b><font color='#E21C30'>reduce the target's Magic Resistance</font></b> for a short period of time."
+		"DOTA_Tooltip_modifier_itachi_phoenix_sage_flame"						"Phoenix Sage Flame"
+		"DOTA_Tooltip_modifier_itachi_phoenix_sage_flame_Description"			"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and magic resistance by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
 
-		"DOTA_Tooltip_modifier_itachi_sharingan_mr_reduce"						"<b><font color='#E21C30'>Mangekyo Sharingan</font></b>"
-		"DOTA_Tooltip_modifier_itachi_sharingan_mr_reduce_description"			"This Unit has decreased <b><font color='#E21C30'>Magic Resistance.</font></b>"	
+		// Ephemeral
+		"DOTA_Tooltip_ability_itachi_ephemeral"									"Ephemeral"
+		"DOTA_Tooltip_ability_itachi_ephemeral_Description"						"Blinks to the target point in a flock of crows. Enemies within the arrival area are silenced for a short duration."
+		"DOTA_Tooltip_ability_itachi_ephemeral_shard_Description"				"Causes enemies around a %shard_fear_radius% radius of Itachi’s initial position to be Feared for %shard_fear_duration% seconds."
+		"DOTA_Tooltip_ability_itachi_ephemeral_silence_duration"				"SILENCE DURATION:"
+		"DOTA_Tooltip_ability_itachi_ephemeral_radius"							"RADIUS:"
+
+		"DOTA_Tooltip_modifier_itachi_ephemeral"								"Ephemeral"
+		"DOTA_Tooltip_modifier_itachi_ephemeral_Description"					"Silenced."
+
+		// Crow Clone
+		"DOTA_Tooltip_ability_itachi_crow_clone"								"Crow Clone"
+		"DOTA_Tooltip_ability_itachi_crow_clone_Description"					"Itachi turns invisible and gains bonus movement speed while leaving behind a clone to confuse the enemy. The clone will die from the first instance of damage."
+		"DOTA_Tooltip_ability_itachi_crow_clone_lore"							"Karasu Bushin"
+		"DOTA_Tooltip_ability_itachi_crow_clone_shard_Description"				"Enemies around a %shard_fear_radius% radius of Crow Clone’s death are Feared for %shard_fear_duration% seconds."
+		"DOTA_Tooltip_ability_itachi_crow_clone_outgoing_damage"				"%CLONE DAMAGE:"
+		"DOTA_Tooltip_ability_itachi_crow_clone_clone_duration"					"CLONE DURATION:"
+		"DOTA_Tooltip_ability_itachi_crow_clone_bonus_move_speed"				"%BONUS MOVE SPEED:"
+		"DOTA_Tooltip_ability_itachi_crow_clone_invis_duration"					"INVISIBILITY DURATION:"
+
+		"DOTA_Tooltip_modifier_itachi_crow_clone"								"Crow Clone"
+		"DOTA_Tooltip_modifier_itachi_crow_clone_Description"					"Invisible, movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_itachi_crow_clone_illusion"						"Crow Clone"
+
+		// Amaterasu
+		"DOTA_Tooltip_ability_itachi_amaterasu"									"Amaterasu"
+		"DOTA_Tooltip_ability_itachi_amaterasu_Description"						"Itachi uses his right eye to consume a target area in black flames, dealing magic damage per second to enemies in the area. Enemies affected by Amaterasu are afflicted with a burn dealing magic damage over a long period of time."
+		"DOTA_Tooltip_ability_itachi_amaterasu_damage_per_second"				"DAMAGE INSIDE FLAMES:"
+		"DOTA_Tooltip_ability_itachi_amaterasu_burn_dps"						"DAMAGE OUTSIDE FLAMES:"
+		"DOTA_Tooltip_ability_itachi_amaterasu_duration"						"DURATION:"
+		"DOTA_Tooltip_ability_itachi_amaterasu_burn_duration"					"DEBUFF DURATION:"
+		"DOTA_Tooltip_ability_itachi_amaterasu_radius"							"RADIUS:"
+
+		"DOTA_Tooltip_modifier_itachi_amaterasu_burn"							"Amaterasu"
+		"DOTA_Tooltip_modifier_itachi_amaterasu_burn_Description"				"On fire!"
+
+		// Tsukuyomi
+		"DOTA_Tooltip_ability_itachi_tsukuyomi"									"Tsukuyomi"
+		"DOTA_Tooltip_ability_itachi_tsukuyomi_Description"						"Channelled - Itachi uses his left eye to place a target enemy unit into a genjutsu, dealing magic damage overtime and draining their mana based on the unit’s maximum mana. Damage and mana drain are doubled if the target is facing Itachi."
+		"DOTA_Tooltip_ability_itachi_tsukuyomi_damage_per_second"				"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_itachi_tsukuyomi_mana_drain"						"%MANA DRAIN:"
+		"DOTA_Tooltip_ability_itachi_tsukuyomi_abilitychanneltime"				"DURATION:"
+
+		"DOTA_Tooltip_modifier_itachi_tsukuyomi"								"Tsukuyomi"
+		"DOTA_Tooltip_modifier_itachi_tsukuyomi_Description"					"Disabled and taking damage. Losing %dMODIFIER_PROPERTY_TOOLTIP%%% of max mana per %fMODIFIER_PROPERTY_TOOLTIP2% seconds."
+
+		// Shard Fear (Might need to rename this if we have more fear abilities)
+		"DOTA_Tooltip_modifier_nevermore_necromastery_fear"						"Genjutsu Mastery"
 
 
-		"DOTA_Tooltip_ability_itachi_amateratsu"						"<b><font color='#9A86AC'>Amaterasu</font></b>"
-		"DOTA_Tooltip_ability_itachi_amateratsu_description"			"Ignites a target enemy dealing <b><font color='#9A86AC'>a large amount of Magic Damage over time.</font></b> <br><br> <b><font color='#B5B5B5'>The flame will spread</font></b> if an affected enemy comes close to their allies."
-
-		"DOTA_Tooltip_modifier_itachi_amateratsu"						"<b><font color='#9A86AC'>Amaterasu</font></b>"
-		"DOTA_Tooltip_modifier_itachi_amateratsu_description"			"This Unit is taking <b><font color='#9A86AC'>Damage over time</font></b> and will <b><font color='#9A86AC'>spread the fire</font></b> to nearby Allies."	
-
-
-		"DOTA_Tooltip_ability_itachi_tsukiyomi_damage"					"DAMAGE: "
-		"DOTA_Tooltip_ability_itachi_tsukiyomi_slow_percent"			"%MOVEMENT SLOW: "
-		"DOTA_Tooltip_ability_itachi_tsukiyomi_slow_duration"			"MOVEMENT SLOW DURATION: "
-		"DOTA_Tooltip_ability_itachi_tsukiyomi_duration"			"STUN DURATION: "
-		"DOTA_Tooltip_ability_itachi_tsukiyomi_cd_reduc"				"CD REDUCTION (TALENT): "
-
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu_blink_range"			"RANGE: "
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu_illusion_duration"		"BUNSHIN DURATION: "
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu_illusion_outgoing_damage"	"%CLONE OUTGOING DAMAGE:"
-		"DOTA_Tooltip_ability_itachi_dust_crow_genjustsu_illusion_incoming_damage"	"%CLONE INCOMING DAMAGE:"
-
-
-		"DOTA_Tooltip_ability_itachi_sharingan_chance"			"%CRITICAL CHANCE: "
-		"DOTA_Tooltip_ability_itachi_sharingan_crit_bonus"			"%CRITICAL DAMAGE: "
-		"DOTA_Tooltip_ability_itachi_sharingan_duration"		"DEBUFF DURATION: "
-		"DOTA_Tooltip_ability_itachi_sharingan_mr_reduction"	"MAGIC RESISTANCE REDUCTION: "
-
-
-
-		"DOTA_Tooltip_ability_itachi_amateratsu_damage_factor"			"DAMAGE FACTOR: "
-		"DOTA_Tooltip_ability_itachi_amateratsu_damage"					"DAMAGE PER SECOND: "
-		"DOTA_Tooltip_ability_itachi_amateratsu_duration"				"DURATION: "
-		"DOTA_Tooltip_ability_itachi_amateratsu_spread_aoe"				"SPREAD RADIUS: "
 
 		//--------------------
 		//Sasuke
@@ -984,7 +1006,7 @@
 		"DOTA_Tooltip_ability_kakashi_innate_passive_spell_amp_per_int"				"%SPELL AMPLIFICATION PER INT:"
 
 		// Lightning Blade (Raikiri)
-		"DOTA_Tooltip_ability_kakashi_lightning_blade"								"Lightning Blade - Raikiri"
+		"DOTA_Tooltip_ability_kakashi_lightning_blade"								"Raikiri"
 		"DOTA_Tooltip_ability_kakashi_lightning_blade_Description"					"After a short cast time, Kakashi charges towards a target unit. Upon reaching the target, Raikiri deals magic damage, stuns the enemy unit."
 		"DOTA_Tooltip_ability_kakashi_lightning_blade_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_kakashi_lightning_blade_stun_duration"				"STUN DURATION:"
@@ -1005,16 +1027,17 @@
 		"DOTA_Tooltip_modifier_kakashi_sharingan_Description"						"Has copied a spell."
 
 		// Lightning Release: Shadow Clone Technique
-		"DOTA_Tooltip_ability_kakashi_lightning_release"							"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_ability_kakashi_lightning_release"							"Lightning Release: Shadow Clone"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_Description"				"For a short duration the next source of damage dealt by a hero is negated. If triggered, Kakashi receives a Basic Dispel and becomes invisible. Additionally, all enemies around Kakashi are rooted and take magic damage."
+		"DOTA_Tooltip_ability_kakashi_lightning_release_lore"						"Raiton: Kage Bunshin"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_Note0"						"Lightning Release will only trigger on damage from other player controlled units."
 		"DOTA_Tooltip_ability_kakashi_lightning_release_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_active_duration"			"TRIGGER WINDOW:"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_root_duration"				"ROOT DURATION:"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_invis_duration"				"INVISIBILITY DURATION:"
 
-		"DOTA_Tooltip_modifier_kakashi_lightning_release"							"Lightning Release: Shadow Clone Technique"
-		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility"				"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release"							"Lightning Release: Shadow Clone"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility"				"Lightning Release: Shadow Clone"
 		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility_Description"	"Invisible"
 		"DOTA_Tooltip_modifier_kakashi_lightning_release_root"						"Rooted"
 		"DOTA_Tooltip_modifier_kakashi_lightning_release_root_Description"			"Rooted by Kakashi's Lightning Release"
@@ -1036,9 +1059,9 @@
 		"DOTA_Tooltip_modifier_kakashi_kamui_break"									"Kamui - Break"
 		"DOTA_Tooltip_modifier_kakashi_kamui_break_Description"						"Passives are disabled. Your position is revealed."
 
-		// Earth Release: Mud Wall (Shard Ability)
 		"DOTA_Tooltip_ability_kakashi_earth_release"								"Earth Release: Mud Wall"
 		"DOTA_Tooltip_ability_kakashi_earth_release_Description"					"Creates a wall of impassable terrain for a short duration. Enemies near the wall upon creation take Magic Damage and are briefly stunned."
+		"DOTA_Tooltip_ability_kakashi_earth_release_lore"							"Doton: Doryuheki"
 		"DOTA_Tooltip_ability_kakashi_earth_release_damage"							"DAMAGE:"
 		"DOTA_Tooltip_ability_kakashi_earth_release_duration"						"DURATION:"
 		"DOTA_Tooltip_ability_kakashi_earth_release_stun_duration"					"STUN DURATION:"
@@ -2438,14 +2461,21 @@
 		"DOTA_Tooltip_Ability_special_bonus_sasuke_5"						"+225 Chidori Stream Radius"
 
 
-		//25: +1.50s Tsukyomi Stun / +225 Amateratsu Spread AOE
-		//20: +20 Agility / -3s Crow Genjutsu Cooldown
-		//15: +2.5s Tskuyomi Slow Duration / +20 Attack Speed
-		//10: +20 Movement Speed / +1.75 Mana Regen
-		"DOTA_Tooltip_Ability_special_bonus_itachi_1"						"+2.5s Tskuyomi Slow Duration"
-		"DOTA_Tooltip_Ability_special_bonus_itachi_2"						"+10s Crow Genjutsu Clone Duration"
-		"DOTA_Tooltip_Ability_special_bonus_itachi_3"						"+1.50s Tsukyomi Stun"
-		"DOTA_Tooltip_Ability_special_bonus_itachi_4"						"+225 Amateratsu Spread AOE"
+		//=================================================================================================================
+		// Itachi Talent Tree
+		//=================================================================================================================	
+		//25: +60 Amaterasu Damage per Second 	/ 	+3s Tsukuyomi Duration
+		//20: +0.5 ANBU Multiplier 				/ 	+12% Spell Amplification
+		//15: +10% Crow Clone Movement Speed	/  	+1.25s Ephemeral Silence
+		//10: -1s Ephemeral Cooldown 			/ 	+5% Phoenix Fire Resistance Reduction
+
+		"DOTA_Tooltip_Ability_special_bonus_itachi_1"						"+{s:value}% Phoenix Fire Resistance Reduction"
+		"DOTA_Tooltip_Ability_special_bonus_itachi_2"						"-{s:value}s Ephemeral Cooldown"
+		"DOTA_Tooltip_Ability_special_bonus_itachi_3"						"+{s:value}s Ephemeral Silence"
+		"DOTA_Tooltip_Ability_special_bonus_itachi_4"						"+{s:value}% Crow Clone Movement Speed"
+		"DOTA_Tooltip_Ability_special_bonus_itachi_5"						"+{s:value} ANBU Multiplier"
+		"DOTA_Tooltip_Ability_special_bonus_itachi_6"						"+{s:value}s Tsukuyomi Duration"
+		"DOTA_Tooltip_Ability_special_bonus_itachi_7"						"+{s:value} Amaterasu Damage per Second"
 
 
 		//25: +170 Water Needles Damage / +18 Ice Mirror Damage

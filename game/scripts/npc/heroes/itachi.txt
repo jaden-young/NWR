@@ -1,121 +1,132 @@
 "DOTAAbilities"
 {
-	//25: +1.50s Tsukyomi Stun / +225 Amaterasu Spread AOE
-	//20: +20 Agility / -3s Crow Genjutsu Cooldown
-	//15: +2.5s Tskuyomi Slow Duration / +20 Attack Speed
-	//10: +20 Movement Speed / +1.75 Mana Regen
+	//=================================================================================================================
+	// Itachi Talent Tree
+	//=================================================================================================================	
+	//25: +60 Amaterasu Damage per Second 	/ 	+3s Tsukuyomi Duration
+	//20: +0.5 ANBU Multiplier 				/ 	+12% Spell Amplification
+	//15: +10% Crow Clone Movement Speed	/  	+1.25s Ephemeral Silence
+	//10: -1s Ephemeral Cooldown 			/ 	+5% Phoenix Fire Resistance Reduction
 
-	"npc_dota_hero_itachi" 
+
+	//=================================================================================================================
+	// Itachi
+	//=================================================================================================================	
+	"npc_dota_hero_itachi"
     {
+		// General
+		//----------------------------------------------------------------
 		"HeroID"					"205"
-
-        "BaseClass"			"npc_dota_hero_antimage"
-		"Model"					"models/striker_itachi/striker_itachi_base.vmdl"
-		"ModelScale"		"1"
-	    "LoadoutScale"		"0.73"
+        "BaseClass"					"npc_dota_hero_antimage"
+		"Model"						"models/striker_itachi/striker_itachi_base.vmdl"
+		"ModelScale"				"1"
+	    "LoadoutScale"				"0.73"
 		"SpectatorLoadoutScale" 	"0.85"
 		"VersusScale"				"0.85"
-	
-		"SoundSet"					"ChakraPunch"
-		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
-		"particle_folder"			"particles/hero/sohei"  //for the future, i think
-		"GibType"					"default"
-
-		//Picking Screen
 		"IsCustom"					"1"
+		"HasInventory"				"1" // This KV is required for units file only
 
-		"Role"			"Carry,Escape,Nuker"
-		"Rolelevels"	"3,3,1"
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"				"itachi_phoenix_sage_flame"		// Ability 1
+		"Ability2"				"itachi_ephemeral"				// Ability 2
+		"Ability3"				"itachi_crow_clone"				// Ability 3
+		"Ability4"				"generic_hidden"
+		"Ability5"				"itachi_amaterasu"				// Ultimate 1
+		"Ability6"				"itachi_tsukuyomi"				// Ultimate 2
+		"Ability7"				"itachi_innate_passive"			// Innate
 
-		"Complexity"	"2"
+		// Talents
+		//----------------------------------------------------------------
+		"Ability10"				"special_bonus_itachi_1"
+		"Ability11"				"special_bonus_itachi_2"
+		"Ability12"				"special_bonus_itachi_3"
+		"Ability13"				"special_bonus_itachi_4"
+		"Ability14"				"special_bonus_spell_amplify_12"
+		"Ability15"				"special_bonus_itachi_5"
+		"Ability16"				"special_bonus_itachi_6"
+		"Ability17"				"special_bonus_itachi_7"
 
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
-		"MovementTurnRate"			"1.5"
-		"MovementSpeed"				"305"
-		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"1"
+		"MagicalResistance"			"25"
 
-		"AttackDamageMin"			"32"
-		"AttackDamageMax"			"34"
-		"AttackRange"				"100"
-		"AttackRate"				"1.7"
-		"AttackAnimationPoint"		"0.4"
-
-		"AttackSpeedActivityModifiers"
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"			"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"				"25"		// Damage range min.
+		"AttackDamageMax"				"29"		// Damage range max.
+		"AttackRate"					"1.7"		// Speed of attack.
+		"AttackAnimationPoint"			"0.4"		// Normalized time in animation cycle to attack.
+		"AttackRange"					"150"		// Range within a target can be attacked.
+		"AttackSpeedActivityModifiers"				// Attack Speed activities.
 		{
 			"fast"		"170"
 			"faster"	"275"
 			"fastest"	"350"
 		}
 
-		"ArmorPhysical"				"1"
-		"MagicalResistance"			"25"
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"				"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength" 		"18" 		// Base strength
+		"AttributeStrengthGain"			"1.8" 		// Strength bonus per level.
+		"AttributeBaseIntelligence" 	"22" 		// Base intelligence
+		"AttributeIntelligenceGain" 	"3.4" 		// Intelligence bonus per level.
+		"AttributeBaseAgility" 			"20" 		// Base agility
+		"AttributeAgilityGain" 			"2.0" 		// Agility bonus per level.
 
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"		// Type of locomotion - ground, air
+		"MovementSpeed"				"310"			// Speed
+		"MovementTurnRate"			"1.5"			// Turning rate
+		
+		// Status
+		//----------------------------------------------------------------
 		"StatusHealth"				"145"
 		"StatusHealthRegen"			"0.3"
 		"StatusManaRegen"			"0.9"
 		"StatusMana"				"75"
 
-		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
-		"AttributeBaseStrength" "21" // Base strength
-		"AttributeStrengthGain" "2.2" // Strength bonus per level.
-		"AttributeBaseIntelligence" "17" // Base intelligence
-		"AttributeIntelligenceGain" "2.0" // Intelligence bonus per level.
-		"AttributeBaseAgility" "22" // Base agility
-		"AttributeAgilityGain" "2.8" // Agility bonus per level.
+		// FX
+		//----------------------------------------------------------------
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
+		//"particle_folder"			"particles/hero/sohei"  //for the future, i think
+		"GibType"					"default"
+		
+		// Role
+		//----------------------------------------------------------------
+		"Role"						"Carry,Escape,Nuker"
+		"Rolelevels"				"3,3,1"
+		"Complexity"				"2"	
 
-		"Ability1"				"itachi_tsukiyomi"
-	        "Ability2"				"itachi_dust_crow_genjustsu"
-	        "Ability3"				"itachi_sharingan"
-	        "Ability4"				"generic_hidden"
-	        "Ability5"				"generic_hidden"
-	        "Ability6"				"itachi_amateratsu"
-
-		"Ability10"		"special_bonus_movement_speed_20"
-	        "Ability11"		"special_bonus_mp_regen_175"
-	        "Ability12"		"special_bonus_attack_speed_20"
-	        "Ability13"		"special_bonus_itachi_1"
-	        "Ability14"		"special_bonus_agility_20"
-	        "Ability15"		"special_bonus_itachi_2"
-	        "Ability16"		"special_bonus_itachi_3"
-	        "Ability17"		"special_bonus_itachi_4"
-
+		// Class
+		//----------------------------------------------------------------
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
-		"HasInventory"				"1" // This KV is required for units file only
 
-		"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
-		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"			// Range of vision during day light.
+		"VisionNighttimeRange"		"800"			// Range of vision at night time.
 
 		// Custom KV's
-		"Village"			"konoha_scarred"
-		"Gender"			"male"
-
-		"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
-		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
-
-		"HasInventory"				"1" // This KV is required for units file only
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
-
-		"AttackSpeedActivityModifiers"
-		{
-			"fast"		"170"
-			"faster"	"275"
-			"fastest"	"350"
-		}
-
+		//----------------------------------------------------------------
+		"Village"					"konoha_scarred"
+		"Gender"					"male"		
     }
 
-	  "npc_dota_hero_antimage" 
+	"npc_dota_hero_antimage" 
 	{
-		  	"override_hero"   "npc_dota_hero_antimage"
-		   	"Model"					"models/itachi_new/itachi.vmdl"
-			"ModelScale"		"0.85"
-	    	"LoadoutScale"		"0.73"
+		  	"override_hero"   			"npc_dota_hero_antimage"
+		   	"Model"						"models/itachi_new/itachi.vmdl"
+			"ModelScale"				"0.85"
+	    	"LoadoutScale"				"0.73"
 			"SpectatorLoadoutScale" 	"0.85"
 			"VersusScale"				"0.85"
 	}
-
 }

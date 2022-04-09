@@ -669,7 +669,7 @@
 						source_filename = "models/striker_temari/striker_temari_run.smd"
 						start_frame = 0
 						end_frame = 11
-						framerate = 30.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
@@ -691,6 +691,74 @@
 						end_frame = 183
 						framerate = 30.0
 						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_temari_attack2_copy"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_temari/striker_temari_attack2.smd"
+						start_frame = 0
+						end_frame = 40
+						framerate = 10.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_temari_attack_copy"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_temari/striker_temari_attack.smd"
+						start_frame = 0
+						end_frame = 32
+						framerate = -1.0
+						reverse = true
 					},
 				]
 				default_root_bone_name = ""
@@ -758,8 +826,17 @@
 					{
 						_class = "Attachment"
 						name = "attach_attack1"
-						parent_bone = "bone01"
-						relative_origin = [ 55.235641, 7.277657, 90.845169 ]
+						parent_bone = "righthand"
+						relative_origin = [ 20.761734, 6.069443, -8.018417 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_attack2"
+						parent_bone = "lefthand"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false

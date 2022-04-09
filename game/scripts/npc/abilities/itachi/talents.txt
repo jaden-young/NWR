@@ -1,13 +1,19 @@
 "DOTAAbilities"
 {
+    
 	//=================================================================================================================
-	// Itachi Special Bonus
+	// Itachi Talent Tree
+	//=================================================================================================================	
+	//25: +60 Amaterasu Damage per Second 	/ 	+3s Tsukuyomi Duration
+	//20: +0.5 ANBU Multiplier 				/ 	+12% Spell Amplification
+	//15: +10% Crow Clone Movement Speed	/  	+1.25s Ephemeral Silence
+	//10: -1s Ephemeral Cooldown 			/ 	+5% Phoenix Fire Resistance Reduction
+
+
 	//=================================================================================================================
-	//25: +1.50s Tsukyomi Stun / +225 Amaterasu Spread AOE
-	//20: +20 Agility / -3s Crow Genjutsu Cooldown
-	//15: +2.5s Tskuyomi Slow Duration / +20 Attack Speed
-	//10: +20 Movement Speed / +1.75 Mana Regen
-	"special_bonus_itachi_1"	
+	// Itachi Special Bonus: +5% Phoenix Fire Resistance Reduction
+	//=================================================================================================================	
+	"special_bonus_itachi_1"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -15,49 +21,22 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"itachi_tsukiyomi"
-		}
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"2.5"
-			}
-		}
-	}
-	
-	"special_bonus_itachi_2"	
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"						"special_bonus_undefined"
-		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"LinkedAbility"
-		{
-			"01" 	"itachi_dust_crow_genjustsu"
-		}
-
-		// Special
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"10"
+				"var_type"					"FIELD_INTEGER"
+				"value"						"5"
 			}
 		}
 	}
 
-	"special_bonus_itachi_3"	
+	//=================================================================================================================
+	// Itachi Special Bonus: -1s Ephemeral Cooldown
+	//=================================================================================================================	
+	"special_bonus_itachi_2"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -65,24 +44,22 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"itachi_tsukiyomi"
-		}
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"1.5"
+				"var_type"					"FIELD_INTEGER"
+				"value"						"1"
 			}
 		}
 	}
-	
-	"special_bonus_itachi_4"	
+
+	//=================================================================================================================
+	// Itachi Special Bonus: +1.25s Ephemeral Silence
+	//=================================================================================================================	
+	"special_bonus_itachi_3"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -90,10 +67,28 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
 		{
-			"01" 	"itachi_amateratsu"
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"1.25"
+			}
 		}
+	}
+
+	//=================================================================================================================
+	// Itachi Special Bonus: +10% Crow Clone Movement Speed
+	//=================================================================================================================	
+	"special_bonus_itachi_4"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -101,8 +96,77 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"225"
+				"var_type"					"FIELD_INTEGER"
+				"value"						"10"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Itachi Special Bonus: +0.5 ANBU Multiplier
+	//=================================================================================================================	
+	"special_bonus_itachi_5"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"value"						"0.5"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Itachi Special Bonus: +3s Tsukuyomi Duration
+	//=================================================================================================================	
+	"special_bonus_itachi_6"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"3"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Itachi Special Bonus: +60 Amaterasu Damage per Second
+	//=================================================================================================================	
+	"special_bonus_itachi_7"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"60"
 			}
 		}
 	}

@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Itachi: Ephemeral
+	//=================================================================================================================
+	"itachi_ephemeral"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/itachi/itachi_ephemeral.lua"
+		"AbilityTextureName"			"itachi_ephemeral"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+
+		"HasShardUpgrade"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"675 750 825 900"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"21 18 15 12"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"90"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"silence_duration"			
+			{	
+				"value"						"1.0 1.5 2.0 2.5"
+				"LinkedSpecialBonus"		"special_bonus_itachi_3"
+			}
+			"radius"					"300"
+			"shard_fear_duration"
+			{
+				"value"						"1.5"
+				"RequiresShard"				"1"
+			}
+			"shard_fear_radius"
+			{
+				"value"						"325"
+				"RequiresShard"				"1"
+			}
+		}
+	}
+}
