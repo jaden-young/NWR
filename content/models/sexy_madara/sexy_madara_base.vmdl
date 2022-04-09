@@ -1398,7 +1398,7 @@
 						source_filename = "models/sexy_madara/flame.fbx"
 						start_frame = 0
 						end_frame = 80
-						framerate = 88.0
+						framerate = 84.0
 						reverse = false
 					},
 					{

@@ -92,8 +92,8 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 39.308777, -0.919158, 146.362946 ]
-						relative_angles = [ -16.127878, -179.999756, -0.000127 ]
+						relative_origin = [ 39.394909, -15.843319, 159.410599 ]
+						relative_angles = [ 0.0, 159.484543, -0.198621 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -137,7 +137,7 @@
 						disable_compression = false
 						source_filename = "models/striker_itachi/striker_itachi_amaterasu.smd"
 						start_frame = 0
-						end_frame = 123
+						end_frame = 112
 						framerate = 85.0
 						reverse = false
 					},
@@ -226,7 +226,7 @@
 						source_filename = "models/striker_itachi/striker_itachi_flamecontrol.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 40.0
 						reverse = false
 					},
 					{
@@ -284,9 +284,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_itachi/striker_itachi_kick.smd"
-						start_frame = -1
+						start_frame = 5
 						end_frame = -1
-						framerate = -1.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -306,13 +306,13 @@
 						source_filename = "models/striker_itachi/striker_itachi_phoenixflower1.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 60.0
+						framerate = 42.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_phoenixflower2"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -332,8 +332,8 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_punch"
-						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 1
+						activity_name = ""
+						activity_weight = 20
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -346,7 +346,7 @@
 						source_filename = "models/striker_itachi/striker_itachi_punch.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 16.0
 						reverse = false
 					},
 					{
@@ -366,13 +366,13 @@
 						source_filename = "models/striker_itachi/striker_itachi_punch2.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_punch3"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2

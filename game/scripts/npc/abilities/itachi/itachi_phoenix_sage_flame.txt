@@ -22,7 +22,7 @@
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.2"
+		"AbilityCastPoint"				"0.5"
 		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
 
 		// Time
@@ -37,7 +37,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage_per_proj"			"35 55 75 95"
+			"damage_per_proj"			"40 60 80 100"
 			"magic_res_reduction"
 			{	
 				"value"						"3 4 5 6"

@@ -3,13 +3,38 @@
     Hero_Itachi.PhoenixSageFlame.Cast = 
 	{
 		type = "dota_update_default"
-		volume = 0.500000
+		volume = 0.700000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		pitch = 1.000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/dragon_knight/fireball_cast.vsnd"
+		vsnd_files = "sounds/heroes/itachi/phoenix_fire.vsnd"
+
+	}
+
+    Hero_Itachi.PhoenixSageFlame.Hit = 
+	{
+		type = "dota_update_default"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/itachi/phoenix_hit.vsnd"
+	}
+
+    Hero_Itachi.PhoenixSageFlame.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/itachi/phoenix_impact.vsnd"
 	}
 
     Hero_Itachi.Ephemeral.Cast = 
@@ -22,7 +47,11 @@
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
         spread_radius = 0.000000
-		vsnd_files = "sounds/heroes/itachi/itachi_ephemeral.vsnd"
+		vsnd_files = 
+		[
+			"sounds/heroes/itachi/itachi_ephemeral_01.vsnd",
+			"sounds/heroes/itachi/itachi_ephemeral_02.vsnd",
+		]
 	}
 
     Hero_Itachi.CrowClone.Death = 
@@ -70,10 +99,58 @@
 		volume = 1.500000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
-		pitch = 1.000000
+		pitch = 0.900000
 		soundlevel = 81.000000
 		limiter_on = 0.000000
 		vsnd_files = "sounds/heroes/itachi/itachi_tsukyomi.vsnd"
 	}
+
+	Hero_Itachi.Tsukuyomi.Cast = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.200000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 0.750000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/heroes/itachi/tsukyomi_cast.vsnd"
+	}
 	
+	Hero_Itachi.Amaterasu.Build = 
+	{
+		type = "dota_src1_3d"
+		volume = 3.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/heroes/itachi/amaterasu_build.vsnd"
+	}
+
+		Hero_Itachi.Amaterasu.Fire = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/heroes/itachi/amaterasu_fire.vsnd"
+	}
+
+	Hero_Itachi.Amaterasu.BurnLayer = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.200000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/heroes/itachi/amaterasu_burn.vsnd"
+	}
+
 }

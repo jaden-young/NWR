@@ -10,8 +10,16 @@ export class itachi_phoenix_sage_flame extends BaseAbility
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle", "particles/units/heroes/itachi/itachi_phoenix_sage_flame.vpcf", context);
         PrecacheResource("particle", "particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", context);
+        PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_vo_itachi.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_itachi.vsndevts", context);
         //PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_vo_kakashi.vsndevts", context);
+    }
+
+    /****************************************/
+
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("VO_Hero_Itachi.PhoenixSageFlame.Talk", this.GetCaster());
+        return true
     }
 
     /****************************************/
@@ -64,6 +72,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
         if (modifier && modifier.GetStackCount() >= max_hits) return false;
 
         target.AddNewModifier(this.GetCaster(), this, "modifier_itachi_phoenix_sage_flame", {duration: duration});
+        EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Hit", target);
     }
 }
 

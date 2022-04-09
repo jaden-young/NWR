@@ -872,16 +872,17 @@
 		"DOTA_Tooltip_Ability_itachi_innate_passive_Description"			"Itachi’s attack’s deal bonus magic damage based on his intelligence if hitting the enemy from behind"
 		"DOTA_Tooltip_Ability_itachi_innate_passive_damage_per_int"			"DAMAGE PER INTELLIGENCE:"
 
-		// Phoenix Sage Flame (Katon: Hosenka no Jutsu)
-		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame"						"Phoenix Sage Flame (Katon: Hosenka no Jutsu)"
+		// Phoenix Sage Flame 
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame"						"Phoenix Sage Flame"
 		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_Description"			"Sends out a barrage of fire projectiles in a cone in front of Itachi dealing magic damage. Enemies hit by the projectiles receive a stacking debuff reducing magic resistance and movement speed. Units can only be affected by a maximum of %max_hits% projectiles."
+		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_lore"					"Katon: Hosenka no Jutsu"
 		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_damage_per_proj"		"DAMAGE PER HIT:"
 		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_magic_res_reduction"	"%MAGIC RESISTANCE PER HIT:"
 		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_move_slow"				"%MOVEMENT SLOW PER HIT:"
 		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_duration"				"DURATION:"
 		"DOTA_Tooltip_ability_itachi_phoenix_sage_flame_projectile_count"		"PROJECTILE COUNT:"
 
-		"DOTA_Tooltip_modifier_itachi_phoenix_sage_flame"						"Phoenix Sage Flame (Katon: Hosenka no Jutsu)"
+		"DOTA_Tooltip_modifier_itachi_phoenix_sage_flame"						"Phoenix Sage Flame"
 		"DOTA_Tooltip_modifier_itachi_phoenix_sage_flame_Description"			"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, and magic resistance by %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%%."
 
 		// Ephemeral
@@ -894,9 +895,10 @@
 		"DOTA_Tooltip_modifier_itachi_ephemeral"								"Ephemeral"
 		"DOTA_Tooltip_modifier_itachi_ephemeral_Description"					"Silenced."
 
-		// Crow Clone (Karasu Bushin)
-		"DOTA_Tooltip_ability_itachi_crow_clone"								"Crow Clone (Karasu Bushin)"
+		// Crow Clone
+		"DOTA_Tooltip_ability_itachi_crow_clone"								"Crow Clone"
 		"DOTA_Tooltip_ability_itachi_crow_clone_Description"					"Itachi turns invisible and gains bonus movement speed while leaving behind a clone to confuse the enemy. The clone will die from the first instance of damage."
+		"DOTA_Tooltip_ability_itachi_crow_clone_lore"							"Karasu Bushin"
 		"DOTA_Tooltip_ability_itachi_crow_clone_shard_Description"				"Enemies around a %shard_fear_radius% radius of Crow Clone’s death are Feared for %shard_fear_duration% seconds."
 		"DOTA_Tooltip_ability_itachi_crow_clone_outgoing_damage"				"%CLONE DAMAGE:"
 		"DOTA_Tooltip_ability_itachi_crow_clone_clone_duration"					"CLONE DURATION:"
@@ -1004,7 +1006,7 @@
 		"DOTA_Tooltip_ability_kakashi_innate_passive_spell_amp_per_int"				"%SPELL AMPLIFICATION PER INT:"
 
 		// Lightning Blade (Raikiri)
-		"DOTA_Tooltip_ability_kakashi_lightning_blade"								"Lightning Blade - Raikiri"
+		"DOTA_Tooltip_ability_kakashi_lightning_blade"								"Raikiri"
 		"DOTA_Tooltip_ability_kakashi_lightning_blade_Description"					"After a short cast time, Kakashi charges towards a target unit. Upon reaching the target, Raikiri deals magic damage, stuns the enemy unit."
 		"DOTA_Tooltip_ability_kakashi_lightning_blade_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_kakashi_lightning_blade_stun_duration"				"STUN DURATION:"
@@ -1025,16 +1027,17 @@
 		"DOTA_Tooltip_modifier_kakashi_sharingan_Description"						"Has copied a spell."
 
 		// Lightning Release: Shadow Clone Technique
-		"DOTA_Tooltip_ability_kakashi_lightning_release"							"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_ability_kakashi_lightning_release"							"Lightning Release: Shadow Clone"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_Description"				"For a short duration the next source of damage dealt by a hero is negated. If triggered, Kakashi receives a Basic Dispel and becomes invisible. Additionally, all enemies around Kakashi are rooted and take magic damage."
+		"DOTA_Tooltip_ability_kakashi_lightning_release_lore"						"Raiton: Kage Bunshin"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_Note0"						"Lightning Release will only trigger on damage from other player controlled units."
 		"DOTA_Tooltip_ability_kakashi_lightning_release_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_active_duration"			"TRIGGER WINDOW:"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_root_duration"				"ROOT DURATION:"
 		"DOTA_Tooltip_ability_kakashi_lightning_release_invis_duration"				"INVISIBILITY DURATION:"
 
-		"DOTA_Tooltip_modifier_kakashi_lightning_release"							"Lightning Release: Shadow Clone Technique"
-		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility"				"Lightning Release: Shadow Clone Technique"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release"							"Lightning Release: Shadow Clone"
+		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility"				"Lightning Release: Shadow Clone"
 		"DOTA_Tooltip_modifier_kakashi_lightning_release_invisibility_Description"	"Invisible"
 		"DOTA_Tooltip_modifier_kakashi_lightning_release_root"						"Rooted"
 		"DOTA_Tooltip_modifier_kakashi_lightning_release_root_Description"			"Rooted by Kakashi's Lightning Release"
@@ -1056,9 +1059,9 @@
 		"DOTA_Tooltip_modifier_kakashi_kamui_break"									"Kamui - Break"
 		"DOTA_Tooltip_modifier_kakashi_kamui_break_Description"						"Passives are disabled. Your position is revealed."
 
-		// Earth Release: Mud Wall (Shard Ability)
 		"DOTA_Tooltip_ability_kakashi_earth_release"								"Earth Release: Mud Wall"
 		"DOTA_Tooltip_ability_kakashi_earth_release_Description"					"Creates a wall of impassable terrain for a short duration. Enemies near the wall upon creation take Magic Damage and are briefly stunned."
+		"DOTA_Tooltip_ability_kakashi_earth_release_lore"							"Doton: Doryuheki"
 		"DOTA_Tooltip_ability_kakashi_earth_release_damage"							"DAMAGE:"
 		"DOTA_Tooltip_ability_kakashi_earth_release_duration"						"DURATION:"
 		"DOTA_Tooltip_ability_kakashi_earth_release_stun_duration"					"STUN DURATION:"

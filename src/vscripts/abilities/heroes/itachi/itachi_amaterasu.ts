@@ -17,6 +17,14 @@ export class itachi_amaterasu extends BaseAbility
 
     /****************************************/
 
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("VO_Hero_Itachi.Amaterasu.Cast", this.GetCaster());
+        EmitSoundOn("Hero_Itachi.Amaterasu.Build", this.GetCaster());
+        return true
+    }
+
+    /****************************************/
+   
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let position = this.GetCursorPosition();
@@ -24,7 +32,7 @@ export class itachi_amaterasu extends BaseAbility
 
         CreateModifierThinker(caster, this, "modifier_itachi_amaterasu", {duration: duration}, position, caster.GetTeamNumber(), false);
 
-        EmitSoundOn("VO_Hero_Itachi.Amaterasu.Cast", caster);
+        EmitSoundOn("Hero_Itachi.Amaterasu.Fire", caster);
     }
 }
 
@@ -129,6 +137,7 @@ export class modifier_itachi_amaterasu_burn extends BaseModifier
         this.damage_table!.damage = this.IsInsideFlames() ? this.high_damage! : this.low_damage!;
         ApplyDamage(this.damage_table!);
         SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, this.GetParent(), this.damage_table!.damage, undefined);
+        EmitSoundOn("Hero_Itachi.Amaterasu.BurnLayer", this.GetParent());
     }
 
     /****************************************/

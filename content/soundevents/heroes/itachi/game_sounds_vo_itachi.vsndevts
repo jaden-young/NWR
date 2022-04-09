@@ -19,9 +19,22 @@
 		[
 			"sounds/heroes/itachi/tsukyomi_01.vsnd",
             "sounds/heroes/itachi/tsukyomi_02.vsnd",
-			"sounds/heroes/itachi/tsukyomi_03.vsnd"
 		]
 		volume = "2.000000"
 		pitch = "1.000000"
 	}
+
+	VO_Hero_Itachi.PhoenixSageFlame.Talk = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/itachi/phoenix_talk_01.vsnd",
+            "sounds/heroes/itachi/phoenix_talk_02.vsnd",
+			"sounds/heroes/itachi/phoenix_talk_03.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}
 }
+

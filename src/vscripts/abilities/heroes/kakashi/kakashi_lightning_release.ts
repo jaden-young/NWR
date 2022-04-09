@@ -4,9 +4,9 @@ import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "..
 export class kakashi_lightning_release extends BaseAbility {
 
     Precache(context: CScriptPrecacheContext): void{
-        PrecacheResource("particle",  "particles/heroes/kakashi/lightning_cloneactive.vpcf", context);
-        PrecacheResource("particle",  "particles/heroes/kakashi/bunshin_zapped_root.vpcf", context);
-        PrecacheResource("particle",  "particles/heroes/kakashi/bunshin_counter_active.vpcf", context);
+        PrecacheResource("particle",  "particles/units/heroes/kakashi/lightning_cloneactive.vpcf", context);
+        PrecacheResource("particle",  "particles/units/heroes/kakashi/bunshin_zapped_root.vpcf", context);
+        PrecacheResource("particle",  "particles/units/heroes/kakashi/bunshin_counter_active.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_kakashi.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_vo_kakashi.vsndevts", context);
     }
@@ -69,7 +69,7 @@ export class modifier_kakashi_lightning_release extends BaseModifier
     /****************************************/
 
     GetEffectName(): string {
-        return "particles/heroes/kakashi/bunshin_counter_active.vpcf";
+        return "particles/units/heroes/kakashi/bunshin_counter_active.vpcf";
     }
 
     /****************************************/
@@ -93,7 +93,7 @@ export class modifier_kakashi_lightning_release extends BaseModifier
         unit.AddNewModifier(unit, ability, "modifier_kakashi_lightning_release_invisibility", {duration: this.invis_duration});
         
         EmitSoundOn("Hero_Kakashi.LightningRelease.Proc", unit);
-        let release_fx = ParticleManager.CreateParticle("particles/heroes/kakashi/lightning_cloneactive.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
+        let release_fx = ParticleManager.CreateParticle("particles/units/heroes/kakashi/lightning_cloneactive.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
         ParticleManager.SetParticleControl(release_fx, 0, unit.GetAbsOrigin());
         ParticleManager.ReleaseParticleIndex(release_fx);
 
@@ -213,7 +213,7 @@ export class modifier_kakashi_lightning_release_root extends BaseModifier
     /****************************************/
 
     GetEffectName(): string {
-        return "particles/heroes/kakashi/bunshin_zapped_root.vpcf";
+        return "particles/units/heroes/kakashi/bunshin_zapped_root.vpcf";
     }
 
     /****************************************/

@@ -3,9 +3,11 @@ LinkLuaModifier("modifier_generic_charges", "modifiers/modifier_generic_charges"
 naruto_shadow_clone_technique = naruto_shadow_clone_technique or class({})
 
 function naruto_shadow_clone_technique:Precache( context )
+	
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/shadow_clone_cast.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/shadow_clone_fire.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/shadow_clone_talking.vsndevts", context )
+	PrecacheResource( "particle",  "particles/units/heroes/naruto/naruto_clone.vpcf", context )
 end
 
 function naruto_shadow_clone_technique:IsHiddenWhenStolen() return false end
@@ -50,7 +52,7 @@ function naruto_shadow_clone_technique:OnSpellStart()
 
 		FindClearSpaceForUnit(illusion, pos, true)
 
-		local part2 = ParticleManager:CreateParticle("particles/units/heroes/hero_siren/naga_siren_riptide_foam.vpcf", PATTACH_ABSORIGIN, illusion)
+		local part2 = ParticleManager:CreateParticle("particles/units/heroes/naruto/naruto_clone.vpcf", PATTACH_ABSORIGIN, illusion)
 		ParticleManager:ReleaseParticleIndex(part2)
 
 		local pfx = ParticleManager:CreateParticle("particles/units/heroes/hero_siren/naga_siren_mirror_image.vpcf", PATTACH_ABSORIGIN, illusion)

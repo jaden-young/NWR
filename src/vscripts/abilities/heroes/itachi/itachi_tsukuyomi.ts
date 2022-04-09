@@ -59,6 +59,7 @@ export class itachi_tsukuyomi extends BaseAbility
         target?.AddNewModifier(caster, this, "modifier_itachi_tsukuyomi", {duration: channel_time});
 
         EmitSoundOn("Hero_Itachi.Tsukuyomi.Channel", this.target);
+        EmitSoundOn("Hero_Itachi.Tsukuyomi.Cast", this.target);
         EmitSoundOn("VO_Hero_Itachi.Tsukuyomi.Cast", caster);
     }
 
