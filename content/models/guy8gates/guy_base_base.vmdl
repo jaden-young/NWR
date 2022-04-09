@@ -554,12 +554,12 @@
 					{
 						_class = "AnimFile"
 						name = "dynamic_loop"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = false
+						looping = true
 						delta = false
 						worldSpace = false
 						hidden = false
@@ -568,7 +568,7 @@
 						source_filename = "models/guy8gates/guy_anim.smd"
 						start_frame = 752
 						end_frame = 763
-						framerate = 30.0
+						framerate = 10.0
 						reverse = false
 					},
 					{
@@ -694,12 +694,12 @@
 					{
 						_class = "AnimFile"
 						name = "dynamic_loop2"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = false
+						looping = true
 						delta = false
 						worldSpace = false
 						hidden = false

@@ -98,7 +98,7 @@ function shikamaru_flash_bombs:OnSpellStart()
 	for i = 1,8 do
 		local bombX = target_point.x + r * math.cos(math.pi * self.pi_factor)
 		local bombY = target_point.y + r * math.sin(math.pi * self.pi_factor)
-		self.outer_circle_positions[i] = Vector(bombX, bombY, 0)
+		self.outer_circle_positions[i] = target_point + Vector(r * math.cos(math.pi * self.pi_factor), r * math.sin(math.pi * self.pi_factor), 0)--Vector(bombX, bombY, 0)
 		self.pi_factor = self.pi_factor + 0.25
 	end
 
@@ -107,7 +107,7 @@ function shikamaru_flash_bombs:OnSpellStart()
 	for i = 1,4 do
 		local bombX = target_point.x + small_radius * math.cos(math.pi * self.small_pi_factor)
 		local bombY = target_point.y + small_radius * math.sin(math.pi * self.small_pi_factor)
-		self.inner_circle_positions[i] = Vector(bombX, bombY, 0)
+		self.inner_circle_positions[i] = target_point + Vector(r * math.cos(math.pi * self.small_pi_factor), r * math.sin(math.pi * self.small_pi_factor), 0)--Vector(bombX, bombY, 0)
 		self.small_pi_factor = self.small_pi_factor + 0.5
 	end
 

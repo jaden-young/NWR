@@ -249,7 +249,7 @@ export class modifier_kakashi_lightning_blade extends BaseModifierMotionHorizont
 @registerModifier()
 export class modifier_kakashi_lightning_blade_target extends BaseModifier
 {
-    IsHidden(): boolean     {return false}
+    IsHidden(): boolean     {return true}
     IsPurgable(): boolean   {return false}
 
     /****************************************/

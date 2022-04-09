@@ -1,0 +1,28 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+    VO_Hero_Guy.DynamicEntry.Cast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/guy/guy_dynamic_01.vsnd",
+            "sounds/heroes/guy/guy_dynamic_02.vsnd",
+			"sounds/heroes/guy/guy_dynamic_03.vsnd"
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}
+	VO_Hero_Guy.DynamicEntryGate.Cast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/guy/guy_dynamic_01_6.vsnd",
+			"sounds/heroes/guy/guy_dynamic_02_6.vsnd",
+			"sounds/heroes/guy/guy_dynamic_03_6.vsnd"
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}
+}
+
