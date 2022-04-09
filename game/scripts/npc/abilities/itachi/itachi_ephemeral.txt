@@ -11,7 +11,7 @@
 		"ScriptFile"                    "abilities/heroes/itachi/itachi_ephemeral.lua"
 		"AbilityTextureName"			"itachi_ephemeral"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 
 		"HasShardUpgrade"				"1"
 
@@ -49,6 +49,7 @@
 				"value"						"325"
 				"RequiresShard"				"1"
 			}
+			"cast_range"					"675 750 825 900"
 		}
 	}
 }

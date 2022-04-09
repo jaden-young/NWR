@@ -16,7 +16,7 @@ export class itachi_tsukuyomi extends BaseAbility
     /****************************************/
     
     Spawn(): void {
-        if (!IsServer() || this.GetCaster().IsRealHero()) return;
+        if (!IsServer() || !this.GetCaster().IsRealHero()) return;
         ListenToGameEvent("dota_player_learned_ability", (event) => this.OnPlayerLearnedAbility(event), undefined);
     }
     
@@ -69,7 +69,7 @@ export class itachi_tsukuyomi extends BaseAbility
         let caster = this.GetCaster();
         this.target?.RemoveModifierByNameAndCaster("modifier_itachi_tsukuyomi", caster);
 
-        if (interrupted) StopSoundOn("Hero_Itachi.Tsukuyomi.Channel", this.target!);
+        if (interrupted && this.target?.IsAlive()) StopSoundOn("Hero_Itachi.Tsukuyomi.Channel", this.target!);
     }
 }
 

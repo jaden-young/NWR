@@ -17,13 +17,21 @@ export class itachi_ephemeral extends BaseAbility
         return super.GetCooldown(level) - this.GetCaster()!.FindTalentValue("special_bonus_itachi_2");
     }
 
+    /****************************************/
+
+    GetCastRange(location: Vector, target: CDOTA_BaseNPC | undefined): number {
+        return IsClient() ? super.GetCastRange(location, target) : 50000;
+    }
+
+    /****************************************/
+
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let origin = caster.GetAbsOrigin();
         let position = this.GetCursorPosition();
-        let range = this.GetCastRange(origin, undefined);
+        let range = this.GetSpecialValueFor("cast_range");
+        let silence_duration = this.GetSpecialValueFor("silence_duration") + caster.FindTalentValue("special_bonus_itachi_3");
         let distance = (position - origin as Vector).Length2D();
-        let silence_duration = this.GetSpecialValueFor("silence_duration") + caster.FindTalentValue("special_bonus_itachi_3")
 
         EmitSoundOnLocationWithCaster(origin, "Hero_Itachi.Ephemeral.Cast", caster);
         EmitSoundOnLocationWithCaster(origin, "Hero_Itachi.BlinkLayer", caster);
@@ -31,7 +39,6 @@ export class itachi_ephemeral extends BaseAbility
         let ephemeral_fx = ParticleManager.CreateParticle("particles/units/heroes/itachi/ephemeral.vpcf", ParticleAttachment.CUSTOMORIGIN, undefined);
         ParticleManager.SetParticleControl(ephemeral_fx, 0, origin);
         ParticleManager.ReleaseParticleIndex(ephemeral_fx);
-
 
         position = distance < range ? position : (position - origin as Vector).Normalized() * range + origin as Vector;
         FindClearSpaceForUnit(caster, position, true)

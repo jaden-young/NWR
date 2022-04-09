@@ -1,5 +1,15 @@
 import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "../../../lib/dota_ts_adapter"
 
+interface kv
+{
+    cast_id?: number;
+}
+
+interface ModifierWithID extends CDOTA_Buff
+{
+    cast_id_tracker: Partial<Record<number, number>>;
+}
+
 @registerAbility()
 export class itachi_phoenix_sage_flame extends BaseAbility
 {
@@ -12,7 +22,6 @@ export class itachi_phoenix_sage_flame extends BaseAbility
         PrecacheResource("particle", "particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_vo_itachi.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_itachi.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_vo_kakashi.vsndevts", context);
     }
 
     /****************************************/
@@ -26,7 +35,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     OnSpellStart(): void {
         let caster = this.GetCaster();
-        this.FireProjectile(this.GetCursorPosition(), this.GetSpecialValueFor("projectile_count"));
+        this.FireProjectile(this.GetCursorPosition(), this.GetSpecialValueFor("projectile_count"), GameRules.GetDOTATime(true, true));
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Cast", this.GetCaster());
 
         let layer_fx = ParticleManager.CreateParticle("particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", ParticleAttachment.ABSORIGIN, caster);
@@ -36,7 +45,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
 
-    FireProjectile(position: Vector, count: number): void {
+    FireProjectile(position: Vector, count: number, cast_id: number): void {
         let caster = this.GetCaster();
         let direction = position - caster.GetAbsOrigin() as Vector;
         direction.z = 0;
@@ -45,7 +54,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
-            EffectName: "particles/units/heroes/itachi/itachi_phoenix_sage_flame.vpcf",
+            EffectName: "particles/base_attacks/ranged_tower_bad_linear.vpcf",
             vSpawnOrigin: caster.GetAbsOrigin() + Vector(0, 0, 100) as Vector,
             fDistance: this.GetCastRange(caster.GetAbsOrigin(), undefined),
             fStartRadius: this.GetSpecialValueFor("start_radius"),
@@ -54,40 +63,47 @@ export class itachi_phoenix_sage_flame extends BaseAbility
             iUnitTargetTeam: UnitTargetTeam.ENEMY,
 		    iUnitTargetType: UnitTargetType.HERO + UnitTargetType.BASIC,
             vVelocity: direction * this.GetSpecialValueFor("speed") as Vector,
+            ExtraData: {
+                cast_id: cast_id
+            }
         })
 
         count--;
         if (count > 0) 
-            Timers.CreateTimer(this.GetSpecialValueFor("fire_rate"), () => this.FireProjectile(position, count));
+            Timers.CreateTimer(this.GetSpecialValueFor("fire_rate"), () => this.FireProjectile(position, count, cast_id));
     }
 
     /****************************************/
 
-    OnProjectileHit(target: CDOTA_BaseNPC | undefined, location: Vector): boolean | void {
-        if (!target) return true;
+    OnProjectileHit_ExtraData(target: CDOTA_BaseNPC | undefined, location: Vector, extraData: kv): boolean | void {
+        if (!target) {
+            EmitSoundOnLocationWithCaster(location, "Hero_Itachi.PhoenixSageFlame.Impact", this.GetCaster());
+            return true;
+        }
         let max_hits = this.GetSpecialValueFor("max_hits");
         let duration = this.GetSpecialValueFor("duration");
+        let id = extraData.cast_id as number;
 
-        let modifier = target.FindModifierByName("modifier_itachi_phoenix_sage_flame");
-        if (modifier && modifier.GetStackCount() >= max_hits) return false;
+        let modifier = target.FindModifierByName("modifier_itachi_phoenix_sage_flame") as ModifierWithID;
+        if (modifier && modifier.cast_id_tracker[id] && modifier.cast_id_tracker[id]! >= max_hits) return false;
 
-        target.AddNewModifier(this.GetCaster(), this, "modifier_itachi_phoenix_sage_flame", {duration: duration});
+        target.AddNewModifier(this.GetCaster(), this, "modifier_itachi_phoenix_sage_flame", {duration: duration, cast_id: extraData.cast_id});
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Hit", target);
     }
 }
 
 @registerModifier()
-export class modifier_itachi_phoenix_sage_flame extends BaseModifier
+export class modifier_itachi_phoenix_sage_flame extends BaseModifier implements ModifierWithID
 {
     magic_res_reduction?: number;
     move_slow?: number;
     max_hits?: number;
-
+    cast_id_tracker: Partial<Record<number, number>> = {};
     damage_table?: ApplyDamageOptions;
 
     /****************************************/
 
-    OnCreated(params: Object): void {
+    OnCreated(params: kv): void {
         let ability = this.GetAbility()!;
 
         let damage = ability.GetSpecialValueFor("damage_per_proj");
@@ -96,6 +112,8 @@ export class modifier_itachi_phoenix_sage_flame extends BaseModifier
         this.max_hits = ability.GetSpecialValueFor("max_hits");
 
         if (!IsServer()) return;
+        this.cast_id_tracker[params.cast_id!] = 1;
+
         this.SetStackCount(1);
         
         this.damage_table = {
@@ -111,8 +129,9 @@ export class modifier_itachi_phoenix_sage_flame extends BaseModifier
 
     /****************************************/
 
-    OnRefresh(params: object): void {
+    OnRefresh(params: kv): void {
         if (!IsServer()) return;
+        this.cast_id_tracker[params.cast_id!] ? this.cast_id_tracker[params.cast_id!]!++ : this.cast_id_tracker[params.cast_id!] = 1;
 
         ApplyDamage(this.damage_table!);
         this.IncrementStackCount();

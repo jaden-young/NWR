@@ -111,9 +111,10 @@ export class modifier_itachi_amaterasu_burn extends BaseModifier
     OnCreated(params: object): void {
         let ability = this.GetAbility();
         let caster = this.GetCaster();
-        
-        this.high_damage = ability!.GetSpecialValueFor("damage_per_second") + caster!.FindTalentValue("special_bonus_itachi_7");
-        this.low_damage = ability!.GetSpecialValueFor("burn_dps") + caster!.FindTalentValue("special_bonus_itachi_7");
+        let interval = ability!.GetSpecialValueFor("interval");
+
+        this.high_damage = (ability!.GetSpecialValueFor("damage_per_second") + caster!.FindTalentValue("special_bonus_itachi_7")) * interval;
+        this.low_damage = ability!.GetSpecialValueFor("burn_dps") * interval;
 
         if (!IsServer()) return;
 
@@ -125,9 +126,7 @@ export class modifier_itachi_amaterasu_burn extends BaseModifier
             ability: ability
         }
 
-        
-
-        this.StartIntervalThink(1);
+        this.StartIntervalThink(interval);
         this.OnIntervalThink();
     }
 
@@ -136,7 +135,7 @@ export class modifier_itachi_amaterasu_burn extends BaseModifier
     OnIntervalThink(): void {
         this.damage_table!.damage = this.IsInsideFlames() ? this.high_damage! : this.low_damage!;
         ApplyDamage(this.damage_table!);
-        SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, this.GetParent(), this.damage_table!.damage, undefined);
+        SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, this.GetParent(), this.damage_table!.damage * (1 + this.GetCaster()!.GetSpellAmplification(false)), undefined);
         EmitSoundOn("Hero_Itachi.Amaterasu.BurnLayer", this.GetParent());
     }
 

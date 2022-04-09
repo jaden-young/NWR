@@ -1,8 +1,18 @@
 import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "../../../lib/dota_ts_adapter"
 
+interface CDOTA_BaseNPC_Hero_Clone
+{
+    is_clone?: boolean;
+}
+
 @registerAbility()
 export class itachi_crow_clone extends BaseAbility
 {
+    clone?: CDOTA_BaseNPC_Hero;
+    default_pos: Vector = Vector(25000, -25000 , 0);
+
+    /****************************************/
+
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle", "particles/units/heroes/itachi/ephemeral.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_itachi.vsndevts", context);
@@ -11,9 +21,53 @@ export class itachi_crow_clone extends BaseAbility
 
     /****************************************/
 
-    OnSpellStart(): void {
+    Spawn(): void {
+        if (!IsServer()) return;
+        let ability = this;
+        if (ability == undefined || ability.IsNull()) return;
         let caster = this.GetCaster();
 
+        Timers.CreateTimer(FrameTime(), () => {
+            if (ability != undefined && !ability.IsNull() && caster != undefined && !caster.IsNull() && !(caster as CDOTA_BaseNPC_Hero_Clone).is_clone) {
+                this.SpawnDefferedClone()
+            }
+        });
+    }
+
+    /****************************************/
+
+    OnSpellStart(): void {
+        if (this.clone && !this.clone.IsNull() && this.clone.IsAlive()) {
+            this.UpdateClone(this.clone);
+            this.FinishCreation(this.clone);
+        } else {
+            this.SpawnCloneInstantly();
+        }
+    }
+
+    /****************************************/
+
+    SpawnDefferedClone() {
+        let caster = this.GetCaster();
+
+        this.clone = CreateUnitByName(
+            caster.GetUnitName(),
+            this.default_pos,
+            false,
+            caster,
+            caster,
+            caster.GetTeamNumber()
+        ) as CDOTA_BaseNPC_Hero;
+
+        this.clone.StartGesture(GameActivity.DOTA_RUN);
+        this.clone.AddNewModifier(caster, this, "modifier_itachi_crow_clone_deffered", {duration: -1});
+        this.SetupClone(this.clone);
+    }
+
+    /****************************************/
+
+    SpawnCloneInstantly() {
+        let caster = this.GetCaster();
         this.SetupClone(
             CreateUnitByName(
                 caster.GetUnitName(),
@@ -23,12 +77,15 @@ export class itachi_crow_clone extends BaseAbility
                 caster,
                 caster.GetTeamNumber()
         ) as CDOTA_BaseNPC_Hero);
-    }
+    }    
 
     /****************************************/
 
     SetupClone(clone: CDOTA_BaseNPC_Hero) {
         let caster = this.GetCaster();
+
+        (clone as CDOTA_BaseNPC_Hero_Clone).is_clone = true;
+        clone.MakeIllusion();
 
         while (clone.GetLevel() < caster.GetLevel())
             clone.HeroLevelUp(false);
@@ -57,32 +114,65 @@ export class itachi_crow_clone extends BaseAbility
 
         clone.SetHealth(caster.GetHealth());
         clone.SetMana(caster.GetMana());
-
-        this.FinishCreation(clone);
     }
+
+    /****************************************/
+
+    UpdateClone(clone: CDOTA_BaseNPC_Hero) {
+        let caster = this.GetCaster();
+
+        while (clone.GetLevel() < caster.GetLevel())
+            clone.HeroLevelUp(false);
+        clone.SetAbilityPoints(0);
+
+        for (let j = 0; j <= InventorySlot.SLOT_6; j++) {
+            let item = clone.GetItemInSlot(j);
+            if (item) clone.RemoveItem(item);
+
+            item = caster.GetItemInSlot(j);
+            if (item) {
+                clone.AddItemByName(item.GetName());
+            }
+        }
+
+        let neutral_item = caster.GetItemInSlot(InventorySlot.NEUTRAL_SLOT);
+        if (neutral_item) clone.AddItemByName(neutral_item.GetName());
+
+        clone.SetHealth(caster.GetHealth());
+        clone.SetMana(caster.GetMana());
+    }
+
+    /****************************************/
 
     FinishCreation(clone: CDOTA_BaseNPC) {
         let caster = this.GetCaster() as CDOTA_BaseNPC_Hero;
         let invis_duration = this.GetSpecialValueFor("invis_duration");
         let clone_duration = this.GetSpecialValueFor("clone_duration");
+        let frame_delay_count = 2
 
         clone.SetForwardVector(caster.GetForwardVector());
         clone.SetControllableByPlayer(caster.GetPlayerID(), true);
-        clone.MakeIllusion();
+        clone.SetAbsOrigin(caster.GetAbsOrigin());
+
+        if (!caster.IsMoving()) frame_delay_count = 1;
+
+        clone.RemoveModifierByName("modifier_itachi_crow_clone_deffered");
+
+        ExecuteOrderFromTable({
+            OrderType: UnitOrder.MOVE_TO_POSITION,
+            UnitIndex: clone.entindex(),
+            Position: clone.GetAbsOrigin() + clone.GetForwardVector() * 800 as Vector,
+            Queue: false
+        })
 
         clone.AddNewModifier(caster, this, "modifier_itachi_crow_clone_illusion", {duration: clone_duration});
 
-        let origin = caster.GetAbsOrigin();
-
-        if (caster.IsMoving())
-            origin = origin + caster.GetForwardVector() * caster.GetMoveSpeedModifier(caster.GetBaseMoveSpeed(), false) * 0.07 as Vector;
-
-        clone.SetAbsOrigin(origin);
-
-        Timers.CreateTimer(FrameTime()*2, () => {
+        Timers.CreateTimer(FrameTime() * frame_delay_count, () => {
             caster.AddNewModifier(caster, this, "modifier_itachi_crow_clone", {duration: invis_duration});
             EmitSoundOnLocationForAllies(caster.GetAbsOrigin(), "DOTA_Item.InvisibilitySword.Activate", caster);
         });
+
+        this.SpawnDefferedClone();
     }
 }
 
@@ -173,15 +263,9 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
         this.fear_radius = ability.GetSpecialValueFor("shard_fear_radius");
         this.fear_duration = ability.GetSpecialValueFor("shard_fear_duration");
 
-        Timers.CreateTimer(FrameTime(), () =>{
-            ExecuteOrderFromTable({
-                OrderType: UnitOrder.MOVE_TO_POSITION,
-                UnitIndex: parent.entindex(),
-                Position: parent.GetAbsOrigin() + parent.GetForwardVector() * 800 as Vector,
-                Queue: false
-            })
+        Timers.CreateTimer(1, () =>{
+            parent.FadeGesture(GameActivity.DOTA_RUN);
         });
-        
     }
 
     OnDestroy(): void {
@@ -194,7 +278,7 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
 
     CheckState(): Partial<Record<ModifierState, boolean>> {
         return {
-            [ModifierState.INVISIBLE]: this.GetElapsedTime() < 0.01,
+            //[ModifierState.INVISIBLE]: this.GetElapsedTime() < 0.01,
             [ModifierState.NO_UNIT_COLLISION]: true
         };
     }
@@ -202,7 +286,6 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
     /****************************************/
 
     DeclareFunctions(){ return [
-        ModifierFunction.ON_TAKEDAMAGE,
         ModifierFunction.TOTALDAMAGEOUTGOING_PERCENTAGE
     ]}
 
@@ -212,15 +295,7 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
         return this.outgoing_damage! - 100;
     }
 
-    OnTakeDamage(event: ModifierInstanceEvent): void {
-        if (!IsServer()) return;
-        let unit = event.unit as CDOTA_BaseNPC;
-
-        if (unit != this.GetParent()) return;
-    
-        this.KillClone();
-        this.Destroy();
-    }
+    /****************************************/
 
     KillClone(): void {
         let caster = this.GetCaster();
@@ -234,12 +309,14 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
         EmitSoundOnLocationWithCaster(origin, "Hero_Itachi.CrowClone.Death", this.GetCaster()!);
         EmitSoundOnLocationWithCaster(origin, "Hero_Itachi.BlinkLayer", this.GetCaster()!);
 
-        parent.ForceKill(false);
+        if (parent.IsAlive()) parent.ForceKill(false);
 
         if (caster?.HasShard()) {
             this.FearEnemies(caster, origin);
         }
     }
+
+    /****************************************/
 
     FearEnemies(caster: CDOTA_BaseNPC, position: Vector) {
         let enemies = FindUnitsInRadius(
@@ -257,5 +334,25 @@ export class modifier_itachi_crow_clone_illusion extends BaseModifier
         enemies.forEach(enemy => {
             enemy.AddNewModifier(caster, this.GetAbility(), "modifier_nevermore_necromastery_fear", {duration: this.fear_duration! * (1 - enemy.GetStatusResistance())});
         });
+    }
+}
+
+@registerModifier()
+export class modifier_itachi_crow_clone_deffered extends BaseModifier
+{
+    /****************************************/
+
+    IsHidden(): boolean {return true}
+
+    /****************************************/
+
+    CheckState(): Partial<Record<ModifierState, boolean>> {
+        return {
+            [ModifierState.NOT_ON_MINIMAP]: true,
+            [ModifierState.INVISIBLE]: true,
+            //[ModifierState.INVULNERABLE]: true,
+            //[ModifierState.OUT_OF_GAME]: true,
+            //[ModifierState.NO_HEALTH_BAR]: true,
+        };
     }
 }
