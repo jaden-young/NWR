@@ -70,7 +70,7 @@ export class modifier_itachi_innate_passive extends BaseModifier
         this.damage_table!.damage = attacker.GetIntellect() * multiplier;
         ApplyDamage(this.damage_table!);
 
-        SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, target, this.damage_table!.damage, undefined);
+        SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, target, this.damage_table!.damage * (1 + attacker.GetSpellAmplification(false)), undefined);
     }
 
     /****************************************/
