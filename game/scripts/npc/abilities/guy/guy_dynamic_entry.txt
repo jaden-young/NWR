@@ -1,72 +1,55 @@
-	
-    "DOTAAbilities"
-{
-    
-"guy_dynamic_entry"
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Guy: Dynamic Entry
+	//=================================================================================================================
+	"guy_dynamic_entry"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"					"abilities/heroes/guy/guy_dynamic_entry"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"ScriptFile"                    "abilities/heroes/guy/guy_dynamic_entry.lua"
+		"AbilityTextureName"			"guy_dynamic_entry"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 		"FightRecapLevel"				"1"
-		// "AbilityTextureName"			"guy_dynamic_entry"
-	
+
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
 		"AbilityCastRange"				"500 550 600 650"
-		"AbilityCastPoint"				"0.3 0.3 0.3"
-	
+
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"12 11 10 9"
-	
-		//Damage
-		"AbilityDamage"					"70 120 170 220"
+
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"70"		
-	
+		"AbilityManaCost"				"70"
+		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"damage"				"70 120 170 220"
+			"armor_reduction"		"1 2 3 4"
+			"armor_ult_bonus"		"3"
+			"castrange_ult_bonus"	"250"
+			"duration"				"4"
+			"abilitycastrange"
 			{
-				"var_type"						"FIELD_FLOAT"
-				"armor_debuff"					"1 2 3 4"
+				"value"					""
+				"LinkedSpecialBonus"	"special_bonus_guy_5"
 			}
-			"02"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"4"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"armor_debuff_ulti"				"4 5 6 7"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cast_range_ulti"				"750 800 850 900"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"cast_range"					"500 550 600 650"
-			}
-			"06"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"caster_speed"					"2500"
-			}
-	
+			
+			"speed"					"2000"
+			"stop_distance"			"4000"
 		}
-	}
 
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
 }

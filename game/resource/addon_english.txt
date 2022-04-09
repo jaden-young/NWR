@@ -1070,31 +1070,23 @@
 
 
 		//--------------------
-		//Guy
+		// Guy
 		//--------------------
 		"npc_dota_hero_guy"  										"Guy"
 		"npc_dota_hero_guy_lore"  									""
+
 		// Dynamic Entry
-		"DOTA_Tooltip_ability_guy_dynamic_entry"						"<b><font color='#00A244'>Dynamic Entry</font></b>"
-		"DOTA_Tooltip_ability_guy_dynamic_entry_description"			"Guy launches himself to the target, dealing <b><font color='#00A244'>Phyiscal Damage and reducing Armor</font></b> on impact for a short duration. <br><br> <b><font color='#00A244'>Range and Armor reduction</font><b> are increased if Guy has <b><font color='#00A913'>Sixth Gate Opened.</font></b>"
-		"DOTA_Tooltip_ability_guy_dynamic_entry_ms_slow"			"%MOVEMENT SPEED DEBUFF: "
-		"DOTA_Tooltip_ability_guy_dynamic_entry_duration"				"DEBUFF DURATION: "
-		"DOTA_Tooltip_ability_guy_dynamic_entry_cast_range"				"RANGE: "
+		"DOTA_Tooltip_ability_guy_dynamic_entry"							"<b><font color='#00A244'>Dynamic Entry</font></b>"
+		"DOTA_Tooltip_ability_guy_dynamic_entry_description"				"Guy launches himself to the target, dealing <b><font color='#00A244'>Phyiscal Damage and reducing Armor</font></b> on impact for a short duration.<br><br>Cast range is increased by %castrange_ult_bonus% and armor reduction by %armor_ult_bonus% if Guy has <b><font color='#00A913'>Sixth Gate Opened</font></b>."
+		"DOTA_Tooltip_ability_guy_dynamic_entry_armor_reduction"			"ARMOR REDUCTION:"
+		"DOTA_Tooltip_ability_guy_dynamic_entry_duration"					"DEBUFF DURATION:"
+		"DOTA_Tooltip_ability_guy_dynamic_entry_abilitycastrange"			"CAST RANGE: "
+
+		"DOTA_Tooltip_modifier_guy_dynamic_entry"							"Dynamic Entry"
+		"DOTA_Tooltip_modifier_guy_dynamic_entry_Description"				"Charging!"
 		
-		"DOTA_Tooltip_modifier_guy_dynamic_entry_debuff"				"<b><font color='#00A244'>Dynamic Entry</font></b>"
-		"DOTA_Tooltip_modifier_guy_dynamic_entry_debuff_description"	"This Unit's <b><font color='#00A244'>Armor is reduced.</font></b>"
-
-
-		// Dynamic Entry Ulti
-		"DOTA_Tooltip_ability_guy_dynamic_entry_ult"						"<b><font color='#00A244'>Dynamic Entry</font></b>"
-		"DOTA_Tooltip_ability_guy_dynamic_entry_ult_description"			"<b><font color='#00A244'>Guy launches himself to the target, dealing <b>Physical Damage</b> on impact. <br><br> <b><font color='#00A244'>Range is increased</font></b> and applies a <b><font color='#00A244'>Movement Speed Slow</font></b> if Guy has <b><font color='#00A913'>Sixth Gate Opened.</font></b>"
-		"DOTA_Tooltip_ability_guy_dynamic_entry_ult_ms_slow"			"%MOVEMENT SPEED DEBUFF: "
-		"DOTA_Tooltip_ability_guy_dynamic_entry_ult_duration"				"DEBUFF DURATION: "
-		"DOTA_Tooltip_ability_guy_dynamic_entry_ult_cast_range"				"RANGE: "
-
-		"DOTA_Tooltip_ability_modifier_guy_dynamic_ms_slow"					"Dynamic Entry"
-		"DOTA_Tooltip_modifier_guy_dynamic_ms_slow_description"		"This Unit has decreased Movement Speed."
-		
+		"DOTA_Tooltip_modifier_guy_dynamic_entry_debuff"					"<font color='#00A244'>Dynamic Entry</font>"
+		"DOTA_Tooltip_modifier_guy_dynamic_entry_debuff_description"		"Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."		
 
 		// Leaf Strong Whirlwind
 		"DOTA_Tooltip_ability_guy_leaf_strong_whirlwind"				"<b><font color='#72FF8C'>Leaf Strong Whirlwind</font></b>"
@@ -2597,7 +2589,7 @@
 		"DOTA_Tooltip_Ability_special_bonus_guy_2"						"-0.2 Sixth Gate Base Attack Time"
 		"DOTA_Tooltip_Ability_special_bonus_guy_3"						"+50 Sixth Gate Movement Speed"
 		"DOTA_Tooltip_Ability_special_bonus_guy_4"						"Gain Morning Peacock in Sixth Gate"
-		"DOTA_Tooltip_Ability_special_bonus_guy_5"						"+550 Dynamic Entry Range"
+		"DOTA_Tooltip_Ability_special_bonus_guy_5"						"+{s:value} Dynamic Entry Cast Range"
 
 
 		//25: -5 Liger Bomb Armor Reduction/ +60% Lightning Horizontal Damage Reduction
