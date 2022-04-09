@@ -547,7 +547,7 @@
 						disable_compression = false
 						source_filename = "models/guy8gates/guy_anim.smd"
 						start_frame = 717
-						end_frame = 751
+						end_frame = 763
 						framerate = 90.0
 						reverse = false
 					},
