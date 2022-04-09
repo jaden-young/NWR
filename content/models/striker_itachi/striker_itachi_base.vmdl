@@ -124,7 +124,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_amaterasu"
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_name = "ACT_DOTA_CAST_ABILITY_5"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -212,7 +212,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_flamecontrol"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -292,7 +292,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_phoenixflower1"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -306,13 +306,13 @@
 						source_filename = "models/striker_itachi/striker_itachi_phoenixflower1.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_phoenixflower2"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -326,7 +326,7 @@
 						source_filename = "models/striker_itachi/striker_itachi_phoenixflower2.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 75.0
 						reverse = false
 					},
 					{
@@ -426,7 +426,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_seal"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2

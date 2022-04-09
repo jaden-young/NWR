@@ -95,3 +95,7 @@ function CDOTA_BaseNPC:IsRoshan()
 		return false
 	end
 end
+
+function CDOTA_BaseNPC:HasShard()
+	return self:HasModifier("modifier_item_aghanims_shard")
+end

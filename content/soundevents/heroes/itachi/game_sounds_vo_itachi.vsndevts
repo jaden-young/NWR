@@ -1,0 +1,27 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+    VO_Hero_Itachi.Amaterasu.Cast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/itachi/amaterasu_01.vsnd",
+            "sounds/heroes/itachi/amaterasu_02.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}
+
+	VO_Hero_Itachi.Tsukuyomi.Cast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+			"sounds/heroes/itachi/tsukyomi_01.vsnd",
+            "sounds/heroes/itachi/tsukyomi_02.vsnd",
+			"sounds/heroes/itachi/tsukyomi_03.vsnd"
+		]
+		volume = "2.000000"
+		pitch = "1.000000"
+	}
+}

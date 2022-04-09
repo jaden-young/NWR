@@ -1,0 +1,31 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Itachi: Innate Passive -- Anbu Training
+	//=================================================================================================================
+	"itachi_innate_passive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/itachi/itachi_innate_passive.lua"
+		"AbilityTextureName"			"itachi_innate_passive"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_per_int"
+            {
+                "value"                     "0.7"
+                "LinkedSpecialBonus"        "special_bonus_itachi_5"
+            }
+            "angle"                     "105"
+		}
+	}
+}

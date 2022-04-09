@@ -1,0 +1,79 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+    Hero_Itachi.PhoenixSageFlame.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/dragon_knight/fireball_cast.vsnd"
+	}
+
+    Hero_Itachi.Ephemeral.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+        spread_radius = 0.000000
+		vsnd_files = "sounds/heroes/itachi/itachi_ephemeral.vsnd"
+	}
+
+    Hero_Itachi.CrowClone.Death = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/itachi/itachi_ephemeral.vsnd"
+	}
+
+    Hero_Itachi.BlinkLayer = 
+	{
+		type = "dota_src1_3d"
+		volume = 0.400000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.800000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/antimage/blink_out.vsnd",
+		]
+	}
+
+	Hero_Itachi.Amaterasu.BurnArea = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.800000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/weapons/hero/batrider/batrider_firefly_loop.vsnd"
+	}
+
+	Hero_Itachi.Tsukuyomi.Channel = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		limiter_on = 0.000000
+		vsnd_files = "sounds/heroes/itachi/itachi_tsukyomi.vsnd"
+	}
+	
+}
