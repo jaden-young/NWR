@@ -26,6 +26,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
     mid_center_left_pos: Vector = Vector(0, 0, 0);
     top_center_right_pos: Vector = Vector(0, 0, 0);
     top_center_left_pos: Vector = Vector(0, 0, 0);
+    order = Array.from({length: 12}, (_, i) => i);
 
     projectiles_info: Record<number, FlameProjectileInfo> = {
         [0]: {position: this.right_pos, range_mult: 0.2},
@@ -70,6 +71,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
         this.SetupPositions(origin, center_dir);
         this.UpdateProjectilesInfo();
+        this.ShuffleLaunchOrder();
         this.SetupProjectiles(count, GameRules.GetDOTATime(true, true));
 
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Cast", this.GetCaster());
@@ -96,9 +98,10 @@ export class itachi_phoenix_sage_flame extends BaseAbility
     /****************************************/
 
     SetupProjectiles(max_count: number, cast_id: number): void {
-        let max_range = this.GetSpecialValueFor("")
-        for (let i = 0; i < max_count; i++) {
-            this.FireProjectile(this.projectiles_info[i].position, this.projectiles_info[i].range_mult, cast_id);
+        let delay = this.GetSpecialValueFor("fire_rate");
+
+        for (let i = 0; i < this.order.length; i++) {
+            this.FireProjectile(this.projectiles_info[this.order[i]].position, this.projectiles_info[this.order[i]].range_mult, cast_id, delay * i);
         }
     }
 
@@ -121,29 +124,31 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
     
-    FireProjectile(position: Vector, distance_mult: number, cast_id: number): void {
-        let caster = this.GetCaster();
-        let range = this.GetCastRange(position, undefined);
-        let radius = this.GetSpecialValueFor("proj_radius");
+    FireProjectile(position: Vector, distance_mult: number, cast_id: number, delay: number): void {
+        Timers.CreateTimer(delay, () => {
+            let caster = this.GetCaster();
+            let range = this.GetCastRange(position, undefined);
+            let radius = this.GetSpecialValueFor("proj_radius");
 
-        let direction = position - caster.GetAbsOrigin() as Vector;
-        direction.z = 0;
-        direction = direction.Normalized();
+            let direction = position - caster.GetAbsOrigin() as Vector;
+            direction.z = 0;
+            direction = direction.Normalized();
 
-        ProjectileManager.CreateLinearProjectile({
-            Ability: this,
-            EffectName: "particles/base_attacks/ranged_tower_bad_linear.vpcf",
-            vSpawnOrigin: caster.GetAbsOrigin() + Vector(0, 0, 100) as Vector,
-            fDistance: range * distance_mult,
-            fStartRadius: radius,
-            fEndRadius: radius,
-            Source: caster,
-            iUnitTargetTeam: UnitTargetTeam.ENEMY,
-		    iUnitTargetType: UnitTargetType.HERO + UnitTargetType.BASIC,
-            vVelocity: direction * this.GetSpecialValueFor("speed") as Vector,
-            ExtraData: {
-                cast_id: cast_id
-            }
+            ProjectileManager.CreateLinearProjectile({
+                Ability: this,
+                EffectName: "particles/base_attacks/ranged_tower_bad_linear.vpcf",
+                vSpawnOrigin: caster.GetAbsOrigin() + Vector(0, 0, 100) as Vector,
+                fDistance: range * distance_mult,
+                fStartRadius: radius,
+                fEndRadius: radius,
+                Source: caster,
+                iUnitTargetTeam: UnitTargetTeam.ENEMY,
+                iUnitTargetType: UnitTargetType.HERO + UnitTargetType.BASIC,
+                vVelocity: direction * this.GetSpecialValueFor("speed") as Vector,
+                ExtraData: {
+                    cast_id: cast_id
+                }
+            });
         })
     }
 
@@ -197,6 +202,19 @@ export class itachi_phoenix_sage_flame extends BaseAbility
         ParticleManager.SetParticleControl(b, 1, Vector(255, 0, 0));
         ParticleManager.SetParticleControl(b, 2, Vector(25, 0, 0));
         ParticleManager.ReleaseParticleIndex(b);
+    }
+
+    /****************************************/
+
+    ShuffleLaunchOrder() {
+        let i = this.order.length, k, temp;
+
+        while(--i > 0){
+            k = Math.floor(Math.random() * (i+1));
+            temp = this.order[k];
+            this.order[k] = this.order[i];
+            this.order[i] = temp;
+        }
     }
 }
 

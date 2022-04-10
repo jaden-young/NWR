@@ -47,11 +47,11 @@
 			"max_hits"					"3"
 			"duration"					"6"
 			"projectile_count"			"12"
-			"fire_rate"					"0.06"
+			"fire_rate"					"0.03"
 			"proj_radius"				"150"
 			"start_radius"				"200"
 			"end_radius"				"400"
-			"speed"						"700"
+			"speed"						"1050"
 		}
 	}
 }
