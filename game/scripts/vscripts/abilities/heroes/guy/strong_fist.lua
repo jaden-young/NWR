@@ -103,7 +103,7 @@ function PerformCritAttack(ability, attack_event)
 
 			--VFXs
 			local impact_vfx = ParticleManager:CreateParticle(
-				"particles/units/heroes/guy_strong_fist_gates_impact.vpcf",
+				"particles/units/heroes/guy/guy_strong_fist_gates_impact.vpcf",
 				PATTACH_CUSTOMORIGIN_FOLLOW, 
 				target
 			)
@@ -134,7 +134,7 @@ function PerformCritAttack(ability, attack_event)
 
 			--VFXs
 			local impact_vfx = ParticleManager:CreateParticle(
-				"particles/units/heroes/guy_strong_fist_impact.vpcf",
+				"particles/units/heroes/guy/guy_strong_fist_impact.vpcf",
 				PATTACH_CENTER_FOLLOW, 
 				target
 			)
@@ -256,7 +256,7 @@ function modifier_guy_morning_peacock_attacks:OnIntervalThink()
 
 	--VFXs
 	local impact_vfx = ParticleManager:CreateParticle(
-		"particles/units/heroes/guy_morning_peacock_impact.vpcf",
+		"particles/units/heroes/guy/guy_morning_peacock_impact.vpcf",
 		PATTACH_CUSTOMORIGIN_FOLLOW, 
 		self.parent
 	)

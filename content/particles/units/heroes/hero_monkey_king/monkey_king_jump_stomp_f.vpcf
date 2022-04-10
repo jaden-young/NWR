@@ -2,10 +2,10 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 4
-	m_ConstantColor = [ 255, 255, 255, 10 ]
+	m_nMaxParticles = 8
+	m_nConstantSequenceNumber = 5
 	m_nBehaviorVersion = 5
-	m_nFirstMultipleOverride_BackwardCompat = 3
+	m_nFirstMultipleOverride_BackwardCompat = 4
 	m_controlPointConfigurations = 
 	[
 		{
@@ -26,29 +26,34 @@
 			m_nParticlesToEmit = 
 			{
 				m_nType = "PF_TYPE_LITERAL"
-				m_flLiteralValue = 1.0
+				m_flLiteralValue = 3.0
 			}
 		},
 	]
 	m_Initializers = 
 	[
 		{
+			_class = "C_INIT_RandomLifeTime"
+			m_fLifetimeMin = 0.35
+			m_fLifetimeMax = 0.35
+		},
+		{
+			_class = "C_INIT_RandomRadius"
+			m_flRadiusMin = 40.0
+			m_flRadiusMax = 40.0
+		},
+		{
+			_class = "C_INIT_RandomAlpha"
+			m_nAlphaMin = 20
+			m_nAlphaMax = 20
+		},
+		{
 			_class = "C_INIT_CreateWithinSphere"
 		},
 		{
-			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMin = 0.5
-			m_fLifetimeMax = 0.5
-		},
-		{
-			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 160, 249, 255, 255 ]
-			m_ColorMax = [ 160, 249, 255, 255 ]
-		},
-		{
 			_class = "C_INIT_PositionOffset"
-			m_OffsetMin = [ 0.0, 0.0, 18.0 ]
-			m_OffsetMax = [ 0.0, 0.0, 18.0 ]
+			m_OffsetMin = [ 0.0, 0.0, 5.0 ]
+			m_OffsetMax = [ 0.0, 0.0, 10.0 ]
 		},
 	]
 	m_Operators = 
@@ -58,24 +63,24 @@
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
-			m_flStartTime = 0.1
-			m_flEndScale = 64.0
-			m_flBias = 0.95
+			m_flStartScale = 0.2
+			m_flEndScale = 6.0
+			m_flBias = 0.85
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
-			m_flFadeOutTime = 1.0
+			m_flFadeOutTime = 0.75
+		},
+		{
+			_class = "C_OP_ColorInterpolate"
+			m_flFadeEndTime = 0.75
+			m_ColorFade = [ 0, 206, 209 ]
 		},
 	]
 	m_Renderers = 
 	[
 		{
 			_class = "C_OP_RenderSprites"
-			VisibilityInputs = 
-			{
-				m_flCameraBias = 16.0
-			}
-			m_flOverbrightFactor = 5.0
 			m_nOrientationType = "PARTICLE_ORIENTATION_WORLD_Z_ALIGNED"
 			m_vecTexturesInput = 
 			[
@@ -83,7 +88,7 @@
 					m_hTexture = resource:"materials/particle/particle_ring_wave.vtex"
 				},
 			]
-			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_MOD2X"
+			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
 		},
 	]
 }
