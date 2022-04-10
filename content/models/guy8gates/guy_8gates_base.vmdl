@@ -19,19 +19,19 @@
 							},
 							{
 								from = "material_#38.vmat"
-								to = "materials/models/guy8gates/guy8gates2.vmat"
+								to = "materials/models/heroes/axe/axe_hair_color.vmat"
 							},
 							{
 								from = "material_#39.vmat"
-								to = "materials/models/guy8gates/guy8gates3.vmat"
+								to = "materials/models/guy8gates/guy8gates7.vmat"
 							},
 							{
 								from = "material_#40.vmat"
-								to = "materials/models/development/invisibletexture.vmat"
+								to = "materials/models/guy8gates/guy8gates4.vmat"
 							},
 							{
 								from = "material_#41.vmat"
-								to = "materials/models/guy8gates/guy8gates3.vmat"
+								to = "materials/models/guy8gates/guy8gates5.vmat"
 							},
 						]
 						use_global_default = false
@@ -428,8 +428,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "guy_base_base"
-						filename = "models/guy8gates/guy_base_base.smd"
+						filename = "models/guy8gates/guy_8gates_base.smd"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -457,10 +456,358 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/guy8gates/guy_anim.smd"
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
 						start_frame = 0
-						end_frame = 2762
+						end_frame = 3000
 						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "crit2"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 135
+						end_frame = 179
+						framerate = 20.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "crit1"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = ""
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 74
+						end_frame = 108
+						framerate = 15.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch3"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 617
+						end_frame = 639
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "dynamic"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 717
+						end_frame = 763
+						framerate = 90.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "dynamic_loop"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 752
+						end_frame = 763
+						framerate = 10.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "die1"
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 812
+						end_frame = 861
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "flail"
+						activity_name = "ACT_DOTA_FLAIL"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 1063
+						end_frame = 1117
+						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "die2"
+						activity_name = "ACT_DOTA_DIE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 1179
+						end_frame = 1236
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "idle"
+						activity_name = "ACT_DOTA_IDLE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 1462
+						end_frame = 1610
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "victory"
+						activity_name = "ACT_DOTA_VICTORY"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 1647
+						end_frame = 1685
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "gates1"
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 2067
+						end_frame = 2110
+						framerate = 40.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "dynamic_loop2"
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 2173
+						end_frame = 2179
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch4"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 2413
+						end_frame = 2446
+						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "punch5"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 2465
+						end_frame = 2500
+						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "run"
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 2648
+						end_frame = 2659
+						framerate = 25.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "spinkick"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2_END"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_anim.smd"
+						start_frame = 274
+						end_frame = 331
+						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "guy_dynamic_entry"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_8gates_base_entry.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 120.0
 						reverse = false
 					},
 				]
@@ -470,6 +817,26 @@
 				_class = "AttachmentList"
 				children = 
 				[
+					{
+						_class = "Attachment"
+						name = "camera"
+						children = 
+						[
+							{
+								_class = "Attachment Camera Preview"
+								fov = 54
+								screen_width_for_aspect = 512
+								screen_height_for_aspect = 384
+								preview_scale = 0.3
+								background_color = [ 70, 70, 70 ]
+							},
+						]
+						parent_bone = ""
+						relative_origin = [ 125.991043, -24.160114, 144.495255 ]
+						relative_angles = [ 0.0, 165.757553, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 					{
 						_class = "Attachment"
 						name = "attach_hitloc"
