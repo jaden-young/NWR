@@ -35,6 +35,9 @@ end
 	local caster = self:GetCaster()
 	caster:AddNewModifier(caster, self, "modifier_guy_seventh_gate", {})
 
+	caster:SetModel("models/guy8gates/guy_8gates_base.vmdl")
+	caster:SetOriginalModel("models/guy8gates/guy_base_base.vmdl")
+
 	if not IsServer() then return end
 	-- check sister ability
 	local ability = caster:FindAbilityByName("guy_seventh_gate_close")

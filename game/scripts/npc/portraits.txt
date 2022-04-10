@@ -72,6 +72,44 @@
 		}
 	}
 
+	"models/guy8gates/guy_8gates_base.vmdl"
+	{
+		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
+		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
+		"PortraitLightFOV"		"63.000000"
+		"PortraitLightDistance"		"471.000000"
+		"PortraitLightColor"		"200 225 225"
+		"PortraitShadowColor"		"131 131 131"
+		"PortraitShadowScale"		"1.025000"
+		"PortraitGroundShadowScale"		"1.500000"
+		"PortraitAmbientColor"		"0 161 155"
+		"PortraitAmbientScale"		"5.000000"
+		"PortraitSpecularColor"		"251 74 84"
+		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+		"PortraitSpecularPower"		"16.000000"
+		"PortraitBackgroundColor1"		"0.750000 0.860000 0.680000"
+		"PortraitBackgroundColor2"		"0.750000 0.860000 0.680000"
+		"PortraitBackgroundColor3"		"0.750000 0.860000 0.680000"
+		"PortraitBackgroundColor4"		"0.750000 0.860000 0.680000"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_windrunner_arcana.vmat"
+		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
+		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
+		"PortraitAnimationCycle"		"0.000000"
+		"PortraitAnimationRate"		"1.000000"
+		"PortraitHideHero"		"0"
+		"PortraitLightScale"		"2.300000"
+		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
+		"cameras"
+		{
+			"default"
+			{
+				"PortraitPosition"		"125.991 -22.1601 150.495"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"0 170 0" // ( [+Tilt Down / -Tilt up] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
+				"PortraitFOV"		"29" //zoom
+			}
+		}
+	}
+
 
 	"models/striker_anko/striker_anko_base.vmdl"
 	{
