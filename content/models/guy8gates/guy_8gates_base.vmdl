@@ -31,7 +31,7 @@
 							},
 							{
 								from = "material_#41.vmat"
-								to = "materials/models/guy8gates/guy8gates5.vmat"
+								to = "materials/models/guy8gates/guy8gates6.vmat"
 							},
 						]
 						use_global_default = false
