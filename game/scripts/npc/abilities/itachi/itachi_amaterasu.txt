@@ -49,7 +49,7 @@
 			"burn_duration"				"8 12 16"
 			"radius"					"375 425 475"
 			"duration"					"8"
-			"interval"					"0.5"
+			"interval"					"0.75"
 		}
 	}
 }

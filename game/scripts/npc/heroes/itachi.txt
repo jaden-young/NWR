@@ -72,9 +72,9 @@
 		"AttributePrimary"				"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength" 		"18" 		// Base strength
 		"AttributeStrengthGain"			"1.8" 		// Strength bonus per level.
-		"AttributeBaseIntelligence" 	"22" 		// Base intelligence
+		"AttributeBaseIntelligence" 	"26" 		// Base intelligence
 		"AttributeIntelligenceGain" 	"3.4" 		// Intelligence bonus per level.
-		"AttributeBaseAgility" 			"20" 		// Base agility
+		"AttributeBaseAgility" 			"21" 		// Base agility
 		"AttributeAgilityGain" 			"2.0" 		// Agility bonus per level.
 
 		// Movement
@@ -92,8 +92,8 @@
 
 		// FX
 		//----------------------------------------------------------------
-		"SoundSet"					"ChakraPunch"
-		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
+		"SoundSet"					"Kunai"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
 		//"particle_folder"			"particles/hero/sohei"  //for the future, i think
 		"GibType"					"default"
 		
