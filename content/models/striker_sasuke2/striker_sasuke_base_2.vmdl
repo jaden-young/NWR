@@ -1151,7 +1151,7 @@
 						_class = "Attachment"
 						name = "attach_attack1"
 						parent_bone = "lefthand"
-						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_origin = [ 13.399822, 6.469212, -2.74765 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
