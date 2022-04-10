@@ -17,7 +17,7 @@
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 
 		"BaseClass"   		"npc_dota_hero_centaur"
-		"Model" 			"models/guy8gates/guy_base_base.vmdl"
+		"Model" 			"models/striker_guy/striker_guy_base.vmdl"
 		"Ability1"        "guy_dynamic_entry"
 		"Ability2"        "guy_leaf_strong_whirlwind" 
 		"Ability3"        "guy_strong_fist" 

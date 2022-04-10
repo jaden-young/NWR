@@ -22,7 +22,8 @@ end
  function guy_seventh_gate_open:ProcsMagicStick()
     return true
 end
- 
+
+
 --  function guy_seventh_gate_open:OnSpellStart()
 -- 	if IsServer() then
 -- 		local caster 	= self:GetCaster();
@@ -34,9 +35,9 @@ end
  function guy_seventh_gate_open:OnSpellStart()
 	local caster = self:GetCaster()
 	caster:AddNewModifier(caster, self, "modifier_guy_seventh_gate", {})
-
+	
 	caster:SetModel("models/guy8gates/guy_8gates_base.vmdl")
-	caster:SetOriginalModel("models/guy8gates/guy_base_base.vmdl")
+	caster:SetOriginalModel("models/striker_guy/striker_guy_base.vmdl")
 
 	if not IsServer() then return end
 	-- check sister ability
@@ -105,6 +106,8 @@ end
 	-- 		end
 	-- 	end
 	-- end
+
+
 end
 
 -- function guy_seventh_gate_open:ToggleOn(caster, ability)
@@ -128,14 +131,13 @@ function modifier_guy_seventh_gate:IsPurgable() return false end
 function modifier_guy_seventh_gate:RemoveOnDeath() return true end
 
 function modifier_guy_seventh_gate:OnCreated()
-
-	self.caster = self:GetCaster()
+		self.caster = self:GetCaster()
 	self.ability = self:GetAbility()
 
 	self.ms_bonus = self.ability:GetSpecialValueFor("ms_bonus") + self.caster:FindTalentValue("special_bonus_guy_3")
 	self.attack_bonus = self.ability:GetSpecialValueFor("bonus_damage")
 	self.base_attack_time = self.ability:GetSpecialValueFor("bat") + self.caster:FindTalentValue("special_bonus_guy_2")
-
+	
 	--sounds
 	if not IsServer() then return end
 	self.caster:EmitSound("guy_gates_cast")
@@ -145,6 +147,7 @@ function modifier_guy_seventh_gate:OnCreated()
 	-- start interval for hp lose
 	self:StartIntervalThink(0.1)
 end
+
 
 function modifier_guy_seventh_gate:OnRemoved()
 	-- ParticleManager:DestroyParticle(self.pfx3, true)
@@ -177,9 +180,6 @@ function modifier_guy_seventh_gate:OnIntervalThink()
 		damage_flags = DOTA_DAMAGE_FLAG_NON_LETHAL,
 		ability = self
 	}
-	print(damage_table.damage)
-	print(damage_table.damage_type)
-	print(damage_table.damage_flags)
 	ApplyDamage(damage_table)
 end
 
