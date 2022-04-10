@@ -48,8 +48,9 @@
 			"duration"					"6"
 			"projectile_count"			"12"
 			"fire_rate"					"0.06"
-			"proj_radius"				"100"
-			"final_radius"				"400"
+			"proj_radius"				"150"
+			"start_radius"				"200"
+			"end_radius"				"400"
 			"speed"						"700"
 		}
 	}

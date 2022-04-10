@@ -10,10 +10,37 @@ interface ModifierWithID extends CDOTA_Buff
     cast_id_tracker: Partial<Record<number, number>>;
 }
 
+interface FlameProjectileInfo
+{
+    position: Vector,
+    range_mult: number
+}
+
 @registerAbility()
 export class itachi_phoenix_sage_flame extends BaseAbility
 {
-    target?: CDOTA_BaseNPC_Hero;
+    center_pos: Vector = Vector(0, 0, 0);
+    right_pos: Vector = Vector(0, 0, 0);
+    left_pos: Vector = Vector(0, 0, 0);
+    mid_center_right_pos: Vector = Vector(0, 0, 0);
+    mid_center_left_pos: Vector = Vector(0, 0, 0);
+    top_center_right_pos: Vector = Vector(0, 0, 0);
+    top_center_left_pos: Vector = Vector(0, 0, 0);
+
+    projectiles_info: Record<number, FlameProjectileInfo> = {
+        [0]: {position: this.right_pos, range_mult: 0.2},
+        [1]: {position: this.left_pos, range_mult: 0.2},
+        [2]: {position: this.center_pos, range_mult: 0.25},
+        [3]: {position: this.right_pos, range_mult: 0.46875},
+        [4]: {position: this.center_pos, range_mult: 0.46875},
+        [5]: {position: this.left_pos, range_mult: 0.46875},
+        [6]: {position: this.mid_center_right_pos, range_mult: 0.625},
+        [7]: {position: this.mid_center_left_pos, range_mult: 0.625},
+        [8]: {position: this.right_pos, range_mult: 0.75},
+        [9]: {position: this.top_center_right_pos, range_mult: 0.75},
+        [10]: {position: this.top_center_left_pos, range_mult: 0.75},
+        [11]: {position: this.left_pos, range_mult: 0.75},
+    }
 
     /****************************************/
 
@@ -35,7 +62,16 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     OnSpellStart(): void {
         let caster = this.GetCaster();
-        this.FireProjectile(this.GetCursorPosition(), this.GetSpecialValueFor("projectile_count"), GameRules.GetDOTATime(true, true));
+        let position = this.GetCursorPosition();
+        let count = this.GetSpecialValueFor("projectile_count");
+        let origin = caster.GetAbsOrigin();
+        let center_dir = (origin - position as Vector).Normalized();
+
+
+        this.SetupPositions(origin, center_dir);
+        this.UpdateProjectilesInfo();
+        this.SetupProjectiles(count, GameRules.GetDOTATime(true, true));
+
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Cast", this.GetCaster());
 
         let layer_fx = ParticleManager.CreateParticle("particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", ParticleAttachment.ABSORIGIN, caster);
@@ -45,21 +81,60 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
 
-    FireProjectile(position: Vector, count: number, cast_id: number): void {
+    SetupPositions(origin: Vector, center_dir: Vector) {
+        let line_end_pos = origin - center_dir * 800 as Vector;
+
+        this.center_pos = origin + origin * center_dir * 800 as Vector
+        this.right_pos = RotatePosition(origin, QAngle(0, -20, 0), line_end_pos);
+        this.left_pos = RotatePosition(origin, QAngle(0, 20, 0), line_end_pos);
+        this.mid_center_right_pos = RotatePosition(origin, QAngle(0, -15, 0), line_end_pos);
+        this.mid_center_left_pos = RotatePosition(origin, QAngle(0, 15, 0), line_end_pos);
+        this.top_center_right_pos = RotatePosition(origin, QAngle(0, -7.5, 0), line_end_pos);
+        this.top_center_left_pos = RotatePosition(origin, QAngle(0, 7.5, 0), line_end_pos);
+    }
+
+    /****************************************/
+
+    SetupProjectiles(max_count: number, cast_id: number): void {
+        let max_range = this.GetSpecialValueFor("")
+        for (let i = 0; i < max_count; i++) {
+            this.FireProjectile(this.projectiles_info[i].position, this.projectiles_info[i].range_mult, cast_id);
+        }
+    }
+
+    /****************************************/
+
+    UpdateProjectilesInfo() {
+        this.projectiles_info[0].position = this.right_pos;
+        this.projectiles_info[1].position = this.left_pos;
+        this.projectiles_info[2].position = this.center_pos;
+        this.projectiles_info[3].position = this.right_pos;
+        this.projectiles_info[4].position = this.center_pos;
+        this.projectiles_info[5].position = this.left_pos;
+        this.projectiles_info[6].position = this.mid_center_right_pos;
+        this.projectiles_info[7].position = this.mid_center_left_pos;
+        this.projectiles_info[8].position = this.right_pos;
+        this.projectiles_info[9].position = this.top_center_right_pos;
+        this.projectiles_info[10].position = this.top_center_left_pos;
+        this.projectiles_info[11].position = this.left_pos;
+    }
+
+    /****************************************/
+    
+    FireProjectile(position: Vector, distance_mult: number, cast_id: number): void {
         let caster = this.GetCaster();
+        let range = this.GetCastRange(position, undefined);
         let radius = this.GetSpecialValueFor("proj_radius");
-        let offset = this.GetSpecialValueFor("final_radius") / 2;
-        let random_pos = position + Vector(RandomInt(-offset, offset), RandomInt(-offset, offset), 0) as Vector;
-        let direction = random_pos - caster.GetAbsOrigin() as Vector;
+
+        let direction = position - caster.GetAbsOrigin() as Vector;
         direction.z = 0;
         direction = direction.Normalized();
-
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
             EffectName: "particles/base_attacks/ranged_tower_bad_linear.vpcf",
             vSpawnOrigin: caster.GetAbsOrigin() + Vector(0, 0, 100) as Vector,
-            fDistance: this.GetCastRange(caster.GetAbsOrigin(), undefined),
+            fDistance: range * distance_mult,
             fStartRadius: radius,
             fEndRadius: radius,
             Source: caster,
@@ -70,28 +145,58 @@ export class itachi_phoenix_sage_flame extends BaseAbility
                 cast_id: cast_id
             }
         })
-
-        count--;
-        if (count > 0) 
-            Timers.CreateTimer(this.GetSpecialValueFor("fire_rate"), () => this.FireProjectile(position, count, cast_id));
     }
 
     /****************************************/
 
     OnProjectileHit_ExtraData(target: CDOTA_BaseNPC | undefined, location: Vector, extraData: kv): boolean | void {
         if (!target) {
+            let caster = this.GetCaster();
+            let max_hits = this.GetSpecialValueFor("max_hits");
+            let duration = this.GetSpecialValueFor("duration");
+            let id = extraData.cast_id as number;
+
+            let enemies = FindUnitsInRadius(
+                caster.GetTeamNumber(),
+                location,
+                undefined,
+                this.GetSpecialValueFor("proj_radius"),
+                UnitTargetTeam.ENEMY,
+                UnitTargetType.BASIC + UnitTargetType.HERO,
+                UnitTargetFlags.NONE,
+                FindOrder.ANY,
+                false
+            )
+
+            enemies.forEach(enemy => {
+                let modifier = enemy.FindModifierByName("modifier_itachi_phoenix_sage_flame") as ModifierWithID;
+                if (modifier && modifier.cast_id_tracker[id] && modifier.cast_id_tracker[id]! >= max_hits) return false;
+                enemy.AddNewModifier(this.GetCaster(), this, "modifier_itachi_phoenix_sage_flame", {duration: duration, cast_id: extraData.cast_id});
+                EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Hit", enemy);
+            });
+            
             EmitSoundOnLocationWithCaster(location, "Hero_Itachi.PhoenixSageFlame.Impact", this.GetCaster());
+
+            this.DisplayTestingParticles(location);
             return true;
         }
-        let max_hits = this.GetSpecialValueFor("max_hits");
-        let duration = this.GetSpecialValueFor("duration");
-        let id = extraData.cast_id as number;
 
-        let modifier = target.FindModifierByName("modifier_itachi_phoenix_sage_flame") as ModifierWithID;
-        if (modifier && modifier.cast_id_tracker[id] && modifier.cast_id_tracker[id]! >= max_hits) return false;
+        return false;
+    }
 
-        target.AddNewModifier(this.GetCaster(), this, "modifier_itachi_phoenix_sage_flame", {duration: duration, cast_id: extraData.cast_id});
-        EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Hit", target);
+    /****************************************/
+
+    DisplayTestingParticles(location: Vector) {
+        let a = ParticleManager.CreateParticle("particles/testing_circle.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
+        ParticleManager.SetParticleControl(a, 0, location);
+        ParticleManager.SetParticleControl(a, 2, Vector(this.GetSpecialValueFor("proj_radius"), 0, 0));
+        ParticleManager.ReleaseParticleIndex(a);
+
+        let b = ParticleManager.CreateParticle("particles/testing_circle.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
+        ParticleManager.SetParticleControl(b, 0, location);
+        ParticleManager.SetParticleControl(b, 1, Vector(255, 0, 0));
+        ParticleManager.SetParticleControl(b, 2, Vector(25, 0, 0));
+        ParticleManager.ReleaseParticleIndex(b);
     }
 }
 
