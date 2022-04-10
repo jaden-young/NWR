@@ -83,10 +83,10 @@
 			m_ChildRef = resource:"particles/units/heroes/hero_dragon_knight/dragon_knight_transform_green_spotlight.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/generic_gameplay/screen_arcane_drop_b.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/hero_elder_titan/elder_titan_echo_stomp.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/hero_elder_titan/elder_titan_echo_stomp.vpcf"
+			m_ChildRef = resource:"particles/generic_gameplay/screen_arcane_drop_b.vpcf"
 		},
 	]
 }
