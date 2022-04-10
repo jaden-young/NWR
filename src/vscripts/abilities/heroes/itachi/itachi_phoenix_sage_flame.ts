@@ -39,7 +39,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Cast", this.GetCaster());
 
         let layer_fx = ParticleManager.CreateParticle("particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", ParticleAttachment.ABSORIGIN, caster);
-        ParticleManager.SetParticleControlEnt(layer_fx, 1, caster, ParticleAttachment.ABSORIGIN, "", Vector(0, 0, 0), false);
+        ParticleManager.SetParticleControlEnt(layer_fx, 1, caster, ParticleAttachment.ABSORIGIN, "attach_mouth", Vector(0, 0, 0), false);
         ParticleManager.ReleaseParticleIndex(layer_fx);
     }
 
