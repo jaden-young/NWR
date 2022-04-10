@@ -1080,7 +1080,8 @@
 		"DOTA_Tooltip_ability_guy_dynamic_entry_description"				"Guy launches himself to the target, dealing <b><font color='#00A244'>Phyiscal Damage and reducing Armor</font></b> on impact for a short duration.<br><br>Cast range is increased by %castrange_ult_bonus% and armor reduction by %armor_ult_bonus% if Guy has <b><font color='#00A913'>Sixth Gate Opened</font></b>."
 		"DOTA_Tooltip_ability_guy_dynamic_entry_armor_reduction"			"ARMOR REDUCTION:"
 		"DOTA_Tooltip_ability_guy_dynamic_entry_duration"					"DEBUFF DURATION:"
-		"DOTA_Tooltip_ability_guy_dynamic_entry_abilitycastrange"			"CAST RANGE: "
+		"DOTA_Tooltip_ability_guy_dynamic_entry_damage"						"DAMAGE:"
+		"DOTA_Tooltip_ability_guy_dynamic_entry_abilitycastrange"			"CAST RANGE:"
 
 		"DOTA_Tooltip_modifier_guy_dynamic_entry"							"Dynamic Entry"
 		"DOTA_Tooltip_modifier_guy_dynamic_entry_Description"				"Charging!"
