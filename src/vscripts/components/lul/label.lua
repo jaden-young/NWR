@@ -29,9 +29,7 @@ function SetPlayerHealthLabel( player )
 			end
 
 			--spastic
-			if PlayerResource:GetSteamAccountID(player:GetPlayerID()) == 35879484 then
-				player_hero:SetCustomHealthLabel("The Genin", 255, 140, 0)
-			end
+
 
 			--lucci
 			if PlayerResource:GetSteamAccountID(player:GetPlayerID()) == 93546854 then

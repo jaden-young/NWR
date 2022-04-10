@@ -289,7 +289,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_kick"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -303,7 +303,7 @@
 						source_filename = "models/striker_itachi/striker_itachi_kick.smd"
 						start_frame = 5
 						end_frame = -1
-						framerate = 45.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
@@ -369,7 +369,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_punch2"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
