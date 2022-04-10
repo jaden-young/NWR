@@ -554,7 +554,7 @@
 					{
 						_class = "AnimFile"
 						name = "dynamic_loop"
-						activity_name = "ACT_DOTA_CHANNEL_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -789,6 +789,26 @@
 						start_frame = 274
 						end_frame = 331
 						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "guy_dynamic_entry"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/guy8gates/guy_dynamic_entry.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 120.0
 						reverse = false
 					},
 				]
