@@ -66,10 +66,12 @@ export class itachi_phoenix_sage_flame extends BaseAbility
         let position = this.GetCursorPosition();
         let count = this.GetSpecialValueFor("projectile_count");
         let origin = caster.GetAbsOrigin();
-        let center_dir = (origin - position as Vector).Normalized();
+        let center_dir = (position - origin as Vector).Normalized();
 
-
-        this.SetupPositions(origin, center_dir, count);
+        this.SetupPositions(origin, center_dir);
+        this.UpdateProjectilesInfo();
+        this.ShuffleLaunchOrder();
+        this.SetupProjectiles(count, GameRules.GetDOTATime(true, true));
 
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Cast", this.GetCaster());
 
@@ -80,18 +82,16 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
 
-    SetupPositions(origin: Vector, center_dir: Vector, count: number) {
-        let line_end_pos = origin - center_dir * 800 as Vector;
+    SetupPositions(origin: Vector, center_dir: Vector) {
+        let line_end_pos = origin + center_dir * 800 as Vector;
 
-        this.center_pos = origin + origin * center_dir * 800 as Vector
+        this.center_pos = origin + center_dir * 800 as Vector
         this.right_pos = RotatePosition(origin, QAngle(0, -20, 0), line_end_pos);
         this.left_pos = RotatePosition(origin, QAngle(0, 20, 0), line_end_pos);
         this.mid_center_right_pos = RotatePosition(origin, QAngle(0, -15, 0), line_end_pos);
         this.mid_center_left_pos = RotatePosition(origin, QAngle(0, 15, 0), line_end_pos);
         this.top_center_right_pos = RotatePosition(origin, QAngle(0, -7.5, 0), line_end_pos);
         this.top_center_left_pos = RotatePosition(origin, QAngle(0, 7.5, 0), line_end_pos);
-
-        this.UpdateProjectilesInfo(count);
     }
 
     /****************************************/
@@ -106,7 +106,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
 
-    UpdateProjectilesInfo(count: number) {
+    UpdateProjectilesInfo() {
         this.projectiles_info[0].position = this.right_pos;
         this.projectiles_info[1].position = this.left_pos;
         this.projectiles_info[2].position = this.center_pos;
@@ -119,7 +119,6 @@ export class itachi_phoenix_sage_flame extends BaseAbility
         this.projectiles_info[9].position = this.top_center_right_pos;
         this.projectiles_info[10].position = this.top_center_left_pos;
         this.projectiles_info[11].position = this.left_pos;
-        this.ShuffleLaunchOrder(count);
     }
 
     /****************************************/
@@ -206,7 +205,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
 
-    ShuffleLaunchOrder(count: number) {
+    ShuffleLaunchOrder() {
         let i = this.order.length, k, temp;
 
         while(--i > 0){
@@ -215,8 +214,6 @@ export class itachi_phoenix_sage_flame extends BaseAbility
             this.order[k] = this.order[i];
             this.order[i] = temp;
         }
-
-        this.SetupProjectiles(count, GameRules.GetDOTATime(true, true));
     }
 }
 
