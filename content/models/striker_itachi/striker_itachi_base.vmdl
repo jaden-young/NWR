@@ -540,26 +540,6 @@
 						framerate = -1.0
 						reverse = false
 					},
-					{
-						_class = "AnimFile"
-						name = "rasensenko_end"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_minato/rasensenko_end.smd"
-						start_frame = 2
-						end_frame = 21
-						framerate = 55.0
-						reverse = false
-					},
 				]
 				default_root_bone_name = ""
 			},
