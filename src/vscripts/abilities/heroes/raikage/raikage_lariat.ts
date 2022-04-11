@@ -15,6 +15,7 @@ export class raikage_lariat extends BaseAbility
     /****************************************/
 
     Precache(context: CScriptPrecacheContext): void{
+        PrecacheResource("particle", "particles/units/heroes/raikage/raikage_lariat_dash.vpcf", context);
         PrecacheResource("particle", "particles/units/heroes/raikage/raikage_lariat_impact.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/raikage/game_sounds_raikage.vsndevts", context);
         PrecacheResource("soundfile", "soundevents/heroes/raikage/game_sounds_vo_raikage.vsndevts", context);
@@ -94,7 +95,9 @@ export class modifier_raikage_lariat extends BaseModifierMotionHorizontal
             return;
         }
 
-        let ground_fx = ParticleManager.CreateParticle("particles/units/heroes/raikage/lariat_ground_parent.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, parent)
+
+
+        let ground_fx = ParticleManager.CreateParticle("particles/units/heroes/raikage/raikage_lariat_dash.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, parent)
         this.AddParticle(ground_fx, false, false, -1, false, false);
     }
 
