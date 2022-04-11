@@ -15,19 +15,19 @@
 						[
 							{
 								from = "mi_chr_d31.vmat"
-								to = "materials/models/kakashi_new/kakashi_new1.vmat"
+								to = "mi_chr_d31.vmat"
 							},
 							{
 								from = "mi_chr_d31eyel.vmat"
-								to = "materials/models/kakashi_new/kakashi_new2.vmat"
+								to = "mi_chr_d31eyel.vmat"
 							},
 							{
 								from = "mi_chr_d31eyer.vmat"
-								to = "materials/models/kakashi_new/kakashi_new3.vmat"
+								to = "mi_chr_d31eyer.vmat"
 							},
 							{
 								from = "mi_chr_d31metal.vmat"
-								to = "materials/models/kakashi_new/kakashi_new1.vmat"
+								to = "mi_chr_d31metal.vmat"
 							},
 							{
 								from = "mi_line.vmat"
@@ -48,6 +48,14 @@
 							{
 								from = "mi_chr_kakashimetal.vmat"
 								to = "materials/models/sexy_shikamaru/sexy_shikamaru1.vmat"
+							},
+							{
+								from = "mi_wep_kunai_metal.vmat"
+								to = "materials/models/items/drow/drow_arcana/drow_test_metal_dark.vmat"
+							},
+							{
+								from = "mi_wep_kunai.vmat"
+								to = "materials/models/heroes/marci/marci_test_metal.vmat"
 							},
 						]
 						use_global_default = false
@@ -1280,7 +1288,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						filename = "models/kakashi_new/kakashi_new_base_trial.fbx"
+						filename = "models/kakashi_new/kakashi_new_base_kunai.smd"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -1553,7 +1561,7 @@
 						source_filename = "models/kakashi_new/kick3.fbx"
 						start_frame = 0
 						end_frame = 75
-						framerate = 30.0
+						framerate = 65.0
 						reverse = false
 					},
 					{
@@ -1573,7 +1581,7 @@
 						source_filename = "models/kakashi_new/punch.fbx"
 						start_frame = 0
 						end_frame = 65
-						framerate = 30.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
@@ -1633,7 +1641,7 @@
 						source_filename = "models/kakashi_new/punch4.fbx"
 						start_frame = 0
 						end_frame = 76
-						framerate = 40.0
+						framerate = 90.0
 						reverse = false
 					},
 					{
@@ -1748,6 +1756,46 @@
 						start_frame = 0
 						end_frame = 82
 						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kunai1"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kunai1.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 80.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kunai2"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kunai2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 70.0
 						reverse = false
 					},
 				]

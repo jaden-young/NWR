@@ -651,7 +651,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_four_one"
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -791,7 +791,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_throw"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
