@@ -1,3 +1,20 @@
+function ModelSwapStart( keys )
+	local caster = keys.caster
+	local model = keys.model
+	local ability = keys.ability
+	local projectile_model = keys.projectile_model
+
+	-- Saves the original model and attack capability
+	if caster.caster_model == nil then 
+		caster.caster_model = caster:GetModelName()
+	end
+	caster.caster_attack = caster:GetAttackCapability()
+
+	-- Sets the new model and projectile
+
+	caster:SetOriginalModel(model)
+end
+
 guy_seventh_gate_open = class({})
 LinkLuaModifier( "modifier_guy_seventh_gate", "scripts/vscripts/abilities/heroes/guy/guy_seventh_gate_open.lua", LUA_MODIFIER_MOTION_NONE )
 LinkLuaModifier( "modifier_guy_morning_peacock_buff", "scripts/vscripts/abilities/heroes/guy/guy_morning_peacock.lua", LUA_MODIFIER_MOTION_NONE )
@@ -31,14 +48,19 @@ end
 -- 		guy_seventh_gate_open:ToggleOn(caster, ability);
 -- 	end
 --  end
+
+
+
+function ModelSwapEnd( keys )
+	local caster = keys.caster
+	caster:SetModel(caster.caster_model)
+	caster:SetOriginalModel(caster.caster_model)
+end
+
  
  function guy_seventh_gate_open:OnSpellStart()
 	local caster = self:GetCaster()
 	caster:AddNewModifier(caster, self, "modifier_guy_seventh_gate", {})
-	
-	caster:SetModel("models/striker_guy/striker_guy_7gates_base.vmdl")
-	caster:SetOriginalModel("models/striker_guy/striker_guy_base.vmdl")
-
 	if not IsServer() then return end
 	-- check sister ability
 	local ability = caster:FindAbilityByName("guy_seventh_gate_close")
@@ -169,6 +191,10 @@ function modifier_guy_seventh_gate:OnDestroy()
 	)
 end
 
+function modifier_guy_seventh_gate:GetModifierModelChange()
+	return "models/striker_guy/striker_guy_7gates_base.vmdl"
+end
+
 function modifier_guy_seventh_gate:OnIntervalThink()
 	local drain_hp_percent = self:GetAbility():GetSpecialValueFor("hp_drain")
 	local drain_hp = (self.caster:GetMaxHealth() / 100) * drain_hp_percent * 0.1
@@ -185,6 +211,7 @@ end
 
 function modifier_guy_seventh_gate:DeclareFunctions()
 	return {
+		MODIFIER_PROPERTY_MODEL_CHANGE,
 		MODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT,
 		MODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT,
 	}
