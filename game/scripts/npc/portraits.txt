@@ -34,7 +34,7 @@
 	}
 
 
-	"models/guy8gates/guy_base_base.vmdl"
+	"models/striker_guy/striker_guy_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
 		"PortraitLightAngles"		"33.889999 183.929993 0.000000"
@@ -72,7 +72,7 @@
 		}
 	}
 
-	"models/guy8gates/guy_8gates_base.vmdl"
+	"models/striker_guy/striker_guy_7gates_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
 		"PortraitLightAngles"		"33.889999 183.929993 0.000000"

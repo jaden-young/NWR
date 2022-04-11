@@ -71,6 +71,7 @@ export class modifier_itachi_amaterasu extends BaseModifier
         EmitSoundOn("Hero_Itachi.Amaterasu.BurnArea", this.GetParent());
         
         this.StartIntervalThink(1);
+        this.OnIntervalThink();
     }
 
     OnDestroy(): void {
