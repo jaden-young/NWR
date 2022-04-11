@@ -70,7 +70,7 @@
 		// Attributes
 		//----------------------------------------------------------------
 		"AttributePrimary"				"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength" 		"18" 		// Base strength
+		"AttributeBaseStrength" 		"20" 		// Base strength
 		"AttributeStrengthGain"			"1.8" 		// Strength bonus per level.
 		"AttributeBaseIntelligence" 	"26" 		// Base intelligence
 		"AttributeIntelligenceGain" 	"3.4" 		// Intelligence bonus per level.
@@ -81,11 +81,11 @@
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"		// Type of locomotion - ground, air
 		"MovementSpeed"				"310"			// Speed
-		"MovementTurnRate"			"1.5"			// Turning rate
+		"MovementTurnRate"			"1.0"			// Turning rate
 		
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"145"
+		"StatusHealth"				"200"
 		"StatusHealthRegen"			"0.3"
 		"StatusManaRegen"			"0.9"
 		"StatusMana"				"75"

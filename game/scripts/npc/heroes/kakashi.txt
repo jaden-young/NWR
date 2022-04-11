@@ -28,8 +28,8 @@
 		"MovementSpeed"				"315"
 
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"   "34"
-		"AttackDamageMax"   "37"
+		"AttackDamageMin"   "28"
+		"AttackDamageMax"   "32"
 		"AttackRange"				"100"
 		"AttackRate"				"1.7"
 		"AttackAnimationPoint"		"0.2"

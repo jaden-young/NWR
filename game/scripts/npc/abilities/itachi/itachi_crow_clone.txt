@@ -34,7 +34,7 @@
 		"AbilityValues"
 		{
 			"outgoing_damage"			"20"
-			"clone_duration"			"3"
+			"clone_duration"			"2.5"
 			"bonus_move_speed"
 			{
 				"value"						"8 12 16 20"
