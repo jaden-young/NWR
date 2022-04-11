@@ -1,0 +1,50 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Hidan: Soul Hunt
+	//=================================================================================================================
+	"hidan_soul_hunt"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/hidan/hidan_soul_hunt.lua"
+		"AbilityTextureName"			"hidan_soul_hunt"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"9 8 7 6"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"base_damage"			"60 90 120 150"
+			"strength_dmg_mult"
+			{
+				"value"					"70 90 110 130"
+				"DamageTypeTooltip"		"DAMAGE_TYPE_PHYSICAL"
+			}
+			"movespeed_slow"		"20 25 30 35"
+			"slow_duration"			"2"
+			"radius"				"275"
+		}
+
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+}

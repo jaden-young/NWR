@@ -217,6 +217,16 @@
 		"npc_dota_hero_hidan" "Hidan"
 		"npc_dota_hero_hidan_lore"  								"The only true immortal known in the shinobi world, Hidan is a ruthless worshipper of Jashin and a member of Akatsuki. Through experimenting with the various techniques of his religion, Hidan has gained the ability to survive any injury. Even if he is decapitated Hidan will still survive, although he cannot control the rest of his body. Despite being a religious man Hidan is known to be an extremely disrespectful shinobi. He constantly complains and swears to his allies, including his superiors. The only respect he ever gives is to his god whom he works to fulfil his commandments. His insistence on following his religion’s laws often brings him into conflict with his partner Kakuzu. Since he is unable to be killed by any attack, Hidan and Kakuzu were a perfect team as Kakuzu’s rage could never kill the immortal. His extreme durability and raw strength are what allowed him to become a valued member of Akatsuki."
 
+		"DOTA_Tooltip_ability_hidan_soul_hunt"								"Soul Hunt"
+		"DOTA_Tooltip_ability_hidan_soul_hunt_Description"					"Hidan performs a Spin Attack dealing Physical Damage to enemies and himself based on his Strength. Enemies hit by the attack are briefly slowed."
+		"DOTA_Tooltip_ability_hidan_soul_hunt_base_damage"					"BASE DAMAGE:"
+		"DOTA_Tooltip_ability_hidan_soul_hunt_strength_dmg_mult"			"%STRENGTH DAMAGE:"
+		"DOTA_Tooltip_ability_hidan_soul_hunt_movespeed_slow"				"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_hidan_soul_hunt_slow_duration"				"DURATION:"
+
+		"DOTA_Tooltip_modifier_hidan_soul_hunt"								"Soul Hunt"
+		"DOTA_Tooltip_modifier_hidan_soul_hunt_Description"					"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+
 		// Cull the Weak
 		"DOTA_Tooltip_ability_hidan_cull_the_weak"						"<b><font color='#9C352C'> Cull The Weak </font></b>"
 		"DOTA_Tooltip_ability_hidan_cull_the_weak_description"			"<b><font color='#9C352C'>Pulls enemy units</font></b> in front of Hidan dealing <b>Physical Damage</b> and a <b>Movement Speed Slow.</b> <br><br> <b><font color='#9C352C'>Costs Health</font></b> from Hidan if an enemy is hit by the attack. <br><br> <b><font color='#9C352C'>Deals double damage</font></b> to creeps."

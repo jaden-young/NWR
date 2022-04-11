@@ -17,7 +17,7 @@ export class haku_demonic_speed extends BaseAbility
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle", "particles/units/heroes/haku/haku_demonic_speed.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/haku/game_sounds_haku.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/raikage/game_sounds_vo_haku.vsndevts", context);
+        //PrecacheResource("soundfile", "soundevents/heroes/haku/game_sounds_vo_haku.vsndevts", context);
     }
 
     /****************************************/
