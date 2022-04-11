@@ -350,7 +350,7 @@
 						_class = "AnimFile"
 						name = "striker_itachi_punch"
 						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 20
+						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -463,8 +463,8 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_kunai1"
-						activity_name = "ACT_DOTA_ATTACK_EVENT"
-						activity_weight = 1
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 5
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -483,8 +483,8 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_kunai2"
-						activity_name = "ACT_DOTA_ATTACK_EVENT"
-						activity_weight = 1
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 5
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -503,8 +503,8 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_kunai3"
-						activity_name = "ACT_DOTA_ATTACK_EVENT"
-						activity_weight = 1
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 5
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
