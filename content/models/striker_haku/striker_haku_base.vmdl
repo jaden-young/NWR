@@ -1435,7 +1435,7 @@
 					{
 						_class = "AnimFile"
 						name = "force_staff"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1449,7 +1449,7 @@
 						source_filename = "models/striker_haku/force_staff.fbx"
 						start_frame = 0
 						end_frame = 51
-						framerate = 30.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -1529,7 +1529,7 @@
 					{
 						_class = "AnimFile"
 						name = "staggered"
-						activity_name = ""
+						activity_name = "ACT_DOTA_DISABLED"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2

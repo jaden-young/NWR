@@ -605,6 +605,17 @@
 		//--------------------
 		"npc_dota_hero_haku"  								"Haku"
 		"npc_dota_hero_haku_lore"  							"Born in a snowy village within the Land of Water, Haku was a child amongst a land that feared ninjas and their kekkei genkais. It was because of this fear that Haku’s mother decided to hide her secret bloodline ability called Ice Release. She lived a happy and peaceful life with her husband, until it was discovered that Haku possessed the kekkei genkai as well. After witnessing his child manipulate water, Haku’s father gathered a mob in order to kill his wife as well as his son. He succeeded in killing his spouse but was slain along with his peers when Haku unleashed his ability in self defense. Alone and an orphan, Haku wandered the streets as a beggar with few days left to live. It was during this time that the shinobi Momochi Zabuza of the Hidden Mist discovered the young boy and realized his capabilities. Pledging himself as a weapon for his master, Haku found purpose in life as a tool for Zabuza’s ambitions. Zabuza would proceed to raise Haku in order to develop his skills and create the ultimate weapon for himself."
+
+		//Demonic Speed
+		"DOTA_Tooltip_ability_haku_demonic_speed"						"Demonic Speed"
+		"DOTA_Tooltip_ability_haku_demonic_speed_Description"			"Haku dashes to a target point at a high speed while sending a Basic Attack at the nearest enemy unit. Basic Attack prioritizes Heroes."
+		"DOTA_Tooltip_ability_haku_demonic_speed_attack_search_range"	"ATTACK SEARCH RANGE:"
+		"DOTA_Tooltip_ability_haku_demonic_speed_abilitycastrange"		"CAST RANGE:"
+		
+		"DOTA_Tooltip_modifier_haku_demonic_speed"						"Demonic Speed"
+		"DOTA_Tooltip_modifier_haku_demonic_speed_Description"			"Dashing!"
+
+
 		// Crippling Senbon
 		"DOTA_Tooltip_ability_haku_crippling_senbon"					"<b><font color='#9784FF'>Crippling Senbon</font></b>"
 		"DOTA_Tooltip_ability_haku_crippling_senbon_lore"				""

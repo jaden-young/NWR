@@ -16,7 +16,7 @@
   "BaseClass"   "npc_dota_hero_drow_ranger"
   "Ability1"        "haku_crippling_senbon"
   "Ability2"        "haku_needles"
-  "Ability3"        "haku_endless_wounds" 
+  "Ability3"        "haku_demonic_speed" 
   "Ability4"        "generic_hidden" 
   "Ability5"        "generic_hidden" 
   "Ability6"        "haku_ice_mirrors"
