@@ -106,7 +106,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
     /****************************************/
 
-    UpdateProjectilesInfo(count: Vector) {
+    UpdateProjectilesInfo(count: number) {
         this.projectiles_info[0].position = this.right_pos;
         this.projectiles_info[1].position = this.left_pos;
         this.projectiles_info[2].position = this.center_pos;
