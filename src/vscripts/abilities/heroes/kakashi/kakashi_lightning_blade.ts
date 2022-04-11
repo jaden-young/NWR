@@ -234,6 +234,9 @@ export class modifier_kakashi_lightning_blade extends BaseModifierMotionHorizont
             EmitSoundOn("Hero_Kakashi.LightningBlade.Impact", this.target!)
 			EmitSoundOn("VO_Hero_Kakashi.LightningBlade.Hit", parent)
 
+            let impact_fx = ParticleManager.CreateParticle("particles/units/heroes/hero_zuus/zuus_static_field.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, this.target);
+            ParticleManager.ReleaseParticleIndex(impact_fx);
+
             this.Destroy()
             return true;
 
