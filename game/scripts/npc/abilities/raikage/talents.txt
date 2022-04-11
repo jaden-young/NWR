@@ -62,6 +62,9 @@
 		}
 	}
 
+	//=================================================================================================================
+	// Raikage Special Bonus: +220 Lariat Damage
+	//=================================================================================================================	
 	"special_bonus_raikage_3"	
 	{
 		// General
@@ -69,11 +72,6 @@
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"LinkedAbility"
-		{
-			"01" 	"raikage_lariat"
-		}
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------

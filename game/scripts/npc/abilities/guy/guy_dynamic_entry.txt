@@ -46,7 +46,7 @@
 				"LinkedSpecialBonus"	"special_bonus_guy_5"
 			}
 			
-			"speed"					"2000"
+			"speed"					"1900"
 			"stop_distance"			"4000"
 		}
 

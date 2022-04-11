@@ -84,7 +84,7 @@ end
 function modifier_guy_dynamic_entry.prototype.OnCreated(self, params)
     local ability = self:GetAbility()
     self.duration = ability:GetSpecialValueFor("duration")
-    self.speed = 1900
+    self.speed = ability:GetSpecialValueFor("speed")
     self.damage = ability:GetSpecialValueFor("damage")
     self.stop_distance = ability:GetSpecialValueFor("stop_distance")
     if not IsServer() then

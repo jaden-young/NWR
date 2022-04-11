@@ -73,7 +73,7 @@ export class modifier_guy_dynamic_entry extends BaseModifierMotionHorizontal
         let ability = this.GetAbility()!;
 
         this.duration = ability.GetSpecialValueFor("duration");
-        this.speed = 1900//ability.GetSpecialValueFor("speed");
+        this.speed = ability.GetSpecialValueFor("speed");
         this.damage = ability.GetSpecialValueFor("damage");
         this.stop_distance = ability.GetSpecialValueFor("stop_distance");
 

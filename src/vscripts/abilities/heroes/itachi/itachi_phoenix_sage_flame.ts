@@ -75,8 +75,9 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
         EmitSoundOn("Hero_Itachi.PhoenixSageFlame.Cast", this.GetCaster());
 
-        let layer_fx = ParticleManager.CreateParticle("particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", ParticleAttachment.ABSORIGIN, caster);
-        ParticleManager.SetParticleControlEnt(layer_fx, 1, caster, ParticleAttachment.ABSORIGIN, "attach_mouth", Vector(0, 0, 0), false);
+        let layer_fx = ParticleManager.CreateParticle("particles/units/heroes/itachi/itachi_phoenix_sage_flame_layer.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, caster);
+        ParticleManager.SetParticleControlEnt(layer_fx, 1, caster, ParticleAttachment.ABSORIGIN, "attach_mouth", caster.GetAbsOrigin(), true);
+        ParticleManager.SetParticleControlForward(layer_fx, 1, caster.GetForwardVector());
         ParticleManager.ReleaseParticleIndex(layer_fx);
     }
 
@@ -136,7 +137,7 @@ export class itachi_phoenix_sage_flame extends BaseAbility
             ProjectileManager.CreateLinearProjectile({
                 Ability: this,
                 EffectName: "particles/base_attacks/ranged_tower_bad_linear.vpcf",
-                vSpawnOrigin: caster.GetAbsOrigin() + Vector(0, 0, 100) as Vector,
+                vSpawnOrigin: caster.GetAttachmentOrigin(caster.ScriptLookupAttachment("attach_mouth")),
                 fDistance: range * distance_mult,
                 fStartRadius: radius,
                 fEndRadius: radius,

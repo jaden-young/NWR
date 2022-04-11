@@ -1293,6 +1293,9 @@
 		"DOTA_Tooltip_ability_raikage_lariat_cast_range"				"RANGE: "
 		"DOTA_Tooltip_ability_raikage_lariat_stun_duration"				"STUN DURATION: "
 		"DOTA_Tooltip_ability_raikage_lariat_Description"				"<b><font color='#00D4FF'>Launches towards the target point</font></b> at high speed. <br><br> Raikage will collide with the first enemy Hero in his path, dealing <b><font color='#00D4FF'>Magic Damage and Stunning them.</font></b>"
+
+		"DOTA_Tooltip_modifier_raikage_lariat"							"Lariat"
+		"DOTA_Tooltip_modifier_raikage_lariat_Description"				"Charging!"
 		
 
 		"DOTA_Tooltip_ability_raikage_raigyaku_suihei"					"<b><font color='#FFD038'>Lightning Horizontal</font></b>"
@@ -2599,7 +2602,7 @@
 		//10: +20 Damage / +6 Health Regen
 		"DOTA_Tooltip_Ability_special_bonus_raikage_1"						"+50% Lightning Horizontal Strength Damage"
 		"DOTA_Tooltip_Ability_special_bonus_raikage_2"						"+275 Lightning Armor Max Damage"
-		"DOTA_Tooltip_Ability_special_bonus_raikage_3"						"+220 Lariat Damage"
+		"DOTA_Tooltip_Ability_special_bonus_raikage_3"						"+{s:value} Lariat Damage"
 		"DOTA_Tooltip_Ability_special_bonus_raikage_4"						"-5 Liger Bomb Armor Reduction"
 		"DOTA_Tooltip_Ability_special_bonus_raikage_5"						"+60% Lightning Horizontal Damage Reduction"
 
