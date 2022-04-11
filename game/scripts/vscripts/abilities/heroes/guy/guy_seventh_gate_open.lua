@@ -36,7 +36,7 @@ end
 	local caster = self:GetCaster()
 	caster:AddNewModifier(caster, self, "modifier_guy_seventh_gate", {})
 	
-	caster:SetModel("models/guy8gates/guy_8gates_base.vmdl")
+	caster:SetModel("models/striker_guy/striker_guy_7gates_base.vmdl")
 	caster:SetOriginalModel("models/striker_guy/striker_guy_base.vmdl")
 
 	if not IsServer() then return end

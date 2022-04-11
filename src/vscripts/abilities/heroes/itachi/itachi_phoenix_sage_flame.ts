@@ -199,8 +199,8 @@ export class itachi_phoenix_sage_flame extends BaseAbility
 
         let b = ParticleManager.CreateParticle("particles/testing_circle.vpcf", ParticleAttachment.WORLDORIGIN, undefined);
         ParticleManager.SetParticleControl(b, 0, location);
-        ParticleManager.SetParticleControl(b, 1, Vector(255, 0, 0));
-        ParticleManager.SetParticleControl(b, 2, Vector(25, 0, 0));
+        ParticleManager.SetParticleControl(b, 1, Vector(0, 0, 0));
+        ParticleManager.SetParticleControl(b, 2, Vector(0, 0, 0));
         ParticleManager.ReleaseParticleIndex(b);
     }
 
