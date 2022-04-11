@@ -249,7 +249,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_flamecontrol2"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
