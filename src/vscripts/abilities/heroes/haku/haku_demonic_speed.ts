@@ -77,6 +77,7 @@ export class modifier_haku_demonic_speed extends BaseModifierMotionHorizontal
         }
 
         this.StartIntervalThink(FrameTime());
+        this.OnIntervalThink();
     }
 
     /****************************************/
@@ -133,7 +134,7 @@ export class modifier_haku_demonic_speed extends BaseModifierMotionHorizontal
             this.search_radius!,
             UnitTargetTeam.ENEMY,
             UnitTargetType.HERO,
-            UnitTargetFlags.NO_INVIS,
+            UnitTargetFlags.NO_INVIS + UnitTargetFlags.FOW_VISIBLE,
             FindOrder.CLOSEST,
             false
         );
