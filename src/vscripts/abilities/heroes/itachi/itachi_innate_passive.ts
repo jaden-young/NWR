@@ -22,6 +22,7 @@ export class modifier_itachi_innate_passive extends BaseModifier
 	parent: CDOTA_BaseNPC = this.GetParent();
     angle?: number;
     damage_table?: ApplyDamageOptions;
+    record: number = -1;
 
     /****************************************/
 
@@ -49,8 +50,45 @@ export class modifier_itachi_innate_passive extends BaseModifier
     /****************************************/
 
     DeclareFunctions(){ return [
-        ModifierFunction.ON_ATTACK_LANDED,
+        ModifierFunction.PRE_ATTACK,
+        ModifierFunction.ON_ATTACK_CANCELLED,
+        ModifierFunction.ON_ATTACK_RECORD_DESTROY,
+        ModifierFunction.ON_ATTACK_LANDED
     ]}
+
+    /****************************************/
+
+    GetModifierPreAttack(event: ModifierAttackEvent): number {
+        if (!IsServer()) return 0;
+        let attacker = event.attacker as CDOTA_BaseNPC_Hero;
+        let target = event.target;
+        let ability = this.GetAbility();
+
+        if (!attacker || !target || !ability || attacker != this.parent) return 0;
+
+        if (!this.IsAttackingFromBehind(target)) return 0;
+
+        this.record = event.record;
+
+        let play_rate = 1 / attacker.GetSecondsPerAttack();
+        attacker.StartGestureWithPlaybackRate(GameActivity.DOTA_ATTACK_EVENT, play_rate * 1.4);
+
+        return 0;
+    }
+
+    OnAttackCancelled(event: ModifierAttackEvent): void {
+        if (!IsServer()) return;
+
+        if (event.record == this.record)
+            event.attacker.FadeGesture(GameActivity.DOTA_ATTACK_EVENT);
+    }
+
+    /****************************************/
+
+    OnAttackRecordDestroy(event: ModifierAttackEvent): void {
+        if (!IsServer()) return;
+        this.record = event.record == this.record ? -1 : this.record;
+    }
 
     /****************************************/
 
@@ -60,17 +98,24 @@ export class modifier_itachi_innate_passive extends BaseModifier
         let target = event.target;
         let ability = this.GetAbility();
 
-        if (!attacker || !target || !ability || attacker != this.parent) return;
+        if (this.record != event.record) return;
 
-        if (!this.IsAttackingFromBehind(target)) return;
-
-        let multiplier = ability.GetSpecialValueFor("damage_per_int") + attacker.FindTalentValue("special_bonus_itachi_5");
+        let multiplier = ability!.GetSpecialValueFor("damage_per_int") + attacker.FindTalentValue("special_bonus_itachi_5");
         
         this.damage_table!.victim = target;
         this.damage_table!.damage = attacker.GetIntellect() * multiplier;
         ApplyDamage(this.damage_table!);
 
-        SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, target, this.damage_table!.damage * (1 + attacker.GetSpellAmplification(false)), undefined);
+        let true_damage = math.floor((this.damage_table!.damage * (1 + attacker.GetSpellAmplification(false))) - this.damage_table!.damage * target.GetMagicalArmorValue());
+
+        SendOverheadEventMessage(undefined, OverheadAlert.BONUS_SPELL_DAMAGE, target, true_damage, undefined);
+
+        EmitSoundOn("Hero_Itachi.Anbu.Proc", target);
+        let crit_fx = ParticleManager.CreateParticle("particles/units/heroes/hero_phantom_assassin/phantom_assassin_crit_impact.vpcf", ParticleAttachment.CUSTOMORIGIN, undefined);
+        ParticleManager.SetParticleControlEnt(crit_fx, 0, target, ParticleAttachment.POINT_FOLLOW, "attach_hitloc", target.GetAbsOrigin(), true);
+        ParticleManager.SetParticleControl(crit_fx, 1, target.GetAbsOrigin());
+        ParticleManager.SetParticleControlForward(crit_fx, 1, -attacker.GetForwardVector() as Vector);
+        ParticleManager.ReleaseParticleIndex(crit_fx);
     }
 
     /****************************************/
