@@ -1567,7 +1567,7 @@
 					{
 						_class = "AnimFile"
 						name = "punch"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = "ACT_DOTA_ATTACK-"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1627,7 +1627,7 @@
 					{
 						_class = "AnimFile"
 						name = "punch4"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = "ACT_DOTA_ATTACK-"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1796,6 +1796,26 @@
 						start_frame = -1
 						end_frame = -1
 						framerate = 70.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kunai4"
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/kunai4.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 100.0
 						reverse = false
 					},
 				]
