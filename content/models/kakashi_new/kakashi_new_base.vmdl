@@ -1338,7 +1338,7 @@
 						disable_compression = false
 						source_filename = "models/kakashi_new/raikiri_hit.fbx"
 						start_frame = 0
-						end_frame = 33
+						end_frame = 16
 						framerate = 30.0
 						reverse = false
 					},
@@ -1547,7 +1547,7 @@
 					{
 						_class = "AnimFile"
 						name = "kick3"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1567,7 +1567,7 @@
 					{
 						_class = "AnimFile"
 						name = "punch"
-						activity_name = "ACT_DOTA_ATTACK-"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1627,7 +1627,7 @@
 					{
 						_class = "AnimFile"
 						name = "punch4"
-						activity_name = "ACT_DOTA_ATTACK-"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
