@@ -268,5 +268,8 @@
 		{
 			m_ChildRef = resource:"particles/units/heroes/raikage/raikage_lariat_dashi.vpcf"
 		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/raikage/raikage_cascade_test.vpcf"
+		},
 	]
 }

@@ -631,7 +631,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_five"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -691,7 +691,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_one"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -703,7 +703,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/raikage_wule/spell_one.SMD"
-						start_frame = -1
+						start_frame = 16
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
@@ -711,7 +711,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_slam_one"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -811,7 +811,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_two"
-						activity_name = ""
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -825,7 +825,7 @@
 						source_filename = "models/raikage_wule/spell_two.SMD"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
@@ -879,6 +879,26 @@
 						source_filename = "models/raikage_wule/walk.SMD"
 						start_frame = -1
 						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "spell_one_channel"
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/raikage_wule/spell_one.SMD"
+						start_frame = 22
+						end_frame = 41
 						framerate = -1.0
 						reverse = false
 					},

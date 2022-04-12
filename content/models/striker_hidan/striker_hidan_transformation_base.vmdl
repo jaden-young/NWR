@@ -879,7 +879,7 @@
 						source_filename = "models/striker_hidan/slash3.smd"
 						start_frame = 0
 						end_frame = 84
-						framerate = 30.0
+						framerate = 80.0
 						reverse = false
 					},
 					{

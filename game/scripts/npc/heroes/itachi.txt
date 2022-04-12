@@ -92,8 +92,8 @@
 
 		// FX
 		//----------------------------------------------------------------
-		"SoundSet"					"Kunai"
-		"GameSoundsFile"			"soundevents/weapons/game_sounds_kunai.vsndevts"
+		"SoundSet"					"ChakraPunch"
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 		//"particle_folder"			"particles/hero/sohei"  //for the future, i think
 		"GibType"					"default"
 		
