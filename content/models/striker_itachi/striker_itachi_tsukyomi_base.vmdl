@@ -35,11 +35,15 @@
 							},
 							{
 								from = "t_wep_kunai_bc.vmat"
-								to = "materials/models/items/drow/drow_arcana/drow_test_metal_dark.vmat"
+								to = "t_wep_kunai_bc.vmat"
 							},
 							{
 								from = "m_line.vmat"
 								to = "materials/models/heroes/marci/marci_test_metal.vmat"
+							},
+							{
+								from = "t_wep_sword_05_bc.vmat"
+								to = "materials/models/striker_itachi/strikeritachi_t4.vmat"
 							},
 						]
 						use_global_default = false
@@ -53,8 +57,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "striker_itachi_base"
-						filename = "models/striker_itachi/striker_itachi_base.smd"
+						filename = "models/striker_itachi/striker_itachi head.fbx"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -64,7 +67,7 @@
 					},
 					{
 						_class = "RenderMeshFile"
-						filename = "models/striker_itachi/striker_itachi head.fbx"
+						filename = "models/striker_itachi/striker_itachi_tsukyomi_base.smd"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -80,21 +83,21 @@
 				[
 					{
 						_class = "AnimFile"
-						name = "striker_itachi_idle"
-						activity_name = ""
+						name = "striker_itachi_tsukyomi_anim"
+						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = true
+						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/striker_itachi/striker_itachi_idle.smd"
-						start_frame = -1
-						end_frame = -1
+						source_filename = "models/striker_itachi/striker_itachi_tsukyomi_anim.smd"
+						start_frame = 69
+						end_frame = 97
 						framerate = -1.0
 						reverse = false
 					},
