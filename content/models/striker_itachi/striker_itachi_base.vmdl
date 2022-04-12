@@ -403,7 +403,7 @@
 						source_filename = "models/striker_itachi/striker_itachi_punch3.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 15.0
 						reverse = false
 					},
 					{

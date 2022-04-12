@@ -23,6 +23,7 @@ export class modifier_itachi_innate_passive extends BaseModifier
     angle?: number;
     damage_table?: ApplyDamageOptions;
     record: number = -1;
+    sound: string = "ChakraPunch.Attack";
 
     /****************************************/
 
@@ -45,6 +46,18 @@ export class modifier_itachi_innate_passive extends BaseModifier
             damage_type: ability.GetAbilityDamageType(),
             ability: ability
         }
+
+        this.StartIntervalThink(0.1);
+    }
+
+    /****************************************/
+
+    OnIntervalThink(): void {
+        let parent = this.GetParent()
+        if (parent.IsMoving() || parent.GetSequence() == "striker_itachi_idle") {
+            this.GetParent().FadeGesture(GameActivity.DOTA_ATTACK);
+            this.GetParent().FadeGesture(GameActivity.DOTA_ATTACK_EVENT);
+        }
     }
 
     /****************************************/
@@ -53,7 +66,8 @@ export class modifier_itachi_innate_passive extends BaseModifier
         ModifierFunction.PRE_ATTACK,
         ModifierFunction.ON_ATTACK_CANCELLED,
         ModifierFunction.ON_ATTACK_RECORD_DESTROY,
-        ModifierFunction.ON_ATTACK_LANDED
+        ModifierFunction.ON_ATTACK_LANDED,
+        ModifierFunction.TRANSLATE_ATTACK_SOUND
     ]}
 
     /****************************************/
@@ -72,6 +86,9 @@ export class modifier_itachi_innate_passive extends BaseModifier
 
         let play_rate = 1 / attacker.GetSecondsPerAttack();
         attacker.StartGestureWithPlaybackRate(GameActivity.DOTA_ATTACK_EVENT, play_rate * 1.4);
+        EmitSoundOn("Hero_Itachi.Kunai.PreAttack", attacker);
+
+        this.sound = "Hero_Itachi.Kunai.Attack";
 
         return 0;
     }
@@ -79,15 +96,20 @@ export class modifier_itachi_innate_passive extends BaseModifier
     OnAttackCancelled(event: ModifierAttackEvent): void {
         if (!IsServer()) return;
 
-        if (event.record == this.record)
+        if (event.record == this.record) {
             event.attacker.FadeGesture(GameActivity.DOTA_ATTACK_EVENT);
+            StopSoundOn("Hero_Itachi.Kunai.PreAttack", event.attacker);
+        }
     }
 
     /****************************************/
 
     OnAttackRecordDestroy(event: ModifierAttackEvent): void {
         if (!IsServer()) return;
-        this.record = event.record == this.record ? -1 : this.record;
+        if (event.record == this.record) {
+            this.record = -1;
+            this.sound = "ChakraPunch.Attack";
+        }
     }
 
     /****************************************/
@@ -125,5 +147,9 @@ export class modifier_itachi_innate_passive extends BaseModifier
         let target_facing_direction = target.GetForwardVector();
 
         return target_facing_direction.Dot(direction) > this.angle!;
+    }
+
+    GetAttackSound(): string {
+        return this.sound;
     }
 }
