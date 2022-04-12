@@ -59,7 +59,7 @@
 		"AttackDamageMax"				"29"		// Damage range max.
 		"AttackRate"					"1.7"		// Speed of attack.
 		"AttackAnimationPoint"			"0.4"		// Normalized time in animation cycle to attack.
-		"AttackRange"					"150"		// Range within a target can be attacked.
+		"AttackRange"					"128"		// Range within a target can be attacked.
 		"AttackSpeedActivityModifiers"				// Attack Speed activities.
 		{
 			"fast"		"170"

@@ -209,4 +209,45 @@
 		vsnd_files = "sounds/heroes/itachi/amaterasu_burn.vsnd"
 	}
 
+
+	Hero_Itachi.Kunai.PreAttack = 
+	{
+		type = "dota_update_default"
+		vsnd_files =
+		[
+			"sounds/weapons/kunai/kunai_preattack1.vsnd",
+			"sounds/weapons/kunai/kunai_preattack2.vsnd",
+		]
+		volume = "1.000000"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "81.000000"
+		mixgroup = "BaseAttacks"
+		spread_radius = "150.000000"
+		distance_max = "2500.000000"
+  	}
+
+	Hero_Itachi.Kunai.Attack = 
+	{
+		type = "dota_update_default"
+		vsnd_files =
+		[
+		"sounds/weapons/kunai/kunai_impact1.vsnd",
+		"sounds/weapons/kunai/kunai_impact2.vsnd",
+		"sounds/weapons/kunai/kunai_impact3.vsnd",
+		]
+		volume_rand_min = "-0.049988"
+		volume_rand_max = "0.049988"
+		volume = "0.549988"
+		pitch_rand_min = "-0.050000"
+		pitch_rand_max = "0.050000"
+		pitch = "1.000000"
+		soundlevel = "75.000000"
+		mixgroup = "BaseAttacks"
+		spread_radius = "150.000000"
+		soundevent_layer2 = "Damage_Melee.Gore"
+		soundevent_layer2_on = "1.000000"
+  	}
+
 }
