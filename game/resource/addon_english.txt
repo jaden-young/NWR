@@ -357,6 +357,42 @@
 		"npc_dota_hero_kisame"  										"Kisame"
 		"npc_dota_hero_kisame_lore"  									"Feared as the Monster of the Hidden Mist, Hoshigaki Kisame is a dangerous S-Rank missing nin and one of the Seven Ninja Swordsmen of the Mist. He loves to fight and is often aggressive towards anyone he meets. Despite this Kisame has shown to be very loyal to his allies unless they endanger the mission. He bears the great sword Samehada (Shark Skin) and uses it to shave his enemies and drain their chakra. Kisame has an abundance of chakra that is said to almost match a tailed beast. It is from this great source of power that he gets the title The Tailed Beast without a Tail. Regarded as one of the most powerful shinobi to ever come out of Kirigakure (Village of the Hidden Mist), he earned membership into Akatsuki through his own strength. "
 		"npc_dota_hero_kisame_description"  							"Playing Kisame is about becoming inescapable as you slowly drown your enemies. This hero favors longer more drawn out confrontations meaning that survivability is of top priority. His abilities offer him great utility in almost any situation whether it be ganking, team fighting, or taking on an enemy one on one. Kisame is very mana dependant as his ultimate consumes mana over time. His passive somewhat remedies this problem as his attacks will drain mana from enemies while gaining the stolen mana. However, this mechanic can be deceptive to Kisame’s mana problems as a larger max mana pool requires more mana to sustain his ultimate. This means that his mana drain is more effective the smaller Kisame’s max mana pool is.  Kisame can easily dominate a team fight so long as he can stick onto various heroes. Through proper micro of his clones and intelligent maneuvering, Kisame is a walking pain train that forces the fight onto the enemy."
+
+
+		// Water Shark Bullet
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet"						"Water Shark Bullet"
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_Description"			"Sends out a water shark that explodes on impact with an enemy. Enemies damaged by the explosion are dealt Magic Damage while also having their Movement Speed and Armor reduced for a short duration."
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_damage"					"DAMAGE:"
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_armor_reduction"		"ARMOR REDUCTION:"
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_move_slow"				"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_AbilityCastRange"		"CAST RANGE:"
+
+		"DOTA_Tooltip_modifier_kisame_water_shark_bullet"						"Water Shark Bullet"
+		"DOTA_Tooltip_modifier_kisame_water_shark_bullet_Description"			"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+
+		// Water Prison
+		"DOTA_Tooltip_ability_kisame_water_prison"								"Water Prison"
+		"DOTA_Tooltip_ability_kisame_water_prison_Description"					"Channeled - Holds an enemy in place with a Water Prison, dealing Magic Damage over time and causing them to be unable to move or act. Kisame gains damage resistance while channeling."
+		"DOTA_Tooltip_ability_kisame_water_prison_damage_per_second"			"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_kisame_water_prison_damage_reduction"				"%DAMAGE REDUCTION:"
+		"DOTA_Tooltip_ability_kisame_water_prison_abilitychanneltime"			"DURATION:"
+		"DOTA_Tooltip_ability_kisame_water_prison_AbilityCastRange"				"CAST RANGE:"
+
+		"DOTA_Tooltip_modifier_kisame_water_prison"								"Water Prison"
+		"DOTA_Tooltip_modifier_kisame_water_prison_Description"					"Disabled. Taking %dMODIFIER_PROPERTY_TOOLTIP% damage every %fMODIFIER_PROPERTY_TOOLTIP2%s."
+		"DOTA_Tooltip_modifier_kisame_water_prison_resistance"					"Water Prison - Channeling"
+		"DOTA_Tooltip_modifier_kisame_water_prison_resistance_Description"		"Incoming damage reduced %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
+
+		//Exploding Water Shockwave
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave"					"Exploding Water Shockwave"
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_Description"		"Kisame propels himself forward on a wave of water, dealing Magic Damage and carrying enemies along with him."
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_damage"			"DAMAGE:"
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_wave_radius"		"RADIUS:"
+
+		"DOTA_Tooltip_modifier_kisame_exploding_water_shockwave"				"Water Shockwave"
+		"DOTA_Tooltip_modifier_kisame_exploding_water_shockwave_Description"	"Carried by the wave."
+
 		
 		//Water Release: Water Shark Bullet Technique (Suiton: Suikodan no Jutsu)
 		"DOTA_Tooltip_ability_kisame_suikodan_no_jutsu"					"<b><font color='#0689D8'>Water Shark Bullet</font></b>"
@@ -386,36 +422,6 @@
 		"DOTA_Tooltip_ability_kisame_samehada_bonus_attack_damage"		"%BONUS ATTACK DAMAGE: "
 		"DOTA_Tooltip_modifier_kisame_samehada"								"<b><font color='#545AE7'>Samehada</font></b>"
 		"DOTA_Tooltip_modifier_kisame_samehada_description"					"Kisame's next attack will <b><font color='#0689D8'>steal Mana</font></b> and grant <b><font color='#545AE7'>Attack Damage.</font></b>"
-
-
-		//Water Prison
-		"DOTA_Tooltip_ability_kisame_water_prison"						"<b><font color='#9AB3F4'>Shark Dance</font></b>"
-		"DOTA_Tooltip_ability_kisame_water_prison_radius"				"RADIUS: "
-		"DOTA_Tooltip_ability_kisame_water_prison_damage"				"DAMAGE PER SECOND: "
-		"DOTA_Tooltip_ability_kisame_water_prison_ms_slow_percentage"	"%MOVEMENT SPEED DEBUFF: "
-		"DOTA_Tooltip_ability_kisame_water_prison_mana_cost_per_second_percentage"	"%MANACOST PER SECOND: "
-		"DOTA_Tooltip_ability_kisame_water_prison_hp_reg_per_second_percentage"	"%HP REGEN PER SECOND: "
-		"DOTA_Tooltip_ability_kisame_water_prison_ms_buff"	"%MOVEMENT SPEED BUFF: "
-		"DOTA_Tooltip_ability_kisame_water_prison"						"<b><font color='#9AB3F4'>Shark Dance</font></b>"
-		"DOTA_Tooltip_ability_kisame_water_prison_description"			"<b><font color='#FFFFFF'>TOGGLE</font></b> - <b><font color='#0689D8'>Creates a large dome of water</font></b> that follows Kisame's movement while draining mana. <br><br>Kisame gains <b><font color='#9AB3F4'>extra Movement Speed and Health Regeneration</font></b> inside the water dome. <br><br> Enemies take<b><font color='#0A6AA4'> increasing Magic Damage and Movement Speed Slow</font></b> while inside the water dome."
-		
-		"DOTA_Tooltip_ability_kisame_water_prison_deactivate"			"<b><font color='#9AB3F4'>Shark Dance (Off)</font></b>"
-		"DOTA_Tooltip_ability_kisame_water_prison_deactivate_description"	"Removes the effects of <b><font color='#9AB3F4'>Shark Dance</font></b>."
-
-		"Dota_Tooltip_modifier_kisame_water_prision_caster"						"<b><font color='#9AB3F4'>Shark Dance</font></b>"
-		"Dota_Tooltip_modifier_kisame_water_prision_caster_description"			"Creating a <b><font color='#0689D8'>Water Dome</font></b> around the User that deals <b><font color='#0689D8'>Damage to nearby enemies.</font></b>"
-		"Dota_Tooltip_modifier_water_prison_buff"						"<b><font color='#9AB3F4'>Aquatic</font></b>"
-		"Dota_Tooltip_modifier_water_prison_buff_description"			"Kisame has increased Movement Speed and Health Regeneration inside the Water Dome."
-		"Dota_Tooltip_modifer_water_prison_hp_reg"						"<b><font color='#9AB3F4'>Regeneration</font></b>"
-		"Dota_Tooltip_modifer_water_prison_hp_reg_description"			"Kisame has <b><font color='#9AB3F4'>increased Health Regneration</font></b> inside the Water Dome."
-		"Dota_Tooltip_modifer_water_prison_buff"						"<b><font color='#9AB3F4'>Aquatic</font></b>"
-		"Dota_Tooltip_modifer_water_prison_buff_description"			"Kisame has <b><font color='#9AB3F4'>increased Movement Speed</font></b> inside the Water Dome."
-
-		//Water Prison debuff
-		"Dota_Tooltip_modifier_kisame_water_prision_aura"						"<b><font color='#9AB3F4'>Shark Dance</font></b>"
-		"Dota_Tooltip_modifier_kisame_water_prision_aura_description"			"This Unit is taking <b><font color='#9AB3F4'>Damage</font></b> and is <b><font color='#9AB3F4'>Slowed.</font></b>"
-		"Dota_Tooltip_modifier_kisame_water_prision_debuff_stacks"						"<b><font color='#0A6AA4'>Drowning</font></b>"
-		"Dota_Tooltip_modifier_kisame_water_prision_debuff_stacks_description"			"Taking <b><font color='#0A6AA4'>increasing damage and slow</font></b> while inside the Water Dome."
 
 		
 		//Bunshin Water Prison

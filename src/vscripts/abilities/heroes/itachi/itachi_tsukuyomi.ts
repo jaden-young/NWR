@@ -9,8 +9,8 @@ export class itachi_tsukuyomi extends BaseAbility
 
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle", "particles/units/heroes/hero_bane/bane_fiends_grip.vpcf", context);
-        PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_kakashi.vsndevts", context);
-        PrecacheResource("soundfile", "soundevents/heroes/kakashi/game_sounds_vo_kakashi.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_itachi.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/itachi/game_sounds_vo_itachi.vsndevts", context);
     }
 
     /****************************************/

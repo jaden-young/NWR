@@ -1,0 +1,56 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_bShouldHitboxesFallbackToRenderBounds = false
+	m_nMaxParticles = 0
+	m_nBehaviorVersion = 12
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_POINT_FOLLOW"
+					m_attachmentName = "attach_flying_particles"
+					m_entityName = "parent"
+				},
+			]
+			m_previewState = 
+			{
+				m_previewModel = "models/items/courier/faceless_rex/faceless_rex_flying.vmdl"
+			}
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisone.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisong.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisona.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisonf.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisonb.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisonc.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prisond.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/kisame/kisame_water_prison_explosion.vpcf"
+			m_bEndCap = true
+		},
+	]
+}

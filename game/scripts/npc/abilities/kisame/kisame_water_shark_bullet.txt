@@ -1,17 +1,17 @@
 "DOTAAbilities"
 {	
 	//=================================================================================================================
-	// Kisame: Water Prison
+	// Kisame: Water Shark Bullet
 	//=================================================================================================================
-	"kisame_water_prison"
+	"kisame_water_shark_bullet"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"                    "abilities/heroes/kisame/kisame_water_prison.lua"
-		"AbilityTextureName"			"kisame_water_prison"
+		"ScriptFile"                    "abilities/heroes/kisame/kisame_water_shark_bullet.lua"
+		"AbilityTextureName"			"kisame_water_shark_bullet"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
@@ -20,30 +20,29 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.2"
-		"AbilityCastRange"				"275"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"1200"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityChannelTime"			"2.0 2.5 3.0 3.5"
-		"AbilityCooldown"				"19 16 13 10"
+		"AbilityCooldown"				"12"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"95 105 115 125"
+		"AbilityManaCost"				"90 100 110 120"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage_per_second"			"60 80 100 120"
-			"damage_reduction"
-			{
-				"value"						"25 30 35 40"
-				"DamageTypeTooltip"			"DAMAGE_TYPE_NONE"
-			}
-			"interval"					"0.5"
+			"damage"					"75 150 225 300"
+			"armor_reduction"			"2 3 4 5"
+			"move_slow"					"35"
+			"duration"					"4"
+			"shark_radius"				"120"
+			"shark_speed"				"1600"
+			"explosion_radius"			"260"
 		}
 	}
 }
