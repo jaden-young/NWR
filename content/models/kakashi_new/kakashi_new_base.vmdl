@@ -1740,26 +1740,6 @@
 					},
 					{
 						_class = "AnimFile"
-						name = "mud_wall"
-						activity_name = "ACT_DOTA_CAST_ABILITY_5"
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/kakashi_new/raikiri_charge.fbx"
-						start_frame = 0
-						end_frame = 82
-						framerate = 60.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
 						name = "kunai1"
 						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 1
@@ -1816,6 +1796,26 @@
 						start_frame = -1
 						end_frame = -1
 						framerate = 100.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "mudwall"
+						activity_name = "ACT_DOTA_CAST_ABILITY_5"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kakashi_new/mudwall.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 60.0
 						reverse = false
 					},
 				]
