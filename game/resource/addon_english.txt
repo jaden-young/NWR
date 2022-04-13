@@ -483,6 +483,18 @@
 		//--------------------
 		"npc_dota_hero_yondaime"  									"Minato"
 		"npc_dota_hero_yondaime_lore"  										""
+
+		//The Yellow Flash
+		"DOTA_Tooltip_ability_yondaime_yellow_flash"					"The Yellow Flash"
+		"DOTA_Tooltip_ability_yondaime_yellow_flash_Description"		"Grants Minato a brief boost in Movement Speed and Evasion. While this spell is active, maximum movement speed is unlocked."
+		"DOTA_Tooltip_ability_yondaime_yellow_flash_move_speed"			"%MOVEMENT SPEED:"
+		"DOTA_Tooltip_ability_yondaime_yellow_flash_evasion"			"EVASION:"
+		"DOTA_Tooltip_ability_yondaime_yellow_flash_duration"			"DURATION:"
+
+		"DOTA_Tooltip_modifier_yondaime_yellow_flash"					"The Yellow Flash"
+		"DOTA_Tooltip_modifier_yondaime_yellow_flash_Description"		"Gaining %dMODIFIER_PROPERTY_EVASION_CONSTANT%%% evasion; movement speed is uncapped and increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+
+
 		// Marked Kunai
 		"DOTA_Tooltip_ability_yondaime_marked_kunai"					"<b><font color='#E7B34E'>Marked Kunai</font></b>"
 		"DOTA_Tooltip_ability_yondaime_marked_kunai_description"		"<b><font color='#E7B34E'>Throws a Marked Kunai</font></b> dealing <b>Physical Damage</b> to enemies in its path. <br><br> The Marked Kunai is <b><font color='#E7B34E'>planted at the target position</font></b> and can be teleported to by using the abilities <b><font color='#EE914D'>Flying Thunder God</font></b> and <b><font color='#E95A2E'>Flying Thunder God: Slash.</font></b> <br><br> <b><font color='#E7B34E'>Deals double damage</font></b> to creeps."
@@ -1193,14 +1205,19 @@
 		//Onoki
 		//--------------------
 		"npc_dota_hero_onoki"											"Onoki"
+
 		//Jinton
-		"DOTA_Tooltip_ability_onoki_jinton"								"<b><font color='#FFFFFF'>Atomic Dismantling</font></b>"
-		"DOTA_Tooltip_ability_onoki_jinton_lore"						"Jinton: Genkai Hakuri no Jutsu"
-		"DOTA_Tooltip_ability_onoki_jinton_damage"					    "DAMAGE: "
-		"DOTA_Tooltip_ability_onoki_jinton_root_duration"				"ROOT DURATION: "
-		"DOTA_Tooltip_ability_onoki_jinton_stun_duration"				"STUN DURATION: "
-		"DOTA_Tooltip_ability_onoki_jinton_stun_radius"					"RADIUS: "
-		"DOTA_Tooltip_ability_onoki_jinton_Description"					"<b><font color='#FFFFFF'>Roots a target unit</font></b> as well as all enemies around them.</font></b> <br><br> After a short delay, an explosion occurs within a short radius of each enemy <b><font color='#FFFFFF'>dealing Magic Damage and Stunning</font></b>."
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling"						"Atomic Dismantling"
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling_Description"			"Launches a small projectile towards the targeted area. Upon reaching its destination, all enemies inside are rooted for a short duration. After a short delay, all enemies still within the area take Magical Damage and are stunned."
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling_lore"				"Jinton: Genkai Hakuri no Jutsu"
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling_damage"				"DAMAGE: "
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling_root_duration"		"ROOT DURATION:"
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling_stun_duration"		"STUN DURATION:"
+		"DOTA_Tooltip_ability_onoki_atomic_dismantling_radius"				"RADIUS:"
+
+		"DOTA_Tooltip_modifier_onoki_atomic_dismantling"					"Rooted"
+		"DOTA_Tooltip_modifier_onoki_atomic_dismantling_Description"		"Cannot move."
+		
 		
 		//Stalagmite Armor
 		"DOTA_Tooltip_ability_onoki_stalagmite_armor"					"<b><font color='#C1943D'>Stalagmite Armor</font></b>"

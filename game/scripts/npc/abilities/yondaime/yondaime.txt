@@ -1,3 +1,7 @@
+#base "yondaime_innate_passive.txt"
+#base "yondaime_yellow_flash.txt"
+#base "talents.txt"
+
 #base "yondaime_agile_speed.txt"
 #base "yondaime_body_flicker.txt"
 #base "yondaime_dash_strike.txt"
@@ -5,6 +9,5 @@
 #base "yondaime_hiraishin_mark.txt"
 #base "yondaime_marked_kunai.txt"
 #base "yondaime_rasengan.txt"
-#base "yondaime_yellow_flash.txt"
-#base "talents.txt"
-#base "yondaime_innate_passive.txt"
+
+

@@ -11,7 +11,7 @@
 			"HeroID"					"212"
 			"BaseClass"		"npc_dota_hero_sven"
 			"Model"				"models/striker_onoki/striker_onoki_base.vmdl" //models/onuki/onoki_model.vmdl
-			"Ability1"			"onoki_jinton"
+			"Ability1"			"onoki_atomic_dismantling"
 			"Ability2"			"onoki_stalagmite_armor"
 			"Ability3"			"onoki_added_weight"
 			"Ability4"			"generic_hidden"
