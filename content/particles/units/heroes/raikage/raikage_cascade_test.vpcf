@@ -986,7 +986,6 @@
 			m_nLOD = 1
 			m_bForceLoopingAnimation = true
 			m_bOrientZ = true
-			m_flAnimationRate = 15.0
 			m_bScaleAnimationRate = true
 			m_flAlphaScale = 
 			{
@@ -1033,7 +1032,13 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
-			m_ActivityName = "ACT_DOTA_CHANNEL_ABILITY_2"
+			m_ActivityName = "ACT_DOTA_CAST_ABILITY_2"
+			m_ModelList = 
+			[
+				{
+					m_model = resource:"models/raikage_wule/wule_raikage_base.vmdl"
+				},
+			]
 		},
 	]
 }

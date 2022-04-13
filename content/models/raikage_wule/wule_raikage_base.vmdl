@@ -631,7 +631,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_five"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2-"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -711,7 +711,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_slam_one"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = "ACT_DOTA_ATTACK-"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -885,7 +885,7 @@
 					{
 						_class = "AnimFile"
 						name = "lariat"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2-"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -897,7 +897,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/raikage_wule/lariat.smd"
-						start_frame = -1
+						start_frame = 5
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
