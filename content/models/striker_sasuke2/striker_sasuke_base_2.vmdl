@@ -1023,7 +1023,7 @@
 					{
 						_class = "AnimFile"
 						name = "seal"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1037,7 +1037,7 @@
 						source_filename = "models/striker_sasuke2/seal.smd"
 						start_frame = 0
 						end_frame = 37
-						framerate = 30.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -1150,7 +1150,7 @@
 					{
 						_class = "Attachment"
 						name = "attach_attack1"
-						parent_bone = "lefthand"
+						parent_bone = "righthand"
 						relative_origin = [ 13.399822, 6.469212, -2.74765 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
