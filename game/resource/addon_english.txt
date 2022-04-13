@@ -723,6 +723,12 @@
 		//--------------------
 		"npc_dota_hero_sakura"  								"Sakura"
 		"npc_dota_hero_sakura_lore"  							""
+
+		// Mystical Palm Technique
+		"DOTA_Tooltip_ability_sakura_mystical_palm_technique"					"Mystical Palm Technique"
+		"DOTA_Tooltip_ability_sakura_mystical_palm_technique_Description"		"Heals a target unit for a flat amount plus a percentage of their maximum HP. Also applies a Strong Dispel."
+		"DOTA_Tooltip_ability_sakura_mystical_palm_technique_base_heal"			"BASE HEAL:"
+		"DOTA_Tooltip_ability_sakura_mystical_palm_technique_max_hp_heal"		"%MAX HEALTH HEALED:"
 		
 		// Earth Slam
 		"DOTA_Tooltip_ability_sakura_earth_slam"						"<b><font color='#FF65E8'>Cherry Blossom Impact</font></b>"
@@ -1206,7 +1212,7 @@
 		//--------------------
 		"npc_dota_hero_onoki"											"Onoki"
 
-		//Jinton
+		//Atomic Dismantling
 		"DOTA_Tooltip_ability_onoki_atomic_dismantling"						"Atomic Dismantling"
 		"DOTA_Tooltip_ability_onoki_atomic_dismantling_Description"			"Launches a small projectile towards the targeted area. Upon reaching its destination, all enemies inside are rooted for a short duration. After a short delay, all enemies still within the area take Magical Damage and are stunned."
 		"DOTA_Tooltip_ability_onoki_atomic_dismantling_lore"				"Jinton: Genkai Hakuri no Jutsu"

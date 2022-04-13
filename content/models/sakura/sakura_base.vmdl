@@ -544,7 +544,7 @@
 					{
 						_class = "AnimFile"
 						name = "heal"
-						activity_name = "ACT_DOTA_CAST_ABILITY_4"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -558,7 +558,7 @@
 						source_filename = "models/sakura/heal.fbx"
 						start_frame = 0
 						end_frame = 43
-						framerate = 30.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
