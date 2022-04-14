@@ -15,11 +15,11 @@
 						[
 							{
 								from = "t_chr_shirt_01_b_bc.vmat"
-								to = "materials/models/striker_sasuke/striker_sasuke4.vmat"
+								to = "t_chr_shirt_01_b_bc.vmat"
 							},
 							{
 								from = "t_wep_sasukesword_bc.vmat"
-								to = "materials/models/striker_sasuke/striker_sasuke3.vmat"
+								to = "t_wep_sasukesword_bc.vmat"
 							},
 							{
 								from = "m_line.vmat"
@@ -27,7 +27,7 @@
 							},
 							{
 								from = "mi_chr_sasuke.vmat"
-								to = "materials/models/striker_sasuke/striker_sasuke1.vmat"
+								to = "materials/models/striker_sasuke/striker_sasuke4.vmat"
 							},
 							{
 								from = "mi_chr_sasukeeyel.vmat"
@@ -36,6 +36,18 @@
 							{
 								from = "mi_chr_sasukeeyer.vmat"
 								to = "materials/models/striker_sasuke/striker_sasuke2.vmat"
+							},
+							{
+								from = "mi_chr_man_shirt_01_b.vmat"
+								to = "materials/models/striker_sasuke/striker_sasuke4.vmat"
+							},
+							{
+								from = "mi_chr_man_skirt_01_b.vmat"
+								to = "materials/models/striker_sasuke/striker_sasuke4.vmat"
+							},
+							{
+								from = "mi_wep_sasukesword.vmat"
+								to = "materials/models/striker_sasuke/striker_sasuke3.vmat"
 							},
 						]
 						use_global_default = false
@@ -683,7 +695,6 @@
 					},
 					{
 						_class = "RenderMeshFile"
-						name = "sasuke_head"
 						filename = "models/striker_sasuke2/sasuke_head.fbx"
 						import_scale = 1.0
 						import_filter = 
