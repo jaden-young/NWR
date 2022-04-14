@@ -781,7 +781,6 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "striker_anko_base"
 						filename = "models/striker_anko/striker_anko_base.smd"
 						import_scale = 1.0
 						import_filter = 
