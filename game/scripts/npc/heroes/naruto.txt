@@ -16,6 +16,7 @@
 		"Ability4"					"naruto_rasenshuriken"
 		"Ability5"					"naruto_tailed_beast_bomb"
 		"Ability6"  				"naruto_kyuubi_chakra_mode"
+		"Ability7"					"naruto_innate_passive"
 
 		"Ability10"					"special_bonus_all_stats_5"
 		"Ability11"					"special_bonus_naruto_6"

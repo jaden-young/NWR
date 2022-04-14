@@ -59,6 +59,13 @@
 				"var_type"					"FIELD_INTEGER"
 				"knockback_distance"		"600"
 			}
+			"07"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"clone_damage"				"40"
+				"RequiresShard"				"1"
+				"DamageTypeTooltip"			"DAMAGE_TYPE_MAGICAL"
+			}
 		}
 	}
 }

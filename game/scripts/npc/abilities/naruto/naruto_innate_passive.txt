@@ -1,0 +1,29 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Naruto: Innate Passive -- Kyuubi Chakra
+	//=================================================================================================================
+	"naruto_innate_passive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/naruto/naruto_innate_passive.lua"
+		"AbilityTextureName"			"naruto_innate"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"health_regen"				"1"
+			"hp_regen_lvl"				"1"
+			"mana_regen"				"0.5"
+			"mp_regen_lvl"			"0.25"
+			"ultimate_mulitplier"		"300"
+		}
+	}
+}

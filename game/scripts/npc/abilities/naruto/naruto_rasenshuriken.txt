@@ -6,16 +6,18 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/naruto/rasenshuriken.lua"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"naruto/rasenshuriken"
-		"MaxLevel"						"2"
+		"MaxLevel"						"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"800"
-		"AbilityCastPoint"				"0.6"
+		"AbilityCastPoint"				"0.7"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -23,37 +25,20 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"170 200"
+		"AbilityManaCost"				"200"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
+		"AbilityValues"
 		{
-			"01"
+			"base_damage"				"150"
+			"attack_dmg_mult"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"damage"					"360 500"
+				"value"						"1.7"
+				"DamageTypeTooltip"			"DAMAGE_TYPE_MAGICAL"
 			}
-			"02"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"duration"					"8.0"
-			}
-			"03"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"slow_duration"				"2.0"
-			}
-			"04"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"stun_duration"				"1.5 1.7"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"bonus_attack_range"		"600"
-			}
+			"stun_duration"				"1.5"
+			"radius"					"250"
 		}
 	}
 }

@@ -108,19 +108,23 @@
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
-			m_flStartScale = 10.0
+			m_flStartScale = 0.0
 			m_flBias = 0.3
 			m_flEndScale = 10.0
+			m_flEndTime = 0.12
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
-			m_flFadeOutTime = 1.5
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+			m_flFadeOutTime = 1.0
+		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 0.3
 		},
 		{
 			_class = "C_OP_RampScalarLinear"
-			m_RateMax = 2000.0
-			m_RateMin = 2000.0
+			m_RateMax = 15.0
+			m_RateMin = 15.0
 			m_nField = 4
 		},
 		{
@@ -140,11 +144,6 @@
 		{
 			_class = "C_OP_PositionLock"
 			m_nControlPointNumber = 3
-		},
-		{
-			_class = "C_OP_InterpolateRadius"
-			m_flEndScale = 100.0
-			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 		},
 	]
 	m_Renderers = 

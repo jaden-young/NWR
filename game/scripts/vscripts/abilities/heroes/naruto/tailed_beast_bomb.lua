@@ -1,9 +1,6 @@
-
 naruto_tailed_beast_bomb = naruto_tailed_beast_bomb or class({})
 
--------------------------------
--- naruto_tailed_beast_bomb --
--------------------------------
+--------------------------------------------------------------------------------
 
 function naruto_tailed_beast_bomb:Precache( context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/beastbomb_cast_talking.vsndevts", context )
@@ -13,7 +10,15 @@ function naruto_tailed_beast_bomb:Precache( context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/beastbomb_ball.vsndevts", context )
 end
 
-function naruto_tailed_beast_bomb:IsInnateAbility() return true end
+--------------------------------------------------------------------------------
+
+function naruto_tailed_beast_bomb:Spawn()
+	if not IsServer() then return end
+	self:SetLevel(1)
+	self:SetHidden(true)
+end
+
+--------------------------------------------------------------------------------
 
 function naruto_tailed_beast_bomb:OnAbilityPhaseStart()
 	local caster = self:GetCaster()
@@ -21,6 +26,8 @@ function naruto_tailed_beast_bomb:OnAbilityPhaseStart()
 	caster:EmitSound("beastbomb_cast")
 	return true
 end
+
+--------------------------------------------------------------------------------
 
 function naruto_tailed_beast_bomb:OnSpellStart()
 	-- Preventing projectiles getting stuck in one spot due to potential 0 length vector
@@ -30,6 +37,8 @@ function naruto_tailed_beast_bomb:OnSpellStart()
 
 	self:FireBomb()
 end
+
+--------------------------------------------------------------------------------
 
 function naruto_tailed_beast_bomb:FireBomb()
 	-- This "dummy" literally only exists to attach the gush travel sound to
@@ -70,6 +79,8 @@ function naruto_tailed_beast_bomb:FireBomb()
 	self:GetCaster():RemoveModifierByName("modifier_kyuubi_chakra_mode")
 end
 
+--------------------------------------------------------------------------------
+
 function naruto_tailed_beast_bomb:OnProjectileThink_ExtraData(location, data)
 	if data.dummy_index then
 		EntIndexToHScript(data.dummy_index):SetAbsOrigin(location)
@@ -77,6 +88,8 @@ function naruto_tailed_beast_bomb:OnProjectileThink_ExtraData(location, data)
 
 	GridNav:DestroyTreesAroundPoint(location, 375, true)
 end
+
+--------------------------------------------------------------------------------
 
 function naruto_tailed_beast_bomb:OnProjectileHit_ExtraData(target, location, data)
 	if target and data.dummy_index and EntIndexToHScript(data.dummy_index) and not EntIndexToHScript(data.dummy_index):IsNull() and EntIndexToHScript(data.dummy_index).units_hit then

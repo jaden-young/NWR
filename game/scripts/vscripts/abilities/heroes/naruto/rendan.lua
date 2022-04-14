@@ -1,16 +1,23 @@
 LinkLuaModifier("modifier_naruto_rendan", "abilities/heroes/naruto/rendan", LUA_MODIFIER_MOTION_NONE)
 LinkLuaModifier("modifier_naruto_rendan_boost", "abilities/heroes/naruto/rendan", LUA_MODIFIER_MOTION_NONE)
+--------------------------------------------------------------------------------
 
 naruto_rendan = naruto_rendan or class({})
+
+--------------------------------------------------------------------------------
 
 function naruto_rendan:Precache( context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/rendan_talking.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/rendan_fire.vsndevts", context )
 end
 
+--------------------------------------------------------------------------------
+
 function naruto_rendan:GetIntrinsicModifierName()
 	return "modifier_naruto_rendan"
 end
+
+--------------------------------------------------------------------------------
 
 function naruto_rendan:OnSpellStart()
 	self:GetCaster():EmitSound("rendan_talking")
@@ -32,15 +39,25 @@ function naruto_rendan:OnSpellStart()
 	end
 end
 
+--------------------------------------------------------------------------------
+
 modifier_naruto_rendan = modifier_naruto_rendan or class({})
 
-function modifier_naruto_rendan:IsHidden() return false end
-function modifier_naruto_rendan:IsPurgable() return false end
+--------------------------------------------------------------------------------
 
-function modifier_naruto_rendan:DeclareFunctions() return {
-	MODIFIER_EVENT_ON_ORDER,
-	MODIFIER_EVENT_ON_ATTACK_RECORD,
-} end
+function modifier_naruto_rendan:IsHidden() 		return false end
+function modifier_naruto_rendan:IsPurgable() 	return false end
+
+--------------------------------------------------------------------------------
+
+function modifier_naruto_rendan:DeclareFunctions() 
+	return {
+		MODIFIER_EVENT_ON_ORDER,
+		MODIFIER_EVENT_ON_ATTACK_RECORD,
+	} 
+end
+
+--------------------------------------------------------------------------------
 
 function modifier_naruto_rendan:OnCreated()
 	if not IsServer() then return end
@@ -52,6 +69,8 @@ function modifier_naruto_rendan:OnCreated()
 
 	self:StartIntervalThink(0.1)
 end
+
+--------------------------------------------------------------------------------
 
 function modifier_naruto_rendan:OnIntervalThink()
 	if self.bRushChecking and self:GetParent():GetAggroTarget() == self.target and (self.target:GetAbsOrigin() - self:GetParent():GetAbsOrigin()):Length2D() <= self:GetAbility():GetTalentSpecialValueFor("max_distance") then
@@ -69,27 +88,33 @@ function modifier_naruto_rendan:OnIntervalThink()
 	end
 end
 
+--------------------------------------------------------------------------------
+
 function modifier_naruto_rendan:OnOrder(keys)
+	if not IsServer() then return end
+	local ability = self:GetAbility()
+	local parent = self:GetParent()
+	local caster = self:GetCaster()
 	local caster_ability
 
 	for k, v in pairs(Entities:FindAllByClassname("npc_dota_hero_dragon_knight")) do
-		if v:GetTeam() == self:GetParent():GetTeam() and not v:IsIllusion() then
-			caster_ability = v:FindAbilityByName(self:GetAbility():GetAbilityName())
+		if v:GetTeam() == parent:GetTeam() and not v:IsIllusion() then
+			caster_ability = v:FindAbilityByName(ability:GetAbilityName())
 		end
 	end
 
-	if keys.unit == self:GetParent() and self:GetAbility() and caster_ability and caster_ability:GetAutoCastState() and self:GetAbility():IsCooldownReady() and not self:GetParent():PassivesDisabled() and keys.target then
+	if keys.unit == parent and ability and caster_ability and ability:IsCooldownReady() and not parent:PassivesDisabled() and keys.target then
 		if keys.order_type == DOTA_UNIT_ORDER_ATTACK_TARGET then
-			if (keys.target:GetAbsOrigin() - self:GetParent():GetAbsOrigin()):Length2D() <= GetAbilityKV(self:GetAbility():GetAbilityName(), "AbilityCastRange", self:GetAbility():GetLevel()) and (keys.target:GetAbsOrigin() - self:GetParent():GetAbsOrigin()):Length2D() >= self:GetAbility():GetTalentSpecialValueFor("min_distance") then
-				self:GetParent():EmitSound("rendan_fire")
+			if (keys.target:GetAbsOrigin() - parent:GetAbsOrigin()):Length2D() <= GetAbilityKV(ability:GetAbilityName(), "AbilityCastRange", ability:GetLevel()) and (keys.target:GetAbsOrigin() - parent:GetAbsOrigin()):Length2D() >= ability:GetTalentSpecialValueFor("min_distance") then
+				parent:EmitSound("rendan_fire")
 
 				local rush_modifier
 
-				if self:GetAbility():IsCooldownReady() then
-					rush_modifier = self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_naruto_rendan_boost", {duration = 5})
-					self:GetAbility():UseResources(true, false, true)
+				if ability:IsCooldownReady() then
+					rush_modifier = parent:AddNewModifier(caster, ability, "modifier_naruto_rendan_boost", {duration = 5})
+					ability:UseResources(true, false, true)
 				else
-					rush_modifier = self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_naruto_rendan_boost", {duration = 5})
+					rush_modifier = parent:AddNewModifier(caster, ability, "modifier_naruto_rendan_boost", {duration = 5})
 				end
 				
 				if rush_modifier then
@@ -106,8 +131,10 @@ function modifier_naruto_rendan:OnOrder(keys)
 	end
 end
 
+--------------------------------------------------------------------------------
+
 function modifier_naruto_rendan:OnAttackRecord(keys)
-	if keys.attacker == self:GetParent() and self:GetAbility() and not self:GetAbility():GetToggleState() and self:GetAbility():IsCooldownReady() and self:GetParent():HasScepter() and not keys.no_attack_cooldown and not self:GetParent():PassivesDisabled() then
+	if keys.attacker == self:GetParent() and self:GetAbility() and self:GetAbility():IsCooldownReady() and self:GetParent():HasScepter() and not keys.no_attack_cooldown and not self:GetParent():PassivesDisabled() then
 		if not self:GetParent():HasModifier("modifier_naruto_rendan_boost") then
 			self:GetParent():EmitSound("rendan_fire")
 		
@@ -122,23 +149,36 @@ function modifier_naruto_rendan:OnAttackRecord(keys)
 	end
 end
 
+--------------------------------------------------------------------------------
+
 modifier_naruto_rendan_boost = modifier_naruto_rendan_boost or class({})
+
+--------------------------------------------------------------------------------
 
 function modifier_naruto_rendan_boost:GetEffectName()
 	return "particles/units/heroes/hero_phantom_lancer/phantomlancer_edge_boost.vpcf"
 end
 
+--------------------------------------------------------------------------------
+
 function modifier_naruto_rendan_boost:CheckState() return {
 	[MODIFIER_STATE_NO_UNIT_COLLISION] = true
 } end
 
-function modifier_naruto_rendan_boost:DeclareFunctions() return {
-	MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE_MIN,
-	MODIFIER_EVENT_ON_ORDER,
-	MODIFIER_EVENT_ON_STATE_CHANGED,
-	MODIFIER_EVENT_ON_ATTACK_LANDED,
-	MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
-} end
+--------------------------------------------------------------------------------
+
+function modifier_naruto_rendan_boost:DeclareFunctions() 
+	return {
+		MODIFIER_PROPERTY_MOVESPEED_ABSOLUTE_MIN,
+		MODIFIER_EVENT_ON_ORDER,
+		MODIFIER_EVENT_ON_STATE_CHANGED,
+		MODIFIER_EVENT_ON_ATTACK_START,
+		MODIFIER_EVENT_ON_ATTACK_LANDED,
+		MODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE,
+	}
+end
+
+--------------------------------------------------------------------------------
 
 function modifier_naruto_rendan_boost:OnCreated(keys)
 	self.bonus_speed = self:GetAbility():GetTalentSpecialValueFor("charge_speed") + self:GetCaster():FindTalentValue("special_bonus_naruto_6")
@@ -173,15 +213,21 @@ function modifier_naruto_rendan_boost:OnCreated(keys)
 	}
 end
 
+--------------------------------------------------------------------------------
+
 -- Needs a frame to properly retrieve the stack count, which is set in the above intrinsic modifier for Sun Catcher checking
 function modifier_naruto_rendan_boost:OnIntervalThink()
 	self.target = EntIndexToHScript(-self:GetStackCount())
 	self:StartIntervalThink(-1)
 end
 
+--------------------------------------------------------------------------------
+
 function modifier_naruto_rendan_boost:GetModifierMoveSpeed_AbsoluteMin()
 	return self.bonus_speed
 end
+
+--------------------------------------------------------------------------------
 
 -- "This buff lasts for up to 5 seconds, until Naruto successfully hits the rush target, or until he receives another order."
 -- "Non-targeted items do not cancel the rush. Items which can be double-clicked to cast on self still count as targeted."
@@ -191,6 +237,8 @@ function modifier_naruto_rendan_boost:OnOrder(keys)
 	end
 end
 
+--------------------------------------------------------------------------------
+
 -- "The rush buff is also lost when Naruto gets stunned, cycloned, slept, hexed or hidden."
 function modifier_naruto_rendan_boost:OnStateChanged(keys)
 	if keys.unit == self:GetParent() and (self:GetParent():IsStunned() or self:GetParent():IsNightmared() or self:GetParent():IsHexed() or self:GetParent():IsOutOfGame()) then
@@ -198,11 +246,38 @@ function modifier_naruto_rendan_boost:OnStateChanged(keys)
 	end
 end
 
+--------------------------------------------------------------------------------
+
+function modifier_naruto_rendan_boost:OnAttackStart(event)
+	if not IsServer() then return end
+	local attacker = event.attacker
+	local target = event.target
+
+	if not attacker or attacker ~= self:GetParent() or not attacker:IsRealHero() or not target or event.no_attack_cooldown then
+		return 0
+	end
+
+	local origin = target:GetAbsOrigin()
+	local position = origin - target:GetForwardVector() * (target:GetPaddedCollisionRadius() + attacker:GetPaddedCollisionRadius())
+
+	attacker:SetAbsOrigin(position)
+	attacker:SetForwardVector(target:GetAbsOrigin())
+	attacker:FaceTowards(target:GetAbsOrigin())
+
+	if GridNav:IsBlocked(position) then
+		FindClearSpaceForUnit(attacker, position, true)
+	end
+end
+
+--------------------------------------------------------------------------------
+
 function modifier_naruto_rendan_boost:OnAttackLanded(keys)
 	if keys.attacker == self:GetParent() and not keys.no_attack_cooldown then		
 		self:Destroy()
 	end
 end
+
+--------------------------------------------------------------------------------
 
 function modifier_naruto_rendan_boost:GetModifierPreAttack_BonusDamage()
 	return self.bonus_damage

@@ -6,6 +6,8 @@ node_modules
 /game/scripts/vscripts/**/*.lua
 /game/resource/localization/**/*.js
 
+!/game/scripts/vscripts/abilities/heroes/naruto/*.lua
+
 # Dota 2 stuff
 *.bin
 *.vcss_c

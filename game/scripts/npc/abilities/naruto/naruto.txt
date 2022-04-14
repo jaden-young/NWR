@@ -1,3 +1,4 @@
+#base "naruto_innate_passive.txt"
 #base "naruto_shadow_clone_technique.txt"
 #base "naruto_rasengan.txt"
 #base "naruto_rendan.txt"

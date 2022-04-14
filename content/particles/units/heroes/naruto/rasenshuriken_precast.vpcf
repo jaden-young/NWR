@@ -93,6 +93,10 @@
 			m_bSetOrientation = true
 			m_nFirstControlPoint = 3
 		},
+		{
+			_class = "C_OP_FadeInSimple"
+			m_flFadeInTime = 5.0
+		},
 	]
 	m_ForceGenerators = 
 	[
@@ -172,6 +176,7 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_RenderDeferredLight"
@@ -382,16 +387,18 @@
 	m_Children = 
 	[
 		{
-			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_alt_line.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_precastd.vpcf"
+			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_swirl.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_precastb.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/naruto/shuriken_glow.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_precastc.vpcf"
+			m_bDisableChild = true
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_core.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/naruto/rasenshuriken_precasta.vpcf"
 			m_bDisableChild = true
 		},
 	]
