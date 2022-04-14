@@ -49,35 +49,6 @@ function naruto_rasengan:OnSpellStart()
 
 	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_naruto_rasengan", {duration = self:GetSpecialValueFor("duration")})
 	self:GetCaster():EmitSound("rasengan_charged")
-
-	self:CheckClones()
-end
-
---------------------------------------------------------------------------------
-
-function naruto_rasengan:CheckClones()
-	local caster = self:GetCaster()
-	local player = caster:GetPlayerOwner()
-
-	if not caster:HasShard() then return end
-
-	local allies = FindUnitsInRadius(
-		caster:GetTeamNumber(), 
-		caster:GetAbsOrigin(), 
-		nil, 
-		-1, 
-		DOTA_UNIT_TARGET_TEAM_FRIENDLY, 
-		DOTA_UNIT_TARGET_HERO, 
-		DOTA_UNIT_TARGET_FLAG_INVULNERABLE + DOTA_UNIT_TARGET_FLAG_PLAYER_CONTROLLED, 
-		0, 
-		false
-	)
-
-	for _, ally in pairs(allies) do
-		if ally:IsIllusion() and ally:GetPlayerOwner() == player then
-			self:ActivateRasengan(ally)
-		end
-	end
 end
 
 --------------------------------------------------------------------------------

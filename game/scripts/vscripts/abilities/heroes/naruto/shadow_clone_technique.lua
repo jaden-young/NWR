@@ -92,6 +92,8 @@ function naruto_shadow_clone_technique:OnSpellStart()
 
 		ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/units/heroes/naruto/naruto_clone.vpcf", PATTACH_ABSORIGIN, illusion))
 		ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/units/heroes/hero_siren/naga_siren_mirror_image.vpcf", PATTACH_ABSORIGIN, illusion))
+		ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/units/heroes/hero_siren/naga_siren_riptide_foam.vpcf", PATTACH_ABSORIGIN, illusion))
+		
 
 		clones_created = clones_created + 1 
 

@@ -258,7 +258,7 @@ function modifier_naruto_rendan_boost:OnAttackStart(event)
 	end
 
 	local origin = target:GetAbsOrigin()
-	local position = origin - target:GetForwardVector() * (target:GetPaddedCollisionRadius() + attacker:GetPaddedCollisionRadius())
+	local position = attacker:GetAbsOrigin() + (origin - attacker:GetAbsOrigin()):Normalized() * (target:GetPaddedCollisionRadius() + attacker:GetPaddedCollisionRadius() + 200)
 
 	attacker:SetAbsOrigin(position)
 	attacker:SetForwardVector(target:GetAbsOrigin())
