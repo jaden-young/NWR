@@ -5,6 +5,8 @@ node_modules
 # `git add --force path/to/file.lua`
 /game/scripts/vscripts/**/*.lua
 /game/resource/localization/**/*.js
+!/game/scripts/vscripts/heroes/yondaime_alternative/*.lua
+
 
 # Dota 2 stuff
 *.bin
