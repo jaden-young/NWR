@@ -19,7 +19,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 60.0
+				m_flLiteralValue = 50.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -66,8 +66,8 @@
 	[
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 0.7
-			m_fLifetimeMin = 0.65
+			m_fLifetimeMax = 0.8
+			m_fLifetimeMin = 0.5
 		},
 		{
 			_class = "C_INIT_RingWave"
@@ -620,8 +620,8 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 100.0
-			m_flRadiusMax = 150.0
+			m_flRadiusMin = 10.0
+			m_flRadiusMax = 10.0
 		},
 		{
 			_class = "C_INIT_RandomRotationSpeed"
@@ -645,8 +645,6 @@
 		},
 		{
 			_class = "C_INIT_RandomAlpha"
-			m_nAlphaMin = 100
-			m_nAlphaMax = 120
 		},
 	]
 	m_Operators = 
@@ -656,9 +654,8 @@
 		},
 		{
 			_class = "C_OP_BasicMovement"
-			m_Gravity = [ 0.0, 0.0, -100.0 ]
-			m_fDrag = 0.15
-			m_bDisableOperator = true
+			m_Gravity = [ 0.0, 0.0, 100.0 ]
+			m_fDrag = 0.2
 		},
 		{
 			_class = "C_OP_SpinUpdate"
@@ -686,6 +683,7 @@
 		{
 			_class = "C_OP_FadeInSimple"
 			m_flFadeInTime = 0.05
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
@@ -694,6 +692,9 @@
 		{
 			_class = "C_OP_ColorInterpolate"
 			m_ColorFade = [ 105, 100, 87 ]
+		},
+		{
+			_class = "C_OP_MovementRotateParticleAroundAxis"
 		},
 	]
 	m_Renderers = 
@@ -755,13 +756,14 @@
 			]
 			m_nFeatheringMode = "PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL"
 			m_bBlendFramesSeq0 = false
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_RenderSprites"
 			m_vecTexturesInput = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/dust/large_swirl_dust.vtex"
+					m_hTexture = resource:"materials/particle/particle_flares/particle_flare_001.vtex"
 					m_nTextureChannels = "SPRITECARD_TEXTURE_CHANNEL_MIX_RGBA_RGBALPHA"
 				},
 			]
@@ -814,7 +816,6 @@
 				}
 			}
 			m_nFeatheringMode = "PARTICLE_DEPTH_FEATHERING_ON_OPTIONAL"
-			m_bDisableOperator = true
 		},
 	]
 }

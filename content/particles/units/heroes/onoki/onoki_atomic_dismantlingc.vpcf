@@ -63,8 +63,8 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMax = 350.0
-			m_flRadiusMin = 350.0
+			m_flRadiusMax = 200.0
+			m_flRadiusMin = 200.0
 		},
 		{
 			_class = "C_INIT_RandomColor"
@@ -154,6 +154,11 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+		},
+		{
+			_class = "C_OP_RenderDeferredLight"
+			m_flRadiusScale = 2.0
+			m_flAlphaScale = 10.0
 		},
 	]
 }

@@ -51,6 +51,7 @@
 		{
 			_class = "C_OP_BasicMovement"
 			m_Gravity = [ 0.0, 0.0, -250.0 ]
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
@@ -187,7 +188,7 @@
 			m_vecTexturesInput = 
 			[
 				{
-					m_hTexture = resource:"materials/particle/beam_ethereal.vtex"
+					m_hTexture = resource:"materials/particle/particle_flares/particle_flare_001.vtex"
 				},
 			]
 		},
