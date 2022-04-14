@@ -4,20 +4,20 @@
 	{
 		type = "dota_update_default"
 		volume = 0.900000
-		pitch_rand_min = -0.150000
-		pitch_rand_max = 0.150000
-		pitch = 1.3000000
+		pitch_rand_min = 0.00000
+		pitch_rand_max = 0.00000
+		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/earthshaker/fissure_destroy05.vsnd"
+		vsnd_files = "sounds/heroes/onoki/onoki_particle_cast.vsnd"
 	}
 
     Hero_Onoki.AtomicDismantling.Cast = 
 	{
 		type = "dota_update_default"
 		volume = 0.700000
-		pitch_rand_min = -0.150000
-		pitch_rand_max = 0.150000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
 		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
@@ -28,24 +28,41 @@
 	{
 		type = "dota_update_default"
 		volume = 1.000000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
-		pitch = 0.6000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/primal_beast/rock_impact.vsnd"
+		vsnd_files = "sounds/heroes/onoki/onoki_atomic_root.vsnd"
 	}	
 
 	Hero_Onoki.AtomicDismantling.Stun = 
 	{
 		type = "dota_update_default"
-		volume = 0.300000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
-		pitch = 1.3000000
+		volume = 1.00000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/primal_beast/pulverize_stun.vsnd"
+		vsnd_files = "sounds/heroes/onoki/onoki_atomic_explosion.vsnd"
+	}
+
+	Hero_Onoki.AtomicDismantling.Talking = 
+	{
+		type = "dota_src1_3d"
+		vsnd_files = 
+		[
+			"sounds/heroes/onoki/particle_01.vsnd",
+			"sounds/heroes/onoki/particle_02.vsnd",
+			"sounds/heroes/onoki/particle_03.vsnd",
+			"sounds/heroes/onoki/particle_04.vsnd",
+		]
+		volume = 1.00000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
 	}
 }
-

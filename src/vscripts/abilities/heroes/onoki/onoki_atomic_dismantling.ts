@@ -32,6 +32,7 @@ export class onoki_atomic_dismantling extends BaseAbility {
         ParticleManager.SetParticleControl(this.rock_fx, 0, caster.GetAttachmentOrigin(caster.ScriptLookupAttachment("attach_hitloc")) + direction * 100 as Vector);
 
         EmitSoundOn("Hero_Onoki.AtomicDismantling.Precast", caster);
+        EmitSoundOn("Hero_Onoki.AtomicDismantling.Talking", caster);
 
         return true;
     }
@@ -42,6 +43,7 @@ export class onoki_atomic_dismantling extends BaseAbility {
         ParticleManager.DestroyParticle(this.rock_fx!, true);
         ParticleManager.ReleaseParticleIndex(this.rock_fx!);
         StopSoundOn("Hero_Onoki.AtomicDismantling.Precast", this.GetCaster());
+        StopSoundOn("Hero_Onoki.AtomicDismantling.Talking", this.GetCaster());
     }
 
     /****************************************/
