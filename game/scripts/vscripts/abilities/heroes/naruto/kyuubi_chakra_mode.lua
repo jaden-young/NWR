@@ -19,7 +19,12 @@ function naruto_kyuubi_chakra_mode:OnSpellStart()
 	caster:AddNewModifier(caster, self, "modifier_kyuubi_chakra_mode_active", {duration = self:GetSpecialValueFor("duration")})
 
 	EmitSoundOn("kcm_cast_talking", caster)
-	EmitSoundOn("kcm_cast", caster)
+	EmitSoundOn("Hero_Naruto.KyuubiChakraMode.Transform", caster)
+
+	local transform_fx = ParticleManager:CreateParticle("particles/econ/items/invoker/invoker_ti7/invoker_ti7_alacrity_cast.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+	ParticleManager:SetParticleControlEnt(transform_fx, 1, caster, PATTACH_POINT_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true)
+	ParticleManager:SetParticleControlEnt(transform_fx, 2, caster, PATTACH_POINT_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true)
+	ParticleManager:ReleaseParticleIndex(transform_fx)
 
 	self:CheckClones()
 end
@@ -44,20 +49,23 @@ function naruto_kyuubi_chakra_mode:CheckClones()
 
 	for _, ally in pairs(allies) do
 		if ally:IsIllusion() and ally:GetPlayerOwner() == player then
-			self:ActivateChakraMode(ally)
+			self:ActivateChakraMode(ally, true)
 		end
 	end
 end
 
 --------------------------------------------------------------------------------
 
-function naruto_kyuubi_chakra_mode:ActivateChakraMode(unit)
+function naruto_kyuubi_chakra_mode:ActivateChakraMode(unit, sound)
 	local caster = self:GetCaster()
 	local instance = caster:FindModifierByName("modifier_kyuubi_chakra_mode_active")
 	local duration = instance and instance:GetRemainingTime() or 0.5
 
 	unit:AddNewModifier(caster, self, "modifier_kyuubi_chakra_mode_active", {duration = duration})
-	EmitSoundOn("kcm_cast", unit)
+
+	if sound then
+		EmitSoundOn("Hero_Naruto.KyuubiChakraMode.CloneTransform", unit)
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -98,6 +106,8 @@ function modifier_kyuubi_chakra_mode_active:OnRemoved()
 	local rasenshuriken = caster:FindAbilityByName("naruto_rasenshuriken")
 	local tailed_beast_bomb = caster:FindAbilityByName("naruto_tailed_beast_bomb")
 
+	if not caster:IsRealHero() then return end
+
 	if rasenshuriken then
 		rasenshuriken:SetHidden(true)
 	end
@@ -106,6 +116,16 @@ function modifier_kyuubi_chakra_mode_active:OnRemoved()
 		tailed_beast_bomb:SetHidden(true)
 	end
 
+	local clone_charges = caster:FindTalentValue("special_bonus_naruto_6")
+	local clone_ability = caster:FindAbilityByName("naruto_shadow_clone_technique")
+	local modifier = caster:FindModifierByName("modifier_clone_charges")
+
+	if clone_charges > 0 and clone_ability and modifier then
+		local max_charges = clone_ability:GetSpecialValueFor("max_charges") + caster:FindTalentValue("special_bonus_naruto_5")
+		modifier:StartIntervalThink(-1)
+		modifier:SetStackCount(math.max(max_charges, modifier:GetStackCount() + clone_charges))
+		modifier:CalculateCharge()
+	end
 end
 
 --------------------------------------------------------------------------------

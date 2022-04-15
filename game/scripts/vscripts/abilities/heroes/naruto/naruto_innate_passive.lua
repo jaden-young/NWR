@@ -48,6 +48,15 @@ function modifier_naruto_innate_passive:OnCreated(kv)
     self.active_mana_regen = self.mana_regen
     
     self:SetHasCustomTransmitterData(true)
+
+    if not IsServer() then return end
+    self:StartIntervalThink(1)
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_naruto_innate_passive:OnIntervalThink()
+    self:UpdateValues()
 end
 
 --------------------------------------------------------------------------------
@@ -69,7 +78,16 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_naruto_innate_passive:UpdateValues()
-    local level = self:GetParent():GetLevel() - 1
+    local ability = self:GetAbility()
+    local parent = self:GetParent()
+    local level = parent:GetLevel() - 1
+
+    self.health_regen = ability:GetSpecialValueFor("health_regen") + parent:FindTalentValue("special_bonus_naruto_3")
+    self.mana_regen = ability:GetSpecialValueFor("mana_regen") + parent:FindTalentValue("special_bonus_naruto_2")
+    self.hp_regen_lvl = ability:GetSpecialValueFor("hp_regen_lvl")
+    self.mp_regen_lvl = ability:GetSpecialValueFor("mp_regen_lvl")
+
+    
     self.active_hp_regen = self.health_regen + self.hp_regen_lvl * level
     self.active_mana_regen = self.mana_regen + self.mp_regen_lvl * level
 

@@ -1,4 +1,4 @@
-LinkLuaModifier("modifier_generic_charges", 	"modifiers/modifier_generic_charges", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_clone_charges", 	"abilities/heroes/naruto/shadow_clone_technique", LUA_MODIFIER_MOTION_NONE)
 --------------------------------------------------------------------------------
 
 naruto_shadow_clone_technique = naruto_shadow_clone_technique or class({})
@@ -15,29 +15,22 @@ end
 --------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:GetIntrinsicModifierName()
-	return "modifier_generic_charges"
+	return "modifier_clone_charges"
 end
 
 --------------------------------------------------------------------------------
 
-function naruto_shadow_clone_technique:CastFilterResult()
-	if self:GetCaster():HasModifier("modifier_naruto_rasengan") and not self:GetCaster():HasShard() then 
-		return UF_FAIL_CUSTOM 
-	end
-
-	return UF_SUCCESS
+function naruto_shadow_clone_technique:Spawn()
+	if not IsServer() or not self:GetCaster():IsRealHero() then return end
+	ListenToGameEvent("dota_player_learned_ability", function(event) return self:OnAbilityLearned(event) end, nil)
 end
 
 --------------------------------------------------------------------------------
 
-function naruto_shadow_clone_technique:GetCustomCastError()
-	return "#dota_hud_error_active_rasengan"
-end
+function naruto_shadow_clone_technique:OnAbilityLearned(event)
+	if event.PlayerID ~= self:GetCaster():GetPlayerOwnerID() or event.abilityname ~= "special_bonus_naruto_5" then return end
 
---------------------------------------------------------------------------------
-
-function naruto_shadow_clone_technique:GetCooldown(iLevel)
-	return self.BaseClass.GetCooldown(self, iLevel) - self:GetCaster():FindTalentValue("special_bonus_naruto_5")
+	self:GetCaster():FindModifierByName(self:GetIntrinsicModifierName()):OnRefresh()
 end
 
 --------------------------------------------------------------------------------
@@ -53,9 +46,21 @@ end
 --------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:OnAbilityPhaseStart()
-	EmitSoundOn("shadow_clone_cast", self:GetCaster())
-	
+	local caster = self:GetCaster()
+
+	EmitSoundOn("shadow_clone_cast", caster)
+
+	if not self.last_cast or self.last_cast + 0.5 < GameRules:GetDOTATime(true, true) then
+		caster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
+	end
+
 	return true
+end
+
+--------------------------------------------------------------------------------
+
+function naruto_shadow_clone_technique:OnAbilityPhaseInterrupted()
+	self:GetCaster():FadeGesture(ACT_DOTA_CAST_ABILITY_1)
 end
 
 --------------------------------------------------------------------------------
@@ -90,10 +95,9 @@ function naruto_shadow_clone_technique:OnSpellStart()
 		self:CheckRasengans(clone)
 		self:SendAttackOrder(clone)
 
-		ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/units/heroes/naruto/naruto_clone.vpcf", PATTACH_ABSORIGIN, illusion))
-		ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/units/heroes/hero_siren/naga_siren_mirror_image.vpcf", PATTACH_ABSORIGIN, illusion))
-		ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/units/heroes/hero_siren/naga_siren_riptide_foam.vpcf", PATTACH_ABSORIGIN, illusion))
-		
+		local spawn_fx = ParticleManager:CreateParticle("particles/units/heroes/naruto/naruto_clone_dust.vpcf", PATTACH_ABSORIGIN_FOLLOW, clone)
+		ParticleManager:SetParticleControlEnt(spawn_fx, 0, clone, PATTACH_POINT_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true)
+		ParticleManager:ReleaseParticleIndex(spawn_fx)
 
 		clones_created = clones_created + 1 
 
@@ -102,7 +106,13 @@ function naruto_shadow_clone_technique:OnSpellStart()
 
 
 	EmitSoundOn("shadow_clone_fire", caster)
-	EmitSoundOn("shadow_clone_talking", caster)
+
+	if not self.vo_cd or self.vo_cd + self:GetSpecialValueFor("talking_cd") < GameRules:GetDOTATime(true, true) then
+		EmitSoundOn("shadow_clone_talking", caster)
+		self.vo_cd = GameRules:GetDOTATime(true, true)
+	end
+
+	self.last_cast = GameRules:GetDOTATime(true, true)
 end
 
 --------------------------------------------------------------------------------
@@ -113,7 +123,7 @@ function naruto_shadow_clone_technique:CheckChakraMode(clone)
 	local ability = caster:FindAbilityByName("naruto_kyuubi_chakra_mode")
 
 	if active and ability then
-		ability:ActivateChakraMode(clone)
+		ability:ActivateChakraMode(clone, false)
 	end
 end
 
@@ -169,4 +179,99 @@ function naruto_shadow_clone_technique:SendAttackOrder(clone)
 			Queue = false
 		})
 	end)
+end
+
+--------------------------------------------------------------------------------
+
+modifier_clone_charges = class({})
+
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:IsHidden()        return not self.active end
+function modifier_clone_charges:IsPurgable()      return false end
+function modifier_clone_charges:DestroyOnExpire() return false end
+function modifier_clone_charges:GetAttributes()   return MODIFIER_ATTRIBUTE_MULTIPLE end
+
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:OnCreated( kv )
+	local ability = self:GetAbility()
+	self.max_charges = ability:GetSpecialValueFor("max_charges") + self:GetParent():FindTalentValue("special_bonus_naruto_5")
+	self.charge_time = ability:GetSpecialValueFor("charge_restore_time")
+	self.active = true
+
+	if not IsServer() then return end
+	self:SetStackCount(self.max_charges)
+	self:CalculateCharge()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:OnRefresh( kv )
+	local ability = self:GetAbility()
+	self.max_charges = ability:GetSpecialValueFor("max_charges") + self:GetParent():FindTalentValue("special_bonus_naruto_5")
+	self.charge_time = ability:GetSpecialValueFor("charge_restore_time")
+
+	if not IsServer() then return end
+	self:CalculateCharge(true)
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:DeclareFunctions()
+	return {MODIFIER_EVENT_ON_ABILITY_FULLY_CAST}
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:OnAbilityFullyCast( params )
+	if IsServer() then
+		if params.unit~=self:GetParent() or params.ability~=self:GetAbility() then
+			return
+		end
+
+		self:DecrementStackCount()
+		self:CalculateCharge()
+	end
+end
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:OnIntervalThink()
+	self:IncrementStackCount()
+	self:StartIntervalThink(-1)
+	self:CalculateCharge()
+end
+
+--------------------------------------------------------------------------------
+
+function modifier_clone_charges:CalculateCharge(refresh)
+	local ability = self:GetAbility()
+
+	if self.active and self:GetStackCount() > 0 then
+		ability:EndCooldown()
+	end
+
+	if self:GetStackCount()>=self.max_charges and not refresh then
+		self:SetDuration( -1, true )
+		self:StartIntervalThink( -1 )
+	else
+		if self:GetRemainingTime() <= 0.05 then
+			local charge_time = ability:GetCooldown( -1 )
+			if self.charge_time and self.active then
+				charge_time = self.charge_time
+			end
+			self:StartIntervalThink( charge_time )
+			self:SetDuration( charge_time, true )
+		end
+
+		if self:GetStackCount()==0 and not refresh then
+			ability:StartCooldown( self:GetRemainingTime() )
+		end
+	end
+end
+
+--------------------------------------------------------------------------------
+-- Helper
+function modifier_clone_charges:SetActive(active)
+	self.active = active
 end

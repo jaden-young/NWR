@@ -1,11 +1,18 @@
 "DOTAAbilities"
 {
-	//25: +320 Rasenshuriken Damage / -5s Bunshin Rasengan Cooldown
-	//20: +4.5s Frog Kata Duration / +13% Bunshin Damage
-	//15: -2s Bunshin Swap Cooldown / +90 Bunshin Rasengan Damage
-	//10: +5 All Stats / +200 Bunshin Swap Range
+	//=================================================================================================================
+	// Naruto Talent Tree
+	//=================================================================================================================	
+	// 25: Tailed Beast Bomb Pure Damage 	/ KCM Expiring Restores 3 Clone Charges
+	// 20: +1 Max Shadow Clone Charges  	/ +230 Rasengan Damage
+	// 15: +4 Kyuubi Chakra Health Regen 	/ +2.50 Kyuubi Chakra Mana Regen
+	// 10: +5 All Stats 					/ +225 Rendan Movement Speed 
 
-	"npc_dota_hero_naruto" //naruto
+
+	//=================================================================================================================
+	// Hero: Naruto
+	//=================================================================================================================	
+	"npc_dota_hero_naruto"
 	{
 		"HeroID"					"210"
 		"BaseClass"					"npc_dota_hero_dragon_knight"
@@ -18,8 +25,8 @@
 		"Ability6"  				"naruto_kyuubi_chakra_mode"
 		"Ability7"					"naruto_innate_passive"
 
-		"Ability10"					"special_bonus_all_stats_5"
-		"Ability11"					"special_bonus_naruto_6"
+		"Ability10"					"special_bonus_naruto_1"
+		"Ability11"					"special_bonus_all_stats_5"
 
 		"Ability12"					"special_bonus_naruto_2"
 		"Ability13"					"special_bonus_naruto_3"
@@ -27,7 +34,7 @@
 		"Ability14"					"special_bonus_naruto_4"
 		"Ability15"					"special_bonus_naruto_5"
 
-		"Ability16"					"special_bonus_naruto_1"
+		"Ability16"					"special_bonus_naruto_6"
 		"Ability17"					"special_bonus_naruto_7"
 
 		"SoundSet"						"ChakraPunch"
@@ -56,7 +63,14 @@
 
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 
-		"MovementSpeed"			"305"
+		"MovementSpeed"				"305"
+		"MovementSpeedActivityModifiers"
+		{
+			"slow"        		"0"
+			"fast"       	 	"350"
+			"veryfast"	    	"400"
+		}
+
 		"AttributeBaseStrength" "24" // Base strength
 		"AttributeStrengthGain" "3.2" // Strength bonus per level.
 		"AttributeBaseIntelligence" "19" // Base intelligence

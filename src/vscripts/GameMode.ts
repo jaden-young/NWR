@@ -73,7 +73,9 @@ export class GameMode {
         PrecacheResource("soundfile", "soundevents/global/akat_start.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/global/shinobi_start.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/global/malulubul.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/global/overridden_sounds.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/clones/clone_pop.vsndevts", context)
+        
         PrecacheResource( "model", "models/striker_gaara/striker_gaara_gourd.vmdl", context )
         PrecacheModel("models/striker_gaara/striker_gaara_gourd.vmdl", context)
         

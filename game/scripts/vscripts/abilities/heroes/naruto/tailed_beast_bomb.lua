@@ -98,6 +98,10 @@ function naruto_tailed_beast_bomb:OnProjectileHit_ExtraData(target, location, da
 		local damage		= (self:GetTalentSpecialValueFor("base_damage") + (self:GetSpecialValueFor("strength_as_damage") * self:GetCaster():GetStrength() / 100)) * ((100 - self:GetSpecialValueFor("damage_reduction_per_hero_hit")) / 100) ^ EntIndexToHScript(data.dummy_index).units_hit
 		local damage_type	= self:GetAbilityDamageType()
 
+		if self:GetCaster():HasTalent("special_bonus_naruto_7") then
+			damage_type = DAMAGE_TYPE_PURE
+		end
+
 		ApplyDamage({
 			victim 			= target,
 			damage 			= damage,

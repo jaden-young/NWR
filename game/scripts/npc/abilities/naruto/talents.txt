@@ -4,12 +4,14 @@
 	//=================================================================================================================
 	// Naruto Special Bonus
 	//=================================================================================================================	
-	// 25: Tailed Beast Bomb Pure Damage / +3 Shadow Clone Max Charges
-	// 20: -2s Shadow Clone Charge Time  / +230 Rasengan Damage
-	// 15: +4 Kyuubi Chakra Health Regen / +2.50 Kyuubi Chakra Mana Regen 
-	// 10: +5 All Stats / +300 Rendan Movement Speed
+	// 25: Tailed Beast Bomb Pure Damage 	/ KCM Expiring Restores 3 Clone Charges
+	// 20: +1 Max Shadow Clone Charges  	/ +230 Rasengan Damage
+	// 15: +4 Kyuubi Chakra Health Regen 	/ +2.50 Kyuubi Chakra Mana Regen
+	// 10: +5 All Stats 					/ +225 Rendan Movement Speed 
 
-	// + Shadow Clone Max Charges
+	//=================================================================================================================
+	// Naruto Special Bonus: +225 Rendan Movement Speed 
+	//=================================================================================================================	
 	"special_bonus_naruto_1"	
 	{
 		// General
@@ -18,24 +20,21 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"naruto_kage_bunshin_mastery"
-		}
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"3"
+				"var_type"				"FIELD_INTEGER"
+				"value"					"225"
 			}
 		}
 	}
 
-	// + KCM Mana Regen
+	//=================================================================================================================
+	// Naruto Special Bonus: +2.50 Kyuubi Chakra Mana Regen
+	//=================================================================================================================	
 	"special_bonus_naruto_2"	
 	{
 		// General
@@ -43,11 +42,6 @@
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"LinkedAbility"
-		{
-			"01" 	"naruto_kage_bunshin_mastery"
-		}
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -61,7 +55,9 @@
 		}
 	}
 
-	// + KCM Health Regen
+	//=================================================================================================================
+	// Naruto Special Bonus: +4 Kyuubi Chakra Health Regen 
+	//=================================================================================================================
 	"special_bonus_naruto_3"	
 	{
 		// General
@@ -70,24 +66,21 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"naruto_kage_bunshin_rasengan"
-		}
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"4.0"
+				"var_type"				"FIELD_INTEGER"
+				"value"					"4"
 			}
 		}
 	}
 
-	// +220 Rasengan/Rasenshuriken Damage
+	//=================================================================================================================
+	// Naruto Special Bonus: +230 Rasengan Damage
+	//=================================================================================================================
 	"special_bonus_naruto_4"	
 	{
 		// General
@@ -95,11 +88,6 @@
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"LinkedAbility"
-		{
-			"01" 	"naruto_kawazu_kumite"
-		}
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -113,7 +101,9 @@
 		}
 	}
 
-	// -200% Shadow Clone Incoming Damage
+	//=================================================================================================================
+	// Naruto Special Bonus: +1 Max Shadow Clone Charges 
+	//=================================================================================================================
 	"special_bonus_naruto_5"	
 	{
 		// General
@@ -122,12 +112,6 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"naruto_kage_bunshin_rasengan"
-			"02" 	"naruto_kawazu_kumite"
-		}
-
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -135,12 +119,14 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"value"					"-2"
+				"value"					"1"
 			}
 		}
 	}
 
-	// + Rendan ms
+	//=================================================================================================================
+	// Naruto Special Bonus: KCM Expiring Restores 3 Clone Charges
+	//=================================================================================================================
 	"special_bonus_naruto_6"	
 	{
 		// General
@@ -149,10 +135,6 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 
-		"LinkedAbility"
-		{
-			"01" 	"naruto_rasenshuriken"
-		}
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -161,12 +143,14 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"value"					"300"
+				"value"					"3"
 			}
 		}
 	}
 
-	// Tailed Beast Bomb Pure Damage
+	//=================================================================================================================
+	// Naruto Special Bonus: Tailed Beast Bomb Pure Damage
+	//=================================================================================================================
 	"special_bonus_naruto_7"	
 	{
 		// General
@@ -174,11 +158,6 @@
 		"BaseClass"						"special_bonus_undefined"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-
-		"LinkedAbility"
-		{
-			"01" 	"naruto_kage_bunshin_rasengan"
-		}
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------

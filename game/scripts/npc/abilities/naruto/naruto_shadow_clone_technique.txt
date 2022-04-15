@@ -15,10 +15,13 @@
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.2"
+		"AbilityCastAnimation"			"ACT_DOTA_INVALID"
 	
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"65.0"
+		//"AbilityCooldown"				"65.0"
+		//"AbilityCharges"				"4"
+		//"AbilityChargeRestoreTime"		"6 8 10 12"
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -31,21 +34,18 @@
 			"max_charges"
 			{
 				"value"						"3"
-				"LinkedSpecialBonus"		"special_bonus_naruto_4"
+				"LinkedSpecialBonus"		"special_bonus_naruto_5"
 			}
 			"charge_restore_time"		"6.0 8.0 10.0 12.0"
 			"illusion_duration"			"12.0"
 			"outgoing_damage"			"25"
-			"incoming_damage"
-			{
-				"value"						"700"
-				"LinkedSpecialBonus"		"special_bonus_naruto_5"
-			}
+			"incoming_damage"			"700"
 			"clones_per_charge"			"1 2 3 4"
 			"spawn_radius"				"350"
 			"delay_between_illusions"	"0.2"
 			"attack_search_radius"		"1400"
 			"shard_rasengan_damage"		"40"
+			"talking_cd"				"6"
 		}
 	}
 }

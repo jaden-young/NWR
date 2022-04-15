@@ -908,6 +908,8 @@
 		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_incoming_damage"			"%CLONE DAMAGE TAKEN:"
 		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_clones_per_charge"			"CLONE PER CHARGE:"
 
+		"DOTA_Tooltip_modifier_clone_charges"											"Shadow Clone Charges"
+
 		// Rasengan
 		"DOTA_Tooltip_ability_naruto_rasengan"										"Rasengan"
 		"DOTA_Tooltip_ability_naruto_rasengan_Description"							"By amassing chakra into his hand, Naruto creates a Rasengan to attack his foe with. Naruto’s next attack deals additional magic damage and knocks the foe backwards. Afterwards, the enemy is slowed for a short duration."
@@ -921,6 +923,7 @@
 		// Rendan
 		"DOTA_Tooltip_ability_naruto_rendan"										"Naruto Rendan"
 		"DOTA_Tooltip_ability_naruto_rendan_Description"							"Grants Naruto and his clones the ability to charge an enemy unit. When used by Naruto, this ability will cause himself and all nearby clones to charge the enemy. If the original Naruto reaches the target, he will appear behind the target to deal physical damage and a knockup. If a Clone reaches the target, they will deal a small amount of damage. Clones can use this ability separately by issuing an attack on the target, costing no mana."
+		"DOTA_Tooltip_ability_naruto_rendan_charge_speed"							"CHARGE SPEED:"
 
 		//Kyuubi Chakra Mode
 		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode"							"Kyuubi Chakra Mode"
@@ -2634,13 +2637,13 @@
 		//20: +4.5s Frog Kata Duration / +13% Bunshin Damage
 		//15: -2s Bunshin Swap Cooldown / +90 Bunshin Rasengan Damage
 		//10: +5 All Stats / +200 Bunshin Swap Range
-		"DOTA_Tooltip_Ability_special_bonus_naruto_1"						"+200 Clone Mastery Range"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_2"						"-2s Clone Swap Cooldown"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_3"						"+90 Clone Rasengan Damage"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_4"						"+4.5s Frog Kata Duration"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_5"						"+13% Clone Damage"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_6"						"+320 Rasenshuriken Damage"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_7"						"-4s Clone Rasengan Cooldown"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_1"						"+{s:value} Rendan Movement Speed"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_2"						"+{s:value} Kyuubi Chakra Mana Regen"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_3"						"+{s:value} Kyuubi Chakra Health Regen"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_4"						"+{s:value} Rasengan Damage"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_5"						"+{s:value} Max Shadow Clone Charges"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_6"						"KCM Expiring Restores {s:value} Clone Charges"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_7"						"Tailed Beast Bomb Pure Damage"
 
 		//25: +15 All Stats 						/ 	+320 Raikiri Damage
 		//20: +60 Seconds Sharingan Steal Duration 	/ 	+20% Critical Strike (200%) 
