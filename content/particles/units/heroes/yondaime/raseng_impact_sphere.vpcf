@@ -70,6 +70,7 @@
 					m_vDomainMaxs = [ 0.0, 0.0 ]
 				}
 			}
+			m_flInitFromKilledParentParticles = -1.0
 		},
 	]
 	m_Initializers = 
@@ -79,8 +80,8 @@
 		},
 		{
 			_class = "C_INIT_RandomLifeTime"
-			m_fLifetimeMax = 0.3
-			m_fLifetimeMin = 0.3
+			m_fLifetimeMax = 1.0
+			m_fLifetimeMin = 1.0
 		},
 		{
 			_class = "C_INIT_RandomRotation"
@@ -95,8 +96,8 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 30.0
-			m_flRadiusMax = 30.0
+			m_flRadiusMin = 50.0
+			m_flRadiusMax = 50.0
 		},
 		{
 			_class = "C_INIT_RandomColor"
@@ -139,7 +140,7 @@
 		},
 		{
 			_class = "C_OP_FadeOutSimple"
-			m_flFadeOutTime = 1.0
+			m_flFadeOutTime = 3.0
 		},
 	]
 	m_Renderers = 
