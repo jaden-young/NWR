@@ -1,11 +1,24 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
-    Hero_Guy.DynamicEntry.Cast = 
+    
+	Hero_Guy.DynamicEntry.PreCast = 
 	{
 		type = "dota_update_default"
 		volume = 1.200000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/guy/guy_entry_cast.vsnd"
+	}
+	
+	Hero_Guy.DynamicEntry.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.200000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
 		pitch = 1.000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
@@ -16,9 +29,9 @@
 	{
 		type = "dota_update_default"
 		volume = 0.700000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
-		pitch = 1.600000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/brewmaster/thunder_clap.vsnd"
@@ -27,10 +40,10 @@
 	Hero_Guy.DynamicEntryGate.Impact = 
 	{
 		type = "dota_update_default"
-		volume = 4.000000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
-		pitch = 0.700000
+		volume = 3.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
 		soundlevel = 81.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/heroes/guy/guy_dynamic_entry_impact_6.vsnd"

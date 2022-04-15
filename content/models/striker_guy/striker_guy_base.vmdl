@@ -565,7 +565,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -578,8 +578,8 @@
 						disable_compression = false
 						source_filename = "models/striker_guy/attack2.smd"
 						start_frame = -1
-						end_frame = -1
-						framerate = 20.0
+						end_frame = 25
+						framerate = 12.0
 						reverse = false
 					},
 					{
@@ -613,7 +613,7 @@
 						source_filename = "models/striker_guy/attack3.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 45.0
+						framerate = 37.0
 						reverse = false
 					},
 					{
@@ -633,7 +633,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -647,7 +647,7 @@
 						source_filename = "models/striker_guy/attack4.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 45.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
@@ -829,7 +829,7 @@
 					{
 						_class = "AnimFile"
 						name = "dynamic_entry3"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -869,8 +869,8 @@
 					{
 						_class = "AnimFile"
 						name = "kick"
-						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 1
+						activity_name = ""
+						activity_weight = 100
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -917,7 +917,7 @@
 						source_filename = "models/striker_guy/run.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 16.0
 						reverse = false
 					},
 					{
@@ -937,13 +937,13 @@
 						source_filename = "models/striker_guy/transform.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 90.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "transform_8gates"
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -977,7 +977,7 @@
 						source_filename = "models/striker_guy/whirlwind.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 60.0
+						framerate = 45.0
 						reverse = false
 					},
 					{

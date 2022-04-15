@@ -36,6 +36,15 @@ export class guy_dynamic_entry extends BaseAbility
             return super.GetCastRange(location, target) + this.GetCaster().FindTalentValue("special_bonus_guy_5");
     }
 
+
+    /****************************************/
+
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Guy.DynamicEntry.Cast", this.GetCaster());
+        return true
+    }
+
+
     /****************************************/
 
     OnSpellStart(): void {
@@ -192,7 +201,7 @@ export class modifier_guy_dynamic_entry extends BaseModifierMotionHorizontal
         ParticleManager.ReleaseParticleIndex(impact_fx);
 
         gates_open ? EmitSoundOn("Hero_Guy.DynamicEntryGate.Impact", this.target!) : EmitSoundOn("Hero_Guy.DynamicEntry.Impact", this.target!);
-        EmitSoundOn("Hero_Guy.DynamicEntry.ImpactLayer", this.target!);
+        // EmitSoundOn("Hero_Guy.DynamicEntry.ImpactLayer", this.target!);
     }
 }
 

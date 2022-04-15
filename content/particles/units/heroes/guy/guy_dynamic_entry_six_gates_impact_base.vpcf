@@ -30,16 +30,6 @@
 					m_entityName = "self"
 				},
 				{
-					m_iControlPoint = 4
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
-					m_iControlPoint = 5
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
 					m_iControlPoint = 6
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_vecOffset = [ 1.0, 1.0, 1.0 ]
@@ -78,7 +68,7 @@
 			m_ChildRef = resource:"particles/units/heroes/hero_primal_beast/primal_beast_pulverize_hit_screenshake.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/creatures/aghanim/aghanim_stomp.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/guy_stomp.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_monkey_king/monkey_king_jump_stomp.vpcf"

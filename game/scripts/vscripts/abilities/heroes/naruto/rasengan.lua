@@ -16,16 +16,6 @@ end
 
 --------------------------------------------------------------------------------
 
-function naruto_rasengan:OnUpgrade()
-	local ability = self:GetCaster():FindAbilityByName("naruto_rasenshuriken")
-
-	if ability then
-		ability:SetLevel(self:GetLevel())
-	end
-end
-
---------------------------------------------------------------------------------
-
 function naruto_rasengan:GetBehavior()
 	if self:GetCaster():HasModifier("modifier_kyuubi_chakra_mode_active") then
 		return DOTA_ABILITY_BEHAVIOR_NO_TARGET + DOTA_ABILITY_BEHAVIOR_IMMEDIATE

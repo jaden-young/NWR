@@ -157,7 +157,7 @@ end
 
 function guy_leaf_strong_whirlwind:GetCastPoint()
 	if self:GetCaster():HasModifier("modifier_guy_seventh_gate") then
-		return 0.1
+		return 0.2
 	else
 		return 0.3
 	end
