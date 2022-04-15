@@ -3,7 +3,7 @@
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 1
-	m_ConstantColor = [ 0, 0, 255, 255 ]
+	m_ConstantColor = [ 0, 191, 255, 255 ]
 	m_nConstantSequenceNumber = 1
 	m_bShouldSort = false
 	m_nBehaviorVersion = 12
@@ -85,24 +85,29 @@
 		},
 		{
 			_class = "C_INIT_RandomRotation"
+			m_flRotationRandExponent = 360.0
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_INIT_RandomYaw"
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_INIT_RandomScalar"
-			m_flMax = 3.141592
+			m_flMax = 3.0
 			m_nFieldOutput = 20
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 50.0
-			m_flRadiusMax = 50.0
+			m_flRadiusMin = 40.0
+			m_flRadiusMax = 40.0
+			m_flRadiusRandExponent = 3.0
 		},
 		{
 			_class = "C_INIT_RandomColor"
 			m_ColorMin = [ 0, 85, 255, 255 ]
 			m_ColorMax = [ 0, 255, 255, 255 ]
+			m_nTintBlendMode = "PARTICLEBLEND_OVERLAY"
 		},
 		{
 			_class = "C_INIT_PositionOffset"
@@ -112,6 +117,7 @@
 	[
 		{
 			_class = "C_OP_BasicMovement"
+			m_nMaxConstraintPasses = 6
 		},
 		{
 			_class = "C_OP_Decay"
@@ -123,7 +129,7 @@
 		{
 			_class = "C_OP_RampScalarLinear"
 			m_nField = 4
-			m_RateMin = 8.0
+			m_RateMin = 6.0
 			m_RateMax = 9.0
 		},
 		{
@@ -143,6 +149,15 @@
 			m_flFadeOutTime = 3.0
 		},
 	]
+	m_ForceGenerators = 
+	[
+		{
+			_class = "C_OP_TwistAroundAxis"
+			m_fForceAmount = 9999.0
+			m_TwistAxis = [ 1.0, 0.0, 0.0 ]
+			m_bLocalSpace = true
+		},
+	]
 	m_Renderers = 
 	[
 		{
@@ -158,6 +173,9 @@
 			m_bForceDrawInterlevedWithSiblings = true
 			m_nLOD = 1
 			m_bForceLoopingAnimation = true
+			m_nBodyGroupField = 4
+			m_nSubModelField = 4
+			m_hOverrideMaterial = resource:"particles/econ/items/keeper_of_the_light/kotl_ti10_immortal/kotl_ti10_blinding_light_sphere_ghost.vmat"
 		},
 	]
 }
