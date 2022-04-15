@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf35:version{ec5bfcca-b89d-4591-9ef4-c8679487d623} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
@@ -55,10 +55,8 @@
 	[
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 0, 98, 131 ]
-			m_ColorMin = [ 0, 191, 255 ]
-			m_TintMin = [ 0, 0, 0 ]
-			m_TintMax = [ 255, 255, 255 ]
+			m_ColorMax = [ 0, 131, 98 ]
+			m_ColorMin = [ 0, 255, 191 ]
 		},
 		{
 			_class = "C_INIT_RandomLifeTime"
@@ -208,7 +206,6 @@
 					m_hTexture = resource:"materials/particle/smoke/static/static_smoke.vtex"
 				},
 			]
-			m_OutlineColor = [ 255, 255, 255 ]
 		},
 	]
 }

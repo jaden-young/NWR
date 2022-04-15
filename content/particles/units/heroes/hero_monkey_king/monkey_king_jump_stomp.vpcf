@@ -30,6 +30,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_monkey_king/monkey_king_jump_stomp_flash.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_monkey_king/monkey_king_jump_stomp_d.vpcf"
@@ -39,6 +40,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_monkey_king/monkey_king_jump_stomp_bshards.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_monkey_king/monkey_king_jump_stomp_f.vpcf"

@@ -3,7 +3,7 @@
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 90
-	m_nBehaviorVersion = 4
+	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 5
 	m_controlPointConfigurations = 
 	[
@@ -71,8 +71,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 0, 255, 0 ]
-			m_ColorMin = [ 72, 209, 204 ]
+			m_ColorMax = [ 0, 222, 160 ]
+			m_ColorMin = [ 72, 255, 190 ]
 		},
 		{
 			_class = "C_INIT_CreateOnModel"
@@ -111,7 +111,7 @@
 		},
 		{
 			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 152, 251, 152 ]
+			m_ColorFade = [ 50, 205, 170 ]
 			m_flFadeStartTime = 0.35
 			m_flFadeEndTime = 0.0
 		},
@@ -152,7 +152,7 @@
 			{
 				m_nType = "PVEC_TYPE_LITERAL_COLOR"
 				m_vLiteralValue = [ 0.0, 0.0, 0.0 ]
-				m_LiteralColor = [ 154, 205, 50 ]
+				m_LiteralColor = [ 154, 255, 205 ]
 				m_nVectorAttribute = 6
 				m_vVectorAttributeScale = [ 1.0, 1.0, 1.0 ]
 				m_nControlPoint = 0
