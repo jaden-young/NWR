@@ -120,12 +120,12 @@
 			m_ModelList = 
 			[
 				{
-					m_model = resource:"models/items/oracle/ti7_immortal_weapon/oracle_ti7_immortal_fxmodel.vmdl"
+					m_model = resource:"models/heroes/oracle/crystal_ball.vmdl"
 				},
 			]
 			m_bAnimated = true
 			m_nLOD = 1
-			m_hOverrideMaterial = resource:"materials/models/items/oracle/ti7_immortal_weapon/oracle_ti7_immortal_fortune_orb.vmat"
+			m_hOverrideMaterial = resource:"materials/models/effects/waterfall_mod_000a.vmat"
 			m_bForceLoopingAnimation = true
 			m_flRadiusScale = 
 			{
