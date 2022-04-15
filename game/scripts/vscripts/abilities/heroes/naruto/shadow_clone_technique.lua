@@ -45,24 +45,19 @@ end
 
 --------------------------------------------------------------------------------
 
-function naruto_shadow_clone_technique:OnAbilityPhaseStart()
-	local caster = self:GetCaster()
-
-	EmitSoundOn("shadow_clone_cast", caster)
-
+function naruto_shadow_clone_technique:GetCastAnimation()
 	if not self.last_cast or self.last_cast + 0.5 < GameRules:GetDOTATime(true, true) then
-		caster:StartGesture(ACT_DOTA_CAST_ABILITY_1)
+		return ACT_DOTA_CAST_ABILITY_1
+	else
+		return ACT_DOTA_INVALID
 	end
+end
+
+function naruto_shadow_clone_technique:OnAbilityPhaseStart()
+	EmitSoundOn("shadow_clone_cast", self:GetCaster())
 
 	return true
 end
-
---------------------------------------------------------------------------------
-
-function naruto_shadow_clone_technique:OnAbilityPhaseInterrupted()
-	self:GetCaster():FadeGesture(ACT_DOTA_CAST_ABILITY_1)
-end
-
 --------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:OnSpellStart()
