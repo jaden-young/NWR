@@ -38,7 +38,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"charge_speed"				"575 650 725 800"
+				"charge_speed"				"650 700 750 800"
 				"LinkedSpecialBonus"		"special_bonus_naruto_rendan_charge_speed"
 			}
 			"03"
