@@ -110,6 +110,7 @@ export class onoki_atomic_dismantling extends BaseAbility {
 
         let impact_fx = ParticleManager.CreateParticle("particles/units/heroes/onoki/onoki_atomic_dismantling_impact.vpcf", ParticleAttachment.ABSORIGIN, caster);
         ParticleManager.SetParticleControl(impact_fx, 0, location);
+        ParticleManager.SetParticleControl(impact_fx, 1, location + Vector(0, 0, 150) as Vector);
 
         Timers.CreateTimer(root_duration, () => {
             ParticleManager.DestroyParticle(impact_fx, false)
