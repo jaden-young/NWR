@@ -1721,7 +1721,7 @@
 						source_filename = "models/sexy_naruto/rasengan_hit.fbx"
 						start_frame = 0
 						end_frame = 28
-						framerate = 30.0
+						framerate = 16.0
 						reverse = false
 					},
 					{

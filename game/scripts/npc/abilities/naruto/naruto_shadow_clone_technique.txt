@@ -38,13 +38,13 @@
 			"outgoing_damage"			"25"
 			"incoming_damage"
 			{
-				"value"						"800"
+				"value"						"700"
 				"LinkedSpecialBonus"		"special_bonus_naruto_5"
 			}
 			"clones_per_charge"			"1 2 3 4"
 			"spawn_radius"				"350"
 			"delay_between_illusions"	"0.2"
-			"attack_search_radius"		"2200"
+			"attack_search_radius"		"1400"
 			"shard_rasengan_damage"		"40"
 		}
 	}
