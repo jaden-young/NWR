@@ -1132,6 +1132,50 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "shoulder_left"
+						parent_bone = "LeftShoulder"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "aura"
+						parent_bone = "Spine1"
+						relative_origin = [ -26.268888, 28.958233, 1.340356 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "head"
+						parent_bone = "Head"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						game_class = "particle"
+						game_keys = 
+						{
+							name = resource:"particles/units/heroes/hero_phoenix/phoenix_sunray_debuff.vpcf"
+							attachment_point = "aura"
+							attachment_type = "point_follow"
+							attachment_offset = [ 0.0, 0.0, 0.0 ]
+						}
+					},
 				]
 			},
 		]
