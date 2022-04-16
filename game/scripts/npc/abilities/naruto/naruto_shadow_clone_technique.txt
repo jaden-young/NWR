@@ -6,7 +6,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/naruto/shadow_clone_technique.lua"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"naruto/shadow_clone_technique"
 
@@ -14,14 +14,7 @@
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.2"
-		//"AbilityCastAnimation"			"ACT_DOTA_INVALID"
-	
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		//"AbilityCooldown"				"65.0"
-		//"AbilityCharges"				"4"
-		//"AbilityChargeRestoreTime"		"6 8 10 12"
+		"AbilityCastPoint"				"0.2"	
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------

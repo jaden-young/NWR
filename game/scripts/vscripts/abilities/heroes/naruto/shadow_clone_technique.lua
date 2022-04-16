@@ -27,6 +27,14 @@ end
 
 --------------------------------------------------------------------------------
 
+function naruto_shadow_clone_technique:OnUpgrade()
+	if self:GetLevel() == 1 then
+		self:ToggleAutoCast()
+	end
+end
+
+--------------------------------------------------------------------------------
+
 function naruto_shadow_clone_technique:OnAbilityLearned(event)
 	if event.PlayerID ~= self:GetCaster():GetPlayerOwnerID() or event.abilityname ~= "special_bonus_naruto_5" then return end
 
@@ -52,6 +60,8 @@ function naruto_shadow_clone_technique:GetCastAnimation()
 		return ACT_DOTA_INVALID
 	end
 end
+
+--------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:OnAbilityPhaseStart()
 	if not self.last_cast or self.last_cast + self:GetSpecialValueFor("precast_anims_vo_cd") < GameRules:GetDOTATime(true, true) then
@@ -139,6 +149,8 @@ end
 --------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:SendAttackOrder(clone)
+	if not self:GetAutoCastState() then return end
+
 	local caster = self:GetCaster()
 	local enemies = FindUnitsInRadius(
 		caster:GetTeamNumber(), 
