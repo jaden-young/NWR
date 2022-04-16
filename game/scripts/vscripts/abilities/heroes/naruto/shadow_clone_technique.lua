@@ -21,7 +21,7 @@ end
 --------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:Spawn()
-	if not IsServer() or not self:GetCaster():IsRealHero() then return end
+	if not IsServer() or not self or self:IsNull() or not self:GetCaster():IsRealHero() then return end
 	ListenToGameEvent("dota_player_learned_ability", function(event) return self:OnAbilityLearned(event) end, nil)
 end
 
@@ -46,7 +46,7 @@ end
 --------------------------------------------------------------------------------
 
 function naruto_shadow_clone_technique:GetCastAnimation()
-	if not self.last_cast or self.last_cast + 0.5 < GameRules:GetDOTATime(true, true) then
+	if not self.last_cast or self.last_cast + self:GetSpecialValueFor("precast_anims_vo_cd") < GameRules:GetDOTATime(true, true) then
 		return ACT_DOTA_CAST_ABILITY_1
 	else
 		return ACT_DOTA_INVALID
@@ -54,7 +54,9 @@ function naruto_shadow_clone_technique:GetCastAnimation()
 end
 
 function naruto_shadow_clone_technique:OnAbilityPhaseStart()
-	EmitSoundOn("shadow_clone_cast", self:GetCaster())
+	if not self.last_cast or self.last_cast + self:GetSpecialValueFor("precast_anims_vo_cd") < GameRules:GetDOTATime(true, true) then
+		EmitSoundOn("shadow_clone_cast", self:GetCaster())
+	end
 
 	return true
 end
@@ -99,12 +101,12 @@ function naruto_shadow_clone_technique:OnSpellStart()
 		return clones_created < count and delay or nil
 	end)
 
+	if not self.last_cast or self.last_cast + self:GetSpecialValueFor("shadow_clone_fire_cd") < GameRules:GetDOTATime(true, true) then
+		EmitSoundOn("shadow_clone_fire", caster)
+	end
 
-	EmitSoundOn("shadow_clone_fire", caster)
-
-	if not self.vo_cd or self.vo_cd + self:GetSpecialValueFor("talking_cd") < GameRules:GetDOTATime(true, true) then
+	if not self.last_cast or self.last_cast + self:GetSpecialValueFor("talking_cd") < GameRules:GetDOTATime(true, true) then
 		EmitSoundOn("shadow_clone_talking", caster)
-		self.vo_cd = GameRules:GetDOTATime(true, true)
 	end
 
 	self.last_cast = GameRules:GetDOTATime(true, true)

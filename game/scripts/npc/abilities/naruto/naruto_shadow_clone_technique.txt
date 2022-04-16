@@ -46,7 +46,8 @@
 			"attack_search_radius"		"1400"
 			"shard_rasengan_damage"		"40"
 			"talking_cd"				"6"
-			"castsfx_cd"				"1"
+			"precast_anims_vo_cd"		"0.5"
+			"shadow_clone_fire_cd"		"0"
 		}
 	}
 }
