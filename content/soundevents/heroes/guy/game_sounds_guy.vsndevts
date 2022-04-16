@@ -71,4 +71,28 @@
 			"sounds/weapons/hero/brewmaster/thunder_clap_target05.vsnd",
 		]
 	}
+
+	Hero_Guy.Hirudora.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.200000
+		soundlevel = 81.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/creep/roshan/dt/scream.vsnd"
+	}
+
+	Hero_Guy.Hirudora.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 0.800000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/winter_wyvern/arctic_impact.vsnd"
+	}
 }

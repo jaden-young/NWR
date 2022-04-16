@@ -14,7 +14,7 @@
 		  "Ability1"        "sasuke_chidori"
 		//  "Ability2"        "sasuke_chidori_eiso" 
 		  "Ability2"        "sasuke_chidori_stream" 
-		  "Ability3"        "" 
+		  "Ability3"        "sasuke_sharingan" 
 		  "Ability4"        "generic_hidden"
 		  "Ability5"        "generic_hidden"
 

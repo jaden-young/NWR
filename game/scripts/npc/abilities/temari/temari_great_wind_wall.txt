@@ -1,47 +1,48 @@
 "DOTAAbilities"
 {	
 	//=================================================================================================================
-	// Kisame: Exploding Water Shockwave (Shard Ability)
+	// Kisame: Great Wind Wall
 	//=================================================================================================================
-	"kisame_exploding_water_shockwave"
+	"temari_great_wind_wall"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"                    "abilities/heroes/kisame/kisame_exploding_water_shockwave.lua"
-		"AbilityTextureName"			"kisame_exploding_water_shockwave"
+		"ScriptFile"                    "abilities/heroes/temari/temari_great_wind_wall.lua"
+		"AbilityTextureName"			"temari_great_wind_wall"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
-		"MaxLevel"						"1"
-
-		"IsGrantedByShard"				"1"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.2"
-		"AbilityCastRange"				"600"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"500"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12"
+		"AbilityCooldown"				"16 14 12 10"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"75"
+		"AbilityManaCost"				"70"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage"					"200"
-			"wave_radius"				"250"
-			"wave_speed"				"1000"
+			"damage"					"60 95 130 165"
+			"radius"					"500"
+			"angle"						"140"
+			"knockback_distance"		"200 250 300 350"
+			"knockback_duration"		"0.3"
+			"move_slow"					"10 20 30 40"
+			"slow_duration"				"3"	
 		}
 	}
 }

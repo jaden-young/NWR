@@ -11,7 +11,7 @@
       "BaseClass"   "npc_dota_hero_enchantress"
       "Ability1"        "temari_fusajin_no_jutsu"
       "Ability2"        "temari_kamaitachi_no_jutsu"
-      "Ability3"        "" 
+      "Ability3"        "temari_great_wind_wall" 
       "Ability4"	  	  "generic_hidden"
       "Ability5"		    "generic_hidden"
       "Ability6"        "temari_kuchiyose_kirikiri_mai"

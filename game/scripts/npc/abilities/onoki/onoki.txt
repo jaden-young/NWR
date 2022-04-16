@@ -1,5 +1,6 @@
 #base "onoki_innate_passive.txt"
 #base "onoki_atomic_dismantling.txt"
+#base "onoki_weighted_boulder.txt"
 #base "talents.txt"
 
 #base "onoki_added_weight.txt"

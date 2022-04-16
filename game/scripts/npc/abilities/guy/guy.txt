@@ -8,3 +8,4 @@
 #base "guy_morning_peacock.txt"
 #base "talents.txt"
 #base "guy_innate_passive.txt"
+#base "guy_hirudora.txt"
