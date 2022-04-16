@@ -1,6 +1,9 @@
+#base "temari_great_wind_wall.txt"
+#base "temari_innate_passive.txt"
+#base "talents.txt"
+
 #base "temari_fusajin_no_jutsu.txt"
 #base "temari_kamaitachi_no_jutsu.txt"
 #base "temari_kuchiyose_kirikiri_mai.txt"
 #base "temari_sheer_wind.txt"
-#base "talents.txt"
-#base "temari_innate_passive.txt"
+

@@ -1037,6 +1037,17 @@
 		"DOTA_Tooltip_ability_sasuke_chidori_stream_radius"			"RADIUS: "
 		"DOTA_Tooltip_ability_sasuke_chidori_stream_aoe_damage"			"DAMAGE: "
 		"DOTA_Tooltip_ability_sasuke_chidori_stream_stun_duration"			"STUN DURATION: "
+
+
+		"DOTA_Tooltip_ability_sasuke_sharingan"								"Sharingan"
+		"DOTA_Tooltip_ability_sasuke_sharingan_Description"					"Grants Sasuke’s full Damage Evasion for a limited number of damage instances or until the duration expires. Additionally, grants Attack Speed for the duration."
+		"DOTA_Tooltip_ability_sasuke_sharingan_Note0"						"Damage as HP Removal is not blocked (it won't reduce the charges)."
+		"DOTA_Tooltip_ability_sasuke_sharingan_instances"					"INSTANCES:"
+		"DOTA_Tooltip_ability_sasuke_sharingan_bonus_attack_speed"			"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_sasuke_sharingan_duration"					"DURATION:"
+
+		"DOTA_Tooltip_modifier_sasuke_sharingan"							"Sharingan"
+		"DOTA_Tooltip_modifier_sasuke_sharingan_Description"				"Attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 		
 
 		// Chidori Light Sword
@@ -1192,6 +1203,14 @@
 		"DOTA_Tooltip_modfiier_guy_leaf_strong_whirlwind_ult_stun"						"<b><font color='#72FF8C'>Leaf Strong Whirlwind</font></b>"
 		"DOTA_Tooltip_modfiier_guy_leaf_strong_whirlwind_ult_stun_description" 			"This Unit is <b><font color='#72FF8C'>Stunned.</font></b>"
 
+
+		// Hirudora
+		"DOTA_Tooltip_ability_guy_hirudora"							"Hirudora"
+		"DOTA_Tooltip_ability_guy_hirudora_Description"				"Unleashes a wave of air pressure shaped into a tiger, dealing Physical Damage based on Guy’s Attack Damage to enemies in a line. Costs a percentage of Guy’s Current HP to use. "
+		"DOTA_Tooltip_ability_guy_hirudora_attack_damage"			"%ATTACK DAMAGE:"
+		"DOTA_Tooltip_ability_guy_hirudora_radius"					"RADIUS:"
+		"DOTA_Tooltip_ability_guy_hirudora_hp_cost"					"%CURRENT HEALTH COST:"
+
 		
 		// Strong Fist
 		"DOTA_Tooltip_ability_guy_strong_fist"						"<b><font color='#F4E8C7'>Strong Fist</font></b>"
@@ -1255,6 +1274,11 @@
 
 		"DOTA_Tooltip_modifier_onoki_atomic_dismantling"					"Rooted"
 		"DOTA_Tooltip_modifier_onoki_atomic_dismantling_Description"		"Cannot move."
+
+
+		//Weighted Boulder Technique
+		"DOTA_Tooltip_ability_onoki_weighted_boulder"						"Weighted Boulder Technique"
+		"DOTA_Tooltip_ability_onoki_weighted_boulder_Description"
 		
 		
 		//Stalagmite Armor
@@ -1542,6 +1566,19 @@
 
 		"DOTA_Tooltip_modifier_temari_kamaitachi_no_jutsu_cyclone"				 "<b><font color='#EAF8FF'>Wind Scythe</font></b>"
 		"DOTA_Tooltip_modifier_temari_kamaitachi_no_jutsu_cyclone_description"	 "This Unit is being <b><font color='#EAF8FF'>lifted</font></b> and is unable to move."
+
+		//Great Wind Wall
+		"DOTA_Tooltip_ability_temari_great_wind_wall"						"Great Wind Wall"
+		"DOTA_Tooltip_ability_temari_great_wind_wall_Description"			"Unleashes a wave of wind pushing enemies back and dealing Magic Damage. Enemies receive a short Movement Speed Slow after being knocked back."
+		"DOTA_Tooltip_ability_temari_great_wind_wall_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_temari_great_wind_wall_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_temari_great_wind_wall_knockback_distance"	"KNOCKBACK DISTANCE:"
+		"DOTA_Tooltip_ability_temari_great_wind_wall_move_slow"				"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_temari_great_wind_wall_slow_duration"			"DURATION:"
+
+		"DOTA_Tooltip_modifier_temari_great_wind_wall"						"Great Wind Wall"
+		"DOTA_Tooltip_modifier_temari_great_wind_wall_Description"			"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+
 
 		"DOTA_Tooltip_ability_temari_sheer_wind"						"<b><font color='#7FF1DF'>Sheer Wind</font></b>"
 		"DOTA_Tooltip_ability_temari_sheer_wind_Description"			"Grants bonus <b><font color='#7FF1DF'>Movement Speed and Attack Speed</font></b> each time Temari casts a spell. <br><br> Stacks last for <b><font color='#FFFFFF'>12</font></b> seconds and stack up to <b><font color='#FFFFFF'>3</font></b> times."

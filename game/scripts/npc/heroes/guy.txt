@@ -21,7 +21,7 @@
 		"Ability1"        "guy_dynamic_entry"
 		"Ability2"        "guy_leaf_strong_whirlwind" 
 		"Ability3"        "guy_strong_fist" 
-		"Ability4"        "generic_hidden"
+		"Ability4"        "guy_hirudora"
 		"Ability5"        "generic_hidden"
 		"Ability6"        "guy_seventh_gate_open"
 		"Ability7"        "guy_seventh_gate_close"

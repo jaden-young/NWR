@@ -65,4 +65,28 @@
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 	}
+
+	Hero_Onoki.WeightedBoulder.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.700000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/visage/stone_form01.vsnd"
+	}
+
+	Hero_Onoki.WeightedBoulder.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 1.00000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/earth_spirit/rolling_boulder_stop.vsnd"
+	}
 }
