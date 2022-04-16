@@ -1028,10 +1028,10 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/striker_guy/attack6.smd"
+						source_filename = "models/striker_guy/attack2.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 45.0
+						framerate = 10.0
 						reverse = false
 					},
 				]
