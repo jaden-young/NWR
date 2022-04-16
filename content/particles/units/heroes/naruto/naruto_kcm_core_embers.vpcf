@@ -98,8 +98,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMin = [ 34, 139, 34 ]
-			m_ColorMax = [ 143, 243, 143 ]
+			m_ColorMin = [ 255, 140, 0 ]
+			m_ColorMax = [ 255, 209, 72 ]
 		},
 		{
 			_class = "C_INIT_RandomRadius"
@@ -138,7 +138,7 @@
 		},
 		{
 			_class = "C_OP_ColorInterpolate"
-			m_ColorFade = [ 0, 191, 255 ]
+			m_ColorFade = [ 255, 255, 0 ]
 		},
 		{
 			_class = "C_OP_InterpolateRadius"

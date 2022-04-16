@@ -36,12 +36,12 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage"					"60 95 130 165"
+			"damage"					"60 100 140 180"
 			"radius"					"500"
 			"angle"						"140"
-			"knockback_distance"		"200 250 300 350"
+			"knockback_distance"		"300 350 400 450"
 			"knockback_duration"		"0.3"
-			"move_slow"					"10 20 30 40"
+			"move_slow"					"15 20 35 30"
 			"slow_duration"				"3"	
 		}
 	}
