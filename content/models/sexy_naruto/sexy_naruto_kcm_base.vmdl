@@ -393,7 +393,7 @@
 						source_filename = "models/sexy_naruto/rasengan_run.fbx"
 						start_frame = 0
 						end_frame = 11
-						framerate = 30.0
+						framerate = 14.0
 						reverse = false
 					},
 					{
@@ -1260,10 +1260,11 @@
 				[
 					{
 						_class = "GenericGameData"
+						disabled = true
 						game_class = "particle"
 						game_keys = 
 						{
-							name = resource:"particles/units/heroes/hero_phoenix/phoenix_sunray_debuff.vpcf"
+							name = resource:""
 							attachment_point = "aura"
 							attachment_type = "point_follow"
 							attachment_offset = [ 0.0, 0.0, 0.0 ]
