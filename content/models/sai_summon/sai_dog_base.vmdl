@@ -24,7 +24,7 @@
 					{
 						_class = "Attachment"
 						name = "attach_hitloc"
-						parent_bone = "bone_new3"
+						parent_bone = "spine1"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
@@ -33,7 +33,7 @@
 					{
 						_class = "Attachment"
 						name = "attach_origin"
-						parent_bone = ""
+						parent_bone = "characterroot"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
@@ -47,8 +47,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "sai_dog_base"
-						filename = "models/sai_summon/sai_dog_base.dmx"
+						filename = "models/sai_summon/sai_dog_base.smd"
 						import_scale = 1.0
 						import_filter = 
 						{
@@ -77,9 +76,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/sai_summon/sai_dog_anim.smd"
-						start_frame = 102
-						end_frame = 113
-						framerate = 10.0
+						start_frame = -1
+						end_frame = -1
+						framerate = 60.0
 						reverse = false
 					},
 				]
