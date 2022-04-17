@@ -45,38 +45,49 @@ export class modifier_sakura_innate_passive_intrinsic extends BaseModifier
 
         let ability = this.GetAbility()
         if(!ability){return}
-        let attacks_needed = ability.GetSpecialValueFor("attacks_needed")
-        if(this.GetStackCount() === attacks_needed){
-            let stun_duration = ability.GetSpecialValueFor("stun_duration_base") + (ability.GetSpecialValueFor("stun_duration_per_level_bonus") * (ability.GetLevel() - 1))
-            event.target.AddNewModifier(this.GetParent(), ability, "modifier_sakura_innate_passive_stun", {duration: stun_duration})
 
-            this.SetStackCount(0)
-
-            let damage = ability.GetSpecialValueFor("damage_base") + (ability.GetSpecialValueFor("damage_per_level_bonus") * (ability.GetLevel() - 1))
-
-            let damage_options = {
-                victim: event.target,
-                attacker: this.GetParent(),
-                damage: damage,
-                damage_type: DamageTypes.PHYSICAL,
-                damage_flags: DamageFlag.NONE
-            }
-            ApplyDamage(damage_options)
-
-            
-            SendOverheadEventMessage(
-                undefined,
-                OverheadAlert.BONUS_SPELL_DAMAGE,
-                event.target,
-                damage,
-                this.GetCaster()?.GetPlayerOwner()
-            )
-
-            event.target.EmitSound("sakura_strength_impact")
-
-        }else{
+        if (this.CanProc()){
+            this.ProcEnhancedStrength(event.target, true);
+        } else {
             this.IncrementStackCount()
         }
+    }
+
+    CanProc(): boolean {
+        let attacks_needed = this.GetAbility()!.GetSpecialValueFor("attacks_needed");
+
+        return this.GetStackCount() === attacks_needed;
+    }
+
+    ProcEnhancedStrength(target: CDOTA_BaseNPC, reset: boolean): void {
+        let ability = this.GetAbility()!;
+
+        let stun_duration = ability.GetSpecialValueFor("stun_duration_base") + (ability.GetSpecialValueFor("stun_duration_per_level_bonus") * (ability.GetLevel() - 1))
+        target.AddNewModifier(this.GetParent(), ability, "modifier_sakura_innate_passive_stun", {duration: stun_duration})
+
+        if (reset) this.SetStackCount(0);
+
+        let damage = ability.GetSpecialValueFor("damage_base") + (ability.GetSpecialValueFor("damage_per_level_bonus") * (ability.GetLevel() - 1))
+
+        let damage_options = {
+            victim: target,
+            attacker: this.GetParent(),
+            damage: damage,
+            damage_type: DamageTypes.PHYSICAL,
+            damage_flags: DamageFlag.NONE
+        }
+        ApplyDamage(damage_options)
+
+        
+        SendOverheadEventMessage(
+            undefined,
+            OverheadAlert.BONUS_SPELL_DAMAGE,
+            target,
+            damage,
+            this.GetCaster()?.GetPlayerOwner()
+        )
+
+        target.EmitSound("sakura_strength_impact")
     }
 }
 

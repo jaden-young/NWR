@@ -806,7 +806,7 @@
 					{
 						_class = "AnimFile"
 						name = "aerial_uppercut"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -820,7 +820,7 @@
 						source_filename = "models/sakura/aerial_uppercut.fbx"
 						start_frame = 0
 						end_frame = 29
-						framerate = 30.0
+						framerate = 18.0
 						reverse = false
 					},
 					{

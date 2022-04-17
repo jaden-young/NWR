@@ -840,7 +840,7 @@
 					{
 						_class = "AnimFile"
 						name = "fireball"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -854,7 +854,7 @@
 						source_filename = "models/striker_sasuke2/fireball.smd"
 						start_frame = 0
 						end_frame = 33
-						framerate = 30.0
+						framerate = 22.0
 						reverse = false
 					},
 					{
@@ -1201,6 +1201,15 @@
 						name = "attach_hitloc"
 						parent_bone = "spine1"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "attach_mouth"
+						parent_bone = "head"
+						relative_origin = [ 0.590248, 14.781857, -1.684632 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false

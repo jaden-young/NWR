@@ -13,7 +13,7 @@
 		"Ability1"        		"sakura_earth_slam"
 		"Ability2"       		"sakura_chakra_burst" 
 		"Ability3"      		"sakura_mystical_palm_technique" 
-		"Ability4"      		"generic_hidden" 
+		"Ability4"      		"sakura_cherry_blossom_burst" 
 		"Ability5"        		"generic_hidden" 
 		"Ability6"        		"sakura_inner_sakura"
 		"Ability7"				"sakura_innate_passive"

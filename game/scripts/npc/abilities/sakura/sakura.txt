@@ -1,5 +1,6 @@
 #base "sakura_innate_passive.txt"
 #base "sakura_mystical_palm_technique.txt"
+#base "sakura_cherry_blossom_burst.txt"
 #base "talents.txt"
 
 #base "sakura_chakra_burst.txt"

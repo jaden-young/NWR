@@ -11,5 +11,43 @@
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/heroes/itachi/amaterasu_fire.vsnd"
 	}
+
+	Hero_Sasuke.GreatFireball.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.400000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.3000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/dragon_knight/dragonknight_fire.vsnd"
+		soundevent_layer2 = "Hero_Sasuke.GreatFireball.CastLayer"
+		soundevent_layer2_on = 1.000000
+	}
+
+	Hero_Sasuke.GreatFireball.CastLayer = 
+	{
+		type = "dota_update_default"
+		volume = 0.400000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 0.600000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/ember_spirit/fire_remnant_cast.vsnd"
+	}
+
+	Hero_Sasuke.GreatFireball.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 0.400000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.600000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/ember_spirit/fire_remnant_cast.vsnd"
+	}
 }
 

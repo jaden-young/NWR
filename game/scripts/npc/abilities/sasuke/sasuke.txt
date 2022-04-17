@@ -1,5 +1,6 @@
 #base "sasuke_innate_passive.txt"
 #base "sasuke_sharingan.txt"
+#base "sasuke_great_fireball_technique.txt"
 #base "talents.txt"
 
 #base "sasuke_chidori.txt"

@@ -729,6 +729,19 @@
 		"DOTA_Tooltip_ability_sakura_mystical_palm_technique_Description"		"Heals a target unit for a flat amount plus a percentage of their maximum HP. Also applies a Strong Dispel."
 		"DOTA_Tooltip_ability_sakura_mystical_palm_technique_base_heal"			"BASE HEAL:"
 		"DOTA_Tooltip_ability_sakura_mystical_palm_technique_max_hp_heal"		"%MAX HEALTH HEALED:"
+
+		// sakura_cherry_blossom_burst
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst"						"Cherry Blossom Burst"
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_Description"			"Unleashes a shockwave of chakra dealing Magic Damage and briefly slowing affected enemies. Consumes Chakra Enhanced Strength if the passive is at full stacks, dealing the additional damage and stun."
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_Note0"				"Cherry Blossom Burst can hit units up to 1050 units away."
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_move_slow"			"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_slow_duration"		"DURATION:"
+		"DOTA_Tooltip_ability_sakura_cherry_blossom_burst_abilitycastrange"		"RANGE:"
+
+		"DOTA_Tooltip_modifier_sakura_cherry_blossom_burst"						"Cherry Blossom Burst"
+		"DOTA_Tooltip_modifier_sakura_cherry_blossom_burst_Description"			"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 		
 		// Earth Slam
 		"DOTA_Tooltip_ability_sakura_earth_slam"						"<b><font color='#FF65E8'>Cherry Blossom Impact</font></b>"
@@ -1065,6 +1078,15 @@
 		"DOTA_Tooltip_modifier_chidori_light_sword_debuff"						"<b><font color='#A5E3FF'>Chidori Light Sword</font></b>"
 		"DOTA_Tooltip_modifier_chidori_light_sword_debuff_description"			"This Unit has reduced <b><font color='#A5E3FF'>Movement Speed</font></b> and <b><font color='#A5E3FF'>Attack Speed.</font></b>"
 
+		//Great Fireball Technique
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique"					"Great Fireball Technique"
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_Description"		"Sends out a fireball dealing Magic Damage to enemies in a line. Enemies hit by the wave are slowed and take damage over time."
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_damage"			"DAMAGE:"
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_radius"			"RADIUS:"
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_debuff_dps"		"DAMAGE PER SECOND:"
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_move_slow"		"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_duration"			"DURATION:"
+		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_abilitycastrange"	"RANGE:"
 
 		//Kirin
 		"DOTA_Tooltip_ability_sasuke_chidori_kirin"								"<b><font color='#00D4FF'>Kirin</font></b>"

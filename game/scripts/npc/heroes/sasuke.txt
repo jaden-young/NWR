@@ -15,7 +15,7 @@
 		//  "Ability2"        "sasuke_chidori_eiso" 
 		  "Ability2"        "sasuke_chidori_stream" 
 		  "Ability3"        "sasuke_sharingan" 
-		  "Ability4"        "generic_hidden"
+		  "Ability4"        "sasuke_great_fireball_technique"
 		  "Ability5"        "generic_hidden"
 
 		  "Ability6"        "sasuke_chidori_kirin"
