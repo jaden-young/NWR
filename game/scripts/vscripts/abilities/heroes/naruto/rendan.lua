@@ -73,7 +73,7 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_naruto_rendan:OnIntervalThink()
-	if self.bRushChecking and self:GetParent():GetAggroTarget() == self.target and (self.target:GetAbsOrigin() - self:GetParent():GetAbsOrigin()):Length2D() <= self:GetAbility():GetTalentSpecialValueFor("max_distance") then
+	if self.bRushChecking and self:GetParent():GetAggroTarget() == self.target and (self.target:GetAbsOrigin() - self:GetParent():GetAbsOrigin()):Length2D() <= self:GetAbility():GetSpecialValueFor("max_distance") then
 		self:GetParent():EmitSound("rendan_fire")
 
 		local rush_modifier = self:GetParent():AddNewModifier(self:GetCaster(), self:GetAbility(), "modifier_naruto_rendan_boost", {duration = 5})
@@ -105,7 +105,7 @@ function modifier_naruto_rendan:OnOrder(keys)
 
 	if keys.unit == parent and ability and caster_ability and ability:IsCooldownReady() and not parent:PassivesDisabled() and keys.target then
 		if keys.order_type == DOTA_UNIT_ORDER_ATTACK_TARGET then
-			if (keys.target:GetAbsOrigin() - parent:GetAbsOrigin()):Length2D() <= GetAbilityKV(ability:GetAbilityName(), "AbilityCastRange", ability:GetLevel()) and (keys.target:GetAbsOrigin() - parent:GetAbsOrigin()):Length2D() >= ability:GetTalentSpecialValueFor("min_distance") then
+			if (keys.target:GetAbsOrigin() - parent:GetAbsOrigin()):Length2D() <= GetAbilityKV(ability:GetAbilityName(), "AbilityCastRange", ability:GetLevel()) and (keys.target:GetAbsOrigin() - parent:GetAbsOrigin()):Length2D() >= ability:GetSpecialValueFor("min_distance") then
 				parent:EmitSound("rendan_fire")
 
 				local rush_modifier
@@ -181,15 +181,16 @@ end
 --------------------------------------------------------------------------------
 
 function modifier_naruto_rendan_boost:OnCreated(keys)
-	self.bonus_speed = self:GetAbility():GetTalentSpecialValueFor("charge_speed") + self:GetCaster():FindTalentValue("special_bonus_naruto_6")
-	self.bonus_damage = self:GetAbility():GetTalentSpecialValueFor("damage")
+	local ability = self:GetAbility()
+	self.bonus_speed = ability:GetSpecialValueFor("charge_speed") + self:GetCaster():FindTalentValue("special_bonus_naruto_1")
+	self.bonus_damage = ability:GetSpecialValueFor("damage")
 
 	self:StartIntervalThink(FrameTime())	
 
 	if not IsServer() then return end
 
 	if self:GetParent():IsIllusion() then
-		self.bonus_damage = self:GetAbility():GetTalentSpecialValueFor("clone_damage")
+		self.bonus_damage = ability:GetSpecialValueFor("clone_damage")
 	end
 
 	self.destroy_orders	=
@@ -252,10 +253,20 @@ function modifier_naruto_rendan_boost:OnAttackStart(event)
 	if not IsServer() then return end
 	local attacker = event.attacker
 	local target = event.target
+	local ability = self:GetAbility()
 
-	if not attacker or attacker ~= self:GetParent() or not attacker:IsRealHero() or not target or event.no_attack_cooldown then
+	if not attacker or attacker ~= self:GetParent() or not attacker:IsRealHero() or not target then
 		return 0
 	end
+
+	if not ability or ability:GetAutoCastState() or event.no_attack_cooldown then
+		return 0
+	end
+
+	EmitSoundOn("Hero_Naruto.Rendan.Teleport", attacker)
+	local rendan_tp_fx = ParticleManager:CreateParticle("particles/units/heroes/hero_phantom_lancer/phantomlancer_illusion_destroy.vpcf", PATTACH_CUSTOMORIGIN, nil)
+	ParticleManager:SetParticleControl(rendan_tp_fx, 0, attacker:GetAbsOrigin())
+	ParticleManager:ReleaseParticleIndex(rendan_tp_fx)
 
 	local origin = target:GetAbsOrigin()
 	local position = attacker:GetAbsOrigin() + (origin - attacker:GetAbsOrigin()):Normalized() * (target:GetPaddedCollisionRadius() + attacker:GetPaddedCollisionRadius() + 200)

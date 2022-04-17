@@ -980,7 +980,7 @@
 					{
 						_class = "AnimFile"
 						name = "kirin"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -992,9 +992,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_sasuke2/kirin.smd"
-						start_frame = 0
-						end_frame = 200
-						framerate = 30.0
+						start_frame = 12
+						end_frame = 158
+						framerate = 90.0
 						reverse = false
 					},
 					{

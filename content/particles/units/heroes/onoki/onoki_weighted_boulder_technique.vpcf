@@ -76,6 +76,7 @@
 		{
 			_class = "C_OP_CPOffsetToPercentageBetweenCPs"
 			m_flInputBias = 0.25
+			m_vecOffset = [ 0.0, 0.0, 1250.0 ]
 			m_nOffsetCP = 1
 			m_flInputMax = 0.0
 			m_flInputMin = 1.0
@@ -108,6 +109,7 @@
 				m_nType = "PF_TYPE_LITERAL"
 				m_flLiteralValue = 1000000.0
 			}
+			m_vecComponentScale = [ 1.0, 1.0, 0.0 ]
 		},
 	]
 	m_Renderers = 
@@ -321,20 +323,19 @@
 	m_Children = 
 	[
 		{
-			m_flDelay = 0.1
-			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniquec.vpcf"
-		},
-		{
-			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniqueb.vpcf"
-		},
-		{
 			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniqued.vpcf"
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniquea.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniquee.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniquec.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_techniqueb.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/onoki/onoki_weighted_boulder_technique_impact.vpcf"
 			m_bEndCap = true
 		},
 	]

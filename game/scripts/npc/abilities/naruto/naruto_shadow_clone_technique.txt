@@ -6,7 +6,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"abilities/heroes/naruto/shadow_clone_technique.lua"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"naruto/shadow_clone_technique"
 
@@ -14,11 +14,7 @@
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.2"
-	
-		// Time		
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"65.0"
+		"AbilityCastPoint"				"0.2"	
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -31,21 +27,20 @@
 			"max_charges"
 			{
 				"value"						"3"
-				"LinkedSpecialBonus"		"special_bonus_naruto_4"
+				"LinkedSpecialBonus"		"special_bonus_naruto_5"
 			}
 			"charge_restore_time"		"6.0 8.0 10.0 12.0"
 			"illusion_duration"			"12.0"
 			"outgoing_damage"			"25"
-			"incoming_damage"
-			{
-				"value"						"700"
-				"LinkedSpecialBonus"		"special_bonus_naruto_5"
-			}
+			"incoming_damage"			"700"
 			"clones_per_charge"			"1 2 3 4"
 			"spawn_radius"				"350"
 			"delay_between_illusions"	"0.2"
 			"attack_search_radius"		"1400"
 			"shard_rasengan_damage"		"40"
+			"talking_cd"				"6"
+			"precast_anims_vo_cd"		"0.5"
+			"shadow_clone_fire_cd"		"0"
 		}
 	}
 }

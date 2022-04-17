@@ -107,6 +107,15 @@ export class onoki_atomic_dismantling extends BaseAbility {
         EmitSoundOnLocationWithCaster(location, "Hero_Onoki.AtomicDismantling.Impact", caster);
         ParticleManager.DestroyParticle(this.rock_fx!, false);
         ParticleManager.ReleaseParticleIndex(this.rock_fx!);
+
+        let impact_fx = ParticleManager.CreateParticle("particles/units/heroes/onoki/onoki_atomic_dismantling_impact.vpcf", ParticleAttachment.ABSORIGIN, caster);
+        ParticleManager.SetParticleControl(impact_fx, 0, location);
+        ParticleManager.SetParticleControl(impact_fx, 1, location + Vector(0, 0, 150) as Vector);
+
+        Timers.CreateTimer(root_duration, () => {
+            ParticleManager.DestroyParticle(impact_fx, false)
+            ParticleManager.ReleaseParticleIndex(impact_fx)
+        })
     }
 
     /****************************************/

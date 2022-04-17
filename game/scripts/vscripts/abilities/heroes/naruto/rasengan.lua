@@ -11,17 +11,8 @@ function naruto_rasengan:Precache( context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/rasengan_charged.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/rasengan_impact.vsndevts", context )
 	PrecacheResource( "soundfile", "soundevents/heroes/naruto/rasengan_talking.vsndevts", context )
+	PrecacheResource("particle", "particles/units/heroes/naruto/rasengan_wip.vpcf", context)
     PrecacheResource( "particle",  "particles/units/heroes/yondaime/raseng_impact.vpcf", context )
-end
-
---------------------------------------------------------------------------------
-
-function naruto_rasengan:OnUpgrade()
-	local ability = self:GetCaster():FindAbilityByName("naruto_rasenshuriken")
-
-	if ability then
-		ability:SetLevel(self:GetLevel())
-	end
 end
 
 --------------------------------------------------------------------------------
@@ -39,23 +30,56 @@ end
 function naruto_rasengan:OnAbilityPhaseStart()
 	local caster = self:GetCaster()
 	caster:EmitSound("rasengan_cast")
+
+	self.rasengan_fx = ParticleManager:CreateParticle("particles/units/heroes/naruto/rasengan_wip.vpcf", PATTACH_ABSORIGIN, caster)
+	ParticleManager:SetParticleControlEnt(self.rasengan_fx, 0, caster, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+	ParticleManager:SetParticleControlEnt(self.rasengan_fx, 1, caster, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+	ParticleManager:SetParticleControlEnt(self.rasengan_fx, 3, caster, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+
+
 	return true
+end
+
+--------------------------------------------------------------------------------
+
+function naruto_rasengan:OnAbilityPhaseInterrupted()
+	ParticleManager:DestroyParticle(self.rasengan_fx, true)
+	ParticleManager:ReleaseParticleIndex(self.rasengan_fx)
 end
 
 --------------------------------------------------------------------------------
 
 function naruto_rasengan:OnSpellStart()
 	if not IsServer() then return end
+	local caster = self:GetCaster()
 
-	self:GetCaster():AddNewModifier(self:GetCaster(), self, "modifier_naruto_rasengan", {duration = self:GetSpecialValueFor("duration")})
-	self:GetCaster():EmitSound("rasengan_charged")
+	local modifier =  caster:AddNewModifier(caster, self, "modifier_naruto_rasengan", {duration = self:GetSpecialValueFor("duration")})
+
+	caster:EmitSound("rasengan_charged")
+
+	if not self.rasengan_fx then
+		self.rasengan_fx = ParticleManager:CreateParticle("particles/units/heroes/naruto/rasengan_wip.vpcf", PATTACH_ABSORIGIN, caster)
+		ParticleManager:SetParticleControlEnt(self.rasengan_fx, 0, caster, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+		ParticleManager:SetParticleControlEnt(self.rasengan_fx, 1, caster, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+		ParticleManager:SetParticleControlEnt(self.rasengan_fx, 3, caster, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+	end
+
+	modifier:AddParticle(self.rasengan_fx, false, false, -1, false, false)
+	self.rasengan_fx = nil
 end
 
 --------------------------------------------------------------------------------
 
 function naruto_rasengan:ActivateRasengan(unit)
-	unit:AddNewModifier(self:GetCaster(), self, "modifier_naruto_rasengan", {duration = self:GetSpecialValueFor("duration")})
+	local modifier = unit:AddNewModifier(self:GetCaster(), self, "modifier_naruto_rasengan", {duration = self:GetSpecialValueFor("duration")})
 	EmitSoundOn("rasengan_charged", unit)
+
+	local rasengan_fx = ParticleManager:CreateParticle("particles/units/heroes/naruto/rasengan_clone.vpcf", PATTACH_ABSORIGIN, unit)
+	ParticleManager:SetParticleControlEnt(rasengan_fx, 0, unit, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+	ParticleManager:SetParticleControlEnt(rasengan_fx, 1, unit, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+	ParticleManager:SetParticleControlEnt(rasengan_fx, 3, unit, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
+
+	modifier:AddParticle(rasengan_fx, false, false, -1, false, false)
 end
 
 --------------------------------------------------------------------------------
@@ -65,12 +89,20 @@ modifier_naruto_rasengan = modifier_naruto_rasengan or class({})
 function modifier_naruto_rasengan:OnCreated()
 	if not IsServer() then return end
 	local parent = self:GetParent()
+	local clone_ability = parent:FindAbilityByName("naruto_shadow_clone_technique")
 
-	local rasengan_fx = ParticleManager:CreateParticle("particles/units/heroes/yondaime/raseng_model.vpcf", PATTACH_ABSORIGIN, parent)
-	ParticleManager:SetParticleControlEnt(rasengan_fx, 0, parent, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
-	ParticleManager:SetParticleControlEnt(rasengan_fx, 1, parent, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
-	ParticleManager:SetParticleControlEnt(rasengan_fx, 3, parent, PATTACH_POINT_FOLLOW, "attach_attack1", Vector(0, 0, 0), true)
-	self:AddParticle(rasengan_fx, false, false, -1, false, false)
+	if clone_ability and not parent:HasShard() then
+		clone_ability:SetActivated(false)
+	end
+end
+
+function modifier_naruto_rasengan:OnDestroy()
+	if not IsServer() then return end
+	local clone_ability = self:GetParent():FindAbilityByName("naruto_shadow_clone_technique")
+
+	if clone_ability then
+		clone_ability:SetActivated(true)
+	end
 end
 
 --------------------------------------------------------------------------------
@@ -93,13 +125,13 @@ function modifier_naruto_rasengan:GetModifierPreAttack(event)
     local target = event.target
     local ability = self:GetAbility()
 
-    if not attacker or not target or not ability or attacker ~= self:GetParent() then
+    if not attacker or not target or not ability or attacker ~= self:GetParent() or not attacker:IsRealHero() then
         return 0
     end
 
 
     self.record = event.record
-
+	
 	EmitSoundOn("rasengan_talking", attacker)
 
     return 0

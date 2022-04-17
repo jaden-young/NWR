@@ -565,7 +565,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -613,7 +613,7 @@
 						source_filename = "models/striker_guy/striker_guy_7gates_base_c.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 45.0
+						framerate = 37.0
 						reverse = false
 					},
 					{
@@ -633,7 +633,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -829,7 +829,7 @@
 					{
 						_class = "AnimFile"
 						name = "dynamic_entry3"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -869,7 +869,7 @@
 					{
 						_class = "AnimFile"
 						name = "kick"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -917,13 +917,13 @@
 						source_filename = "models/striker_guy/striker_guy_7gates_base_k.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "transform"
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -943,7 +943,7 @@
 					{
 						_class = "AnimFile"
 						name = "transform_8gates"
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -977,7 +977,7 @@
 						source_filename = "models/striker_guy/striker_guy_7gates_base_m.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 60.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
@@ -996,6 +996,26 @@
 						disable_compression = false
 						source_filename = "models/striker_guy/striker_guy_7gates_base_n.smd"
 						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "transform_backend"
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_guy/striker_guy_7gates_base_l.smd"
+						start_frame = 43
 						end_frame = -1
 						framerate = -1.0
 						reverse = false

@@ -18,7 +18,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"15 14 13 12"
+		"AbilityCooldown"				"15"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -32,12 +32,12 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"damage"					"90 180 270 360"
-				"LinkedSpecialBonus"		"special_bonus_anko_3"
+				"LinkedSpecialBonus"		"special_bonus_naruto_4"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"10.0"
+				"duration"					"12.0"
 			}
 			"03"
 			{

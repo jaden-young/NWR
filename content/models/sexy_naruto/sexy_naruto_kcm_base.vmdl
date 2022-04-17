@@ -373,6 +373,11 @@
 								activity_name = "rasengan"
 								activity_weight = 1
 							},
+							{
+								_class = "ActivityModifier"
+								activity_name = "slow"
+								activity_weight = 1
+							},
 						]
 						activity_name = "ACT_DOTA_RUN"
 						activity_weight = 1
@@ -388,7 +393,7 @@
 						source_filename = "models/sexy_naruto/rasengan_run.fbx"
 						start_frame = 0
 						end_frame = 11
-						framerate = 30.0
+						framerate = 14.0
 						reverse = false
 					},
 					{
@@ -523,6 +528,94 @@
 						start_frame = 0
 						end_frame = 60
 						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "rasengan_run_fast"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+							{
+								_class = "ActivityModifier"
+								activity_name = "rasengan"
+								activity_weight = 1
+							},
+							{
+								_class = "ActivityModifier"
+								activity_name = "fast"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/sexy_naruto/rasengan_run.fbx"
+						start_frame = 0
+						end_frame = 11
+						framerate = 18.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "rasengan_run_veryfast"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+							{
+								_class = "ActivityModifier"
+								activity_name = "rasengan"
+								activity_weight = 1
+							},
+							{
+								_class = "ActivityModifier"
+								activity_name = "veryfast"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_RUN"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/sexy_naruto/rasengan_run.fbx"
+						start_frame = 0
+						end_frame = 11
+						framerate = 21.0
 						reverse = false
 					},
 				]
@@ -1127,10 +1220,55 @@
 						_class = "Attachment"
 						name = "attach_attack1"
 						parent_bone = "RightHandMiddle1"
-						relative_origin = [ -3.066422, 0.003572, -1.063866 ]
+						relative_origin = [ -2.598476, 5.348045, -1.739815 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "shoulder_left"
+						parent_bone = "LeftShoulder"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "aura"
+						parent_bone = "Spine1"
+						relative_origin = [ -26.268888, 28.958233, 1.340356 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "head"
+						parent_bone = "Head"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+				]
+			},
+			{
+				_class = "GameDataList"
+				children = 
+				[
+					{
+						_class = "GenericGameData"
+						disabled = true
+						game_class = "particle"
+						game_keys = 
+						{
+							name = resource:""
+							attachment_point = "aura"
+							attachment_type = "point_follow"
+							attachment_offset = [ 0.0, 0.0, 0.0 ]
+						}
 					},
 				]
 			},

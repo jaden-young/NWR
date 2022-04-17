@@ -110,6 +110,11 @@
 			_class = "C_OP_InterpolateRadius"
 			m_flStartScale = 0.0
 		},
+		{
+			_class = "C_OP_Decay"
+			m_bRopeDecay = true
+			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
+		},
 	]
 	m_Renderers = 
 	[

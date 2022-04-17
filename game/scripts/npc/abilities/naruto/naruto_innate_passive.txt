@@ -19,10 +19,18 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"health_regen"				"1"
+			"health_regen"
+			{
+				"value"						"1"
+				"LinkedSpecialBonus"		"special_bonus_naruto_3"
+			}				
 			"hp_regen_lvl"				"1"
-			"mana_regen"				"0.5"
-			"mp_regen_lvl"			"0.25"
+			"mana_regen"
+			{
+				"value"						"0.5"
+				"LinkedSpecialBonus"		"special_bonus_naruto_2"
+			}
+			"mp_regen_lvl"				"0.25"
 			"ultimate_mulitplier"		"300"
 		}
 	}

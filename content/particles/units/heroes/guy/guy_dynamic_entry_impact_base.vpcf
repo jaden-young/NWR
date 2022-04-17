@@ -66,6 +66,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/creatures/aghanim/aghanim_stomp.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hero_primal_beast/primal_beast_pulverize_hit_screenshake.vpcf"

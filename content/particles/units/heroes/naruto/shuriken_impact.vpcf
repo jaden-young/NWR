@@ -181,7 +181,7 @@
 			m_ChildRef = resource:"particles/units/heroes/naruto/shuriken_impact_beam.vpcf"
 		},
 		{
-			m_ChildRef = resource:"particles/units/heroes/yondaime/raseng_impact_sphere.vpcf"
+			m_ChildRef = resource:"particles/units/heroes/naruto/shuriken_impact_sphere.vpcf"
 		},
 	]
 }
