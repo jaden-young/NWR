@@ -1088,6 +1088,10 @@
 		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_sasuke_great_fireball_technique_abilitycastrange"	"RANGE:"
 
+
+		"DOTA_Tooltip_modifier_sasuke_great_fireball_technique"					"Great Fireball Technique"
+		"DOTA_Tooltip_modifier_sasuke_great_fireball_technique_Description"		"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, taking periodic damage."
+
 		//Kirin
 		"DOTA_Tooltip_ability_sasuke_chidori_kirin"								"<b><font color='#00D4FF'>Kirin</font></b>"
 		"DOTA_Tooltip_ability_sasuke_chidori_kirin_description"					"<b><font color='#A5E3FF'>Marks the target unit</font></b> with Kirin, granting <b>True Sight</b> of the target unit for a short duration of time. <br><br> After the duration expires, the target is struck with a <b><font color='#00D4FF'>massive bolt of lightning dealing Magic Damage</font></b>. <br><br> Additional <b>Magic Damage</b> is dealt to the target <b><font color='#4DADFF'>based on health lost from Sasuke</font></b> during the effect’s duration."
