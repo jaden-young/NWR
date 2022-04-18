@@ -820,7 +820,7 @@
 					{
 						_class = "AnimFile"
 						name = "cast_in_fireball"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -834,13 +834,13 @@
 						source_filename = "models/striker_sasuke2/cast_in_fireball.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 40.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "fireball"
-						activity_name = "ACT_DOTA_CAST_ABILITY_4"
+						activity_name = "ACT_DOTA_CAST_ABILITY_4-"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
