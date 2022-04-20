@@ -26,7 +26,7 @@
 		{
 			"max_charges"
 			{
-				"value"						"3"
+				"value"						"4"
 				"LinkedSpecialBonus"		"special_bonus_naruto_5"
 			}
 			"charge_restore_time"		"6.0 8.0 10.0 12.0"
