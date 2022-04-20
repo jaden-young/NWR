@@ -15,13 +15,13 @@
 	Hero_Sasuke.GreatFireball.Cast = 
 	{
 		type = "dota_update_default"
-		volume = 0.400000
+		volume = 0.800000
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.000000
-		pitch = 1.3000000
+		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/dragon_knight/dragonknight_fire.vsnd"
+		vsnd_files = "sounds/heroes/sasuke/sasuke_fireball_cast.vsnd"
 		soundevent_layer2 = "Hero_Sasuke.GreatFireball.CastLayer"
 		soundevent_layer2_on = 1.000000
 	}
@@ -36,6 +36,34 @@
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/ember_spirit/fire_remnant_cast.vsnd"
+	}
+
+	Hero_Sasuke.GreatFireball.Talk = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/heroes/sasuke/sasuke_fireball_01.vsnd",
+            "sounds/heroes/sasuke/sasuke_fireball_02.vsnd",
+		]
+	}
+
+	Hero_Sasuke.GreatFireball.PreCast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/sasuke/sasuke_fireball_precast.vsnd"
 	}
 
 	Hero_Sasuke.GreatFireball.Impact = 

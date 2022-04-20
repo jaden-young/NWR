@@ -13,6 +13,15 @@ export class sasuke_great_fireball_technique extends BaseAbility {
 
     /****************************************/
 
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Sasuke.GreatFireball.Talk", this.GetCaster());
+        EmitSoundOn("Hero_Sasuke.GreatFireball.PreCast", this.GetCaster());
+        return true
+    }
+
+
+    /****************************************/
+
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let position = this.GetCursorPosition();

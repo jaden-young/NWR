@@ -5,7 +5,7 @@
 	m_nMaxParticles = 1
 	m_flConstantRadius = 1.25
 	m_bShouldSort = false
-	m_nBehaviorVersion = 4
+	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 4
 	m_controlPointConfigurations = 
 	[

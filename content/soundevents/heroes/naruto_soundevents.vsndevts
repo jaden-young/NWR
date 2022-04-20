@@ -21,8 +21,6 @@
 							"value4"		"sounds/vo/naruto/attack_05.vsnd"
 							"value5"		"sounds/vo/naruto/attack_06.vsnd"
 							"value6"		"sounds/vo/naruto/attack_07.vsnd"
-							"value7"		"sounds/vo/naruto/attack_08.vsnd"
-							"value8"		"sounds/vo/naruto/attack_09.vsnd"
 						}
 					}
 					"volume"			{"value"	"1.00000"}

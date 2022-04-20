@@ -22,6 +22,14 @@ export class sakura_cherry_blossom_burst extends BaseAbility {
 
     /****************************************/
 
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Sakura.CherryBlossomBurst.Talk", this.GetCaster());
+        return true
+    }
+
+    /****************************************/
+
+
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let position = this.GetCursorPosition();

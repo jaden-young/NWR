@@ -18,6 +18,7 @@
                               "value1"        "sounds/heroes/naruto/shadow_clone_talking2.vsnd"
                               "value2"        "sounds/heroes/naruto/shadow_clone_talking3.vsnd"
                               "value3"        "sounds/heroes/naruto/shadow_clone_talking4.vsnd"
+                              "value4"        "sounds/heroes/naruto/shadow_clone_talking5.vsnd"
                         }
                     }
                     "volume"            {   "value"     "1.00000"  }

@@ -3,13 +3,37 @@
 	Hero_Sakura.MysticalPalm.Heal = 
 	{
 		type = "dota_update_default"
-		volume = 0.900000
-		pitch_rand_min = -0.150000
-		pitch_rand_max = 0.150000
-		pitch = 1.6000000
+		volume = 0.100000
+		pitch_rand_min = 0.00000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/dawnbreaker/healing_touch_heal.vsnd"
+		vsnd_files = "sounds/heroes/sakura/sakura_palm_heal.vsnd"
+	}
+
+	Hero_Sakura.MysticalPalm.PreCast = 
+	{
+		type = "dota_update_default"
+		volume = 0.300000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/sakura/sakura_palm_cast.vsnd"
+	}
+
+	Hero_Sakura.MysticalPalm.Flick = 
+	{
+		type = "dota_update_default"
+		volume = 0.200000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/sakura/sakura_palm_flick.vsnd"
 	}
 
 	Hero_Sakura.CherryBlossomBurst.Cast = 
@@ -36,6 +60,30 @@
 		pitch_rand_max = 0.050000
 		pitch = 0.9000000
 		vsnd_files = "sounds/weapons/hero/mirana/starstorm_impact02.vsnd"
+	}
+	
+	Hero_Sakura.CherryBlossomBurst.Talk = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.000000
+		soundlevel = 84.000000
+		distance_max = 1000.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.000000
+		vsnd_files = "sounds/heroes/sakura/sakura_burst.vsnd"
+	}
+
+	Hero_Sakura.CherryBlossomBurst.TalkCharged = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.000000
+		soundlevel = 75.000000
+		distance_max = 1000.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.9000000
+		vsnd_files = "sounds/heroes/sakura/sakura_burst_charged.vsnd"
 	}
 }
 

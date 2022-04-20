@@ -7,7 +7,7 @@
 	m_flNoDrawTimeToGoToSleep = 2.0
 	m_bShouldSort = false
 	m_ConstantColor = [ 252, 106, 255, 255 ]
-	m_nBehaviorVersion = 4
+	m_nBehaviorVersion = 12
 	m_nFirstMultipleOverride_BackwardCompat = 6
 	m_controlPointConfigurations = 
 	[

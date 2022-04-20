@@ -779,8 +779,13 @@
 								root_bone_name = ""
 								motion_type = "Single"
 							},
+							{
+								_class = "ActivityModifier"
+								activity_name = "innate_passive_caster_buff"
+								activity_weight = 1
+							},
 						]
-						activity_name = ""
+						activity_name = "ACT_DOTA_RUN"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -794,7 +799,7 @@
 						source_filename = "models/striker_sasuke2/chidori_run.smd"
 						start_frame = 0
 						end_frame = 21
-						framerate = 30.0
+						framerate = 14.0
 						reverse = false
 					},
 					{
@@ -840,7 +845,7 @@
 					{
 						_class = "AnimFile"
 						name = "fireball"
-						activity_name = "ACT_DOTA_CAST_ABILITY_4-"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -894,7 +899,7 @@
 						source_filename = "models/striker_sasuke2/idle.smd"
 						start_frame = 0
 						end_frame = 129
-						framerate = 15.0
+						framerate = 10.0
 						reverse = false
 					},
 					{
@@ -1211,6 +1216,26 @@
 						parent_bone = "head"
 						relative_origin = [ 0.590248, 14.781857, -1.684632 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "camera"
+						children = 
+						[
+							{
+								_class = "Attachment Camera Preview"
+								fov = 30
+								screen_width_for_aspect = 512
+								screen_height_for_aspect = 384
+								preview_scale = 0.3
+								background_color = [ 70, 70, 70 ]
+							},
+						]
+						parent_bone = ""
+						relative_origin = [ 141.697342, 27.336969, 86.491165 ]
+						relative_angles = [ -15.050258, -164.968231, -0.801142 ]
 						weight = 1.0
 						ignore_rotation = false
 					},

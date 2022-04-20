@@ -19,7 +19,7 @@
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
     "AbilitySound"					"Hero_VoidSpirit.AstralStep.Start"
 
-    "AnimationPlaybackRate"			"1.5" // 1.0 corresponds to cast point of 0.3
+    "AnimationPlaybackRate"			"1.0" // 1.0 corresponds to cast point of 0.3
 
     "AbilityType"            "DOTA_ABILITY_TYPE_BASIC"
     "MaxLevel"               "4"

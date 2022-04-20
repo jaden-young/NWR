@@ -856,47 +856,6 @@
 
 		"DOTA_Tooltip_modifier_naruto_innate_passive"								"Kyuubi Chakra"
 		"DOTA_Tooltip_modifier_naruto_innate_passive_Description"					"Health regeneration increased by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%, mana regeneration increased by %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT%."
-
-
-		// Kage Bunshin Rasengan
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan"								"<b><font color='#FF860E'>Shadow Clone:</font></b> <b><font color='#00D4FF'>Rasengan</font></b>"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_lore"						"Kage Bunshin Rasengan"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_description"					"<b><font color='#FF860E'>Creates a Shadow Clone</font></b> holding a Rasengan that charges at a target enemy unit. <br><br> Upon reaching the enemy, the target is <b><font color='#00D4FF'>Slowed and dealt Magic Damage.</font></b>"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_damage" 						"DAMAGE:"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_slow_movement_percentage" 	"%MOVEMENT SPEED DEBUFF:"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_slow_duration" 				"MOVEMENT SPEED DEBUFF DURATION:"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_illusion_duration" 			"CLONE DURATION:"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_rasengan_cd_reduc" 					"CD REDUCTION (TALENT):"
-
-		"DOTA_Tooltip_modifier_naruto_bunshin_rasengan_slow"				"<b><font color='#FF860E'>Shadow Clone:</font></b> <b><font color='#00D4FF'>Rasengan</font></b>"
-		"DOTA_Tooltip_modifier_naruto_bunshin_rasengan_slow_description"	"This Unit has decreased <b><font color='#00D4FF'>Movement Speed.</font></b>"
-		"DOTA_Tooltip_modifier_imba_storm_bolt_caster_hit"					"Rasengan"
-		"DOTA_Tooltip_modifier_imba_storm_bolt_caster_hit_description"		"This Clone is carrying a Rasengan."
-		"DOTA_Tooltip_modifier_imba_storm_bolt_caster"						"<b><font color='#FF860E'>Charging</font></b>"
-		"DOTA_Tooltip_modifier_imba_storm_bolt_caster_description"			"This Clone is <b><font color='#FF860E'>charging a target.</font></b>"
-
-
-
-		// Kawazu Kumite
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite"							"<b><font color='#FD570D'>Frog Kata</font></b>"
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite_lore"					"Kawazu Kumite"
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite_description"				"Naruto dramatically <b><font color='#FD570D'>increases his Strength and Agility</font></b> for a short period of time. <br><br> Additionally, <b><font color='#FF860E'>creates a Shadow Clone</font></b> under Naruto's control on use."
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite_strength_bonus"			"BONUS STRENGTH: "
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite_agility_bonus"			"BONUS AGILITY: "
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite_duration"				"BUFF DURATION: "
-		"DOTA_Tooltip_ability_naruto_kawazu_kumite_illusion_duration"		"CLONE DURATION: "
-		"DOTA_Tooltip_modifier_naruto_kawazu_kumite"						"<b><font color='#FD570D'>Frog Kata</font></b>"
-		"DOTA_Tooltip_modifier_naruto_kawazu_kumite_description"			"This Unit has increased <b><font color='#FD570D'>Agility</font></b> and <b><font color='#FD570D'>Strength.</font></b>"
-		
-		// Kage Bunshin Mastery
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery"					"<b><font color='#FF860E'>Shadow Clone Mastery</font></b>"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_lore"					"Kage Bunshin Jukutatsu"
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_description"		"<b><font color='#FFFFFF'>ACTIVE</font></b> - <b><font color='#FF860E'>Swaps places with a Shadow Clone</font></b> within range of Naruto. <br><br> <b><font color='#FFFFFF'>PASSIVE</font></b> - <b><font color='#FF860E'>Improves Shadow Clones</font></b> by increasing their Outgoing Damage and decreasing their Incoming Damage."
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_max_clones"		"MAX CLONES: "
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_illusion_outgoing_damage_percent"		"%OUTGOING DAMAGE REDUCTION: "
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_illusion_incoming_damage_percent"		"%INCOMING DAMAGE: "
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_range"			"RANGE: "
-		"DOTA_Tooltip_ability_naruto_kage_bunshin_mastery_cd_reduc"			"CD REDUCTION (TALENT): "
 		
 		// Futon: Rasenshuriken
 		"DOTA_Tooltip_ability_naruto_rasenshuriken"							"<b><font color='#3CFEFF'>Wind Release: Rasenshuriken</font></b>"
@@ -2696,16 +2655,13 @@
 		"DOTA_Tooltip_Ability_special_bonus_yondaime_6"						"+80% Rasengan Bonus Damage"
 		"DOTA_Tooltip_Ability_special_bonus_yondaime_body_flicker_global"	"Global Body Flicker Range"
 
-		//25: +320 Rasenshuriken Damage / -4s Bunshin Rasengan Cooldown
-		//20: +4.5s Frog Kata Duration / +13% Bunshin Damage
-		//15: -2s Bunshin Swap Cooldown / +90 Bunshin Rasengan Damage
-		//10: +5 All Stats / +200 Bunshin Swap Range
+
 		"DOTA_Tooltip_Ability_special_bonus_naruto_1"						"+{s:value} Rendan Movement Speed"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_2"						"+{s:value} Kyuubi Chakra Mana Regen"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_3"						"+{s:value} Kyuubi Chakra Health Regen"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_4"						"+{s:value} Rasengan Damage"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_5"						"+{s:value} Max Shadow Clone Charges"
-		"DOTA_Tooltip_Ability_special_bonus_naruto_6"						"KCM Expiring Restores {s:value} Clone Charges"
+		"DOTA_Tooltip_Ability_special_bonus_naruto_6"						"KCM Expiring Restores Shadow Clone Charges"
 		"DOTA_Tooltip_Ability_special_bonus_naruto_7"						"Tailed Beast Bomb Pure Damage"
 
 		//25: +15 All Stats 						/ 	+320 Raikiri Damage

@@ -9,8 +9,18 @@ export class sakura_mystical_palm_technique extends BaseAbility {
         //PrecacheResource("soundfile", "soundevents/heroes/sakura/game_sounds_vo_sakura.vsndevts", context);
     }
 
+
+
     /****************************************/
 
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Sakura.MysticalPalm.PreCast", this.GetCaster());
+        EmitSoundOn("Hero_Sakura.MysticalPalm.Flick", this.GetCaster());
+        return true
+    }
+
+    /****************************************/
+    
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let target = this.GetCursorTarget();
