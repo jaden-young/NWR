@@ -14,6 +14,22 @@
 		soundevent_layer2_on = 1.000000
 	}
 
+	Hero_Kisame.WaterSharkBullet.Talk = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/heroes/kisame/kisame_sharkbomb_01.vsnd",
+			"sounds/heroes/kisame/kisame_sharkbomb_02.vsnd"
+		]
+	}
+
 	Hero_Kisame.WaterSharkBullet.CastLayer = 
 	{
 		type = "dota_update_default"
@@ -29,10 +45,10 @@
 	Hero_Kisame.WaterSharkBullet.Explosion = 
 	{
 		type = "dota_update_default"
-		volume = 0.700000
+		volume = 0.8500000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
-		pitch = 1.300000
+		pitch = 0.700000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = 
@@ -107,4 +123,6 @@
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/morphling/waveform.vsnd"
 	}
+
+
 }

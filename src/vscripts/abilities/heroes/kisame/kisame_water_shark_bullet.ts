@@ -12,6 +12,13 @@ export class kisame_water_shark_bullet extends BaseAbility
 
     /****************************************/
 
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Kisame.WaterSharkBullet.Talk", this.GetCaster());
+        return true
+    }
+
+    /****************************************/
+
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let position = this.GetCursorPosition();

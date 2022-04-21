@@ -752,7 +752,7 @@
 						source_filename = "models/striker_kisame/sharkbomb.smd"
 						start_frame = 50
 						end_frame = 88
-						framerate = 20.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
