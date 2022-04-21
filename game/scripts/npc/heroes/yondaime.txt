@@ -49,7 +49,7 @@
 	"AttackRate"		"1.700000"		
 	"ArmorPhysical"		"0.000000"
 	"AttackAnimationPoint"   "0.4"
-	"AttackRange"		"100"
+	"AttackRange"		"128"
 	"MovementSpeed"		"315"
 	"MovementTurnRate""1.000000"
 

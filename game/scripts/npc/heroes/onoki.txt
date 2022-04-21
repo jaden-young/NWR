@@ -26,7 +26,7 @@
 		   "Ability15"		"special_bonus_onoki_4"
 		   "Ability16"		"special_bonus_onoki_5"
 		   "Ability17"		"special_bonus_onoki_6"
-			"StatusHealth"    "145"
+			"StatusHealth"    "200"
 			"StatusHealthRegen"   "0.300000"
 
 			"ModelScale"		"1.0"
@@ -43,7 +43,7 @@
 			"Role"			"Support,Nuker,Disabler,Durable,Initiator"
 			"Rolelevels"	"2,2,2,1,1"
 			// Unit attribute
-			"AttackRange"					"100"
+			"AttackRange"					"128"
 			"ArmorPhysical"		"1.000000"
 			"AttackDamageMin"		"25"
 			"AttackDamageMax"		"27"

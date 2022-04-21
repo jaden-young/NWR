@@ -1138,7 +1138,7 @@
 					{
 						_class = "AnimFile"
 						name = "rasengan_end"
-						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1152,6 +1152,26 @@
 						source_filename = "models/striker_minato/rasengan_end.smd"
 						start_frame = 0
 						end_frame = 28
+						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "seal_copy"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_minato/seal.smd"
+						start_frame = 0
+						end_frame = 40
 						framerate = 30.0
 						reverse = false
 					},

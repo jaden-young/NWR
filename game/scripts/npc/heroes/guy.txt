@@ -57,7 +57,7 @@
 		"AttackDamageMax"   "35"
 		"AttackRate"    "1.700000"
 		"ArmorPhysical"		"2.000000"
-		"AttackRange"				"100"
+		"AttackRange"				"128"
 		"StatusHealth"    "200"
 		"StatusHealthRegen"   "0.300000"
 		"MovementSpeed"			"305"

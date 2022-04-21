@@ -15,7 +15,7 @@
 		"Ability3"			"kisame_water_prison"
 		"Ability4"			"kisame_exploding_water_shockwave"
 		"Ability5"			"generic_hidden"
-		"Ability6"         	"kisame_water_prison"
+		"Ability6"         	"kisame_shark_dance"
 		"Ability7"         	"kisame_water_prison_deactivate"
 		"Ability8"			"kisame_innate_passive"
 
@@ -48,7 +48,7 @@
 		"AttackRate"    		"1.700000"		
 		"StatusHealth"    		"200"
 		"StatusHealthRegen"   	"0.300000"  
-		"AttackRange"			"128"
+		"AttackRange"			"150"
 		"MovementSpeed"			"300"
 
 		"AttributePrimary" 				"DOTA_ATTRIBUTE_STRENGTH"

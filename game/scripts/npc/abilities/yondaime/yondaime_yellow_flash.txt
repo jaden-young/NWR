@@ -11,7 +11,7 @@
 		"ScriptFile"                    "abilities/heroes/yondaime/yondaime_yellow_flash.lua"
 		"AbilityTextureName"			"yondaime_yellow_flash"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
 		"FightRecapLevel"				"1"
 

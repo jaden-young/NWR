@@ -36,7 +36,7 @@
 		"AttackDamageMin"		"34"
 		"AttackDamageMax"		"39"
 		"AttackRate"		"1.700000"
-		  "StatusHealth"    "200"
+		"StatusHealth"    "200"
   		"StatusHealthRegen"   "1.600000"
 
 		//Picking Screen
@@ -55,7 +55,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 
 		 // "AttackRate"				"0.7"
-		  "AttackRange"				"100"
+		  "AttackRange"				"128"
 		  "MovementSpeed"			"310"
 		  "AttributeBaseStrength" "22" // Base strength
 		  "AttributeStrengthGain" "2.8" // Strength bonus per level.

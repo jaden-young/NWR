@@ -49,7 +49,7 @@
 		"ArmorPhysical"				"1"
 		"MagicalResistance"			"25"
 
-		"StatusHealth"    "145"
+		"StatusHealth"    "200"
  		"StatusHealthRegen"   "0.300000"
 
 		"StatusManaRegen"			"0.9"
