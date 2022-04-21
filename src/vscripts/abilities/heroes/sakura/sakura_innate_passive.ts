@@ -17,6 +17,8 @@ export class sakura_innate_passive extends BaseAbility
 @registerModifier()
 export class modifier_sakura_innate_passive_intrinsic extends BaseModifier
 {
+    active_fx?: ParticleID;
+
     IsHidden(): boolean {
         return false;
     }
@@ -53,6 +55,13 @@ export class modifier_sakura_innate_passive_intrinsic extends BaseModifier
         }
     }
 
+    OnStackCountChanged(stackCount: number): void {
+        if (!IsServer()) return;
+        if (this.GetStackCount() == this.GetAbility()?.GetSpecialValueFor("attacks_needed") && this.active_fx == undefined) {
+            this.active_fx = ParticleManager.CreateParticle("particles/units/heroes/sakura/sakura_chakra_enhanced_strength.vpcf", ParticleAttachment.OVERHEAD_FOLLOW, this.GetParent());
+        }
+    }
+
     CanProc(): boolean {
         let attacks_needed = this.GetAbility()!.GetSpecialValueFor("attacks_needed");
 
@@ -65,7 +74,10 @@ export class modifier_sakura_innate_passive_intrinsic extends BaseModifier
         let stun_duration = ability.GetSpecialValueFor("stun_duration_base") + (ability.GetSpecialValueFor("stun_duration_per_level_bonus") * (ability.GetLevel() - 1))
         target.AddNewModifier(this.GetParent(), ability, "modifier_sakura_innate_passive_stun", {duration: stun_duration})
 
-        if (reset) this.SetStackCount(0);
+        if (reset) {
+            this.SetStackCount(0);
+            this.ClearParticle();
+        }
 
         let damage = ability.GetSpecialValueFor("damage_base") + (ability.GetSpecialValueFor("damage_per_level_bonus") * (ability.GetLevel() - 1))
 
@@ -88,6 +100,12 @@ export class modifier_sakura_innate_passive_intrinsic extends BaseModifier
         )
 
         target.EmitSound("sakura_strength_impact")
+    }
+
+    ClearParticle(): void {
+        ParticleManager.DestroyParticle(this.active_fx!, false);
+        ParticleManager.ReleaseParticleIndex(this.active_fx!);
+        this.active_fx = undefined;
     }
 }
 

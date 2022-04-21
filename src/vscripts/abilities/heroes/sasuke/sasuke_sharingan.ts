@@ -5,6 +5,7 @@ export class sasuke_sharingan extends BaseAbility {
 
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle",  "particles/units/heroes/sasuke/sasuke_sharingan_buff.vpcf", context);
+        PrecacheResource("particle",  "particles/units/heroes/sasuke/sasuke_sharingan_evade.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/sasuke/game_sounds_sasuke.vsndevts", context);
         //PrecacheResource("soundfile", "soundevents/heroes/sasuke/game_sounds_vo_sasuke.vsndevts", context);
     }
@@ -65,6 +66,14 @@ export class modifier_sasuke_sharingan extends BaseModifier
         if (event.damage_type != DamageTypes.HP_REMOVAL && event.damage > this.min_damage! && this.GetStackCount() > 0) {
             reduction = -100;
             this.DecrementStackCount();
+
+            EmitSoundOn("Hero_Sasuke.Sharingan.Dodge", this.GetParent());
+            let dodge_fx = ParticleManager.CreateParticle("particles/units/heroes/sasuke/sasuke_sharingan_evade.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, this.GetParent());
+            ParticleManager.SetParticleControlForward(dodge_fx, 0, this.GetParent().GetForwardVector());
+            Timers.CreateTimer(0.2, () => {
+                ParticleManager.DestroyParticle(dodge_fx, false);
+                ParticleManager.ReleaseParticleIndex(dodge_fx);
+            })
         }
         
         return reduction;

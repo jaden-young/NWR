@@ -21,6 +21,8 @@ export class sasuke_innate_passive extends BaseAbility
 @registerModifier()
 export class modifier_sasuke_innate_passive_intrinsic extends BaseModifier
 {
+    duration?: number;
+
     IsHidden(): boolean {
         return true
     }
@@ -37,6 +39,10 @@ export class modifier_sasuke_innate_passive_intrinsic extends BaseModifier
         return false
     }
 
+    OnCreated(params: object): void {
+        this.duration = this.GetAbility()?.GetSpecialValueFor("expire_after");
+    }
+
     DeclareFunctions(){
         return [ModifierFunction.ON_ABILITY_FULLY_CAST]
     }
@@ -49,7 +55,7 @@ export class modifier_sasuke_innate_passive_intrinsic extends BaseModifier
         if(parent.PassivesDisabled()){return}
 
         if(!parent.HasModifier("modifier_sasuke_innate_passive_caster_buff")){
-            parent.AddNewModifier(parent,ability,"modifier_sasuke_innate_passive_caster_buff", {})
+            parent.AddNewModifier(parent,ability,"modifier_sasuke_innate_passive_caster_buff", {duration: this.duration});
         }
     }
 }
@@ -72,9 +78,10 @@ export class modifier_sasuke_innate_passive_caster_buff extends BaseModifier{
         return true
     }
 
-    DeclareFunctions(){
-        return [ModifierFunction.ON_ATTACK_LANDED]
-    }
+    DeclareFunctions(){ return [
+        ModifierFunction.ON_ATTACK_LANDED,
+        ModifierFunction.TRANSLATE_ACTIVITY_MODIFIERS
+    ]}
 
     OnCreated(params: object): void {
         let parent = this.GetParent()
@@ -99,6 +106,10 @@ export class modifier_sasuke_innate_passive_caster_buff extends BaseModifier{
             false, // bHeroEffect
             false // bOverheadEffect
         )
+    }
+
+    GetActivityTranslationModifiers(): string {
+        return "chidori"
     }
 
     OnAttackLanded(event: ModifierAttackEvent){

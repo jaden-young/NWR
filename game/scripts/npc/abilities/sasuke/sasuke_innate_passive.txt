@@ -38,6 +38,11 @@
                 "var_type"			"FIELD_FLOAT"
                 "debuff_duration"		"0.6"
             }
+            "06"
+            {
+                "var_type"			    "FIELD_INTEGER"
+                "expire_after"  		"6"
+            }
         }
     }
 }

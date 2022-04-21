@@ -23,7 +23,20 @@ export class sakura_cherry_blossom_burst extends BaseAbility {
     /****************************************/
 
     OnAbilityPhaseStart(): boolean {
-        EmitSoundOn("Hero_Sakura.CherryBlossomBurst.Talk", this.GetCaster());
+        if (!IsServer()) return true;
+
+        let caster = this.GetCaster();
+        let sound = "Hero_Sakura.CherryBlossomBurst.Talk";
+        let innate = caster.FindAbilityByName("sakura_innate_passive");
+
+        if (innate) {
+            let modifier = caster.FindModifierByName(innate.GetIntrinsicModifierName()) as SakuraInnate;
+            let proc = modifier ? modifier!.CanProc() : false;
+
+            sound = proc ? "Hero_Sakura.CherryBlossomBurst.TalkCharged" : sound;
+        }
+
+        EmitSoundOn(sound, this.GetCaster());
         return true
     }
 
@@ -43,6 +56,7 @@ export class sakura_cherry_blossom_burst extends BaseAbility {
 
         proc = modifier ? modifier!.CanProc() : false;
 
+        let particle_fx = proc ? "particles/units/heroes/sakura/sakura_cherry_blossom_burst_charged.vpcf" : "particles/units/heroes/sakura/sakura_cherry_blossom_burst.vpcf"
 
         let direction = position - caster.GetAbsOrigin() as Vector;
         direction.z = 0;
@@ -50,7 +64,7 @@ export class sakura_cherry_blossom_burst extends BaseAbility {
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
-            EffectName: "particles/units/heroes/sakura/sakura_cherry_blossom_burst.vpcf",
+            EffectName: particle_fx,
             vSpawnOrigin: caster.GetAttachmentOrigin(caster.ScriptLookupAttachment("attach_right_hand")) as Vector,
             fDistance: this.GetEffectiveCastRange(position, caster),
             Source: caster,
@@ -67,6 +81,8 @@ export class sakura_cherry_blossom_burst extends BaseAbility {
 
         if (proc) {
             modifier?.SetStackCount(0);
+        } else {
+            modifier?.IncrementStackCount();
         }
 
         EmitSoundOn("Hero_Sakura.CherryBlossomBurst.Cast", caster);

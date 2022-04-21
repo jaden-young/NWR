@@ -1,5 +1,9 @@
 import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "../../../lib/dota_ts_adapter"
 
+interface extra {
+    sound_eid: EntityIndex
+}
+
 @registerAbility()
 export class sasuke_great_fireball_technique extends BaseAbility {
 
@@ -32,6 +36,9 @@ export class sasuke_great_fireball_technique extends BaseAbility {
         direction.z = 0;
         direction = direction.Normalized();
 
+        let sound_ent = CreateModifierThinker(caster, this, "", {}, caster.GetAbsOrigin(), caster.GetTeamNumber(), false);
+        EmitSoundOn("Hero_Sasuke.GreatFireball.Cast", sound_ent)
+
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
             EffectName: "particles/units/heroes/sasuke/sasuke_great_fireball_technique.vpcf",
@@ -43,16 +50,32 @@ export class sasuke_great_fireball_technique extends BaseAbility {
             iUnitTargetTeam: UnitTargetTeam.ENEMY,
             iUnitTargetType: UnitTargetType.BASIC + UnitTargetType.HERO,
             iUnitTargetFlags: UnitTargetFlags.NONE,
-            vVelocity: direction * speed as Vector
+            vVelocity: direction * speed as Vector,
+            ExtraData: {
+                sound_eid: sound_ent.entindex()
+            }
         });
 
-        EmitSoundOn("Hero_Sasuke.GreatFireball.Cast", caster);
     }
 
     /****************************************/
 
-    OnProjectileHit(target: CDOTA_BaseNPC | undefined, location: Vector): boolean | void {
-        if (!target || !this || this.IsNull()) return;
+    OnProjectileThink_ExtraData(location: Vector, extraData: extra): void {
+        let sound_ent = EntIndexToHScript(extraData.sound_eid);
+        if (!sound_ent || sound_ent.IsNull()) return;
+
+        sound_ent.SetAbsOrigin(location);
+    }
+
+    /****************************************/
+
+    OnProjectileHit_ExtraData(target: CDOTA_BaseNPC | undefined, location: Vector, extraData: extra): boolean | void {
+        if (!target || !this || this.IsNull()) {
+            let sound_ent = EntIndexToHScript(extraData.sound_eid);
+            if (!sound_ent || sound_ent.IsNull()) return;
+	        UTIL_Remove(sound_ent)
+            return;
+        }
         let caster = this.GetCaster();
 
         let damage_table : ApplyDamageOptions = {

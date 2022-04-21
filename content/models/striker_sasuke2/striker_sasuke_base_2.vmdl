@@ -766,6 +766,7 @@
 					{
 						_class = "AnimFile"
 						name = "chidori_run"
+						note = "Type note..."
 						children = 
 						[
 							{
@@ -781,7 +782,7 @@
 							},
 							{
 								_class = "ActivityModifier"
-								activity_name = "innate_passive_caster_buff"
+								activity_name = "chidori"
 								activity_weight = 1
 							},
 						]

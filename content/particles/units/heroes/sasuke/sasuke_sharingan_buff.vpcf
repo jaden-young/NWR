@@ -39,8 +39,8 @@
 		},
 		{
 			_class = "C_INIT_RandomColor"
-			m_ColorMax = [ 138, 70, 255, 255 ]
-			m_ColorMin = [ 106, 0, 255, 255 ]
+			m_ColorMax = [ 69, 150, 255 ]
+			m_ColorMin = [ 0, 110, 255 ]
 		},
 		{
 			_class = "C_INIT_CreateOnModel"
