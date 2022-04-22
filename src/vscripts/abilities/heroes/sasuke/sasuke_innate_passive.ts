@@ -54,9 +54,7 @@ export class modifier_sasuke_innate_passive_intrinsic extends BaseModifier
         if(event.unit !== parent){return}
         if(parent.PassivesDisabled()){return}
 
-        if(!parent.HasModifier("modifier_sasuke_innate_passive_caster_buff")){
-            parent.AddNewModifier(parent,ability,"modifier_sasuke_innate_passive_caster_buff", {duration: this.duration});
-        }
+        parent.AddNewModifier(parent, ability, "modifier_sasuke_innate_passive_caster_buff", {duration: this.duration});
     }
 }
 

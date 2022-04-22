@@ -26,6 +26,7 @@ export class modifier_sasuke_sharingan extends BaseModifier
     attack_speed?: number;
     instances?: number;
     min_damage?: number;
+    dodge_fx?: ParticleID
 
     /****************************************/
 
@@ -43,6 +44,10 @@ export class modifier_sasuke_sharingan extends BaseModifier
 
         if (!IsServer()) return;
         this.SetStackCount(this.instances);
+
+        
+        this.dodge_fx = ParticleManager.CreateParticle("particles/units/heroes/sasuke/sasuke_sharingan_evade.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, this.GetParent());
+        ParticleManager.SetParticleControlEnt(this.dodge_fx, 3, this.GetParent(), ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true);
     }
 
     /****************************************/
@@ -65,15 +70,18 @@ export class modifier_sasuke_sharingan extends BaseModifier
 
         if (event.damage_type != DamageTypes.HP_REMOVAL && event.damage > this.min_damage! && this.GetStackCount() > 0) {
             reduction = -100;
+            EmitSoundOn("Hero_Sasuke.Sharingan.Dodge", this.GetParent());
+
+            let warp_fx = ParticleManager.CreateParticle("particles/units/heroes/sasuke/sasuke_sharingan_dodge.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, this.GetParent());
+            ParticleManager.SetParticleControlEnt(warp_fx, 0, this.GetParent(), ParticleAttachment.POINT_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true);
+            ParticleManager.ReleaseParticleIndex(warp_fx);
+
             this.DecrementStackCount();
 
-            EmitSoundOn("Hero_Sasuke.Sharingan.Dodge", this.GetParent());
-            let dodge_fx = ParticleManager.CreateParticle("particles/units/heroes/sasuke/sasuke_sharingan_evade.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, this.GetParent());
-            ParticleManager.SetParticleControlForward(dodge_fx, 0, this.GetParent().GetForwardVector());
-            Timers.CreateTimer(0.2, () => {
-                ParticleManager.DestroyParticle(dodge_fx, false);
-                ParticleManager.ReleaseParticleIndex(dodge_fx);
-            })
+            if (this.GetStackCount() == 0) {
+                ParticleManager.DestroyParticle(this.dodge_fx!, false);
+                ParticleManager.ReleaseParticleIndex(this.dodge_fx!);
+            }
         }
         
         return reduction;
