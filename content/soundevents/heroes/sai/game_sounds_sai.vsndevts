@@ -1,0 +1,52 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Hero_Sai.SuperBeastDrawing.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/dark_artistry_projectile.vsnd"
+	}
+
+	Hero_Sai.SuperBeastDrawing.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/ink_phantom_damage.vsnd"
+	}
+
+	Hero_Sai.SnakeEntanglement.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/dark_artistry_projectile.vsnd"
+	}
+
+	Hero_Sai.Summons.Bash = 
+	{
+		type = "dota_update_default"
+		volume = 0.599609
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.950000
+		soundlevel = 75.000000
+		mixgroup = "Weapons"
+		distance_max = 1500.000000
+		vsnd_files = "sounds/items/skull_basher.vsnd"
+	}
+}
+

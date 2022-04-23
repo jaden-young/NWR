@@ -2734,4 +2734,432 @@
 		"VisionDaytimeRange"		"2600"		// Range of vision during day light.
 		"VisionNighttimeRange"		"2600"		// Range of vision at night time.
 	}
+
+	//=================================================================================
+	// Sai: Lion (Beast Drawings)
+	//=================================================================================
+	"npc_dota_sai_lion"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/sai_summon/sai_dog_base.vmdl"	// Model.
+		"BaseClass"					"npc_dota_base_additive"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"2"
+		"ModelScale"				"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.35"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.	
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"60"
+		"HealthBarOffset"			"90"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.	   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"20"		// Experience earn.
+		"BountyGoldMin"				"32"		// Gold earned min.
+		"BountyGoldMax"				"34"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"			// Speed.
+		"MovementTurnRate"			"100"
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"100"		// Range of vision during day light.
+		"VisionNighttimeRange"		"100"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_ATTACHED"
+	}
+
+	//=================================================================================
+	// Sai: Rat (Rat Reconnaissance)
+	//=================================================================================
+	"npc_dota_sai_rat"							
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/sai_summon/sai_rat_base.vmdl"	// Model.
+		"BaseClass"					"npc_dota_base_additive"
+		"SoundSet"					"0"			// Name of sound set.
+		"Level"						"2"
+		"ModelScale"				"0.3"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.35"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.	
+		
+		// Bounds
+		//----------------------------------------------------------------
+		"RingRadius"				"60"
+		"HealthBarOffset"			"90"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.	   
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"20"		// Experience earn.
+		"BountyGoldMin"				"32"		// Gold earned min.
+		"BountyGoldMax"				"34"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"0"			// Speed.
+		"MovementTurnRate"			"100"
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"100"		// Range of vision during day light.
+		"VisionNighttimeRange"		"100"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_ATTACHED"
+	}
+
+	//=================================================================================
+	// Sai: Agyo (God Drawings)
+	//=================================================================================
+	"npc_dota_sai_agyo1"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"					// Class of entity of link to.
+		"Model"						"models/sai_giant/inkgiantl.vmdl"	// Model.
+		"SoundSet"					"ChakraPunch"					// Name of sound set.
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
+		"ModelScale"				"0.7"
+		"Level"						"1"
+		"ConsideredHero"			"1"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"sai_kamis_strength"	// Ability 1.
+		"Ability2"					"sai_bash"				// Ability 2.
+		"Ability3"					""						// Ability 3.
+		"Ability4"					""						// Ability 4.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"5"			// Physical protection.
+		"MagicalResistance"			"35"		// Magical protection (percentage).
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"65"		// Damage range min.
+		"AttackDamageMax"			"75"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.3"			// Speed of attack.
+		"AttackAnimationPoint"		"0.45"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"1800"		// Range within a target can be acquired.
+		"AttackRange"				"150"		// Range within a target can be attacked.
+		"ProjectileModel"			"" 			// Particle system model for projectile.
+		"ProjectileSpeed"			"1000"		// Speed of projectile.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"35"		// Experience earn.
+		"BountyGoldMin"				"70"		// Gold earned min.
+		"BountyGoldMax"				"70"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"60"
+		"HealthBarOffset"			"300"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"360"		// Speed
+		"MovementTurnRate"			"1.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"800"		// Base health.
+		"StatusHealthRegen"			"20"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+		//Inventory
+		"HasInventory"				"1"
+	}
+
+	//=================================================================================
+	// Sai: Agyo (Level 2)
+	//=================================================================================
+	"npc_dota_sai_agyo2"
+	{	
+		// Misc
+		//----------------------------------------------------------------
+		"include_keys_from" 		"npc_dota_sai_agyo1"
+		"ModelScale" 				"0.85"
+		"Level"						"2"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"8"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"110"		// Damage range min.
+		"AttackDamageMax"			"120"		// Damage range max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementSpeed"				"380"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1600"		// Base health.
+		"StatusHealthRegen"			"40"		// Health regeneration rate.
+	}
+
+	//=================================================================================
+	// Sai: Agyo (Level 3)
+	//=================================================================================
+	"npc_dota_sai_agyo3"
+	{	
+		// Misc
+		//----------------------------------------------------------------
+		"include_keys_from" 		"npc_dota_sai_agyo1"
+		"ModelScale" 				"1"
+		"Level"						"3"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"11"		// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"155"		// Damage range min.
+		"AttackDamageMax"			"165"		// Damage range max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementSpeed"				"400"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2400"		// Base health.
+		"StatusHealthRegen"			"60"		// Health regeneration rate.
+	}
+
+	//=================================================================================
+	// Sai: Ungyo (God Drawings)
+	//=================================================================================
+	"npc_dota_sai_ungyo1"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_creature"					// Class of entity of link to.
+		"Model"						"models/sai_giant/inkgiantr.vmdl"	// Model.
+		"SoundSet"					"ChakraPunch"						// Name of sound set.
+		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
+		"ModelScale"				"0.7"
+		"Level"						"1"
+		"ConsideredHero"			"1"
+		
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					"sai_kamis_strength"	// Ability 1.
+		"Ability2"					"sai_bash"				// Ability 2.
+		"Ability3"					""						// Ability 3.
+		"Ability4"					""						// Ability 4.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"5"			// Physical protection.
+		"MagicalResistance"			"35"		// Magical protection (percentage).
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"65"		// Damage range min.
+		"AttackDamageMax"			"75"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.3"			// Speed of attack.
+		"AttackAnimationPoint"		"0.45"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"1800"		// Range within a target can be acquired.
+		"AttackRange"				"150"		// Range within a target can be attacked.
+		"ProjectileModel"			"" 			// Particle system model for projectile.
+		"ProjectileSpeed"			"1000"		// Speed of projectile.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"35"		// Experience earn.
+		"BountyGoldMin"				"70"		// Gold earned min.
+		"BountyGoldMax"				"70"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"60"
+		"HealthBarOffset"			"300"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"360"		// Speed
+		"MovementTurnRate"			"1.0"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"800"		// Base health.
+		"StatusHealthRegen"			"20"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+		//Inventory
+		"HasInventory"				"1"
+	}
+
+	//=================================================================================
+	// Sai: Ungyo (Level 2)
+	//=================================================================================
+	"npc_dota_sai_ungyo2"
+	{	
+		// Misc
+		//----------------------------------------------------------------
+		"include_keys_from" 		"npc_dota_sai_ungyo1"
+		"ModelScale" 				"0.85"
+		"Level"						"2"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"8"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackDamageMin"			"110"		// Damage range min.
+		"AttackDamageMax"			"120"		// Damage range max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementSpeed"				"380"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1600"		// Base health.
+		"StatusHealthRegen"			"40"		// Health regeneration rate.
+	}
+
+	//=================================================================================
+	// Sai: Ungyo (Level 3)
+	//=================================================================================
+	"npc_dota_sai_ungyo3"
+	{	
+		// Misc
+		//----------------------------------------------------------------
+		"include_keys_from" 		"npc_dota_sai_ungyo1"
+		"ModelScale" 				"1"
+		"Level"						"3"
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"11"		// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackDamageMin"			"155"		// Damage range min.
+		"AttackDamageMax"			"165"		// Damage range max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementSpeed"				"400"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2400"		// Base health.
+		"StatusHealthRegen"			"60"		// Health regeneration rate.
+	}
 }

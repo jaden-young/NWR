@@ -717,6 +717,119 @@
 		"npc_dota_hero_sai" 						"Sai"
 		"npc_dota_hero_sai_lore"  					""
 
+		"npc_dota_sai_agyo1"						"Agyo"
+		"npc_dota_sai_agyo2"						"Agyo"
+		"npc_dota_sai_agyo3"						"Agyo"
+		"npc_dota_sai_ungyo1"						"Ungyo"
+		"npc_dota_sai_ungyo2"						"Ungyo"
+		"npc_dota_sai_ungyo3"						"Ungyo"
+
+		// Innate: Ink Control
+		"DOTA_Tooltip_ability_sai_innate_passive"							"Ink Control"
+		"DOTA_Tooltip_ability_sai_innate_passive_Description"				"Units affected by Sai’s spells take increased incoming damage from all sources."
+		"DOTA_Tooltip_ability_sai_innate_passive_Lore"						""
+		"DOTA_Tooltip_ability_sai_innate_passive_damage_amp"				"%DAMAGE AMPLIFICATION:"
+		"DOTA_Tooltip_ability_sai_innate_passive_damage_amp_lvl"			"%DAMAGE AMPLIFICATION PER LVL:"
+		"DOTA_Tooltip_ability_sai_innate_passive_duration"					"DURATION:"
+
+		"DOTA_Tooltip_modifier_sai_innate_passive"							"Ink Control"
+		"DOTA_Tooltip_modifier_sai_innate_passive_Description"				"Enemies affected by your spells take %dMODIFIER_PROPERTY_TOOLTIP%%% increased damage from all sources."
+
+		"DOTA_Tooltip_modifier_sai_innate_passive_debuff"					"Ink Control"
+		"DOTA_Tooltip_modifier_sai_innate_passive_debuff_Description"		"Taking %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%% more damage from all sources."
+
+		// Ninja Art: Super Beast Drawing 
+		"DOTA_Tooltip_ability_sai_super_beast_drawing"						"Ninja Art: Super Beast Drawing"
+		"DOTA_Tooltip_ability_sai_super_beast_drawing_Description"			"Sends out an ink lion in a line towards the target direction, damaging the first enemy it hits while rooting and disarming them for the duration."
+		"DOTA_Tooltip_ability_sai_super_beast_drawing_Lore"					""
+		"DOTA_Tooltip_ability_sai_super_beast_drawing_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_sai_super_beast_drawing_root_duration"		"DURATION:"
+		"DOTA_Tooltip_ability_sai_super_beast_drawing_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_sai_super_beast_drawing_abilitycastrange"		"RANGE:"
+
+		"DOTA_Tooltip_modifier_sai_super_beast_drawing"						"Ninja Art: Super Beast Drawing"
+		"DOTA_Tooltip_modifier_sai_super_beast_drawing_Description"			"Rooted and disarmed."
+
+		// Snake Entanglement
+		"DOTA_Tooltip_ability_sai_snake_entanglement"						"Snake Entanglement"
+		"DOTA_Tooltip_ability_sai_snake_entanglement_Description"			"Sai sends out snake drawings to cover the ground with ink, slowing all enemies that move around within the affected area while also decreasing their turn rate. The movement speed slow strengthens the longer the enemy stays within the ink and will remain on the unit for %debuff_duration% seconds after leaving the area or after the terrain duration expires."
+		"DOTA_Tooltip_ability_sai_snake_entanglement_Lore"					""
+		"DOTA_Tooltip_ability_sai_snake_entanglement_turn_slow"				"%TURN RATE SLOW"
+		"DOTA_Tooltip_ability_sai_snake_entanglement_move_slow_per_sec"		"%MOVE SLOW PER SEC:"
+		"DOTA_Tooltip_ability_sai_snake_entanglement_max_move_slow"			"%MAX MOVE SLOW:"
+		"DOTA_Tooltip_ability_sai_snake_entanglement_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_sai_snake_entanglement_duration"				"INK DURATION:"
+		"DOTA_Tooltip_ability_sai_snake_entanglement_abilitycastrange"		"RANGE"
+
+		"DOTA_Tooltip_modifier_sai_snake_entanglement_slow"					"Snake Entanglement"
+		"DOTA_Tooltip_modifier_sai_snake_entanglement_slow_Description"		"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		
+		// Rat Reconnaissance
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance"						"Rat Reconnaissance"
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_Description"			"Unleashes rat drawings to hunt down the nearest enemy heroes within range, including those in the fog of war. Upon reaching a target, the rats deal damage and slow the unit while also granting vision for %vision_duration% seconds."
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_Lore"					""
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_max_targets"			"MAX TARGETS:"
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_move_slow"				"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_slow_duration"			"SLOW DURATION:"
+		"DOTA_Tooltip_ability_sai_rat_reconnaissance_abilitycastrange"		"RANGE:"
+
+		"DOTA_Tooltip_modifier_sai_rat_reconnaissance"						"Rat Reconnaissance"
+		"DOTA_Tooltip_modifier_sai_rat_reconnaissance_Description"			"Your position is revealed."
+
+		"DOTA_Tooltip_modifier_sai_rat_reconnaissance_slow"					"Rat Reconnaissance"
+		"DOTA_Tooltip_modifier_sai_rat_reconnaissance_slow_Description"		"Movement speed reduced by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+
+		// Kami's Strength (Remote Cast)
+		"DOTA_Tooltip_ability_sai_kamis_strength_remote"					"Kami's Strength"
+		"DOTA_Tooltip_ability_sai_kamis_strength_remote_Description"		"Activates Kami's Strength on the humanoid drawings."
+		"DOTA_Tooltip_ability_sai_kamis_strength_remote_move_speed"			"%BONUS MOVEMENT SPEED:"
+		"DOTA_Tooltip_ability_sai_kamis_strength_remote_attack_speed"		"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_sai_kamis_strength_remote_duration"			"DURATION:"
+
+		// Ninja Art: Super God Drawing
+		"DOTA_Tooltip_ability_sai_super_god_drawing"						"Ninja Art: Super God Drawing"
+		"DOTA_Tooltip_ability_sai_super_god_drawing_Description"			"Summons two permanent humanoid drawings to fight for Sai. Both humanoids possess the Kami’s Strength ability, granting them a momentary boost to both movement speed and attack speed. Additionally, attacks from either humanoid have a chance to bash the enemy."
+		"DOTA_Tooltip_ability_sai_super_god_drawing_health"					"DRAWING HP:"
+		"DOTA_Tooltip_ability_sai_super_god_drawing_hp_regen"				"DRAWING HP REGEN:"
+		"DOTA_Tooltip_ability_sai_super_god_drawing_armor"					"DRAWING ARMOR:"
+		"DOTA_Tooltip_ability_sai_super_god_drawing_move_speed"				"DRAWING MOVESPEED:"
+
+
+		// Summons //
+		// Bash
+		"DOTA_Tooltip_ability_sai_bash"										"Bash"
+		"DOTA_Tooltip_ability_sai_bash_Description"							"Grants a chance to stun and deal additional damage on attacks."
+		"DOTA_Tooltip_ability_sai_bash_bash_chance"							"%CHANCE:"
+		"DOTA_Tooltip_ability_sai_bash_bash_damage"							"BONUS DAMAGE:"
+		"DOTA_Tooltip_ability_sai_bash_bash_duration"						"BASH DURATION:"
+
+		// Kami's Strength
+		"DOTA_Tooltip_ability_sai_kamis_strength"							"Kami's Strength"
+		"DOTA_Tooltip_ability_sai_kamis_strength_Description"				"Grants the user increased movement speed and attack speed for a short duration."
+		"DOTA_Tooltip_ability_sai_kamis_strength_move_speed"				"%BONUS MOVEMENT SPEED:"
+		"DOTA_Tooltip_ability_sai_kamis_strength_attack_speed"				"BONUS ATTACK SPEED:"
+		"DOTA_Tooltip_ability_sai_kamis_strength_duration"					"DURATION:"
+
+		"DOTA_Tooltip_modifier_sai_kamis_strength"							"Kami's Strength"
+		"DOTA_Tooltip_modifier_sai_kamis_strength_Description"				"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, attack speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
+
+		//=================================================================================================================
+		// Sai Talent Tree
+		//=================================================================================================================	
+		// 25: +2 Multishot Beast Drawing 	/ 	+250 Bash Damage for God Drawings
+		// 20: +15 Armor for God Drawings 	/ 	+1 Maximum Rat Targets
+		// 15: +40 Snake Entanglement DPS 	/ 	+25 Movement Speed
+		// 10: +175 Health 					/ 	+2s Rat Vision Duration
+
+		"DOTA_Tooltip_Ability_special_bonus_sai_1"						"+{s:value} Rat Vision Duration"
+		"DOTA_Tooltip_Ability_special_bonus_sai_2"						"+{s:value} Snake Entanglement DPS"
+		"DOTA_Tooltip_Ability_special_bonus_sai_3"						"+{s:value} Maximum Rat Targets"
+		"DOTA_Tooltip_Ability_special_bonus_sai_4"						"+{s:value} Armor for God Drawings"
+		"DOTA_Tooltip_Ability_special_bonus_sai_5"						"+{s:value} Bash Damage for God Drawings"
+		"DOTA_Tooltip_Ability_special_bonus_sai_6"						"+{s:value} Multishot Beast Drawing"
+		"DOTA_Tooltip_Ability_special_bonus_sai_6_Description"			"The extra drawings are launched in a cone shape, 30 degrees to the left and right of the original drawing."
+
 
 		//--------------------
 		//Sakura

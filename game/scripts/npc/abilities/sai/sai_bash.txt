@@ -1,0 +1,32 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Sai: Bash
+	//=================================================================================================================
+	"sai_bash"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/sai/sai_bash.lua"
+		"AbilityTextureName"			"sai_bash"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES_STRONG"
+        "MaxLevel"                      "3"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+            "bash_chance"           "20"
+            "bash_damage"
+			{
+				"value"					"25 75 125"
+				"LinkedSpecialBonus"	"special_bonus_sai_5"
+			}
+            "bash_duration"         "0.7 0.9 1.1"
+		}
+	}
+}

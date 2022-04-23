@@ -99,7 +99,7 @@
 					{
 						_class = "AnimFile"
 						name = "inkgiantl_idle"
-						activity_name = "ACD_DOTA_IDLE"
+						activity_name = "ACT_DOTA_IDLE"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -187,7 +187,7 @@
 						source_filename = "models/sai_giant/inkgiantl_run.fbx"
 						start_frame = 0
 						end_frame = 21
-						framerate = 30.0
+						framerate = 3.0
 						reverse = false
 					},
 					{

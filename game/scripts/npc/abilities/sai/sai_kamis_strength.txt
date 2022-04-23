@@ -1,45 +1,40 @@
 "DOTAAbilities"
 {	
 	//=================================================================================================================
-	// Sai: Super God Drawing
+	// Sai: Kami's Strength
 	//=================================================================================================================
-	"sai_super_god_drawing"
+	"sai_kamis_strength"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"						"ability_lua"
-		"ScriptFile"                    "abilities/heroes/sai/sai_super_god_drawing.lua"
-		"AbilityTextureName"			"sai_super_god_drawing"
+		"ScriptFile"                    "abilities/heroes/sai/sai_kamis_strength.lua"
+		"AbilityTextureName"			"sai_kamis_strength"
 
-		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
-		"DisplayAdditionalHeroes"		"1"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+        "MaxLevel"                      "3"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastPoint"				"0.3"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_6"
+		"AbilityCastPoint"				"0"
+		"AbilityCastAnimation"			"ACT_DOTA_INVALID"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"130"
+		"AbilityCooldown"				"20"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150"
-		
+		"AbilityManaCost"				"0"
+
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"health"					"800 1600 2400"
-			"hp_regen"					"20 40 60"
-			"armor"
-			{
-				"value"						"5 8 11"
-				"LinkedSpecialBonus"		"special_bonus_sai_4"
-			}
-			"move_speed"				"360 380 400"
+            "move_speed"           	"12"
+            "attack_speed"			"45 60 75"
+            "duration"				"4 6 8"
 		}
 	}
 }

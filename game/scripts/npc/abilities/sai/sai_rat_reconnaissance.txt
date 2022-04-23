@@ -1,73 +1,56 @@
-	
-    "DOTAAbilities"
-{
-    
-    "sai_rat_reconnaissance"
-    {
-        // General  
-        // ----------------------------------------------------------------------------------------
-        "BaseClass"                 "ability_lua"
-        "ScriptFile"                "abilities/heroes/raikage/raikage_raiton_no_yoroi.lua"
-        "AbilityBehavior"           "DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
-        "AbilityUnitDamageType"     "DAMAGE_TYPE_MAGICAL" 
-        "SpellImmunityType"         "SPELL_IMMUNITY_ENEMIES_NO"
-        "AbilityTextureName"        "sai_rat_reconnaissance" 
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Sai: Rat Reconnaissance
+	//=================================================================================================================
+	"sai_rat_reconnaissance"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/sai/sai_rat_reconnaissance.lua"
+		"AbilityTextureName"			"sai_rat_reconnaissance"
 
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"FightRecapLevel"				"1"
 
-        "AbilityType"            "DOTA_ABILITY_TYPE_BASIC"
-        "MaxLevel"               "4"
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastRange"				"1800"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_3"
 
-        // Casting
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCastRange"              "0"
-        "AbilityDuration"               "15"
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"11 10 9 8"
 
-
-        // Time     
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityCooldown"               "15 13 11 9"
-        "AbilityCastPoint"              "0.0 0.0 0.0 0.0"
-
-        // Cost
-        //-------------------------------------------------------------------------------------------------------------
-        "AbilityManaCost"               "90"
-
-        "AbilitySpecial"
-        {
-            "01"
-            {
-                "var_type" "FIELD_FLOAT"
-                "duration" "15.0"
-            }
-            "02"
-            {
-                "var_type" "FIELD_FLOAT"
-                "charge_damage_amount" "120 160 200 240"
-                "LinkedSpecialBonus"	"special_bonus_raikage_2"
-            }
-            "03"
-            { 
-                "var_type"  "FIELD_INTEGER"
-                "release_aoe" "250"
-            }
-            "04"
-            {
-                "var_type" "FIELD_FLOAT"
-                "release_purge_duration" "2"
-            }
-            "05"
-            {
-                "var_type" "FIELD_FLOAT"
-                "release_damage" "120 160 200 240"
-            }
-            "06"
-            {
-                "var_type" "FIELD_FLOAT"
-                "release_ms_slow" "-35.0" 
-            }
-            
-        }
-    }
-
-
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"80 90 100 110"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage"					"90 155 220 285"
+			"max_targets"
+			{
+				"value"						"2"
+				"LinkedSpecialBonus"		"special_bonus_sai_3"
+			}
+			"move_slow"					"100"
+			"slow_duration"				"0.4 0.5 0.6 0.7"
+			"vision_duration"
+			{
+				"value"						"2"
+				"LinkedSpecialBonus"		"special_bonus_sai_1"
+			}
+			"speed"						"700"
+		}
+	}
 }

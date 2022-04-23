@@ -1,94 +1,127 @@
 "DOTAAbilities"
 {
+    //=================================================================================================================
+    // Sai Talent Tree
+    //=================================================================================================================	
+    // 25: +2 Multishot Beast Drawing   /   +250 Bash Damage for God Drawings
+    // 20: +15 Armor for God Drawings   /   +1 Maximum Rat Targets
+    // 15: +40 Snake Entanglement DPS   /   +25 Movement Speed
+    // 10: +175 Health                  /   +2s Rat Vision Duration
 
-  // 25: +2 Multishot Beast Drawing / +250 Bash Damage for God Drawings
-  // 20: +15 Armor for God Drawings / +1 Maximum Rat Targets
-  // 15: +40 Snake Entanglement DPS / +25 Movement Speed
-  // 10: +175 Health / +2s Rat Vision Duration
-"npc_dota_hero_sai" //sai
-{
+    //=================================================================================================================
+    // Sai
+    //=================================================================================================================	
+    "npc_dota_hero_sai"
+    {
+        // General
+        //----------------------------------------------------------------
+        "HeroID"					"221"
+        "BaseClass"					"npc_dota_hero_rubick"
+        "Model"						"models/striker_sai/sai_base.vmdl"
+        "ModelScale"				"1"
+        "LoadoutScale"				"0.73"
+        "SpectatorLoadoutScale" 	"0.85"
+        "VersusScale"				"0.85"
+        "IsCustom"					"1"
+        "HasInventory"				"1" // This KV is required for units file only
 
-		"HeroID"					"221"
+        // Abilities
+        //----------------------------------------------------------------
+        "Ability1"				"sai_super_beast_drawing"		// Ability 1
+        "Ability2"				"sai_snake_entanglement"		// Ability 2
+        "Ability3"				"sai_rat_reconnaissance"		// Ability 3
+        "Ability4"				"sai_kamis_strength_remote"
+        "Ability5"				"generic_hidden"
+        "Ability6"				"sai_super_god_drawing"			// Ultimate
+        "Ability7"				"sai_innate_passive"            // Innate
 
-//Picking Screen
-		"IsCustom"					"1"
+        // Talents
+        //----------------------------------------------------------------
+        "Ability10"				"special_bonus_sai_1"
+        "Ability11"				"special_bonus_hp_175"
+        "Ability12"				"special_bonus_movement_speed_25"
+        "Ability13"				"special_bonus_sai_2"
+        "Ability14"				"special_bonus_sai_3"
+        "Ability15"				"special_bonus_sai_4"
+        "Ability16"				"special_bonus_sai_5"
+        "Ability17"				"special_bonus_sai_6"
 
-  "BaseClass"   "npc_dota_hero_rubick"
-  "Ability1"        "sai_super_beast_drawing"
-  "Ability2"        "sai_snake_entanglement"
-  "Ability3"        "generic_hidden" 
-  "Ability4"        "generic_hidden" 
-  "Ability5"        "generic_hidden" 
-  "Ability6"        "generic_hidden"
-  "Ability10"		"special_bonus_mp_regen_175"
-  "Ability11"		"special_bonus_armor_5"
-  "Ability12"		"special_bonus_attack_range_100"
-  "Ability13"		"special_bonus_haku_1"
-  "Ability14"		"special_bonus_haku_2"
-  "Ability15"		"special_bonus_haku_3"
-  "Ability16"		"special_bonus_haku_4"
-  "Ability17"		"special_bonus_haku_5"
-  "ModelScale"		"0.40"
-  "LoadoutScale"	"0.37" 
+        // Armor
+        //----------------------------------------------------------------
+        "ArmorPhysical"				"0"
+        "MagicalResistance"			"25"
 
+        // Attack
+        //----------------------------------------------------------------
+        "AttackCapabilities"			"DOTA_UNIT_CAP_RANGED_ATTACK"
+        "AttackDamageMin"				"21"		// Damage range min.
+        "AttackDamageMax"				"25"		// Damage range max.
+        "AttackRate"					"1.7"		// Speed of attack.
+        "AttackAnimationPoint"			"0.4"		// Normalized time in animation cycle to attack.
+        "AttackRange"					"600"		// Range within a target can be attacked.
+        "ProjectileModel"               "particles/units/heroes/haku/haku_base_attack.vpcf"
+        "ProjectileSpeed"               "1200"
+        
 
-  "SpectatorLoadoutScale" "0.40"
-	"VersusScale"		"0.40" 
+        // Attributes
+        //----------------------------------------------------------------
+        "AttributePrimary"				"DOTA_ATTRIBUTE_INTELLECT"
+        "AttributeBaseStrength" 		"21" 		// Base strength
+        "AttributeStrengthGain"			"2.5" 		// Strength bonus per level.
+        "AttributeBaseIntelligence" 	"25" 		// Base intelligence
+        "AttributeIntelligenceGain" 	"3.5" 		// Intelligence bonus per level.
+        "AttributeBaseAgility" 			"17" 		// Base agility
+        "AttributeAgilityGain" 			"1.7" 		// Agility bonus per level.
 
-  "Model" 		"models/sai/sai.vmdl"
+        // Movement
+        //----------------------------------------------------------------
+        "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"		// Type of locomotion - ground, air
+        "MovementSpeed"				"290"			// Speed
+        "MovementTurnRate"			"1.0"			// Turning rate
+        
+        // Status
+        //----------------------------------------------------------------
+        "StatusHealth"				"200"
+        "StatusHealthRegen"			"0.3"
+        "StatusManaRegen"			"0.9"
+        "StatusMana"				"75"
 
-  "ItemSlots"
-  { }
+        // FX
+        //----------------------------------------------------------------
+        "SoundSet"					"KunaiRanged"
+	    "GameSoundsFile"		    "soundevents/weapons/game_sounds_kunairanged.vsndevts"
+        "GibType"					"default"
+        
+        // Role
+        //----------------------------------------------------------------
+        "Role"						"Support,Disabler"
+        "Rolelevels"				"2,2"
+        "Complexity"				"2"	
 
-  "StatusHealth"    "200"
-  "StatusHealthRegen"   "0.300000"
-  "ArmorPhysical"   "0.000000"
-  "AttributePrimary"    "DOTA_ATTRIBUTE_INTELLECT"
-  "AttackDamageMin"   "21"
-  "Role"      "Support,Nuker,Disabler"
-  "Rolelevels"  "3,1,1,1"
-  "AttackDamageMax"   "25"
-  "AttackRate"    "1.700000"
-  "AttackAnimationPoint"		"0.4"
-  "AttackRange"				"600"
-  "ProjectileModel"   "particles/units/heroes/haku/haku_base_attack.vpcf"
-  "ProjectileSpeed"  "1200"
-  "MovementSpeed"			"290"
-  "AttributeBaseStrength" "21" // Base strength
-  "AttributeStrengthGain" "2.5" // Strength bonus per level.
-  "AttributeBaseIntelligence" "25" // Base intelligence
-  "AttributeIntelligenceGain" "3.5" // Intelligence bonus per level.
-  "AttributeBaseAgility" "17" // Base agility
-  "AttributeAgilityGain" "1.7" // Agility bonus per level.
-  "Village"			"konoha"
-  "Gender"      "male"  
+        // Class
+        //----------------------------------------------------------------
+        "CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+        "CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+        "UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
 
-  	"VisionDaytimeRange"		"1800"                            // Range of vision during day light.
-		"VisionNighttimeRange"		"800"                             // Range of vision at night time.
+        // Vision
+        //----------------------------------------------------------------
+        "VisionDaytimeRange"		"1800"			// Range of vision during day light.
+        "VisionNighttimeRange"		"800"			// Range of vision at night time.
 
-		"HasInventory"				"1" // This KV is required for units file only
-		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
-		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+        // Custom KV's
+        //----------------------------------------------------------------
+        "Village"					"konoha"
+        "Gender"					"male"		
+    }
 
-		"AttackSpeedActivityModifiers"
-		{
-			"fast"		"170"
-			"faster"	"275"
-			"fastest"	"350"
-		}
-
-}	
-
-  "npc_dota_hero_rubick" 
+    "npc_dota_hero_rubick" 
 	{
-		  	"override_hero"   "npc_dota_hero_rubick"
-		    "Model" 		"models/sai/sai.vmdl"
-		    "ModelScale"		"0.40"
-        "LoadoutScale"	"0.37" 
-		    "SpectatorLoadoutScale" "0.40" 
-	      "VersusScale"		"0.40"
+        "override_hero"         "npc_dota_hero_rubick"
+        "Model" 		        "models/striker_sai/sai_base.vmdl"
+        "ModelScale"	    	"1"
+        "LoadoutScale"	        "1" 
+        "SpectatorLoadoutScale" "1" 
+        "VersusScale"		    "1"
 	}
-
-
 }
