@@ -84,6 +84,259 @@
 				]
 				default_root_bone_name = ""
 			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "hips"
+								parent_bone = "hips"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -37.403065, -21.763725, -30.112623 ]
+								hitbox_maxs = [ 40.755253, 31.573349, 30.11265 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "spine"
+								parent_bone = "spine"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -12.979155, -27.023262, -27.514034 ]
+								hitbox_maxs = [ 57.259918, 36.170662, 27.513874 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "spine1"
+								parent_bone = "spine1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -19.286507, -26.236219, -34.088486 ]
+								hitbox_maxs = [ 47.680862, 40.483475, 34.088409 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "neck"
+								parent_bone = "neck"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -15.583252, -25.623135, -28.065168 ]
+								hitbox_maxs = [ 28.881935, 32.675823, 28.064913 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "head"
+								parent_bone = "head"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -25.776363, -30.94026, -28.06513 ]
+								hitbox_maxs = [ 32.273609, 35.769089, 28.064947 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "joe"
+								parent_bone = "joe"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -7.061111, -17.126495 ]
+								hitbox_maxs = [ 26.581409, 14.823013, 17.126129 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "tongue1"
+								parent_bone = "tongue1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.505537, -3.811798, -0.5 ]
+								hitbox_maxs = [ 7.503393, 2.206184, 15.460513 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "tongue2"
+								parent_bone = "tongue2"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -7.505536, -2.315674, -1.699379 ]
+								hitbox_maxs = [ 7.503392, 2.476471, 12.26741 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftshoulder"
+								parent_bone = "leftshoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -19.782623, -20.050573 ]
+								hitbox_maxs = [ 32.493893, 19.768188, 10.843117 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftarm"
+								parent_bone = "leftarm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.494576, -18.276588, -12.292068 ]
+								hitbox_maxs = [ 35.034081, 16.261177, 10.249065 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftforearm"
+								parent_bone = "leftforearm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.31094, -7.709723, -7.32047 ]
+								hitbox_maxs = [ 33.621719, 9.445505, 7.11997 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "lefthand"
+								parent_bone = "lefthand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.267672, -8.325868, -8.958944 ]
+								hitbox_maxs = [ 15.897062, 6.266551, 8.104307 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightshoulder"
+								parent_bone = "rightshoulder"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -0.5, -19.782562, -10.843071 ]
+								hitbox_maxs = [ 32.494049, 19.76828, 20.050663 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightarm"
+								parent_bone = "rightarm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -13.494576, -18.276543, -10.249226 ]
+								hitbox_maxs = [ 35.034119, 16.261246, 12.291971 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightforearm"
+								parent_bone = "rightforearm"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -1.31094, -7.709609, -7.120195 ]
+								hitbox_maxs = [ 33.621658, 9.4456, 7.320313 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "righthand"
+								parent_bone = "righthand"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.2677, -8.325769, -8.104572 ]
+								hitbox_maxs = [ 15.896975, 6.266598, 8.958683 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftupleg"
+								parent_bone = "leftupleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.419518, -23.217175, -10.403036 ]
+								hitbox_maxs = [ 40.873466, 21.468914, 18.075119 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftleg"
+								parent_bone = "leftleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -28.342625, -9.921982, -6.910404 ]
+								hitbox_maxs = [ 30.128239, 11.877197, 8.180921 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "leftfoot"
+								parent_bone = "leftfoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.101223, -4.782688, -6.837898 ]
+								hitbox_maxs = [ 9.711271, 33.231407, 7.417381 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightupleg"
+								parent_bone = "rightupleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.419533, -23.217228, -18.075214 ]
+								hitbox_maxs = [ 40.873466, 21.468861, 10.402971 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightleg"
+								parent_bone = "rightleg"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -28.342636, -9.922029, -8.181016 ]
+								hitbox_maxs = [ 30.128342, 11.877138, 6.910307 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "rightfoot"
+								parent_bone = "rightfoot"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.101166, -4.782734, -7.417515 ]
+								hitbox_maxs = [ 9.711357, 33.23138, 6.837742 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "tail"
+								parent_bone = "tail"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -3.403546, -9.129974, -9.177376 ]
+								hitbox_maxs = [ 30.551472, 9.638092, 9.177422 ]
+							},
+							{
+								_class = "Hitbox"
+								name = "tail1"
+								parent_bone = "tail1"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -14.401611, -9.647301, -9.17738 ]
+								hitbox_maxs = [ 40.731071, 10.908646, 9.177414 ]
+							},
+						]
+					},
+				]
+			},
 		]
 		model_archetype = ""
 		primary_associated_entity = ""
