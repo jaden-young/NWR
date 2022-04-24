@@ -28,12 +28,52 @@
 	{
 		type = "dota_update_default"
 		volume = 1.000000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
+		pitch_rand_min = -0.10000
+		pitch_rand_max = 0.10000
 		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/grimstroke/dark_artistry_projectile.vsnd"
+		vsnd_files = "sounds/weapons/hero/medusa/snake_shoot.vsnd"
+	}
+
+	Hero_Sai.SnakeEntanglement.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/dark_artistry_damage.vsnd"
+		soundevent_layer2 = "Hero_Sai.SnakeEntanglement.ImpactLayer"
+		soundevent_layer2_on = "1.000000"
+		soundevent_layer3 = "Hero_Sai.SnakeEntanglement.ImpactLayer2"
+		soundevent_layer3_on = "1.000000"
+	}
+
+	Hero_Sai.SnakeEntanglement.ImpactLayer = 
+	{
+		type = "dota_update_default"
+		volume = 0.600000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 2.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/ink_over.vsnd"
+	}
+
+	Hero_Sai.SnakeEntanglement.ImpactLayer2 = 
+	{
+		type = "dota_update_default"
+		volume = 0.600000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.7000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/shadowshaman/serpent_ward.vsnd"
 	}
 
 	Hero_Sai.Summons.Bash = 

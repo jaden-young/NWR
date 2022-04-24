@@ -58,6 +58,86 @@
 						framerate = 30.0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "throw"
+						activity_name = "ACT_DOTA_AMBUSH"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/sai_summon/sai_snake_anim.smd"
+						start_frame = 780
+						end_frame = 810
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "throw1"
+						activity_name = "ACT_DOTA_AMBUSH"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/sai_summon/sai_snake_anim.smd"
+						start_frame = 210
+						end_frame = 250
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "throw2"
+						activity_name = "ACT_DOTA_AMBUSH"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/sai_summon/sai_snake_anim.smd"
+						start_frame = 350
+						end_frame = 390
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "throw3"
+						activity_name = "ACT_DOTA_AMBUSH"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/sai_summon/sai_snake_anim.smd"
+						start_frame = 410
+						end_frame = 450
+						framerate = -1.0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},

@@ -4,7 +4,7 @@ local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__Decorate = ____lualib.__TS__Decorate
 local __TS__ArrayForEach = ____lualib.__TS__ArrayForEach
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 1,["14"] = 8,["15"] = 9,["16"] = 8,["17"] = 9,["18"] = 11,["19"] = 13,["20"] = 11,["21"] = 19,["22"] = 20,["23"] = 19,["24"] = 25,["25"] = 26,["26"] = 27,["27"] = 28,["28"] = 30,["29"] = 30,["30"] = 30,["31"] = 30,["32"] = 30,["33"] = 30,["34"] = 30,["35"] = 30,["36"] = 30,["37"] = 32,["38"] = 25,["39"] = 9,["40"] = 8,["41"] = 9,["43"] = 9,["44"] = 36,["45"] = 37,["46"] = 36,["47"] = 37,["49"] = 37,["50"] = 39,["51"] = 36,["52"] = 44,["53"] = 45,["56"] = 46,["57"] = 48,["58"] = 49,["59"] = 51,["60"] = 51,["61"] = 51,["62"] = 51,["63"] = 51,["64"] = 52,["65"] = 52,["66"] = 52,["67"] = 52,["68"] = 52,["69"] = 53,["70"] = 53,["71"] = 53,["72"] = 53,["73"] = 53,["74"] = 53,["75"] = 53,["76"] = 53,["77"] = 53,["78"] = 54,["79"] = 54,["80"] = 54,["81"] = 54,["82"] = 54,["83"] = 54,["84"] = 54,["85"] = 54,["86"] = 56,["87"] = 57,["88"] = 44,["89"] = 60,["90"] = 61,["91"] = 63,["92"] = 63,["93"] = 63,["94"] = 63,["95"] = 63,["96"] = 63,["97"] = 63,["98"] = 63,["99"] = 63,["100"] = 63,["101"] = 63,["102"] = 73,["103"] = 73,["104"] = 73,["105"] = 74,["106"] = 74,["107"] = 74,["108"] = 74,["109"] = 74,["110"] = 74,["111"] = 73,["112"] = 73,["113"] = 60,["114"] = 37,["115"] = 36,["116"] = 37,["118"] = 37,["119"] = 80,["120"] = 81,["121"] = 80,["122"] = 81,["123"] = 92,["124"] = 93,["125"] = 94,["126"] = 96,["127"] = 97,["128"] = 98,["129"] = 99,["130"] = 101,["131"] = 103,["134"] = 105,["135"] = 105,["136"] = 105,["137"] = 105,["138"] = 105,["139"] = 105,["140"] = 105,["141"] = 113,["142"] = 114,["143"] = 114,["145"] = 116,["146"] = 117,["147"] = 92,["148"] = 120,["149"] = 121,["150"] = 120,["151"] = 126,["152"] = 127,["153"] = 129,["156"] = 131,["157"] = 132,["158"] = 132,["160"] = 126,["161"] = 137,["162"] = 137,["163"] = 137,["164"] = 144,["165"] = 145,["166"] = 144,["167"] = 150,["168"] = 151,["169"] = 150,["170"] = 156,["171"] = 157,["172"] = 156,["173"] = 162,["174"] = 163,["175"] = 162,["176"] = 81,["177"] = 80,["178"] = 81,["180"] = 81});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 1,["14"] = 14,["15"] = 15,["16"] = 14,["17"] = 15,["18"] = 17,["19"] = 18,["20"] = 19,["21"] = 20,["22"] = 21,["23"] = 17,["24"] = 27,["25"] = 28,["26"] = 27,["27"] = 33,["28"] = 34,["29"] = 35,["30"] = 36,["31"] = 37,["32"] = 38,["33"] = 33,["34"] = 44,["35"] = 45,["36"] = 45,["37"] = 45,["38"] = 45,["39"] = 45,["40"] = 46,["41"] = 48,["42"] = 48,["44"] = 44,["45"] = 53,["46"] = 54,["47"] = 55,["48"] = 56,["49"] = 58,["50"] = 60,["51"] = 60,["52"] = 60,["53"] = 60,["54"] = 60,["55"] = 60,["56"] = 60,["57"] = 60,["58"] = 61,["59"] = 62,["60"] = 63,["61"] = 65,["62"] = 68,["63"] = 68,["64"] = 68,["65"] = 68,["66"] = 68,["67"] = 68,["68"] = 68,["69"] = 75,["70"] = 75,["71"] = 75,["72"] = 68,["73"] = 68,["74"] = 53,["75"] = 84,["76"] = 85,["77"] = 86,["78"] = 87,["79"] = 88,["80"] = 90,["81"] = 90,["82"] = 90,["83"] = 90,["84"] = 90,["85"] = 90,["86"] = 90,["87"] = 90,["88"] = 90,["89"] = 84,["90"] = 105,["91"] = 106,["94"] = 107,["95"] = 108,["96"] = 108,["97"] = 108,["99"] = 105,["100"] = 113,["101"] = 114,["102"] = 116,["103"] = 117,["104"] = 118,["105"] = 118,["108"] = 123,["109"] = 124,["110"] = 124,["111"] = 124,["112"] = 124,["113"] = 124,["114"] = 124,["115"] = 124,["116"] = 124,["117"] = 124,["118"] = 125,["119"] = 127,["120"] = 128,["121"] = 128,["122"] = 128,["123"] = 128,["124"] = 128,["125"] = 129,["127"] = 113,["128"] = 15,["129"] = 14,["130"] = 15,["132"] = 15,["133"] = 134,["134"] = 135,["135"] = 134,["136"] = 135,["138"] = 135,["139"] = 137,["140"] = 134,["141"] = 142,["142"] = 143,["145"] = 144,["146"] = 145,["147"] = 146,["148"] = 146,["149"] = 146,["150"] = 146,["151"] = 147,["152"] = 149,["153"] = 150,["154"] = 152,["155"] = 153,["156"] = 154,["157"] = 154,["158"] = 154,["159"] = 154,["160"] = 154,["161"] = 155,["162"] = 155,["163"] = 155,["164"] = 155,["165"] = 155,["166"] = 155,["167"] = 155,["168"] = 155,["169"] = 155,["170"] = 156,["171"] = 156,["172"] = 156,["173"] = 156,["174"] = 156,["175"] = 156,["176"] = 156,["177"] = 156,["178"] = 158,["179"] = 159,["180"] = 159,["181"] = 159,["182"] = 159,["183"] = 159,["184"] = 160,["185"] = 160,["186"] = 160,["187"] = 160,["188"] = 160,["189"] = 160,["190"] = 160,["191"] = 160,["192"] = 162,["193"] = 163,["194"] = 142,["195"] = 166,["196"] = 167,["197"] = 169,["198"] = 169,["199"] = 169,["200"] = 169,["201"] = 169,["202"] = 169,["203"] = 169,["204"] = 169,["205"] = 169,["206"] = 169,["207"] = 169,["208"] = 179,["209"] = 179,["210"] = 179,["211"] = 180,["212"] = 180,["213"] = 180,["214"] = 180,["215"] = 180,["216"] = 180,["217"] = 179,["218"] = 179,["219"] = 166,["220"] = 135,["221"] = 134,["222"] = 135,["224"] = 135,["225"] = 186,["226"] = 187,["227"] = 186,["228"] = 187,["229"] = 198,["230"] = 199,["231"] = 200,["232"] = 202,["233"] = 203,["234"] = 204,["235"] = 205,["236"] = 207,["237"] = 209,["240"] = 211,["241"] = 211,["242"] = 211,["243"] = 211,["244"] = 211,["245"] = 211,["246"] = 211,["247"] = 219,["248"] = 220,["249"] = 220,["251"] = 222,["252"] = 223,["253"] = 198,["254"] = 226,["255"] = 227,["256"] = 226,["257"] = 232,["258"] = 233,["259"] = 235,["262"] = 237,["263"] = 238,["264"] = 238,["266"] = 232,["267"] = 243,["268"] = 243,["269"] = 243,["270"] = 250,["271"] = 251,["272"] = 250,["273"] = 256,["274"] = 257,["275"] = 256,["276"] = 262,["277"] = 263,["278"] = 262,["279"] = 268,["280"] = 269,["281"] = 268,["282"] = 187,["283"] = 186,["284"] = 187,["286"] = 187,["287"] = 273,["288"] = 274,["289"] = 273,["290"] = 274,["291"] = 276,["292"] = 277,["293"] = 277,["294"] = 277,["295"] = 277,["296"] = 277,["297"] = 277,["298"] = 277,["299"] = 276,["300"] = 274,["301"] = 273,["302"] = 274,["304"] = 274});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -16,25 +16,114 @@ local sai_snake_entanglement = ____exports.sai_snake_entanglement
 sai_snake_entanglement.name = "sai_snake_entanglement"
 __TS__ClassExtends(sai_snake_entanglement, BaseAbility)
 function sai_snake_entanglement.prototype.Precache(self, context)
+    PrecacheResource("particle", "particles/units/heroes/sai/sai_snake_entanglement.vpcf", context)
+    PrecacheResource("particle", "particles/units/heroes/sai/sai_snake_entanglement_pit.vpcf", context)
+    PrecacheResource("particle", "particles/units/heroes/sai/sai_snake_entanglement_impact.vpcf", context)
     PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context)
 end
 function sai_snake_entanglement.prototype.GetAOERadius(self)
     return self:GetSpecialValueFor("radius")
 end
 function sai_snake_entanglement.prototype.OnSpellStart(self)
-    local caster = self:GetCaster()
     local position = self:GetCursorPosition()
-    local duration = self:GetSpecialValueFor("duration")
-    CreateModifierThinker(
-        caster,
-        self,
-        "modifier_sai_snake_entanglement",
-        {duration = duration},
-        position,
-        caster:GetTeamNumber(),
+    local projectiles = self:GetSpecialValueFor("snake_projectiles")
+    local duration = self:GetSpecialValueFor("snake_speed") / (position - self:GetCaster():GetAbsOrigin()):Length2D()
+    self:InitiateLaunch(position, projectiles, duration)
+    self:LaunchMainSnake(position)
+end
+function sai_snake_entanglement.prototype.InitiateLaunch(self, position, count, duration)
+    self:LaunchSnake(
+        position + RandomVector(self:GetSpecialValueFor("radius") / 2),
+        duration,
         false
     )
-    EmitSoundOnLocationWithCaster(position, "Hero_Sai.SnakeEntanglement.Cast", caster)
+    count = count - 1
+    if count > 0 then
+        self:InitiateLaunch(position, count, duration)
+    end
+end
+function sai_snake_entanglement.prototype.LaunchSnake(self, position, duration, create_puddle)
+    local caster = self:GetCaster()
+    local direction = (position - caster:GetAbsOrigin()):Normalized()
+    local speed = create_puddle and self:GetSpecialValueFor("snake_speed") or (position - caster:GetAbsOrigin()):Length2D() * duration
+    local spawn_pos = caster:GetAttachmentOrigin(caster:ScriptLookupAttachment("attach_scroll_center")) + direction * 75 + caster:GetRightVector() * 40
+    local snake = CreateUnitByName(
+        "npc_dota_sai_snake",
+        spawn_pos,
+        false,
+        nil,
+        nil,
+        caster:GetTeamNumber()
+    )
+    snake:AddNewModifier(caster, self, "modifier_sai_snake_entanglement_snake", {duration = -1})
+    snake:SetForwardVector((position - caster:GetAbsOrigin()):Normalized())
+    snake:StartGesture(ACT_DOTA_AMBUSH)
+    EmitSoundOn("Hero_Sai.SnakeEntanglement.Cast", snake)
+    ProjectileManager:CreateLinearProjectile({
+        Ability = self,
+        EffectName = "",
+        vSpawnOrigin = spawn_pos,
+        fDistance = (spawn_pos - position):Length2D(),
+        Source = caster,
+        vVelocity = direction * speed,
+        ExtraData = {
+            snake_eid = snake:entindex(),
+            create_puddle = create_puddle
+        }
+    })
+end
+function sai_snake_entanglement.prototype.LaunchMainSnake(self, position)
+    local caster = self:GetCaster()
+    local direction = (position - caster:GetAbsOrigin()):Normalized()
+    local speed = self:GetSpecialValueFor("snake_speed")
+    local spawn_pos = caster:GetAttachmentOrigin(caster:ScriptLookupAttachment("attach_scroll_center")) + direction * 75 + caster:GetRightVector() * 40
+    ProjectileManager:CreateLinearProjectile({
+        Ability = self,
+        EffectName = "",
+        vSpawnOrigin = spawn_pos,
+        fDistance = (spawn_pos - position):Length2D(),
+        Source = caster,
+        vVelocity = direction * speed,
+        ExtraData = {create_puddle = true}
+    })
+end
+function sai_snake_entanglement.prototype.OnProjectileThink_ExtraData(self, location, extraData)
+    if not extraData.snake_eid then
+        return
+    end
+    local snake = EntIndexToHScript(extraData.snake_eid)
+    local ____snake_SetAbsOrigin_result_0 = snake
+    if ____snake_SetAbsOrigin_result_0 ~= nil then
+        ____snake_SetAbsOrigin_result_0 = ____snake_SetAbsOrigin_result_0:SetAbsOrigin(GetGroundPosition(location, snake) + Vector(0, 0, 75))
+    end
+end
+function sai_snake_entanglement.prototype.OnProjectileHit_ExtraData(self, target, location, extraData)
+    local caster = self:GetCaster()
+    if extraData.snake_eid then
+        local snake = EntIndexToHScript(extraData.snake_eid)
+        if snake then
+            UTIL_Remove(snake)
+        end
+    end
+    if extraData.create_puddle == 1 then
+        CreateModifierThinker(
+            caster,
+            self,
+            "modifier_sai_snake_entanglement",
+            {duration = self:GetSpecialValueFor("duration")},
+            location,
+            caster:GetTeamNumber(),
+            false
+        )
+        EmitSoundOnLocationWithCaster(location, "Hero_Sai.SnakeEntanglement.Impact", caster)
+        local impact_fx = ParticleManager:CreateParticle("particles/units/heroes/sai/sai_snake_entanglement_impact.vpcf", PATTACH_CUSTOMORIGIN, nil)
+        ParticleManager:SetParticleControl(
+            impact_fx,
+            1,
+            GetGroundPosition(location, nil)
+        )
+        ParticleManager:ReleaseParticleIndex(impact_fx)
+    end
 end
 sai_snake_entanglement = __TS__Decorate(
     {registerAbility(nil)},
@@ -54,13 +143,16 @@ function modifier_sai_snake_entanglement.prototype.OnCreated(self, params)
         return
     end
     local ability = self:GetAbility()
+    local parent = self:GetParent()
+    local pos = GetGroundPosition(
+        parent:GetAbsOrigin(),
+        nil
+    )
+    pos.z = pos.z + 150
     self.radius = ability:GetSpecialValueFor("radius")
     self.debuff_duration = ability:GetSpecialValueFor("debuff_duration")
-    local pit_fx = ParticleManager:CreateParticle(
-        "particles/econ/items/underlord/underlord_ti8_immortal_weapon/underlord_ti8_immortal_pitofmalice.vpcf",
-        PATTACH_ABSORIGIN,
-        self:GetParent()
-    )
+    local pit_fx = ParticleManager:CreateParticle("particles/units/heroes/sai/sai_snake_entanglement_pit.vpcf", PATTACH_ABSORIGIN, parent)
+    ParticleManager:SetParticleControl(pit_fx, 0, pos)
     ParticleManager:SetParticleControl(
         pit_fx,
         1,
@@ -77,6 +169,20 @@ function modifier_sai_snake_entanglement.prototype.OnCreated(self, params)
     )
     self:AddParticle(
         pit_fx,
+        false,
+        false,
+        -1,
+        false,
+        false
+    )
+    local area_fx = ParticleManager:CreateParticle("particles/units/heroes/sai/sai_snake_entanglement.vpcf", PATTACH_ABSORIGIN, parent)
+    ParticleManager:SetParticleControl(
+        area_fx,
+        1,
+        Vector(self.radius, 0, 0)
+    )
+    self:AddParticle(
+        area_fx,
         false,
         false,
         -1,
@@ -168,7 +274,7 @@ function modifier_sai_snake_entanglement_slow.prototype.GetModifierTurnRate_Perc
     return self.turn_slow
 end
 function modifier_sai_snake_entanglement_slow.prototype.GetEffectName(self)
-    return "particles/units/heroes/hero_batrider/batrider_stickynapalm_debuff.vpcf"
+    return "particles/units/heroes/sai/sai_snake_entanglement_debuff.vpcf"
 end
 function modifier_sai_snake_entanglement_slow.prototype.GetEffectAttachType(self)
     return PATTACH_ABSORIGIN_FOLLOW
@@ -178,4 +284,22 @@ modifier_sai_snake_entanglement_slow = __TS__Decorate(
     modifier_sai_snake_entanglement_slow
 )
 ____exports.modifier_sai_snake_entanglement_slow = modifier_sai_snake_entanglement_slow
+____exports.modifier_sai_snake_entanglement_snake = __TS__Class()
+local modifier_sai_snake_entanglement_snake = ____exports.modifier_sai_snake_entanglement_snake
+modifier_sai_snake_entanglement_snake.name = "modifier_sai_snake_entanglement_snake"
+__TS__ClassExtends(modifier_sai_snake_entanglement_snake, BaseModifier)
+function modifier_sai_snake_entanglement_snake.prototype.CheckState(self)
+    return {
+        [MODIFIER_STATE_NO_HEALTH_BAR] = true,
+        [MODIFIER_STATE_DISARMED] = true,
+        [MODIFIER_STATE_NOT_ON_MINIMAP] = true,
+        [MODIFIER_STATE_OUT_OF_GAME] = true,
+        [MODIFIER_STATE_INVULNERABLE] = true
+    }
+end
+modifier_sai_snake_entanglement_snake = __TS__Decorate(
+    {registerModifier(nil)},
+    modifier_sai_snake_entanglement_snake
+)
+____exports.modifier_sai_snake_entanglement_snake = modifier_sai_snake_entanglement_snake
 return ____exports

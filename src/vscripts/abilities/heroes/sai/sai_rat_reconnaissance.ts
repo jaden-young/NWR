@@ -31,13 +31,12 @@ export class sai_rat_reconnaissance extends BaseAbility
         let rat_projectile: CreateTrackingProjectileOptions = {
             Ability: this,
             EffectName: "",
-            //Source: caster,
             Target: undefined,
             bDodgeable: false,
             bDrawsOnMinimap: false,
             bProvidesVision: true,
             iMoveSpeed: this.GetSpecialValueFor("speed"),
-            iVisionRadius: 100,
+            iVisionRadius: 25,
             iVisionTeamNumber: caster.GetTeamNumber(),
             vSourceLoc: spawn_pos,
             ExtraData: {
@@ -127,11 +126,15 @@ export class sai_rat_reconnaissance extends BaseAbility
 
 @registerModifier()
 export class modifier_sai_rat_reconnaissance extends BaseModifier
-{
-    CheckState(): Partial<Record<ModifierState, boolean>> {
-        return {
-            [ModifierState.PROVIDES_VISION]: true,
-        };
+{    
+    DeclareFunctions(){ return [
+        ModifierFunction.PROVIDES_FOW_POSITION,
+    ]}
+
+    /****************************************/
+    
+    GetModifierProvidesFOWVision(): 0 | 1 {
+        return 1;
     }
 }
 

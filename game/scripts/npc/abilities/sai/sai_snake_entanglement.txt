@@ -48,7 +48,9 @@
 			"radius"					"400"
 			"duration"					"8"
 			"debuff_duration"			"2"
-			"slow_growth_interval"		"0.25"	
+			"slow_growth_interval"		"0.25"
+			"snake_speed"				"1600"
+			"snake_projectiles"			"4"
 		}
 	}
 }
