@@ -6,7 +6,7 @@
 		volume = 1.000000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
-		pitch = 1.0000000
+		pitch = 0.850000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/grimstroke/dark_artistry_projectile.vsnd"
@@ -15,13 +15,27 @@
 	Hero_Sai.SuperBeastDrawing.Impact = 
 	{
 		type = "dota_update_default"
-		volume = 1.000000
+		volume = 0.600000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		pitch = 1.0000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/grimstroke/ink_phantom_damage.vsnd"
+		soundevent_layer2 = "Hero_Sai.SuperBeastDrawing.ImpactLayer"
+		soundevent_layer2_on = "1.000000"
+	}
+
+	Hero_Sai.SuperBeastDrawing.ImpactLayer = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.350000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/ink_phantom_attach.vsnd"
 	}
 
 	Hero_Sai.SnakeEntanglement.Cast = 
@@ -74,6 +88,23 @@
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/shadowshaman/serpent_ward.vsnd"
+	}
+
+	Hero_Sai.SuperGodDrawing.CastLayer = 
+	{
+		type = "dota_update_default"
+		volume = 0.700000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.850000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+			"sounds/weapons/hero/grimstroke/dark_artistry_layer01.vsnd",
+			"sounds/weapons/hero/grimstroke/dark_artistry_layer02.vsnd",
+			"sounds/weapons/hero/grimstroke/dark_artistry_layer03.vsnd"
+		]
 	}
 
 	Hero_Sai.Summons.Bash = 

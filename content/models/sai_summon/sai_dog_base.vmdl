@@ -78,7 +78,7 @@
 						source_filename = "models/sai_summon/sai_dog_anim.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 60.0
+						framerate = 67.0
 						reverse = false
 					},
 				]

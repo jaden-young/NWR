@@ -19,7 +19,7 @@ export class sai_super_beast_drawing extends BaseAbility
     /****************************************/
 
     Precache(context: CScriptPrecacheContext): void{
-        //PrecacheResource("particle", "", context);
+        PrecacheResource("particle", "particles/units/heroes/sai/sai_super_beast_drawing_proj.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context);
         //PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
     }
@@ -40,8 +40,6 @@ export class sai_super_beast_drawing extends BaseAbility
             this.LaunchDrawing(RotatePosition(origin, QAngle(0, -30, 0), position), id);
             this.LaunchDrawing(RotatePosition(origin, QAngle(0, 30, 0), position), id);
         }
-        
-        EmitSoundOn("Hero_Sai.SuperBeastDrawing.Cast", caster);
     }
 
     /****************************************/
@@ -63,10 +61,11 @@ export class sai_super_beast_drawing extends BaseAbility
         beast.SetForwardVector(caster.GetForwardVector());
     	beast.FaceTowards(position);
         beast.StartGesture(GameActivity.DOTA_RUN);
+        EmitSoundOn("Hero_Sai.SuperBeastDrawing.Cast", beast);
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
-            EffectName: "particles/units/heroes/hero_grimstroke/grimstroke_darkartistry_proj.vpcf",
+            EffectName: "particles/units/heroes/sai/sai_super_beast_drawing_proj.vpcf",
             vSpawnOrigin: spawn_pos,
             fDistance: distance,
             fStartRadius: radius,
@@ -117,7 +116,7 @@ export class sai_super_beast_drawing extends BaseAbility
         target.AddNewModifier(caster, this, "modifier_sai_super_beast_drawing", {duration: duration * (1 - target.GetStatusResistance())});
         this.drawing_projectiles[extraData.id as number][target.entindex()] = true;
 
-        EmitSoundOn("Hero_Sai.SuperBeastDrawing.Impact", target);
+        EmitSoundOnLocationWithCaster(location, "Hero_Sai.SuperBeastDrawing.Impact", caster);
         return true;
     }
 

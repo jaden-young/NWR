@@ -219,8 +219,10 @@ export class modifier_sai_snake_entanglement_slow extends BaseModifier
         let innate = this.GetCaster()!.FindAbilityByName("sai_innate_passive") as SaiInnate;
         if (innate) innate.ApplyDebuff(this.GetParent());
 
-        this.StartIntervalThink(interval);
-        this.OnIntervalThink();
+        if (this.damage > 0) {
+            this.StartIntervalThink(interval);
+            this.OnIntervalThink();
+        }
     }
 
     OnIntervalThink(): void {

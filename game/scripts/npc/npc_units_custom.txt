@@ -2746,7 +2746,7 @@
 		"BaseClass"					"npc_dota_base_additive"
 		"SoundSet"					"0"			// Name of sound set.
 		"Level"						"2"
-		"ModelScale"				"1"
+		"ModelScale"				"1.3"
 
 		// Abilities
 		//----------------------------------------------------------------
