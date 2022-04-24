@@ -31,23 +31,23 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 90 100 110"
+		"AbilityManaCost"				"90 100 110 120"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage"					"90 155 220 285"
+			"damage"					"80 150 220 290"
 			"max_targets"
 			{
 				"value"						"2"
 				"LinkedSpecialBonus"		"special_bonus_sai_3"
 			}
 			"move_slow"					"100"
-			"slow_duration"				"0.4 0.5 0.6 0.7"
+			"slow_duration"				"0.5"
 			"vision_duration"
 			{
-				"value"						"2"
+				"value"						"2.5 3.0 3.5 4.0"
 				"LinkedSpecialBonus"		"special_bonus_sai_1"
 			}
 			"speed"						"700"

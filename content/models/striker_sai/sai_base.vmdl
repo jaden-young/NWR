@@ -807,7 +807,7 @@
 						source_filename = "models/striker_sai/idle.smd"
 						start_frame = 0
 						end_frame = 52
-						framerate = 30.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
@@ -861,12 +861,46 @@
 						source_filename = "models/striker_sai/run.smd"
 						start_frame = 0
 						end_frame = 11
-						framerate = 30.0
+						framerate = 15.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
-						name = "scrollbird"
+						name = "scrollsnake"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_sai/scrollbird.smd"
+						start_frame = 0
+						end_frame = 52
+						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "scrolldog"
 						children = 
 						[
 							{
@@ -892,84 +926,16 @@
 						hidden = false
 						anim_markup_ordered = false
 						disable_compression = false
-						source_filename = "models/striker_sai/scrollbird.smd"
-						start_frame = 0
-						end_frame = 52
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "scrolldog"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Single"
-							},
-						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_3"
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
 						source_filename = "models/striker_sai/scrolldog.smd"
 						start_frame = 0
 						end_frame = 54
-						framerate = 30.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "scrollgods"
-						children = 
-						[
-							{
-								_class = "ExtractMotion"
-								extract_tx = true
-								extract_ty = true
-								extract_tz = false
-								extract_rz = false
-								linear = false
-								quadratic = false
-								root_bone_name = ""
-								motion_type = "Single"
-							},
-						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_sai/scrollgods.smd"
-						start_frame = 0
-						end_frame = 54
-						framerate = 30.0
+						framerate = 64.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "seal"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1044,6 +1010,74 @@
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "scrollrat"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_sai/scrolldog.smd"
+						start_frame = 0
+						end_frame = 54
+						framerate = 64.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "scrollgod"
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								root_bone_name = ""
+								motion_type = "Single"
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_sai/scrollbird.smd"
+						start_frame = 0
+						end_frame = 52
+						framerate = 45.0
 						reverse = false
 					},
 				]
