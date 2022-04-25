@@ -1053,7 +1053,7 @@
 		}
 	}
 
-		"models/sai_giant/inkgiantl.vmdl"
+		"models/striker_sai_giants/giant_base.vmdl"
 	{
 		"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
 		"PortraitLightAngles"		"0.889999 180.929993 0.000000"
@@ -1084,9 +1084,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"203.21 2.69 213.036"
-				"PortraitAngles"		"-27.13 -180 5.08"
-				"PortraitFOV"		"40"
+				"PortraitPosition"		"202.776 0 243.124"
+				"PortraitAngles"		"-15.4768 -180 -2.7"
+				"PortraitFOV"		"54"
 			}
 		}
 	}
