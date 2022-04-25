@@ -119,6 +119,15 @@
 					},
 					{
 						_class = "Attachment"
+						name = "attach_origin"
+						parent_bone = "characterroot"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
 						name = "camera"
 						children = 
 						[
@@ -132,17 +141,8 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 65.583099, -19.040314, 102.463821 ]
-						relative_angles = [ -24.519112, 167.413193, 6.767282 ]
-						weight = 1.0
-						ignore_rotation = false
-					},
-					{
-						_class = "Attachment"
-						name = "attach_origin"
-						parent_bone = "characterroot"
-						relative_origin = [ 0.0, 0.0, 0.0 ]
-						relative_angles = [ 0.0, 0.0, 0.0 ]
+						relative_origin = [ 68.226807, -10.599981, 118.15155 ]
+						relative_angles = [ 0.0, -179.999893, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -827,7 +827,7 @@
 						source_filename = "models/striker_sai/kunai_throw.smd"
 						start_frame = 0
 						end_frame = 28
-						framerate = 30.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
@@ -1009,7 +1009,7 @@
 						source_filename = "models/striker_sai/kunai_throw3.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 40.0
 						reverse = false
 					},
 					{
@@ -1078,6 +1078,26 @@
 						start_frame = 0
 						end_frame = 52
 						framerate = 45.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_itachi_idle_statue"
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_itachi/striker_itachi_idle_statue.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
 						reverse = false
 					},
 				]

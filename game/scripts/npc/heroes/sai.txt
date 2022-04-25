@@ -59,7 +59,7 @@
         "AttackRate"					"1.7"		// Speed of attack.
         "AttackAnimationPoint"			"0.4"		// Normalized time in animation cycle to attack.
         "AttackRange"					"600"		// Range within a target can be attacked.
-        "ProjectileModel"               "particles/units/heroes/haku/haku_base_attack.vpcf"
+        "ProjectileModel"               "particles/units/heroes/sai/sai_base_attack.vpcf"
         "ProjectileSpeed"               "1200"
         
 
