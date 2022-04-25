@@ -23,6 +23,7 @@
 #base "heroes/madara.txt"
 #base "heroes/haku.txt"
 #base "heroes/sai.txt"
+#base "heroes/shisui.txt"
 
 
 

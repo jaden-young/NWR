@@ -1,0 +1,30 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Shisui: Innate Passive -- Body Flicker
+	//=================================================================================================================
+	"shisui_innate_passive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/shisui/shisui_innate_passive.lua"
+		"AbilityTextureName"			"shisui_innate_passive"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"MaxLevel"						"1"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"16"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"cd_reduction_lvl"			"0.33"
+			"action_cd_reduction"		"1"
+		}
+	}
+}
