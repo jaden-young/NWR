@@ -90,20 +90,98 @@
 		vsnd_files = "sounds/weapons/hero/shadowshaman/serpent_ward.vsnd"
 	}
 
-	Hero_Sai.SuperGodDrawing.CastLayer = 
+	Hero_Sai.RatReconnaissance.Cast = 
 	{
 		type = "dota_update_default"
-		volume = 0.700000
+		volume = 1.000000
+		pitch_rand_min = -0.10000
+		pitch_rand_max = 0.10000
+		pitch = 1.0000000
+		soundlevel = 100.000000
+		limiter_on = 0.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/dark_artistry_damage_creep.vsnd"
+	}
+
+	Hero_Sai.RatReconnaissance.Rat = 
+	{
+		type = "dota_update_default"
+		volume = 0.600000
+		pitch_rand_min = -0.10000
+		pitch_rand_max = 0.10000
+		pitch = 1.0000000
+		soundlevel = 100.000000
+		limiter_on = 0.000000
+		mixgroup = "Weapons"
+		vsnd_files =
+		[
+			"sounds/heroes/sai/sai_rat_reconnaissance.vsnd",
+			"sounds/heroes/sai/sai_rat_reconnaissance2.vsnd",
+			"sounds/heroes/sai/sai_rat_reconnaissance3.vsnd"
+		]
+	}
+
+	Hero_Sai.RatReconnaissance.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 0.050000
+		pitch_rand_min = -0.10000
+		pitch_rand_max = 0.10000
+		pitch = 1.3000000
+		soundlevel = 100.000000
+		limiter_on = 0.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/ink_phantom_spawn.vsnd"
+		soundevent_layer2 = "Hero_Sai.RatReconnaissance.ImpactLayer"
+		soundevent_layer2_on = "1.000000"
+	}
+
+	Hero_Sai.RatReconnaissance.ImpactLayer = 
+	{
+		type = "dota_update_default"
+		volume = 0.300000
+		pitch_rand_min = -0.10000
+		pitch_rand_max = 0.10000
+		pitch = 1.3000000
+		soundlevel = 100.000000
+		limiter_on = 0.000000
+		mixgroup = "Weapons"
+		vsnd_files =
+		[
+			"sounds/weapons/hero/grimstroke/ink_phantom_cast.vsnd"
+			
+		]
+	}
+
+	Hero_Sai.SuperGodDrawing.Spawn = 
+	{
+		type = "dota_update_default"
+		volume = 0.500000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
-		pitch = 0.850000
+		pitch = 0.950000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/grimstroke/ink_phantom_cast.vsnd"
+		soundevent_layer2 = "Hero_Sai.SuperGodDrawing.SpawnLayer"
+		soundevent_layer2_on = "1.000000"
+	}
+
+	Hero_Sai.SuperGodDrawing.SpawnLayer = 
+	{
+		type = "dota_update_default"
+		volume = 0.400000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
 		vsnd_files = 
 		[
 			"sounds/weapons/hero/grimstroke/dark_artistry_layer01.vsnd",
 			"sounds/weapons/hero/grimstroke/dark_artistry_layer02.vsnd",
-			"sounds/weapons/hero/grimstroke/dark_artistry_layer03.vsnd"
+			"sounds/weapons/hero/grimstroke/dark_artistry_layer03.vsnd",
+			"sounds/weapons/hero/grimstroke/dark_artistry_layer04.vsnd"
 		]
 	}
 

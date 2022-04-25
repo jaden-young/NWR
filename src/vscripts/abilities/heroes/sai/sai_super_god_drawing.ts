@@ -9,7 +9,7 @@ export class sai_super_god_drawing extends BaseAbility {
     /****************************************/
 
     Precache(context: CScriptPrecacheContext): void{
-        //PrecacheResource("particle",  "particles/units/heroes/sai/sai_super_god_drawing_buff.vpcf", context);
+        PrecacheResource("particle",  "particles/units/heroes/sai/sai_super_god_drawing_spawn.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context);
         //PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
     }
@@ -49,5 +49,11 @@ export class sai_super_god_drawing extends BaseAbility {
 
         if (is_agyo) this.agyo = unit;
         else this.ungyo = unit;
+
+        EmitSoundOn("Hero_Sai.SuperGodDrawing.Spawn", unit);
+        ParticleManager.ReleaseParticleIndex(
+            ParticleManager.CreateParticle("particles/units/heroes/sai/sai_super_god_drawing_spawn.vpcf", ParticleAttachment.ABSORIGIN, unit)
+        );
+        
     }
 }
