@@ -55,7 +55,7 @@
 						source_filename = "models/sai_summon/sai_rat_anim.fbx"
 						start_frame = 0
 						end_frame = 30
-						framerate = 60.0
+						framerate = 75.0
 						reverse = false
 					},
 				]

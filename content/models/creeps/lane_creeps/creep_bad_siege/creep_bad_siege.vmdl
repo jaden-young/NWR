@@ -73,6 +73,26 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "camera"
+						children = 
+						[
+							{
+								_class = "Attachment Camera Preview"
+								fov = 54
+								screen_width_for_aspect = 512
+								screen_height_for_aspect = 384
+								preview_scale = 0.3
+								background_color = [ 70, 70, 70 ]
+							},
+						]
+						parent_bone = ""
+						relative_origin = [ 211.202972, -8.810516, 142.082977 ]
+						relative_angles = [ 0.0, 179.999893, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 				]
 			},
 			{
@@ -216,7 +236,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_juubi_siege_idle"
-						activity_name = "ACT_DOTA_IDLE_STATUE"
+						activity_name = "ACT_DOTA_IDLE"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
