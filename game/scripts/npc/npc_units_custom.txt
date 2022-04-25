@@ -2959,7 +2959,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creature"					// Class of entity of link to.
-		"Model"						"models/sai_giant/inkgiantl.vmdl"	// Model.
+		"Model"						"models/striker_sai_giants/giant_base.vmdl"	// Model.
 		"SoundSet"					"ChakraPunch"					// Name of sound set.
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 		"ModelScale"				"0.7"
@@ -3102,7 +3102,7 @@
 		// General
 		//
 		"BaseClass"					"npc_dota_creature"					// Class of entity of link to.
-		"Model"						"models/sai_giant/inkgiantr.vmdl"	// Model.
+		"Model"						"models/striker_sai_giants/giant_base.vmdl"	// Model.
 		"SoundSet"					"ChakraPunch"						// Name of sound set.
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
 		"ModelScale"				"0.7"
