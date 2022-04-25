@@ -39,7 +39,7 @@
 		{
 			_class = "C_INIT_RandomRadius"
 			m_flRadiusMin = 32.0
-			m_flRadiusMax = 152.0
+			m_flRadiusMax = 92.0
 		},
 		{
 			_class = "C_INIT_CreateWithinSphere"
