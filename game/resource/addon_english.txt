@@ -1591,6 +1591,31 @@
 
 
 		//--------------------
+		//Shisui
+		//--------------------
+		"npc_dota_hero_shisui" 						"Shisui"
+		"npc_dota_hero_sai_lore"  					"has a cool green susanoo"
+
+		// Innate: Body Flicker
+		"DOTA_Tooltip_ability_shisui_innate_passive"						"Body Flicker"
+		"DOTA_Tooltip_ability_shisui_innate_passive_Description"			"Shisui dodges the next Basic Attack or Ability from an enemy Hero, negating its damage. Each Basic Attack or ability cast reduces this ability’s cooldown by 1 second."
+
+		//=================================================================================================================
+		// Shisui Talent Tree
+		//=================================================================================================================	
+		// 25: +2 Afterimage Clone Attacks 	/ 	Kotoamatsukami Grants Invisibility
+		// 20: +60 Fireball Burn Damage 	/ 	+225 Halo Dance Range 
+		// 15: +13 Strength 				/ 	+40 Halo Dance Damage
+		// 10: +1.75 Mana Regen 			/ 	+9 Agility
+
+		"DOTA_Tooltip_Ability_special_bonus_shisui_1"						"+{s:value} Halo Dance Damage"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_2"						"+{s:value} Halo Dance Range"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_3"						"+{s:value} Fireball Burn Damage"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_4"						"+{s:value} Kotoamatsukami Grants Invisibility"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_5"						"+{s:value} Afterimage Clone Attacks"
+
+
+		//--------------------
 		//Anko
 		//--------------------
 		"npc_dota_hero_anko"  									"Anko"

@@ -1,0 +1,3 @@
+#base "shisui_innate_passive.txt"
+
+#base "talents.txt"

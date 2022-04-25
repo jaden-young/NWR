@@ -55,7 +55,9 @@ export class modifier_sai_bash extends BaseModifier
         let target = event.target;
         let ability = this.GetAbility();
 
-        if (!attacker || !target || !ability || !RollPseudoRandomPercentage(this.bash_chance!, PseudoRandom.CUSTOM_GAME_1, attacker)) return 0;
+        if (!attacker || !target || !ability) return 0;
+        if (target.IsBuilding() || target.IsOther() || !RollPseudoRandomPercentage(this.bash_chance!, PseudoRandom.CUSTOM_GAME_1, attacker)) return 0;
+
 
         target.AddNewModifier(attacker, ability, "modifier_bashed", {duration: this.bash_duration! * (1 - target.GetStatusResistance())});
         EmitSoundOn("Hero_Sai.Summons.Bash", target);
