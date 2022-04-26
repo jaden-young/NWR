@@ -102,18 +102,20 @@
 			m_ModelList = 
 			[
 				{
-					m_model = resource:"models/props_gameplay/disarm.vmdl"
+					m_model = resource:"models/sai_summon/sai_dog_face_base.vmdl"
 				},
 			]
 			m_bAnimated = true
 			m_nLOD = 1
 			m_bForceLoopingAnimation = true
+			m_bIgnoreNormal = true
 		},
 	]
 	m_Children = 
 	[
 		{
 			m_ChildRef = resource:"particles/units/heroes/sai/sai_disarm_fx.vpcf"
+			m_bDisableChild = true
 		},
 	]
 }
