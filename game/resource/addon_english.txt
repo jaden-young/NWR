@@ -1597,25 +1597,32 @@
 		"npc_dota_hero_sai_lore"  					"has a cool green susanoo"
 
 		// Innate: Body Flicker
-		"DOTA_Tooltip_ability_shisui_innate_passive"						"Body Flicker"
-		"DOTA_Tooltip_ability_shisui_innate_passive_Description"			"Shisui dodges the next Basic Attack or Ability from an enemy Hero, negating its damage. Each Basic Attack or ability cast reduces this ability’s cooldown by 1 second."
+		"DOTA_Tooltip_ability_shisui_innate_passive"								"Body Flicker"
+		"DOTA_Tooltip_ability_shisui_innate_passive_Description"					"Shisui dodges the next Basic Attack or Ability from an enemy Hero, negating its damage. Each Basic Attack or ability cast reduces this ability’s cooldown by 1 second."
 
 		// Great Fireball Technique (Katon: Gokakyu no Jutsu)
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique"					"Great Fireball Technique"
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_Description"		"Sends out a fireball dealing Magic Damage to enemies in a line. Enemies hit by the wave receive a short Movement Speed Slow and take Magic Damage every %dps_interval% second.<br><br>Each Basic Attack or ability cast reduces the next cast time by %cast_time_per_action%s if casted within the next %action_window% seconds to a minimum of %min_cast_point%s."
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_Lore"				""
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_damage"			"DAMAGE:"
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_burn_damage"		"BURN DAMAGE:"
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_move_slow"		"%MOVE SLOW:"
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_duration"			"DURATION:"
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_radius"			"RADIUS:"
-		"DOTA_Tooltip_ability_shisui_great_fireball_technique_abilitycastrange"	"RANGE:"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique"						"Great Fireball Technique"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_Description"			"Sends out a fireball dealing Magic Damage to enemies in a line. Enemies hit by the wave receive a short Movement Speed Slow and take Magic Damage every %dps_interval% second.<br><br>Each Basic Attack or ability cast reduces the next cast time by %cast_time_per_action%s if casted within the next %action_window% seconds to a minimum of %min_cast_point%s."
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_Lore"					""
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_burn_damage"			"BURN DAMAGE:"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_move_slow"			"%MOVE SLOW:"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_duration"				"DURATION:"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_shisui_great_fireball_technique_abilitycastrange"		"RANGE:"
 
 		"DOTA_Tooltip_modifier_shisui_great_fireball_technique_tracker"				"Great Fireball Technique"
 		"DOTA_Tooltip_modifier_shisui_great_fireball_technique_tracker_Description"	"Each stack reduces Great Fireball Technique Cast-Point by %fMODIFIER_PROPERTY_TOOLTIP%."
 
-
-		
+		// Afterimage Clone (Zanzo Bunshin)
+		"DOTA_Tooltip_ability_shisui_afterimage_clone"								"Afterimage Clone"
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_Description"					"Shisui leaves behind an afterimage as he dashes to attack enemies in a target area. After dealing the attacks he will return to the afterimage’s location.<br><br>Consecutive attacks to the same target deal reduced damage."
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_Lore"							""
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_Note0"						"Attacks prioritize heroes followed by new targets."
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
 
 		//=================================================================================================================
 		// Shisui Talent Tree

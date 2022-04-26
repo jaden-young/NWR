@@ -11,43 +11,39 @@
 		"ScriptFile"                    "abilities/heroes/shisui/shisui_afterimage_clone.lua"
 		"AbilityTextureName"			"shisui_afterimage_clone"
 
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"				"1"
 
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1600"
+		"AbilityCastRange"				"500 600 700 800"
 		"AbilityCastPoint"				"0"
-		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_1"
+		"AbilityCastAnimation"			"ACT_DOTA_CAST_ABILITY_2"
 
 		// Time
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"16 14 12 10"
+		"AbilityCooldown"				"20 15 10 5"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"90 100 110 120"
+		"AbilityManaCost"				"50"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage"					"60 130 200 270"
-			"burn_damage"
+			"attack_count"
 			{
-				"value"						"10 15 20 25"
-				"LinkedSpecialBonus"		"special_bonus_shisui_3"
+				"value"						"3 4 5 6"
+				"LinkedSpecialBonus"		"special_bonus_shisui_5"
 			}
-			"move_slow"					"15 20 25 30"
-			"duration"					"3"
-			"dps_interval"				"1.0"
-			"speed"						"1200"
-			"radius"					"240"
+			"same_target_penalty"		"70"
+			"radius"					"350"
 		}
 	}
 }

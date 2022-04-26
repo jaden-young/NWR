@@ -27,8 +27,8 @@
 
         // Abilities
         //----------------------------------------------------------------
-        "Ability1"				"shisui_great_fireball_technique"		// Ability 1
-        "Ability2"				""		// Ability 2
+        "Ability1"				"shisui_great_fireball_technique"	// Ability 1
+        "Ability2"				"shisui_afterimage_clone"		    // Ability 2
         "Ability3"				""		// Ability 3
         "Ability4"				"generic_hidden"
         "Ability5"				"generic_hidden"
