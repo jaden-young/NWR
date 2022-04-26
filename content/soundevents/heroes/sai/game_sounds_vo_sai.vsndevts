@@ -14,7 +14,7 @@
 	}
 
 
-	    VO_Hero_Sai.SuperGodDrawing.Cast = 
+	VO_Hero_Sai.SuperGodDrawing.Cast = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 

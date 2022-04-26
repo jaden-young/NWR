@@ -1,3 +1,4 @@
 #base "shisui_innate_passive.txt"
+#base "shisui_great_fireball_technique.txt"
 
 #base "talents.txt"

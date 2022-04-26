@@ -1,0 +1,57 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Hero_Shisui.GreatFireball.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/huskar/inner_fire.vsnd"
+		soundevent_layer2 = "Hero_Shisui.GreatFireball.CastLayer"
+		soundevent_layer2_on = "1.000000"
+		soundevent_layer3 = "Hero_Shisui.GreatFireball.CastBG"
+		soundevent_layer3_on = "1.000000"
+	}
+
+	Hero_Shisui.GreatFireball.CastLayer = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 0.5000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/huskar/burning_spear_cast.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.CastBG = 
+	{
+		type = "dota_update_default"
+		volume = 0.250000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 3.5000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/huskar/burning_spear.vsnd"
+	}
+
+	
+
+	Hero_Shisui.GreatFireball.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.00000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/underlord/firestorm_start.vsnd"
+	}
+}
+

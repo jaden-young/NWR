@@ -104,6 +104,15 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "attach_mouth"
+						parent_bone = "left_collar"
+						relative_origin = [ -10.052223, -2.073652, -17.118462 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 				]
 			},
 			{
