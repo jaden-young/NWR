@@ -128,6 +128,13 @@ export class sai_super_beast_drawing extends BaseAbility
         this.drawing_projectiles[extraData.id as number][target.entindex()] = true;
 
         EmitSoundOnLocationWithCaster(location, "Hero_Sai.SuperBeastDrawing.Impact", caster);
+
+        if ((target.GetAbsOrigin() - caster.GetAbsOrigin() as Vector).Length2D() >= this.GetSpecialValueFor("point_blank_radius")) {
+            let impact_fx = ParticleManager.CreateParticle("particles/units/heroes/sai/sai_super_beast_drawing_projh.vpcf", ParticleAttachment.ABSORIGIN, target);
+            ParticleManager.SetParticleControl(impact_fx, 3, target.GetAbsOrigin());
+            ParticleManager.ReleaseParticleIndex(impact_fx);
+        }
+
         return true;
     }
 

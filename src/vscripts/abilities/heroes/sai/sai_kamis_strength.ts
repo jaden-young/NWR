@@ -17,9 +17,6 @@ export class sai_kamis_strength extends BaseAbility {
         caster.AddNewModifier(caster, this, "modifier_sai_kamis_strength", {duration: this.GetSpecialValueFor("duration")});
         
         EmitSoundOn("Hero_Sai.KamisStrength.Cast", caster);
-        ParticleManager.ReleaseParticleIndex(
-            ParticleManager.CreateParticle("particles/units/heroes/sai/kami_strength.vpcf", ParticleAttachment.ABSORIGIN, caster)
-        );
     }
 }
 

@@ -20,6 +20,7 @@ export class sai_kamis_strength_remote extends BaseAbility {
     Spawn(): void {
         if (!IsServer()) return;
         this.SetLevel(1);
+        this.SetActivated(false);
     }
 
     /****************************************/
@@ -29,19 +30,31 @@ export class sai_kamis_strength_remote extends BaseAbility {
         let drawing_ability = caster.FindAbilityByName("sai_super_god_drawing") as SuperGodDrawingAbility;
 
         if (!drawing_ability) return;
-        
-        this.CastKamisStrength(drawing_ability.agyo);
-        this.CastKamisStrength(drawing_ability.ungyo);
+
+        let cd1 = this.CastKamisStrength(drawing_ability.agyo);
+        let cd2 = this.CastKamisStrength(drawing_ability.ungyo);
+
+        if (cd1 != -1 || cd2 != -1) {
+            this.EndCooldown()
+            this.StartCooldown(cd1 > cd2 ? cd2 : cd1);
+        }
     }
 
-    CastKamisStrength(unit: CDOTA_BaseNPC | undefined): void {
-        if (!unit || unit.IsNull() || !unit.IsAlive()) return;
+    CastKamisStrength(unit: CDOTA_BaseNPC | undefined): number {
+        if (!unit || unit.IsNull() || !unit.IsAlive()) return -1;
 
         let ability = unit.FindAbilityByName("sai_kamis_strength");
 
-        if (ability && ability.IsCooldownReady() && !unit.IsSilenced()) {
-            ability.OnSpellStart();
-            ability.UseResources(true, false, true);
+        if (ability && !unit.IsSilenced()) {
+            if (ability.IsCooldownReady()) {
+                ability.OnSpellStart();
+                ability.UseResources(true, false, true);
+                return ability.GetCooldownTimeRemaining();
+            } else {
+                return ability.GetCooldownTimeRemaining();
+            }
         }
+
+        return -1
     }
 }

@@ -39,6 +39,7 @@
 			"root_duration"			"1.5 2.0 2.5 3.0"
 			"speed"					"1300"
 			"radius"				"220"
+			"point_blank_radius"	"200"
 		}
 	}
 }

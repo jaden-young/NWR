@@ -156,7 +156,7 @@ export class sai_rat_reconnaissance extends BaseAbility
             let impact_fx = ParticleManager.CreateParticle("particles/units/heroes/sai/sai_rat_reconnaissance_impact.vpcf", ParticleAttachment.CUSTOMORIGIN, undefined);
             ParticleManager.SetParticleControl(impact_fx, 0, rat.GetAbsOrigin());
             ParticleManager.ReleaseParticleIndex(impact_fx);
-            StopSoundOn("Hero_Sai.RatReconnaissance.Cast", rat)
+            StopSoundOn("Hero_Sai.RatReconnaissance.Rat", rat)
             UTIL_Remove(rat)
         }
     }
