@@ -46,6 +46,7 @@ export class hidan_soul_hunt extends BaseAbility
         }
 
         ApplyDamage(damage_table)
+        damage_table.damage_flags = DamageFlag.NONE;
 
         let enemies = FindUnitsInRadius(
             caster.GetTeamNumber(),
