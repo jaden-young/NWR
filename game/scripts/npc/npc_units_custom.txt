@@ -2962,7 +2962,7 @@
 		"Model"						"models/striker_sai_giants/giant_base.vmdl"	// Model.
 		"SoundSet"					"ChakraPunch"					// Name of sound set.
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
-		"ModelScale"				"0.7"
+		"ModelScale"				"0.65"
 		"Level"						"1"
 		"ConsideredHero"			"1"
 		
@@ -3012,7 +3012,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"800"		// Base health.
-		"StatusHealthRegen"			"20"		// Health regeneration rate.
+		"StatusHealthRegen"			"8"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
 
@@ -3040,7 +3040,7 @@
 		// Misc
 		//----------------------------------------------------------------
 		"include_keys_from" 		"npc_dota_sai_agyo1"
-		"ModelScale" 				"0.85"
+		"ModelScale" 				"0.675"
 		"Level"						"2"
 
 		// Armor
@@ -3060,7 +3060,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"1600"		// Base health.
-		"StatusHealthRegen"			"40"		// Health regeneration rate.
+		"StatusHealthRegen"			"16"		// Health regeneration rate.
 	}
 
 	//=================================================================================
@@ -3071,7 +3071,7 @@
 		// Misc
 		//----------------------------------------------------------------
 		"include_keys_from" 		"npc_dota_sai_agyo1"
-		"ModelScale" 				"1"
+		"ModelScale" 				"0.7"
 		"Level"						"3"
 
 		// Armor
@@ -3091,7 +3091,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"2400"		// Base health.
-		"StatusHealthRegen"			"60"		// Health regeneration rate.
+		"StatusHealthRegen"			"24"		// Health regeneration rate.
 	}
 
 	//=================================================================================
@@ -3105,7 +3105,7 @@
 		"Model"						"models/striker_sai_giants/giant_base.vmdl"	// Model.
 		"SoundSet"					"ChakraPunch"						// Name of sound set.
 		"GameSoundsFile"			"soundevents/weapons/game_sounds_chakrapunch.vsndevts"
-		"ModelScale"				"0.7"
+		"ModelScale"				"0.65"
 		"Level"						"1"
 		"ConsideredHero"			"1"
 		
@@ -3155,7 +3155,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"800"		// Base health.
-		"StatusHealthRegen"			"20"		// Health regeneration rate.
+		"StatusHealthRegen"			"8"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.
 
@@ -3183,7 +3183,7 @@
 		// Misc
 		//----------------------------------------------------------------
 		"include_keys_from" 		"npc_dota_sai_ungyo1"
-		"ModelScale" 				"0.85"
+		"ModelScale" 				"0.675"
 		"Level"						"2"
 
 		// Armor
@@ -3202,7 +3202,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"1600"		// Base health.
-		"StatusHealthRegen"			"40"		// Health regeneration rate.
+		"StatusHealthRegen"			"16"		// Health regeneration rate.
 	}
 
 	//=================================================================================
@@ -3213,7 +3213,7 @@
 		// Misc
 		//----------------------------------------------------------------
 		"include_keys_from" 		"npc_dota_sai_ungyo1"
-		"ModelScale" 				"1"
+		"ModelScale" 				"0.7"
 		"Level"						"3"
 
 		// Armor
@@ -3232,6 +3232,6 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"2400"		// Base health.
-		"StatusHealthRegen"			"60"		// Health regeneration rate.
+		"StatusHealthRegen"			"24"		// Health regeneration rate.
 	}
 }

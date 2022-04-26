@@ -4,7 +4,7 @@ import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "..
 export class sai_kamis_strength extends BaseAbility {
 
     Precache(context: CScriptPrecacheContext): void{
-        //PrecacheResource("particle",  "", context);
+        PrecacheResource("particle",  "particles/units/heroes/sai/kami_strength.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context);
         //PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
     }
@@ -18,7 +18,7 @@ export class sai_kamis_strength extends BaseAbility {
         
         EmitSoundOn("Hero_Sai.KamisStrength.Cast", caster);
         ParticleManager.ReleaseParticleIndex(
-            ParticleManager.CreateParticle("particles/neutral_fx/hellbear_rush_cast.vpcf", ParticleAttachment.ABSORIGIN, caster)
+            ParticleManager.CreateParticle("particles/units/heroes/sai/kami_strength.vpcf", ParticleAttachment.ABSORIGIN, caster)
         );
     }
 }
@@ -60,7 +60,7 @@ export class modifier_sai_kamis_strength extends BaseModifier
     /****************************************/
 
     GetEffectName(): string {
-        return "particles/neutral_fx/hellbear_rush.vpcf";
+        return "particles/units/heroes/sai/kami_strength.vpcf";
     }
 
     /****************************************/

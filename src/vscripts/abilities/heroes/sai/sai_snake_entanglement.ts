@@ -30,6 +30,13 @@ export class sai_snake_entanglement extends BaseAbility
 
     /****************************************/
    
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Sai.SnakeEntanglement.PreCast", this.GetCaster());
+        return true
+    }
+
+    /****************************************/
+
     OnSpellStart(): void {
         let position = this.GetCursorPosition();
         let projectiles = this.GetSpecialValueFor("snake_projectiles");

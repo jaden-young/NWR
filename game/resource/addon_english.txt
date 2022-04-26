@@ -2916,6 +2916,8 @@
 		"npc_dota_hero_kankuro_npedesc1"	"Summons puppets to disable his foes and protect his allies."
 		"npc_dota_hero_gaara_npedesc1"		"Crushes enemies with waves of damage dealing sand attacks."
 		"npc_dota_hero_haku_npedesc1"		"Ranged support that cripples enemies with unrelenting hails of needles."
+		"npc_dota_hero_shisui_npedesc1"		"Elusive damage dealer with powerful Fire Release and Sharingan abilities."
+		"npc_dota_hero_sai_npedesc1"		"Damages and disables enemies with drawn summons."
 		
 		//Custom Buildings
 		"npc_dota_goodguys_fort"                                                    "Hokage Building"

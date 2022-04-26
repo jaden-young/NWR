@@ -64,6 +64,7 @@ export class GameMode {
         PrecacheResource("soundfile", "soundevents/heroes/guy_soundevents.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/heroes/onoki_soundevents.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/heroes/raikage_soundevents.vsndevts", context)
+        PrecacheResource("soundfile", "soundevents/heroes/sai_soundevents.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/heroes/sakura_soundevents.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/heroes/sasuke_soundevents.vsndevts", context)
         PrecacheResource("soundfile", "soundevents/heroes/shikamaru_soundevents.vsndevts", context)

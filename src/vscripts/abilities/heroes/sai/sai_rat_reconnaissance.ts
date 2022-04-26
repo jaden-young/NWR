@@ -23,7 +23,17 @@ export class sai_rat_reconnaissance extends BaseAbility
         PrecacheResource("particle", "particles/units/heroes/sai/sai_rat_reconnaissance_cast.vpcf", context);
         PrecacheResource("particle", "particles/units/heroes/sai/sai_rat_reconnaissance_impact.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/sai/sai_rats_talking.vsndevts", context);
         //PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
+    }
+
+
+    /****************************************/
+
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("Hero_Sai.RatReconnaissance.PreCast", this.GetCaster());
+        EmitSoundOn("sai_rats_talking", this.GetCaster());
+        return true
     }
 
     /****************************************/

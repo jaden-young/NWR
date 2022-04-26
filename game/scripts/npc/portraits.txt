@@ -1082,9 +1082,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"202.776 0 243.124"
+				"PortraitPosition"		"202.776 -8 243.124"
 				"PortraitAngles"		"-15.4768 -180 -2.7"
-				"PortraitFOV"		"54"
+				"PortraitFOV"		"42"
 			}
 		}
 	}
@@ -1120,9 +1120,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"203.21 2.69 213.036"
-				"PortraitAngles"		"-27.13 -180 5.08"
-				"PortraitFOV"		"40"
+				"PortraitPosition"		"202.776 -8 243.124"
+				"PortraitAngles"		"-15.4768 -180 -2.7"
+				"PortraitFOV"		"42"
 			}
 		}
 	}
@@ -1152,15 +1152,15 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"1.6000000"
+		"PortraitLightScale"		"1.4000000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"68.22 -10.6 118.152"
-				"PortraitAngles"		"0 -180 0"
-				"PortraitFOV"		"54"
+				"PortraitPosition"		"104.653 -58.5000 98.9485" // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitAngles"		"-15.1658 152.568 4.14216" 
+				"PortraitFOV"		"25.5"
 			}
 		}
 	}

@@ -20,10 +20,20 @@ export class sai_super_beast_drawing extends BaseAbility
 
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle", "particles/units/heroes/sai/sai_super_beast_drawing_proj.vpcf", context);
+        PrecacheResource("particle", "particles/units/heroes/sai/sai_disarm.vpcf", context)
         PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
     }
 
+    /****************************************/
+
+    OnAbilityPhaseStart(): boolean {
+        EmitSoundOn("VO_Hero_Sai.SuperBeastDrawing.Cast", this.GetCaster());
+        EmitSoundOn("Hero_Sai.SuperBeastDrawing.PreCast", this.GetCaster());
+        return true
+    }
+
+    
     /****************************************/
 
     OnSpellStart(): void {
@@ -62,6 +72,7 @@ export class sai_super_beast_drawing extends BaseAbility
     	beast.FaceTowards(position);
         beast.StartGesture(GameActivity.DOTA_RUN);
         EmitSoundOn("Hero_Sai.SuperBeastDrawing.Cast", beast);
+        EmitSoundOn("Hero_Sai.SuperBeastDrawing.Roar", beast);
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
@@ -147,7 +158,7 @@ export class modifier_sai_super_beast_drawing extends BaseModifier
     /****************************************/
 
     GetEffectName(): string {
-        return "particles/units/heroes/hero_snapfire/hero_snapfire_disarm.vpcf";
+        return "particles/units/heroes/sai/sai_disarm.vpcf";
     }
 
     /****************************************/

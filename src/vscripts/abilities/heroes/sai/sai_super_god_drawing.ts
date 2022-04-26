@@ -11,10 +11,18 @@ export class sai_super_god_drawing extends BaseAbility {
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle",  "particles/units/heroes/sai/sai_super_god_drawing_spawn.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_sai.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/sai/game_sounds_vo_sai.vsndevts", context);
     }
 
     /****************************************/
+
+        OnAbilityPhaseStart(): boolean {
+            EmitSoundOn("Hero_Sai.SuperGodDrawing.PreCast", this.GetCaster());
+            EmitSoundOn("VO_Hero_Sai.SuperGodDrawing.Cast", this.GetCaster());
+            return true
+        }
+    
+    /****************************************/    
 
     OnSpellStart(): void {
         let caster = this.GetCaster();
@@ -30,9 +38,6 @@ export class sai_super_god_drawing extends BaseAbility {
 
         
         EmitSoundOn("Hero_Sai.SuperGodDrawing.Cast", caster);
-        ParticleManager.ReleaseParticleIndex(
-            ParticleManager.CreateParticle("particles/neutral_fx/hellbear_rush_cast.vpcf", ParticleAttachment.ABSORIGIN, caster)
-        );
     }
 
     SetupUnit(unit: CDOTA_BaseNPC, is_agyo: boolean) {
@@ -50,7 +55,6 @@ export class sai_super_god_drawing extends BaseAbility {
         if (is_agyo) this.agyo = unit;
         else this.ungyo = unit;
 
-        EmitSoundOn("Hero_Sai.SuperGodDrawing.Spawn", unit);
         ParticleManager.ReleaseParticleIndex(
             ParticleManager.CreateParticle("particles/units/heroes/sai/sai_super_god_drawing_spawn.vpcf", ParticleAttachment.ABSORIGIN, unit)
         );

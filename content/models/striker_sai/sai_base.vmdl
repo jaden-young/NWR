@@ -133,7 +133,7 @@
 						[
 							{
 								_class = "Attachment Camera Preview"
-								fov = 54
+								fov = 30
 								screen_width_for_aspect = 512
 								screen_height_for_aspect = 384
 								preview_scale = 0.3
@@ -141,8 +141,8 @@
 							},
 						]
 						parent_bone = ""
-						relative_origin = [ 68.226807, -10.599981, 118.15155 ]
-						relative_angles = [ 0.0, -179.999893, 0.0 ]
+						relative_origin = [ 104.652504, -56.693222, 96.948486 ]
+						relative_angles = [ -15.165792, 149.568039, 4.142156 ]
 						weight = 1.0
 						ignore_rotation = false
 					},
@@ -807,7 +807,7 @@
 						source_filename = "models/striker_sai/idle.smd"
 						start_frame = 0
 						end_frame = 52
-						framerate = 20.0
+						framerate = 12.0
 						reverse = false
 					},
 					{

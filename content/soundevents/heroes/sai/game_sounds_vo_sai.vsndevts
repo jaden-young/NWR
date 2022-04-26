@@ -5,7 +5,22 @@
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-			
+		"sounds/heroes/sai/giga_01.vsnd",
+		"sounds/heroes/sai/giga_02.vsnd",
+		"sounds/heroes/sai/giga_03.vsnd"	
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}
+
+
+	    VO_Hero_Sai.SuperGodDrawing.Cast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+		"sounds/heroes/sai/ult_01.vsnd",
+		"sounds/heroes/sai/ult_02.vsnd"
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
