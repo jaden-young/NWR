@@ -61,7 +61,7 @@ export class modifier_shisui_kotoamatsukami extends BaseModifier
             this.radius!,
             ability!.GetAbilityTargetTeam(),
             ability!.GetAbilityTargetType(),
-            UnitTargetFlags.NO_INVIS,
+            UnitTargetFlags.NONE,
             FindOrder.ANY,
             false
         );
@@ -154,12 +154,7 @@ export class modifier_shisui_kotoamatsukami_debuff extends BaseModifier
         EmitSoundOn("Hero_Shisui.Kotoamatsukami.Target", parent);
 
         
-        ExecuteOrderFromTable({
-            OrderType: UnitOrder.MOVE_TO_TARGET,
-            UnitIndex: this.GetParent()!.entindex(),
-            TargetIndex: this.GetCaster()!.entindex(),
-            Queue: false
-        })
+        parent.MoveToNPC(caster);
 
         let gaze_fx = ParticleManager.CreateParticle("particles/units/heroes/shisui/shisui_kotoamatsukami.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, parent)
         ParticleManager.SetParticleControlEnt(gaze_fx, 1, parent, ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", parent.GetAbsOrigin(), true)
@@ -181,7 +176,7 @@ export class modifier_shisui_kotoamatsukami_debuff extends BaseModifier
     CheckState(): Partial<Record<ModifierState, boolean>> {
         return {
             [ModifierState.COMMAND_RESTRICTED]: true,
-            [ModifierState.FEARED]: true,
+            [ModifierState.FEARED]: true
         };
     }
 }
