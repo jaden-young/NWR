@@ -49,7 +49,6 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamik.vpcf"
-			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamib.vpcf"
