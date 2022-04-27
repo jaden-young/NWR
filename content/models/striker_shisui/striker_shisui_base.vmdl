@@ -935,7 +935,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_seal_in_fireball2"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -983,7 +983,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1011,7 +1011,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1039,7 +1039,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1067,7 +1067,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
