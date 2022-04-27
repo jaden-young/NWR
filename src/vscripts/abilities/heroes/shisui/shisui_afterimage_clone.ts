@@ -40,7 +40,7 @@ export class shisui_afterimage_clone extends BaseAbility {
             radius,
             this.GetAbilityTargetTeam(),
             this.GetAbilityTargetType(),
-            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE,
+            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE + UnitTargetFlags.MAGIC_IMMUNE_ENEMIES,
             FindOrder.ANY,
             false
         );
@@ -69,7 +69,7 @@ export class shisui_afterimage_clone extends BaseAbility {
             radius,
             this.GetAbilityTargetTeam(),
             UnitTargetType.HERO,
-            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE,
+            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE + UnitTargetFlags.MAGIC_IMMUNE_ENEMIES,
             FindOrder.ANY,
             false
         );
@@ -134,7 +134,7 @@ export class shisui_afterimage_clone extends BaseAbility {
             radius,
             this.GetAbilityTargetTeam(),
             this.GetAbilityTargetType(),
-            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE,
+            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE + UnitTargetFlags.MAGIC_IMMUNE_ENEMIES,
             FindOrder.ANY,
             false
         );
@@ -146,7 +146,7 @@ export class shisui_afterimage_clone extends BaseAbility {
             radius,
             this.GetAbilityTargetTeam(),
             UnitTargetType.HERO,
-            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE,
+            UnitTargetFlags.NO_INVIS + UnitTargetFlags.NOT_ATTACK_IMMUNE + UnitTargetFlags.MAGIC_IMMUNE_ENEMIES,
             FindOrder.ANY,
             false
         );

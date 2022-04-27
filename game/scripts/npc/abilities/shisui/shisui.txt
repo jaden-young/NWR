@@ -1,5 +1,6 @@
 #base "shisui_innate_passive.txt"
 #base "shisui_great_fireball_technique.txt"
 #base "shisui_afterimage_clone.txt"
+#base "shisui_halo_dance.txt"
 
 #base "talents.txt"
