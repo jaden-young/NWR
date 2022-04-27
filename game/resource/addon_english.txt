@@ -1616,13 +1616,15 @@
 
 		// Afterimage Clone (Zanzo Bunshin)
 		"DOTA_Tooltip_ability_shisui_afterimage_clone"								"Afterimage Clone"
-		"DOTA_Tooltip_ability_shisui_afterimage_clone_Description"					"Shisui leaves behind an afterimage as he dashes to attack enemies in a target area. After dealing the attacks he will return to the afterimage’s location.<br><br>Consecutive attacks to the same target deal reduced damage."
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_Description"					"Shisui leaves behind an afterimage as he dashes to attack enemies in a target area. After dealing the attacks he will return to the afterimage’s location.<br><br>Consecutive attacks to the same target deal %same_target_penalty%%% less damage."
 		"DOTA_Tooltip_ability_shisui_afterimage_clone_Lore"							""
 		"DOTA_Tooltip_ability_shisui_afterimage_clone_Note0"						"Attacks prioritize heroes followed by new targets."
-		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
-		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
-		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
-		"DOTA_Tooltip_ability_shisui_afterimage_clone_"								""
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_attack_count"					"ATTACK COUNT:"
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_radius"						"RADIUS:"
+		"DOTA_Tooltip_ability_shisui_afterimage_clone_abilitycastrange"				"RANGE:"
+
+		"DOTA_Tooltip_modifier_shisui_afterimage_clone"								"Afterimage Clone"
+		"DOTA_Tooltip_modifier_shisui_afterimage_clone_Description"					"Attacking enemies in the targeted area of effect."
 
 		//=================================================================================================================
 		// Shisui Talent Tree
