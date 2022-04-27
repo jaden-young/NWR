@@ -40,8 +40,6 @@
 		vsnd_files = "sounds/weapons/hero/huskar/burning_spear.vsnd"
 	}
 
-	
-
 	Hero_Shisui.GreatFireball.Impact = 
 	{
 		type = "dota_update_default"

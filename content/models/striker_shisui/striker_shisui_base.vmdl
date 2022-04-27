@@ -935,7 +935,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_seal_in_fireball2"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -949,7 +949,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball2.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 26.0
 						reverse = false
 					},
 					{
@@ -969,7 +969,231 @@
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 25.0
+						framerate = 23.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball2_slow"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "slow"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 32.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball2_fast"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "fast"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 43.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball2_faster"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "faster"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 64.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball2_superfast"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "superfast"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball2.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 125.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball_slow"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "slow"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 29.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball_fast"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "fast"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 38.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball_faster"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "faster"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 58.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "striker_shisui_seal_in_fireball_superfast"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "superfast"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
+						start_frame = -1
+						end_frame = -1
+						framerate = 118.0
 						reverse = false
 					},
 				]

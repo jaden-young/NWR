@@ -7,12 +7,16 @@ interface extra {
 @registerAbility()
 export class shisui_great_fireball_technique extends BaseAbility {
 
+    precast_vo: boolean = false;
+
+    /****************************************/
+
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle",  "particles/units/heroes/sasuke/sasuke_great_fireball_technique_technique.vpcf", context);
         PrecacheResource("particle",  "particles/units/heroes/sasuke/sasuke_great_fireball_technique_impact.vpcf", context);
         PrecacheResource("particle",  "particles/units/heroes/sasuke/sasuke_great_fireball_technique_debuff.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_shisui.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_vo_shisui.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_vo_shisui.vsndevts", context);
     }
 
     /****************************************/
@@ -32,6 +36,27 @@ export class shisui_great_fireball_technique extends BaseAbility {
 
     /****************************************/
 
+    OnAbilityPhaseStart(): boolean {
+        if (this.GetCastPoint() >= 0.5) {
+            EmitSoundOn("VO_Hero_Shisui.GreatFireball.Precast", this.GetCaster());
+            this.precast_vo = true;
+        } else {
+            this.precast_vo = false;
+        }
+
+        return true;
+    }
+
+    /****************************************/
+
+    OnAbilityPhaseInterrupted(): void {
+        if (this.precast_vo) {
+            StopSoundOn("VO_Hero_Shisui.GreatFireball.Precast", this.GetCaster());
+        }
+    }
+
+    /****************************************/
+
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let position = this.GetCursorPosition();
@@ -44,6 +69,8 @@ export class shisui_great_fireball_technique extends BaseAbility {
 
         let sound_ent = CreateModifierThinker(caster, this, "", {}, caster.GetAbsOrigin(), caster.GetTeamNumber(), false);
         EmitSoundOn("Hero_Shisui.GreatFireball.Cast", sound_ent)
+
+        EmitSoundOn("VO_Hero_Shisui.GreatFireball.Cast", caster);
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
@@ -170,6 +197,7 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
     current_stacks?: number;
     max_stacks?: number;
     cast_time_per_action?: number;
+    last_reset: number = -1;
     activity?: string;
     castpoint_activies: any = {
         [0]: "",
@@ -214,6 +242,18 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
 
     OnAbilityExecuted(event: ModifierAbilityEvent): void {
         if (!IsServer()) return;
+        let ability = event.ability;
+
+        if (ability == this.GetAbility()) {
+            this.last_reset = GameRules.GetDOTATime(true, true);
+            this.SetStackCount(0);
+            this.current_stacks = 0;
+            this.activity = "";
+            return;
+        }
+
+        if (ability.IsItem()) return;
+
         this.UpdateStacks(event.unit);
     }
 
@@ -233,15 +273,18 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
 
     UpdateStacks(unit: CDOTA_BaseNPC): void {
         if (!unit || unit != this.GetParent()) return;
+        let creation_time = GameRules.GetDOTATime(true, true);
 
         this.current_stacks!++;
         this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
+        
         Timers.CreateTimer(this.action_window!, () => {
+            if (this.last_reset > creation_time) return;
             this.current_stacks!--;
             this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
         });
 
-        let stacks = this.current_stacks as number;
+        let stacks = this.GetStackCount();
         if (stacks % 2 != 0)  stacks--;
 
         this.activity = this.castpoint_activies[stacks];
