@@ -203,7 +203,8 @@ export class modifier_shisui_afterimage_clone extends BaseModifier
     /****************************************/
 
     OnCreated(params: object): void {
-        this.damage_penalty = -this.GetAbility()!.GetSpecialValueFor("same_target_penalty");
+        if (!IsServer()) return;
+        this.damage_penalty = -this.GetParent().GetAverageTrueAttackDamage(undefined) * this.GetAbility()!.GetSpecialValueFor("same_target_penalty") / 100;
     }
 
     /****************************************/
@@ -222,12 +223,13 @@ export class modifier_shisui_afterimage_clone extends BaseModifier
     /****************************************/
 
     DeclareFunctions(){ return [
-        ModifierFunction.DAMAGEOUTGOING_PERCENTAGE
+        ModifierFunction.PREATTACK_BONUS_DAMAGE
     ]}
 
     /****************************************/
 
-    GetModifierDamageOutgoing_Percentage(): number {
+    GetModifierPreAttack_BonusDamage(): number {
+        if (!IsServer()) return 0;
         return this.penalty_status ? this.damage_penalty! : 0;
     }
 }
