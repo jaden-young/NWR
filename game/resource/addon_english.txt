@@ -1639,19 +1639,34 @@
 		"DOTA_Tooltip_modifier_shisui_halo_dance_Description"						"Shisui's attacks will send out waves of fire."
 
 
+		// Kotoamatsukami
+		"DOTA_Tooltip_ability_shisui_kotoamatsukami"								"Kotoamatsukami"
+		"DOTA_Tooltip_ability_shisui_kotoamatsukami_Description"					"Shisui opens his Mangekyo Sharingan, gaining maximum movement speed for a short duration.<br>Once the duration ends, all nearby enemies within a radius around Shisui will become hypnotized, fully disabling them as they move towards Shisui."
+		"DOTA_Tooltip_ability_shisui_kotoamatsukami_Lore"							""
+		"DOTA_Tooltip_ability_shisui_kotoamatsukami_buff_duration"					"HASTE DURATION:"
+		"DOTA_Tooltip_ability_shisui_kotoamatsukami_hypno_duration"					"HYPNOSIS DURATION:"
+		"DOTA_Tooltip_ability_shisui_kotoamatsukami_radius"							"RADIUS:"
+
+		"DOTA_Tooltip_modifier_shisui_kotoamatsukami"								"Kotoamatsukami"
+		"DOTA_Tooltip_modifier_shisui_kotoamatsukami_Description"					"Moving at max move speed."
+		"DOTA_Tooltip_modifier_shisui_kotoamatsukami_invisibility"					"Kotoamatsukami Invisibility"
+		"DOTA_Tooltip_modifier_shisui_kotoamatsukami_invisibility_Description"		"Invisible."
+
+
 		//=================================================================================================================
 		// Shisui Talent Tree
 		//=================================================================================================================	
-		// 25: +2 Afterimage Clone Attacks 	/ 	Kotoamatsukami Grants Invisibility
-		// 20: +60 Fireball Burn Damage 	/ 	+225 Halo Dance Range 
-		// 15: +13 Strength 				/ 	+40 Halo Dance Damage
-		// 10: +1.75 Mana Regen 			/ 	+9 Agility
+		// 25: +2 Afterimage Clone Attacks 	/ 	Basic Attacks Advance Halo Dance Cooldown
+		// 20: +60 Fireball Burn Damage 	/ 	Kotoamatsukami Grants Invisibility
+		// 15: +13 Strength 				/ 	+25 Halo Dance Damage
+		// 10: +225 Halo Dance Range 		/	+1.75 Mana Regen
 
 		"DOTA_Tooltip_Ability_special_bonus_shisui_1"						"+{s:value} Halo Dance Damage"
 		"DOTA_Tooltip_Ability_special_bonus_shisui_2"						"+{s:value} Halo Dance Range"
 		"DOTA_Tooltip_Ability_special_bonus_shisui_3"						"+{s:value} Fireball Burn Damage"
-		"DOTA_Tooltip_Ability_special_bonus_shisui_4"						"+{s:value} Kotoamatsukami Grants Invisibility"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_4"						"Kotoamatsukami Grants Invisibility"
 		"DOTA_Tooltip_Ability_special_bonus_shisui_5"						"+{s:value} Afterimage Clone Attacks"
+		"DOTA_Tooltip_Ability_special_bonus_shisui_6"						"Basic Attacks Advance Halo Dance Cooldown"
 
 
 		//--------------------

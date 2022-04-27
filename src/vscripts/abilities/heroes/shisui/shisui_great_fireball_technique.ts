@@ -245,7 +245,7 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
         let ability = event.ability;
 
         if (ability == this.GetAbility()) {
-            this.last_reset = GameRules.GetDOTATime(true, true);
+            this.last_reset = GameRules.GetGameTime();
             this.SetStackCount(0);
             this.current_stacks = 0;
             this.activity = "";
@@ -273,13 +273,13 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
 
     UpdateStacks(unit: CDOTA_BaseNPC): void {
         if (!unit || unit != this.GetParent()) return;
-        let creation_time = GameRules.GetDOTATime(true, true);
+        let creation_time = GameRules.GetGameTime();
 
         this.current_stacks!++;
         this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
         
         Timers.CreateTimer(this.action_window!, () => {
-            if (this.last_reset > creation_time) return;
+            if (this.last_reset > creation_time) {print("returningggg");return;}
             this.current_stacks!--;
             this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
         });

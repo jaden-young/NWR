@@ -3,14 +3,14 @@
 	//=================================================================================================================
 	// Shisui Talent Tree
 	//=================================================================================================================	
-	// 25: +2 Afterimage Clone Attacks 	/ 	Kotoamatsukami Grants Invisibility
-	// 20: +60 Fireball Burn Damage 	/ 	+225 Halo Dance Range 
-	// 15: +13 Strength 				/ 	+40 Halo Dance Damage
-	// 10: +1.75 Mana Regen 			/ 	+9 Agility
+	// 25: +2 Afterimage Clone Attacks 	/ 	Basic Attacks Advance Halo Dance Cooldown
+	// 20: +60 Fireball Burn Damage 	/ 	Kotoamatsukami Grants Invisibility
+	// 15: +13 Strength 				/ 	+25 Halo Dance Damage
+	// 10: +225 Halo Dance Range 		/	+1.75 Mana Regen
 
 
 	//=================================================================================================================
-	// Shisui Special Bonus: +40 Halo Dance Damage
+	// Shisui Special Bonus: +25 Halo Dance Damage
 	//=================================================================================================================	
 	"special_bonus_shisui_1"
 	{
@@ -27,7 +27,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"value"						"40"
+				"value"						"25"
 			}
 		}
 	}
@@ -120,6 +120,29 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"value"						"2"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Shisui Special Bonus: Basic Attacks Advance Halo Dance Cooldown
+	//=================================================================================================================	
+	"special_bonus_shisui_6"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"special_bonus_undefined"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ATTRIBUTES"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"value"						"1"
 			}
 		}
 	}

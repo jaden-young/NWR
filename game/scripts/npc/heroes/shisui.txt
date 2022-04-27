@@ -3,10 +3,10 @@
     //=================================================================================================================
 	// Shisui Talent Tree
 	//=================================================================================================================	
-	// 25: +2 Afterimage Clone Attacks 	/ 	Kotoamatsukami Grants Invisibility
-	// 20: +60 Fireball Burn Damage 	/ 	+225 Halo Dance Range 
-	// 15: +13 Strength 				/ 	+40 Halo Dance Damage
-	// 10: +1.75 Mana Regen 			/ 	+9 Agility
+	// 25: +2 Afterimage Clone Attacks 	/ 	Basic Attacks Advance Halo Dance Cooldown
+	// 20: +60 Fireball Burn Damage 	/ 	Kotoamatsukami Grants Invisibility
+	// 15: +13 Strength 				/ 	+25 Halo Dance Damage
+	// 10: +225 Halo Dance Range 		/	+1.75 Mana Regen
 
     //=================================================================================================================
     // Shisui
@@ -32,18 +32,18 @@
         "Ability3"				"shisui_halo_dance"		            // Ability 3
         "Ability4"				"generic_hidden"
         "Ability5"				"generic_hidden"
-        "Ability6"				""			// Ultimate
-        "Ability7"				"shisui_innate_passive"            // Innate
+        "Ability6"				"shisui_kotoamatsukami"			    // Ultimate
+        "Ability7"				"shisui_innate_passive"             // Innate
 
         // Talents
         //----------------------------------------------------------------
-        "Ability10"				"special_bonus_agility_9"
-        "Ability11"				"special_bonus_mp_regen_175"
+        "Ability10"				"special_bonus_mp_regen_175"
+        "Ability11"				"special_bonus_shisui_2"
         "Ability12"				"special_bonus_shisui_1"
         "Ability13"				"special_bonus_strength_13"
-        "Ability14"				"special_bonus_shisui_2"
+        "Ability14"				"special_bonus_shisui_4"
         "Ability15"				"special_bonus_shisui_3"
-        "Ability16"				"special_bonus_shisui_4"
+        "Ability16"				"special_bonus_shisui_6"
         "Ability17"				"special_bonus_shisui_5"
 
         // Armor

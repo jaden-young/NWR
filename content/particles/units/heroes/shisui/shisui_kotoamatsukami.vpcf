@@ -1,0 +1,87 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vpcf36:version{d15c9157-10e0-47bc-9333-1ac81da07b8d} -->
+{
+	_class = "CParticleSystemDefinition"
+	m_nBehaviorVersion = 12
+	m_nMaxParticles = 0
+	m_controlPointConfigurations = 
+	[
+		{
+			m_name = "preview"
+			m_drivers = 
+			[
+				{
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 1
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 2
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 3
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+				{
+					m_iControlPoint = 10
+					m_iAttachType = "PATTACH_WORLDORIGIN"
+					m_entityName = "self"
+				},
+			]
+		},
+	]
+	m_Children = 
+	[
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamif.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamin.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamig.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamik.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamib.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamid.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamic.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamil.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamim.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamih.vpcf"
+			m_bDisableChild = true
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamii.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamie.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamia.vpcf"
+		},
+		{
+			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukamij.vpcf"
+		},
+	]
+}

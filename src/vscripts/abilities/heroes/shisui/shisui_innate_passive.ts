@@ -70,6 +70,7 @@ export class modifier_shisui_innate_passive extends BaseModifier
         let ability = this.GetAbility() as CDOTABaseAbility;
 
         if (unit != this.GetParent() || ability.IsCooldownReady()) return;
+
         let cd = ability.GetCooldownTimeRemaining();
         ability.EndCooldown()
         ability.StartCooldown(cd - this.action_cd_reduction!);
@@ -79,14 +80,36 @@ export class modifier_shisui_innate_passive extends BaseModifier
 
     GetModifierProcAttack_Feedback(event: ModifierAttackEvent): number {
         if (!IsServer()) return 0;
+        
+        this.CheckBodyFlicker()
+        this.CheckHaloDance();;
+
+        return 0;
+    }
+
+    /****************************************/
+
+    CheckBodyFlicker(): void {
         let ability = this.GetAbility() as CDOTABaseAbility;
 
-        if (ability.IsCooldownReady()) return 0;
+        if (ability.IsCooldownReady()) return;
 
         let cd = ability.GetCooldownTimeRemaining();
         ability.EndCooldown()
         ability.StartCooldown(cd - this.action_cd_reduction!);
+    }
 
-        return 0;
+    /****************************************/
+
+    CheckHaloDance(): void {
+        let parent = this.GetParent()
+        if (parent.HasTalent("special_bonus_shisui_6")) {
+            let halo_dance = parent.FindAbilityByName("shisui_halo_dance")
+            if (!halo_dance || halo_dance.IsCooldownReady()) return;
+
+            let cd = halo_dance.GetCooldownTimeRemaining();
+            halo_dance.EndCooldown()
+            halo_dance.StartCooldown(cd - parent.FindTalentValue("special_bonus_shisui_6"));
+        }
     }
 }

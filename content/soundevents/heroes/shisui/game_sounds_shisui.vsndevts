@@ -51,5 +51,43 @@
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/weapons/hero/underlord/firestorm_start.vsnd"
 	}
+
+
+	Hero_Shisui.Kotoamatsukami.Trigger = 
+	{
+		type = "dota_update_default"
+		volume = 0.750000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		mixgroup = "Weapons"
+		volume_fade_out = 0.250000
+		soundevent_layer2 = "Hero_Shisui.Kotoamatsukami.TriggerLayer"
+		soundevent_layer2_on = 1.000000
+		vsnd_files = "sounds/heroes/itachi/amaterasu_fire.vsnd"
+	}
+
+	Hero_Shisui.Kotoamatsukami.TriggerLayer = 
+	{
+		type = "dota_update_default"
+		volume = 0.350000
+		pitch = 0.750000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		soundlevel = 81.000000
+		volume_fade_out = 1.000000
+		
+		vsnd_files = "sounds/weapons/hero/lich/frost_blast_immortal.vsnd"
+	}
+
+	Hero_Shisui.Kotoamatsukami.Target = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		soundlevel = 81.000000
+		vsnd_files = "sounds/weapons/hero/lich/sinister_gaze_target_layer.vsnd"
+	}
 }
 
