@@ -949,7 +949,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball2.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 60.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
@@ -969,7 +969,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = 40.0
+						framerate = 25.0
 						reverse = false
 					},
 				]
