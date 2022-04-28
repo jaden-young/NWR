@@ -15,7 +15,7 @@ export class shisui_afterimage_clone extends BaseAbility {
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle",  "particles/units/heroes/shisui/shisui_afterimage_clone_slash.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_shisui.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_vo_shisui.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_vo_shisui.vsndevts", context);
     }
 
 
@@ -73,6 +73,8 @@ export class shisui_afterimage_clone extends BaseAbility {
             FindOrder.ANY,
             false
         );
+
+        EmitSoundOnEntityForPlayer("VO_Hero_Shisui.AfterImage.Cast", caster, caster.GetPlayerOwnerID());
 
         let enemy = heroes.length > 0 ? heroes[0] : enemies[0];
         this.PerformJump(enemy, attack_count, {} as Record<EntityIndex, boolean>, position, this.GetSpecialValueFor("delay"));

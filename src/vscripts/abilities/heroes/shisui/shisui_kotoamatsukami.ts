@@ -6,7 +6,7 @@ export class shisui_kotoamatsukami extends BaseAbility {
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("particle",  "particles/units/heroes/shisui/shisui_kotoamatsukami.vpcf", context);
         PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_shisui.vsndevts", context);
-        //PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_vo_shisui.vsndevts", context);
+        PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_vo_shisui.vsndevts", context);
     }
 
     /****************************************/
@@ -26,6 +26,8 @@ export class shisui_kotoamatsukami extends BaseAbility {
             caster.AddNewModifier(caster, this, "modifier_shisui_kotoamatsukami_invisibility", {duration: this.GetSpecialValueFor("buff_duration")});
             EmitSoundOn("DOTA_Item.InvisibilitySword.Activate", caster);
         }
+
+        EmitSoundOn("VO_Hero_Shisui.Kobo.Cast", caster);
     }
 }
 
@@ -71,6 +73,7 @@ export class modifier_shisui_kotoamatsukami extends BaseModifier
         });
 
         EmitSoundOn("Hero_Shisui.Kotoamatsukami.Trigger", caster);
+        EmitSoundOn("VO_Hero_Shisui.Kobo.Fire", caster);
     }
 
     /****************************************/

@@ -44,7 +44,7 @@
 			}
 			"same_target_penalty"		"70"
 			"radius"					"350"
-			"delay"						"0.2"
+			"delay"						"0.15"
 		}
 	}
 }
