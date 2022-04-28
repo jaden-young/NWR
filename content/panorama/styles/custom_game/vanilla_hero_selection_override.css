@@ -25,7 +25,7 @@
     background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_kankuro.png");
     background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_shikamaru.png");
     background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_temari.png");
-
+    background-image: url("file://{resources}/images/custom_game/heroes/selection/npc_dota_hero_shisui.png");
     background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_kakashi.png");
     background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_anko.png");
     background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_itachi.png");
@@ -47,4 +47,5 @@
     background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_kankuro.png");
     background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_shikamaru.png");
     background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_temari.png");
+    background-image: url("file://{resources}/images/custom_game/heroes/topbar/npc_dota_hero_shisui.png");
 }
