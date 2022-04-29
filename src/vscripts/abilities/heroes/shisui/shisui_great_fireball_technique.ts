@@ -37,12 +37,15 @@ export class shisui_great_fireball_technique extends BaseAbility {
     /****************************************/
 
     OnAbilityPhaseStart(): boolean {
-        if (tonumber(string.format("%.1f", this.GetCastPoint())) as number >= 0.5) {
+        let cast_point = tonumber(string.format("%.1f", this.GetCastPoint())) as number
+        if (cast_point >= 0.5) {
             EmitSoundOn("VO_Hero_Shisui.GreatFireball.Precast", this.GetCaster());
         } else {
             EmitSoundOn("VO_Hero_Shisui.GreatFireball.Fast", this.GetCaster());
             this.fast_vo = true;
         }
+
+        EmitSoundOn("Hero_Shisui.GreatFireball.Precast_" + cast_point, this.GetCaster());
 
         return true;
     }

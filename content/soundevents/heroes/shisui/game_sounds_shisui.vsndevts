@@ -11,6 +11,102 @@
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/heroes/shisui/shisui_flicker_fire.vsnd"
 	}
+
+	Hero_Shisui.GreatFireball.Precast_1 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/troll_warlord_01.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.9 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/troll_warlord_02.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.8 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/undying_02.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.7 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/ursa_01.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.6 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/somebody_just_got_real_brave.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.5 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/rampage_hes_coming_for_us_next.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.4 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/this_is_getting_out_of_hand.vsnd"
+	}
+
+	Hero_Shisui.GreatFireball.Precast_0.3 = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/wubalub_01.vsnd"
+	}
 	
 	Hero_Shisui.GreatFireball.Cast = 
 	{
