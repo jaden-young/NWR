@@ -3,13 +3,13 @@
 	Hero_Shisui.BodyFlicker.Trigger = 
 	{
 		type = "dota_update_default"
-		volume = 1.000000
+		volume = 2.50000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		pitch = 1.05000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/shisui/shisui_flicker_fire.vsnd"
+		vsnd_files = "sounds/heroes/shisui/shisui_flicker_fire.vsnd"
 	}
 	
 	Hero_Shisui.GreatFireball.Cast = 
@@ -30,12 +30,12 @@
 
 	Hero_Shisui.GreatFireball.CastLayer = 
 	{
-		type = "dota_update_default"
+		type = "dota_src1_3d"
 		volume = 0.800000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
 		pitch = 1.00000
-		soundlevel = 84.000000
+		soundlevel = 70.000000
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/heroes/sasuke/sasuke_fireball_cast.vsnd"
 	}

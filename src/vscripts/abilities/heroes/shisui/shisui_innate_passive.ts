@@ -6,6 +6,7 @@ export class shisui_innate_passive extends BaseAbility
     Precache(context: CScriptPrecacheContext): void{
         PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_shisui.vsndevts", context);
     }
+
     GetIntrinsicModifierName(): string {
         return "modifier_shisui_innate_passive"
     }
@@ -61,6 +62,11 @@ export class modifier_shisui_innate_passive extends BaseModifier
         if (this.GetParent().PassivesDisabled() || !ability!.IsCooldownReady()) return 0
         
         ability?.UseResources(true, false, true);
+        
+        EmitSoundOn("Hero_Shisui.BodyFlicker.Trigger", this.GetParent());
+        let warp_fx = ParticleManager.CreateParticle("particles/units/heroes/sasuke/sasuke_sharingan_dodge.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, this.GetParent());
+        ParticleManager.SetParticleControlEnt(warp_fx, 0, this.GetParent(), ParticleAttachment.POINT_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true);
+        ParticleManager.ReleaseParticleIndex(warp_fx);
 
         return -100
     }

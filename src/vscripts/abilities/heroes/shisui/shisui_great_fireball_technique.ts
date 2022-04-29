@@ -7,7 +7,7 @@ interface extra {
 @registerAbility()
 export class shisui_great_fireball_technique extends BaseAbility {
 
-    precast_vo: boolean = false;
+    fast_vo: boolean = false;
 
     /****************************************/
 
@@ -37,22 +37,14 @@ export class shisui_great_fireball_technique extends BaseAbility {
     /****************************************/
 
     OnAbilityPhaseStart(): boolean {
-        if (this.GetCastPoint() >= 0.5) {
+        if (tonumber(string.format("%.1f", this.GetCastPoint())) as number >= 0.5) {
             EmitSoundOn("VO_Hero_Shisui.GreatFireball.Precast", this.GetCaster());
-            this.precast_vo = true;
         } else {
-            this.precast_vo = false;
+            EmitSoundOn("VO_Hero_Shisui.GreatFireball.Fast", this.GetCaster());
+            this.fast_vo = true;
         }
 
         return true;
-    }
-
-    /****************************************/
-
-    OnAbilityPhaseInterrupted(): void {
-        if (this.precast_vo) {
-            StopSoundOn("VO_Hero_Shisui.GreatFireball.Precast", this.GetCaster());
-        }
     }
 
     /****************************************/
@@ -68,9 +60,10 @@ export class shisui_great_fireball_technique extends BaseAbility {
         direction = direction.Normalized();
 
         let sound_ent = CreateModifierThinker(caster, this, "", {}, caster.GetAbsOrigin(), caster.GetTeamNumber(), false);
-        EmitSoundOn("Hero_Shisui.GreatFireball.Cast", sound_ent)
+        EmitSoundOn("Hero_Shisui.GreatFireball.Cast", sound_ent);
 
-        EmitSoundOn("VO_Hero_Shisui.GreatFireball.Cast", caster);
+        if (!this.fast_vo) EmitSoundOn("VO_Hero_Shisui.GreatFireball.Cast", caster);
+        this.fast_vo = false;
 
         ProjectileManager.CreateLinearProjectile({
             Ability: this,
@@ -206,6 +199,12 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
         [6]: "faster",
         [8]: "superfast"
     }
+
+    /****************************************/
+
+    IsPurgable(): boolean       {return false}
+    RemoveOnDeath(): boolean    {return false}
+    IsHidden(): boolean         {return this.GetStackCount() == 0}
     
     /****************************************/
 
@@ -279,7 +278,7 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
         this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
         
         Timers.CreateTimer(this.action_window!, () => {
-            if (this.last_reset > creation_time) {print("returningggg");return;}
+            if (this.last_reset > creation_time) return;
             this.current_stacks!--;
             this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
         });

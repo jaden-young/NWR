@@ -47,9 +47,18 @@ export class modifier_shisui_kotoamatsukami extends BaseModifier
 
     OnCreated(params: Object): void {
         let ability = this.GetAbility()!;
+        let parent = this.GetParent();
 
         this.radius = ability.GetSpecialValueFor("radius");
         this.hypno_duration = ability.GetSpecialValueFor("hypno_duration");
+
+        if (!IsServer()) return;
+        let haste_fx = ParticleManager.CreateParticle("particles/units/heroes/shisui/shisui_kotoamatsukami_haste.vpcf", ParticleAttachment.ABSORIGIN_FOLLOW, parent)
+        ParticleManager.SetParticleControlEnt(haste_fx, 1, parent, ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", parent.GetAbsOrigin(), true)
+        ParticleManager.SetParticleControlEnt(haste_fx, 2, parent, ParticleAttachment.POINT_FOLLOW, "attach_eye_right", parent.GetAbsOrigin(), true)
+        ParticleManager.SetParticleControlEnt(haste_fx, 3, parent, ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", parent.GetAbsOrigin(), true)
+        ParticleManager.SetParticleControlEnt(haste_fx, 10, parent, ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", parent.GetAbsOrigin(), true)
+        this.AddParticle(haste_fx, false, false, -1, false, false)
     }
 
     OnDestroy(): void {
@@ -166,6 +175,7 @@ export class modifier_shisui_kotoamatsukami_debuff extends BaseModifier
         ParticleManager.SetParticleControlEnt(gaze_fx, 3, caster, ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", caster.GetAbsOrigin(), true)
         ParticleManager.SetParticleControlEnt(gaze_fx, 10, caster, ParticleAttachment.ABSORIGIN_FOLLOW, "attach_hitloc", caster.GetAbsOrigin(), true)
         this.AddParticle(gaze_fx, false, false, -1, false, false)
+        this.StartIntervalThink(0.1);
     }
 
     /****************************************/
@@ -173,6 +183,12 @@ export class modifier_shisui_kotoamatsukami_debuff extends BaseModifier
     OnDestroy(): void {
         if (!IsServer()) return;
         this.GetParent().Stop();
+    }
+
+    /****************************************/
+
+    OnIntervalThink(): void {
+        this.GetParent().MoveToNPC(this.GetCaster()!);
     }
 
     /****************************************/

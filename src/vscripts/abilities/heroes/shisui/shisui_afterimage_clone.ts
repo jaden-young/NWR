@@ -54,7 +54,7 @@ export class shisui_afterimage_clone extends BaseAbility {
             duration: 5
         }
         
-        this.clone = CreateIllusions(caster, caster as CDOTA_BaseNPC_Hero, kv, 1, 0, false, false)[0];
+        this.clone = CreateUnitByName("npc_dota_shisui_dummy", caster.GetAbsOrigin(), false, undefined, undefined, caster.GetTeamNumber());
         this.clone.AddNewModifier(caster, this, "modifier_shisui_afterimage_clone_image", {duration: 5});
         this.clone.AddNewModifier(caster, this, "modifier_kill", {duration: 5});
         this.clone.SetForwardVector((position - this.clone.GetAbsOrigin() as Vector).Normalized());
@@ -187,7 +187,7 @@ export class shisui_afterimage_clone extends BaseAbility {
         let caster = this.GetCaster();
         let origin = this.clone!.GetAbsOrigin();
         let forward = this.clone!.GetForwardVector();
-        this.clone?.ForceKill(false);
+        UTIL_Remove(this.clone);
 
         caster.SetAbsOrigin(origin);
         caster.SetForwardVector(forward);
