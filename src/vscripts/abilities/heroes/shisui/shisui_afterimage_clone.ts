@@ -75,7 +75,7 @@ export class shisui_afterimage_clone extends BaseAbility {
         );
 
         EmitSoundOnEntityForPlayer("VO_Hero_Shisui.AfterImage.Cast", caster, caster.GetPlayerOwnerID());
-
+        EmitSoundOn("Hero_Shisui.AfterImage.Cast", caster); 
         let enemy = heroes.length > 0 ? heroes[0] : enemies[0];
         this.PerformJump(enemy, attack_count, {} as Record<EntityIndex, boolean>, position, this.GetSpecialValueFor("delay"));
     }
@@ -120,6 +120,7 @@ export class shisui_afterimage_clone extends BaseAbility {
 
         if (attack_count > 0) this.FindNextTarget(position, attack_count, affected_enemies);
         else this.StopAfterimage();
+
     }
 
     /****************************************/

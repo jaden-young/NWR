@@ -37,7 +37,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"damage"					"60 130 200 270"
+			"damage"					"70 140 210 280"
 			"burn_damage"
 			{
 				"value"						"10 15 20 25"
@@ -50,7 +50,7 @@
 			"radius"					"240"
 			"action_window"				"12"
 			"cast_time_per_action"		"0.1"
-			"min_cast_point"			"0.2"
+			"min_cast_point"			"0.3"
 			"cast_point"				"1.0"
 		}
 	}

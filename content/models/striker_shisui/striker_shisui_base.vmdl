@@ -613,10 +613,10 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 90
+						activity_name = ""
+						activity_weight = 100
 						weight_list_name = ""
-						fade_in_time = 0.2
+						fade_in_time = 0.1
 						fade_out_time = 0.2
 						looping = false
 						delta = false
@@ -627,7 +627,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_attack3.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 14.0
 						reverse = false
 					},
 					{
@@ -647,8 +647,8 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 1
+						activity_name = ""
+						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -661,7 +661,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_attack4.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 8.0
 						reverse = false
 					},
 					{
@@ -695,7 +695,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_attack5.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 27.0
 						reverse = false
 					},
 					{
@@ -929,7 +929,7 @@
 						source_filename = "models/striker_shisui/striker_shisui_idle.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 14.0
 						reverse = false
 					},
 					{

@@ -1,5 +1,17 @@
 <!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
 {
+	Hero_Shisui.BodyFlicker.Trigger = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.05000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/vo/shisui/shisui_flicker_fire.vsnd"
+	}
+	
 	Hero_Shisui.GreatFireball.Cast = 
 	{
 		type = "dota_update_default"
@@ -19,13 +31,13 @@
 	Hero_Shisui.GreatFireball.CastLayer = 
 	{
 		type = "dota_update_default"
-		volume = 1.000000
+		volume = 0.800000
 		pitch_rand_min = -0.050000
 		pitch_rand_max = 0.050000
-		pitch = 0.5000
+		pitch = 1.00000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/huskar/burning_spear_cast.vsnd"
+		vsnd_files = "sounds/heroes/sasuke/sasuke_fireball_cast.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.CastBG = 
@@ -52,6 +64,51 @@
 		vsnd_files = "sounds/weapons/hero/underlord/firestorm_start.vsnd"
 	}
 
+	Hero_Shisui.AfterImage.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 2.000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.00000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/shisui/shisui_afterimage_cast.vsnd"
+	}
+
+	Hero_Shisui.Halo.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.500000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.00000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/weapons/hero/clinkz/searing_arrow.vsnd"
+	}
+
+	Hero_Shisui.Halo.Fire = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.00000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/shisui/shisui_halo_fire.vsnd"
+	}
+
+	Hero_Shisui.Kotoamatsukami.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.85000
+		pitch = 1.000000
+		soundlevel = 81.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/shisui/shisui_koto_cast.vsnd"
+	}
 
 	Hero_Shisui.Kotoamatsukami.Trigger = 
 	{

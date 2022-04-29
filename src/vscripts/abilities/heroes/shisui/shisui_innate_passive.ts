@@ -3,6 +3,9 @@ import { BaseAbility, BaseModifier, registerAbility, registerModifier } from "..
 @registerAbility()
 export class shisui_innate_passive extends BaseAbility
 {
+    Precache(context: CScriptPrecacheContext): void{
+        PrecacheResource("soundfile", "soundevents/heroes/shisui/game_sounds_shisui.vsndevts", context);
+    }
     GetIntrinsicModifierName(): string {
         return "modifier_shisui_innate_passive"
     }
@@ -74,6 +77,7 @@ export class modifier_shisui_innate_passive extends BaseModifier
         let cd = ability.GetCooldownTimeRemaining();
         ability.EndCooldown()
         ability.StartCooldown(cd - this.action_cd_reduction!);
+
     }
 
     /****************************************/

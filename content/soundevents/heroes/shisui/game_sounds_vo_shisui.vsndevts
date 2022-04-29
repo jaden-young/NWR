@@ -20,7 +20,7 @@
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
-		[]
+		[
 		"sounds/heroes/shisui/fireball_fast_01.vsnd",
 		"sounds/heroes/shisui/fireball_fast_02.vsnd",
 		"sounds/heroes/shisui/fireball_fast_03.vsnd",	
@@ -44,27 +44,27 @@
 		pitch = "1.000000"
 	}
 
-	VO_Hero_Shisui.Kobo.Cast = 
+	VO_Hero_Shisui.Koto.Cast = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-		"sounds/heroes/shisui/kobo_start_01.vsnd",
-		"sounds/heroes/shisui/kobo_start_02.vsnd",
-		"sounds/heroes/shisui/kobo_start_03.vsnd"	
+		"sounds/heroes/shisui/koto_start_01.vsnd",
+		"sounds/heroes/shisui/koto_start_02.vsnd",
+		"sounds/heroes/shisui/koto_start_03.vsnd"	
 		]
 		volume = "1.000000"
 		pitch = "1.000000"
 	}
 
-	VO_Hero_Shisui.Kobo.Fire = 
+	VO_Hero_Shisui.Koto.Fire = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
 		[
-		"sounds/heroes/shisui/kobo_end_01.vsnd",
-		"sounds/heroes/shisui/kobo_end_02.vsnd",
-		"sounds/heroes/shisui/kobo_end_03.vsnd"
+		"sounds/heroes/shisui/koto_end_01.vsnd",
+		"sounds/heroes/shisui/koto_end_02.vsnd",
+		"sounds/heroes/shisui/koto_end_03.vsnd"
 		]
 		volume = "1.000000"
 		pitch = "1.000000"

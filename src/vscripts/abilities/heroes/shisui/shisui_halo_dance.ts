@@ -21,6 +21,8 @@ export class shisui_halo_dance extends BaseAbility {
         let caster = this.GetCaster();
 
         caster.AddNewModifier(caster, this, "modifier_shisui_halo_dance", {duration: this.GetSpecialValueFor("duration")});
+
+        EmitSoundOn("Hero_Shisui.Halo.Cast", caster);
     }
 
     /****************************************/
@@ -89,5 +91,6 @@ export class modifier_shisui_halo_dance extends BaseModifier
         this.projectile!.vSpawnOrigin = attacker.GetAttachmentOrigin(attacker.ScriptLookupAttachment("attach_attack1")) as Vector,
         this.projectile!.vVelocity = (target.GetAbsOrigin() - attacker.GetAbsOrigin() as Vector).Normalized() * this.speed! as Vector;
         ProjectileManager.CreateLinearProjectile(this.projectile!);
+        EmitSoundOn("Hero_Shisui.Halo.Fire", target);
     }
 }

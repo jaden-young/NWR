@@ -27,7 +27,8 @@ export class shisui_kotoamatsukami extends BaseAbility {
             EmitSoundOn("DOTA_Item.InvisibilitySword.Activate", caster);
         }
 
-        EmitSoundOn("VO_Hero_Shisui.Kobo.Cast", caster);
+        EmitSoundOn("VO_Hero_Shisui.Koto.Cast", caster);
+        EmitSoundOn("Hero_Shisui.Kotoamatsukami.Cast", caster);
     }
 }
 
@@ -73,7 +74,7 @@ export class modifier_shisui_kotoamatsukami extends BaseModifier
         });
 
         EmitSoundOn("Hero_Shisui.Kotoamatsukami.Trigger", caster);
-        EmitSoundOn("VO_Hero_Shisui.Kobo.Fire", caster);
+        EmitSoundOn("VO_Hero_Shisui.Koto.Fire", caster);
     }
 
     /****************************************/
