@@ -14,22 +14,12 @@
 					m_entityName = "self"
 				},
 				{
-					m_iControlPoint = 1
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
 					m_iControlPoint = 2
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
 				{
 					m_iControlPoint = 3
-					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_entityName = "self"
-				},
-				{
-					m_iControlPoint = 10
 					m_iAttachType = "PATTACH_WORLDORIGIN"
 					m_entityName = "self"
 				},
@@ -49,6 +39,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hastef.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hastec.vpcf"
@@ -61,6 +52,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hastej.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hasteb.vpcf"
@@ -72,12 +64,15 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hastea.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hastem.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hasten.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/shisui/shisui_kotoamatsukami_hasteh.vpcf"
