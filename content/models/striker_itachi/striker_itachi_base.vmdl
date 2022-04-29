@@ -132,6 +132,24 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "eye_r"
+						parent_bone = "eyes"
+						relative_origin = [ 0.358093, 2.485171, -3.712536 ]
+						relative_angles = [ 0.0, 0.0, 0.000052 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "eye_l"
+						parent_bone = "eyes"
+						relative_origin = [ 1.368744, 4.843152, 3.036396 ]
+						relative_angles = [ 0.0, 0.0, 0.000118 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 				]
 			},
 			{
@@ -141,6 +159,47 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_amaterasu"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 20
+								event_keys = 
+								{
+									name = resource:"particles/ui/plus/ui_hud_relic_gem_red_ambient_glow.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = true
+									tags = null
+									attachment_point = "eye_r"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = null
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 20
+								event_keys = 
+								{
+									name = resource:"particles/ui/plus/ui_hud_relic_gem_red_ambient_glow.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = true
+									tags = null
+									attachment_point = "eye_l"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = null
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_CAST_ABILITY_5"
 						activity_weight = 1
 						weight_list_name = ""
@@ -229,6 +288,47 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_flamecontrol"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 19
+								event_keys = 
+								{
+									name = resource:"particles/ui/plus/ui_hud_relic_gem_red_ambient_glow.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = true
+									tags = null
+									attachment_point = "eye_r"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = null
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 19
+								event_keys = 
+								{
+									name = resource:"particles/ui/plus/ui_hud_relic_gem_red_ambient_glow.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = true
+									tags = null
+									attachment_point = "eye_l"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = null
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
@@ -269,6 +369,20 @@
 					{
 						_class = "AnimFile"
 						name = "striker_itachi_idle"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_STOP_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/ui/plus/ui_hud_relic_gem_red_ambient_glow.vpcf"
+									stop_instantly = true
+									play_endcap = false
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_IDLE"
 						activity_weight = 1
 						weight_list_name = ""

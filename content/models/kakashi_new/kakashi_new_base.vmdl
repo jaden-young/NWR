@@ -1701,6 +1701,28 @@
 					{
 						_class = "AnimFile"
 						name = "kamui"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 6
+								event_keys = 
+								{
+									name = resource:"particles/ui/plus/ui_hud_relic_gem_red_ambient_glow.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = true
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "eye_left"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = null
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_CHANNEL_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1848,6 +1870,15 @@
 						name = "attach_hitloc"
 						parent_bone = "Spine1"
 						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
+					{
+						_class = "Attachment"
+						name = "eye_left"
+						parent_bone = "eyeup_l"
+						relative_origin = [ 1.281591, -6.742113, 1.055443 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
