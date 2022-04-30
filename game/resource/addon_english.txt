@@ -1561,6 +1561,7 @@
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique"						"<b><font color='#BFBFBF'>Shadow Imitation</font></b>"
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_lore"				"Kagemane no Jutsu"
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_Description"			"Extends Shikamaru's shadow towards a target point <b><font color='#BFBFBF'>latching onto the first enemy Hero</font></b> it encounters. <br><br> Once bound, the enemy will be fully disabled while <b><font color='#BFBFBF'>copying Shikamaru's movement.</font></b> <br><br> Enemies affected by <b><font color='#FFFFFF'>Flash Bombs</font></b> will remain affected for an additional <b><font color='#FFFFFF'>1</font></b> second."
+		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_shard_description"	"Enemies under the effect of Shadow Imitation are strangled, taking %shard_damage_pct%%% of their Maximum HP as Magic Damage every %shard_interval% Seconds. "
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_shadow_range"		"RANGE"
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_shadow_duration"		"DURATION"
 

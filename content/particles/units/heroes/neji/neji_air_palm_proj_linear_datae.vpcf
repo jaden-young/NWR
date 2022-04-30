@@ -6,7 +6,6 @@
 	m_flConstantRadius = 0.122
 	m_nBehaviorVersion = 4
 	m_nFirstMultipleOverride_BackwardCompat = 3
-	m_flConstantLifespan = 0.25
 	m_controlPointConfigurations = 
 	[
 		{

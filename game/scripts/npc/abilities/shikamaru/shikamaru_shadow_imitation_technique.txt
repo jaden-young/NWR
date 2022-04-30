@@ -33,24 +33,36 @@
 		{
 			"01"
 			{
-				"var_type"			"FIELD_FLOAT"
+				"var_type"			"FIELD_INTEGER"
 				"shadow_range"		"1300"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_FLOAT"
+				"var_type"			"FIELD_INTEGER"
 				"shadow_speed"		"1300"
 			}
 			"03"
 			{
-				"var_type"			"FIELD_FLOAT"
-				"shadow_width"	"100"
+				"var_type"			"FIELD_INTEGER"
+				"shadow_width"		"100"
 			}
 			"04"
 			{
-				"var_type"			"FIELD_FLOAT"
-				"shadow_duration"	"1.50 2.00 2.50 3.00"
+				"var_type"				"FIELD_FLOAT"
+				"shadow_duration"		"1.50 2.00 2.50 3.00"
 				"LinkedSpecialBonus"	"special_bonus_shikamaru_4"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"shard_damage_pct"				"5"
+				"RequiresShard"					"1"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_FLOAT"
+				"shard_interval"				"0.5"
+				"RequiresShard"					"1"
 			}
 		}
 	}
