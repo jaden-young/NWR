@@ -58,6 +58,7 @@ export class shisui_afterimage_clone extends BaseAbility {
         this.clone.AddNewModifier(caster, this, "modifier_shisui_afterimage_clone_image", {duration: 5});
         this.clone.AddNewModifier(caster, this, "modifier_kill", {duration: 5});
         this.clone.SetForwardVector((position - this.clone.GetAbsOrigin() as Vector).Normalized());
+        this.clone.StartGesture(GameActivity.DOTA_CAST_ABILITY_2);
 
 
         caster.AddNewModifier(caster, this, "modifier_shisui_afterimage_clone", {duration: -1})
@@ -187,10 +188,20 @@ export class shisui_afterimage_clone extends BaseAbility {
         let caster = this.GetCaster();
         let origin = this.clone!.GetAbsOrigin();
         let forward = this.clone!.GetForwardVector();
+
+        EmitSoundOnLocationWithCaster(origin, "General.Illusion.Destroy", caster);
+        let death_fx = ParticleManager.CreateParticle("particles/units/heroes/naruto/naruto_clone.vpcf", ParticleAttachment.CUSTOMORIGIN, undefined);
+        ParticleManager.SetParticleControl(death_fx, 0, origin);
+        ParticleManager.ReleaseParticleIndex(death_fx);
+
         UTIL_Remove(this.clone);
 
         caster.SetAbsOrigin(origin);
         caster.SetForwardVector(forward);
+        caster.RemoveGesture(GameActivity.DOTA_ATTACK);
+        caster.StopAnimation();
+        caster.StartGesture(GameActivity.DOTA_CAST_ABILITY_2);
+        caster.FadeGesture(GameActivity.DOTA_CAST_ABILITY_2);
 
         caster.RemoveModifierByName("modifier_shisui_afterimage_clone");
         this.SetActivated(true);
