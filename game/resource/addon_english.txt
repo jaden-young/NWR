@@ -1643,6 +1643,7 @@
 		// Halo Dance
 		"DOTA_Tooltip_ability_shisui_halo_dance"									"Halo Dance"
 		"DOTA_Tooltip_ability_shisui_halo_dance_Description"						"Causes Shisui’s attacks to send out waves of fire for a short duration of time, dealing additional Magic Damage in a short line."
+		"DOTA_Tooltip_ability_shisui_halo_dance_shard_description"					"Halo dances grants %shard_attack_speed% bonus attack speed and %shard_range% bonus attack range while active."
 		"DOTA_Tooltip_ability_shisui_halo_dance_Lore"								""
 		"DOTA_Tooltip_ability_shisui_halo_dance_damage"								"DAMAGE:"
 		"DOTA_Tooltip_ability_shisui_halo_dance_wave_radius"						"RADIUS:"
