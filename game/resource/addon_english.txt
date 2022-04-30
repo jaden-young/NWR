@@ -1740,13 +1740,16 @@
 		//--------------------
 		//Temari
 		//--------------------
-		"npc_dota_hero_temari"  									"Temari"
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu"					"<b><font color='#7FD3FF'>Dust Wind</font></b>"
+		"npc_dota_hero_temari"  											"Temari"
+
+
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu"						"<b><font color='#7FD3FF'>Dust Wind</font></b>"
 		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_lore"					"Fusajin no Jutsu"
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_Description"		"<b><font color='#7FD3FF'>Deals Magic Damage</font></b> to a target and nearby enemy units. <br><br> On cast, <b><font color='#7FD3FF'>reduces the Cooldown</font></b> of Temari's other abilities by <b><font color='#FFFFFF'>1</font></b> second."
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_damage"			"DAMAGE: "
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_cd_reduc"			"COOLDOWN REDUCTION (TALENT): "
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_radius"			"RADIUS: "
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_Description"			"<b><font color='#7FD3FF'>Deals Magic Damage</font></b> to a target and nearby enemy units. <br><br> On cast, <b><font color='#7FD3FF'>reduces the Cooldown</font></b> of Temari's other abilities by <b><font color='#FFFFFF'>1</font></b> second."
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_shard_description"	"Casting Dust Wind also releases %shard_attacks% reduced damage Basic Attacks targeting %shard_attacks% random nearby targets.<br><br>RANGE: %shard_range%<br>DAMAGE: %shard_damage_pct%%%"
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_damage"				"DAMAGE: "
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_cd_reduc"				"COOLDOWN REDUCTION (TALENT): "
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_radius"				"RADIUS: "
 
 		
 		"DOTA_Tooltip_ability_temari_kamaitachi_no_jutsu"				"<b><font color='#EAF8FF'>Wind Scythe</font></b>"
@@ -1783,10 +1786,10 @@
 		"DOTA_Tooltip_modifier_temari_sheer_wind_stack_buff"				 "<b><font color='#7FF1DF'>Sheer Wind Stack</font></b>"
 		"DOTA_Tooltip_modifier_temari_sheer_wind_stack_buff_description"	 "Duration for a stack of <b><font color='#7FF1DF'>Sheer Wind.</font></b>"
 
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai"				"<b><font color='#F3C6FF'>Summoning: Blade Dance</font></b>"
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_lore"				"Kuchiyose: Kirikiri Mai"
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_description"	"Unleashes <b><font color='#FFFFFF'>5</font></b> Tornados in a wave, each <b><font color='#EAF8FF'>dealing Magic Damage</font></b> in a line. <br><br> Each Tornado inflicts a short <b><font color='#F3C6FF'>Movement Speed Slow</font></b> on contact with an enemy."
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_base_damage"	"DAMAGE PER TORNADO: "
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai"						"<b><font color='#F3C6FF'>Summoning: Blade Dance</font></b>"
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_lore"					"Kuchiyose: Kirikiri Mai"
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_description"			"Unleashes <b><font color='#FFFFFF'>5</font></b> Tornados in a wave, each <b><font color='#EAF8FF'>dealing Magic Damage</font></b> in a line. <br><br> Each Tornado inflicts a short <b><font color='#F3C6FF'>Disarm</font></b> on contact with an enemy."
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_base_damage"			"DAMAGE PER TORNADO: "
 		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_cyclone_count_tooltips"	"CYCLONE COUNT: "
 
 		"DOTA_Tooltip_modifier_kuchiyose_kirikiri_mai"				 "<b><font color='#F3C6FF'>Summoning: Blade Dance</font></b>"

@@ -144,6 +144,10 @@ function temari_kuchiyose_kirikiri_mai_on_projectile_hit_unit(keys)
 	local burst_damage = ability:GetSpecialValueFor("base_damage")
 	keys.target:EmitSound("Hero_Invoker.Tornado.Target")
 
+	if keys.target:HasModifier("modifier_kuchiyose_kirikiri_mai") then
+		burst_damage = burst_damage * ability:GetSpecialValueFor("rehit_damage_scale") / 100
+	end
+
 	ApplyDamage({victim = keys.target, attacker = REALCASTER, damage = burst_damage, damage_type = DAMAGE_TYPE_MAGICAL})
 
 	--Stop the sound when the cycloning ends.

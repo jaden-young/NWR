@@ -1,3 +1,4 @@
+LinkLuaModifier("modifier_temari_fusajin_no_jutsu_shard", "abilities/heroes/temari/fusajin_no_jutsu", LUA_MODIFIER_MOTION_NONE)
 
 temari_fusajin_no_jutsu = class({})
 
@@ -46,6 +47,40 @@ function temari_fusajin_no_jutsu:OnSpellStart()
 		kiri_ability:StartCooldown(left - cd_reduction)
 	end
 
+	if caster:HasShard() then
+		self:ProcShard()
+	end
+end
+
+function temari_fusajin_no_jutsu:ProcShard()
+	local caster = self:GetCaster()
+	local attacks = self:GetSpecialValueFor("shard_attacks")
+	local modifier = caster:AddNewModifier(caster, self, "modifier_temari_fusajin_no_jutsu_shard", {duration = 1})
+
+	local enemies = FindUnitsInRadius(
+		caster:GetTeamNumber(), 
+		caster:GetAbsOrigin(),
+		nil,
+		self:GetSpecialValueFor("shard_range"), 
+		DOTA_UNIT_TARGET_TEAM_ENEMY, 
+		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_CREEP, 
+		DOTA_UNIT_TARGET_FLAG_FOW_VISIBLE + DOTA_UNIT_TARGET_FLAG_NO_INVIS, 
+		0, 
+		false
+	)
+
+	for _, enemy in pairs(enemies) do
+		modifier.active = true
+		caster:PerformAttack(enemy, false, true, true, false, true, false, false)
+		modifier.active = true
+
+		attacks = attacks - 1
+
+		if attacks < 1 then
+			modifier:Destroy()
+			break
+		end
+	end
 end
 
 function temari_fusajin_no_jutsu:OnProjectileHit(target, location)
@@ -72,8 +107,6 @@ function temari_fusajin_no_jutsu:OnProjectileHit(target, location)
 		false
 	)
 
-	print(units)
-
 	for _,unit in pairs(units) do
 
 		if unit:IsMagicImmune() == false then
@@ -88,5 +121,33 @@ function temari_fusajin_no_jutsu:GetCooldown()
 		return 3
 	else
 		return 5
+	end
+end
+
+----------------------------------------------------------------------------------------
+
+if modifier_temari_fusajin_no_jutsu_shard == nil then modifier_temari_fusajin_no_jutsu_shard = class({}) end
+
+----------------------------------------------------------------------------------------
+
+function modifier_temari_fusajin_no_jutsu_shard:IsHidden()		return true end
+function modifier_temari_fusajin_no_jutsu_shard:IsPurgable()	return false end
+
+function modifier_temari_fusajin_no_jutsu_shard:OnCreated(kv)
+	self.reduction = -(100 - self:GetAbility():GetSpecialValueFor("shard_damage_pct"))
+	self.active = false
+end
+
+function modifier_temari_fusajin_no_jutsu_shard:DeclareFunctions()
+	return {MODIFIER_PROPERTY_DAMAGEOUTGOING_PERCENTAGE}
+end
+
+function modifier_temari_fusajin_no_jutsu_shard:GetModifierDamageOutgoing_Percentage()
+	if IsServer() then
+		if self.active then
+			return self.reduction
+		else
+			return 0
+		end
 	end
 end
