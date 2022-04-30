@@ -1694,6 +1694,7 @@
 
 
 		"DOTA_Tooltip_ability_anko_senei_jyashu"					"<b><font color='#2CEA5E'>Striking Snakes</font></b>"
+		"DOTA_Tooltip_ability_anko_senei_jyashu_shard_description"	"Snakes from Striking Snakes heal Anko for %shard_no_target_heal%%% of her Maximum HP if no target can be found. Increases duration by %shard_extra_duration%s."
 		"DOTA_Tooltip_ability_anko_senei_jyashu_lore"				"Senei Jyashu"
 		"DOTA_Tooltip_ability_anko_senei_jyashu_snake_damage"		"DAMAGE: "
 		"DOTA_Tooltip_ability_anko_senei_jyashu_snake_damage_interval" "SNAKE COOLDOWN: "
