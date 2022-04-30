@@ -26,7 +26,9 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50"		
+		"AbilityManaCost"				"50"
+
+		"HasShardUpgrade"				"1"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -34,24 +36,47 @@
 		{
 			"01"
 			{
-				"var_type"						"FIELD_FLOAT"
+				"var_type"						"FIELD_INTEGER"
 				"damage"						"70 110 150 190"
 			}
 			"02"
 			{
-				"var_type"						"FIELD_FLOAT"
-				"duration"						"4"
-			}
-			"03"
-			{
-				"var_type"						"FIELD_FLOAT"
+				"var_type"						"FIELD_INTEGER"
 				"ms_slow"						"-25 -30 -35 -40"
 				"LinkedSpecialBonus" 			"special_bonus_neji_2"
 			}
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"armor_reduction"				"2 3 4 5"
+			}
 			"04"
 			{
-				"var_type"						"FIELD_FLOAT"
-				"cast_range"						"600"
+				"var_type"						"FIELD_INTEGER"
+				"duration"						"4"
+			}
+			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"cast_range"					"600"
+			}
+			"06"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"shard_range"					"1200"
+				"RequiresShard"					"1"
+			}
+			"07"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"shard_radius"					"250"
+				"RequiresShard"					"1"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"shard_speed"					"2800"
+				"RequiresShard"					"1"
 			}
 		}
 	}

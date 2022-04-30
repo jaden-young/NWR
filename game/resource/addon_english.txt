@@ -1452,14 +1452,16 @@
 
 		"DOTA_Tooltip_ability_neji_air_palm"					"<b><font color='#ECECEC'>Vacuum Palm</font></b>"
 		"DOTA_Tooltip_ability_neji_air_palm_lore"				"Hakke Kusho"
-		"DOTA_Tooltip_ability_neji_air_palm_Description"		"Sends an air blast to the target enemy dealing <b><font color='#ECECEC'>Magic Damage and a Movement Speed Slow</font></b> for a short duration."
+		"DOTA_Tooltip_ability_neji_air_palm_Description"		"Sends an air blast to the target enemy dealing <font color='#ECECEC'><b>Magic Damage</b></font>, and applying <b><font color='#ECECEC'>Movement Speed Slow and Armor reduction</font></b> for a short duration."
+		"DOTA_Tooltip_ability_neji_air_palm_shard_description"	"Turns Vacuum Palm into a point targeted ability, sending an air blast towards a direction, hitting all enemies in its path.<br><br>RADIUS: %shard_radius%<br>RANGE: %shard_range%"
 		"DOTA_Tooltip_ability_neji_air_palm_cast_range"			"RANGE: "
-		"DOTA_Tooltip_ability_neji_air_palm_ms_slow"			"%MOVEMENT SPEED SLOW: "
-		"DOTA_Tooltip_ability_neji_air_palm_duration"			"MOVEMENT SPEED SLOW DURATION: "
+		"DOTA_Tooltip_ability_neji_air_palm_ms_slow"			"%MOVEMENT SPEED SLOW:"
+		"DOTA_Tooltip_ability_neji_air_palm_armor_reduction"	"ARMOR REDUCTION:"
+		"DOTA_Tooltip_ability_neji_air_palm_duration"			"DURATION: "
 		"DOTA_Tooltip_ability_neji_air_palm_damage"				"DAMAGE: "
 
 		"DOTA_Tooltip_modifier_neji_air_palm_debuff"			    "<b><font color='#ECECEC'>Vacuum Palm</font></b>"	
-		"DOTA_Tooltip_modifier_neji_air_palm_debuff_description"	"This Unit's has <b><font color='#ECECEC'>reduced Movement Speed.</font></b>"
+		"DOTA_Tooltip_modifier_neji_air_palm_debuff_description"	"This Unit's has <b><font color='#ECECEC'>reduced Movement Speed.</font></b> and <b><font color='#ECECEC'>reduced Armor.</font></b>"
 		
 		//Byakugan
 		"DOTA_Tooltip_ability_neji_byakugan"							"<b><font color='#EBDDFF'>Byakugan</font></b>"
