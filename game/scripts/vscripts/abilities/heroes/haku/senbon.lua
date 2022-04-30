@@ -1,6 +1,9 @@
+LinkLuaModifier("modifier_haku_endless_needles_victim", "abilities/heroes/haku/endless_wounds.lua", LUA_MODIFIER_MOTION_NONE)
+LinkLuaModifier("modifier_haku_crippling_senbon_break", "abilities/heroes/haku/senbon.lua", LUA_MODIFIER_MOTION_NONE)
+-----------------------------------------------------------------------------------------------------------------------------
+
 haku_crippling_senbon = haku_crippling_senbon or class({})
 
-LinkLuaModifier("modifier_haku_endless_needles_victim", "abilities/heroes/haku/endless_wounds.lua", LUA_MODIFIER_MOTION_NONE)
 
 function haku_crippling_senbon:Precache(context)
 	PrecacheResource("soundfile",  "soundevents/heroes/haku/haku_senbon_cast.vsndevts", context)
@@ -121,10 +124,51 @@ function haku_crippling_senbon:OnProjectileHit_ExtraData(target, location, Extra
 					woudns_ability:ApplyStacks(target, self:GetSpecialValueFor("endless_wounds_stacks"))
 				end
 			end
+
+			if caster:HasShard() then
+				target:AddNewModifier(caster, self, "modifier_haku_crippling_senbon_break", {duration = self:GetSpecialValueFor("shard_break_duration") * (1 - target:GetStatusResistance())})
+
+				ApplyDamage({
+					victim = target,
+					attacker = caster,
+					damage = self:GetSpecialValueFor("shard_stack_multiplier") * target:GetModifierStackCount("modifier_haku_innate_passive_victim_counter", caster),
+					damage_type = DAMAGE_TYPE_MAGICAL,
+					ability = self
+				})
+			end
 		end
 		
 	end
 end
 
 
+----------------------------------------------------------------------------------------------
 
+modifier_haku_crippling_senbon_break = modifier_haku_crippling_senbon_break or class({})
+
+----------------------------------------------------------------------------------------------
+
+function modifier_haku_crippling_senbon_break:IsPurgable() 	return false end
+
+----------------------------------------------------------------------------------------------
+
+function modifier_haku_crippling_senbon_break:OnCreated()
+	if IsServer() then
+		local nBreakFX = ParticleManager:CreateParticle("particles/generic_gameplay/generic_break.vpcf", PATTACH_OVERHEAD_FOLLOW, self:GetParent())
+		self:AddParticle(nBreakFX, false, false, -1, false, true)
+	end
+end
+
+----------------------------------------------------------------------------------------------
+
+function modifier_haku_crippling_senbon_break:ShouldUseOverheadOffset()
+	return true
+end
+
+----------------------------------------------------------------------------------------------
+
+function modifier_haku_crippling_senbon_break:CheckState()
+	return {
+		[MODIFIER_STATE_PASSIVES_DISABLED] = true
+	}
+end

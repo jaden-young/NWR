@@ -83,7 +83,7 @@ function gaara_sabaku_kyuu:OnChannelFinish(bInterrupted)
 		})
 
 		EmitSoundOn("gaara_prison_impact", self.target)
-		self.target:AddNewModifier(caster, self, "modifier_stunned", {duration = self:GetSpecialValueFor("stun_duration")})
+		self.target:AddNewModifier(caster, self, "modifier_stunned", {duration = self:GetSpecialValueFor("stun_duration") * (1 - self.target:GetStatusResistance())})
 		PopupDamage(self.target, damage)
 
 		--local enemy_loc = self:GetParent():GetAbsOrigin()
