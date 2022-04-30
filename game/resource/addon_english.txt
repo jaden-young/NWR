@@ -279,6 +279,9 @@
 		"DOTA_Tooltip_modifier_death_possession_blood_caster_buff_Description"								"A percentage of damage taken by Hidan is <b><font color='#B5B5B5'>dealt to the cursed target.</font></b>"
 
 
+		"dota_hud_error_hidan_no_marked_target"					"No Marked Target."
+
+
 
 
 		// Self Pain

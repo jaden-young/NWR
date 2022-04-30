@@ -15,9 +15,18 @@ function hidan_death_possession_blood:Precache(context)
 	PrecacheResource("particle",   "particles/units/heroes/hidan/ritual_debuff_core.vpcf", context)
 end
 
+function hidan_death_possession_blood:CastFilterResult()
+	return self:GetCaster():HasModifier("modifier_death_possession_blood_caster_status") and UF_SUCCESS or UF_FAIL_CUSTOM
+end
+
+function hidan_death_possession_blood:GetCustomCastError()
+	return "#dota_hud_error_hidan_no_marked_target"
+end
+
 function hidan_death_possession_blood:OnSpellStart()
 	local caster = self:GetCaster()
 	local duration = self:GetSpecialValueFor("duration")
+	local target = self.current_blood_target
 
 	caster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
 	Timers:CreateTimer( 0.5, function()
@@ -33,13 +42,12 @@ function hidan_death_possession_blood:OnSpellStart()
 	caster:FindAbilityByName("hidan_self_pain"):SetLevel(self:GetLevel())
 
 	-- Dummy
-	local dummy = CreateUnitByName("npc_dummy_unit", caster:GetAbsOrigin(), false, caster, caster, caster:GetTeam())
-	dummy:AddNewModifier(caster, self, "modifier_phased", {})
-	dummy:AddNewModifier(caster, self, "modifier_death_possession_blood_dummy_aura", {duration = duration})
-	dummy:AddNewModifier(caster, self, "modifier_kill", {duration = duration})
 
-	-- Apply buuf to caster
-	caster:AddNewModifier(caster, self, "modifier_death_possession_blood_caster_buff", {duration = duration})
+	local thinker = CreateModifierThinker(caster, self, "modifier_death_possession_blood_dummy_aura", {duration = duration}, caster:GetAbsOrigin(), caster:GetTeamNumber(), false)
+
+	-- Apply buff to caster + refresh mark
+	caster:AddNewModifier(caster, self, "modifier_death_possession_blood_caster_buff", {duration = duration, id = target:entindex(), thinker = thinker:entindex()})
+	target:AddNewModifier(caster, self, "modifier_death_possession_blood_target", {duration = duration})
 
 	-- Sounds
 	caster:EmitSound("hidan_ulti_cast_talking")
@@ -93,12 +101,17 @@ end
 
 
 function modifier_death_possession_blood_caster_on_attack:OnAttackLanded( attack_event )
-
-	if attack_event.attacker ~= self:GetAbility():GetCaster() then return end
+	if attack_event.attacker ~= self:GetAbility():GetCaster() then
+		return
+	end
 
 	local ability = self:GetAbility()
 	local caster = ability:GetCaster()
 	local mark_duration = ability:GetSpecialValueFor("mark_duration")
+
+	if caster:HasModifier("modifier_death_possession_blood_caster_buff") and attack_event.target ~= ability.current_blood_target then
+		return
+	end
 
 
 	if ability.current_blood_target ~= nil then
@@ -109,26 +122,11 @@ function modifier_death_possession_blood_caster_on_attack:OnAttackLanded( attack
 		-- Set modifier to the target
 		ability.current_blood_target = attack_event.target
 		self.current_blood_target_name = attack_event.target:GetUnitName()
-		if IsClient() then
-			print(ability.current_blood_target_name)
-		end
-		attack_event.target:AddNewModifier(caster, 
-											ability, 
-											"modifier_death_possession_blood_target", 
-											{duration = mark_duration})
+		attack_event.target:AddNewModifier(caster, ability, "modifier_death_possession_blood_target", {duration = mark_duration})
 
 		-- Set status for caster
 		local target_name = attack_event.target:GetUnitName()
-		local status_modifier = caster:AddNewModifier(caster, 
-														ability, 
-														"modifier_death_possession_blood_caster_status", 
-														{duration = mark_duration,
-														 target_name = target_name})
-		-- status_modifier.texture = attack_event.target:GetUnitName()
-		-- status_modifier.GetTexture = function () return attack_event.target:GetUnitName() end
-		-- print()
-		-- print(status_modifiers)
-		-- print(status_modifier.GetTexture)
+		caster:AddNewModifier(caster, ability, "modifier_death_possession_blood_caster_status", {duration = mark_duration, target_name = target_name})
 	end
 
 	return nil
@@ -153,20 +151,11 @@ end
 
 function modifier_death_possession_blood_target:OnCreated(event)
 	if IsServer() then
-		self.target_vfx = ParticleManager:CreateParticle("particles/units/heroes/hidan/ritual_debuff_core.vpcf",  
-														PATTACH_CUSTOMORIGIN_FOLLOW, 
-														self:GetAbility():GetCaster())
-		ParticleManager:SetParticleControlEnt(self.target_vfx, 0, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_origin", self:GetParent():GetAbsOrigin(), true)
-		ParticleManager:SetParticleControlEnt(self.target_vfx, 1, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_origin", self:GetParent():GetOrigin(), true)
-	end
-end
+		local target_vfx = ParticleManager:CreateParticle("particles/units/heroes/hidan/ritual_debuff_core.vpcf", PATTACH_CUSTOMORIGIN_FOLLOW, self:GetAbility():GetCaster())
+		ParticleManager:SetParticleControlEnt(target_vfx, 0, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_origin", self:GetParent():GetAbsOrigin(), true)
+		ParticleManager:SetParticleControlEnt(target_vfx, 1, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_origin", self:GetParent():GetOrigin(), true)
+		self:AddParticle(target_vfx, false, false, -1, false, false)
 
-function modifier_death_possession_blood_target:OnRefresh()
-	if IsServer() then
-		if self.target_vfx ~= nil then
-			ParticleManager:SetParticleControlEnt(self.target_vfx, 0, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_origin", self:GetParent():GetAbsOrigin(), true)
-			ParticleManager:SetParticleControlEnt(self.target_vfx, 1, self:GetParent(), PATTACH_ABSORIGIN_FOLLOW, "attach_origin", self:GetParent():GetOrigin(), true)	
-		end
 	end
 end
 
@@ -175,9 +164,6 @@ function modifier_death_possession_blood_target:OnRemoved()
 	local caster = self:GetAbility():GetCaster()
 	if IsServer() and caster:HasModifier("modifier_death_possession_blood_caster_status") then
 		caster:RemoveModifierByName("modifier_death_possession_blood_caster_status")
-
-		ParticleManager:DestroyParticle(self.target_vfx, false)
-		ParticleManager:ReleaseParticleIndex(self.target_vfx)
 	end
 end
 
@@ -198,10 +184,6 @@ end
 
 function modifier_death_possession_blood_caster_status:OnCreated(kv)
 	self.texture = kv.target_name
-	if IsClient() then
-		print(kv)
-		print(kv.target_name)
-	end
 end
 
 function modifier_death_possession_blood_caster_status:GetTexture()
@@ -302,16 +284,14 @@ end
 
 modifier_death_possession_blood_caster_buff = class({})
 
-function modifier_death_possession_blood_caster_buff:IsBuff()
-	return true
-end
+function modifier_death_possession_blood_caster_buff:IsBuff() 		return true end
+function modifier_death_possession_blood_caster_buff:IsHidden()		return false end
+function modifier_death_possession_blood_caster_buff:IsPurgable() 	return false end
 
-function modifier_death_possession_blood_caster_buff:IsHidden()
-	return false
-end
-
-function modifier_death_possession_blood_caster_buff:IsPurgable()
-	return false
+function modifier_death_possession_blood_caster_buff:OnCreated(kv)
+	if not IsServer() then return end
+	self.target = EntIndexToHScript(kv.id)
+	self.thinker = EntIndexToHScript(kv.thinker)
 end
 
 function modifier_death_possession_blood_caster_buff:GetEffectName()
@@ -332,8 +312,18 @@ end
 
 function modifier_death_possession_blood_caster_buff:DeclareFunctions()
 	return {
-		MODIFIER_EVENT_ON_TAKEDAMAGE 
+		MODIFIER_EVENT_ON_TAKEDAMAGE,
+		MODIFIER_EVENT_ON_DEATH
 	}
+end
+
+function modifier_death_possession_blood_caster_buff:OnDeath(event)
+	if not IsServer() then return end
+
+	if event.unit == self.target then
+		self.thinker:Destroy()
+		self:Destroy()
+	end
 end
 
 function modifier_death_possession_blood_caster_buff:OnTakeDamage(attack_event)
@@ -347,7 +337,6 @@ function modifier_death_possession_blood_caster_buff:OnTakeDamage(attack_event)
 	if ability.current_blood_target ~= nil then
 
 		local damage_multiplier = ability:GetSpecialValueFor("returned_damage_outside_percentage") / 100
-		-- local damage_multiplier_inside_ring = ability:GetSpecialValueFor("returned_damage_inside_percentage") / 100
 		if caster:HasModifier("modifier_death_possession_blood_dummy_aura_inside_ring") then 
 			damage_multiplier = ability:GetSpecialValueFor("returned_damage_inside_percentage") / 100
 		end
@@ -363,9 +352,4 @@ function modifier_death_possession_blood_caster_buff:OnTakeDamage(attack_event)
 
 		ApplyDamage(damage_table)
 	end
-end
-
-function modifier_death_possession_blood_caster_buff:OnRemoved()
-	local caster = self:GetAbility():GetCaster()
-	--caster:FindAbilityByName("hidan_self_pain"):SetLevel(0)
 end
