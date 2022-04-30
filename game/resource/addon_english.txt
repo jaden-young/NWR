@@ -444,9 +444,9 @@
 		// Sabaku Kyuu
 		"DOTA_Tooltip_ability_gaara_sabaku_kyuu"						"<b><font color='#D86C26'>Sand Coffin</font></b>"
 		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_lore"					"Sabaku Kyu"
-		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_description"			"<b><font color='#FFFFFF'>CHANNELED</font></b> - Encases the target in sand <b><font color='#D86C26'>fully disabling them while Channeled.</font></b> <br><br> <b><font color='#D86C26'>Magic Damage is dealt</font></b> after <b><font color='#FFFFFF'>1.4</font></b> seconds of being Channeled."
-		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_dmg"				"DAMAGE: "
-		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_duration"				"DURATION: "
+		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_description"			"<b><font color='#FFFFFF'>CHANNELED</font></b> - Encases the target in sand <b><font color='#D86C26'>fully disabling them while Channeled.</font></b> <br><br> <b><font color='#D86C26'>Magic Damage is dealt</font></b> at the end."
+		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_damage"					"DAMAGE: "
+		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_abilitychanneltime"		"DURATION: "
 		// Ryuusa Bakuryu
 		"DOTA_Tooltip_ability_gaara_ryuusa_bakuryu"						"<b><font color='#C1943D'>Sand Tsunami</font></b>"
 		"DOTA_Tooltip_ability_gaara_ryuusa_bakuryu_lore"						"Ryusa Bakuryu"
@@ -460,11 +460,15 @@
 		// Suna no Yoroi
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi"						"<b><font color='#FFDD93'>Sand Armor</font></b>"
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_description"			"Target friendly Unit absorbs <b><font color='#FFFFFF'>30%</font></b> Incoming Damage <b><font color='#FFDD93'>in exchange for Gaara's Mana</font></b> for a short duration. <br><br> Gaara absorbs <b><font color='#FFFFFF'>60%</font></b> Incoming Damage <b><font color='#FFDD93'>if casted upon himself.</font></b>"
+		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_shard_description"	"Grants the target Physical Damage Immunity for %shard_immunity_duration% Seconds."
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_damage_per_mana"		"REDUCED DAMAGE PER MANA: "
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_shield_duration"		"SHIELD DURATION: "
 
 		"Dota_Tooltip_modifier_suna_no_yoroi"							"<b><font color='#FFDD93'>Sand Armor</font></b>"
-		"Dota_Tooltip_modifier_suna_no_yoroi_description"							"Gaara takes <b><font color='#FFDD93'>reduced Damage</font></b> in exchange for <b><font color='#0689D8'>Mana.</font></b>"
+		"Dota_Tooltip_modifier_suna_no_yoroi_description"				"Gaara takes <b><font color='#FFDD93'>reduced Damage</font></b> in exchange for <b><font color='#0689D8'>Mana.</font></b>"
+		"DOTA_Tooltip_modifier_suna_no_yoroi_shard"						"<b><font color='#FFDD93'>Sand Armor Immunity</font></b>"
+		"DOTA_Tooltip_modifier_suna_no_yoroi_shard_Description"			"Immune to physical damage."
+
 
 		"DOTA_Tooltip_modifier_mana_shield_datadriven"					"Sand Armor"
 		"DOTA_Tooltip_modifier_mana_shield_datadriven_description"		"Absorbing Damage in exchange for Mana"

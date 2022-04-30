@@ -34,21 +34,16 @@
 		{
 			"01"
 			{
-				"var_type"						"FIELD_FLOAT"
-				"tick_interval"					"0.1"
-			}
-			"02"
-			{
 				"var_type"						"FIELD_INTEGER"
 				"damage"						"90 170 250 330"
 				"LinkedSpecialBonus"			"special_bonus_gaara_4"
 			}
-			"03"
+			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
 				"duration"						"1.5"
 			}
-			"04"
+			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
 				"stun_duration"					"0.6 0.9 1.2 1.5"
