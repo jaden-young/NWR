@@ -21,12 +21,12 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityChannelTime"			"2.8 2.8 2.8"
+		"AbilityChannelTime"			"1.5"
 		"AbilityCooldown"				"18 16 14 12"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"100 115 130 145"		
+		"AbilityManaCost"				"90 110 130 150"		
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -34,29 +34,19 @@
 		{
 			"01"
 			{
-				"var_type"						"FIELD_FLOAT"
-				"tick_interval"					"0.1"
-			}
-			"04"
-			{
 				"var_type"						"FIELD_INTEGER"
-				"dmg"						"80 160 240 320"
+				"damage"						"90 170 250 330"
 				"LinkedSpecialBonus"			"special_bonus_gaara_4"
 			}
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"duration"						"2.8 2.8 2.8"
+				"duration"						"1.5"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"delay_to_dmg"					"1.4 1.4 1.4"
-			}
-			"04"
-			{
-				"var_type"						"FIELD_FLOAT"
-				"radius"						"75"
+				"stun_duration"					"0.6 0.9 1.2 1.5"
 			}
 		}
 	}

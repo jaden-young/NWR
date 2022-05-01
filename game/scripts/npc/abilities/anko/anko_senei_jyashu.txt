@@ -25,6 +25,9 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"300"
 
+
+		"HasShardUpgrade"				"1"
+
 		
 		"AbilitySpecial"
 		{
@@ -74,6 +77,18 @@
 			{
 				"var_type"			"FIELD_INTEGER"
 				"max_stacks"		"5"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"shard_extra_duration"	"2"
+				"RequiresShard"			"1"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"shard_no_target_heal"	"5"
+				"RequiresShard"			"1"
 			}
 		}
 	}

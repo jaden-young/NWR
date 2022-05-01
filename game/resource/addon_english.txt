@@ -279,6 +279,9 @@
 		"DOTA_Tooltip_modifier_death_possession_blood_caster_buff_Description"								"A percentage of damage taken by Hidan is <b><font color='#B5B5B5'>dealt to the cursed target.</font></b>"
 
 
+		"dota_hud_error_hidan_no_marked_target"					"No Marked Target."
+
+
 
 
 		// Self Pain
@@ -444,9 +447,9 @@
 		// Sabaku Kyuu
 		"DOTA_Tooltip_ability_gaara_sabaku_kyuu"						"<b><font color='#D86C26'>Sand Coffin</font></b>"
 		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_lore"					"Sabaku Kyu"
-		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_description"			"<b><font color='#FFFFFF'>CHANNELED</font></b> - Encases the target in sand <b><font color='#D86C26'>fully disabling them while Channeled.</font></b> <br><br> <b><font color='#D86C26'>Magic Damage is dealt</font></b> after <b><font color='#FFFFFF'>1.4</font></b> seconds of being Channeled."
-		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_dmg"				"DAMAGE: "
-		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_duration"				"DURATION: "
+		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_description"			"<b><font color='#FFFFFF'>CHANNELED</font></b> - Encases the target in sand <b><font color='#D86C26'>fully disabling them while Channeled.</font></b> <br><br> <b><font color='#D86C26'>Magic Damage is dealt</font></b> at the end."
+		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_damage"					"DAMAGE: "
+		"DOTA_Tooltip_ability_gaara_sabaku_kyuu_abilitychanneltime"		"DURATION: "
 		// Ryuusa Bakuryu
 		"DOTA_Tooltip_ability_gaara_ryuusa_bakuryu"						"<b><font color='#C1943D'>Sand Tsunami</font></b>"
 		"DOTA_Tooltip_ability_gaara_ryuusa_bakuryu_lore"						"Ryusa Bakuryu"
@@ -460,11 +463,15 @@
 		// Suna no Yoroi
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi"						"<b><font color='#FFDD93'>Sand Armor</font></b>"
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_description"			"Target friendly Unit absorbs <b><font color='#FFFFFF'>30%</font></b> Incoming Damage <b><font color='#FFDD93'>in exchange for Gaara's Mana</font></b> for a short duration. <br><br> Gaara absorbs <b><font color='#FFFFFF'>60%</font></b> Incoming Damage <b><font color='#FFDD93'>if casted upon himself.</font></b>"
+		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_shard_description"	"Grants the target Physical Damage Immunity for %shard_immunity_duration% Seconds."
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_damage_per_mana"		"REDUCED DAMAGE PER MANA: "
 		"DOTA_Tooltip_ability_gaara_suna_no_yoroi_shield_duration"		"SHIELD DURATION: "
 
 		"Dota_Tooltip_modifier_suna_no_yoroi"							"<b><font color='#FFDD93'>Sand Armor</font></b>"
-		"Dota_Tooltip_modifier_suna_no_yoroi_description"							"Gaara takes <b><font color='#FFDD93'>reduced Damage</font></b> in exchange for <b><font color='#0689D8'>Mana.</font></b>"
+		"Dota_Tooltip_modifier_suna_no_yoroi_description"				"Gaara takes <b><font color='#FFDD93'>reduced Damage</font></b> in exchange for <b><font color='#0689D8'>Mana.</font></b>"
+		"DOTA_Tooltip_modifier_suna_no_yoroi_shard"						"<b><font color='#FFDD93'>Sand Armor Immunity</font></b>"
+		"DOTA_Tooltip_modifier_suna_no_yoroi_shard_Description"			"Immune to physical damage."
+
 
 		"DOTA_Tooltip_modifier_mana_shield_datadriven"					"Sand Armor"
 		"DOTA_Tooltip_modifier_mana_shield_datadriven_description"		"Absorbing Damage in exchange for Mana"
@@ -645,14 +652,18 @@
 
 
 		// Crippling Senbon
-		"DOTA_Tooltip_ability_haku_crippling_senbon"					"<b><font color='#9784FF'>Crippling Senbon</font></b>"
-		"DOTA_Tooltip_ability_haku_crippling_senbon_lore"				""
+		"DOTA_Tooltip_ability_haku_crippling_senbon"						"<b><font color='#9784FF'>Crippling Senbon</font></b>"
+		"DOTA_Tooltip_ability_haku_crippling_senbon_lore"					""
 		"DOTA_Tooltip_ability_haku_crippling_senbon_description"			"Fires a senbon at the target dealing <b><font color='#9784FF'>Magic Damage and a brief Stun.</font></b> <br><br> Adds stacks of <b><font color='#89BBCE'>Endless Wounds</font></b> if leveled."
+		"DOTA_Tooltip_ability_haku_crippling_senbon_shard_description"		"Causes Crippling Senbon to deal additional Magic Damage equal to %shard_stack_multiplier%x the target’s current stacks of Endless Wounds. Additionally, applies Break to the target for %shard_break_duration% Seconds."
 		"DOTA_Tooltip_ability_haku_crippling_senbon_stun_duration"			"STUN DURATION: "
-		"DOTA_Tooltip_ability_haku_crippling_senbon_damage"			"DAMAGE: "
+		"DOTA_Tooltip_ability_haku_crippling_senbon_damage"					"DAMAGE: "
 		"DOTA_Tooltip_ability_haku_crippling_senbon_endless_wounds_stacks"		"ENDLESS WOUNDS STACKS: "
-		"DOTA_Tooltip_modifier_haku_senbon_stun"						"<b><font color='#9784FF'>Crippling Senbon</font></b>"
-		"DOTA_Tooltip_modifier_haku_senbon_stun_description"			"This Unit is <b><font color='#9784FF'>Stunned.</font></b>"
+		
+		"DOTA_Tooltip_modifier_haku_senbon_stun"							"<b><font color='#9784FF'>Crippling Senbon</font></b>"
+		"DOTA_Tooltip_modifier_haku_senbon_stun_description"				"This Unit is <b><font color='#9784FF'>Stunned.</font></b>"
+		"DOTA_Tooltip_modifier_haku_crippling_senbon_break"					"<b><font color='#9784FF'>Crippling Senbon - Break</font></b>"
+		"DOTA_Tooltip_modifier_haku_crippling_senbon_break_Description"		"Passives are disabled."
 		
 		// Needles of Death
 		"DOTA_Tooltip_ability_haku_needles"					"<b><font color='#C0EEFF'>Needles of Death</font></b>"
@@ -1441,14 +1452,16 @@
 
 		"DOTA_Tooltip_ability_neji_air_palm"					"<b><font color='#ECECEC'>Vacuum Palm</font></b>"
 		"DOTA_Tooltip_ability_neji_air_palm_lore"				"Hakke Kusho"
-		"DOTA_Tooltip_ability_neji_air_palm_Description"		"Sends an air blast to the target enemy dealing <b><font color='#ECECEC'>Magic Damage and a Movement Speed Slow</font></b> for a short duration."
+		"DOTA_Tooltip_ability_neji_air_palm_Description"		"Sends an air blast to the target enemy dealing <font color='#ECECEC'><b>Magic Damage</b></font>, and applying <b><font color='#ECECEC'>Movement Speed Slow and Armor reduction</font></b> for a short duration."
+		"DOTA_Tooltip_ability_neji_air_palm_shard_description"	"Turns Vacuum Palm into a point targeted ability, sending an air blast towards a direction, hitting all enemies in its path.<br><br>RADIUS: %shard_radius%<br>RANGE: %shard_range%"
 		"DOTA_Tooltip_ability_neji_air_palm_cast_range"			"RANGE: "
-		"DOTA_Tooltip_ability_neji_air_palm_ms_slow"			"%MOVEMENT SPEED SLOW: "
-		"DOTA_Tooltip_ability_neji_air_palm_duration"			"MOVEMENT SPEED SLOW DURATION: "
+		"DOTA_Tooltip_ability_neji_air_palm_ms_slow"			"%MOVEMENT SPEED SLOW:"
+		"DOTA_Tooltip_ability_neji_air_palm_armor_reduction"	"ARMOR REDUCTION:"
+		"DOTA_Tooltip_ability_neji_air_palm_duration"			"DURATION: "
 		"DOTA_Tooltip_ability_neji_air_palm_damage"				"DAMAGE: "
 
 		"DOTA_Tooltip_modifier_neji_air_palm_debuff"			    "<b><font color='#ECECEC'>Vacuum Palm</font></b>"	
-		"DOTA_Tooltip_modifier_neji_air_palm_debuff_description"	"This Unit's has <b><font color='#ECECEC'>reduced Movement Speed.</font></b>"
+		"DOTA_Tooltip_modifier_neji_air_palm_debuff_description"	"This Unit's has <b><font color='#ECECEC'>reduced Movement Speed.</font></b> and <b><font color='#ECECEC'>reduced Armor.</font></b>"
 		
 		//Byakugan
 		"DOTA_Tooltip_ability_neji_byakugan"							"<b><font color='#EBDDFF'>Byakugan</font></b>"
@@ -1548,6 +1561,7 @@
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique"						"<b><font color='#BFBFBF'>Shadow Imitation</font></b>"
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_lore"				"Kagemane no Jutsu"
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_Description"			"Extends Shikamaru's shadow towards a target point <b><font color='#BFBFBF'>latching onto the first enemy Hero</font></b> it encounters. <br><br> Once bound, the enemy will be fully disabled while <b><font color='#BFBFBF'>copying Shikamaru's movement.</font></b> <br><br> Enemies affected by <b><font color='#FFFFFF'>Flash Bombs</font></b> will remain affected for an additional <b><font color='#FFFFFF'>1</font></b> second."
+		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_shard_description"	"Enemies under the effect of Shadow Imitation are strangled, taking %shard_damage_pct%%% of their Maximum HP as Magic Damage every %shard_interval% Seconds. "
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_shadow_range"		"RANGE"
 		"DOTA_Tooltip_ability_shikamaru_shadow_imitation_technique_shadow_duration"		"DURATION"
 
@@ -1629,6 +1643,7 @@
 		// Halo Dance
 		"DOTA_Tooltip_ability_shisui_halo_dance"									"Halo Dance"
 		"DOTA_Tooltip_ability_shisui_halo_dance_Description"						"Causes Shisui’s attacks to send out waves of fire for a short duration of time, dealing additional Magic Damage in a short line."
+		"DOTA_Tooltip_ability_shisui_halo_dance_shard_description"					"Halo dances grants %shard_attack_speed% bonus attack speed and %shard_range% bonus attack range while active."
 		"DOTA_Tooltip_ability_shisui_halo_dance_Lore"								""
 		"DOTA_Tooltip_ability_shisui_halo_dance_damage"								"DAMAGE:"
 		"DOTA_Tooltip_ability_shisui_halo_dance_wave_radius"						"RADIUS:"
@@ -1694,6 +1709,7 @@
 
 
 		"DOTA_Tooltip_ability_anko_senei_jyashu"					"<b><font color='#2CEA5E'>Striking Snakes</font></b>"
+		"DOTA_Tooltip_ability_anko_senei_jyashu_shard_description"	"Snakes from Striking Snakes heal Anko for %shard_no_target_heal%%% of her Maximum HP if no target can be found. Increases duration by %shard_extra_duration%s."
 		"DOTA_Tooltip_ability_anko_senei_jyashu_lore"				"Senei Jyashu"
 		"DOTA_Tooltip_ability_anko_senei_jyashu_snake_damage"		"DAMAGE: "
 		"DOTA_Tooltip_ability_anko_senei_jyashu_snake_damage_interval" "SNAKE COOLDOWN: "
@@ -1725,13 +1741,16 @@
 		//--------------------
 		//Temari
 		//--------------------
-		"npc_dota_hero_temari"  									"Temari"
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu"					"<b><font color='#7FD3FF'>Dust Wind</font></b>"
+		"npc_dota_hero_temari"  											"Temari"
+
+
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu"						"<b><font color='#7FD3FF'>Dust Wind</font></b>"
 		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_lore"					"Fusajin no Jutsu"
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_Description"		"<b><font color='#7FD3FF'>Deals Magic Damage</font></b> to a target and nearby enemy units. <br><br> On cast, <b><font color='#7FD3FF'>reduces the Cooldown</font></b> of Temari's other abilities by <b><font color='#FFFFFF'>1</font></b> second."
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_damage"			"DAMAGE: "
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_cd_reduc"			"COOLDOWN REDUCTION (TALENT): "
-		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_radius"			"RADIUS: "
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_Description"			"<b><font color='#7FD3FF'>Deals Magic Damage</font></b> to a target and nearby enemy units. <br><br> On cast, <b><font color='#7FD3FF'>reduces the Cooldown</font></b> of Temari's other abilities by <b><font color='#FFFFFF'>1</font></b> second."
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_shard_description"	"Casting Dust Wind also releases %shard_attacks% reduced damage Basic Attacks targeting %shard_attacks% random nearby targets.<br><br>RANGE: %shard_range%<br>DAMAGE: %shard_damage_pct%%%"
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_damage"				"DAMAGE: "
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_cd_reduc"				"COOLDOWN REDUCTION (TALENT): "
+		"DOTA_Tooltip_ability_temari_fusajin_no_jutsu_radius"				"RADIUS: "
 
 		
 		"DOTA_Tooltip_ability_temari_kamaitachi_no_jutsu"				"<b><font color='#EAF8FF'>Wind Scythe</font></b>"
@@ -1768,10 +1787,10 @@
 		"DOTA_Tooltip_modifier_temari_sheer_wind_stack_buff"				 "<b><font color='#7FF1DF'>Sheer Wind Stack</font></b>"
 		"DOTA_Tooltip_modifier_temari_sheer_wind_stack_buff_description"	 "Duration for a stack of <b><font color='#7FF1DF'>Sheer Wind.</font></b>"
 
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai"				"<b><font color='#F3C6FF'>Summoning: Blade Dance</font></b>"
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_lore"				"Kuchiyose: Kirikiri Mai"
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_description"	"Unleashes <b><font color='#FFFFFF'>5</font></b> Tornados in a wave, each <b><font color='#EAF8FF'>dealing Magic Damage</font></b> in a line. <br><br> Each Tornado inflicts a short <b><font color='#F3C6FF'>Movement Speed Slow</font></b> on contact with an enemy."
-		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_base_damage"	"DAMAGE PER TORNADO: "
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai"						"<b><font color='#F3C6FF'>Summoning: Blade Dance</font></b>"
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_lore"					"Kuchiyose: Kirikiri Mai"
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_description"			"Unleashes <b><font color='#FFFFFF'>5</font></b> Tornados in a wave, each <b><font color='#EAF8FF'>dealing Magic Damage</font></b> in a line. <br><br> Each Tornado inflicts a short <b><font color='#F3C6FF'>Disarm</font></b> on contact with an enemy."
+		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_base_damage"			"DAMAGE PER TORNADO: "
 		"DOTA_Tooltip_ability_temari_kuchiyose_kirikiri_mai_cyclone_count_tooltips"	"CYCLONE COUNT: "
 
 		"DOTA_Tooltip_modifier_kuchiyose_kirikiri_mai"				 "<b><font color='#F3C6FF'>Summoning: Blade Dance</font></b>"

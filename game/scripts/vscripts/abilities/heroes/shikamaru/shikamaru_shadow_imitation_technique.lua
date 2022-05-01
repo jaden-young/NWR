@@ -1,12 +1,9 @@
-shikamaru_shadow_imitation_technique = class({})
-LinkLuaModifier( "modifier_generic_custom_indicator",
-				 "modifiers/modifier_generic_custom_indicator",
-				 LUA_MODIFIER_MOTION_BOTH )
-
-LinkLuaModifier( "modifier_shadow_imitation", "abilities/heroes/shikamaru/shikamaru_shadow_imitation_technique.lua" ,LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_shadow_imitation_caster", "abilities/heroes/shikamaru/shikamaru_shadow_imitation_technique.lua" ,LUA_MODIFIER_MOTION_NONE )
-
+LinkLuaModifier( "modifier_shadow_imitation", 			"abilities/heroes/shikamaru/shikamaru_shadow_imitation_technique.lua" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_shadow_imitation_shard", 	"abilities/heroes/shikamaru/shikamaru_shadow_imitation_technique.lua" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_shadow_imitation_caster", 	"abilities/heroes/shikamaru/shikamaru_shadow_imitation_technique.lua" ,LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_generic_custom_indicator", 	"modifiers/modifier_generic_custom_indicator", LUA_MODIFIER_MOTION_BOTH )
 --------------------------------------------------------------------------------
+
 shikamaru_shadow_imitation_technique = shikamaru_shadow_imitation_technique or class({})
 
 function shikamaru_shadow_imitation_technique:Precache( context )
@@ -98,7 +95,6 @@ function shikamaru_shadow_imitation_technique:OnAbilityPhaseStart()
 end
 
 function shikamaru_shadow_imitation_technique:OnSpellStart()
-	
 	self.caster = self:GetCaster()
 	self.caster_location = self.caster:GetAbsOrigin()
 	self.ability = self
@@ -155,16 +151,19 @@ function shikamaru_shadow_imitation_technique:OnProjectileHit(hTarget, vLocation
 	if hTarget ~= nil and hTarget:IsMagicImmune() == false then
 		hTarget:Stop()
 		hTarget:EmitSound("shikamaru_hold_impact")
-		if hTarget:HasModifier("modifier_flash_bomb_debuff") then
-			hTarget:AddNewModifier(self:GetCaster(), self, "modifier_shadow_imitation", {duration = (self.shadow_duration + 0.5)})
-		else
-			hTarget:AddNewModifier(self:GetCaster(), self, "modifier_shadow_imitation", {duration = self.shadow_duration})
-		end
+		local duration = (hTarget:HasModifier("modifier_flash_bomb_debuff") and 0.5 or 0) + self.shadow_duration
+
+		hTarget:AddNewModifier(self:GetCaster(), self, "modifier_shadow_imitation", {duration = duration})
+
 		local innate_ability = self.caster:FindAbilityByName("shikamaru_innate_passive")
 		local innate_ability_modifier = self.caster:FindModifierByName("modifier_shikamaru_innate_passive_intrinsic")
 		local stacks_count = innate_ability_modifier:GetStackCount()
 		innate_ability:ApplyDebuffStacks(hTarget, stacks_count)
 		innate_ability:ResetStacks()
+
+		if self.caster:HasShard() then
+			hTarget:AddNewModifier(self:GetCaster(), self, "modifier_shadow_imitation_shard", {duration = duration})
+		end
 	end
 
 	ParticleManager:DestroyParticle(self.projectile_vfx, true)
@@ -206,8 +205,6 @@ function modifier_shadow_imitation:OnCreated( kv )
 
 	-- ParticleManager:SetParticleControl(self.status_vfx, 0, self.caster:GetAbsOrigin())
 
-
-
 	if not IsServer() then return end
 	-- ability properties
 	-- self.parent:StartGesture(ACT_DOTA_RUN)
@@ -220,12 +217,7 @@ function modifier_shadow_imitation:OnCreated( kv )
 	self:StartIntervalThink(FrameTime())
 end
 
-function modifier_shadow_imitation:OnRefresh( kv )
-	
-end
-
 function modifier_shadow_imitation:OnIntervalThink()
-
 	-- get data
 	local current_position = self:GetParent():GetAbsOrigin()
 	local old_shikamaru = self.old_shikamaru_postion
@@ -265,38 +257,54 @@ function modifier_shadow_imitation:OnIntervalThink()
 	ParticleManager:SetParticleControl(self.status_vfx, 3, self.parent:GetAbsOrigin())
 end
 
-function modifier_shadow_imitation:OnRemoved()
-end
-
 function modifier_shadow_imitation:OnDestroy()
+	if not IsServer() then return end
 	ParticleManager:DestroyParticle(self.status_vfx, true)
 	ParticleManager:ReleaseParticleIndex(self.status_vfx)
 	
-	if not IsServer() then return end
 	self.parent:FadeGesture(self.gesture)
 end
 
 --------------------------------------------------------------------------------
 -- Status Effects
 function modifier_shadow_imitation:CheckState()
-	local state = {
+	return {
 		[MODIFIER_STATE_COMMAND_RESTRICTED] = true,
 		[MODIFIER_STATE_FLYING_FOR_PATHING_PURPOSES_ONLY] = true,
 		[MODIFIER_STATE_PROVIDES_VISION] = true,
 		[MODIFIER_STATE_DISARMED] = true
 	}
-
-	return state
 end
 
+modifier_shadow_imitation_shard = modifier_shadow_imitation_shard or class({})
+
+function modifier_shadow_imitation_shard:IsHidden() 	return true end
+function modifier_shadow_imitation_shard:IsPurgable()	return false end
+
+function modifier_shadow_imitation_shard:OnCreated()
+	if not IsServer() then return end
+
+	local ability = self:GetAbility()
+
+	self.damage_table = {
+		attacker = self:GetCaster(),
+		victim = self:GetParent(),
+		damage = self:GetParent():GetMaxHealth() * ability:GetSpecialValueFor("shard_damage_pct") / 100,
+		damage_type = DAMAGE_TYPE_MAGICAL,
+		ability = ability
+	}
+
+	self:StartIntervalThink( ability:GetSpecialValueFor("shard_interval"))
+	self:OnIntervalThink()
+end
+
+function modifier_shadow_imitation_shard:OnIntervalThink()
+	ApplyDamage(self.damage_table)
+end
 
 modifier_shadow_imitation_caster = modifier_shadow_imitation_caster or class({})
 
 function modifier_shadow_imitation_caster:CheckState()
-	local state = {
-		[MODIFIER_STATE_COMMAND_RESTRICTED] = true,
-	}
-
-	return state
+	return {[MODIFIER_STATE_COMMAND_RESTRICTED] = true}
 end
 

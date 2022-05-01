@@ -68,6 +68,7 @@ export class modifier_hidan_innate_passive_intrinsic extends BaseModifier{
     }
 
     OnCreated(params: object): void {
+        if (!IsServer()) return;
         let ability = this.GetAbility()
         let caster = ability?.GetCaster()
 

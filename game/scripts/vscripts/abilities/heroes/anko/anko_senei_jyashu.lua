@@ -80,8 +80,9 @@ end
 function anko_senei_jyashu:OnSpellStart()
 	local caster = self:GetCaster()
 	local duration = self:GetSpecialValueFor("active_duration")
+	local shard_extra_duration = caster:HasShard() and self:GetSpecialValueFor("shard_extra_duration") or 0
 
-	caster:AddNewModifier(caster, self, "modifier_senei_jyashu_active", {duration = duration})
+	caster:AddNewModifier(caster, self, "modifier_senei_jyashu_active", {duration = duration + shard_extra_duration})
 end
 
 modifier_senei_jyashu_passive = modifier_senei_jyashu_passive or class({})
@@ -165,6 +166,10 @@ function modifier_senei_jyashu_active:OnIntervalThink()
 			false
 		)
 		if (#full_enemies < 1) then
+			if self:GetParent():HasShard() then
+				self:ShardHeal()
+			end
+
 			return
 		end
 	end
@@ -195,6 +200,23 @@ function modifier_senei_jyashu_active:OnIntervalThink()
 	ProjectileManager:CreateTrackingProjectile(projectile_info)
 
 	self:GetCaster():EmitSound("anko_passive_cast")
+end
+
+function modifier_senei_jyashu_active:ShardHeal()
+	local ability = self:GetAbility()
+	local parent = self:GetParent()
+	
+	local heal = math.ceil(parent:GetMaxHealth() * ability:GetSpecialValueFor("shard_no_target_heal") / 100)
+
+	parent:HealWithParams(heal, ability, false, true, parent, false)
+
+	EmitSoundOn("Hero_Medusa.MysticSnake.Return", parent)
+	ParticleManager:ReleaseParticleIndex(ParticleManager:CreateParticle("particles/generic_gameplay/generic_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent))
+	local heal_amount_fx = ParticleManager:CreateParticleForTeam("particles/msg_fx/msg_heal.vpcf", PATTACH_ABSORIGIN_FOLLOW, parent, parent:GetTeamNumber());
+	ParticleManager:SetParticleControl(heal_amount_fx, 1, Vector(0, heal, 0))
+	ParticleManager:SetParticleControl(heal_amount_fx, 2, Vector(2, #tostring(heal) + 1, 0))
+	ParticleManager:SetParticleControl(heal_amount_fx, 3, Vector(0, 255, 0))
+	ParticleManager:ReleaseParticleIndex(heal_amount_fx)
 end
 
 

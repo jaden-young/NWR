@@ -74,32 +74,32 @@
 		"07"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"cyclone_min_height"		"300"
+			"rehit_damage_scale"		"30"
 		}
 		"08"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"cyclone_initial_height"	"350"
+			"cyclone_min_height"		"300"
 		}
 		"09"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"cyclone_max_height"		"400"
+			"cyclone_initial_height"	"350"
 		}
 		"10"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"cyclone_count_tooltips"		"5"
+			"cyclone_max_height"		"400"
 		}
 		"11"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"slow_duration"				"1 1 1"
+			"cyclone_count_tooltips"		"5"
 		}
 		"12"
 		{
 			"var_type"					"FIELD_INTEGER"
-			"slow_value"				"-30 -55 -70"
+			"disarm_duration"			"1 1 1"
 		}
 	}
 	
@@ -145,7 +145,7 @@
 		{
 			"ModifierName"	"modifier_kuchiyose_kirikiri_mai"
 			"Target"		"TARGET"
-			"Duration"		"%slow_duration"
+			"Duration"		"%disarm_duration"
 		}
 	}
 	
@@ -181,12 +181,12 @@
 			"IsHidden"			"0"
 			"IsDebuff"			"1"
 		
-			"EffectName"		""
-			"EffectAttachType"	""
-			
-			"Properties"
+			"EffectName"		"particles/units/heroes/hero_sniper/concussive_grenade_disarm.vpcf"
+			"EffectAttachType"	"follow_overhead"
+
+			"States"
 			{
-				"MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE"		"%slow_value"
+				"MODIFIER_STATE_DISARMED"  	"MODIFIER_STATE_VALUE_ENABLED"
 			}
 		}
 	}

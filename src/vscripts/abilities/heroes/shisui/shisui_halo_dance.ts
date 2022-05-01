@@ -44,6 +44,8 @@ export class shisui_halo_dance extends BaseAbility {
 export class modifier_shisui_halo_dance extends BaseModifier
 {
     speed?: number;
+    shard_attack_range: number = 0;
+    shard_attack_speed: number = 0;
     projectile?: CreateLinearProjectileOptions;
 
     /****************************************/
@@ -56,6 +58,11 @@ export class modifier_shisui_halo_dance extends BaseModifier
         let wave_radius = ability?.GetSpecialValueFor("wave_radius");
         let wave_range = ability!.GetSpecialValueFor("wave_range") + parent.FindTalentValue("special_bonus_shisui_2");
         this.speed = ability?.GetSpecialValueFor("wave_speed");
+
+        if (parent.HasShard()) {
+            this.shard_attack_range = ability!.GetSpecialValueFor("shard_range");
+            this.shard_attack_speed = ability!.GetSpecialValueFor("shard_attack_speed");
+        }
 
         this.projectile = {
             Ability: this.GetAbility(),
@@ -76,7 +83,9 @@ export class modifier_shisui_halo_dance extends BaseModifier
     /****************************************/
 
     DeclareFunctions(){ return [
-        ModifierFunction.ON_ATTACK_LANDED
+        ModifierFunction.ON_ATTACK_LANDED,
+        ModifierFunction.ATTACK_RANGE_BONUS,
+        ModifierFunction.ATTACKSPEED_BONUS_CONSTANT
     ]}
 
     /****************************************/
@@ -92,5 +101,17 @@ export class modifier_shisui_halo_dance extends BaseModifier
         this.projectile!.vVelocity = (target.GetAbsOrigin() - attacker.GetAbsOrigin() as Vector).Normalized() * this.speed! as Vector;
         ProjectileManager.CreateLinearProjectile(this.projectile!);
         EmitSoundOn("Hero_Shisui.Halo.Fire", target);
+    }
+
+    /****************************************/
+
+    GetModifierAttackRangeBonus(): number {
+        return this.shard_attack_range;
+    }
+
+    /****************************************/
+
+    GetModifierAttackSpeedBonus_Constant(): number {
+        return this.shard_attack_speed;
     }
 }
