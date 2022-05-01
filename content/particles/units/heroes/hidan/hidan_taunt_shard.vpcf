@@ -4,7 +4,7 @@
 	m_bShouldHitboxesFallbackToRenderBounds = false
 	m_nMaxParticles = 16
 	m_flConstantRadius = 28.0
-	m_ConstantColor = [ 255, 211, 156, 255 ]
+	m_ConstantColor = [ 181, 0, 0, 255 ]
 	m_nConstantSequenceNumber = 5
 	m_nBehaviorVersion = 4
 	m_nFirstMultipleOverride_BackwardCompat = 3
@@ -16,15 +16,11 @@
 			[
 				{
 					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_vecOffset = [ 0.0, 0.0, 0.0 ]
-					m_angOffset = [ 0.0, 0.0, 0.0 ]
 					m_entityName = "self"
 				},
 				{
 					m_iControlPoint = 1
 					m_iAttachType = "PATTACH_WORLDORIGIN"
-					m_vecOffset = [ 0.0, 0.0, 0.0 ]
-					m_angOffset = [ 0.0, 0.0, 0.0 ]
 					m_entityName = "self"
 				},
 			]
@@ -89,14 +85,14 @@
 		{
 			_class = "C_INIT_RemapParticleCountToScalar"
 			m_bActiveRange = true
-			m_nFieldOutput = "7"
+			m_nFieldOutput = 7
 			m_nInputMax = 4
 			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
 		},
 		{
 			_class = "C_INIT_RemapParticleCountToScalar"
 			m_nInputMax = 15
-			m_nFieldOutput = "7"
+			m_nFieldOutput = 7
 			m_nInputMin = 10
 			m_flOutputMin = 1.0
 			m_flOutputMax = 0.0
@@ -111,7 +107,7 @@
 		},
 		{
 			_class = "C_INIT_DistanceToCPInit"
-			m_nFieldOutput = "7"
+			m_nFieldOutput = 7
 			m_flInputMax = 250.0
 			m_nSetMethod = "PARTICLE_SET_SCALE_INITIAL_VALUE"
 		},
@@ -130,7 +126,7 @@
 			_class = "C_OP_RampScalarLinearSimple"
 			m_flEndTime = 10000000000.0
 			m_Rate = -4.0
-			m_nField = "16"
+			m_nField = 16
 			m_nOpEndCapState = "PARTICLE_ENDCAP_ENDCAP_ON"
 		},
 		{
@@ -174,13 +170,13 @@
 				},
 			]
 			m_nOutputBlendMode = "PARTICLE_OUTPUT_BLEND_MODE_ADD"
-			m_nFogType = "PARTICLE_FOG_GAME_DEFAULT"
 		},
 	]
 	m_Children = 
 	[
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_sharda.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_shardc.vpcf"
@@ -191,6 +187,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_shardd.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_shardj.vpcf"
@@ -203,9 +200,11 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_shardg.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_shardb.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/hidan/hidan_taunt_shardi.vpcf"
