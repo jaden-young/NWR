@@ -241,15 +241,18 @@
 		// Taunt
 		"DOTA_Tooltip_ability_hidan_taunt"									"<b><font color='#D12314'> Taunt </font></b>"
 		"DOTA_Tooltip_ability_hidan_taunt_description"						"Hidan taunts nearby enemies <b><font color='#D52516'>forcing them to attack him.</font></b> <br><br> Each basic attack Hidan takes during the taunt duration<b><font color='#D52516'> grants him temporary Strength. </font></b>"
+		"DOTA_Tooltip_ability_hidan_taunt_shard_description"				"Hidan cannot die for %shard_duration% seconds after using Taunt."
 		"DOTA_Tooltip_ability_hidan_taunt_radius"							"RADIUS: "
 		"DOTA_Tooltip_ability_hidan_taunt_duration"							"TAUNT DURATION: "
-		"DOTA_Tooltip_ability_hidan_taunt_str_gain_hero"					"STRENGTH GAIN HRO: "
+		"DOTA_Tooltip_ability_hidan_taunt_str_gain_hero"					"STRENGTH GAIN HERO: "
 		"DOTA_Tooltip_ability_hidan_taunt_str_gain_not_hero"				"STRENGTH GAIN UNIT: "
 		"DOTA_Tooltip_ability_hidan_taunt_str_duration"						"STRENGTH BUFF DURATION: "
-		"DOTA_Tooltip_modifier_hidan_taunt_bonus_str"						"<b><font color='#D12314'> Taunt </font></b>"
-		"DOTA_Tooltip_modifier_hidan_taunt_bonus_str_description"			"This Unit has increased <b><font color='#D12314'>Strength.</font></b>"
-		"DOTA_Tooltip_modifier_beserkers_call_enemy_datadriven"				"<b><font color='#D12314'> Taunt </font></b>"
-		"DOTA_Tooltip_modifier_beserkers_call_enemy_datadriven_description"	"This Unit is <b><font color='#D12314'>forced to attack</font></b> Hidan."
+
+		"DOTA_Tooltip_modifier_hidan_taunt"									"<b><font color='#D12314'> Taunt </font></b>"
+		"DOTA_Tooltip_modifier_hidan_taunt_Description"						"This Unit is <b><font color='#D12314'>forced to attack</font></b> Hidan."
+		"DOTA_Tooltip_modifier_hidan_taunt_buff"							"<b><font color='#D12314'> Taunt </font></b>"
+		"DOTA_Tooltip_modifier_hidan_taunt_buff_Description"				"This Unit's <b><font color='#D12314'>Strength</font></b> is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
+		
 
 		// Jashin's Blessing
 		"DOTA_Tooltip_ability_hidan_jashins_blessing"						"<b><font color='#C64F45'> Jashin's Blessing </font></b>"

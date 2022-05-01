@@ -43,4 +43,17 @@
 			"sounds/weapons/hero/bloodseeker/bloodbath02.vsnd"
 		]
 	}
+
+	Hero_Hidan.Taunt.Cast = 
+	{
+		type = "dota_src1_3d"
+		volume = 0.50000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 100.000000
+		distance_max = 1600.0000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/hidan/hidan_taunt_cast.vsnd"
+	}
 }
