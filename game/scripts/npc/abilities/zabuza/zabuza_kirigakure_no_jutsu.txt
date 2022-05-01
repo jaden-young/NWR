@@ -1,0 +1,54 @@
+"DOTAAbilities"
+{
+	"zabuza_kirigakure_no_jutsu"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/zabuza/zabuza_kirigakure_no_jutsu.lua"
+		"AbilityTextureName"			"zabuza_kirigakure_no_jutsu"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityTextureName"			"zabuza_kirigakure_no_jutsu"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.4"
+
+		// Time
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"32 24 16 9"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"radius"					"550 600 650 700"
+			"count"						"2 4 6 8"
+			"health_regen"				"2 4 6 8"
+			"bonus_movespeed"			"15 22 29 36"
+			"fade_delay"
+			{
+				"value"						"2.0 1.7 1.4 1.0"
+				"LinkedSpecialBonus"		"special_bonus_zabuza_4"
+			}
+			"damage_time"				"6.0"
+			"duration"					"9"
+			"special_bonus_5_damage"
+			{
+				"value"						"0"
+				"LinkedSpecialBonus"		"special_bonus_zabuza_5"
+			}
+			"shard_radius"
+			{
+				"value"						"500"
+				"RequiresShard"				"1"
+			}
+		}
+	}
+}

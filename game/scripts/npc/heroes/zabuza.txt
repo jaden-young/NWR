@@ -15,7 +15,7 @@
 
 		  "BaseClass"   	"npc_dota_hero_bloodseeker"
 		  "Ability1"        "zabuza_water_dragon_bullet"
-		  "Ability2"        "zabuza_kirigakure_no_jutsu_new"
+		  "Ability2"        "zabuza_kirigakure_no_jutsu"
 		  "Ability3"        "zabuza_executioners_blade"
 		  "Ability4"		"generic_hidden"
 		  "Ability5"		"generic_hidden"

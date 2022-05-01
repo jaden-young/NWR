@@ -69,6 +69,7 @@
 		"DOTA_Tooltip_ability_zabuza_water_dragon_bullet"						"<b><font color='#55AFFD'> Water Dragon Bullet </font></b>"
 		"DOTA_Tooltip_ability_zabuza_water_dragon_bullet_lore"						"Suiton: Suiryudan no Jutsu"
 		"DOTA_Tooltip_ability_zabuza_water_dragon_bullet_description"			"Sends a Water Dragon to the target area dealing <b><font color='#55AFFD'>Magic Damage and a Movement Speed Slow</font></b> to enemy units within the area. <br><br>The strength of the <b>Movement Speed Slow</b> <b><font color='#55AFFD'>increases per </font></b><b><font color='#FFFFFF'>150</font></b> <b><font color='#55AFFD'>distance traveled.</font></b>"
+		"DOTA_Tooltip_ability_zabuza_water_dragon_bullet_shard_description"		"Creates the current level of <b><font color='#EFEFEF'>Hidden Mist</font></b> in a %shard_radius% radius around the impact area of <b><font color='#55AFFD'>Water Dragon Bullet</font></b>."
 
 		"DOTA_Tooltip_ability_zabuza_water_dragon_bullet_damage"				"DAMAGE: "
 		"DOTA_Tooltip_ability_zabuza_water_dragon_bullet_ms_slow"				"%MOVEMENT SPEED SLOW: "
@@ -79,18 +80,21 @@
 		"DOTA_Tooltip_modifier_zabuza_slow_description"					"This Unit has <b><font color='#55AFFD'>decreased Movement Speed.</font></b>"
 
 		// Ninpou: Kirigakure No Jutsu
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new"						"<b><font color='#EFEFEF'> Hidden Mist Technique </font></b>"
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_lore"					"Ninpou: Kirigakure No Jutsu"
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_radius"				"RADIUS: "
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_duration"				"DURATION: "
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_bonus_movespeed"		"%MOVEMENT SPEED BONUS: "
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_fade_delay"			"INVISIBILITY FADE TIME: "
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_special_bonus_5_damage" "EXTRA DAMAGE (TALENT): "
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu"						"<b><font color='#EFEFEF'> Hidden Mist Technique </font></b>"
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_lore"					"Ninpou: Kirigakure No Jutsu"
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_radius"				"RADIUS: "
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_duration"				"DURATION: "
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_bonus_movespeed"		"%MOVEMENT SPEED BONUS: "
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_fade_delay"			"INVISIBILITY FADE TIME: "
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_special_bonus_5_damage" "EXTRA DAMAGE (TALENT): "
 
-		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_new_description"			"<b><font color='#EFEFEF'>Creates a dense mist</font></b> in the target area causing <b><font color='#EFEFEF'>friendly units to become invisible</font></b> after a short fade duration. <br><br> While in the mist, <b><font color='#EFEFEF'>Zabuza gains increased Movement Speed.</font></b>"
+		"DOTA_Tooltip_ability_zabuza_kirigakure_no_jutsu_description"			"<b><font color='#EFEFEF'>Creates a dense mist</font></b> in the target area causing <b><font color='#EFEFEF'>friendly units to become invisible</font></b> after a short fade duration. <br><br> While in the mist, <b><font color='#EFEFEF'>Zabuza gains increased Movement Speed.</font></b>"
 
-		"DOTA_Tooltip_modifier_zabuza_fog_ms_boos"								"<b><font color='#EFEFEF'> Hidden Mist Technique </font></b>"
-		"DOTA_Tooltip_modifier_zabuza_fog_ms_boos_Description"								"This Unit has <b><font color='#EFEFEF'>increased Movement Speed.</font></b>"
+		"DOTA_Tooltip_modifier_zabuza_kirigakure_no_jutsu_fade"					"<b><font color='#EFEFEF'> Hidden Mist Technique - Fade</font></b>"
+		"DOTA_Tooltip_modifier_zabuza_kirigakure_no_jutsu_speed"				"<b><font color='#EFEFEF'> Hidden Mist Technique </font></b>"
+		"DOTA_Tooltip_modifier_zabuza_kirigakure_no_jutsu_speed_Description"	"This Unit has <b><font color='#EFEFEF'>increased Movement Speed.</font></b>"
+		"DOTA_Tooltip_modifier_zabuza_kirigakure_no_jutsu_invis"				"<b><font color='#EFEFEF'> Hidden Mist Technique </font></b>"
+		"DOTA_Tooltip_modifier_zabuza_kirigakure_no_jutsu_invis_Description"	"Invisible."
 
 		// Executioner’s Blade
 		"DOTA_Tooltip_ability_zabuza_executioners_blade"						"<b><font color='#5386AF'> Executioner Blade </font></b>"
