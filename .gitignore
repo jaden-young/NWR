@@ -6,6 +6,9 @@ node_modules
 /game/scripts/vscripts/**/*.lua
 /game/resource/localization/**/*.js
 !/game/scripts/vscripts/heroes/yondaime_alternative/*.lua
+!/game/scripts/vscripts/heroes/yondaime_alternative/*.lua
+!/game/scripts/vscripts/heroes/yondaime/*.lua
+!/game/scripts/vscripts/heroes/madara/*.lua
 
 
 # Dota 2 stuff
