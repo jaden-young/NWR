@@ -159,6 +159,7 @@
 			_class = "C_INIT_RandomRadius"
 			m_flRadiusMin = 500.0
 			m_flRadiusMax = 500.0
+			m_bDisableOperator = true
 		},
 		{
 			_class = "C_INIT_RandomYawFlip"
@@ -167,6 +168,12 @@
 			_class = "C_INIT_PositionOffset"
 			m_OffsetMin = [ 0.0, 0.0, 0.125 ]
 			m_OffsetMax = [ 0.0, 0.0, 0.125 ]
+		},
+		{
+			_class = "C_INIT_RemapCPtoScalar"
+			m_nCPInput = 1
+			m_flInputMax = 1000.0
+			m_flOutputMax = 1000.0
 		},
 	]
 	m_Operators = 

@@ -191,7 +191,7 @@ export class shisui_afterimage_clone extends BaseAbility {
 
         EmitSoundOnLocationWithCaster(origin, "General.Illusion.Destroy", caster);
         let death_fx = ParticleManager.CreateParticle("particles/units/heroes/naruto/naruto_clone.vpcf", ParticleAttachment.CUSTOMORIGIN, undefined);
-        ParticleManager.SetParticleControl(death_fx, 0, origin);
+        ParticleManager.SetParticleControl(death_fx, 0, origin + Vector(0, 0, 80) as Vector);
         ParticleManager.ReleaseParticleIndex(death_fx);
 
         UTIL_Remove(this.clone);
