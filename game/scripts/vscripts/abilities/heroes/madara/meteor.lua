@@ -24,25 +24,15 @@ function madara_meteor:OnSpellStart()
 end
 
 function madara_meteor:OnChannelFinish(interrupted)
-	if not IsServer() then return end
 	if not interrupted then
 		local caster = self:GetCaster()
 		self:LaunchMeteor(self.target_point)
 		caster:EmitSound("madara_ulti_impact_talk")
 		--Second talent meteor
-		if caster:FindAbilityByName("special_bonus_madara_second_meteor"):IsTrained() then
-			Timers:CreateTimer({
-				endTime = 2,
-				callback = function()
-					self:CastMeteorShadow(self.target_point)
-				end
-			})
-			Timers:CreateTimer({
-				endTime = 4,
-				callback = function()
-					self:LaunchMeteor(self.target_point)
-				end
-			})
+		if caster:HasShard() then
+			Timers:CreateTimer(self:GetSpecialValueFor("shard_delay"), function()
+				self:LaunchMeteor(self.target_point)
+			end)
 		end
 	end
 end

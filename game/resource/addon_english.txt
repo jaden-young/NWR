@@ -356,9 +356,10 @@
 		"DOTA_Tooltip_ability_madara_meteor"							"<b><font color='#E55C02'>Heaven Concealed</font></b>"
 		"DOTA_Tooltip_ability_madara_meteor_lore"						"Tengai Shinsei"
 		"DOTA_Tooltip_ability_madara_meteor_description"				"<b><font color='#FFFFFF'>CHANNELED</font></b> - <b><font color='#E55C02'>Summons a gigantic meteor</font></b> that will crash onto a target area if the channelling is complete. <br><br> Upon impact the meteor <b><font color='#EA2D07'>deals massive Magic Damage and Stuns</font></b> all enemies within the area. <br><br> Any trees caught in the explosion will burn if <b><font color='#23A32C'>Deep Forest Emergence</font></b> is leveled."
+		"DOTA_Tooltip_ability_madara_meteor_shard_description"			"Causes a second meteor to be dropped in the area of the original meteor after a %shard_delay%s delay."
 		"DOTA_Tooltip_ability_madara_meteor_radius"						"RADIUS: "
 		"DOTA_Tooltip_ability_madara_meteor_stun_duration"				"STUN DURATION: "
-		"DOTA_Tooltip_ability_madara_meteor_channel_duration"			"CHANNEL DURATION: "
+		"DOTA_Tooltip_ability_madara_meteor_AbilityChannelTime"			"CHANNEL DURATION: "
 		"DOTA_Tooltip_ability_madara_meteor_damage"						"DAMAGE: "
 
 		//--------------------
@@ -512,6 +513,7 @@
 		// Marked Kunai
 		"DOTA_Tooltip_ability_yondaime_marked_kunai"					"<b><font color='#E7B34E'>Marked Kunai</font></b>"
 		"DOTA_Tooltip_ability_yondaime_marked_kunai_description"		"<b><font color='#E7B34E'>Throws a Marked Kunai</font></b> dealing <b>Physical Damage</b> to enemies in its path. <br><br> The Marked Kunai is <b><font color='#E7B34E'>planted at the target position</font></b> and can be teleported to by using the abilities <b><font color='#EE914D'>Flying Thunder God</font></b> and <b><font color='#E95A2E'>Flying Thunder God: Slash.</font></b> <br><br> <b><font color='#E7B34E'>Deals double damage</font></b> to creeps."
+		"DOTA_Tooltip_ability_yondaime_marked_kunai_shard_description"	"Marked Kunai holds up to %shard_charges% charges and cooldown is reduced by %shard_cd_reduction% second."
 		"DOTA_Tooltip_ability_yondaime_marked_kunai_dagger_range"		"RANGE: "
 		"DOTA_Tooltip_ability_yondaime_marked_kunai_creep_damage" "CREEP DAMAGE: "
 		"DOTA_Tooltip_ability_yondaime_marked_kunai_hero_damage"	"HERO DAMAGE: "
@@ -519,6 +521,7 @@
 
 		"DOTA_Tooltip_modifier_marked_kunai_debuff"						"Marked Kunai"
 		"DOTA_Tooltip_modifier_marked_kunai_debuff_description"			"This Unit's Armor is reduced."
+		"DOTA_Tooltip_modifier_kunai_charges"							"Marked Kunai Charges"
 
 		// Rasengan
 		"DOTA_Tooltip_ability_yondaime_rasengan"						"<b><font color='#00D4FF'>Rasengan</font></b>"
