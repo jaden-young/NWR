@@ -180,7 +180,7 @@ function madara_meteor:CheckTrees(pos, radius)
 	local ability =  self:GetCaster():FindAbilityByName("madara_wood_release")
 
 	if ability and ability:IsTrained() then
-		local trees = GridNav:GetAllTreesAroundPoint(target_point, explosion_radius, false) 
+		local trees = GridNav:GetAllTreesAroundPoint(pos, radius, false) 
 		for _, tree in pairs(trees) do
 			ability:BurnTree(tree)
 		end
