@@ -2,7 +2,6 @@
 var Parent: Panel = $.GetContextPanel()!.GetParent()!.GetParent()!.GetParent()!;
 
 function SetCustomHUD() {
-    HideAghs();
     SetTopBarBackground();
     SetInventoryBackground();
     SetAbilityBackground();
