@@ -11,4 +11,37 @@
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/heroes/yondaime/minato_flash_cast.vsnd"
 	}
+
+	Hero_Yondaime.MarkedKunai.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.60000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+		"sounds/heroes/yondaime/minato_kunai_cast_01.vsnd",
+		"sounds/heroes/yondaime/minato_kunai_cast_02.vsnd"
+		]
+	}
+
+	Hero_Yondaime.MarkedKunai.Land = 
+	{
+		type = "dota_update_default"
+		volume = 0.6000000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.0000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = 
+		[
+		"sounds/heroes/yondaime/minato_kunai_land_01.vsnd",
+		"sounds/heroes/yondaime/minato_kunai_land_02.vsnd"
+		]
+	}
+
 }
