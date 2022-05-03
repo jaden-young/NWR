@@ -5,7 +5,7 @@ node_modules
 # `git add --force path/to/file.lua`
 /game/scripts/vscripts/**/*.lua
 /game/resource/localization/**/*.js
-!/game/scripts/vscripts/abilitiesheroes/yondaime_alternative/*.lua
+!/game/scripts/vscripts/abilities/heroes/yondaime_alternative/*.lua
 !/game/scripts/vscripts/abilities/heroes/yondaime/*.lua
 !/game/scripts/vscripts/abilities/heroes/madara/*.lua
 
