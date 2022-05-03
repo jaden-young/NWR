@@ -13,7 +13,7 @@ function yondaime_marked_kunai:Precache( context )
     PrecacheResource( "particle",  "particles/units/heroes/hero_bounty_hunter/bounty_hunter_track_haste.vpcf", context )
     PrecacheResource( "particle",  "particles/units/heroes/yondaime/blink_core.vpcf", context )
     PrecacheResource( "particle",  "particles/units/heroes/yondaime/kunai_ground.vpcf", context )
-    PrecacheResource( "soundfile", "soundevents/game_sounds_heroes/game_sounds_phantom_assassin.vsndevts", context )
+    PrecacheResource("soundfile", "soundevents/heroes/yondaime/game_sounds_yondaime.vsndevts", context)
 end
 
 ---------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ function yondaime_marked_kunai:OnSpellStart()
 		caster.daggers = {}
 	end
 
-	caster:EmitSound("Hero_PhantomAssassin.Dagger.Cast")
+	caster:EmitSound("Hero_Yondaime.MarkedKunai.Cast")
 
 	self.ability = self
 	self.caster = caster
@@ -137,6 +137,8 @@ function yondaime_marked_kunai:OnProjectileHit(hTarget, vLocation)
 		ParticleManager:SetParticleControlEnt(particle, 3, dummy, PATTACH_POINT_FOLLOW, "attach_origin", dummy:GetAbsOrigin(), true)
 	
 		local kunai_duration = ability:GetLevelSpecialValueFor("dagger_duration", (ability:GetLevel() - 1))
+
+		EmitSoundOnLocationWithCaster(target_point, "Hero_Yondaime.MarkedKunai.Land", caster)	
 	
 		Timers:CreateTimer( kunai_duration, function()
 					dummy:RemoveSelf()
