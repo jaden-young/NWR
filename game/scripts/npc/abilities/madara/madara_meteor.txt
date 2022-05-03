@@ -38,7 +38,6 @@
 		"AbilityValues"
 		{
 			"radius"						"600"
-			"delay_to_dmg"					"1"
 			"land_time"						"1.8"
 			"travel_speed"					"250"
 			"vision_distance"				"500"

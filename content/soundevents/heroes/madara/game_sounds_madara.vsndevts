@@ -1,0 +1,39 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	Hero_Madara.HeavenConcealed.Channel = 
+	{
+		type = "dota_src1_3d"
+		volume = 1.000000
+		pitch_rand_min = -0.05000
+		pitch_rand_max = 0.05000
+		pitch = 0.900000
+		soundlevel = 100.000000
+		mixgroup = "Weapons"
+		spread_radius = 1600.000000
+		vsnd_files = "sounds/heroes/madara/madara_meteor_cast.vsnd"
+	}
+
+	Hero_Madara.HeavenConcealed.Launch = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch = 0.900000
+		soundlevel = 100.000000
+		mixgroup = "Weapons"
+		spread_radius = 600.000000
+		vsnd_files = "sounds/weapons/hero/invoker/meteor_cast.vsnd"
+	}
+
+	Hero_Madara.HeavenConcealed.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 0.800000
+		pitch_rand_min = -0.05000
+		pitch_rand_max = 0.05000
+		pitch = 0.900000
+		soundlevel = 100.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/madara/madara_meteor_impact.vsnd"
+	}
+
+}
