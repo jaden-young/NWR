@@ -45,6 +45,7 @@ export class shisui_great_fireball_technique extends BaseAbility {
             this.fast_vo = true;
         }
 
+        
         EmitSoundOn("Hero_Shisui.GreatFireball.Precast_" + cast_point, this.GetCaster());
 
         return true;

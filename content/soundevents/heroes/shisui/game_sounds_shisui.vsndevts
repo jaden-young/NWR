@@ -21,7 +21,7 @@
 		pitch = 1.00000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/heroes/shisui/fireball_cast_01.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_1.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.9 = 
@@ -30,10 +30,10 @@
 		volume = 1.000000
 		pitch_rand_min = -0.000000
 		pitch_rand_max = 0.000000
-		pitch = 1.05000
+		pitch = 1.00000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/troll_warlord_02.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_09.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.8 = 
@@ -42,10 +42,10 @@
 		volume = 1.000000
 		pitch_rand_min = -0.000000
 		pitch_rand_max = 0.000000
-		pitch = 1.05000
+		pitch = 1.00000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/undying_02.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_08.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.7 = 
@@ -57,7 +57,7 @@
 		pitch = 1.05000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty/ursa_01.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_07.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.6 = 
@@ -69,7 +69,7 @@
 		pitch = 1.05000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/somebody_just_got_real_brave.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_06.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.5 = 
@@ -81,7 +81,7 @@
 		pitch = 1.05000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/rampage_hes_coming_for_us_next.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_05.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.4 = 
@@ -93,7 +93,7 @@
 		pitch = 1.05000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/this_is_getting_out_of_hand.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_04.vsnd"
 	}
 
 	Hero_Shisui.GreatFireball.Precast_0.3 = 
@@ -105,19 +105,19 @@
 		pitch = 1.05000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/vo/announcer_dlc_rick_and_morty_killing_spree/wubalub_01.vsnd"
+		vsnd_files = "sounds/heroes/shisui/fireball_cast_03.vsnd"
 	}
 	
 	Hero_Shisui.GreatFireball.Cast = 
 	{
 		type = "dota_update_default"
 		volume = 1.000000
-		pitch_rand_min = -0.050000
-		pitch_rand_max = 0.050000
-		pitch = 1.05000
+		pitch_rand_min = 0.000000
+		pitch_rand_max = 0.000000
+		pitch = 1.00000
 		soundlevel = 84.000000
 		mixgroup = "Weapons"
-		vsnd_files = "sounds/weapons/hero/huskar/inner_fire.vsnd"
+		vsnd_files = "sounds/heroes/shisui/shisui_fireball_cast.vsnd"
 		soundevent_layer2 = "Hero_Shisui.GreatFireball.CastLayer"
 		soundevent_layer2_on = "1.000000"
 		soundevent_layer3 = "Hero_Shisui.GreatFireball.CastBG"

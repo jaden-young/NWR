@@ -955,7 +955,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_seal_in_fireball"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1011,7 +1011,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1039,7 +1039,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1067,7 +1067,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1095,7 +1095,7 @@
 								activity_weight = 1
 							},
 						]
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1135,9 +1135,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
-						start_frame = -1
+						start_frame = 14
 						end_frame = -1
-						framerate = 38.0
+						framerate = 12.0
 						reverse = false
 					},
 					{
@@ -1163,9 +1163,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
-						start_frame = -1
+						start_frame = 14
 						end_frame = -1
-						framerate = 58.0
+						framerate = 24.0
 						reverse = false
 					},
 					{
@@ -1191,9 +1191,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
-						start_frame = -1
+						start_frame = 12
 						end_frame = -1
-						framerate = 118.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
