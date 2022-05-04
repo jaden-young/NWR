@@ -27,6 +27,17 @@ export class shisui_afterimage_clone extends BaseAbility {
 
     /****************************************/
 
+    GetCastAnimation(): GameActivity {
+        return GameActivity.DOTA_CHANNEL_ABILITY_2
+    }
+    
+    GetPlaybackRateOverride(): number {
+        if (this.GetCaster().HasTalent("special_bonus_shisui_5")) return super.GetPlaybackRateOverride();
+        
+        let attack_rate = this.GetLevelSpecialValueFor("attack_count", this.GetMaxLevel()) - this.GetSpecialValueFor("attack_count")
+        return (attack_rate == 0 ? 1 : attack_rate) * 0.45 + 1;
+    }
+
     OnSpellStart(): void {
         let caster = this.GetCaster();
         let position = this.GetCursorPosition();
@@ -58,7 +69,8 @@ export class shisui_afterimage_clone extends BaseAbility {
         this.clone.AddNewModifier(caster, this, "modifier_shisui_afterimage_clone_image", {duration: 5});
         this.clone.AddNewModifier(caster, this, "modifier_kill", {duration: 5});
         this.clone.SetForwardVector((position - this.clone.GetAbsOrigin() as Vector).Normalized());
-        this.clone.StartGesture(GameActivity.DOTA_CAST_ABILITY_2);
+        this.clone.StartGesture(GameActivity.DOTA_CHANNEL_ABILITY_2);
+        //caster.StartGestureWithPlaybackRate(GameActivity.DOTA_CHANNEL_ABILITY_2, attack_rate);
 
 
         caster.AddNewModifier(caster, this, "modifier_shisui_afterimage_clone", {duration: -1})
@@ -199,9 +211,7 @@ export class shisui_afterimage_clone extends BaseAbility {
         caster.SetAbsOrigin(origin);
         caster.SetForwardVector(forward);
         caster.RemoveGesture(GameActivity.DOTA_ATTACK);
-        caster.StopAnimation();
-        caster.StartGesture(GameActivity.DOTA_CAST_ABILITY_2);
-        caster.FadeGesture(GameActivity.DOTA_CAST_ABILITY_2);
+        //caster.FadeGesture(GameActivity.DOTA_CHANNEL_ABILITY_2);
 
         caster.RemoveModifierByName("modifier_shisui_afterimage_clone");
         this.SetActivated(true);

@@ -701,7 +701,7 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_cast1"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1192,26 +1192,6 @@
 						disable_compression = false
 						source_filename = "models/striker_shisui/striker_shisui_seal_in_fireball.smd"
 						start_frame = 12
-						end_frame = -1
-						framerate = -1.0
-						reverse = false
-					},
-					{
-						_class = "AnimFile"
-						name = "afterimage_fade"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2_END"
-						activity_weight = 1
-						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = false
-						delta = false
-						worldSpace = false
-						hidden = false
-						anim_markup_ordered = false
-						disable_compression = false
-						source_filename = "models/striker_shisui/striker_shisui_cast1.smd"
-						start_frame = 10
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
