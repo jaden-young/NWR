@@ -384,9 +384,9 @@
 		{
 			"default"
 			{
-				"PortraitPosition"		"69.463745 13.338926 154.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"69.463745 10.338926 155.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"0 -168.935287 0" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"38" //zoom
+				"PortraitFOV"		"39" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -417,16 +417,16 @@
 		"PortraitAnimationCycle"		"0.000000"
 		"PortraitAnimationRate"		"1.000000"
 		"PortraitHideHero"		"0"
-		"PortraitLightScale"		"2.050000"
+		"PortraitLightScale"		"1.70000"
 		"PortraitAmbientDirection"		"-76.520 7.960 38.340"
 		
 		"cameras"
 		{
 			"default"
 			{
-				"PortraitPosition"		"69.463745 13.338926 154.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
+				"PortraitPosition"		"69.463745 10.338926 155.114716"  // ( [-In / +Out] / [+Right -Left] / [+Up -Down] )
 				"PortraitAngles"		"0 -168.935287 0" // ( [+Tilt Up / -Tilt Down] / [+Rotate Left] / [-Rotate Right] / [Tilt Diagnol] )
-				"PortraitFOV"		"38" //zoom
+				"PortraitFOV"		"39" //zoom
 				"PortraitFar"		"1000.000000"
 			}
 		}
@@ -779,7 +779,7 @@
 		"PortraitLightAngles"		"45.889999 140.929993 0.000000"
 		"PortraitLightFOV"		"63.000000"
 		"PortraitLightDistance"		"471.000000"
-		"PortraitLightColor"		"222 175 160"
+		"PortraitLightColor"		"175 175 175"
 		"PortraitShadowColor"		"131 131 131"
 		"PortraitShadowScale"		"1.025000"
 		"PortraitGroundShadowScale"		"1.500000"
@@ -788,11 +788,11 @@
 		"PortraitSpecularColor"		"251 74 84"
 		"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
 		"PortraitSpecularPower"		"16.000000"
-		 "PortraitBackgroundColor1"      ".933 .455 .255"
-        "PortraitBackgroundColor2"      "1 0 0"
-        "PortraitBackgroundColor3"      "1 0 0"
-        "PortraitBackgroundColor4"      ".6 .1 0"
-		"PortraitBackgroundTexture"		"materials/portraits_card/portrait_backgrounds/full_view_background.vmat"
+		"PortraitBackgroundColor1"		"0.00000 0.450000 0.600000"
+		"PortraitBackgroundColor2"		"0.650000 0.450000 0.600000"
+		"PortraitBackgroundColor3"		"0.650000 0.450000 0.600000"
+		"PortraitBackgroundColor4"		"0.650000 0.450000 0.600000"
+		"PortraitBackgroundTexture"		"materials/vgui/hud/heroportraits/portraitbackground_drow_arcana.vmat"
 		"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.vmdl"
 		"PortraitAnimationActivity"		"ACT_DOTA_IDLE"
 		"PortraitAnimationCycle"		"0.000000"

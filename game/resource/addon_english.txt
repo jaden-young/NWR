@@ -221,26 +221,23 @@
 		"npc_dota_hero_hidan" "Hidan"
 		"npc_dota_hero_hidan_lore"  								"The only true immortal known in the shinobi world, Hidan is a ruthless worshipper of Jashin and a member of Akatsuki. Through experimenting with the various techniques of his religion, Hidan has gained the ability to survive any injury. Even if he is decapitated Hidan will still survive, although he cannot control the rest of his body. Despite being a religious man Hidan is known to be an extremely disrespectful shinobi. He constantly complains and swears to his allies, including his superiors. The only respect he ever gives is to his god whom he works to fulfil his commandments. His insistence on following his religion’s laws often brings him into conflict with his partner Kakuzu. Since he is unable to be killed by any attack, Hidan and Kakuzu were a perfect team as Kakuzu’s rage could never kill the immortal. His extreme durability and raw strength are what allowed him to become a valued member of Akatsuki."
 
-		"DOTA_Tooltip_ability_hidan_soul_hunt"								"Soul Hunt"
-		"DOTA_Tooltip_ability_hidan_soul_hunt_Description"					"Hidan performs a Spin Attack dealing Physical Damage to enemies and himself based on his Strength. Enemies hit by the attack are briefly slowed."
+		// Soul Hunt
+
+		"DOTA_Tooltip_ability_hidan_soul_hunt"								"<b><font color='#D12314'> Soul Hunt </font></b>"
+		"DOTA_Tooltip_ability_hidan_soul_hunt_Description"					"<b><font color='#D12314'>Performs a Spin Attack</font></b> dealing <b>Physical Damage</b> to enemies <b><font color='#D12314'>and himself</font></b> based on his Strength. <br><br> Enemies hit by the attack are <b><font color='#D12314'>briefly slowed.</font></b>"
 		"DOTA_Tooltip_ability_hidan_soul_hunt_base_damage"					"BASE DAMAGE:"
 		"DOTA_Tooltip_ability_hidan_soul_hunt_strength_dmg_mult"			"%STRENGTH DAMAGE:"
 		"DOTA_Tooltip_ability_hidan_soul_hunt_movespeed_slow"				"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_hidan_soul_hunt_slow_duration"				"DURATION:"
 
-		"DOTA_Tooltip_modifier_hidan_soul_hunt"								"Soul Hunt"
-		"DOTA_Tooltip_modifier_hidan_soul_hunt_Description"					"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_hidan_soul_hunt"								"<b><font color='#D12314'> Soul Hunt </font></b>"
+		"DOTA_Tooltip_modifier_hidan_soul_hunt_Description"					"<b><font color='#D12314'>Movement Speed Slowed</font></b> by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 
 		// Cull the Weak
 		"DOTA_Tooltip_ability_hidan_cull_the_weak"						"<b><font color='#9C352C'> Cull The Weak </font></b>"
-		"DOTA_Tooltip_ability_hidan_cull_the_weak_description"			"<b><font color='#9C352C'>Pulls enemy units</font></b> in front of Hidan dealing <b>Physical Damage</b> and a <b>Movement Speed Slow.</b> <br><br> <b><font color='#9C352C'>Costs Health</font></b> from Hidan if an enemy is hit by the attack. <br><br> <b><font color='#9C352C'>Deals double damage</font></b> to creeps."
+		"DOTA_Tooltip_ability_hidan_cull_the_weak_description"			"<b><font color='#9C352C'>Pulls enemy units</font></b> in front of Hidan dealing <b>Physical Damage. <br><br> </b> Damage dealt is <b><font color='#9C352C'>doubled on creeps.</font></b> <br><br> Hidan is <b><font color='#9C352C'>healed for each enemy killed</font></b> by this ability."
 		"DOTA_Tooltip_ability_hidan_cull_the_weak_hero_damage"			"HERO DAMAGE: "
 		"DOTA_Tooltip_ability_hidan_cull_the_weak_creep_damage"			"CREEP DAMAGE: "
-		"DOTA_Tooltip_ability_hidan_cull_the_weak_ms_slow_percentage"	"%MOVEMENT SPEED DEBUFF: "
-		"DOTA_Tooltip_ability_hidan_cull_the_weak_hp_percentage_cost"	"%MAXIMUM HEALTH COST: "
-
-		"DOTA_Tooltip_modifier_hidan_cull_the_weak_ms_slow"				"<b><font color='#9C352C'> Cull The Weak </font></b>"
-		"DOTA_Tooltip_modifier_hidan_cull_the_weak_ms_slow_description" "This Unit is <b><font color='#9C352C'>slowed.</font></b>"
 
 		// Taunt
 		"DOTA_Tooltip_ability_hidan_taunt"									"<b><font color='#D12314'> Taunt </font></b>"
@@ -267,7 +264,7 @@
 
 		// Death Possession Blood
 		"DOTA_Tooltip_ability_hidan_death_possession_blood"						"<b><font color='#B5B5B5'> Death Possession Blood </font></b>"
-		"DOTA_Tooltip_ability_hidan_death_possession_blood_description"			"<b><font color='#FFFFFF'>PASSIVE </font></b>- Hidan <b><font color='#D52516'>stores blood</font></b> from the most recent hero attacked. <br><br> <b><font color='#FFFFFF'>ACTIVE</font></b> - Creates a symbol on the ground, causing a percentage of damage taken by Hidan to <b><font color='#9C352C'>also be inflicted upon the enemy hero</font></b> who's blood Hidan currently possesses. <br><br> Enemies take full damage while Hidan <b><font color='#C64F45'>remains within the symbol.</font></b> <br><br> Grants the ability to inflict <b><font color='#880808'>Self Pain</font></b> while active."
+		"DOTA_Tooltip_ability_hidan_death_possession_blood_description"			"<b><font color='#FFFFFF'>PASSIVE </font></b>- Hidan <b><font color='#D52516'>stores blood</font></b> from the most recent hero attacked. <br><br> <b><font color='#FFFFFF'>ACTIVE</font></b> - Creates a symbol on the ground, causing a percentage of damage taken by Hidan to <b><font color='#9C352C'>also be inflicted upon the enemy hero</font></b> who's blood Hidan possessed. <br><br> Enemies take full damage while Hidan <b><font color='#C64F45'>remains within the symbol.</font></b> <br><br> Grants the ability to inflict <b><font color='#880808'>Self Pain</font></b> while active."
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_radius"				"SYMBOL RADIUS: "
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_duration"			"DURATION: "
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_returned_damage_outside_percentage"	"%DAMAGE SHARED OUTSIDE CIRCLE: "
@@ -282,8 +279,8 @@
 		"DOTA_Tooltip_modifier_death_possession_blood_caster_status_description"								"Hidan possesses an <b><font color='#D12314'>enemy's blood.</font></b>"
 		"DOTA_Tooltip_modifier_death_possession_blood_dummy_aura_inside_ring"								"<b><font color='#C64F45'> Inside Ritual Circle </font></b>"
 		"DOTA_Tooltip_modifier_death_possession_blood_dummy_aura_inside_ring_Description"								"<b><font color='#C64F45'> All of the damage </font></b> taken by Hidan is dealt to the cursed target."
-		"DOTA_Tooltip_modifier_death_possession_blood_caster_buff"								"<b><font color='#B5B5B5'> Death Possession Blood </font></b>"
-		"DOTA_Tooltip_modifier_death_possession_blood_caster_buff_Description"								"A percentage of damage taken by Hidan is <b><font color='#B5B5B5'>dealt to the cursed target.</font></b>"
+		"DOTA_Tooltip_modifier_death_possession_blood_caster_buff"								"<b><font color='#C64F45'> Death Possession Blood </font></b>"
+		"DOTA_Tooltip_modifier_death_possession_blood_caster_buff_Description"								"A percentage of damage taken by Hidan is <b><font color='#C64F45'>dealt to the cursed target.</font></b>"
 
 
 		"dota_hud_error_hidan_no_marked_target"					"No Marked Target."

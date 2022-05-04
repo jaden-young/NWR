@@ -1107,7 +1107,7 @@
 						source_filename = "models/striker_hidan/idle.smd"
 						start_frame = 0
 						end_frame = 101
-						framerate = 30.0
+						framerate = 15.0
 						reverse = false
 					},
 					{
@@ -1173,7 +1173,7 @@
 					{
 						_class = "AnimFile"
 						name = "pull3"
-						activity_name = "ACT_DOTA_CAST_ABILITY_1"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1193,7 +1193,7 @@
 					{
 						_class = "AnimFile"
 						name = "spin"
-						activity_name = "ACT_DOTA_CAST_ABILITY_3"
+						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
