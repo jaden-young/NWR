@@ -2,7 +2,7 @@
 {
 	_class = "CParticleSystemDefinition"
 	m_bShouldHitboxesFallbackToRenderBounds = false
-	m_nMaxParticles = 60
+	m_nMaxParticles = 120
 	m_ConstantColor = [ 211, 167, 141, 255 ]
 	m_flConstantRadius = 43.218
 	m_nBehaviorVersion = 5
@@ -34,7 +34,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 300.0
+				m_flLiteralValue = 600.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -91,7 +91,7 @@
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_nMapType = "PF_MAP_TYPE_DIRECT"
-				m_flLiteralValue = 144.0
+				m_flLiteralValue = 400.0
 				m_nControlPoint = 0
 				m_nScalarAttribute = 3
 				m_nVectorAttribute = 6
@@ -135,8 +135,8 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMax = 3000.0
-			m_flRadiusMin = 1500.0
+			m_flRadiusMax = 3500.0
+			m_flRadiusMin = 2500.0
 		},
 		{
 			_class = "C_INIT_RandomRotation"

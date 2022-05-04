@@ -75,8 +75,8 @@
 		},
 		{
 			_class = "C_INIT_RandomRadius"
-			m_flRadiusMin = 3.0
-			m_flRadiusMax = 3.0
+			m_flRadiusMin = 6.0
+			m_flRadiusMax = 6.0
 		},
 		{
 			_class = "C_INIT_RandomRotation"
@@ -171,6 +171,7 @@
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/madara/madara_meteor_launchc.vpcf"
+			m_bDisableChild = true
 		},
 		{
 			m_ChildRef = resource:"particles/units/heroes/madara/madara_meteor_launcha.vpcf"

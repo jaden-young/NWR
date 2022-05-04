@@ -518,8 +518,8 @@
 		},
 		{
 			_class = "C_OP_InterpolateRadius"
-			m_flEndScale = 2.0
-			m_flStartScale = 2.0
+			m_flEndScale = 4.0
+			m_flStartScale = 4.0
 		},
 		{
 			_class = "C_OP_BasicMovement"

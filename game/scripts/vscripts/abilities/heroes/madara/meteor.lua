@@ -82,7 +82,7 @@ end
 function madara_meteor:CastMeteorShadow(start_pos, target_point, id)
 	local caster = self:GetCaster()
 	local direction = (target_point - caster:GetAbsOrigin()):Normalized()
-	local launch_pos = start_pos or (caster:GetAbsOrigin() - direction * 600 + Vector(0, 0, 750))
+	local launch_pos = target_point + Vector(-900, 0, 2000)
 
 	local meteor_creation_fx = ParticleManager:CreateParticle("particles/units/heroes/madara/madara_meteor_channel.vpcf", PATTACH_CUSTOMORIGIN, nil)
 	ParticleManager:SetParticleControl(meteor_creation_fx, 0, launch_pos)
