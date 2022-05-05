@@ -104,8 +104,8 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"value"					"75.0"
+				"var_type"				"FIELD_INTEGER"
+				"value"					"75"
 			}
 		}
 	}

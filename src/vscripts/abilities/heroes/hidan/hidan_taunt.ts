@@ -118,7 +118,7 @@ export class modifier_hidan_taunt_buff extends BaseModifierMotionHorizontal
 {
     str_gain_hero?: number;
     str_gain_not_hero?: number;
-    str_duration?: number;
+    strength_gain_duration?: number;
 
     /****************************************/
 
@@ -131,7 +131,7 @@ export class modifier_hidan_taunt_buff extends BaseModifierMotionHorizontal
 
         this.str_gain_hero = ability.GetSpecialValueFor("str_gain_hero");
         this.str_gain_not_hero = ability.GetSpecialValueFor("str_gain_not_hero");
-        this.str_duration = ability.GetSpecialValueFor("str_duration");
+        this.strength_gain_duration = ability.GetSpecialValueFor("duration");
     }
 
     /****************************************/
@@ -148,7 +148,7 @@ export class modifier_hidan_taunt_buff extends BaseModifierMotionHorizontal
         let attacker = event.attacker;
         let target = event.target;
 
-        if (target != this.GetParent()) return;
+        if (target != this.GetParent() || this.GetElapsedTime() > this.strength_gain_duration!) return;
 
         this.SetStackCount(this.GetStackCount() + (attacker.IsHero() ? this.str_gain_hero! : this.str_gain_not_hero!));
         (target as CDOTA_BaseNPC_Hero).CalculateStatBonus(true);

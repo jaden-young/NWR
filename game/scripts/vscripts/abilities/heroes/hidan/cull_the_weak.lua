@@ -64,38 +64,12 @@ function hidan_cull_the_weak:CastFilterResultLocation(location)
 end
 
 function hidan_cull_the_weak:GetCooldown(level)
-	-- if self:GetCaster():HasTalent("special_bonus_hidan_5") then
-	-- 	return self.BaseClass.GetCooldown( self, level ) - self:GetCaster():FindTalentValue("special_bonus_hidan_5")
-	-- else
-	-- 	return self.BaseClass.GetCooldown( self, level )
-	-- end
 	return self.BaseClass.GetCooldown( self, level ) - self:GetCaster():FindTalentValue("special_bonus_hidan_5")
 end
 
 
-function hidan_cull_the_weak:CanBeReflected(bool, target)
-    if bool == true then
-        if target:TriggerSpellReflect(self) then return end
-    else
-        --[[ simulate the cancellation of the ability if it is not reflected ]]
-ParticleManager:CreateParticle("particles/items3_fx/lotus_orb_reflect.vpcf", PATTACH_ABSORIGIN, target)
-        EmitSoundOn("DOTA_Item.AbyssalBlade.Activate", target)
-    end
-end
-
-function hidan_cull_the_weak:ProcsMagicStick()
-    return true
-end
-
 function hidan_cull_the_weak:GetCastRange(location, target)
-	local castrangebonus = 0
-	local abilityS = self:GetCaster():FindAbilityByName("special_bonus_hidan_4")
-	if abilityS ~= nil then
-	    if abilityS:GetLevel() > 0 then
-	    	castrangebonus = 75
-	    end
-	end
-	return self:GetSpecialValueFor("range") + castrangebonus
+	return self:GetSpecialValueFor("range") + self:GetCaster():FindTalentValue("special_bonus_hidan_4")
 end
 
 function hidan_cull_the_weak:OnAbilityPhaseStart()
@@ -105,92 +79,70 @@ end
 
 function hidan_cull_the_weak:OnSpellStart()
 	local caster = self:GetCaster()
-	local ability = self
 	local target_point = self:GetCursorPosition()
+	local hero_damage = self:GetSpecialValueFor("hero_damage")
+	local creep_damage = self:GetSpecialValueFor("creep_damage")
+	local width = self:GetSpecialValueFor("pull_width")
+	local heal = self:GetSpecialValueFor("heal_per_kill")
 
 	local origin = caster:GetAbsOrigin()
 	local direction = caster:GetForwardVector()
 	local cast_range = self:GetCastRange(target_point, nil)
-	local width = self:GetSpecialValueFor("pull_width")
+	
 	local final_target = origin+direction*cast_range
+
+	local damage_table = {
+		attacker = caster,
+		victim = nil,
+		damage = hero_damage,
+		damage_type = self:GetAbilityDamageType(),
+		ability = self
+	}
 
 	caster:EmitSound("hidan_cull_the_weak_fire")
 
-	targeted_units = FindUnitsInLine(caster:GetTeamNumber(),
-									 origin, 
-									 final_target, 
-									 nil, 
-									 width, 
-									 DOTA_UNIT_TARGET_TEAM_ENEMY, 
-									 DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 
-									 DOTA_UNIT_TARGET_FLAG_NONE)
+	local enemies = FindUnitsInLine(
+		caster:GetTeamNumber(),
+		origin, 
+		final_target, 
+		nil, 
+		width, 
+		DOTA_UNIT_TARGET_TEAM_ENEMY, 
+		DOTA_UNIT_TARGET_HERO + DOTA_UNIT_TARGET_BASIC, 
+		DOTA_UNIT_TARGET_FLAG_NONE
+	)
 
-	if #targeted_units ~= 0 then
-		local hp_perc_cost = self:GetSpecialValueFor("hp_percentage_cost")
-		local self_damage = (caster:GetMaxHealth()*hp_perc_cost/100)
-		local non_lethal_self_damage_modifier = math.min((caster:GetHealth() - self_damage - 1), 0)
-
-		local damageTable = {
-			victim = caster,
-			attacker = caster,
-			damage = self_damage + non_lethal_self_damage_modifier,
-			damage_type = DAMAGE_TYPE_PURE,
-		}
-		ApplyDamage( damageTable )
-
-		local hero_damage = self:GetSpecialValueFor("hero_damage")
-		local creep_damage = self:GetSpecialValueFor("creep_damage")
-		local duration = self:GetDuration()
-
-		for key,oneTarget in pairs(targeted_units) do 
-		    --[[ if the target used Lotus Orb, reflects the ability back into the caster ]]
-            if oneTarget:FindModifierByName("modifier_item_lotus_orb_active") then
-                self:CanBeReflected(false, oneTarget)
-                
-                return
-            end
-            
-            --[[ if the target has Linken's Sphere, cancels the use of the ability ]]
-            if oneTarget:TriggerSpellAbsorb(self) then return end
+	for _, enemy in pairs(enemies) do 
+		local pull_length = -1 * (( final_target - origin ):Length2D()) + 150
 		
-			-- keys.ability.hasTargets = true
-			oneTarget:AddNewModifier(caster, 
-									 self, 
-									 "modifier_hidan_cull_the_weak_ms_slow", 
-									 {Duration = duration})
+		damage_table.victim = enemy
+		damage_table.damage = enemy:IsHero() and hero_damage or creep_damage
+		ApplyDamage(damage_table)
 
-			local pull_length = -1 * (( final_target - origin ):Length2D()) + 150
-			local damage = 0
-			if oneTarget:IsHero() then
-				damage = hero_damage
-			else 
-				damage = creep_damage
-			end
-			local knockbackModifierTable =
-			{
-				should_stun = 0,
-				knockback_duration = 0.3,
-				duration = 0.3,
-				knockback_distance = pull_length,
-				knockback_height = 0,
-				center_x = origin.x,
-				center_y = origin.y,
-				center_z = origin.z
-			}
-			oneTarget:AddNewModifier( caster, nil, "modifier_knockback", knockbackModifierTable )
-
-			local damageTable = {
-					victim = oneTarget,
-					attacker = caster,
-					damage = damage,
-					damage_type = ability:GetAbilityDamageType()
-				}
-			ApplyDamage( damageTable )
-
-			local impact_vfx = ParticleManager:CreateParticle("particles/units copy/heroes/hidan/cult_impact.vpcf", PATTACH_ABSORIGIN, oneTarget)
-			ParticleManager:SetParticleControl(impact_vfx, 0, oneTarget:GetAbsOrigin())
-			
+		if not enemy:IsAlive() and enemy:IsHero() then
+			caster:HealWithParams(heal, self, false, true, caster, false)
+			ParticleManager:ReleaseParticleIndex(
+				ParticleManager:CreateParticle("particles/generic_gameplay/generic_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+			)
 		end
+
+		local knockbackModifierTable =
+		{
+			should_stun = 0,
+			knockback_duration = 0.3,
+			duration = 0.3,
+			knockback_distance = pull_length,
+			knockback_height = 0,
+			center_x = origin.x,
+			center_y = origin.y,
+			center_z = origin.z
+		}
+
+		enemy:AddNewModifier( caster, nil, "modifier_knockback", knockbackModifierTable )
+
+		local impact_vfx = ParticleManager:CreateParticle("particles/units/heroes/hidan/cult_impact.vpcf", PATTACH_ABSORIGIN, enemy)
+		ParticleManager:SetParticleControlEnt(impact_vfx, 0, enemy, PATTACH_POINT_FOLLOW, "attach_hitloc", Vector(0, 0, 0), true)
+		ParticleManager:ReleaseParticleIndex(impact_vfx)
 	end
 
 	--Particles
@@ -202,7 +154,7 @@ function hidan_cull_the_weak:OnSpellStart()
 	ParticleManager:SetParticleControl(cull_vfx, 4, Vector(-direction.y, direction.x, direction.z)*width/2) --rotating direction vector to get offset
 	ParticleManager:SetParticleControl(cull_vfx, 5, Vector(direction.y, -direction.x, direction.z)*width/2)
 	ParticleManager:SetParticleControl(cull_vfx, 7, Vector(diff.x*3000, diff.y*3000, diff.z))
-
+	ParticleManager:ReleaseParticleIndex(cull_vfx)
 end
 
 
