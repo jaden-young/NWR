@@ -26,14 +26,14 @@
 		{
 			"max_charges"
 			{
-				"value"						"4"
+				"value"						"3"
 				"LinkedSpecialBonus"		"special_bonus_naruto_5"
 			}
-			"charge_restore_time"		"6.0 8.0 10.0 12.0"
-			"illusion_duration"			"12.0"
+			"clones_per_charge"			"1 2 3 4"
 			"outgoing_damage"			"25"
 			"incoming_damage"			"700"
-			"clones_per_charge"			"1 2 3 4"
+			"illusion_duration"			"12.0"
+			"charge_restore_time"		"6.0 8.0 10.0 12.0"
 			"spawn_radius"				"350"
 			"delay_between_illusions"	"0.2"
 			"attack_search_radius"		"1400"

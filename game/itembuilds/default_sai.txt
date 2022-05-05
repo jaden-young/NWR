@@ -1,0 +1,51 @@
+"itembuilds"
+{
+	"author"		"Valve"
+	"hero"			"npc_dota_hero_sai"
+	"Title"			"Recommended items for Sai"
+	
+	"Items"
+	{		
+		"#DOTA_Item_Build_Starting_Items"
+		{
+			"item"		"item_tango"
+			"item"		"item_mantle"
+			"item"		"item_mantle"
+			"item"		"item_circlet"
+			"item"		"item_branches"
+		}
+		
+		"#DOTA_Item_Build_Early_Game"
+		{
+ 			"item"		"item_null_talisman"	
+			"item"		"item_null_talisman"	
+			"item"		"item_boots"
+		}
+		
+		"#DOTA_Item_Build_Mid_Items"
+		{
+				"item"		"item_tranquil_boots"
+        		"item"		"item_ancient_janggo"
+        		"item"		"item_rod_of_atos"
+		}
+		
+		"#DOTA_Item_Build_Late_Items"
+		{
+			"item"  	"item_force_staff"
+			"item"		"item_glimmer_cape"
+			"item"		"item_pipe"
+			"item"		"item_vladmir"
+			"item"		"item_cyclone"
+			"item"		"item_aeon_disk"
+		}
+		
+		"#DOTA_Item_Build_Other_Items"
+		{
+			"item"  	"item_sheepstick"
+			"item"		"item_bloodthorn"
+			"item"		"item_shivas_guard"
+			"item"		"item_windwaker"
+			"item"		"item_solar_crest"
+		}
+	}
+}

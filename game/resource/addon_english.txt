@@ -231,7 +231,7 @@
 		"DOTA_Tooltip_ability_hidan_soul_hunt_slow_duration"				"DURATION:"
 
 		"DOTA_Tooltip_modifier_hidan_soul_hunt"								"<b><font color='#D12314'> Soul Hunt </font></b>"
-		"DOTA_Tooltip_modifier_hidan_soul_hunt_Description"					"<b><font color='#D12314'>Movement Speed Slowed</font></b> by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_hidan_soul_hunt_Description"					"Movement Speed Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 
 		// Cull the Weak
 		"DOTA_Tooltip_ability_hidan_cull_the_weak"						"<b><font color='#9C352C'> Cull The Weak </font></b>"
@@ -250,9 +250,9 @@
 		"DOTA_Tooltip_ability_hidan_taunt_str_duration"						"STRENGTH BUFF DURATION: "
 
 		"DOTA_Tooltip_modifier_hidan_taunt"									"<b><font color='#D12314'> Taunt </font></b>"
-		"DOTA_Tooltip_modifier_hidan_taunt_Description"						"This Unit is <b><font color='#D12314'>forced to attack</font></b> Hidan."
+		"DOTA_Tooltip_modifier_hidan_taunt_Description"						"This Unit is forced to attack Hidan."
 		"DOTA_Tooltip_modifier_hidan_taunt_buff"							"<b><font color='#D12314'> Taunt </font></b>"
-		"DOTA_Tooltip_modifier_hidan_taunt_buff_Description"				"This Unit's <b><font color='#D12314'>Strength</font></b> is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
+		"DOTA_Tooltip_modifier_hidan_taunt_buff_Description"				"This Unit's Strength is increased by %dMODIFIER_PROPERTY_STATS_STRENGTH_BONUS%."
 		
 
 		// Jashin's Blessing
@@ -260,11 +260,12 @@
 		"DOTA_Tooltip_ability_hidan_jashins_blessing_description"			"<b><font color='#C64F45'> Upon taking fatal damage,</font></b> Hidan avoids death. <br><br> Instead, a percentage of his maximum<b><font color='#C64F45'> Health is restored.</font></b>"
 		"DOTA_Tooltip_ability_hidan_jashins_blessing_reset_hp_percentage"	"%MAXIMUM HEALTH RESTORED: "
 		"DOTA_Tooltip_modifier_jashins_blessing"					"<b><font color='#C64F45'> Jashin's Blessing </font></b>"
-		"DOTA_Tooltip_modifier_jashins_blessing_description"		"Hidan will <b><font color='#C64F45'>restore Health</font></b> upon taking fatal damage."
+		"DOTA_Tooltip_modifier_jashins_blessing_description"		"Hidan will restore Health upon taking fatal damage."
 
 		// Death Possession Blood
 		"DOTA_Tooltip_ability_hidan_death_possession_blood"						"<b><font color='#B5B5B5'> Death Possession Blood </font></b>"
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_description"			"<b><font color='#FFFFFF'>PASSIVE </font></b>- Hidan <b><font color='#D52516'>stores blood</font></b> from the most recent hero attacked. <br><br> <b><font color='#FFFFFF'>ACTIVE</font></b> - Creates a symbol on the ground, causing a percentage of damage taken by Hidan to <b><font color='#9C352C'>also be inflicted upon the enemy hero</font></b> who's blood Hidan possessed. <br><br> Enemies take full damage while Hidan <b><font color='#C64F45'>remains within the symbol.</font></b> <br><br> Grants the ability to inflict <b><font color='#880808'>Self Pain</font></b> while active."
+		"DOTA_Tooltip_ability_hidan_death_possession_blood_Note0"				"Marked targets cannot be changed once Death Possession Blood has been actiavted."
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_radius"				"SYMBOL RADIUS: "
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_duration"			"DURATION: "
 		"DOTA_Tooltip_ability_hidan_death_possession_blood_returned_damage_outside_percentage"	"%DAMAGE SHARED OUTSIDE CIRCLE: "
@@ -368,37 +369,40 @@
 
 
 		// Water Shark Bullet
-		"DOTA_Tooltip_ability_kisame_water_shark_bullet"						"Water Shark Bullet"
-		"DOTA_Tooltip_ability_kisame_water_shark_bullet_Description"			"Sends out a water shark that explodes on impact with an enemy. Enemies damaged by the explosion are dealt Magic Damage while also having their Movement Speed and Armor reduced for a short duration."
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet"						"<b><font color='#2ac9d1'>Water Shark Bullet</font></b>"
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_Description"			"Sends out a Water Shark that <b><font color='#2ac9d1'>explodes on impact</font></b> with an enemy. <br><br> Enemies within the area are <b><font color='#2ac9d1'>dealt Magic Damage</font></b> while also having their <b><font color='#2ac9d1'>Movement Speed and Armor</font></b> reduced for a short duration."
+		"DOTA_Tooltip_ability_kisame_water_shark_bullet_lore"					"Suiton: Suikodan no Jutsu"
 		"DOTA_Tooltip_ability_kisame_water_shark_bullet_damage"					"DAMAGE:"
 		"DOTA_Tooltip_ability_kisame_water_shark_bullet_armor_reduction"		"ARMOR REDUCTION:"
 		"DOTA_Tooltip_ability_kisame_water_shark_bullet_move_slow"				"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_kisame_water_shark_bullet_duration"				"DURATION:"
 		"DOTA_Tooltip_ability_kisame_water_shark_bullet_AbilityCastRange"		"CAST RANGE:"
 
-		"DOTA_Tooltip_modifier_kisame_water_shark_bullet"						"Water Shark Bullet"
-		"DOTA_Tooltip_modifier_kisame_water_shark_bullet_Description"			"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+		"DOTA_Tooltip_modifier_kisame_water_shark_bullet"						"<b><font color='#2ac9d1'>Water Shark Bullet</font></b>"
+		"DOTA_Tooltip_modifier_kisame_water_shark_bullet_Description"			"Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, Armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
 
 		// Water Prison
-		"DOTA_Tooltip_ability_kisame_water_prison"								"Water Prison"
-		"DOTA_Tooltip_ability_kisame_water_prison_Description"					"Channeled - Holds an enemy in place with a Water Prison, dealing Magic Damage over time and causing them to be unable to move or act. Kisame gains damage resistance while channeling."
+		"DOTA_Tooltip_ability_kisame_water_prison"								"<b><font color='#0A6AA4'>Water Prison </font></b>"
+		"DOTA_Tooltip_ability_kisame_water_prison_Description"					"<b><font color='#FFFFFF'>CHANNELED</font></b> - <b><font color='#0A6AA4'>Holds the target in place </font></b>dealing <b>Magic Damage</b> over time while fully disabling the enemy. <br><br> Kisame gains <b><font color='#0A6AA4'>Damage Resistance while channeling.</font></b>"
+		"DOTA_Tooltip_ability_kisame_water_prison_lore"							"Suiro no Jutsu"
 		"DOTA_Tooltip_ability_kisame_water_prison_damage_per_second"			"DAMAGE PER SECOND:"
 		"DOTA_Tooltip_ability_kisame_water_prison_damage_reduction"				"%DAMAGE REDUCTION:"
 		"DOTA_Tooltip_ability_kisame_water_prison_abilitychanneltime"			"DURATION:"
 		"DOTA_Tooltip_ability_kisame_water_prison_AbilityCastRange"				"CAST RANGE:"
 
-		"DOTA_Tooltip_modifier_kisame_water_prison"								"Water Prison"
-		"DOTA_Tooltip_modifier_kisame_water_prison_Description"					"Disabled. Taking %dMODIFIER_PROPERTY_TOOLTIP% damage every %fMODIFIER_PROPERTY_TOOLTIP2%s."
-		"DOTA_Tooltip_modifier_kisame_water_prison_resistance"					"Water Prison - Channeling"
+		"DOTA_Tooltip_modifier_kisame_water_prison"								"<b><font color='#0A6AA4'>Water Prison </font></b>"
+		"DOTA_Tooltip_modifier_kisame_water_prison_Description"					"Disabled and taking %dMODIFIER_PROPERTY_TOOLTIP% damage every %fMODIFIER_PROPERTY_TOOLTIP2%s."
+		"DOTA_Tooltip_modifier_kisame_water_prison_resistance"					"<b><font color='#0A6AA4'>Water Prison </font></b> - Channeling"
 		"DOTA_Tooltip_modifier_kisame_water_prison_resistance_Description"		"Incoming damage reduced %dMODIFIER_PROPERTY_INCOMING_DAMAGE_PERCENTAGE%%%."
 
 		//Exploding Water Shockwave
-		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave"					"Exploding Water Shockwave"
-		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_Description"		"Kisame propels himself forward on a wave of water, dealing Magic Damage and carrying enemies along with him."
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave"					"<b><font color='#3fc8eb'>Exploding Water Shockwave </font></b>"
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_Description"		"<b><font color='#3fc8eb'>Propels Kisame forward</font></b> on a wave of water, dealing Magic Damage and <b><font color='#3fc8eb'>carrying enemies </font></b>along with him."
+		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_lore"			"Suiton: Bakusui Shoha"
 		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_damage"			"DAMAGE:"
 		"DOTA_Tooltip_ability_kisame_exploding_water_shockwave_wave_radius"		"RADIUS:"
 
-		"DOTA_Tooltip_modifier_kisame_exploding_water_shockwave"				"Water Shockwave"
+		"DOTA_Tooltip_modifier_kisame_exploding_water_shockwave"				"<b><font color='#3fc8eb'>Exploding Water Shockwave </font></b>"
 		"DOTA_Tooltip_modifier_kisame_exploding_water_shockwave_Description"	"Carried by the wave."
 
 		
@@ -429,7 +433,7 @@
 		"DOTA_Tooltip_ability_kisame_samehada_manasteal_percentage"		"%MANASTEAL: "
 		"DOTA_Tooltip_ability_kisame_samehada_bonus_attack_damage"		"%BONUS ATTACK DAMAGE: "
 		"DOTA_Tooltip_modifier_kisame_samehada"								"<b><font color='#545AE7'>Samehada</font></b>"
-		"DOTA_Tooltip_modifier_kisame_samehada_description"					"Kisame's next attack will <b><font color='#0689D8'>steal Mana</font></b> and grant <b><font color='#545AE7'>Attack Damage.</font></b>"
+		"DOTA_Tooltip_modifier_kisame_samehada_description"					"Kisame's next attack will steal Mana and grant Attack Damage."
 
 		
 		//Bunshin Water Prison
@@ -437,7 +441,7 @@
 		"DOTA_Tooltip_ability_kisame_bunshin_water_prison_description"			"<b><font color='#FFFFFF'>CHANNELED</font></b> - Creates an inescapable sphere of water that <b><font color='#0A6AA4'>disables the foe.</font></b>"
 		"DOTA_Tooltip_ability_kisame_bunshin_water_prison_channel_time"			"DURATION: "
 		"DOTA_Tooltip_modifier_bunshin_water_prison_hold"				"<b><font color='#0A6AA4'>Water Prison Technique</font></b>"
-		"DOTA_Tooltip_modifier_bunshin_water_prison_hold_description"	"This Unit is <b><font color='#0A6AA4'>Stunned</font></b>."
+		"DOTA_Tooltip_modifier_bunshin_water_prison_hold_description"	"This Unit is Disabled."
 		
 		//Bunshin Samehada
 		"DOTA_Tooltip_ability_kisame_samehada_bunshin"						"<b><font color='#474CCA'>Samehada</font></b>"
@@ -991,55 +995,75 @@
 		// Futon: Rasenshuriken
 		"DOTA_Tooltip_ability_naruto_rasenshuriken"							"<b><font color='#3CFEFF'>Wind Release: Rasenshuriken</font></b>"
 		"DOTA_Tooltip_ability_naruto_rasenshuriken_lore"					"Fuuton: Rasenshuriken"
-		"DOTA_Tooltip_ability_naruto_rasenshuriken_description"				"Throws a Rasenshuriken at the target dealing <b><font color='#3CFEFF'>Magic Damage and Stunning</font></b> nearby enemies on impact."
+		"DOTA_Tooltip_ability_naruto_rasenshuriken_description"				"Throws a Rasenshuriken at the target dealing <b><font color='#3CFEFF'>Magic Damage and Stunning</font></b> nearby enemies on impact. <br><br> Additional Magic Damage is dealt to enemies <b><font color='#3CFEFF'>based on Naruto's Attack Damage.</font></b>"
 		"DOTA_Tooltip_ability_naruto_rasenshuriken_base_damage"				"BASE DAMAGE:"
 		"DOTA_Tooltip_ability_naruto_rasenshuriken_attack_dmg_mult"			"ATTACK DAMAGE MULTIPLIER:"
 		"DOTA_Tooltip_ability_naruto_rasenshuriken_stun_duration"			"STUN DURATION:"
 		"DOTA_Tooltip_ability_naruto_rasenshuriken_radius"					"RADIUS:"
 
-		"DOTA_Tooltip_modifier_rasenshuriken_datadriven"						"<b><font color='#3CFEFF'>Rasenshuriken</font></b>"
-		"DOTA_Tooltip_modifier_rasenshuriken_datadriven_description"			"Stunned by <b><font color='#3CFEFF'>Wind Release: Rasenshuriken.</font></b>"
+		"DOTA_Tooltip_modifier_rasenshuriken_datadriven"						"<b><font color='#3CFEFF'>Wind Release: Rasenshuriken</font></b>"
+		"DOTA_Tooltip_modifier_rasenshuriken_datadriven_description"			"Stunned by Wind Release: Rasenshuriken."
 
 		// Shadow Clone technique
-		"DOTA_Tooltip_ability_naruto_shadow_clone_technique"							"Shadow Clone Technique"
-		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_Description"				"Naruto generates Shadow Clone charges over time. Charges are used on activation, creating controllable clones of Naruto that spawn in random locations within a nearby radius. These clones deal a percentage of his damage and take additional incoming damage."
-		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_shard_description"			"Removes Cast Point. Can now be used while holding a Rasengan. Casting Rasengan or creating clones while Rasengan is active grants mini-Rasengans to Shadow Clones, causing them to deal %shard_rasengan_damage% Magic Damage on their next attack."
-		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_Note0"						"Clones will automatically attack any visible enemy in a %attack_search_radius% radius. Prioritizes heroes"
+		"DOTA_Tooltip_ability_naruto_shadow_clone_technique"							"<b><font color='#ff8000'>Shadow Clone Technique</font></b>"
+		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_Description"				"<b><font color='#FFFFFF'>ACTIVE</font></b> - <b><font color='#ff8000'>Consumes a Shadow Clone charge</font></b> creating clones that spawn in random locations within a nearby radius. <br><br> Shadow Clone charges <b><font color='#ff8000'>are restored overtime</font></b> with a maximum of %max_charges% charges. <br><br> <b><font color='#FFFFFF'>AUTO-CAST</font></b> - Clones will <b><font color='#ff8000'>automatically attack visible enemies</font></b> prioritizing heroes." 
+		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_Note0"						"While set to Auto-Cast clones will attack visible enemies within a %attack_search_radius% radius." 
+		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_lore"						"Kage Bunshin no Jutsu"
+		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_shard_description"			"Removes Cast Point and can now be used while holding a <b><font color='#0fc7ff'>Rasengan.</font></b> <br><br> Using <b><font color='#ff8000'>Shadow Clone Technique</font></b> while <b><font color='#0fc7ff'>Rasengan</font></b> is active grants <b><font color='#81e6fc'>Mini Rasengans</font></b> to Shadow Clones, causing them to deal %shard_rasengan_damage% <b>Magic Damage</b> on their next attack."
 		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_charge_restore_time"		"CHARGE RESTORE TIME:"
-		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_illusion_duration"			"DURATION:"
+		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_illusion_duration"			"CLONE DURATION:"
 		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_outgoing_damage"			"%CLONE DAMAGE:"
 		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_incoming_damage"			"%CLONE DAMAGE TAKEN:"
 		"DOTA_Tooltip_ability_naruto_shadow_clone_technique_clones_per_charge"			"CLONE PER CHARGE:"
 
-		"DOTA_Tooltip_modifier_clone_charges"											"Shadow Clone Charges"
+		"DOTA_Tooltip_modifier_clone_charges"											"<b><font color='#ff8000'>Shadow Clone Charges</font></b>"
+		"DOTA_Tooltip_modifier_clone_charges_description"								"Number of available Shadow Clone Charges."
 
 		// Rasengan
-		"DOTA_Tooltip_ability_naruto_rasengan"										"Rasengan"
-		"DOTA_Tooltip_ability_naruto_rasengan_Description"							"By amassing chakra into his hand, Naruto creates a Rasengan to attack his foe with. Naruto’s next attack deals additional magic damage and knocks the foe backwards. Afterwards, the enemy is slowed for a short duration."
+		"DOTA_Tooltip_ability_naruto_rasengan"										"<b><font color='#0fc7ff'>Rasengan</font></b>"
+		"DOTA_Tooltip_ability_naruto_rasengan_Description"							"Gathers Chakra in the User's hand causing their next attack to <b><font color='#0fc7ff'>deal additional Magic Damage</font></b>. <br><br> On impact the <b><font color='#0fc7ff'>target will be knocked forward</font></b> and receive a short <b>Movement Speed</b> slow."
 		"DOTA_Tooltip_ability_naruto_rasengan_damage"								"DAMAGE:"
+		"DOTA_Tooltip_ability_naruto_rasengan_knockback_distance"					"KNOCKBACK:"
+		"DOTA_Tooltip_ability_naruto_rasengan_movement_slow"						"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_naruto_rasengan_slow_duration"						"SLOW DURATION:"
 		"DOTA_Tooltip_ability_naruto_rasengan_duration"								"RASENGAN DURATION:"
 		"DOTA_Tooltip_ability_naruto_rasengan_clone_damage"							"CLONE DAMAGE:"
 		
-		"DOTA_Tooltip_modifier_naruto_rasengan"										"Rasengan"
+
+		"DOTA_Tooltip_modifier_naruto_rasengan_slow"								"<b><font color='#0fc7ff'>Rasengan</font></b>"
+		"DOTA_Tooltip_modifier_naruto_rasengan_slow_description"					"Movement Speed is Slowed."
+		"DOTA_Tooltip_modifier_naruto_rasengan"										"<b><font color='#0fc7ff'>Rasengan</font></b>"
+		"DOTA_Tooltip_modifier_naruto_rasengan_description"							"Holding a Rasengan."
 		"dota_hud_error_active_rasengan"											"Cannot use while Rasengan is active."
 
 		// Rendan
-		"DOTA_Tooltip_ability_naruto_rendan"										"Naruto Rendan"
-		"DOTA_Tooltip_ability_naruto_rendan_Description"							"Grants Naruto and his clones the ability to charge an enemy unit. When used by Naruto, this ability will cause himself and all nearby clones to charge the enemy. If the original Naruto reaches the target, he will appear behind the target to deal physical damage and a knockup. If a Clone reaches the target, they will deal a small amount of damage. Clones can use this ability separately by issuing an attack on the target, costing no mana."
+		"DOTA_Tooltip_ability_naruto_rendan"										"<b><font color='#ffb35c'>Naruto Rendan</font></b>"
+		"DOTA_Tooltip_ability_naruto_rendan_Description"							"<b><font color='#FFFFFF'>ACTIVE</font></b> - <b><font color='#ffb35c'>Charges an enemy unit</font></b> granting additional <b>Physical Damage</b> and appearing <b><font color='#ffb35c'>behind the enemy </font></b>on next attack. <br><br> <b><font color='#FFFFFF'>PASSIVE</font></b> - <b><font color='#ffb35c'>Clones will use this ability</font></b> automatically when attacking dealing Physical Damage on next attack. <br><br> <b><font color='#FFFFFF'>AUTO-CAST</font></b> - Naruto will <b><font color='#ffb35c'>remain in front</font></b> of the target on arrival."
+		"DOTA_Tooltip_ability_naruto_rendan_note0"									"When used Clones within %clone_gather_range% radius of the User will charge with the Hero if off Cooldown."
+		"DOTA_Tooltip_ability_naruto_rendan_damage"									"HERO DAMAGE"
+		"DOTA_Tooltip_ability_naruto_rendan_clone_damage"							"CLONE DAMAGE"
+
 		"DOTA_Tooltip_ability_naruto_rendan_charge_speed"							"CHARGE SPEED:"
 
 		//Kyuubi Chakra Mode
-		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode"							"Kyuubi Chakra Mode"
-		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_Description"				"Utilizing the chakra shared with him by the Nine-Tailed Fox, Naruto enters Kyuubi Chakra Mode thus greatly increasing his combat capabilities, granting him higher movement spped and a reduced Base Attack Time over the full duration of the transformation. Additionally, Naruto gains new powers while in this form.\n\n\n<font color='yellow'>LEVEL 1</font> - Rasengan has no cast time.\n<font color='orange'>LEVEL 2</font> - Grants Rasenshuriken.\n<font color='red'>LEVEL 3</font> - Grants Tailed Beast Ball."
+		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode"							"<b><font color='#ffa600'>Kyuubi Chakra Mode</font></b>"
+		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_Description"				"Enters Kyuubi Chakra Mode (KCM) gaining increased <b><font color='#ffa600'>Movement Speed,</font></b> lowered <b><font color='#ffa600'>Base Attack Time,</font></b> and tripling the effects of <b><font color='#ffc757'>Kyuubi Chakra</font></b>. <br><br> Additionally, grants the following per level: \n\n\n<font color='yellow'>LEVEL 1</font> - <b><font color='#0fc7ff'>Rasengan</font></b> has no cast time.\n<font color='orange'>LEVEL 2</font> - Grants <b><font color='#3CFEFF'>Rasenshuriken.</font></b>\n<font color='red'>LEVEL 3</font> - Grants <b><font color='#ab0270'>Tailed Beast Ball.</font></b>"
 		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_bonus_ms"					"BONUS MOVESPEED:"
 		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_base_attack_time"			"BASE ATTACK TIME:"
+		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_Note0"						"Gained abilities are additive across levels."
 
-		"DOTA_Tooltip_modifier_kyuubi_chakra_mode_active"							"Kyuubi Chakra Mode"
+		"DOTA_Tooltip_modifier_kyuubi_chakra_mode_active"							"<b><font color='#ffa600'>Kyuubi Chakra Mode</font></b>"
 		"DOTA_Tooltip_modifier_kyuubi_chakra_mode_active_Description"				"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%, base attack time reduced to %fMODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT%."
 
-		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb"							"Tailed Beast Bomb"
-		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_Description"				"Amassing a massive amount of chakra with the help of Kurama, Naruto fires a large ball of pure energy that deals magic damage in a line. A fixed amount of magic damage is dealt to all enemies caught in the attack, plus additional damage based on a multiplier of Naruto’s Strength. Deals 10% less damage per hero hit."
-		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_Note0"					"Naruto will lose the effects of Kyuubi Chakra Mode after using this ability."
+		//Tailed Beast Bomb
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb"							"<b><font color='#ab0270'>Tailed Beast Ball</font></b>"
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_Description"				"<b><font color='#ab0270'>Fires a massive ball</font></b> of massed chakra after charging the attack. <br><br> The ball of chakra deals <b>Magic Damage</b> that is <b><font color='#ab0270'>amplified by Naruto's Strength.</font></b>"
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_Note0"					"Deals 10% less Damage per enemy Hero hit."
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_range"					"RANGE:"
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_radius"					"RADIUS:"
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_base_damage"				"BASE DAMAGE:"
+		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb_strength_as_damage"		"%STRENGTH DAMAGE:"
+
 
 		//--------------------
 		//Itachi
@@ -2977,7 +3001,7 @@
 		// HERO SELECTION DESCRIPTIONS
 
 		"npc_dota_hero_anko_npedesc1"		"Snatches enemies with snakes and assassinates them."
-		"npc_dota_hero_naruto_npedesc1"		"Fights with clones to outsmart and overwhelm his enemies."
+		"npc_dota_hero_naruto_npedesc1"		"Fuck shit up because you're the main character."
 		"npc_dota_hero_sakura_npedesc1"		"Heavy hitting powerhouse who moves fast and punches harder."
 		"npc_dota_hero_sasuke_npedesc1"		"Picks off and outmaneuvers foes with lightning enhanced precision."
 		"npc_dota_hero_kakashi_npedesc1"	"Versatile disabler who can copy other's techniques."

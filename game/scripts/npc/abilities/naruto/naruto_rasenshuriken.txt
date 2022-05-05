@@ -31,10 +31,10 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityValues"
 		{
-			"base_damage"				"150"
+			"base_damage"				"100"
 			"attack_dmg_mult"
 			{
-				"value"						"1.7"
+				"value"						"2.0"
 				"DamageTypeTooltip"			"DAMAGE_TYPE_MAGICAL"
 			}
 			"stun_duration"				"1.5"

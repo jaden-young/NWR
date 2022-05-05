@@ -33,7 +33,7 @@
 		
 		"#DOTA_Item_Build_Late_Items"
 		{
-        		"item"		"item_lotus_orb"
+        	"item"		"item_lotus_orb"
 			"item"		"item_sheepstick"
 			"item"		"item_guardian_greaves"
 			"item"		"item_aeon_disk"

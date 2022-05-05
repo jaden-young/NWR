@@ -9,7 +9,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST"
         "AbilityUnitTargetTeam"         "DOTA_UNIT_TARGET_TEAM_ENEMY"
         "AbilityUnitTargetType"         "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"FightRecapLevel"				"1"
 		"AbilityTextureName"			"naruto/naruto_rendan"
 
@@ -38,23 +38,23 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"charge_speed"				"650 700 750 800"
-				"LinkedSpecialBonus"		"special_bonus_naruto_1"
+				"damage"	            	"70 110 150 180"
 			}
 			"03"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"bonus_damage"				"0.7"
+				"var_type"					"FIELD_INTEGER"
+				"clone_damage"				"10 14 18 22"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"	            	"50 100 150 200"
+				"charge_speed"				"650 700 750 800"
+				"LinkedSpecialBonus"		"special_bonus_naruto_1"
 			}
 			"05"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"clone_damage"				"10 14 18 22"
+				"var_type"					"FIELD_FLOAT"
+				"bonus_damage"				"0.7"
 			}
 			"06"
 			{

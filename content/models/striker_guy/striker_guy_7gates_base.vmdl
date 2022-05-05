@@ -1023,7 +1023,7 @@
 					{
 						_class = "AnimFile"
 						name = "hirudora_seal"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_4"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1037,7 +1037,7 @@
 						source_filename = "models/striker_guy/hirudora_seal.smd"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 22.0
 						reverse = false
 					},
 				]
