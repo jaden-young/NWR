@@ -234,10 +234,11 @@
 		"DOTA_Tooltip_modifier_hidan_soul_hunt_Description"					"Movement Speed Slowed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 
 		// Cull the Weak
-		"DOTA_Tooltip_ability_hidan_cull_the_weak"						"<b><font color='#9C352C'> Cull The Weak </font></b>"
-		"DOTA_Tooltip_ability_hidan_cull_the_weak_description"			"<b><font color='#9C352C'>Pulls enemy units</font></b> in front of Hidan dealing <b>Physical Damage. <br><br> </b> Damage dealt is <b><font color='#9C352C'>doubled on creeps.</font></b> <br><br> Hidan is <b><font color='#9C352C'>healed for each enemy killed</font></b> by this ability."
-		"DOTA_Tooltip_ability_hidan_cull_the_weak_hero_damage"			"HERO DAMAGE: "
-		"DOTA_Tooltip_ability_hidan_cull_the_weak_creep_damage"			"CREEP DAMAGE: "
+		"DOTA_Tooltip_ability_hidan_cull_the_weak"							"<b><font color='#9C352C'> Cull The Weak </font></b>"
+		"DOTA_Tooltip_ability_hidan_cull_the_weak_description"				"<b><font color='#9C352C'>Pulls enemy units</font></b> in front of Hidan dealing <b>Physical Damage. <br><br> </b> Damage dealt is <b><font color='#9C352C'>doubled on creeps.</font></b> <br><br> Hidan is <b><font color='#9C352C'>healed for each enemy killed</font></b> by this ability."
+		"DOTA_Tooltip_ability_hidan_cull_the_weak_hero_damage"				"HERO DAMAGE: "
+		"DOTA_Tooltip_ability_hidan_cull_the_weak_creep_damage"				"CREEP DAMAGE: "
+		"DOTA_Tooltip_ability_hidan_cull_the_weak_heal_per_kill"			"%MAX HEALTH HEAL PER KILL:"
 
 		// Taunt
 		"DOTA_Tooltip_ability_hidan_taunt"									"<b><font color='#D12314'> Taunt </font></b>"

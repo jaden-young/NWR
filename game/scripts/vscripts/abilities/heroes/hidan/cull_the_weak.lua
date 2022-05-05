@@ -83,7 +83,7 @@ function hidan_cull_the_weak:OnSpellStart()
 	local hero_damage = self:GetSpecialValueFor("hero_damage")
 	local creep_damage = self:GetSpecialValueFor("creep_damage")
 	local width = self:GetSpecialValueFor("pull_width")
-	local heal = self:GetSpecialValueFor("heal_per_kill")
+	local heal = caster:GetMaxHealth() *  self:GetSpecialValueFor("heal_per_kill") / 100
 
 	local origin = caster:GetAbsOrigin()
 	local direction = caster:GetForwardVector()
