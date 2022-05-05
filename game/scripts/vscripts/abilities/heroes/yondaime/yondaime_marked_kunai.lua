@@ -18,6 +18,12 @@ end
 
 ---------------------------------------------------------------------------------------
 
+function yondaime_marked_kunai:Spawn()
+	self:GetCaster().daggers = self:GetCaster().daggers or {}
+end
+
+---------------------------------------------------------------------------------------
+
 function yondaime_marked_kunai:GetIntrinsicModifierName()
 	return "modifier_kunai_charges"
 end
@@ -60,10 +66,6 @@ function yondaime_marked_kunai:OnSpellStart()
 	local dagger_radius = ability:GetSpecialValueFor("dagger_radius")
 	local distance = math.sqrt(direction.x * direction.x + direction.y * direction.y)
 	local speed = ability:GetSpecialValueFor("dagger_speed")
-
-	if caster.daggers == nil then
-		caster.daggers = {}
-	end
 
 	caster:EmitSound("Hero_Yondaime.MarkedKunai.Cast")
 
@@ -126,15 +128,11 @@ function yondaime_marked_kunai:OnProjectileHit(hTarget, vLocation)
 		dummy:SetModelScale(4.0)
 		dummy:AddNewModifier(caster, ability, "modifier_marked_kunai_bonus", {duration = duration})
 	
-		-- dummy:SetUnitName("npc_marked_kunai")
-	
-		table.insert(self.caster.daggers, dummy)
-		ability.kunai = dummy
-	
 		local particle = ParticleManager:CreateParticle("particles/units/heroes/yondaime/kunai_ground.vpcf", PATTACH_POINT_FOLLOW, dummy) 
 		ParticleManager:SetParticleControlEnt(particle, 0, dummy, PATTACH_POINT_FOLLOW, "attach_origin", dummy:GetAbsOrigin(), true)
 		ParticleManager:SetParticleControlEnt(particle, 1, dummy, PATTACH_POINT_FOLLOW, "attach_origin", dummy:GetAbsOrigin(), true)
 		ParticleManager:SetParticleControlEnt(particle, 3, dummy, PATTACH_POINT_FOLLOW, "attach_origin", dummy:GetAbsOrigin(), true)
+		ParticleManager:ReleaseParticleIndex(particle)
 	
 		local kunai_duration = ability:GetLevelSpecialValueFor("dagger_duration", (ability:GetLevel() - 1))
 
@@ -164,6 +162,29 @@ end
 ---------------------------------------------------------------------------------------
 
 modifier_marked_kunai_bonus = class({})
+
+---------------------------------------------------------------------------------------
+
+function modifier_marked_kunai_bonus:OnCreated(kv)
+	table.insert(self:GetCaster().daggers, self:GetParent())
+end
+
+---------------------------------------------------------------------------------------
+
+function modifier_marked_kunai_bonus:OnDestroy()
+	local parent = self:GetParent()
+	for _, dagger in pairs(self:GetCaster().daggers) do
+		if dagger == parent then
+			table.remove(self:GetCaster().daggers, _)
+		end
+	end
+
+	if IsServer() then
+		if parent and not parent:IsNull() then
+			UTIL_Remove(parent)
+		end
+	end
+end
 
 ---------------------------------------------------------------------------------------
 
