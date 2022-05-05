@@ -3,7 +3,7 @@ local __TS__Class = ____lualib.__TS__Class
 local __TS__ClassExtends = ____lualib.__TS__ClassExtends
 local __TS__Decorate = ____lualib.__TS__Decorate
 local __TS__SourceMapTraceBack = ____lualib.__TS__SourceMapTraceBack
-__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 3,["14"] = 4,["15"] = 3,["16"] = 4,["17"] = 6,["18"] = 8,["19"] = 8,["20"] = 8,["22"] = 6,["23"] = 11,["24"] = 12,["25"] = 11,["26"] = 4,["27"] = 3,["28"] = 4,["30"] = 4,["31"] = 16,["32"] = 17,["33"] = 16,["34"] = 17,["36"] = 17,["37"] = 19,["38"] = 20,["39"] = 16,["40"] = 22,["41"] = 23,["42"] = 22,["43"] = 26,["44"] = 27,["45"] = 26,["46"] = 30,["47"] = 31,["48"] = 30,["49"] = 34,["50"] = 35,["51"] = 34,["52"] = 39,["53"] = 40,["54"] = 41,["55"] = 42,["56"] = 43,["58"] = 39,["59"] = 47,["60"] = 48,["61"] = 49,["62"] = 50,["63"] = 51,["64"] = 52,["65"] = 53,["67"] = 47,["68"] = 59,["69"] = 60,["70"] = 59,["71"] = 63,["72"] = 64,["73"] = 65,["74"] = 67,["75"] = 63,["76"] = 17,["77"] = 16,["78"] = 17,["80"] = 17});
+__TS__SourceMapTraceBack(debug.getinfo(1).short_src, {["8"] = 1,["9"] = 1,["10"] = 1,["11"] = 1,["12"] = 1,["13"] = 3,["14"] = 4,["15"] = 3,["16"] = 4,["17"] = 6,["18"] = 8,["19"] = 8,["20"] = 8,["22"] = 6,["23"] = 11,["24"] = 12,["25"] = 11,["26"] = 4,["27"] = 3,["28"] = 4,["30"] = 4,["31"] = 16,["32"] = 17,["33"] = 16,["34"] = 17,["36"] = 17,["37"] = 19,["38"] = 20,["39"] = 16,["40"] = 22,["41"] = 23,["42"] = 22,["43"] = 26,["44"] = 27,["45"] = 26,["46"] = 30,["47"] = 31,["48"] = 30,["49"] = 34,["50"] = 35,["51"] = 34,["52"] = 39,["53"] = 40,["54"] = 41,["55"] = 42,["56"] = 43,["58"] = 39,["59"] = 47,["60"] = 48,["61"] = 49,["62"] = 50,["63"] = 51,["65"] = 47,["66"] = 56,["67"] = 57,["68"] = 56,["69"] = 60,["70"] = 61,["71"] = 62,["72"] = 64,["73"] = 60,["74"] = 17,["75"] = 16,["76"] = 17,["78"] = 17});
 local ____exports = {}
 local ____dota_ts_adapter = require("lib.dota_ts_adapter")
 local BaseAbility = ____dota_ts_adapter.BaseAbility
@@ -61,8 +61,6 @@ function modifier_yondaime_innate_passive_intrinsic.prototype.OnRefresh(self, pa
     if ability then
         self.move_speed_percentage = ability:GetSpecialValueFor("move_speed_percentage_base") + ability:GetSpecialValueFor("move_speed_percentage_per_level_bonus") * (ability:GetLevel() - 1)
         self.attack_damage_move_speed_percentage = ability:GetSpecialValueFor("attack_damage_move_speed_percentage_base") + ability:GetSpecialValueFor("attack_damage_move_speed_percentage_per_level_bonus") * (ability:GetLevel() - 1)
-        print(self.move_speed_percentage)
-        print(self.attack_damage_move_speed_percentage)
     end
 end
 function modifier_yondaime_innate_passive_intrinsic.prototype.GetModifierMoveSpeedBonus_Percentage(self)

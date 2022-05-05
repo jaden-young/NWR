@@ -49,9 +49,6 @@ export class modifier_yondaime_innate_passive_intrinsic extends BaseModifier
         if(ability){
             this.move_speed_percentage = ability.GetSpecialValueFor("move_speed_percentage_base") + (ability.GetSpecialValueFor("move_speed_percentage_per_level_bonus") * (ability.GetLevel() - 1))
             this.attack_damage_move_speed_percentage = ability.GetSpecialValueFor("attack_damage_move_speed_percentage_base") + (ability.GetSpecialValueFor("attack_damage_move_speed_percentage_per_level_bonus") * (ability.GetLevel() - 1))
-            print(this.move_speed_percentage)
-            print(this.attack_damage_move_speed_percentage)
-            
         }
 
     }
