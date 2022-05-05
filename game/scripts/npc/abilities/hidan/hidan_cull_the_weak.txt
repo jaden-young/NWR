@@ -32,7 +32,7 @@
 		{
 			"hero_damage"			"100 130 160 190"
 			"creep_damage"			"200 260 320 380"
-			"heal_per_kill"			"5"
+			"heal_per_kill"			"11 14 17 20"
 			"pull_width"		 	"110"
 			"pull_radius_end"		"110"
 			"range"
