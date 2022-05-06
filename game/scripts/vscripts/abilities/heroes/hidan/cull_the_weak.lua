@@ -119,7 +119,7 @@ function hidan_cull_the_weak:OnSpellStart()
 		damage_table.damage = enemy:IsHero() and hero_damage or creep_damage
 		ApplyDamage(damage_table)
 
-		if not enemy:IsAlive() and enemy:IsHero() then
+		if not enemy:IsAlive() then
 			caster:HealWithParams(heal, self, false, true, caster, false)
 			ParticleManager:ReleaseParticleIndex(
 				ParticleManager:CreateParticle("particles/generic_gameplay/generic_lifesteal.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
