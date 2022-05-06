@@ -20,11 +20,11 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"			"80 60 40"
+		"AbilityCooldown"			"40 35 30"
 		
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"			"100 140 180"
+		"AbilityManaCost"			"100 125 150"
 		
 
 		// Special	
@@ -34,12 +34,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"140 180 220"
+				"damage"				"175 200 225"
 			}
 			"02"
 			{
 				"var_type"  			"FIELD_INTEGER"
-				"armor_reduction" 			"-4 -5 -6"
+				"armor_reduction" 			"-4 -6 -8"
 				"LinkedSpecialBonus" 		"special_bonus_yondaime_4"
 			}
 			"03"
@@ -55,7 +55,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"search_width"					"300"
+				"search_width"					"250"
 			}
 			"06"
 			{

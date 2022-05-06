@@ -1047,7 +1047,7 @@
 						activity_name = "ACT_DOTA_CAST_ABILITY_1"
 						activity_weight = 1
 						weight_list_name = ""
-						fade_in_time = 0.2
+						fade_in_time = 0.1
 						fade_out_time = 0.2
 						looping = false
 						delta = false
@@ -1058,7 +1058,7 @@
 						source_filename = "models/striker_minato/throw_kunai.smd"
 						start_frame = 8
 						end_frame = 37
-						framerate = 30.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
