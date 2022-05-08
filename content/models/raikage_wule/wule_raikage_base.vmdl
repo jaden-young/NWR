@@ -763,9 +763,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/raikage_wule/spell_slam_two.SMD"
-						start_frame = -1
+						start_frame = 0
 						end_frame = -1
-						framerate = -1.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
@@ -890,7 +890,7 @@
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = true
+						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
@@ -899,7 +899,7 @@
 						source_filename = "models/raikage_wule/lariat.smd"
 						start_frame = 5
 						end_frame = -1
-						framerate = -1.0
+						framerate = 45.0
 						reverse = false
 					},
 				]
