@@ -11,9 +11,9 @@
 	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 	"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 	"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-	"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+	"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"	
 	"AbilityType" 					"DOTA_ABILITY_TYPE_ULTIMATE"
-	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+	"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 	"FightRecapLevel" 				"2"
 	"AbilityTextureName"			"raikage_raiga_no_bomu"
 	"AbilityCastAnimation" 			"ACT_DOTA_IDLE"
@@ -31,7 +31,7 @@
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityManaCost"				"100 115 130"
 	
-	"AbilityDamage"					"225 350 475"
+	"AbilityDamage"					"250 400 550"
 	
 	// Special
 	//-------------------------------------------------------------------------------------------------------------
@@ -40,18 +40,18 @@
 		"01"
 		{
 			"var_type"			"FIELD_INTEGER"
-			"reduce_armor"		"-5 -7 -9"
+			"reduce_armor"		"-3 -5 -7"
 			"LinkedSpecialBonus"	"special_bonus_raikage_4"
 		}
 		"02"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"target_aoe"		"525"
+			"target_aoe"		"325"
 		}
 		"03"
 		{
 			"var_type"			"FIELD_FLOAT"
-			"knock_up"			"0.52"
+			"knock_up"			"0.6"
 		}
 		"04"
 		{
@@ -61,7 +61,7 @@
 		"05"
 		{
 			"var_type"					"FIELD_FLOAT"
-			"cast_range"			"120"
+			"cast_range"			"200"
 		}
 
 		"06"

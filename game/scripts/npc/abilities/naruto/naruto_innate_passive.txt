@@ -24,7 +24,7 @@
 				"value"						"1"
 				"LinkedSpecialBonus"		"special_bonus_naruto_3"
 			}				
-			"hp_regen_lvl"				"1"
+			"hp_regen_lvl"				"0.75"
 			"mana_regen"
 			{
 				"value"						"0.5"

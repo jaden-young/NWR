@@ -1038,8 +1038,8 @@
 		"dota_hud_error_active_rasengan"											"Cannot use while Rasengan is active."
 
 		// Rendan
-		"DOTA_Tooltip_ability_naruto_rendan"										"<b><font color='#ffb35c'>Naruto Rendan</font></b>"
-		"DOTA_Tooltip_ability_naruto_rendan_Description"							"<b><font color='#FFFFFF'>ACTIVE</font></b> - <b><font color='#ffb35c'>Charges an enemy unit</font></b> granting additional <b>Physical Damage</b> and appearing <b><font color='#ffb35c'>behind the enemy </font></b>on next attack. <br><br> <b><font color='#FFFFFF'>PASSIVE</font></b> - <b><font color='#ffb35c'>Clones will use this ability</font></b> automatically when attacking dealing Physical Damage on next attack. <br><br> <b><font color='#FFFFFF'>AUTO-CAST</font></b> - Naruto will <b><font color='#ffb35c'>remain in front</font></b> of the target on arrival."
+		"DOTA_Tooltip_ability_naruto_rendan"										"<b><font color='#ffb300'>Naruto Rendan</font></b>"
+		"DOTA_Tooltip_ability_naruto_rendan_Description"							"<b><font color='#FFFFFF'>ACTIVE</font></b> - <b><font color='#ffb300'>Charges an enemy unit</font></b> granting additional <b>Physical Damage</b> and appearing <b><font color='#ffb300'>behind the enemy </font></b>on next attack. <br><br> <b><font color='#FFFFFF'>PASSIVE</font></b> - <b><font color='#ffb300'>Clones will use this ability</font></b> automatically when attacking dealing Physical Damage on next attack. <br><br> <b><font color='#FFFFFF'>AUTO-CAST</font></b> - Naruto will <b><font color='#ffb300'>remain in front</font></b> of the target on arrival."
 		"DOTA_Tooltip_ability_naruto_rendan_note0"									"When used Clones within %clone_gather_range% radius of the User will charge with the Hero if off Cooldown."
 		"DOTA_Tooltip_ability_naruto_rendan_damage"									"HERO DAMAGE"
 		"DOTA_Tooltip_ability_naruto_rendan_clone_damage"							"CLONE DAMAGE"
@@ -1047,14 +1047,15 @@
 		"DOTA_Tooltip_ability_naruto_rendan_charge_speed"							"CHARGE SPEED:"
 
 		//Kyuubi Chakra Mode
-		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode"							"<b><font color='#ffa600'>Kyuubi Chakra Mode</font></b>"
-		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_Description"				"Enters Kyuubi Chakra Mode (KCM) gaining increased <b><font color='#ffa600'>Movement Speed,</font></b> lowered <b><font color='#ffa600'>Base Attack Time,</font></b> and tripling the effects of <b><font color='#ffc757'>Kyuubi Chakra</font></b>. <br><br> Additionally, grants the following per level: \n\n\n<font color='yellow'>LEVEL 1</font> - <b><font color='#0fc7ff'>Rasengan</font></b> has no cast time.\n<font color='orange'>LEVEL 2</font> - Grants <b><font color='#3CFEFF'>Rasenshuriken.</font></b>\n<font color='red'>LEVEL 3</font> - Grants <b><font color='#ab0270'>Tailed Beast Ball.</font></b>"
+		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode"							"<b><font color='#ffc400'>Kyuubi Chakra Mode</font></b>"
+		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_Description"				"Enters Kyuubi Chakra Mode (KCM) gaining increased <b><font color=#ffc400'>Movement Speed,</font></b> lowered <b><font color='#ffc400'>Base Attack Time,</font></b> and tripling the effects of <b><font color='#ffc757'>Kyuubi Chakra</font></b>. <br><br> Additionally, grants the following per level: \n\n\n<font color='yellow'>LEVEL 1</font> - <b><font color='#0fc7ff'>Rasengan</font></b> has no cast time.\n<font color='orange'>LEVEL 2</font> - Grants <b><font color='#3CFEFF'>Rasenshuriken.</font></b>\n<font color='red'>LEVEL 3</font> - Grants <b><font color='#ab0270'>Tailed Beast Ball.</font></b>"
 		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_bonus_ms"					"BONUS MOVESPEED:"
 		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_base_attack_time"			"BASE ATTACK TIME:"
+		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_duration"					"DURATION:"
 		"DOTA_Tooltip_ability_naruto_kyuubi_chakra_mode_Note0"						"Gained abilities are additive across levels."
 
 		"DOTA_Tooltip_modifier_kyuubi_chakra_mode_active"							"<b><font color='#ffa600'>Kyuubi Chakra Mode</font></b>"
-		"DOTA_Tooltip_modifier_kyuubi_chakra_mode_active_Description"				"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%, base attack time reduced to %fMODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT%."
+		"DOTA_Tooltip_modifier_kyuubi_chakra_mode_active_Description"				"Movement Speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%, Base Attack Time reduced to %fMODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT%, tripling Kyuubi Chakra regeneration."
 
 		//Tailed Beast Bomb
 		"DOTA_Tooltip_ability_naruto_tailed_beast_bomb"							"<b><font color='#ab0270'>Tailed Beast Ball</font></b>"

@@ -537,7 +537,7 @@
 						source_filename = "models/raikage_wule/attack1.SMD"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
@@ -571,7 +571,7 @@
 						source_filename = "models/raikage_wule/attack2.SMD"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 26.0
 						reverse = false
 					},
 					{
@@ -631,8 +631,8 @@
 					{
 						_class = "AnimFile"
 						name = "spell_five"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2-"
-						activity_weight = 1
+						activity_name = ""
+						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -651,7 +651,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_four_one"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_7"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -665,14 +665,14 @@
 						source_filename = "models/raikage_wule/spell_four_one.SMD"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 45.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "spell_four_two"
-						activity_name = ""
-						activity_weight = 1
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -685,13 +685,13 @@
 						source_filename = "models/raikage_wule/spell_four_two.SMD"
 						start_frame = -1
 						end_frame = -1
-						framerate = -1.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "spell_one"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CHANNEL_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -703,7 +703,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/raikage_wule/spell_one.SMD"
-						start_frame = -1
+						start_frame = 20
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
@@ -711,7 +711,7 @@
 					{
 						_class = "AnimFile"
 						name = "spell_slam_one"
-						activity_name = "ACT_DOTA_ATTACK-"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2

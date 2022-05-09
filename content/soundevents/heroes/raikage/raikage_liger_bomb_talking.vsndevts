@@ -15,9 +15,7 @@
                         "value"
                         {
                             "value0"        "sounds/heroes/raikage/ligerbomb_01.vsnd"
-                            "value1"        "sounds/heroes/raikage/ligerbomb_02.vsnd"
-                            "value2"        "sounds/heroes/raikage/ligerbomb_03.vsnd"
-                            "value3"        "sounds/heroes/raikage/ligerbomb_04.vsnd"
+                            "value2"        "sounds/heroes/raikage/ligerbomb_04.vsnd"
                         }
                     }
                     "volume"            {   "value"     "1.00000"  }
