@@ -113,6 +113,15 @@
 						weight = 1.0
 						ignore_rotation = false
 					},
+					{
+						_class = "Attachment"
+						name = "tanto"
+						parent_bone = "tantoroot"
+						relative_origin = [ 0.0, 0.0, 0.0 ]
+						relative_angles = [ 0.0, 0.0, 0.0 ]
+						weight = 1.0
+						ignore_rotation = false
+					},
 				]
 			},
 			{
@@ -801,6 +810,85 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_halodance1"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
@@ -821,6 +909,85 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_halodance2"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
@@ -841,6 +1008,85 @@
 					{
 						_class = "AnimFile"
 						name = "striker_shisui_halodance3"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_CREATE_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/econ/items/axe/axe_weapon_dragon_axe/axe_dragon_axe_fire.vpcf"
+									detach_from_owner = false
+									always_run = false
+									stop_on_seq_change = true
+									stop_immediately = false
+									use_layer_sequence = false
+									tags = null
+									attachment_point = "tanto"
+									attachment_type = "point_follow"
+									attachment_point_cp1 = "tanto"
+									attachment_type_cp1 = "point_follow"
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
