@@ -26,16 +26,10 @@
 			"attack_min_charges"			"20"
 			"added_charges_threshold"		"20"
 			"added_charges"					"25"
-			"crit_per_stack"
-			{
-				"value"							"0.25"
-				"LinkedSpecialBonus"			"raikage_special_bonus_innate"//change later
-			}
-			"max_crit_tooltip"
-			{
-				"value"							"25"
-				"LinkedSpecialBonus"			"raikage_special_bonus_innate"//change later
-			}
+			"crit_per_stack"				"0.25"
+			"max_crit"						"25"
+			"crit_per_stack_lvl"			"0.05"
+			"max_crit_lvl"					"5"
 		}
 	}
 }

@@ -45,5 +45,10 @@ end
 
 
 function startRaikageAnimation (keys)
-	keys.caster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
+	local caster = keys.caster
+	caster:StartGesture(ACT_DOTA_CAST_ABILITY_6)
+
+	Timers:CreateTimer(0.75, function()
+		caster:FadeGesture(ACT_DOTA_CAST_ABILITY_6)
+	end)
 end
