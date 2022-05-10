@@ -1,5 +1,4 @@
-	
-    "DOTAAbilities"
+"DOTAAbilities"
 {
     
     "raikage_raiton_no_yoroi"

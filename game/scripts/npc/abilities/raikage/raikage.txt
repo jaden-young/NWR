@@ -1,3 +1,4 @@
+#base "raikage_innate_passive.txt"
 #base "raikage_lariat.txt"
 #base "raikage_raiga_no_bomu.txt"
 #base "raikage_raigyaku_suihei.txt"

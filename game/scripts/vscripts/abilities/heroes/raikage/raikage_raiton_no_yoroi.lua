@@ -1,6 +1,10 @@
+LinkLuaModifier( "modifier_raikage_shield", 		"scripts/vscripts/abilities/heroes/raikage/raikage_raiton_no_yoroi.lua", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_raikage_shield_debuff", 	"scripts/vscripts/abilities/heroes/raikage/raikage_raiton_no_yoroi.lua", LUA_MODIFIER_MOTION_NONE )
+----------------------------------------------------------------------------------------
+
 raikage_raiton_no_yoroi = class({})
-LinkLuaModifier( "modifier_raikage_shield", "scripts/vscripts/abilities/heroes/raikage/raikage_raiton_no_yoroi.lua", LUA_MODIFIER_MOTION_NONE )
-LinkLuaModifier( "modifier_raikage_shield_debuff", "scripts/vscripts/abilities/heroes/raikage/raikage_raiton_no_yoroi.lua", LUA_MODIFIER_MOTION_NONE )
+
+----------------------------------------------------------------------------------------
 
 function raikage_raiton_no_yoroi:Precache( context )
     PrecacheResource( "soundfile",  "soundevents/heroes/raikage/raikage_lightningarmor_cast.vsndevts", context )
@@ -12,86 +16,60 @@ function raikage_raiton_no_yoroi:Precache( context )
 	PrecacheResource( "particle",  "particles/units/heroes/raikage/shield_explosion.vpcf", context )
 end
 
+----------------------------------------------------------------------------------------
+
 function raikage_raiton_no_yoroi:GetBehavior()
 	return self.BaseClass.GetBehavior(self)
 end
+
+----------------------------------------------------------------------------------------
 
 function raikage_raiton_no_yoroi:GetCooldown(iLevel)
    return self.BaseClass.GetCooldown(self, iLevel)
 end
 
+----------------------------------------------------------------------------------------
+
 function raikage_raiton_no_yoroi:ProcsMagicStick()
    return true
 end
 
-function raikage_raiton_no_yoroi:OnSpellStart()
-   if IsServer() then
-	   local caster 	= self:GetCaster();
-	   local ability 	= self;
+----------------------------------------------------------------------------------------
 
-		self.ability = self:GetAbility()
-		self.aoe = self.ability:GetSpecialValueFor("release_aoe")
-		self.damage = self.ability:GetSpecialValueFor("release_damage")
-		self.duration = self.ability:GetSpecialValueFor("release_purge_duration")
+function raikage_raiton_no_yoroi:OnToggle(destroy)
+	local caster = self:GetCaster()
 
-	   raikage_raiton_no_yoroi:ToggleOn(caster, ability);
-   end
+	if self:GetToggleState() then
+		caster:AddNewModifier(caster, self, "modifier_raikage_shield", {duration = self:GetSpecialValueFor("duration")})
+	else
+		if caster:HasModifier("modifier_raikage_shield") then
+			local modifier = caster:FindModifierByName("modifier_raikage_shield")
+			modifier.manual_destruction = true
+			modifier:Destroy()
+		end
+	end
 end
 
-function raikage_raiton_no_yoroi:OnToggle()
-   if IsServer() then 
-	   local toggle 	= self:GetToggleState();
-	   local caster 	= self:GetCaster();
-	   local ability 	= self;
-
-		self.aoe = ability:GetSpecialValueFor("release_aoe")
-		self.damage = ability:GetSpecialValueFor("release_damage")
-		self.duration = ability:GetSpecialValueFor("release_purge_duration")
-
-	   if toggle == true then 
-		  raikage_raiton_no_yoroi:ToggleOn(caster, ability);
-	   else 
-			self.stream = ParticleManager:CreateParticle("particles/units/heroes/raikage/shield_explosion.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetCaster() )
-			ParticleManager:SetParticleControl( self.stream, 0, self:GetCaster():GetAbsOrigin() )
-			ParticleManager:SetParticleControl( self.stream, 3, Vector(self.aoe,0,0) )
-
-		   applyAoeDamageSlow(caster, self.aoe, self.damage, self.duration, ability)
-		   caster:RemoveModifierByName("modifier_raikage_shield");
-	   end
-   end
-end
-
-function raikage_raiton_no_yoroi:ToggleOn(caster, ability)
-   caster:AddNewModifier(caster, ability, "modifier_raikage_shield", {duration = ability:GetSpecialValueFor("duration")});
-end
-
+----------------------------------------------------------------------------------------
 
 modifier_raikage_shield = modifier_raikage_shield or class({})
 
-function modifier_raikage_shield:IsHidden() return false end
+----------------------------------------------------------------------------------------
+
 function modifier_raikage_shield:IsBuff() return true end
 
-function modifier_raikage_shield:DeclareFunctions()
-   return {
-	   MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK,
-   }
-end
-
-function modifier_raikage_shield:GetModifierTotal_ConstantBlock(keys)
-	if (self:GetStackCount() + keys.damage) < self.shield then
-		self:SetStackCount(self:GetStackCount() + keys.damage)
-	else
-		--applyAoeDamageSlow(self:GetCaster(), self.aoe, self.damage, self.duration, self.ability)
-		--self:GetCaster():RemoveModifierByName("modifier_raikage_shield")
-		self:GetAbility():ToggleAbility()
-		return keys.damage  - (self.shield - self:GetStackCount())
-	end
-
-	return keys.damage
-end
+----------------------------------------------------------------------------------------
 
 function modifier_raikage_shield:OnCreated()
+	self.ability = self:GetAbility()
+	self.aoe = self.ability:GetSpecialValueFor("release_aoe")
+	self.damage = self.ability:GetSpecialValueFor("release_damage")
+	self.duration = self.ability:GetSpecialValueFor("release_purge_duration")
+
+	self.shield = self.ability:GetSpecialValueFor("charge_damage_amount") + self:GetCaster():FindTalentValue("special_bonus_raikage_2")
+
    -- add shield particles
+   if not IsServer() then return end
    self.ability = self:GetAbility()
    self.ability.pfx1 = ParticleManager:CreateParticle(  "particles/units/heroes/hero_razor/razor_ambient_g.vpcf", PATTACH_ABSORIGIN_FOLLOW, self:GetCaster() )
    ParticleManager:SetParticleControlEnt( self.ability.pfx1, 0, self:GetCaster(), PATTACH_ABSORIGIN_FOLLOW, "attach_leftelbow", self:GetCaster():GetAbsOrigin(), true )
@@ -113,17 +91,12 @@ function modifier_raikage_shield:OnCreated()
    EmitSoundOn("raikage_lightningarmor_cast", self:GetCaster())
 
    self:GetCaster():Purge(false, true, false, false, false)
-
-   self.ability = self:GetAbility()
-   self.aoe = self.ability:GetSpecialValueFor("release_aoe")
-   self.damage = self.ability:GetSpecialValueFor("release_damage")
-   self.duration = self.ability:GetSpecialValueFor("release_purge_duration")
-
-   self.shield = self.ability:GetSpecialValueFor("charge_damage_amount") + self:GetCaster():FindTalentValue("special_bonus_raikage_2")
 end
 
-function modifier_raikage_shield:OnDestroy()
-	-- remove particles 
+----------------------------------------------------------------------------------------
+
+function modifier_raikage_shield:OnDestroy(manual)
+	if not IsServer() then return end
 	ParticleManager:DestroyParticle(self.ability.pfx1, true)
 	ParticleManager:DestroyParticle(self.ability.pfx2, true)
 	ParticleManager:DestroyParticle(self.ability.pfx3, true)
@@ -136,35 +109,51 @@ function modifier_raikage_shield:OnDestroy()
 	self:GetCaster():StopSound("raikage_lightningarmor_cast")
 
 	EmitSoundOn("raikage_lightningarmor_end", self:GetCaster())
-	
 
+	if not self.manual_destruction then
+		self:GetAbility():ToggleAbility()
+	end
+
+	self:Release()	
 end
 
-modifier_raikage_shield_debuff = modifier_raikage_shield_debuff or class({})
+----------------------------------------------------------------------------------------
 
-function modifier_raikage_shield_debuff:OnCreated()
-	self.slow = self:GetAbility():GetSpecialValueFor("release_ms_slow")
+function modifier_raikage_shield:DeclareFunctions()
+	return {MODIFIER_PROPERTY_TOTAL_CONSTANT_BLOCK}
 end
 
-function modifier_raikage_shield_debuff:IsHidden() return false end
-function modifier_raikage_shield_debuff:IsDebuff() return true end
+----------------------------------------------------------------------------------------
+ 
+function modifier_raikage_shield:GetModifierTotal_ConstantBlock(keys)
+	if (self:GetStackCount() + keys.damage) < self.shield then
+		self:SetStackCount(self:GetStackCount() + keys.damage)
+	else
+		self:Destroy()
+		return keys.damage  - (self.shield - self:GetStackCount())
+	end
 
-function modifier_raikage_shield_debuff:DeclareFunctions()
-   return {
-	MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE,
-   }
+	return keys.damage
 end
 
-function modifier_raikage_shield_debuff:GetModifierMoveSpeedBonus_Percentage()
-    return  self.slow
+----------------------------------------------------------------------------------------
+
+function modifier_raikage_shield:Release()
+	local ability = self:GetAbility()
+	local caster = ability:GetCaster()
+	local radius = ability:GetSpecialValueFor("release_aoe")
+
+	local release_fx = ParticleManager:CreateParticle("particles/units/heroes/raikage/shield_explosion.vpcf", PATTACH_ABSORIGIN_FOLLOW, caster)
+	ParticleManager:SetParticleControl(release_fx, 0, caster:GetAbsOrigin())
+	ParticleManager:SetParticleControl(release_fx, 3, Vector(radius, 0, 0))
+	ParticleManager:ReleaseParticleIndex(release_fx)
+
+	self:applyAoeDamageSlow(caster, radius, ability:GetSpecialValueFor("release_damage"), ability:GetSpecialValueFor("release_purge_duration"), ability)
 end
 
-function applyAoeDamageSlow(caster, aoe, damage, slow_duration, ability)
+----------------------------------------------------------------------------------------
 
-	print(caster:GetTeamNumber())
-	print(caster:GetAbsOrigin())
-	print(aoe)
-
+function modifier_raikage_shield:applyAoeDamageSlow(caster, aoe, damage, slow_duration, ability)
 	local targetEntities = FindUnitsInRadius(
 		caster:GetTeamNumber(), 
 		caster:GetAbsOrigin(), 
@@ -195,4 +184,31 @@ function applyAoeDamageSlow(caster, aoe, damage, slow_duration, ability)
 		ParticleManager:SetParticleControlEnt(purge_target_particle, 0, oneTarget, PATTACH_ABSORIGIN, "attach_hitloc", oneTarget:GetAbsOrigin(), false)
 		
 	end
+end
+
+----------------------------------------------------------------------------------------
+
+modifier_raikage_shield_debuff = modifier_raikage_shield_debuff or class({})
+
+----------------------------------------------------------------------------------------
+
+function modifier_raikage_shield_debuff:OnCreated()
+	self.slow = self:GetAbility():GetSpecialValueFor("release_ms_slow")
+end
+
+----------------------------------------------------------------------------------------
+
+function modifier_raikage_shield_debuff:IsHidden() return false end
+function modifier_raikage_shield_debuff:IsDebuff() return true end
+
+----------------------------------------------------------------------------------------
+
+function modifier_raikage_shield_debuff:DeclareFunctions()
+   return {MODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE}
+end
+
+----------------------------------------------------------------------------------------
+
+function modifier_raikage_shield_debuff:GetModifierMoveSpeedBonus_Percentage()
+    return  self.slow
 end

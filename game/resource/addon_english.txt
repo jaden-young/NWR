@@ -1530,6 +1530,10 @@
 		//Raikage
 		//--------------------
 		"npc_dota_hero_raikage"  										"Raikage"
+
+		"DOTA_Tooltip_ability_raikage_innate_passive"					"Lightning Horizontal"
+		"DOTA_Tooltip_ability_raikage_innate_passive_Description"		"Raikage gains a charges for every %distance_per_charge% distance traveled up to a maximum of %max_charges%. With at least %attack_min_charges% charges, his next attack consumes all charges stored for a Critical Strike. Attacking with less than %added_charges_threshold% charges adds %added_charges% charges instead."
+
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_lore"				"Raiga no Bomu"
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu"					"<b><font color='#61B1FF'>Liger Bomb</font></b>"
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_reduce_armor"		"ARMOR DEBUFF: "

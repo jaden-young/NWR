@@ -1,0 +1,41 @@
+"DOTAAbilities"
+{	
+	//=================================================================================================================
+	// Raikage: Innate Passive -- Lightning Horizontal
+	//=================================================================================================================
+	"raikage_innate_passive"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"						"ability_lua"
+		"ScriptFile"                    "abilities/heroes/raikage/raikage_innate_passive.lua"
+		"AbilityTextureName"			"raikage_innate_passive"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_SHOW_IN_GUIDES"
+        "AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
+		"MaxLevel"						"1"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"distance_per_charge"			"10"
+			"charge_per_distance"			"1"
+			"max_charges"					"100"
+			"attack_min_charges"			"20"
+			"added_charges_threshold"		"20"
+			"added_charges"					"25"
+			"crit_per_stack"
+			{
+				"value"							"0.25"
+				"LinkedSpecialBonus"			"raikage_special_bonus_innate"//change later
+			}
+			"max_crit_tooltip"
+			{
+				"value"							"25"
+				"LinkedSpecialBonus"			"raikage_special_bonus_innate"//change later
+			}
+		}
+	}
+}

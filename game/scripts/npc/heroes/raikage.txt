@@ -18,6 +18,7 @@
 		  "Ability4"        "generic_hidden" 
 		  "Ability5"        "generic_hidden" 
 		  "Ability6"        "raikage_raiga_no_bomu"
+		  "Ability7"		"raikage_innate_passive"
 
 		  "Ability10"		"special_bonus_attack_damage_20"
 		  "Ability11"		"special_bonus_hp_regen_6"
