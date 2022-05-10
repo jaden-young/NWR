@@ -1531,6 +1531,7 @@
 		//--------------------
 		"npc_dota_hero_raikage"  										"Raikage"
 
+		// Innate -- Lightning Horizontal
 		"DOTA_Tooltip_ability_raikage_innate_passive"						"Lightning Horizontal"
 		"DOTA_Tooltip_ability_raikage_innate_passive_Description"			"Raikage gains a charges for every %distance_per_charge% distance traveled up to a maximum of %max_charges%. With at least %attack_min_charges% charges, his next attack consumes all charges stored for a Critical Strike.<br><br>Attacking with less than %added_charges_threshold% charges adds %added_charges% charges instead."
 		"DOTA_Tooltip_ability_raikage_innate_passive_crit_per_stack"		"%CRIT DAMAGE PER STACK:"
@@ -1542,7 +1543,6 @@
 		"DOTA_Tooltip_modifier_raikage_innate_passive_Description"		"Your next attack will crit for %fMODIFIER_PROPERTY_TOOLTIP%%%."
 
 
-
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_lore"				"Raiga no Bomu"
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu"					"<b><font color='#61B1FF'>Liger Bomb</font></b>"
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_reduce_armor"		"ARMOR DEBUFF: "
@@ -1550,7 +1550,6 @@
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_armor_reduction_duration" "ARMOR DEBUFF DURATION: "
 		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_Description"		"<b><font color='#61B1FF'>Grabs an enemy</font></b> into the air before slamming them to the ground, dealing <b><font color='#61B1FF'>Magic Damage and reducing the Armor</font></b> of all enemies within the radius."
 		
-
 		"DOTA_Tooltip_ability_raikage_lariat"							"<b><font color='#00D4FF'>Lariat</font></b>"
 		"DOTA_Tooltip_ability_raikage_lariat_damage"					"DAMAGE: "
 		"DOTA_Tooltip_ability_raikage_lariat_cast_range"				"RANGE: "
@@ -1559,6 +1558,21 @@
 
 		"DOTA_Tooltip_modifier_raikage_lariat"							"Lariat"
 		"DOTA_Tooltip_modifier_raikage_lariat_Description"				"Charging!"
+
+		// Speed Blitz
+		"DOTA_Tooltip_ability_raikage_speed_blitz"							"Speed Blitz"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_Description"				"Grants Raikage additional Movement Speed and empowers his next Basic Attack to deal extra Magic Damage to all enemies in a radius.<br><br>Additionally, enemies affected by this attack will have their Attack Speed reduced."
+		"DOTA_Tooltip_ability_raikage_speed_blitz_bonus_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_bonus_move_speed"			"%MOVE SPEED:"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_duration"					"DURATION:"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_attack_speed_reduction"	"ATTACK SPEED REDUCTION:"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_slow_duration"			"SLOW DURATION:"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_radius"					"RADIUS:"
+
+		"DOTA_Tooltip_modifier_raikage_speed_blitz"							"Speed Blitz"
+		"DOTA_Tooltip_modifier_raikage_speed_blitz_Description"				"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+		"DOTA_Tooltip_modifier_raikage_speed_blitz_debuff"					"Speed Blitz"
+		"DOTA_Tooltip_modifier_raikage_speed_blitz_debuff_description"		"Attack speed reduced by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%."
 		
 
 		"DOTA_Tooltip_ability_raikage_raigyaku_suihei"					"<b><font color='#FFD038'>Lightning Horizontal</font></b>"

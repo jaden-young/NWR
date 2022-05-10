@@ -14,7 +14,7 @@
 		  "Model" 			"models/raikage_wule/wule_raikage_base.vmdl"
 		  "Ability1"        "raikage_raiton_no_yoroi"
 		  "Ability2"        "raikage_lariat" 
-		  "Ability3"        "raikage_raigyaku_suihei" 
+		  "Ability3"        "raikage_speed_blitz" 
 		  "Ability4"        "generic_hidden" 
 		  "Ability5"        "generic_hidden" 
 		  "Ability6"        "raikage_raiga_no_bomu"

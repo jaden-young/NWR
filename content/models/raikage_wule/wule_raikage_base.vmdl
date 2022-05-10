@@ -671,7 +671,15 @@
 					{
 						_class = "AnimFile"
 						name = "spell_four_two"
-						activity_name = "ACT_DOTA_ATTACK_EVENT"
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "speedblitz"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2

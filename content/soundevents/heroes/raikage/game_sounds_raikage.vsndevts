@@ -23,4 +23,28 @@
 		mixgroup = "Weapons"
 		vsnd_files = "sounds/heroes/raikage/raikage_lariat_impact.vsnd"
 	}
+
+	Hero_Raikage.SpeedBlitz.Cast = 
+	{
+		type = "dota_update_default"
+		volume = 0.800000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.400000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/items/gleipnir_cast.vsnd"
+	}
+
+	Hero_Raikage.SpeedBlitz.Impact = 
+	{
+		type = "dota_update_default"
+		volume = 1.000000
+		pitch_rand_min = -0.050000
+		pitch_rand_max = 0.050000
+		pitch = 1.000000
+		soundlevel = 84.000000
+		mixgroup = "Weapons"
+		vsnd_files = "sounds/heroes/raikage/raikage_straight_impact.vsnd"
+	}
 }
