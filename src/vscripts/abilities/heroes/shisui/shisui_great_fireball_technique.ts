@@ -285,8 +285,16 @@ export class modifier_shisui_great_fireball_technique_tracker extends BaseModifi
             if (this.last_reset > creation_time) return;
             this.current_stacks!--;
             this.SetStackCount(math.min(this.max_stacks!, this.current_stacks!));
+
+            this.UpdateActivity();
         });
 
+        this.UpdateActivity();
+    }
+
+    /****************************************/
+
+    UpdateActivity(): void {
         let stacks = this.GetStackCount();
         if (stacks % 2 != 0)  stacks--;
 
