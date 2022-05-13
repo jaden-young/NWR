@@ -113,14 +113,14 @@ export class raikage_liger_bomb extends BaseAbility {
         }
 
         enemies.forEach(enemy => {
+            if (has_shard) {
+                enemy.AddNewModifier(caster, this, "modifier_raikage_liger_bomb", {duration: shard_duration * (1 - target.GetStatusResistance())});
+            }
+            
             damage_table.victim = enemy;
             ApplyDamage(damage_table);
 
             enemy.AddNewModifier(caster, this, "modifier_stunned", {duration: duration * (1 - target.GetStatusResistance())});
-            
-            if (has_shard) {
-                enemy.AddNewModifier(caster, this, "modifier_raikage_liger_bomb", {duration: shard_duration * (1 - target.GetStatusResistance())});
-            }
         });
 
         EmitSoundOn("Hero_Raikage.LigerBomb.Impact", caster);
