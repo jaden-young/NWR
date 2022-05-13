@@ -1077,7 +1077,7 @@
 					{
 						_class = "AnimFile"
 						name = "cast"
-						activity_name = "ACT_DOTA_FLAIL"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1487,7 +1487,7 @@
 					{
 						_class = "AnimFile"
 						name = "staggered"
-						activity_name = ""
+						activity_name = "ACT_DOTA_FLAIL"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2

@@ -1543,12 +1543,15 @@
 		"DOTA_Tooltip_modifier_raikage_innate_passive_Description"		"Your next attack will crit for %fMODIFIER_PROPERTY_TOOLTIP%%%."
 
 
-		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_lore"				"Raiga no Bomu"
-		"DOTA_Tooltip_ability_raikage_raiga_no_bomu"					"<b><font color='#61B1FF'>Liger Bomb</font></b>"
-		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_reduce_armor"		"ARMOR DEBUFF: "
-		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_target_aoe"			"RADIUS: "
-		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_armor_reduction_duration" "ARMOR DEBUFF DURATION: "
-		"DOTA_Tooltip_ability_raikage_raiga_no_bomu_Description"		"<b><font color='#61B1FF'>Grabs an enemy</font></b> into the air before slamming them to the ground, dealing <b><font color='#61B1FF'>Magic Damage and reducing the Armor</font></b> of all enemies within the radius."
+		
+		"DOTA_Tooltip_ability_raikage_liger_bomb"						"<b><font color='#61B1FF'>Liger Bomb</font></b>"
+		"DOTA_Tooltip_ability_raikage_liger_bomb_Description"			"<b><font color='#61B1FF'>Grabs an enemy</font></b> into the air before slamming them to the ground, dealing <b><font color='#61B1FF'>Magic Damage and reducing the Armor</font></b> of all enemies within the radius."
+		"DOTA_Tooltip_ability_raikage_liger_bomb_shard_description"		"Allows Raikage to cast Liger Bomb at enemies within %shard_range% range, causing him to charge at the target before launching the enemy.<br><br>Also reduces the Armor of enemies affected by the impact by %shard_armor_reduction% for %shard_duration% seconds."
+		"DOTA_Tooltip_ability_raikage_liger_bomb_lore"					"Raiga no Bomu"
+		"DOTA_Tooltip_ability_raikage_liger_bomb_damage"				"DAMAGE:"
+		"DOTA_Tooltip_ability_raikage_liger_bomb_radius"				"RADIUS: "
+		"DOTA_Tooltip_ability_raikage_liger_bomb_stun_duration"			"STUN DURATION:"
+		
 		
 		"DOTA_Tooltip_ability_raikage_lariat"							"<b><font color='#00D4FF'>Lariat</font></b>"
 		"DOTA_Tooltip_ability_raikage_lariat_damage"					"DAMAGE: "

@@ -14,7 +14,19 @@
 		pitch = "1.000000"
 	}
 
-    VO_Hero_Raikage.Drop.Cast = 
+	VO_Hero_Raikage.LigerBomb.Cast = 
+	{
+		type = "dota_update_vo_switch"
+		vsnd_files = 
+		[
+            "sounds/vo/raikage/ligerbomb_02.vsnd",
+			"sounds/vo/raikage/ligerbomb_04.vsnd",
+		]
+		volume = "1.000000"
+		pitch = "1.000000"
+	}
+
+	VO_Hero_Raikage.Drop.Cast = 
 	{
 		type = "dota_update_vo_switch"
 		vsnd_files = 
@@ -25,6 +37,5 @@
 		volume = "1.000000"
 		pitch = "1.000000"
 	}
-
 }
 

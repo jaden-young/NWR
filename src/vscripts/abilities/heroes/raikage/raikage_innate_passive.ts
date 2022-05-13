@@ -73,7 +73,7 @@ export class modifier_raikage_innate_passive extends BaseModifier
         this.last_pos = origin;
 
         if (this.current_distance >= this.distance_per_charge!) {
-            let stacks = math.floor(this.current_distance / this.distance_per_charge! + 0.5))
+            let stacks = math.floor(this.current_distance / this.distance_per_charge! + 0.5)
             this.current_distance = this.current_distance % this.distance_per_charge!;
             this.SetStackCount(math.min(this.GetStackCount() + stacks, this.max_charges!));
         }
