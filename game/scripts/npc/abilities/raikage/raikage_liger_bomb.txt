@@ -47,10 +47,10 @@
             "knockback_height_caster"       "300"
             "stun_duration"                 "1.2 1.5 1.8"
             "shard_range"                   "600"
-            "shard_speed"                   "2400"
+            "shard_speed"                   "1800"
             "shard_armor_reduction"         "5"
             "shard_duration"                "6"
-            "shard_cast_distance"           "150"
+            "shard_cast_distance"           "30"
 		}
 	}
 }
