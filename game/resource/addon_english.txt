@@ -1603,11 +1603,11 @@
 		
 
 		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_physical_damage_reduce_percent"	"%DAMAGE REDUCTION: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_duration"			"DURATION: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_charge_damage_amount"	"MAX DAMAGE TAKEN: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_damage"    "RELEASE DAMAGE: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_aoe"		"RADIUS: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_ms_slow"	"%MOVEMENT SPEED SLOW: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_duration"					"DURATION: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_max_health_shield"		"%MAX HEALTH AS SHIELD: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_damage"    		"RELEASE DAMAGE: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_aoe"				"RADIUS: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_ms_slow"			"%MOVEMENT SPEED SLOW: "
 		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_purge_duration"	"MOVEMENT SPEED SLOW DURATION: "
 
 		"DOTA_Tooltip_modifier_raikage_shield"							"<b><font color='#36B4EE'>Lightning Release Armor</font></b>"
