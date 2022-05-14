@@ -89,8 +89,6 @@ function modifier_raikage_shield:OnCreated()
    ParticleManager:SetParticleControlEnt( self.ability.pfx8, 0, self:GetCaster(), PATTACH_ABSORIGIN_FOLLOW, "attach_righthand", self:GetCaster():GetAbsOrigin(), true )
 
    EmitSoundOn("raikage_lightningarmor_cast", self:GetCaster())
-
-   self:GetCaster():Purge(false, true, false, false, false)
 end
 
 ----------------------------------------------------------------------------------------
