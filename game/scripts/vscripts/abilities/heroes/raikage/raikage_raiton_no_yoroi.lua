@@ -63,7 +63,7 @@ function modifier_raikage_shield:IsBuff() return true end
 function modifier_raikage_shield:OnCreated()
 	self.ability = self:GetAbility()
 	self.aoe = self.ability:GetSpecialValueFor("release_aoe")
-	self.damage = self.ability:GetSpecialValueFor("release_damage")
+	self.damage = self:GetParent():GetMaxHealth() * self.ability:GetSpecialValueFor("max_health_shield") / 100
 	self.duration = self.ability:GetSpecialValueFor("release_purge_duration")
 
 	self.shield = self.ability:GetSpecialValueFor("charge_damage_amount") + self:GetCaster():FindTalentValue("special_bonus_raikage_2")
