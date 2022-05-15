@@ -65,14 +65,14 @@ export class modifier_raikage_speed_blitz extends BaseModifier
     /****************************************/
 
     DeclareFunctions(){ return [
-        ModifierFunction.MOVESPEED_BONUS_PERCENTAGE,
+        ModifierFunction.MOVESPEED_BONUS_CONSTANT,
         ModifierFunction.TRANSLATE_ACTIVITY_MODIFIERS,
         ModifierFunction.ON_ATTACK_LANDED
     ]}
 
     /****************************************/
     
-    GetModifierMoveSpeedBonus_Percentage(): number {
+    GetModifierMoveSpeedBonus_Constant(): number {
         return this.bonus_move_speed!;
     }
 

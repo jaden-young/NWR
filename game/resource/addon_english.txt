@@ -1546,7 +1546,7 @@
 		
 		"DOTA_Tooltip_ability_raikage_liger_bomb"						"<b><font color='#61B1FF'>Liger Bomb</font></b>"
 		"DOTA_Tooltip_ability_raikage_liger_bomb_Description"			"<b><font color='#61B1FF'>Grabs an enemy</font></b> into the air before slamming them to the ground, dealing <b><font color='#61B1FF'>Magic Damage and reducing the Armor</font></b> of all enemies within the radius."
-		"DOTA_Tooltip_ability_raikage_liger_bomb_shard_description"		"Allows Raikage to cast Liger Bomb at enemies within %shard_range% range, causing him to charge at the target before launching the enemy.<br><br>Also reduces the Armor of enemies affected by the impact by %shard_armor_reduction% for %shard_duration% seconds."
+		"DOTA_Tooltip_ability_raikage_liger_bomb_shard_description"		"Allows Raikage to cast Liger Bomb at enemies within %shard_range% range, causing him to charge at the target before launching the enemy.<br><br>Also reduces the Armor of enemies affected by the impact by %shard_armor_reduction% for %shard_duration% seconds	."
 		"DOTA_Tooltip_ability_raikage_liger_bomb_lore"					"Raiga no Bomu"
 		"DOTA_Tooltip_ability_raikage_liger_bomb_damage"				"DAMAGE:"
 		"DOTA_Tooltip_ability_raikage_liger_bomb_radius"				"RADIUS: "
@@ -1566,7 +1566,7 @@
 		"DOTA_Tooltip_ability_raikage_speed_blitz"							"Speed Blitz"
 		"DOTA_Tooltip_ability_raikage_speed_blitz_Description"				"Grants Raikage additional Movement Speed and empowers his next Basic Attack to deal extra Magic Damage to all enemies in a radius.<br><br>Additionally, enemies affected by this attack will have their Attack Speed reduced."
 		"DOTA_Tooltip_ability_raikage_speed_blitz_bonus_damage"				"DAMAGE:"
-		"DOTA_Tooltip_ability_raikage_speed_blitz_bonus_move_speed"			"%MOVE SPEED:"
+		"DOTA_Tooltip_ability_raikage_speed_blitz_bonus_move_speed"			"MOVE SPEED:"
 		"DOTA_Tooltip_ability_raikage_speed_blitz_duration"					"DURATION:"
 		"DOTA_Tooltip_ability_raikage_speed_blitz_attack_speed_reduction"	"ATTACK SPEED REDUCTION:"
 		"DOTA_Tooltip_ability_raikage_speed_blitz_slow_duration"			"SLOW DURATION:"
@@ -1603,11 +1603,11 @@
 		
 
 		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_physical_damage_reduce_percent"	"%DAMAGE REDUCTION: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_duration"			"DURATION: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_charge_damage_amount"	"MAX DAMAGE TAKEN: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_damage"    "RELEASE DAMAGE: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_aoe"		"RADIUS: "
-		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_ms_slow"	"%MOVEMENT SPEED SLOW: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_duration"					"DURATION: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_max_health_shield"		"%MAX HEALTH AS SHIELD: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_damage"    		"RELEASE DAMAGE: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_aoe"				"RADIUS: "
+		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_ms_slow"			"%MOVEMENT SPEED SLOW: "
 		"DOTA_Tooltip_ability_raikage_raiton_no_yoroi_release_purge_duration"	"MOVEMENT SPEED SLOW DURATION: "
 
 		"DOTA_Tooltip_modifier_raikage_shield"							"<b><font color='#36B4EE'>Lightning Release Armor</font></b>"

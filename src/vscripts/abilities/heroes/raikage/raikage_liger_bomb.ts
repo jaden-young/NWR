@@ -90,6 +90,7 @@ export class raikage_liger_bomb extends BaseAbility {
         let caster = this.GetCaster();
         let duration = this.GetSpecialValueFor("stun_duration");
         let shard_duration = this.GetSpecialValueFor("shard_duration");
+        let damage = this.GetSpecialValueFor("damage");
         let has_shard = caster.HasShard();
 
         let enemies = FindUnitsInRadius(
@@ -116,7 +117,8 @@ export class raikage_liger_bomb extends BaseAbility {
             if (has_shard) {
                 enemy.AddNewModifier(caster, this, "modifier_raikage_liger_bomb", {duration: shard_duration * (1 - target.GetStatusResistance())});
             }
-            
+
+            damage_table.damage = enemy == target ? damage : damage * 0.5;
             damage_table.victim = enemy;
             ApplyDamage(damage_table);
 
