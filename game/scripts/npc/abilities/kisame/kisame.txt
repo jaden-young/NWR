@@ -1,14 +1,9 @@
 #base "kisame_innate_passive.txt"
 #base "kisame_water_shark_bullet.txt"
-#base "kisame_water_prison.txt"
-#base "kisame_exploding_water_shockwave.txt"
-#base "talents.txt"
-
-#base "kisame_bunshin_water_prison.txt"
 #base "kisame_mizu_bunshin_no_jutsu.txt"
-#base "kisame_samehada_bunshin.txt"
-#base "kisame_samehada.txt"
-#base "kisame_suikodan_no_jutsu.txt"
 #base "kisame_water_prison.txt"
-#base "kisame_water_prison_deactivate.txt"
-
+#base "kisame_shark_dance.txt"
+#base "kisame_shark_dance_deactivate.txt"
+#base "kisame_exploding_water_shockwave.txt"
+#base kisame_bunshin_water_prison.txt
+#base "talents.txt"

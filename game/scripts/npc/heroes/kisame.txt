@@ -16,7 +16,7 @@
 		"Ability4"			"kisame_exploding_water_shockwave"
 		"Ability5"			"generic_hidden"
 		"Ability6"         	"kisame_shark_dance"
-		"Ability7"         	"kisame_water_prison_deactivate"
+		"Ability7"         	"kisame_shark_dance_deactivate"
 		"Ability8"			"kisame_innate_passive"
 
 		"Ability10"			"special_bonus_attack_damage_20"
