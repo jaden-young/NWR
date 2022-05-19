@@ -907,12 +907,12 @@
 						delta = false
 						worldSpace = false
 						hidden = false
-						anim_markup_ordered = false
+						anim_markup_ordered = true
 						disable_compression = false
 						source_filename = "models/striker_anko/hook3.smd"
 						start_frame = 0
 						end_frame = 30
-						framerate = 20.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
@@ -1215,6 +1215,26 @@
 						start_frame = 0
 						end_frame = 112
 						framerate = 30.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hook_end"
+						activity_name = "ACT_DOTA_NOTICE"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = true
+						disable_compression = false
+						source_filename = "models/striker_anko/hook.smd"
+						start_frame = 60
+						end_frame = 94
+						framerate = 45.0
 						reverse = false
 					},
 				]
