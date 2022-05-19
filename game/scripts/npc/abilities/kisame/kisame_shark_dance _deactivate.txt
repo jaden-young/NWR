@@ -1,14 +1,14 @@
 "DOTAAbilities"
 {
     
-"kisame_water_prison_deactivate"
+"kisame_shark_dance_deactivate"
 {
     // General
     //-------------------------------------------------------------------------------------------------------------
     "BaseClass"				        "ability_lua"
     "ScriptFile"			        "abilities/heroes/kisame/kisame_shark_dance.lua"
     "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_HIDDEN"
-    "AbilityTextureName"			"kisame_water_prison_deactivate"
+    "AbilityTextureName"			"kisame_shark_dance_deactivate"
     "AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
     "MaxLevel"                      "1"
     // Casting
