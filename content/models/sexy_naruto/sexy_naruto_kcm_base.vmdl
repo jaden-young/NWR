@@ -27,7 +27,7 @@
 							},
 							{
 								from = "mi_chr_naruto_face.vmat"
-								to = "materials/models/sexy_naruto/sexynaruto_kcm1.vmat"
+								to = "materials/models/sexy_naruto/sexynaruto_kcm3.vmat"
 							},
 						]
 						use_global_default = false
@@ -1238,7 +1238,7 @@
 						_class = "Attachment"
 						name = "aura"
 						parent_bone = "Spine1"
-						relative_origin = [ -26.268888, 28.958233, 1.340356 ]
+						relative_origin = [ -12.815346, 36.462791, 10.284739 ]
 						relative_angles = [ 0.0, 0.0, 0.0 ]
 						weight = 1.0
 						ignore_rotation = false
@@ -1260,11 +1260,21 @@
 				[
 					{
 						_class = "GenericGameData"
-						disabled = true
 						game_class = "particle"
 						game_keys = 
 						{
-							name = resource:""
+							name = resource:"particles/units/unit_greevil/loot_greevil_ambient_light.vpcf"
+							attachment_point = "aura"
+							attachment_type = "point_follow"
+							attachment_offset = [ 0.0, 0.0, 0.0 ]
+						}
+					},
+					{
+						_class = "GenericGameData"
+						game_class = "particle"
+						game_keys = 
+						{
+							name = resource:"particles/units/unit_greevil/loot_greevil_ambient_light.vpcf"
 							attachment_point = "aura"
 							attachment_type = "point_follow"
 							attachment_offset = [ 0.0, 0.0, 0.0 ]
