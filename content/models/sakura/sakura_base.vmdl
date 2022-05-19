@@ -528,7 +528,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.3
 						looping = false
 						delta = false
 						worldSpace = false
@@ -548,7 +548,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -760,7 +760,7 @@
 						source_filename = "models/sakura/punch.fbx"
 						start_frame = 7
 						end_frame = 54
-						framerate = 39.0
+						framerate = 35.0
 						reverse = false
 					},
 					{
@@ -810,7 +810,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -870,7 +870,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -886,7 +886,7 @@
 					{
 						_class = "AnimFile"
 						name = "punch5"
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -909,7 +909,7 @@
 						activity_name = "ACT_DOTA_ATTACK"
 						activity_weight = 1
 						weight_list_name = ""
-						fade_in_time = 0.2
+						fade_in_time = 0.1
 						fade_out_time = 0.2
 						looping = false
 						delta = false
@@ -918,9 +918,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/sakura/punch6.fbx"
-						start_frame = 3
-						end_frame = -1
-						framerate = 10.0
+						start_frame = 6
+						end_frame = 33
+						framerate = 28.0
 						reverse = false
 					},
 				]

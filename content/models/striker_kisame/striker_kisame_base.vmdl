@@ -742,7 +742,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -762,7 +762,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -921,6 +921,26 @@
 						start_frame = 0
 						end_frame = 60
 						framerate = 60.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "seal_copy"
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.5
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_kisame/seal.smd"
+						start_frame = 0
+						end_frame = 70
+						framerate = 45.0
 						reverse = false
 					},
 				]

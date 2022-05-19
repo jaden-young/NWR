@@ -683,7 +683,7 @@
 						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 1.0
 						looping = false
 						delta = false
 						worldSpace = false

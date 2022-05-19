@@ -27,7 +27,7 @@
 	Hero_Sakura.MysticalPalm.Flick = 
 	{
 		type = "dota_update_default"
-		volume = 0.200000
+		volume = 0.000000
 		pitch_rand_min = 0.000000
 		pitch_rand_max = 0.000000
 		pitch = 1.0000000
