@@ -1263,7 +1263,7 @@
 						game_class = "particle"
 						game_keys = 
 						{
-							name = resource:"particles/units/unit_greevil/loot_greevil_ambient_light.vpcf"
+							name = resource:"particles/units/unit_greevil/loot_greevil_ambient_light.vpcfparticles/units/unit_greevil/loot_greevil_ambient_light.vpcf"
 							attachment_point = "aura"
 							attachment_type = "point_follow"
 							attachment_offset = [ 0.0, 0.0, 0.0 ]
