@@ -1499,6 +1499,20 @@
 					{
 						_class = "AnimFile"
 						name = "idle"
+						children = 
+						[
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_STOP_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/units/unit_greevil/loot_greevil_ambient_light.vpcf"
+									stop_instantly = true
+									play_endcap = true
+								}
+							},
+						]
 						activity_name = "ACT_DOTA_IDLE"
 						activity_weight = 1
 						weight_list_name = ""
@@ -1803,6 +1817,17 @@
 								quadratic = false
 								root_bone_name = ""
 								motion_type = "Single"
+							},
+							{
+								_class = "AnimEvent"
+								event_class = "AE_CL_STOP_PARTICLE_EFFECT"
+								event_frame = 0
+								event_keys = 
+								{
+									name = resource:"particles/units/unit_greevil/loot_greevil_ambient_light.vpcf"
+									stop_instantly = true
+									play_endcap = false
+								}
 							},
 						]
 						activity_name = "ACT_DOTA_RUN"

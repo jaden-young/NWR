@@ -8,7 +8,6 @@ function anko_giant_snake:Precache(context)
 	PrecacheResource("particle", "particles/units/heroes/hero_pudge/pudge_meathook_impact.vpcf", context)
 	PrecacheResource("particle", "particles/units/heroes/hero_pudge/pudge_meathook.vpcf", context)
 	PrecacheResource("particle", "particles/units/heroes/anko/giant_snake_snake.vpcf", context)
-	PrecacheResource("soundfile", "soundevents/game_sounds_heroes/game_sounds_pudge.vsndevts", context)
 	PrecacheResource("soundfile", "soundevents/heroes/anko/anko_hand_impact.vsndevts", context)
 	PrecacheResource("soundfile", "soundevents/heroes/anko/anko_hand_cast.vsndevts", context)
 end
@@ -231,12 +230,11 @@ function anko_giant_snake:OnProjectileHit( hTarget, vLocation )
 
 		if self:GetCaster():IsAlive() then
 			self:GetCaster():RemoveGesture( ACT_DOTA_OVERRIDE_ABILITY_1 );
-			self:GetCaster():StartGesture( ACT_DOTA_ATTACK );
+			self:GetCaster():StartGesture( ACT_DOTA_NOTICE );
 		end
 
 		self.bRetracting = true
 	else
-		EmitSoundOn( "Hero_Pudge.AttackHookRetract", hTarget )
 		if self:GetCaster() and self:GetCaster():IsHero() then
 			local hHook = self:GetCaster():GetTogglableWearable( DOTA_LOADOUT_TYPE_WEAPON )
 			if hHook ~= nil then
@@ -259,7 +257,6 @@ function anko_giant_snake:OnProjectileHit( hTarget, vLocation )
 		self.hVictim = nil
 		ParticleManager:DestroyParticle( self.nChainParticleFXIndex, true )
 
-		EmitSoundOn( "Hero_Pudge.AttackHookRetractStop", self:GetCaster() )
 	end
 
 	return true
@@ -275,7 +272,7 @@ end
 
 function anko_giant_snake:OnOwnerDied()
 	self:GetCaster():RemoveGesture( ACT_DOTA_OVERRIDE_ABILITY_1 );
-	self:GetCaster():RemoveGesture( ACT_DOTA_CHANNEL_ABILITY_1 );
+	self:GetCaster():RemoveGesture( ACT_DOTA_NOTICE );
 end
 
 --------------------------------------------------------------------------------

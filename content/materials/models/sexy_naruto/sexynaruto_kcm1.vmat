@@ -8,7 +8,7 @@ Layer0
 	F_DETAIL 3 // Mod2X
 
 	//---- Blend To Full ----
-	g_flDetailBlendToFull "0.000"
+	g_flDetailBlendToFull "0.289"
 	g_flEnvMapBlendToFull "0.000"
 	g_flMetalnessBlendToFull "0.000"
 	g_flReflectionsTintByBaseBlendToNone "0.000"
@@ -33,7 +33,7 @@ Layer0
 	//---- Detail 1 ----
 	g_flDetailBlendFactor "1.000"
 	g_flDetailTexCoordRotation "0.000"
-	g_vDetail1ColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vDetail1ColorTint "[0.933333 0.909804 0.666667 1.000000]"
 	g_vDetailTexCoordOffset "[0.000 0.000]"
 	g_vDetailTexCoordScale "[1.000 1.000]"
 	TextureDetail "materials/default/default_detail.tga"
@@ -45,10 +45,10 @@ Layer0
 	TextureFresnelWarpSpec "materials/default/default_fresnelwarpspec.tga"
 
 	//---- Lighting ----
-	g_flAmbientScale "1.000"
+	g_flAmbientScale "1.873"
 	g_flBloomScale "0.000"
 	g_flBloomShift "0.000"
-	g_vBloomColor "[1.000000 1.000000 0.000000 1.000000]"
+	g_vBloomColor "[0.937255 0.925490 0.811765 1.000000]"
 
 	//---- Normal Map ----
 	TextureNormal "materials/default/default_normal.tga"
@@ -60,5 +60,5 @@ Layer0
 	//---- Specular ----
 	g_flSpecularExponent "32.000"
 	g_flSpecularScale "1.000"
-	g_vSpecularColor "[1.000000 1.000000 0.000000 1.000000]"
+	g_vSpecularColor "[0.933333 0.909804 0.666667 1.000000]"
 }

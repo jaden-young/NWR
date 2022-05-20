@@ -1464,8 +1464,17 @@
 					{
 						_class = "AnimFile"
 						name = "aa2"
-						activity_name = "ACT_DOTA_ATTACK_EVENT"
-						activity_weight = 1
+						note = "Type note..."
+						children = 
+						[
+							{
+								_class = "ActivityModifier"
+								activity_name = "stonefist"
+								activity_weight = 1
+							},
+						]
+						activity_name = "ACT_DOTA_ATTACK"
+						activity_weight = 0
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -1806,7 +1815,7 @@
 					{
 						_class = "AnimFile"
 						name = "stagger"
-						activity_name = ""
+						activity_name = "ACT_DOTA_DISABLED"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
