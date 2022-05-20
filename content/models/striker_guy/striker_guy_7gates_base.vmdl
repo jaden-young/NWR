@@ -966,8 +966,8 @@
 						activity_name = "ACT_DOTA_CAST_ABILITY_2_END"
 						activity_weight = 1
 						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_in_time = 0.1
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -975,9 +975,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_guy/striker_guy_7gates_base_m.smd"
-						start_frame = -1
+						start_frame = 0
 						end_frame = -1
-						framerate = 45.0
+						framerate = 26.0
 						reverse = false
 					},
 					{
@@ -1006,8 +1006,8 @@
 						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_in_time = 0.0
+						fade_out_time = 0.3
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1015,7 +1015,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_guy/striker_guy_7gates_base_l.smd"
-						start_frame = 43
+						start_frame = 54
 						end_frame = -1
 						framerate = -1.0
 						reverse = false
@@ -1027,7 +1027,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false

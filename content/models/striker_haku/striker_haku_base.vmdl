@@ -1319,9 +1319,9 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_haku/cast.fbx"
-						start_frame = 0
+						start_frame = 10
 						end_frame = 28
-						framerate = 45.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
@@ -1503,7 +1503,7 @@
 						source_filename = "models/striker_haku/run.fbx"
 						start_frame = 0
 						end_frame = 12
-						framerate = 30.0
+						framerate = 15.0
 						reverse = false
 					},
 					{

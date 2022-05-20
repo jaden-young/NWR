@@ -432,10 +432,10 @@
 							},
 						]
 						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 1
+						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.3
 						looping = false
 						delta = false
 						worldSpace = false
@@ -444,7 +444,7 @@
 						disable_compression = false
 						source_filename = "models/striker_temari/striker_temari_attack.smd"
 						start_frame = 0
-						end_frame = 32
+						end_frame = 16
 						framerate = 10.0
 						reverse = false
 					},
@@ -503,7 +503,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -513,7 +513,7 @@
 						source_filename = "models/striker_temari/striker_temari_attack3.smd"
 						start_frame = 0
 						end_frame = 52
-						framerate = 45.0
+						framerate = 52.0
 						reverse = false
 					},
 					{
@@ -536,8 +536,8 @@
 						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
-						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_in_time = 1.0
+						fade_out_time = 0.3
 						looping = false
 						delta = false
 						worldSpace = false
@@ -547,7 +547,7 @@
 						source_filename = "models/striker_temari/striker_temari_attack4.smd"
 						start_frame = 0
 						end_frame = 58
-						framerate = -1.0
+						framerate = 23.0
 						reverse = false
 					},
 					{
@@ -635,7 +635,7 @@
 						source_filename = "models/striker_temari/striker_temari_idle.smd"
 						start_frame = 0
 						end_frame = 183
-						framerate = 30.0
+						framerate = 20.0
 						reverse = false
 					},
 					{
@@ -669,7 +669,7 @@
 						source_filename = "models/striker_temari/striker_temari_run.smd"
 						start_frame = 0
 						end_frame = 11
-						framerate = 20.0
+						framerate = 16.0
 						reverse = false
 					},
 					{
@@ -709,7 +709,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -743,7 +743,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_3"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -756,8 +756,8 @@
 						disable_compression = false
 						source_filename = "models/striker_temari/striker_temari_attack.smd"
 						start_frame = 0
-						end_frame = 32
-						framerate = -1.0
+						end_frame = 23
+						framerate = 60.0
 						reverse = true
 					},
 				]

@@ -63,7 +63,7 @@
         "04"
         {
             "var_type" "FIELD_FLOAT"
-            "stun_duration" "1 1.5 2 2.5"
+            "stun_duration" "1.4 1.8 2.2 2.6"
 			"LinkedSpecialBonus" "special_bonus_neji_1"
         }
 

@@ -46,7 +46,7 @@
 			"max_distance"				"3000"
 			"abilitycastpoint"
 			{
-				"value"							"0.5"
+				"value"							"0.8"
 				"LinkedSpecialBonus"			"special_bonus_kakashi_2"
 				"LinkedSpecialBonusOperation"	"SPECIAL_BONUS_SUBTRACT"
 			}

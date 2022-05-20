@@ -34,7 +34,7 @@
 			"bonus_movespeed"			"15 22 29 36"
 			"fade_delay"
 			{
-				"value"						"2.0 1.7 1.4 1.0"
+				"value"						"1.0 0.8 0.6 0.4"
 				"LinkedSpecialBonus"		"special_bonus_zabuza_4"
 			}
 			"damage_time"				"6.0"

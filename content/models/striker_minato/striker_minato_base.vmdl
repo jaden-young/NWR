@@ -677,7 +677,7 @@
 						_class = "AnimFile"
 						name = "flying_raijin_hit"
 						activity_name = ""
-						activity_weight = 1
+						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -690,7 +690,7 @@
 						source_filename = "models/striker_minato/flying_raijin_hit.smd"
 						start_frame = 0
 						end_frame = 21
-						framerate = 30.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
@@ -730,7 +730,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -834,7 +834,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1048,7 +1048,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.1
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1132,13 +1132,13 @@
 						source_filename = "models/striker_minato/rasengan_run.smd"
 						start_frame = 0
 						end_frame = 11
-						framerate = 30.0
+						framerate = 17.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "rasengan_end"
-						activity_name = ""
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2

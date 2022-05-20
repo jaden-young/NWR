@@ -17,7 +17,7 @@
                               "value0"        "sounds/heroes/zabuza/zabuza_mist_loop.vsnd"
                         }
                     }
-                    "volume"            {   "value"     "0.700000"  }
+                    "volume"            {   "value"     "0.400000"  }
                     "pitch_rand_min"    {   "value"     "-0.02000"  }
                     "pitch_rand_max"    {   "value"     "0.020000"  }
                     "pitch"             {   "value"     "1.000000"  }

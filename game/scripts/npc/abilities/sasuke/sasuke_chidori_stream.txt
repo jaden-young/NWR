@@ -10,6 +10,7 @@
         "ScriptFile"             "abilities/heroes/sasuke/sasuke_chidori_stream.lua"
         "AbilityBehavior"        "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
         "AbilityTextureName"     "sasuke_chidori_stream"
+        "AbilityUnitDamageType"  "DAMAGE_TYPE_MAGICAL"   
         "AbilityType"            "DOTA_ABILITY_TYPE_BASIC"
         "MaxLevel"               "4"
         "AbilityCastPoint"              "0.0 0.0 0.0 0.0"

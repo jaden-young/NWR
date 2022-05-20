@@ -599,7 +599,7 @@
 								motion_type = "Single"
 							},
 						]
-						activity_name = "ACT_DOTA_ATTACK"
+						activity_name = "ACT_DOTA_ATTACK_EVENT"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -793,7 +793,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.1
 						looping = false
 						delta = false
 						worldSpace = false
@@ -813,7 +813,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.1
 						looping = false
 						delta = false
 						worldSpace = false
@@ -927,7 +927,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -966,7 +966,7 @@
 						activity_name = "ACT_DOTA_CAST_ABILITY_2_END"
 						activity_weight = 1
 						weight_list_name = ""
-						fade_in_time = 0.2
+						fade_in_time = 3.0
 						fade_out_time = 0.2
 						looping = false
 						delta = false
@@ -975,7 +975,7 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_guy/whirlwind.smd"
-						start_frame = -1
+						start_frame = 0
 						end_frame = -1
 						framerate = 45.0
 						reverse = false

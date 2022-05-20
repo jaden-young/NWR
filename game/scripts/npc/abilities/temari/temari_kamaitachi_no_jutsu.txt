@@ -22,7 +22,7 @@
 	// Stats
 	//-------------------------------------------------------------------------------------------------------------
 	"AbilityCastRange"				"900 1100 1300 1500"
-	"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+	"AbilityCastPoint"				"0.4 0.4 0.4 0.4"
 	"AbilityCooldown"				"15 14 13 12"
 	"AbilityManaCost"				"120 130 140 150"
 	
@@ -42,7 +42,7 @@
 		"01"
 		{
 			"var_type"				"FIELD_INTEGER"
-			"travel_distance"		"900 1100 1300 1500"
+			"travel_distance"		"1100 1300 1500 1700"
 			"levelkey"				"wexlevel"
 		}
 		"02"
@@ -68,12 +68,12 @@
 		"06"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"lift_duration"			"1.2 1.4 1.6 1.8"
+			"lift_duration"			"1.5 1.8 2.1 2.4"
 		}
 		"07"
 		{
 			"var_type"				"FIELD_FLOAT"
-			"base_damage"			"100 160 220 280"
+			"base_damage"			"70 140 210 280"
 			"LinkedSpecialBonus"	"special_bonus_temari_5"
 		}
 		"08"

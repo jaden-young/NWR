@@ -813,8 +813,8 @@
 					{
 						_class = "AnimFile"
 						name = "kunai_throw"
-						activity_name = "ACT_DOTA_ATTACK"
-						activity_weight = 1
+						activity_name = ""
+						activity_weight = 90
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
@@ -827,7 +827,7 @@
 						source_filename = "models/striker_sai/kunai_throw.smd"
 						start_frame = 0
 						end_frame = 28
-						framerate = 20.0
+						framerate = -1.0
 						reverse = false
 					},
 					{
@@ -885,7 +885,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -919,7 +919,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1033,7 +1033,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1067,7 +1067,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false

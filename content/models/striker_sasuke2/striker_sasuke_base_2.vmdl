@@ -810,7 +810,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.3
 						looping = false
 						delta = false
 						worldSpace = false
@@ -830,7 +830,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -990,7 +990,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.3
 						looping = false
 						delta = false
 						worldSpace = false

@@ -1057,7 +1057,7 @@
 					{
 						_class = "AnimFile"
 						name = "backdash_kamehameha"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = "ACT_DOTA_CAST_ABILITY_5"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1297,7 +1297,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.1
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1306,8 +1306,8 @@
 						disable_compression = false
 						source_filename = "models/striker_neji/kaiten.fbx"
 						start_frame = 29
-						end_frame = 121
-						framerate = 90.0
+						end_frame = 60
+						framerate = 93.0
 						reverse = false
 					},
 					{
@@ -1471,7 +1471,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false

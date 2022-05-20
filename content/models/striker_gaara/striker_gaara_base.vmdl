@@ -1398,7 +1398,7 @@
 						source_filename = "models/striker_gaara/run.fbx"
 						start_frame = 0
 						end_frame = 14
-						framerate = 30.0
+						framerate = 18.0
 						reverse = false
 					},
 					{
@@ -1468,7 +1468,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1478,7 +1478,7 @@
 						source_filename = "models/striker_gaara/cast.fbx"
 						start_frame = 0
 						end_frame = 80
-						framerate = 30.0
+						framerate = 25.0
 						reverse = false
 					},
 					{
@@ -1592,7 +1592,7 @@
 					{
 						_class = "AnimFile"
 						name = "sandburial_giant"
-						activity_name = "ACT_DOTA_CAST_ABILITY_2"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1632,11 +1632,11 @@
 					{
 						_class = "AnimFile"
 						name = "sandshower"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_2"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1656,7 +1656,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1726,7 +1726,7 @@
 						source_filename = "models/striker_gaara/throw_kunai3.fbx"
 						start_frame = 0
 						end_frame = 70
-						framerate = 60.0
+						framerate = 50.0
 						reverse = false
 					},
 					{
@@ -1736,7 +1736,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.4
 						looping = false
 						delta = false
 						worldSpace = false

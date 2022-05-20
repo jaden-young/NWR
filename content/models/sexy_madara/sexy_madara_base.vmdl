@@ -1388,7 +1388,7 @@
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
-						fade_out_time = 0.2
+						fade_out_time = 0.5
 						looping = false
 						delta = false
 						worldSpace = false
@@ -1552,7 +1552,7 @@
 						source_filename = "models/sexy_madara/run1.fbx"
 						start_frame = 0
 						end_frame = 11
-						framerate = 30.0
+						framerate = 16.0
 						reverse = false
 					},
 					{
