@@ -1772,7 +1772,7 @@
 					{
 						_class = "AnimFile"
 						name = "sandshield_ult"
-						activity_name = ""
+						activity_name = "ACT_DOTA_CAST_ABILITY_6"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1786,13 +1786,13 @@
 						source_filename = "models/striker_gaara/sandshield_ult.fbx"
 						start_frame = 0
 						end_frame = 89
-						framerate = 30.0
+						framerate = 60.0
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "sandburial_giant_ult"
-						activity_name = "ACT_DOTA_CAST_ABILITY_6"
+						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
