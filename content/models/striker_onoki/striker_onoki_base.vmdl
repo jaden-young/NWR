@@ -1815,7 +1815,7 @@
 					{
 						_class = "AnimFile"
 						name = "stagger"
-						activity_name = "ACT_DOTA_DISABLED"
+						activity_name = "ACT_DOTA_FLAIL"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1855,7 +1855,7 @@
 					{
 						_class = "AnimFile"
 						name = "twirl"
-						activity_name = "ACT_DOTA_FLAIL"
+						activity_name = "ACT_DOTA_FLAIL-"
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
@@ -1907,6 +1907,26 @@
 						anim_markup_ordered = false
 						disable_compression = false
 						source_filename = "models/striker_onoki/spawn.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "stunned"
+						activity_name = "ACT_DOTA_DISABLED"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/striker_onoki/stunned.fbx"
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0

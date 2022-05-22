@@ -286,6 +286,46 @@
 						framerate = 45.0
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "kisame_die_copy"
+						activity_name = "ACT_DOTA_FLAIL"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kisame_shark/kisame_shark.fbx"
+						start_frame = 211
+						end_frame = 215
+						framerate = 2.0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "kisame_die_copy1"
+						activity_name = "ACT_DOTA_DISABLED"
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						source_filename = "models/kisame_shark/kisame_shark.fbx"
+						start_frame = 215
+						end_frame = 225
+						framerate = 2.0
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},
